@@ -1,6 +1,6 @@
 # my-linux-apps
 
-> My List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s ![my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
+> My List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 but for Linux Based Systems.
 
 This is a Work in progress. I will be adding more applications in the coming days.
@@ -15,6 +15,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
+* [Mailspring](https://getmailspring.com/) - Email client.
 
 ---
 
@@ -92,8 +93,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [GPRename](http://gprename.sourceforge.net/) - GPRename is a complete batch renamer for files and directories and is licensed under the terms of the GNU General Public Licence version 3.
 * [Crashplan](https://www.crashplan.com/en-us/) - Automatic and continuous backup to the cloud 
 * [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
-* [Free client\-side encryption for your cloud files\.
-Open source software: No backdoors, no registration\.](https://cryptomator.org/)
+* [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 
 ---
 
@@ -111,21 +111,25 @@ Open source software: No backdoors, no registration\.](https://cryptomator.org/)
 
 ## Cli tools
 
-- [knqyf263/pet: Simple command\-line snippet manager, written in Go\.](https://github.com/knqyf263/pet)
-- [tldr\-pages/tldr: Simplified and community\-driven man pages](https://github.com/tldr-pages/tldr)
-- [junegunn/fzf: A command\-line fuzzy finder](https://github.com/junegunn/fzf)
-- [clvv/fasd: Command\-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v\.](https://github.com/clvv/fasd)
-- [github/hub: hub helps you win at git\.](https://github.com/github/hub)
-- [jingweno/ccat: Colorizing \`cat\\`](https://github.com/jingweno/ccat)
-- [stedolan/jq: Command\-line JSON processor](https://github.com/stedolan/jq)
-- [jakubroztocil/httpie: Modern command line HTTP client – user\-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget\-like downloads, extensions, etc\.](https://github.com/jakubroztocil/httpie) [https://httpie](https://httpie/)\.org
-- [zaquestion/lab: Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab](https://github.com/zaquestion/lab)
-- [asciinema \- Record and share your terminal sessions, the right way](https://asciinema.org/)
-- [TheLocehiliosan/yadm: Yet Another Dotfiles Manager](https://github.com/TheLocehiliosan/yadm)
-- [tav/asciinema2gif: Generate animated GIFs from asciinema terminal recordings](https://github.com/tav/asciinema2gif)
-- [jgm/pandoc: Universal markup converter](https://github.com/jgm/pandoc)
-- [jonschlinkert/markdown\-toc: Generate a markdown TOC \(table of contents\) for a README or any markdown files, using remarkable\. Used by assemble, verb, and lots of other projects on GitHub\. API and CLI\.](https://github.com/jonschlinkert/markdown-toc)
-
+- [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
+- [tldr\-pages/tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
+- [junegunn/fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
+- [clvv/fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
+- [github/hub](https://github.com/github/hub) -  hub helps you win at git.
+- [jingweno/ccat](https://github.com/jingweno/ccat) - Colorizing cat
+- [stedolan/jq](https://github.com/stedolan/jq) -  Command-line JSON processor.
+- [jakubroztocil/httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
+- [zaquestion/lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
+- [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
+- [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
+- [tav/asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
+- [jgm/pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
+- [jonschlinkert/markdown\-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
+- [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
+- [howdoi](https://github.com/gleitz/howdoi) - instant coding answers via the command line.
+- pwgen - secure password generator.
+- [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
+- [now-cli](https://github.com/zeit/now-cli) - The command-line interface for Now.
 
 ---
 
