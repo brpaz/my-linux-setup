@@ -1,4 +1,4 @@
-# my-linux-apps
+# my-linux-setup
 
 > My List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 but for Linux Based Systems.
@@ -21,6 +21,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Mailspring](https://getmailspring.com/) - Email client.
 * [Marker](https://github.com/fabiocolacio/Marker) -  A gtk3 markdown editor 
 * [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux
+*
 
 ---
 
@@ -159,6 +160,19 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
 - [rg3/youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
 - [hishamhm/htop](https://github.com/hishamhm/htop) -  htop is an interactive text-mode process viewer for Unix systems.
+- [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [Composer](https://getcomposer.org/) - Dependency Manager for PHP
+- [Docker Composer](https://docs.docker.com/compose/)
+- [bcicen/ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
+- [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
+- [wercker/stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
+- [ahmetb/kubectx(https://github.com/ahmetb/kubectx) -  Fast way to switch between clusters and namespaces in kubectl
+- [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
+- [travis-ci/travis.rb](https://github.com/travis-ci/travis.rb) -  Travis CI Client (CLI and Ruby library)
+. [lighttiger2505/lab](https://github.com/lighttiger2505/lab) -  lab is a cli client of gitlab like hu
+- [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
+- [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
+- [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
 
 ---
 
