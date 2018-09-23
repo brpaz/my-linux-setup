@@ -11,36 +11,35 @@ This is a Work in progress. I will be adding more applications in the coming day
 
 ## Productivity
 
+* [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
 * [Boostnote](https://boostnote.io/) - Note-taking for developers
-* [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
-* [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists
-* [Notion](https://www.notion.so) - My personal Knowledge base
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
-* [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
 * [Mailspring](https://getmailspring.com/) - Email client.
 * [Marker](https://github.com/fabiocolacio/Marker) -  A gtk3 markdown editor 
+* [Notion](https://www.notion.so) - My personal Knowledge base
+* [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
+* [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists
 * [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux
-*
 
 ---
 
 ## Internet
 
-* [Google Chrome](https://www.google.com/chrome/) - My primary browser
+* [Dropbox](https://www.dropbox.com/home#/)
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My secondary browser
+* [Google Chrome](https://www.google.com/chrome/) - My primary browser
 * [Transmission](https://transmissionbt.com/) - Torrent client
 * [uget](https://ugetdm.com/) - Download manager
-* [Dropbox](https://www.dropbox.com/home#/)
 
 ---
 
 ## Communication
 
-* [Slack](https://slack.com) - Official Slack application. I am using Franz more but still have it installed.
-* [Skype](https://www.skype.com/) - Official Skype Application.
 * [Franz](https://meetfranz.com/) - Franz is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts,GroupMe, Skype and many more
 * [HexChat](https://hexchat.github.io/) - IRC Client. Just because ...
+* [Skype](https://www.skype.com/) - Official Skype Application.
+* [Slack](https://slack.com) - Official Slack application. I am using Franz more but still have it installed.
 
 ---
 
@@ -105,8 +104,6 @@ This is a Work in progress. I will be adding more applications in the coming day
 
 ## Gnome Extensions
 
-* [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-* [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 * [AlternateTab](https://extensions.gnome.org/extension/15/alternatetab/)
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
@@ -116,8 +113,10 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 * [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+* [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 * [Time ++](https://extensions.gnome.org/extension/1238/time/)
 * [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)
+* [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 
 ---
@@ -135,44 +134,43 @@ This is a Work in progress. I will be adding more applications in the coming day
 ---
 
 ## Cli tools
-
-- [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
-- [tldr\-pages/tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
-- [junegunn/fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
-- [clvv/fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
-- [github/hub](https://github.com/github/hub) -  hub helps you win at git.
-- [jingweno/ccat](https://github.com/jingweno/ccat) - Colorizing cat
-- [stedolan/jq](https://github.com/stedolan/jq) -  Command-line JSON processor.
-- [jakubroztocil/httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
-- [zaquestion/lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 - [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
-- [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
-- [tav/asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
-- [jgm/pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
-- [jonschlinkert/markdown\-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
-- [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
-- [howdoi](https://github.com/gleitz/howdoi) - instant coding answers via the command line.
-- pwgen - secure password generator.
-- [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
-- [now-cli](https://github.com/zeit/now-cli) - The command-line interface for Now.
-- [sindresorhus/fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
-- [gohugoio/hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
-- [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
-- [rg3/youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
-- [hishamhm/htop](https://github.com/hishamhm/htop) -  htop is an interactive text-mode process viewer for Unix systems.
-- [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
+- [ccat](https://github.com/jingweno/ccat) - Colorizing cat
 - [Composer](https://getcomposer.org/) - Dependency Manager for PHP
+- [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 - [Docker Composer](https://docs.docker.com/compose/)
-- [bcicen/ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
-- [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
-- [wercker/stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
-- [ahmetb/kubectx(https://github.com/ahmetb/kubectx) -  Fast way to switch between clusters and namespaces in kubectl
-- [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
-- [travis-ci/travis.rb](https://github.com/travis-ci/travis.rb) -  Travis CI Client (CLI and Ruby library)
-. [lighttiger2505/lab](https://github.com/lighttiger2505/lab) -  lab is a cli client of gitlab like hu
-- [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
-- [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
+- [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
+- [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
+- [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
+- [fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
 - [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
+- [howdoi](https://github.com/gleitz/howdoi) - instant coding answers via the command line.
+- [htop](https://github.com/hishamhm/htop) -  htop is an interactive text-mode process viewer for Unix systems.
+- [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
+- [hub](https://github.com/github/hub) -  hub helps you win at git.
+- [hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
+- [jq](https://github.com/stedolan/jq) -  Command-line JSON processor.
+- [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
+- [kubectx](https://github.com/ahmetb/kubectx) -  Fast way to switch between clusters and namespaces in kubectl
+- [lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
+- [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
+- [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
+- [now-cli](https://github.com/zeit/now-cli) - The command-line interface for Now.
+- [pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
+- [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
+- pwgen - secure password generator.
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
+- [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
+- [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
+- [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
+- [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
+- [travis.rb](https://github.com/travis-ci/travis.rb) -  Travis CI Client (CLI and Ruby library)
+- [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
+- [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
+- [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
+
 
 ---
 
