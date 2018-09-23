@@ -13,9 +13,14 @@ This is a Work in progress. I will be adding more applications in the coming day
 
 * [Boostnote](https://boostnote.io/) - Note-taking for developers
 * [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
+* [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists
+* [Notion](https://www.notion.so) - My personal Knowledge base
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
+* [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
 * [Mailspring](https://getmailspring.com/) - Email client.
+* [Marker](https://github.com/fabiocolacio/Marker) -  A gtk3 markdown editor 
+* [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux
 
 ---
 
@@ -54,13 +59,12 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Spotify](https://www.spotify.com/)
 * [Kdenlive](http://www.kdenlive.org/) - Video editor
 * [Kazam](https://launchpad.net/kazam) - Screentast tool for linux
-* [FF Multi converter]https://sourceforge.net/projects/ffmulticonv/) - Convert between multiple file formats
 * [VLC](http://www.videolan.org/vlc/) - Media player
 * [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor
 * [Sound Recorder](https://wiki.gnome.org/Apps/SoundRecorder) - A simple and modern sound recorder
 * [Lollypop](https://wiki.gnome.org/Apps/Lollypop) - Lollypop is a modern music player for GNOME
-
+* [Plex Media server](https://www.plex.tv/) -  To stream media to other devices.
 
 ---
 
@@ -86,7 +90,6 @@ This is a Work in progress. I will be adding more applications in the coming day
 
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3
 * [Bleachbit](https://www.bleachbit.org/) - System cleaner tool
-* [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux
 * [Menulibre](https://launchpad.net/menulibre) - Menu editor
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [GParted](https://gparted.sourceforge.io/) - GParted is a free partition editor for graphically managing your disk partitions
@@ -94,6 +97,27 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Crashplan](https://www.crashplan.com/en-us/) - Automatic and continuous backup to the cloud 
 * [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
+* [FF Multi converter](https://sourceforge.net/projects/ffmulticonv/) - Convert between multiple file formats
+* [cgrossde/Pullover](https://github.com/cgrossde/Pullover) -  The unofficial multi-platform Pushover desktop client
+
+---
+
+## Gnome Extensions
+
+* [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+* [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+* [AlternateTab](https://extensions.gnome.org/extension/15/alternatetab/)
+* [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+* [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+* [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
+* [Do Not Disturb Button](https://extensions.gnome.org/extension/964/do-not-disturb-button/)
+* [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
+* [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
+* [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+* [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+* [Time ++](https://extensions.gnome.org/extension/1238/time/)
+* [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)
+* [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 
 ---
 
@@ -130,6 +154,11 @@ This is a Work in progress. I will be adding more applications in the coming day
 - pwgen - secure password generator.
 - [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 - [now-cli](https://github.com/zeit/now-cli) - The command-line interface for Now.
+- [sindresorhus/fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
+- [gohugoio/hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
+- [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
+- [rg3/youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
+- [hishamhm/htop](https://github.com/hishamhm/htop) -  htop is an interactive text-mode process viewer for Unix systems.
 
 ---
 
