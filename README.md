@@ -70,17 +70,18 @@ This is a Work in progress. I will be adding more applications in the coming day
 
 ## Development Tools
 
-* [PHPStorm](https://www.jetbrains.com/phpstorm/)
-* [Intelij](https://www.jetbrains.com/idea/)
-* [WebStorm](https://www.jetbrains.com/webstorm/).
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [PHPStorm](https://www.jetbrains.com/phpstorm/) - The Best PHP IDE by Jetbrains.
+* [Intelij](https://www.jetbrains.com/idea/) - Java and Android IDE.
+* [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
+* [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
 * [SnippetStore](https://github.com/ZeroX-DG/SnippetStore) -  A snippet management app for developers
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux
 * [Zeal](https://zealdocs.org/) - Zeal is an offline documentation browser for software developers.
-* [Docker](https://www.docker.com/)
-* [Vagrant](http://www.vagrantup.com)
-* [VirtualBox](https://www.virtualbox.org/)
+* [Docker](https://www.docker.com/) - The Dev to Ops Choice for Container Platforms,
+* [Docker Compose](https://docs.docker.com/compose/)
+* [Vagrant](http://www.vagrantup.com) - Development Environments Made Easy
+* [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [gpick](http://www.gpick.org/) - Gpick is an advanced color picker and palette editing tool.
 * [Postman](https://www.getpostman.com/) - Rest API Client
 
@@ -137,9 +138,8 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
 - [asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
 - [ccat](https://github.com/jingweno/ccat) - Colorizing cat
-- [Composer](https://getcomposer.org/) - Dependency Manager for PHP
+- [composer](https://getcomposer.org/) - Dependency Manager for PHP
 - [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
-- [Docker Composer](https://docs.docker.com/compose/)
 - [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 - [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
 - [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
@@ -151,6 +151,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [hub](https://github.com/github/hub) -  hub helps you win at git.
 - [hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
 - [jq](https://github.com/stedolan/jq) -  Command-line JSON processor.
+- [kubernetes/minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
 - [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 - [kubectx](https://github.com/ahmetb/kubectx) -  Fast way to switch between clusters and namespaces in kubectl
 - [lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
@@ -161,6 +162,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
 - pwgen - secure password generator.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
+- [saojs/sao](https://github.com/saojs/sao) - : Futuristic scaffolding tool.
 - [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
 - [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
 - [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
