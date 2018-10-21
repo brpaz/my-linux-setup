@@ -100,6 +100,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [FF Multi converter](https://sourceforge.net/projects/ffmulticonv/) - Convert between multiple file formats
 * [cgrossde/Pullover](https://github.com/cgrossde/Pullover) -  The unofficial multi-platform Pushover desktop client
+* [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
 
 ---
 
@@ -169,6 +170,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 - [travis.rb](https://github.com/travis-ci/travis.rb) -  Travis CI Client (CLI and Ruby library)
 - [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 - [yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
 - [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
 - [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
@@ -179,3 +181,120 @@ This is a Work in progress. I will be adding more applications in the coming day
 ## Games
 
 * [Steam](https://store.steampowered.com)
+
+
+---
+
+## Themes and Icons
+
+* [nana-4/materia-theme](https://github.com/nana-4/materia-theme) -  A Material Design theme for GNOME/GTK+ based desktop environments
+* [/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -  Papirus icon theme for Linux.
+
+--
+
+## VS Code Extensions
+
+* AdamCaviness.theme-monokai-dark-soda
+* AlanWalk.markdown-toc
+* EditorConfig.EditorConfig
+* Gigabyte-Giant.vscode-file-header-comment-helper
+* JakeWilson.vscode-placeholder-images
+* MattiasPernhult.vscode-todo
+* Sophisticode.php-formatter
+* TwentyChung.jsx
+* Tyriar.lorem-ipsum
+* Zignd.html-css-class-completion
+* abusaidm.html-snippets
+* adamvoss.yaml
+* akamud.vscode-caniuse
+* andischerer.theme-atom-one-dark
+* anseki.vscode-color
+* bajdzis.vscode-twig-pack
+* bam.vscode-file-templates
+* bbenoist.vagrant
+* be5invis.toml
+* benjaminromano.typings-installer
+* castwide.solargraph
+* chimon2000.polymer-snippets
+* christian-kohler.npm-intellisense
+* codezombiech.gitignore
+* CoenraadS.bracket-pair-colorizer
+* dbaeumer.vscode-eslint
+* dbalage.vscode-stylesheet-formatter
+* dbankier.vscode-gist
+* * eerawan.vscode-dash
+* dinhani.divider
+* donjayamanne.githistory
+* donjayamanne.jquerysnippets
+* DotJoshJohnson.xml
+* eamodio.gitlens
+* eg2.vscode-npm-script
+* emilast.LogFileHighlighter
+* ericadamski.carbon-now-sh
+* eriklynd.json-tools
+* felipecaputo.git-project-manager
+* felixfbecker.php-debug
+* felixrieseberg.vsc-travis-ci-status
+* formulahendry.code-runner
+* gerane.Theme-FlatlandMonokai
+* gio00.css-inline
+* haaaad.ansible
+* hollowtree.vue-snippets
+* HookyQR.beautify
+* idleberg.badges
+* idleberg.icon-fonts
+* ikappas.composer
+* ipedrazas.kubernetes-snippets
+* jcmordan.mark-as-excluded
+* jerriepelser.copy-markdown-as-html
+* jgsqware.gitlab-ci-templates
+* joelday.docthis
+* josa.markdown-table-formatter
+* liuji-jim.vue
+* mauve.terraform
+* michelemelluso.gitignore
+* mikestead.dotenv
+* mindginative.terraform-snippets
+* mohsen1.prettify-json
+* mrmlnc.vscode-autoprefixer
+* ms-kubernetes-tools.vscode-kubernetes-tools
+* ms-python.python
+* ms-vscode.Go
+* msjsdiag.debugger-for-chrome
+* nikitaKunevich.snippet-creator
+* octref.vetur
+* octref.vscode-json-transform
+* PeterJausovec.vscode-docker
+* pflannery.vscode-versionlens
+* piotrpalarz.vscode-gitignore-generator
+* qinjia.view-in-browser
+* ragingwind.web-manifest-snippets
+* rebornix.project-snippets
+* rebornix.ruby
+* redhat.vscode-yaml
+* reflog.jsonresume
+* robertohuertasm.vscode-icons
+* rpinski.shebang-snippets
+* rubbersheep.gi
+* ryu1kn.annotator
+* samverschueren.yo
+* Shan.code-settings-sync
+* shanoor.vscode-nginx
+* steve8708.Align
+* tanato.vscode-gulp
+* technosophos.vscode-helm
+* thomas-baumgaertner.vcl
+* tushortz.python-extended-snippets
+* vladmrnv.expresssnippet
+* vscode-snippet.Snippet
+* waderyan.gitblame
+* wcwhitehead.bootstrap-3-snippets
+* whatwedo.twig
+* wholroyd.jinja
+* wmontalvo.vsc-meta-snippet
+* xabikos.ReactSnippets
+* xyz.local-history
+* ymotongpoo.licenser
+* yzhang.markdown-all-in-one
+* ZeroX-DG.vscode-snippetstore
+* zhuangtongfa.Material-theme
