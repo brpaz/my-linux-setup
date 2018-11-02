@@ -3,7 +3,6 @@
 > My List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 but for Linux Based Systems.
 
-This is a Work in progress. I will be adding more applications in the coming days.
 
 ## Base system
 
@@ -136,6 +135,7 @@ This is a Work in progress. I will be adding more applications in the coming day
 ---
 
 ## Cli tools
+
 - [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
 - [asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
 - [ccat](https://github.com/jingweno/ccat) - Colorizing cat
@@ -174,7 +174,8 @@ This is a Work in progress. I will be adding more applications in the coming day
 - [yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
 - [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
 - [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
-
+- [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
+- [direnv - unclutter your .profile](https://direnv.net/)
 
 ---
 
