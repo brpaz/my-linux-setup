@@ -8,6 +8,19 @@ but for Linux Based Systems.
 
 * I believe a development machine should be stable so, right now I am using Ubuntu 18.04 with Gnome as my Distro of Choice.
 
+## Base workflow
+
+* Use Workspaces extensively and shortcuts to move between them.
+* Use ulauncher for faster navigation, application opening and internet search.
+* On terminal:
+   * zsh and zplug
+   * fzm to go to known folders
+   * reverse search with fzf to search previous commands
+   * use a terminal multiplexer (Tilix, tmux, etc)
+   * Pet, for finding terminal commands snippets
+   * Tldr-pages, for quiclky find common commands usage
+---
+
 ## Productivity
 
 * [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
