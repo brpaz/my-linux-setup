@@ -6,20 +6,7 @@ but for Linux Based Systems.
 
 ## Base system
 
-* I believe a development machine should be stable so, right now I am using Ubuntu 18.04 with Gnome as my Distro of Choice.
-
-## Base workflow
-
-* Use Workspaces extensively and shortcuts to move between them.
-* Use ulauncher for faster navigation, application opening and internet search.
-* On terminal:
-   * zsh and zplug
-   * fzm to go to known folders
-   * reverse search with fzf to search previous commands
-   * use a terminal multiplexer (Tilix, tmux, etc)
-   * Pet, for finding terminal commands snippets
-   * Tldr-pages, for quiclky find common commands usage
----
+* I believe a development machine should be stable so, right now I am using the latest Ubuntu LTS version with Gnome as my Distro of Choice.
 
 ## Productivity
 
@@ -29,18 +16,18 @@ but for Linux Based Systems.
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Mailspring](https://getmailspring.com/) - Email client.
 * [Marker](https://github.com/fabiocolacio/Marker) -  A gtk3 markdown editor 
-* [Notion](https://www.notion.so) - My personal Knowledge base
+* [Notion](https://www.notion.so) - My personal Knowledge base (Web App)
 * [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
-* [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists
-* [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux
+* [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists (Web App)
+* [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
 
 ---
 
 ## Internet
 
-* [Dropbox](https://www.dropbox.com/home#/)
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My secondary browser
 * [Google Chrome](https://www.google.com/chrome/) - My primary browser
+* [Dropbox](https://www.dropbox.com/home#/)
 * [Transmission](https://transmissionbt.com/) - Torrent client
 * [uget](https://ugetdm.com/) - Download manager
 
@@ -52,6 +39,9 @@ but for Linux Based Systems.
 * [HexChat](https://hexchat.github.io/) - IRC Client. Just because ...
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application. I am using Franz more but still have it installed.
+* [Ramme(https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App.]
+* [caprine](https://github.com/sindresorhus/caprine) -  Elegant Facebook Messenger desktop app
+* [Discord](https://discordapp.com/) -  Free Voice and Text Chat for Gamers
 
 ---
 
@@ -111,8 +101,10 @@ but for Linux Based Systems.
 * [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [FF Multi converter](https://sourceforge.net/projects/ffmulticonv/) - Convert between multiple file formats
-* [cgrossde/Pullover](https://github.com/cgrossde/Pullover) -  The unofficial multi-platform Pushover desktop client
 * [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
+* [rhysd/Chromenu](https://github.com/rhysd/Chromenu) - Easy access to a we browser from the menubar.
+* [GNOME/sushi](https://github.com/GNOME/sushi) - A quick previewer for Nautilus
+* [Apps/Clocks - GNOME Wiki!](https://wiki.gnome.org/Apps/Clocks) - Displays current time in multiple timezones and add it to the calendar widget on gnome shell. (need `sudo apt install gnome-clocks` to integrate with the main application)
 
 ---
 
@@ -132,6 +124,7 @@ but for Linux Based Systems.
 * [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)
 * [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+* [Argos](https://extensions.gnome.org/extension/1176/argos/)
 
 ---
 
