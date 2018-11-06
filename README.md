@@ -105,6 +105,8 @@ but for Linux Based Systems.
 * [rhysd/Chromenu](https://github.com/rhysd/Chromenu) - Easy access to a we browser from the menubar.
 * [GNOME/sushi](https://github.com/GNOME/sushi) - A quick previewer for Nautilus
 * [Apps/Clocks - GNOME Wiki!](https://wiki.gnome.org/Apps/Clocks) - Displays current time in multiple timezones and add it to the calendar widget on gnome shell. (need `sudo apt install gnome-clocks` to integrate with the main application)
+* [keymon](https://www.ubuntuupdates.org/package/core/cosmic/universe/base/keymon) . Keymon displays the pressed keyboard keys on the screen, usefull for screencasts.
+
 
 ---
 
