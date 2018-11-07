@@ -51,14 +51,14 @@ but for Linux Based Systems.
 * [Gravit Designer](https://www.designer.io/#interface) - Design tool similar to Sketch for MAC
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
-* [Trimage](https://trimage.org/) - A cross-platform tool for losslessly optimizing PNG and JPG files.
+* [Image Optimizer](https://flathub.org/apps/details/com.github.gijsgoudzwaard.image-optimizer) - Simple lossless image compression.
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 
 ---
 
 ## Sound & Video
 
-* [Spotify](https://www.spotify.com/)
+* [Spotify](https://www.spotify.com/) - Music for everyone.
 * [Kdenlive](http://www.kdenlive.org/) - Video editor
 * [Kazam](https://launchpad.net/kazam) - Screentast tool for linux
 * [VLC](http://www.videolan.org/vlc/) - Media player
@@ -67,6 +67,7 @@ but for Linux Based Systems.
 * [Sound Recorder](https://wiki.gnome.org/Apps/SoundRecorder) - A simple and modern sound recorder
 * [Lollypop](https://wiki.gnome.org/Apps/Lollypop) - Lollypop is a modern music player for GNOME
 * [Plex Media server](https://www.plex.tv/) -  To stream media to other devices.
+* [FF-Multi-Converter](https://launchpad.net/ffmulticonverter/+packages) - Convert files between multiple formats
 
 ---
 
@@ -86,6 +87,7 @@ but for Linux Based Systems.
 * [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [gpick](http://www.gpick.org/) - Gpick is an advanced color picker and palette editing tool.
 * [Postman](https://www.getpostman.com/) - Rest API Client
+* [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 
 ---
 
@@ -100,7 +102,6 @@ but for Linux Based Systems.
 * [Crashplan](https://www.crashplan.com/en-us/) - Automatic and continuous backup to the cloud 
 * [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
-* [FF Multi converter](https://sourceforge.net/projects/ffmulticonv/) - Convert between multiple file formats
 * [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
 * [rhysd/Chromenu](https://github.com/rhysd/Chromenu) - Easy access to a we browser from the menubar.
 * [GNOME/sushi](https://github.com/GNOME/sushi) - A quick previewer for Nautilus
