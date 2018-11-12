@@ -147,11 +147,12 @@ but for Linux Based Systems.
 
 - [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
 - [asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
-- [ccat](https://github.com/jingweno/ccat) - Colorizing cat
+- [sharkdp/bat](https://github.com/sharkdp/bat) - : A cat(1) clone with wings.
 - [composer](https://getcomposer.org/) - Dependency Manager for PHP
 - [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 - [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 - [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
+* [sharkdp/fd](https://github.com/sharkdp/fd) -  A simple, fast and user-friendly alternative to 'find'
 - [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 - [fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
 - [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
@@ -167,7 +168,6 @@ but for Linux Based Systems.
 - [lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 - [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
 - [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
-- [now-cli](https://github.com/zeit/now-cli) - The command-line interface for Now.
 - [pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
 - [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
 - pwgen - secure password generator.
