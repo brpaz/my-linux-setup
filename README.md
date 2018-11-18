@@ -185,12 +185,14 @@ but for Linux Based Systems.
 - [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
 - [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
 - [direnv - unclutter your .profile](https://direnv.net/)
+* [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
 
 ---
 
 ## Games
 
 * [Steam](https://store.steampowered.com)
+* [Snes9x](https://flathub.org/apps/details/com.snes9x.Snes9x) - Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator. It basically allows you to play most games designed for the SNES and Super Famicom Nintendo game systems on your PC or Workstation; which includes some real gems that were only ever released in Japan.
 
 
 ---
@@ -204,107 +206,105 @@ but for Linux Based Systems.
 
 ## VS Code Extensions
 
-* AdamCaviness.theme-monokai-dark-soda
-* AlanWalk.markdown-toc
-* EditorConfig.EditorConfig
-* Gigabyte-Giant.vscode-file-header-comment-helper
-* JakeWilson.vscode-placeholder-images
-* MattiasPernhult.vscode-todo
-* Sophisticode.php-formatter
-* TwentyChung.jsx
-* Tyriar.lorem-ipsum
-* Zignd.html-css-class-completion
-* abusaidm.html-snippets
-* adamvoss.yaml
-* akamud.vscode-caniuse
-* andischerer.theme-atom-one-dark
-* anseki.vscode-color
-* bajdzis.vscode-twig-pack
-* bam.vscode-file-templates
-* bbenoist.vagrant
-* be5invis.toml
-* benjaminromano.typings-installer
-* castwide.solargraph
-* chimon2000.polymer-snippets
-* christian-kohler.npm-intellisense
-* codezombiech.gitignore
-* CoenraadS.bracket-pair-colorizer
-* dbaeumer.vscode-eslint
-* dbalage.vscode-stylesheet-formatter
-* dbankier.vscode-gist
-* * eerawan.vscode-dash
-* dinhani.divider
-* donjayamanne.githistory
-* donjayamanne.jquerysnippets
-* DotJoshJohnson.xml
-* eamodio.gitlens
-* eg2.vscode-npm-script
-* emilast.LogFileHighlighter
-* ericadamski.carbon-now-sh
-* eriklynd.json-tools
-* felipecaputo.git-project-manager
-* felixfbecker.php-debug
-* felixrieseberg.vsc-travis-ci-status
-* formulahendry.code-runner
-* gerane.Theme-FlatlandMonokai
-* gio00.css-inline
-* haaaad.ansible
-* hollowtree.vue-snippets
-* HookyQR.beautify
-* idleberg.badges
-* idleberg.icon-fonts
-* ikappas.composer
-* ipedrazas.kubernetes-snippets
-* jcmordan.mark-as-excluded
-* jerriepelser.copy-markdown-as-html
-* jgsqware.gitlab-ci-templates
-* joelday.docthis
-* josa.markdown-table-formatter
-* liuji-jim.vue
-* mauve.terraform
-* michelemelluso.gitignore
-* mikestead.dotenv
-* mindginative.terraform-snippets
-* mohsen1.prettify-json
-* mrmlnc.vscode-autoprefixer
-* ms-kubernetes-tools.vscode-kubernetes-tools
-* ms-python.python
-* ms-vscode.Go
-* msjsdiag.debugger-for-chrome
-* nikitaKunevich.snippet-creator
-* octref.vetur
-* octref.vscode-json-transform
-* PeterJausovec.vscode-docker
-* pflannery.vscode-versionlens
-* piotrpalarz.vscode-gitignore-generator
-* qinjia.view-in-browser
-* ragingwind.web-manifest-snippets
-* rebornix.project-snippets
-* rebornix.ruby
-* redhat.vscode-yaml
-* reflog.jsonresume
-* robertohuertasm.vscode-icons
-* rpinski.shebang-snippets
-* rubbersheep.gi
-* ryu1kn.annotator
-* samverschueren.yo
-* Shan.code-settings-sync
-* shanoor.vscode-nginx
-* steve8708.Align
-* tanato.vscode-gulp
-* technosophos.vscode-helm
-* thomas-baumgaertner.vcl
-* tushortz.python-extended-snippets
-* vladmrnv.expresssnippet
-* vscode-snippet.Snippet
-* waderyan.gitblame
-* wcwhitehead.bootstrap-3-snippets
-* whatwedo.twig
-* wholroyd.jinja
-* wmontalvo.vsc-meta-snippet
-* xabikos.ReactSnippets
-* xyz.local-history
-* ymotongpoo.licenser
-* yzhang.markdown-all-in-one
-* ZeroX-DG.vscode-snippetstore
-* zhuangtongfa.Material-theme
+AdamCaviness.theme-monokai-dark-soda
+Gigabyte-Giant.vscode-file-header-comment-helper
+JakeWilson.vscode-placeholder-images
+MattiasPernhult.vscode-todo
+Sophisticode.php-formatter
+TwentyChung.jsx
+Tyriar.lorem-ipsum
+Zignd.html-css-class-completion
+abusaidm.html-snippets
+adamvoss.yaml
+akamud.vscode-caniuse
+alefragnani.project-manager
+alexkrechik.cucumberautocomplete
+andischerer.theme-atom-one-dark
+anseki.vscode-color
+bajdzis.vscode-twig-pack
+bbenoist.vagrant
+be5invis.toml
+benjaminromano.typings-installer
+bmewburn.vscode-intelephense-client
+castwide.solargraph
+christian-kohler.npm-intellisense
+chrmarti.regex
+codezombiech.gitignore
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dbalage.vscode-stylesheet-formatter
+deerawan.vscode-dash
+demijollamaxime.bulma
+dinhani.divider
+donjayamanne.jquerysnippets
+DotJoshJohnson.xml
+eamodio.gitlens
+EditorConfig.EditorConfig
+eg2.vscode-npm-script
+elken.mux
+emilast.LogFileHighlighter
+ericadamski.carbon-now-sh
+eriklynd.json-tools
+esbenp.prettier-vscode
+fatihacet.gitlab-workflow
+fcrespo82.markdown-table-formatter
+felixfbecker.php-debug
+felixrieseberg.vsc-travis-ci-status
+gamunu.vscode-yarn
+gerane.Theme-FlatlandMonokai
+gio00.css-inline
+haaaad.ansible
+hollowtree.vue-snippets
+idleberg.badges
+idleberg.icon-fonts
+ikappas.composer
+ipedrazas.kubernetes-snippets
+jcmordan.mark-as-excluded
+jerriepelser.copy-markdown-as-html
+k--kato.intellij-idea-keybindings
+kenhowardpdx.vscode-gist
+KnisterPeter.vscode-github
+liuji-jim.vue
+mauve.terraform
+michelemelluso.gitignore
+mikestead.dotenv
+mindginative.terraform-snippets
+mohsen1.prettify-json
+mrmlnc.vscode-autoprefixer
+ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.python
+ms-vscode.Go
+msjsdiag.debugger-for-chrome
+neilbrayfield.php-docblocker
+octref.vetur
+octref.vscode-json-transform
+patbenatar.advanced-new-file
+PeterJausovec.vscode-docker
+pflannery.vscode-versionlens
+piotrpalarz.vscode-gitignore-generator
+qinjia.view-in-browser
+ragingwind.web-manifest-snippets
+rebornix.project-snippets
+rebornix.ruby
+redhat.vscode-yaml
+robertohuertasm.vscode-icons
+rpinski.shebang-snippets
+samverschueren.yo
+Shan.code-settings-sync
+shanoor.vscode-nginx
+steve8708.Align
+tanato.vscode-gulp
+thiagoabreu.vala
+thomas-baumgaertner.vcl
+tushortz.python-extended-snippets
+Tyriar.vscode-terminal-here
+waderyan.gitblame
+whatwedo.twig
+wholroyd.jinja
+wmontalvo.vsc-meta-snippet
+xabikos.ReactSnippets
+xyz.local-history
+ymotongpoo.licenser
+yzhang.markdown-all-in-one
+ZeroX-DG.vscode-snippetstore
+zhuangtongfa.Material-theme
