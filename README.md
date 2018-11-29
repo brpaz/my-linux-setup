@@ -186,6 +186,8 @@ but for Linux Based Systems.
 - [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
 - [direnv - unclutter your .profile](https://direnv.net/)
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
+* [wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
+* [lirantal/dockly: Immersive terminal interface for managing docker containers and services](https://github.com/lirantal/dockly)
 
 ---
 
