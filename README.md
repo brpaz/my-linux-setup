@@ -14,7 +14,6 @@ but for Linux Based Systems.
 * [Boostnote](https://boostnote.io/) - Note-taking for developers
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
-* [Mailspring](https://getmailspring.com/) - Email client.
 * [Marker](https://github.com/fabiocolacio/Marker) -  A gtk3 markdown editor 
 * [Notion](https://www.notion.so) - My personal Knowledge base (Web App)
 * [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
@@ -124,10 +123,10 @@ but for Linux Based Systems.
 * [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
 * [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 * [Time ++](https://extensions.gnome.org/extension/1238/time/)
-* [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)
 * [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 * [Argos](https://extensions.gnome.org/extension/1176/argos/)
+* [(K)StatusNotifierItem/AppIndicator Support - GNOME Shell Extensions](https://extensions.gnome.org/extension/615/appindicator-support/)
 
 ---
 
@@ -145,49 +144,97 @@ but for Linux Based Systems.
 
 ## Cli tools
 
-- [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
-- [asciinema2gif](https://github.com/tav/asciinema2gif) -  Generate animated GIFs from asciinema terminal recordings
-- [sharkdp/bat](https://github.com/sharkdp/bat) - : A cat(1) clone with wings.
-- [composer](https://getcomposer.org/) - Dependency Manager for PHP
-- [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
-- [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
-- [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
-* [sharkdp/fd](https://github.com/sharkdp/fd) -  A simple, fast and user-friendly alternative to 'find'
-- [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
-- [fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
-- [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
-- [howdoi](https://github.com/gleitz/howdoi) - instant coding answers via the command line.
+### System Utils
+
 - [htop](https://github.com/hishamhm/htop) -  htop is an interactive text-mode process viewer for Unix systems.
-- [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
-- [hub](https://github.com/github/hub) -  hub helps you win at git.
-- [hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
+- [fkill-cli](https://github.com/sindresorhus/fkill-cli) -  Fabulously kill processes. Cross-platform.
+- [trash-cli](https://github.com/sindresorhus/trash-cli) - : Move files and folders to the trash
+- [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
+- [yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
+- pwgen - secure password generator.
+- [direnv - unclutter your .profile](https://direnv.net/)
+
+## File Mainuplation
+
+* [bat](https://github.com/sharkdp/bat) - : A cat(1) clone with wings.
 - [jq](https://github.com/stedolan/jq) -  Command-line JSON processor.
+- [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
+- [citycide/tablemark-cli](https://github.com/citycide/tablemark-cli) -  Generate markdown tables from JSON data at the command line.
+- [pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
+
+### Navigation
+
+- [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
+- [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
+- [fzf-marks](https://github.com/urbainvaes/fzf-marks) -  Plugin to manage bookmarks in bash and zsh
+- [ranger](https://github.com/ranger/ranger) - A VIM-inspired filemanager for the console
+
+### File search
+
+* [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern
+
+### Terminal Recording
+
+- [asciinema](https://asciinema.org/) -  Record and share your terminal sessions, the right way
+- [svg-term-cli](https://github.com/marionebl/svg-term-cli) - Share terminal sessions via SVG and CSS]
+
+### Http
+
+- [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
+
+### Package Managers
+
+- [composer](https://getcomposer.org/) - Dependency Manager for PHP
+- [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
+
+### Version Control
+
+- [hub](https://github.com/github/hub) -  hub helps you win at git.
+- [lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
+- [tig](https://github.com/jonas/tig) - Text-mode interface for git
+- [git-semver](https://github.com/ziishaned/git-semver) -  A CLI tool to generate semver compliant tags for your git repositories
+-[ddollar/git-utils](https://github.com/ddollar/git-utils) -  Various Git helper utilities
+
+### Scaffolding 
+
+- [hugo](https://github.com/gohugoio/hugo) -  The world’s fastest framework for building websites.
+- [saojs/sao](https://github.com/saojs/sao) - : Futuristic scaffolding tool.
+- [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
+- [Symfony Client](https://symfony.com/download) - Symfony command line tool
+- [serverless/serverless](https://github.com/serverless/serverless) -  Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
+
+### Snippets and Cheat sheets
+
+- [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
+- [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
+- [howdoi](https://github.com/gleitz/howdoi) - instant coding answers via the command line.
+
+### Docker
+
+- [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
+- [wagoodman/dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
+- [dockly](https://github.com/lirantal/dockly) - Immersive terminal interface for managing docker containers and services
+- [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
 - [kubernetes/minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
 - [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 - [kubectx](https://github.com/ahmetb/kubectx) -  Fast way to switch between clusters and namespaces in kubectl
-- [lab](https://github.com/zaquestion/lab) -  Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
-- [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
+
+### DevOps Tools
+
+- [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
+- [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
 - [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
-- [pandoc](https://github.com/jgm/pandoc) -  Universal markup converter
-- [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
-- pwgen - secure password generator.
-- [ripgrep](https://github.com/BurntSushi/ripgrep) - : ripgrep recursively searches directories for a regex pattern
-- [saojs/sao](https://github.com/saojs/sao) - : Futuristic scaffolding tool.
-- [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
 - [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
-- [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
-- [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 - [travis.rb](https://github.com/travis-ci/travis.rb) -  Travis CI Client (CLI and Ruby library)
-- [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
-- [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
-- [yadm](https://github.com/TheLocehiliosan/yadm) -  Yet Another Dotfiles Manager
-- [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
-- [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
 - [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
-- [direnv - unclutter your .profile](https://direnv.net/)
-* [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
-* [wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
-* [lirantal/dockly: Immersive terminal interface for managing docker containers and services](https://github.com/lirantal/dockly)
+
+
+### Other
+
+- [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
+- [youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
 
 ---
 
@@ -202,7 +249,7 @@ but for Linux Based Systems.
 ## Themes and Icons
 
 * [nana-4/materia-theme](https://github.com/nana-4/materia-theme) -  A Material Design theme for GNOME/GTK+ based desktop environments
-* [/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -  Papirus icon theme for Linux.
+* [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -  Papirus icon theme for Linux.
 
 --
 
