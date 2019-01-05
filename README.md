@@ -65,6 +65,7 @@
 - [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App
 - [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
 - [Raven Reader](https://electronjs.org/apps/raven-reader) - Simple RSS Reader for desktop without any distraction.
+- [brpaz/argon-browser](https://github.com/brpaz/argon-browser) - A minimalist floating browser for Linux
 
 ---
 
