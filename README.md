@@ -114,6 +114,8 @@
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Postman](https://www.getpostman.com/) - Rest API Client
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
+- [Kitematic](https://kitematic.com/) - Run containers through a simple, yet powerful graphical user interface
+- [Glade](https://glade.gnome.org/) -  A User Interface Designer
 
 ---
 
