@@ -140,7 +140,6 @@
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
-- [Do Not Disturb Button](https://extensions.gnome.org/extension/964/do-not-disturb-button/)
 - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
 - [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
@@ -150,7 +149,11 @@
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 - [Argos](https://extensions.gnome.org/extension/1176/argos/)
-- [(K)StatusNotifierItem/AppIndicator Support - GNOME Shell Extensions](https://extensions.gnome.org/extension/615/appindicator-support/)
+- [(K)StatusNotifierItem/AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
+- [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
+- [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
+- [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
 
 ---
 
@@ -162,6 +165,7 @@
 - [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed
 - [zsh\-users/zsh\-history\-substring\-search: 🐠 ZSH port of Fish history search \(up arrow\)](https://github.com/zsh-users/zsh-history-substring-search)
 - [denysdovhan/spaceship\-prompt](https://github.com/denysdovhan/spaceship-prompt) - : A Zsh prompt for Astronauts
+- [justjanne/powerline-go](https://github.com/justjanne/powerline-go) - A beautiful and useful low-latency prompt for your shell, written in go
 
 ---
 
@@ -229,7 +233,8 @@
 - [hub](https://github.com/github/hub) - hub helps you win at git.
 - [lab](https://github.com/zaquestion/lab) - Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 - [tig](https://github.com/jonas/tig) - Text-mode interface for git
-- [git-semver](https://github.com/ziishaned/git-semver) - A CLI tool to generate semver compliant tags for your git repositories -[git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
+- [git-semver](https://github.com/ziishaned/git-semver) - A CLI tool to generate semver compliant tags for your git repositories 
+- [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
 - [lord63/choosealicense-cli](https://github.com/lord63/choosealicense-cli) - Bring http://choosealicense.com to your terminal
 - [/conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
@@ -306,6 +311,11 @@
 - [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) - Papirus icon theme for Linux.
 
 --
+
+## Fonts
+
+* [tonsky/FiraCode](https://github.com/tonsky/FiraCode) - Monospaced font with programming ligatures
+* [i-tu/Hasklig: Hasklig](https://github.com/i-tu/Hasklig) -  a code font with monospaced ligatures
 
 ## VS Code Extensions
 
