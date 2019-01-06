@@ -242,6 +242,7 @@
 - [/conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
 - [arc90/git-sweep](https://github.com/arc90/git-sweep) - : A command-line tool that helps you clean up Git branches that have been merged into master.
+- [awslabs/git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and credentials into git repositories
 
 #### Scaffolding
 
