@@ -72,7 +72,7 @@
 ## Graphics & Design
 
 - [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
-- [Pinta](https://pinta-project.com/pintaproject/pinta/) - Pinta is a free, open source program for drawing and image editing. ... yet powerful way to draw and manipulate images on Linux, Mac, Windows, and \*BSD.
+- [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
 - [Inkscape](https://inkscape.org/pt/)
 - [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
 - [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
@@ -97,6 +97,7 @@
 - [FF-Multi-Converter](https://launchpad.net/ffmulticonverter/+packages) - Convert files between multiple formats
 - [Vocal](https://vocalproject.net/) - Podcast client for the free desktop.
 - [odio](https://github.com/odioapp/odio) -  odio is a free radio streaming software with more than 20,000 radio stations from around the world for Windows, MacOs and Linux
+- [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit
 
 ---
 
