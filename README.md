@@ -241,6 +241,7 @@
 - [lord63/choosealicense-cli](https://github.com/lord63/choosealicense-cli) - Bring http://choosealicense.com to your terminal
 - [/conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+- [arc90/git-sweep](https://github.com/arc90/git-sweep) - : A command-line tool that helps you clean up Git branches that have been merged into master.
 
 #### Scaffolding
 
