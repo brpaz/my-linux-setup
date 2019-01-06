@@ -278,6 +278,7 @@
 - [serverless/serverless](https://github.com/serverless/serverless)
 - [mycli](https://www.mycli.net/) - MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 - [Artillery](https://artillery.io/) - A modern load testing toolkit
+- [Redis Desktop Manager](https://redisdesktop.com/) - Redis GUI management tool for Windows, Mac OS X, Ubuntu and Debian.
 
 #### Docker
 
