@@ -41,7 +41,7 @@
 ## Productivity
 
 - [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
-- [notable](https://github.com/fabiospampinato/notable) - The markdown-based note-taking app that doesn't suck.
+- [Boostnote](https://boostnote.io/) . Open source note taking application.
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion](https://www.notion.so) - My personal Knowledge base (Web App)
