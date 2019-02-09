@@ -66,12 +66,12 @@
 - [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
 - [Raven Reader](https://electronjs.org/apps/raven-reader) - Simple RSS Reader for desktop without any distraction.
 - [brpaz/argon-browser](https://github.com/brpaz/argon-browser) - A minimalist floating browser for Linux
+- [Gnome web](https://wiki.gnome.org/Apps/Web) - Used as minimalistic browser.
 
 ---
 
 ## Graphics & Design
 
-- [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
 - [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
 - [Inkscape](https://inkscape.org/pt/)
 - [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
@@ -132,7 +132,6 @@
 - [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
 - [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 - [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
-- [rhysd/Chromenu](https://github.com/rhysd/Chromenu) - Easy access to a we browser from the menubar.
 - [Clocks](https://wiki.gnome.org/Apps/Clocks) - Displays current time in multiple timezones and add it to the calendar widget on gnome shell. (need `sudo apt install gnome-clocks` to integrate with the main application)
 - [keymon](https://www.ubuntuupdates.org/package/core/cosmic/universe/base/keymon) . Keymon displays the pressed keyboard keys on the screen, usefull for screencasts.
 
