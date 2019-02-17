@@ -107,7 +107,7 @@
 - [Intelij](https://www.jetbrains.com/idea/) - Java and Android IDE.
 - [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
 - [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
-- [SnippetStore](https://github.com/ZeroX-DG/SnippetStore) - A snippet management app for developers
+- [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 - [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 - [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux
 - [DevDocs](https://github.com/egoist/devdocs-desktop) - A full-featured desktop app for DevDocs.io.
@@ -117,6 +117,7 @@
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 - [Kitematic](https://kitematic.com/) - Run containers through a simple, yet powerful graphical user interface
 - [Glade](https://glade.gnome.org/) -  A User Interface Designer
+
 
 ---
 
@@ -157,6 +158,7 @@
 - [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
 - [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
 - [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+- [gTile](https://extensions.gnome.org/extension/28/gtile/) - Tile windows on a grid.
 
 ---
 
@@ -182,7 +184,7 @@
 - [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 - [yadm](https://github.com/TheLocehiliosan/yadm) - Yet Another Dotfiles Manager
 - [direnv - unclutter your .profile](https://direnv.net/)
-- [The Log File Navigator](http://lnav.org/)
+- [lnav](http://lnav.org/) - The Log File Navigator
 
 #### Text Mainuplation
 
@@ -263,7 +265,7 @@
 
 - [creationix/nvm](https://github.com/creationix/nvm) - Node Version Manager - Simple bash script to manage multiple active node.js versions
 - [RVM](https://rvm.io/) - Ruby Version Manager - RVM Ruby Version Manager
-- [localtunnel/localtunne](https://github.com/localtunnel/localtunnel) - l: expose yourself
+- [localtunnel/localtunnel](https://github.com/localtunnel/localtunnel) - l: expose yourself
 - [lordgiotto/google-font-installer](https://github.com/lordgiotto/google-font-installer) - Download and install Google Web Fonts on your local machine. Both CLI and API available.
 * [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 * [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
