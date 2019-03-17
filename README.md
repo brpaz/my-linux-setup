@@ -1,4 +1,4 @@
-# my-linux-setup
+# My Linux machine setup
 
 > My List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 > but for Linux Based Systems.
@@ -116,7 +116,7 @@
 - [Postman](https://www.getpostman.com/) - Rest API Client
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 - [Kitematic](https://kitematic.com/) - Run containers through a simple, yet powerful graphical user interface
-- [Glade](https://glade.gnome.org/) -  A User Interface Designer
+- [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
 
 
 ---
@@ -175,6 +175,8 @@
 ---
 
 ## Cli tools
+
+This section lists the best cli tools, I have installed in my machine.
 
 #### System Utils
 
