@@ -45,7 +45,7 @@
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion](https://www.notion.so) - My personal Knowledge base (Web App)
-- [Bookworm](https://babluboy.github.io/bookworm/) - A simple, focused eBook reader
+- [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
 - [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists (Web App)
 - [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
 
@@ -65,7 +65,7 @@
 - [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App
 - [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
 - [Raven Reader](https://electronjs.org/apps/raven-reader) - Simple RSS Reader for desktop without any distraction.
-- [brpaz/argon-browser](https://github.com/brpaz/argon-browser) - A minimalist floating browser for Linux
+- [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window
 - [Gnome web](https://wiki.gnome.org/Apps/Web) - Used as minimalistic browser.
 
 ---
@@ -73,7 +73,6 @@
 ## Graphics & Design
 
 - [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
-- [Inkscape](https://inkscape.org/pt/)
 - [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
 - [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 - [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
@@ -95,7 +94,7 @@
 - [Sound Recorder](https://wiki.gnome.org/Apps/SoundRecorder) - A simple and modern sound recorder
 - [Lollypop](https://wiki.gnome.org/Apps/Lollypop) - Lollypop is a modern music player for GNOME
 - [FF-Multi-Converter](https://launchpad.net/ffmulticonverter/+packages) - Convert files between multiple formats
-- [Vocal](https://vocalproject.net/) - Podcast client for the free desktop.
+- [Gnome Podcasts](https://wiki.gnome.org/Apps/Podcasts) - Listen to your favorite podcasts
 - [odio](https://github.com/odioapp/odio) -  odio is a free radio streaming software with more than 20,000 radio stations from around the world for Windows, MacOs and Linux
 - [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit
 
@@ -110,14 +109,14 @@
 - [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 - [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 - [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux
-- [DevDocs](https://github.com/egoist/devdocs-desktop) - A full-featured desktop app for DevDocs.io.
+- [hardpixel/devdocs-desktop](https://github.com/hardpixel/devdocs-desktop) - GTK3 application for DevDocs API documentation browser.
 - [Docker](https://www.docker.com/) - The Dev to Ops Choice for Container Platforms,
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Postman](https://www.getpostman.com/) - Rest API Client
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 - [Kitematic](https://kitematic.com/) - Run containers through a simple, yet powerful graphical user interface
 - [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
-
+- [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 
 ---
 
