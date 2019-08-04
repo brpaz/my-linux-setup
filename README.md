@@ -36,17 +36,15 @@
 
 ## Base system
 
-- I believe a development machine should be stable so, right now I am using the latest Ubuntu LTS version with Gnome as my Distro of Choice.
+- I believe a development machine should be stable but also with relatively updated packages, so after many years working on Debian based systems like Debian, Linux Mint and Ubuntu I decided to give a try to Fedora.
 
 ## Productivity
 
-- [Simplenote](https://simplenote.com/) - Simple note taking application. I use it to take quick notes that are syncing with my mobile device.
 - [Boostnote](https://boostnote.io/) . Open source note taking application.
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion](https://www.notion.so) - My personal Knowledge base (Web App)
 - [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
-- [Trello](https://github.com/danielchatfield/trello-desktop) - For my personal TODO lists (Web App)
 - [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
 
 ---
@@ -58,13 +56,11 @@
 - [Dropbox](https://www.dropbox.com/home#/)
 - [Transmission](https://transmissionbt.com/) - Torrent client
 - [uget](https://ugetdm.com/) - Download manager
-- [Franz](https://meetfranz.com/) - Franz is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts,GroupMe, Skype and many more
 - [Polari](https://wiki.gnome.org/Apps/Polari) - Gnome IRC client.
 - [Skype](https://www.skype.com/) - Official Skype Application.
 - [Slack](https://slack.com) - Official Slack application.
 - [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App
 - [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
-- [Raven Reader](https://electronjs.org/apps/raven-reader) - Simple RSS Reader for desktop without any distraction.
 - [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window
 - [Gnome web](https://wiki.gnome.org/Apps/Web) - Used as minimalistic browser.
 
@@ -102,21 +98,30 @@
 
 ## Development Tools
 
-- [PHPStorm](https://www.jetbrains.com/phpstorm/) - The Best PHP IDE by Jetbrains.
-- [Intelij](https://www.jetbrains.com/idea/) - Java and Android IDE.
-- [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
+- [JetBrains Toolbox App](https://www.jetbrains.com/toolbox/app/) -  Manage Your Jetbrains Tools with Ease.
+    - [PHPStorm](https://www.jetbrains.com/phpstorm/) - The Best PHP IDE by Jetbrains.
+    - [Intelij](https://www.jetbrains.com/idea/) - Java and Android IDE.
+    - [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
+    - [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers
 - [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
 - [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 - [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 - [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux
-- [hardpixel/devdocs-desktop](https://github.com/hardpixel/devdocs-desktop) - GTK3 application for DevDocs API documentation browser.
 - [Docker](https://www.docker.com/) - The Dev to Ops Choice for Container Platforms,
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Postman](https://www.getpostman.com/) - Rest API Client
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
-- [Kitematic](https://kitematic.com/) - Run containers through a simple, yet powerful graphical user interface
 - [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
 - [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
+
+---
+
+## Development Runtimes
+
+* PHP
+* NodeJS
+* Golang
+* Ruby
 
 ---
 
@@ -127,37 +132,37 @@
 - [Menulibre](https://launchpad.net/menulibre) - Menu editor
 - [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 - [GParted](https://gparted.sourceforge.io/) - GParted is a free partition editor for graphically managing your disk partitions
-- [GPRename](http://gprename.sourceforge.net/) - GPRename is a complete batch renamer for files and directories and is licensed under the terms of the GNU General Public Licence version 3.
 - [Crashplan](https://www.crashplan.com/en-us/) - Automatic and continuous backup to the cloud
-- [Typecatcher](https://github.com/andrewsomething/typecatcher) - Download Google webfonts on the Linux desktop
+- [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 - [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 - [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
-- [Clocks](https://wiki.gnome.org/Apps/Clocks) - Displays current time in multiple timezones and add it to the calendar widget on gnome shell. (need `sudo apt install gnome-clocks` to integrate with the main application)
 - [keymon](https://www.ubuntuupdates.org/package/core/cosmic/universe/base/keymon) . Keymon displays the pressed keyboard keys on the screen, usefull for screencasts.
 
 ---
 
 ## Gnome Extensions
 
-- [AlternateTab](https://extensions.gnome.org/extension/15/alternatetab/)
-- [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
-- [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
-- [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
-- [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
-- [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
-- [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
-- [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
-- [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
-- [Time ++](https://extensions.gnome.org/extension/1238/time/)
+- [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
+- [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
+- [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) - Replacement of Alt-Tab, iterates through windows in a cover-flow manner.
+- [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/) - This extension provides a parametrable popup menu displaying most emojis, clicking on an emoji copies it to the clipboard.
+- [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
+- [TopIcons Redux](https://extensions.gnome.org/extension/1497/topicons-redux/) - Displays legacy tray icons in the GNOME Shell top panel. Rewritten fork of TopIcons Plus.
+- [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/) - Whenever there is an unread notification (e.g. chat messages), blinks the message in the user's menu with a color chosen by the user.
+- [Time ++](https://extensions.gnome.org/extension/1238/time/) - A todo.txt manager, time tracker, timer, stopwatch, pomodoro, and alarm clock
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-- [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-- [Argos](https://extensions.gnome.org/extension/1176/argos/)
-- [(K)StatusNotifierItem/AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
-- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
+- [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, network speed and storage stats.
+- [Argos](https://extensions.gnome.org/extension/1176/argos/) - Create GNOME Shell extensions in seconds.
+- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 - [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
-- [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
-- [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+- [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/) - Activate or deactivate do not disturb mode.
 - [gTile](https://extensions.gnome.org/extension/28/gtile/) - Tile windows on a grid.
+- [Cast to TV](https://extensions.gnome.org/extension/1544/cast-to-tv/) - Cast files to Chromecast, web browser or media player app over local network.
+- [Docker Containers Extension Fork](https://extensions.gnome.org/extension/1894/docker-containers-extension/) - Docker containers list on GNOME
+- [Laine](https://extensions.gnome.org/extension/937/laine/) - Volume control extension.
+- [Argos](https://extensions.gnome.org/extension/1176/argos/) - Create GNOME Shell extensions in seconds.
+    - [pionl/bitbar-gitlab-ci](https://github.com/pionl/bitbar-gitlab-ci) -  Shows currently running pipelines from your GitLab in your bar.
+    - [wrtsprt/circle\-ci\-bitbar](https://github.com/wrtsprt/circle-ci-bitbar) - BitBar plugin to monitor CircleCI status. Written in ruby.
 
 ---
 
@@ -167,10 +172,13 @@
 - [zplug/zplug: A next\-generation plugin manager for zsh](https://github.com/zplug/zplug)
 - [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 - [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed
-- [zsh\-users/zsh\-history\-substring\-search: 🐠 ZSH port of Fish history search \(up arrow\)](https://github.com/zsh-users/zsh-history-substring-search)
-- [denysdovhan/spaceship\-prompt](https://github.com/denysdovhan/spaceship-prompt) - : A Zsh prompt for Astronauts
-- [justjanne/powerline-go](https://github.com/justjanne/powerline-go) - A beautiful and useful low-latency prompt for your shell, written in go
-
+- [zsh\-users/zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
+- [zsh\-users/zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
+- [zsh\-users/zsh\-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
+- [Powerlevel9k/powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) - The most awesome Powerline theme for ZSH around.
+. [urbainvaes/fzf\-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
+- [agkozak/zsh-z](https://github.com/agkozak/zsh-z) - Jump quickly to directories that you have visited "frecently". A native ZSH port of z.
+- [facebook/PathPicker](https://github.com/facebook/pathpicker/) - PathPicker accepts a wide range of input/output from git commands, grep results, searches pretty much anything.After parsing the input, PathPicker presents you with a nice UI to select which files you're interested in. After that you can open them in your favorite editor or execute arbitrary commands.
 ---
 
 ## Cli tools
@@ -181,15 +189,14 @@ This section lists the best cli tools, I have installed in my machine.
 
 - [htop](https://github.com/hishamhm/htop) - htop is an interactive text-mode process viewer for Unix systems.
 - [fkill-cli](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes. Cross-platform.
-- [trash-cli](https://github.com/sindresorhus/trash-cli) - : Move files and folders to the trash
+- [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
 - [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 - [yadm](https://github.com/TheLocehiliosan/yadm) - Yet Another Dotfiles Manager
-- [direnv - unclutter your .profile](https://direnv.net/)
-- [lnav](http://lnav.org/) - The Log File Navigator
+- [direnv](https://direnv.net/) - direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
 
 #### Text Mainuplation
 
-- [bat](https://github.com/sharkdp/bat) - : A cat(1) clone with wings.
+- [ccat](https://github.com/jingweno/ccat) - Colored cat
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - : Generate a markdown TOC (table of contents) for a README or any markdown files, using remarkable.
 * [citycide/tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
@@ -197,15 +204,15 @@ This section lists the best cli tools, I have installed in my machine.
 * [antonmedv/fx](https://github.com/antonmedv/fx) - : Command-line tool and terminal JSON viewer
 - [sindresorhus/parse-columns-cli](https://github.com/sindresorhus/parse-columns-cli) - Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like jq or underscore-cli.
 - [gocsv](https://github.com/DataFoxCo/gocsv) -  Command-line CSV processing utility.
-- [dedalozzo/pygmentize](https://github.com/dedalozzo/pygmentize) - Pygmentize is a wrapper to `pygmentize`, the command line interface provided by Pygments, a python syntax highlighter.
 - [mdless](https://github.com/MikeyBurkman/mdless) -  Markdown Viewer for the CLI with highlighting and paging
+- [lnav](http://lnav.org/) - The Log File Navigator
 
-#### Navigation
+#### Directory Navigation
 
 - [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder
-- [fasd](https://github.com/clvv/fasd) - Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
 - [fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 - [ranger](https://github.com/ranger/ranger) - A VIM-inspired filemanager for the console
+- [agkozak/zsh-z](https://github.com/agkozak/zsh-z) - Jump quickly to directories that you have visited "frecently".
 
 #### File search
 
@@ -241,11 +248,11 @@ This section lists the best cli tools, I have installed in my machine.
 - [tig](https://github.com/jonas/tig) - Text-mode interface for git
 - [git-semver](https://github.com/ziishaned/git-semver) - A CLI tool to generate semver compliant tags for your git repositories 
 - [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
-- [lord63/choosealicense-cli](https://github.com/lord63/choosealicense-cli) - Bring http://choosealicense.com to your terminal
 - [/conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
 - [arc90/git-sweep](https://github.com/arc90/git-sweep) - : A command-line tool that helps you clean up Git branches that have been merged into master.
 - [awslabs/git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and credentials into git repositories
+- [TejasQ/add-gitignore](https://github.com/TejasQ/add-gitignore) -  An interactive CLI tool that adds a .gitignore to your projects.
 
 #### Scaffolding
 
@@ -255,6 +262,9 @@ This section lists the best cli tools, I have installed in my machine.
 - [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 - [Symfony Client](https://symfony.com/download) - Symfony command line tool
 - [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
+- [cezaraugusto/mklicense](https://github.com/cezaraugusto/mklicense) - CLI tool for generating Licenses\. Easily.
+- [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) - The Gatsby command line interface (CLI). It is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
+- [Firebase CLI Reference](https://firebase.google.com/docs/cli) - Cli tool for interacting with firebase.
 
 #### Snippets and Cheat sheets
 
@@ -264,35 +274,36 @@ This section lists the best cli tools, I have installed in my machine.
 
 #### Dev Tools
 
-- [creationix/nvm](https://github.com/creationix/nvm) - Node Version Manager - Simple bash script to manage multiple active node.js versions
-- [RVM](https://rvm.io/) - Ruby Version Manager - RVM Ruby Version Manager
 - [localtunnel/localtunnel](https://github.com/localtunnel/localtunnel) - l: expose yourself
-- [lordgiotto/google-font-installer](https://github.com/lordgiotto/google-font-installer) - Download and install Google Web Fonts on your local machine. Both CLI and API available.
+* [wg/wrk](https://github.com/wg/wrk) - Modern HTTP benchmarking tool
 * [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 * [gcloud](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK
 * [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
 * [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
-* [travis.rb](https://github.com/travis-ci/travis.rb) - Travis CI Client (CLI and Ruby library)
 * [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
 - [AWS Command Line Interface](https://aws.amazon.com/cli)
 - [danielpigott/cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
-- [Terraform by HashiCorp](https://www.terraform.io/) - Write, Plan, and Create Infrastructure as Code
+- [Terraform](https://www.terraform.io/) - Write, Plan, and Create Infrastructure as Code
 - [serverless/serverless](https://github.com/serverless/serverless)
 - [mycli](https://www.mycli.net/) - MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 - [Artillery](https://artillery.io/) - A modern load testing toolkit
-- [Redis Desktop Manager](https://redisdesktop.com/) - Redis GUI management tool for Windows, Mac OS X, Ubuntu and Debian.
 - [kefranabg/readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
+- [carbon-now-cli](https://github.com/mixn/carbon-now-cli) - Beautiful images of your code — from right inside your terminal.
+- [commitizen](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+- [cheton/github-release-cli](https://github.com/cheton/github-release-cli) - A command-line tool for managing release assets on a GitHub repository\
+- [goreleaser/goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
+
 
 #### Docker
 
 - [docker-compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
 - [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
-- [dockly](https://github.com/lirantal/dockly) - Immersive terminal interface for managing docker containers and services
 - [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
 - [minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
 - [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 - [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
+- [jesseduffield/lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 
 #### Security
 
