@@ -311,8 +311,6 @@ I use ZSH shell with the following extras:
 - [Devilspie2](http://www.nongnu.org/devilspie2/) - Devilspie2 is a window matching utility, allowing the user to perform scripted actions on windows as they are created. For example you can script a terminal program to always be positioned at a specific screen position, or position a window on a specific workspace
 - [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
 
---
-
 ## Development Runtimes
 
 * PHP
