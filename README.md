@@ -150,6 +150,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Other
 
 - [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
+. [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) - Display and control your Android device]
 
 ---
 
