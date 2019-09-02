@@ -83,6 +83,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 - [gpick](http://www.gpick.org/) - Gpick is an advanced color picker and palette editing tool.
 - [drawio-desktop](https://github.com/jgraph/drawio-desktop) - Official electron build of draw.io
+- [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
 
 ### Sound & Video
 
@@ -130,6 +131,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 - [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 - [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
+- [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 
 ### Games
 
