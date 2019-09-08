@@ -84,6 +84,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [gpick](http://www.gpick.org/) - Gpick is an advanced color picker and palette editing tool.
 - [drawio-desktop](https://github.com/jgraph/drawio-desktop) - Official electron build of draw.io
 - [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
+- [Graphviz](https://www.graphviz.org/) - Graph Visualization Software
+- [XMind](https://www.xmind.net/) -  Mind Mapping Software
 
 ### Sound & Video
 
@@ -152,7 +154,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Other
 
 - [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
-. [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) - Display and control your Android device]
 
 ---
 
