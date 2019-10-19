@@ -56,7 +56,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application.
-- [Trello (Web App)](https://www.trello.com) - Todolist application.
 
 ### Internet
 
@@ -85,7 +84,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [drawio-desktop](https://github.com/jgraph/drawio-desktop) - Official electron build of draw.io
 - [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
 - [Graphviz](https://www.graphviz.org/) - Graph Visualization Software
-- [XMind](https://www.xmind.net/) -  Mind Mapping Software
 
 ### Sound & Video
 
