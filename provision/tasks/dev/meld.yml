@@ -1,0 +1,5 @@
+
+- name: Meld
+  dnf:
+    name: meld
+  become: true

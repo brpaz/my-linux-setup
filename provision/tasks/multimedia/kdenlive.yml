@@ -1,0 +1,9 @@
+# Kdenlive is a non linear video editor.
+# It is based on the MLT framework and accepts many audio and video formats, allows you to add effects,
+# transitions and render into the format of your choice.
+# https://flathub.org/apps/details/org.kde.kdenlive
+
+- name: Kdeenlive
+  flatpak:
+    name: org.kde.kdenlive
+    state: present

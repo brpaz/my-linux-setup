@@ -1,0 +1,13 @@
+- name: Charles | Add repository
+  yum_repository:
+    name: charles-proxy
+    description: Charles Proxy
+    baseurl: https://www.charlesproxy.com/packages/yum
+    gpgkey: https://www.charlesproxy.com/packages/yum/PublicKey
+  become: true
+
+- name: Charles | Install
+  dnf:
+    name: charles-proxy
+    state: present
+  become: true

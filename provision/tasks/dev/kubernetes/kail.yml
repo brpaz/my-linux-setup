@@ -1,0 +1,20 @@
+- name: Kail | Get release
+  github_release:
+    user: boz
+    repo: kail
+    action: latest_release
+    token: "{{ github_token }}"
+  register: kail_release
+
+- name: Kail | Download Archive
+  unarchive:
+    src: "https://github.com/boz/kail/releases/download/{{ kail_release.tag }}/kail_{{ kail_release.tag[1:] }}_linux_amd64.tar.gz"
+    remote_src: true
+    dest:  "{{ setup_dir }}"
+
+- name: Kail Install
+  copy:
+    src: "{{ setup_dir }}/kail"
+    dest: "{{ bin_dir }}"
+    mode: a+x
+  become: true

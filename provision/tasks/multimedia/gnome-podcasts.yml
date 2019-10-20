@@ -1,0 +1,15 @@
+# Listen to your favorite podcasts, right from your desktop.
+# https://flathub.org/apps/details/org.gnome.Podcasts
+
+- name: Gnome Podcasts
+  flatpak:
+    name: org.gnome.Podcasts
+    state: present
+
+- name: Gnome Podcasts Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { key: '/org/gnome/Podcasts/dark-theme', value: "true" }

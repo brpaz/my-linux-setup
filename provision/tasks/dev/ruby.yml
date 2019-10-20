@@ -1,0 +1,15 @@
+- name: Ruby | Install
+  dnf:
+    name:
+      - ruby
+      - ruby-devel
+      - zlib
+    state: present
+  become: true
+
+- name: Installs Global Rubygems
+  gem:
+    name: "{{ item }}"
+  with_items:
+     - rake
+     - bundler

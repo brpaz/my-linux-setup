@@ -1,0 +1,5 @@
+- name: Grsync
+  dnf:
+    name:  grsync
+    state: present
+  become: true

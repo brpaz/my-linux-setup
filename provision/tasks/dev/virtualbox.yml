@@ -1,0 +1,25 @@
+
+
+- name: Virtualbox | Add Repository
+  yum_repository:
+    name: virtualbox
+    description: VirtualBox
+    baseurl: http://download.virtualbox.org/virtualbox/rpm/fedora/30/$basearch
+    gpgkey:  https://www.virtualbox.org/download/oracle_vbox.asc
+  become: true
+
+- name: Virtualbox | Install dependencies
+  dnf:
+    name:
+      - kernel-devel
+      - kernel-headers
+      - dkms
+      - qt5-qtx11extras
+      - elfutils-libelf-devel
+      - zlib-devel
+  become: true
+
+- name: Virtualbox | Install
+  dnf:
+    name: VirtualBox-6.0
+  become: true

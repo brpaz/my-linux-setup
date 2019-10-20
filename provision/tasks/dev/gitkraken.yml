@@ -1,0 +1,4 @@
+- name: GitKraken
+  flatpak:
+    name: com.axosoft.GitKraken
+    state: present

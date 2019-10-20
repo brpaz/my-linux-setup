@@ -1,0 +1,15 @@
+
+- name: Python | Install packages
+  pip:
+    name:
+      - requests
+      - bandit
+      - flake8
+      - pyflakes
+      - pycodestyle
+      - yapf
+      - pre-commit
+      - mkdocs
+      - glances
+      - socli
+  become: true

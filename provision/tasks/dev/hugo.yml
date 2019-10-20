@@ -1,0 +1,23 @@
+
+- name: hugo | Get latest release
+  github_release:
+    user: gohugoio
+    repo: hugo
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: "Hugo | Download"
+  unarchive:
+    src: "https://github.com/gohugoio/hugo/releases/download/{{ release.tag }}/hugo_{{ release.tag[1:] }}_Linux-64bit.tar.gz"
+    remote_src: true
+    dest: "{{ setup_dir }}"
+    extra_opts: [--strip-components=1]
+  become: true
+
+- name: "hugo | install"
+  copy:
+    src: "{{ setup_dir }}/hugo"
+    dest: "{{ bin_dir }}/hugo"
+    mode: 'a+x'
+  become: true

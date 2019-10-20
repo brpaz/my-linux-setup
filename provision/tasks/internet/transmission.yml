@@ -1,0 +1,4 @@
+- name: Transmission
+  dnf:
+    name: transmission
+  become: true

@@ -1,0 +1,23 @@
+- name: Install base system packages
+  dnf:
+    name:
+      - 'git'
+      - 'curl'
+      - 'wget'
+      - 'unzip'
+      - 'vim'
+      - 'python2'
+      - 'python-psutil'
+      - 'dconf-editor'
+      - 'dnf-plugins-core'
+      - 'make'
+      - 'pwgen'
+      - 'lnav'
+      - 'httpie'
+      - 'htop'
+      - 'iotop'
+      - 'ncdu'
+      - 'tree'
+      - 'figlet'
+    state: present
+  become: true

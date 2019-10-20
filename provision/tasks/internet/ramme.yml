@@ -1,0 +1,14 @@
+
+- name: Ramme | get latest release
+  github_release:
+    user: terkelg
+    repo: ramme
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Ramme | Install
+  dnf:
+    name: "https://github.com/terkelg/ramme/releases/download/{{ release.tag }}/Ramme-{{ release.tag[1:] }}.x86_64.rpm"
+    state: present
+  become: true

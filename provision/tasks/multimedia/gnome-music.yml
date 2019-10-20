@@ -1,0 +1,5 @@
+- name: Gnome Music
+  dnf:
+    name: gnome-music
+    state: present
+  become: true

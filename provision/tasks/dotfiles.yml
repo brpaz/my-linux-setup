@@ -1,0 +1,28 @@
+- name: Insalls YADM Copr repository
+  command: dnf copr enable -y thelocehiliosan/yadm
+  args:
+    creates: copr:copr.fedorainfracloud.org:thelocehiliosan:yadm.repo
+  become: true
+
+- name: Installs yadm
+  dnf:
+    name: yadm
+    state: present
+  become: true
+
+- name: Dotfiles | Clone Repository
+  command: yadm clone "{{ dotfiles_repo_url }}"
+  args:
+    creates: "{{ ansible_env.HOME }}/.yadm"
+
+- name: Dotfiles | Decrypt
+  command: yadm decrypt
+
+- name: Dotfiles | Update remote url to ssh
+  command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"
+
+- name: Dotfiles | Fix netrc permissions
+  file:
+    path: "{{ ansible_env.HOME }}/.netrc"
+    mode: '0600'
+  become: true

@@ -1,0 +1,30 @@
+- name: Git Tools
+  dnf:
+    name:
+      - hub
+      - tig
+      - git-extras
+    state: present
+  become: true
+
+- name: lab | Get latest release
+  github_release:
+    user: zaquestion
+    repo: lab
+    action: latest_release
+    token: "{{ github_token }}"
+  register: lab_release
+
+- name: "Lab | Download"
+  unarchive:
+     src: "https://github.com/zaquestion/lab/releases/download/{{ lab_release.tag }}/lab_{{ lab_release.tag[1:] }}_linux_amd64.tar.gz"
+     remote_src: true
+     dest: "{{ setup_dir }}"
+  become: true
+
+- name: "Lab | install"
+  copy:
+    src: "{{ setup_dir }}/lab"
+    dest: "{{ bin_dir }}"
+    mode: 'a+x'
+  become: true

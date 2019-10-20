@@ -1,0 +1,25 @@
+
+- name: Caprine | get latest release
+  github_release:
+    user: sindresorhus
+    repo: caprine
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Caprine | Download AppImage
+  get_url:
+    url: "https://github.com/sindresorhus/caprine/releases/download/{{ release.tag }}/Caprine-{{ release.tag[1:] }}.AppImage"
+    dest: "{{ setup_dir }}/Caprine.AppImage"
+
+- name: Caprine | Copy AppImage to install directory
+  copy:
+    src: "{{ setup_dir }}/Caprine.AppImage"
+    dest: /opt/Caprine.AppImage
+    mode: a+x
+  become: true
+
+- name: Caprine | Copy desktop file
+  copy:
+    src: applications/caprine.desktop
+    dest: "{{ applications_dir }}/caprine.desktop"

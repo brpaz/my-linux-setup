@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/devilspie2 --folder=/home/bruno/.config/devilspie2
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Devilspie
+Name=Devilspie
+Comment[en_US]=Start devilspie - Automatic Placement of Windows on a Linux Desktop
+Comment=Start devilspie - Automatic Placement of Windows on a Linux Desktop

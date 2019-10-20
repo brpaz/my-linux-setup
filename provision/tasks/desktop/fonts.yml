@@ -1,0 +1,27 @@
+- name: Font Finder
+  flatpak:
+    name: io.github.mmstick.FontFinder
+    state: present
+
+- name: Fira Code | Add repository
+  command: dnf copr enable -y evana/fira-code-fonts
+  args:
+    creates: /etc/yum.repo.d/_copr:copr.fedorainfracloud.org:evana:fira-code-fonts.repo
+    warn: false
+  become: true
+
+- name:  Fira Code | Install
+  dnf:
+    name:  fira-code-fonts
+    state: present
+  become: true
+
+- name: Ensure Local Fonts folder exists
+  file:
+    path: "{{ ansible_env.HOME }}/.local/share/fonts"
+    state: directory
+
+- name: Copy Fonts
+  copy:
+    src: fonts
+    dest: "{{ ansible_env.HOME }}/.local/share"

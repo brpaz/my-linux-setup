@@ -1,0 +1,5 @@
+- name: Bleachbit
+  dnf:
+    name:  bleachbit
+    state: present
+  become: true

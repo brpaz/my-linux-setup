@@ -1,0 +1,13 @@
+- name: "dive | Download"
+  unarchive:
+     src: "https://github.com/wagoodman/dive/releases/download/v0.8.1/dive_0.8.1_linux_amd64.tar.gz"
+     remote_src: true
+     dest: "{{ setup_dir }}"
+  become: true
+
+- name: "dive | install"
+  copy:
+    src: "{{ setup_dir }}/dive"
+    dest: "{{ bin_dir }}/dive"
+    mode: 'a+x'
+  become: true

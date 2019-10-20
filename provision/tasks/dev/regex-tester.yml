@@ -1,0 +1,4 @@
+- name:  Regex Tester
+  flatpak:
+    name: com.github.artemanufrij.regextester
+    state: present

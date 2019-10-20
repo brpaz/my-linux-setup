@@ -1,0 +1,5 @@
+- name: Sqllite browser
+  dnf:
+    name: sqlitebrowser
+    state: present
+  become: true

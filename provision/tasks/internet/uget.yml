@@ -1,0 +1,4 @@
+- name: Uget
+  dnf:
+    name: uget
+  become: true

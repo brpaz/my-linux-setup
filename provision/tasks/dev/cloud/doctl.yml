@@ -1,0 +1,13 @@
+- name: doctl | Get latest release
+  github_release:
+    user: digitalocean
+    repo: doctl
+    action: latest_release
+  register: release
+  
+- name: "doctl | Download "
+  unarchive:
+     src: "https://github.com/digitalocean/doctl/releases/download/{{release.tag}}/doctl-{{release.tag[1:]}}-linux-amd64.tar.gz"
+     remote_src: true
+     dest: "{{bin_dir}}"
+  become: true

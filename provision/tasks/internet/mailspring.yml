@@ -1,0 +1,5 @@
+- name: Mailspring
+  dnf:
+    name: 'https://updates.getmailspring.com/download?platform=linuxRpm'
+    state: present
+  become: true

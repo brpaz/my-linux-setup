@@ -1,0 +1,8 @@
+# draw.io is the most flexible and privacy-focused of any production grade diagramming tool.
+# Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
+# https://flathub.org/apps/details/com.jgraph.drawio.desktop
+
+- name: Draw.io Desktop
+  flatpak:
+    name: com.jgraph.drawio.desktop
+    state: present

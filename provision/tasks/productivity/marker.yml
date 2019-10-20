@@ -1,0 +1,4 @@
+- name: Marker
+  flatpak:
+    name: com.github.fabiocolacio.marker
+    state: present

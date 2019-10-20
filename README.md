@@ -2,6 +2,8 @@
 
 > This repo contains a List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os), but for Linux Based Systems.
 
+For an automated provision scripts, powered by Ansible, please check the "provision" folder.
+
 ## Table of Contents
 
 - [My Linux machine setup](#my-linux-machine-setup)
@@ -56,6 +58,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application.
+- [Marker](https://flathub.org/apps/details/com.github.fabiocolacio.marker) - Powerfull Markdown editor.
+- [Master PDF Editor](https://code-industry.net/masterpdfeditor/) - Edit text and images in PDF files
+- [OpenPaper.work](https://openpaper.work/en-us/) -  Paperwork - Document management made fast and eas
 
 ### Internet
 
@@ -67,11 +72,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Polari](https://wiki.gnome.org/Apps/Polari) - Gnome IRC client.
 - [Skype](https://www.skype.com/) - Official Skype Application.
 - [Slack](https://slack.com) - Official Slack application.
-- [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App
 - [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
+- [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App.
+- [Caprine](https://github.com/sindresorhus/caprine) - Elegant Facebook Messenger desktop app
 - [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window
-- [Gufw Firewall](http://gufw.org/) - Firewall
-  
+- [Gufw Firewall](http://gufw.org/) - Gui for ufw, Uncomplicated Firewall.
+- [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application - 
+
 ### Graphics & Design
 
 - [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
@@ -95,7 +102,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor
 - [Sound Recorder](https://wiki.gnome.org/Apps/SoundRecorder) - A simple and modern sound recorder
 - [Lollypop](https://wiki.gnome.org/Apps/Lollypop) - Lollypop is a modern music player for GNOME.
-- [FF-Multi-Converter](https://launchpad.net/ffmulticonverter/+packages) - Convert files between multiple formats
+- [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 - [Gnome Podcasts](https://wiki.gnome.org/Apps/Podcasts) - Listen to your favorite podcasts.
 - [Gradio](https://flathub.org/apps/details/de.haeckerfelix.gradio) - Find and listen to internet radio stations.
 - [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit.
@@ -132,6 +139,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 - [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
 - [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
+- [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
 
 ### Games
 
@@ -142,12 +150,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Themes and Icons
 
 - [nana-4/materia-theme](https://github.com/nana-4/materia-theme) - A Material Design theme for GNOME/GTK+ based desktop environments
+- [arc-theme](https://github.com/horst3180/arc-theme) -  A flat theme with transparent elements.
 - [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) - Papirus icon theme for Linux.
 
 ### Fonts
 
 * [tonsky/FiraCode](https://github.com/tonsky/FiraCode) - Monospaced font with programming ligatures
-* [i-tu/Hasklig: Hasklig](https://github.com/i-tu/Hasklig) -  a code font with monospaced ligatures
+* [i-tu/Hasklig: Hasklig](https://github.com/i-tu/Hasklig) - A code font with monospaced ligatures
 
 ### Other
 
@@ -163,13 +172,14 @@ A big part of my Development life is spent on the Terminal, so having a good set
 
 I use ZSH shell with the following extras:
 
-- [zplug/zplug: A next\-generation plugin manager for zsh](https://github.com/zplug/zplug)
+- [zplug](https://github.com/zplug/zplug) - A next-generation plugin manager for zsh
 - [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 - [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed
-- [zsh\-users/zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
-- [zsh\-users/zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
-- [zsh\-users/zsh\-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
-- [Powerlevel9k/powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) - The most awesome Powerline theme for ZSH around.
+- [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
+- [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k) - A fast reimplementation of Powerlevel9k ZSH theme
+- [fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users.
 
 ### File Navigation and Search
 
@@ -186,15 +196,15 @@ I use ZSH shell with the following extras:
 - [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
 - [ccat](https://github.com/jingweno/ccat) - Colored cat.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
-* [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer.
-* [mikefarah/yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
+* [fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer.
+* [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
 * [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - Generate a markdown TOC (table of contents) for a README or any markdown files, using remgearkable.
-* [citycide/tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
+* [tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
-- [sindresorhus/parse-columns-cli](https://github.com/sindresorhus/parse-columns-cli) - Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like jq or underscore-cli.
+- [parse-columns-cli](https://github.com/sindresorhus/parse-columns-cli) - Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like jq or underscore-cli.
 - [mdless](https://github.com/MikeyBurkman/mdless) -  Markdown Viewer for the CLI with highlighting and paging
 - [lnav](http://lnav.org/) - The Log File Navigator
-- [sindresorhus/hasha-cli](https://github.com/sindresorhus/hasha-cli) - hashing made simple. Get the hash of text or stdin.
+- [hasha-cli](https://github.com/sindresorhus/hasha-cli) - hashing made simple. Get the hash of text or stdin.
 
 ### Multimedia
 
@@ -207,7 +217,9 @@ I use ZSH shell with the following extras:
 ### Networking
 
 - Netstat
-- [sindresorhus/get-port-cli](https://github.com/sindresorhus/get-port-cli) - Get an available port
+- iotop
+- nmap
+- [get-port-cli](https://github.com/sindresorhus/get-port-cli) - Get an available port
 
 ### Http Tools
 
@@ -229,8 +241,7 @@ I use ZSH shell with the following extras:
 - [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
 - [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
-- [cheton/github-release-cli](https://github.com/cheton/github-release-cli) - A command-line tool for managing release assets on a GitHub repository
-- [semantic\-release/semantic\-release](https://github.com/semantic-release/semantic-release) - Fully automated version management and package publishing.
+- [semantic-release](https://github.com/semantic-release/semantic-release) - Fully automated version management and package publishing.
 - [goreleaser/goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
 - [arc90/git-sweep](https://github.com/arc90/git-sweep) - : A command-line tool that helps you clean up Git branches that have been merged into master.
 - [cezaraugusto/mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses\. Easily\.
@@ -246,11 +257,11 @@ I use ZSH shell with the following extras:
 - [Symfony CLI](https://symfony.com/download) - Symfony command line tool
 - [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
 - [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) - The Gatsby command line interface (CLI). It is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
-- [kefranabg/readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
+- [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
   
 ### Snippets and Cheat sheets
 
-- [CacherApp/cacher\-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
+- [cacher-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
 - [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
 - [pet](https://github.com/knqyf263/pet) - Simple command\-line snippet manager, written in Go
 - [santinic/how2](https://github.com/santinic/how2) -  stackoverflow from the terminal
@@ -264,7 +275,7 @@ I use ZSH shell with the following extras:
 * [Aws cli](https://aws.amazon.com/cli) - AWS Command Line Interface.
 * [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
 * [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
-* [danielpigott/cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
+* [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 
 ### Docker Tools
 
@@ -285,19 +296,18 @@ I use ZSH shell with the following extras:
 ### Security
 
 - [pwgen](https://linux.die.net/man/1/pwgen) - make pronounceable passwords.
-- [lastpass/lastpass-cli](https://github.com/lastpass/lastpass-cli) - LastPass command line interface tool
+- [lastpass-cli](https://github.com/lastpass/lastpass-cli) - LastPass command line interface tool
 
 ### System Utils
 
 - [htop](https://github.com/hishamhm/htop) - htop is an interactive text-mode process viewer for Unix systems.
-- [bcicen/ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics.
 - [fkill-cli](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes. Cross-platform.
 - [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
 - [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 - [yadm](https://github.com/TheLocehiliosan/yadm) - Dotfiles Manager.
-- [direnv](https://direnv.net/) - direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
+- [autoenv](https://github.com/inishchith/autoenv) - Directory-based environments.
 - [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
-- [nicolargo/glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
+- [glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
 
 ### Other
 

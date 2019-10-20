@@ -1,0 +1,69 @@
+
+# =======================
+# Languages and runtimes
+# =======================
+- include: python.yml
+- include: ruby.yml
+- include: php.yml
+- include: node.yml
+- include: golang.yml
+- include: java.yml
+
+# =======================
+# Tools
+# =======================
+- include: vscode.yml
+- include: postman.yml
+- include: meld.yml
+- include: gitkraken.yml
+- include: regex-tester.yml
+- include: virtualbox.yml
+- include: dbeaver.yml
+- include: glade.yml
+- include: hugo.yml
+- include: jetbrains-toolbox.yml
+
+# ===================
+# Docker
+# ===================
+- include: docker/docker.yml
+- include: docker/compose.yml
+- include: docker/traefik.yml
+- include: docker/portainer.yml
+- include: docker/ctop.yml
+- include: docker/dive.yml
+
+# ============================
+# Kubernetes
+# ============================
+- include: kubernetes/minikube.yml
+- include: kubernetes/kubectl.yml
+- include: kubernetes/kubectx.yml
+- include: kubernetes/helm.yml
+- include: kubernetes/kail.yml
+- include: kubernetes/kubernetic.yml
+- include: kubernetes/telepresence.yml
+
+# ===================
+# Cloud tools
+# ===================
+- include: cloud/awscli.yml
+- include: cloud/doctl.yml
+- include: cloud/gcloud.yml
+- include: cloud/heroku.yml
+
+# ===================
+# Other
+# ===================
+- include: autoenv.yml
+- include: mkcert.yml
+- include: dbcli.yml
+- include: pet.yml
+- include: tldr.yml
+- include: zeal.yml
+- include: git-tools.yml
+- include: teleconsole.yml
+- include: charles.yml
+- include: terraform.yml
+- include: sqllitebrowser.yml
+- include: cacher.yml

@@ -1,0 +1,4 @@
+- name: Feed Reader
+  flatpak:
+    name: org.gnome.FeedReader
+    state: present

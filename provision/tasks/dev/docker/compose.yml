@@ -1,0 +1,14 @@
+- name: Docker-Compose | Get latest release
+  github_release:
+    user: docker
+    repo: compose
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Docker-Compose | Install
+  get_url:
+    url: https://github.com/docker/compose/releases/download/{{ release.tag }}/docker-compose-Linux-x86_64
+    dest: "{{ bin_dir }}/docker-compose"
+    mode: a+x
+  become: true

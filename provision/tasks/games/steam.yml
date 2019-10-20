@@ -1,0 +1,5 @@
+
+- name: Steam | Install
+  flatpak:
+    name:  com.valvesoftware.Steam
+    state: present

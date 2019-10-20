@@ -1,0 +1,4 @@
+- name: Skype
+  flatpak:
+    name: com.skype.Client
+    state: present

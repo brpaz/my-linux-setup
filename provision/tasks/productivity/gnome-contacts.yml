@@ -1,0 +1,5 @@
+- name: Gnome Contacts
+  dnf:
+    name: 'gnome-contacts'
+    state: present
+  become: true

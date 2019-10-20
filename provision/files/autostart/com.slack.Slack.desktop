@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Slack
+Comment=Slack Desktop
+GenericName=Slack Client for Linux
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=slack --file-forwarding com.slack.Slack -u @@u %U @@
+Icon=com.slack.Slack
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Network;InstantMessaging;
+MimeType=x-scheme-handler/slack;
+X-Desktop-File-Install-Version=0.23
+StartupWMClass=Slack
+X-Flatpak-RenamedFrom=slack.desktop;
+X-Flatpak=com.slack.Slack
+X-GNOME-Autostart-Delay=1

@@ -1,0 +1,11 @@
+- name: Insalls Wrk Copr repository
+  command: dnf copr enable -y getpagespeed/wrk
+  #args:
+  #  creates: copr:copr.fedorainfracloud.org:thelocehiliosan:yadm.repo
+  become: true
+
+- name: Installs wrk
+  dnf:
+    name: wrk
+    state: present
+  become: true

@@ -1,0 +1,50 @@
+- name: Dnsmasq | Configure Network Manager
+  copy:
+    dest: "/etc/NetworkManager/conf.d/dnsmasq.conf"
+    content: |
+      [main]
+      dns=dnsmasq
+  become: true
+
+- name: Set nameservers
+  copy:
+    dest: /etc/NetworkManager/system-connections/my.conf
+    content: |
+      [ipv4]
+      method=auto
+      dns=8.8.8.8;4.2.2.2;
+      ignore-auto-dns=true
+  become: true
+
+- name: Dnsmasq | Ensure config directory
+  file:
+    path: /etc/NetworkManager/dnsmasq.d
+    state: directory
+  become: true
+
+- name: Dnsmasq | Configure entry for .lh domain
+  copy:
+    dest: "/etc/NetworkManager/dnsmasq.d/lh.conf"
+    content: "address=/lh/127.0.0.1"
+  become: true
+
+- name: Dnsmasq | Configure entry for .docker domain
+  copy:
+    dest: "/etc/NetworkManager/dnsmasq.d/docker.conf"
+    content: "address=/docker/127.0.0.1"
+  become: true
+
+- name: Dnsmasq | Configure entry for .mkbube domain
+  copy:
+    dest: "/etc/NetworkManager/dnsmasq.d/mkube.conf"
+    content: "address=/docker/192.168.1.100"
+  become: true
+
+- name: Restart network manager
+  systemd:
+    name: "{{ item }}"
+    state: restarted
+  with_items:
+    - dnsmasq
+    - NetworkManager
+  become: true

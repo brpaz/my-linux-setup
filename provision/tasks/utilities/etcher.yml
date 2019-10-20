@@ -1,0 +1,12 @@
+- name: Etcher | Add Repository
+  command: dnf config-manager --add-repo https://balena.io/etcher/static/etcher-rpm.repo
+  args:
+    creates: /etc/yum.repos.d/eetcher.repo
+    warn: false
+  become: true
+
+- name: Etcher | Install
+  dnf:
+    name: balena-etcher-electron
+    state: present
+  become: true

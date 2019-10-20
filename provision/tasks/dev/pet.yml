@@ -1,0 +1,13 @@
+
+- name: Pet | Get latest release
+  github_release:
+    user: knqyf263
+    repo: pet
+    action: latest_release
+  register: release
+
+- name: Pet
+  dnf:
+    name: "https://github.com/knqyf263/pet/releases/download/{{ release.tag }}/pet_{{ release.tag[1:] }}_linux_amd64.rpm"
+    state: present
+  become: true

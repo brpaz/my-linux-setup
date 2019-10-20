@@ -1,0 +1,7 @@
+# Audacity® is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.
+# https://flathub.org/apps/details/org.audacityteam.Audacity
+
+- name: Audacity
+  flatpak:
+    name: org.audacityteam.Audacity
+    state: present

@@ -1,0 +1,5 @@
+- name: Graphviz
+  dnf:
+    name: graphviz
+    state: present
+  become: true

@@ -1,0 +1,4 @@
+- name: Remmina
+  dnf:
+    name: remmina
+  become: true

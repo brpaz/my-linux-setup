@@ -1,0 +1,5 @@
+- name: Kazam
+  dnf:
+    name: kazam
+    state: present
+  become: true

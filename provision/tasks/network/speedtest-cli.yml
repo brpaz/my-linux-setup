@@ -1,0 +1,5 @@
+- name: Speedtest
+  pip:
+    name: speedtest-cli
+    state: present
+  become: true

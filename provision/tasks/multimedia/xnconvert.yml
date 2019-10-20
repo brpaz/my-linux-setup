@@ -1,0 +1,7 @@
+# Easily batch process images and edit metadata.
+# https://www.xnview.com/en/xnconvert/
+
+- name: XnConverter
+  flatpak:
+    name: com.xnview.XnConvert
+    state: present
