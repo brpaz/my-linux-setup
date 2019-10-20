@@ -45,6 +45,7 @@
   # Default: "ERROR"
   #
   # level = "DEBUG"
+  level = "INFO"
 
   # Sets the filepath for the traefik log. If not specified, stdout will be used.
   # Intermediate directories are created if necessary.
@@ -108,6 +109,7 @@
   # Default: true
   #
   dashboard = true
+  insecure = true
 
 ################################################################
 # Ping configuration
