@@ -23,42 +23,38 @@
         state: absent
       become: true
   tasks:
-
     - import_tasks: tasks/system/main.yml
-      tags: ['system']
+      tags: ["system"]
 
     - import_tasks: tasks/dotfiles.yml
-      tags: ['dotfiles']
+      tags: ["dotfiles"]
 
     - import_tasks: tasks/shell/main.yml
-      tags: ['shell']
+      tags: ["shell"]
 
     - import_tasks: tasks/cli/main.yml
-      tags: ['cli']
+      tags: ["cli"]
 
     - import_tasks: tasks/internet/main.yml
-      tags: ['internet']
+      tags: ["internet"]
 
     - import_tasks: tasks/productivity/main.yml
-      tags: ['productivity']
+      tags: ["productivity"]
 
     - import_tasks: tasks/utilities/main.yml
-      tags: ['utilities']
+      tags: ["utilities"]
 
     - import_tasks: tasks/multimedia/main.yml
-      tags: ['multimedia']
+      tags: ["multimedia"]
 
     - import_tasks: tasks/dev/main.yml
-      tags: ['dev']
+      tags: ["dev"]
 
     - import_tasks: tasks/games/main.yml
-      tags: ['games']
+      tags: ["games"]
 
     - import_tasks: tasks/network/main.yml
-      tags: ['networking']
+      tags: ["networking"]
 
     - import_tasks: tasks/desktop/main.yml
-      tags: ['desktop']
-
-    - import_tasks: tasks/webapps/main.yml
-      tags: ['webapps']
+      tags: ["desktop"]

@@ -1,12 +1,14 @@
-
 # =======================
 # Languages and runtimes
 # =======================
 - include: python.yml
 - include: ruby.yml
 - include: php.yml
+  tags: ["php"]
 - include: node.yml
+  tags: ["node"]
 - include: golang.yml
+  tags: ["golang"]
 - include: java.yml
 
 # =======================
@@ -37,6 +39,7 @@
 # Kubernetes
 # ============================
 - include: kubernetes/minikube.yml
+  tags: ["minikube"]
 - include: kubernetes/kubectl.yml
 - include: kubernetes/kubectx.yml
 - include: kubernetes/helm.yml

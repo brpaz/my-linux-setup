@@ -1,7 +1,8 @@
 user: bruno
-setup_dir: /tmp/fedora_setup
+setup_dir: /tmp/setup
 bin_dir: /usr/local/bin
 dotfiles_repo_url: https://brpaz:{{ github_token }}@github.com/brpaz/dotfiles.git
 dotfiles_ssh_repo_url: git@github.com:brpaz/dotfiles.git
-shell_completions_dir:  "{{ ansible_env.HOME }}/.zsh/completion"
+shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"
 applications_dir: "{{ ansible_env.HOME }}/.local/share/applications"
+cryptomator_version: 1.4.15

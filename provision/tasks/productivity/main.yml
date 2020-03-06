@@ -4,3 +4,5 @@
 - include: foliate.yml
 - include: marker.yml
 - include: pdf-master.yml
+- include: notable.yml
+  tags: ["notable"]

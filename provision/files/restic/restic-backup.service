@@ -1,0 +1,7 @@
+[Unit]
+Description=Restic backup service
+[Service]
+Type=oneshot
+ExecStart=restic backup --verbose --one-file-system --tag systemd.timer -o b2.connections=10 $BACKUP_EXCLUDES $BACKUP_PATHS
+ExecStartPost=restic forget --verbose --tag systemd.timer --group-by "paths,tags" --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS
+EnvironmentFile=%h/.config/restic/restic-backup.conf

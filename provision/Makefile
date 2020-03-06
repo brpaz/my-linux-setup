@@ -12,8 +12,14 @@ lint: ## Lints the ansible playbook
 setup: ## Run initial setup script
 	sh setup.sh
 
-play: ## Runs the main playbook
+run: ## Runs the main playbook
 	ansible-playbook setup.yml --ask-become-pass -i hosts
+
+run-tag:
+	ansible-playbook setup.yml --ask-become-pass -i hosts --tags $(TAG)
+
+preview: ## Preview
+	ansible-playbook setup.yml --ask-become-pass -i hosts --check --diff
 
 help: ## Display this help screen
 	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

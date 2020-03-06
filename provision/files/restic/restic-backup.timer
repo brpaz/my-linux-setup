@@ -1,0 +1,7 @@
+[Unit]
+Description=Restic Weekly Backups
+[Timer]
+OnCalendar=weekly
+Persistent=true
+[Install]
+WantedBy=timers.target

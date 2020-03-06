@@ -1,8 +1,8 @@
 - name: Cryptomator | Download AppImage
   get_url:
-    url: https://dl.bintray.com/cryptomator/cryptomator/1.4.15/cryptomator-1.4.15-x86_64.AppImage
+    url: https://dl.bintray.com/cryptomator/cryptomator/{{ cryptomator_version }}/cryptomator-{{ cryptomator_version }}-x86_64.AppImage
     dest: /opt/Cryptomator.AppImage
-    mode: 'a+x'
+    mode: "a+x"
   become: true
 
 - name: Cryptomator | Copy Desktop file
