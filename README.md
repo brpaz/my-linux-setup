@@ -54,7 +54,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Productivity
 
 - [Libreoffice](https://libreoffice.org) - Office suite.
-- [Joplin](https://joplinapp.org/) - An open source note taking and to\-do application with synchronisation capabilities
+- [Notable](https://github.com/notable/notable) - The Markdown-based note-taking app that doesn't suck.
 - [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 - [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 - [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application.
@@ -125,6 +125,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 - [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
 - [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
+- [Kubernetic](https://kubernetic.com/) - The Kubernetes Desktop Client
 
 ### Utilities
 
@@ -292,6 +293,7 @@ I use ZSH shell with the following extras:
 
 - [Terraform](https://www.terraform.io/) - Write, Plan, and Create Infrastructure as Code.
 - [Ansible](https://www.ansible.com/) - Simple, agentless IT automation that anyone can use.
+- [Pulumi](https://www.pulumi.com/) -  Modern Infrastructure as Code
 
 ### Security
 
