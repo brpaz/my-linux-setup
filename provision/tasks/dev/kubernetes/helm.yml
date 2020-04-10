@@ -35,3 +35,6 @@
 
 - name: Helm | Install helm-secrets plugin
   command: helm plugin install https://github.com/futuresimple/helm-secrets
+
+- name: Helm | Add fluxcd repo
+  command: helm repo add fluxcd https://charts.fluxcd.io

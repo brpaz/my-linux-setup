@@ -1,5 +1,0 @@
-- name: Zeal
-  dnf:
-    name: zeal
-    state: present
-  become: true

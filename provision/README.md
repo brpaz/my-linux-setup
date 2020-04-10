@@ -1,16 +1,17 @@
-# Fedora Laptop Provision
+# My Laptop Provision Playbooks
 
-> [Ansible](https://www.ansible.com/) playbooks to provision my Fedora Laptop.
+> Set of [Ansible](https://www.ansible.com/) playbooks to provision a Fedora machine with all my applications and settings.
 
-## System Requirements
+## Pre-requisites
 
-* Fedora 30 with [Ansible](https://www.ansible.com/) installed.
-* Python
-* GitHub personal access token.
+* A machie running Fedora. (This playbook was tested with Fedora 30).
+* GitHub personal access token. You can get one [here](https://github.com/settings/tokens).
 
-## Usage
+## Initial Setup of a New machine
 
-```
+To provision a new machine open a terminal window and run the following commands:
+
+```sh
 export GITHUB_TOKEN=<my_github_token>
 git clone https://github.com/brpaz/fedora-bootstrap.git
 sudo chmod +x setup.sh
@@ -19,14 +20,36 @@ sudo chmod +x setup.sh
 
 **Note** When installing dotfiles you will be prompted for the "pgp" key to decrypt the secure files. Make sure to have it at hand.
 
-## Manual Steps
+### Manual Steps
 
 Unfortunately not everything can be automated and some manual steps will be required after running this scripts.
 
 * Execute Jetbrains toolbox and install the IDEs
-* Install [Crashplan](https://download.code42.com/installs/agent/7.2.0/1641/install/CrashPlanSmb_7.2.0_1525200006720_1641_Linux.tgz)
 * Open Web browser and enter the "Sync Password" to sync all the extensions, bookmarks etc.
-* Install Zeal Docsets
+* Install [DevDocs Desktop](https://github.com/hardpixel/devdocs-desktop) and enable docsets
+* Install [Ulauncher Extensions](https://ext.ulauncher.io/)
+* Login into applications (Spotify, etc).
+
+---
+
+## Keep the system updated
+
+Most of the tasks are idenpotent and you can use this playbook to keep your system updated. This is useful, for example, to automatically update all the programs installed from GitHub, as the playbooks will try to fetch and install always the latest release.
+
+You can execute a specific tag, by running:
+
+```
+ TAG=node make run-tag
+```
+
+---
+
+## TODO
+
+* Add nativefier based applications: (Google Keep, TickTick, Notion)
+* Clean up Gnome configurations.
+
+---
 
 ## Reference
 
@@ -38,9 +61,8 @@ Unfortunately not everything can be automated and some manual steps will be requ
 
 👤 **Bruno Paz**
 
-* Website: [brunopaz.net](https://brunopaz.net)
+* Website: [brunopaz.dev](https://brunopaz.dev)
 * Github: [@brpaz](https://github.com/brpaz)
-
 
 ## 📝 License
 

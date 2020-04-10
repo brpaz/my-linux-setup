@@ -97,7 +97,6 @@
   tags: ["pet"]
 - include: tldr.yml
   tags: ["tldr"]
-- include: zeal.yml
 - include: git-tools.yml
 - include: teleconsole.yml
 - include: charles.yml
@@ -109,5 +108,5 @@
   tags: ["pulumi"]
 - include: sops.yml
   tags: ["sops"]
-- include: spotlight-studio.ymç
+- include: spotlight-studio.yml
   tags: ["spotlight-studio"]

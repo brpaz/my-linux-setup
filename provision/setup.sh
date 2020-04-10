@@ -2,7 +2,7 @@
 set -e
 
 ## Installs Ansible
-sudo dnf update && sudo dnf install -y ansible make
+sudo dnf update && sudo dnf install -y ansible make pip3
 
 ansible --version
 

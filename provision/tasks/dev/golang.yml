@@ -7,4 +7,5 @@
 - name: Golang | Install global Go tools
   command: go get {{item}}
   with_items:
-    -  github.com/mgechev/revive
+    - github.com/mgechev/revive
+    - honnef.co/go/tools/cmd/staticcheck

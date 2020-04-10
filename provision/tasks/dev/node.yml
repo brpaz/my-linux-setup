@@ -51,3 +51,4 @@
     - "typescript"
     - "fx"
     - "@cacherapp/cli@"
+    - "fast-cli"
