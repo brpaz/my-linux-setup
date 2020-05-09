@@ -73,6 +73,8 @@
   tags: ["kubernetes", "telepresence"]
 - include: kubernetes/kubeseal.yml
   tags: ["kubernetes", "kubeseal"]
+- include: kubernetes/kustomize.yml
+  tags: ["kubernetes", "kustomize"]
 
 # ===================
 # Cloud tools
@@ -110,3 +112,5 @@
   tags: ["sops"]
 - include: spotlight-studio.yml
   tags: ["spotlight-studio"]
+- include: gh-cli.yml
+  tags: ["gh-cli"]

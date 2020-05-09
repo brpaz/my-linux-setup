@@ -15,7 +15,7 @@ setup: ## Run initial setup script
 run: ## Runs the main playbook
 	ansible-playbook setup.yml --ask-become-pass -i hosts
 
-run-tag:
+run-tag: ## Runs the playbook for a specific tag
 	ansible-playbook setup.yml --ask-become-pass -i hosts --tags $(TAG)
 
 preview: ## Preview

@@ -54,7 +54,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Productivity
 
 * [Libreoffice](https://libreoffice.org) - Office suite.
-* [Notable](https://github.com/notable/notable) - The Markdown-based note-taking app that doesn't suck.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application.
@@ -138,7 +137,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
 * [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
-* [hawkeye](https://github.com/brpaz/hawkeye) - Hawkeye is a command line GTK Application that allow to quickly open PDFs, Markkown Files, Images and Websites in a "small" window, somewhat inspired by MacOS quicklook.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
 

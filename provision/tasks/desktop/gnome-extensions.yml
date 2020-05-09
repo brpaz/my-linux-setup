@@ -3,23 +3,24 @@
     name: ansible-gnome-extensions
   vars:
     gnome_extension_ids:
-      - 1176
-      - 16
-      - 517
-      - 1544
       - 97
-      - 307
-      - 1480
-      - 1162
-      - 1319
       - 937
       - 800
-      - 355
-      - 1238
-      - 1497
-      - 1460
-      - 1007
       - 779
+      - 517
+      - 355
+      - 307
+      - 16
+      - 1544
+      - 1480
+      - 1460
+      - 1319
+      - 1238
+      - 1176
+      - 1162
+      - 1007
+      - 657
+      - 2890
 
 - name: Gnome Extensions | Auto move windows Settings
   dconf:
@@ -27,7 +28,10 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/auto-move-windows', value: "['whatsapp.desktop:4', 'com.slack.Slack.desktop:4', 'code.desktop:2', 'cacher.desktop:3']" }
+    - {
+        key: "/org/gnome/shell/extensions/auto-move-windows",
+        value: "['whatsapp.desktop:4', 'com.slack.Slack.desktop:4', 'code.desktop:2', 'cacher.desktop:3']",
+      }
 
 - name: Gnome Extensions | Clipboard indicator Settings
   dconf:
@@ -35,8 +39,14 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/clipboard-indicator/history-size', value: 20 }
-    - { key: '/org/gnome/shell/extensions/clipboard-indicator/notify-on-copy', value: "false" }
+    - {
+        key: "/org/gnome/shell/extensions/clipboard-indicator/history-size",
+        value: 20,
+      }
+    - {
+        key: "/org/gnome/shell/extensions/clipboard-indicator/notify-on-copy",
+        value: "false",
+      }
 
 - name: Gnome Extensions | Dash to Dock Settings
   dconf:
@@ -44,13 +54,34 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "false" }
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/background-color', value: "'#ffffff'" }
-    - { key: '/org/gnome/shell/extensions/dash-to-dockbackground-opacity', value: 0.0 }
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/dock-position', value: "'BOTTOM'" }
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true" }
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/extend-height', value: "false" }
-    - { key: '/org/gnome/shell/extensions/dash-to-dock/transparency-mode', value: "'FIXED'" }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/background-color",
+        value: "'#ffffff'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dockbackground-opacity",
+        value: 0.0,
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/dock-position",
+        value: "'BOTTOM'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/multi-monitor",
+        value: "true",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/extend-height",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/transparency-mode",
+        value: "'FIXED'",
+      }
 
 - name: Gnome Extensions | Notifications Alert Settings
   dconf:
@@ -58,7 +89,10 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/notifications-alert/color', value: "'#feb03e'" }
+    - {
+        key: "/org/gnome/shell/extensions/notifications-alert/color",
+        value: "'#feb03e'",
+      }
 
 - name: Gnome Extensions | TopIcons Redux Settings
   dconf:
@@ -66,10 +100,16 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/topicons-redux/alignment', value: "'right'" }
-    - { key: '/org/gnome/shell/extensions/topicons-redux/desaturation', value: 0.4 }
-    - { key: '/org/gnome/shell/extensions/topicons-redux/icon-size', value: 20 }
-    - { key: '/org/gnome/shell/extensions/topicons-redux/offset', value: 10 }
+    - {
+        key: "/org/gnome/shell/extensions/topicons-redux/alignment",
+        value: "'right'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/topicons-redux/desaturation",
+        value: 0.4,
+      }
+    - { key: "/org/gnome/shell/extensions/topicons-redux/icon-size", value: 20 }
+    - { key: "/org/gnome/shell/extensions/topicons-redux/offset", value: 10 }
 
 - name: Gnome Extensions | Vitals Settings
   dconf:
@@ -77,11 +117,14 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/vitals/hot-sensors', value: ['_memory_usage_', '_system_load_1m_'] }
-    - { key: '/org/gnome/shell/extensions/vitals/position-in-panel', value: 1 }
-    - { key: '/org/gnome/shell/extensions/vitals/show-battery', value: "false" }
-    - { key: '/org/gnome/shell/extensions/vitals/show-fan', value: "false" }
-    - { key: '/org/gnome/shell/extensions/vitals/show-voltage', value: "false" }
+    - {
+        key: "/org/gnome/shell/extensions/vitals/hot-sensors",
+        value: ["_memory_usage_", "_system_load_1m_"],
+      }
+    - { key: "/org/gnome/shell/extensions/vitals/position-in-panel", value: 1 }
+    - { key: "/org/gnome/shell/extensions/vitals/show-battery", value: "false" }
+    - { key: "/org/gnome/shell/extensions/vitals/show-fan", value: "false" }
+    - { key: "/org/gnome/shell/extensions/vitals/show-voltage", value: "false" }
 
 - name: Gnome Extensions | TimeApp Settings
   dconf:
@@ -89,6 +132,9 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/shell/extensions/timepp/alarms-separate-menu', value: "true" }
-    - { key: '/org/gnome/shell/extensions/timepp/unicon-mode', value: "true" }
+    - {
+        key: "/org/gnome/shell/extensions/timepp/alarms-separate-menu",
+        value: "true",
+      }
+    - { key: "/org/gnome/shell/extensions/timepp/unicon-mode", value: "true" }
     # - { key: '/org/gnome/shell/extensions/timepp/sections', value: "{'Timer': {'enabled': false}, 'Stopwatch': {'enabled': false}, 'Pomodoro': {'enabled': false}, 'Alarms': {'enabled': true}, 'Todo': {'enabled': true}} }"
