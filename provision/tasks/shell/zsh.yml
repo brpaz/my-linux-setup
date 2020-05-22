@@ -8,7 +8,8 @@
   become: true
 
 - name: ZSH | Set as default shell
-  shell: chsh -s /usr/bin/zsh
+  shell: chsh -s $(which zsh ) {{user}}
+  become: true
 
 - name: Zplug | Download zplug installer
   get_url:

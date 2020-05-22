@@ -1,5 +1,5 @@
 
-.PHONY: lint setup play help
+.PHONY: galaxy lint setup run run-tag preview help
 
 .DEFAULT_GOAL := help
 
@@ -10,7 +10,9 @@ lint: ## Lints the ansible playbook
 	ansible-lint setup.yml tasks
 
 setup: ## Run initial setup script
-	sh setup.sh
+	sudo pip3 install -r requirements.txt
+	ansible-galaxy install -r requirements.yml
+	ansible-playbook setup.yml --ask-become-pass -i hosts
 
 run: ## Runs the main playbook
 	ansible-playbook setup.yml --ask-become-pass -i hosts

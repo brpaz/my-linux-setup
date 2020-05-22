@@ -30,13 +30,3 @@
     dest: "{{ bin_dir }}/kubens"
     mode: a+x
   become: true
-
-- name: Kubectx | Install Autocomplete
-  copy:
-    src: "{{ setup_dir }}/kubectx/completion/kubectx.zsh"
-    dest: "{{ shell_completions_dir }}/_kubectx"
-
-- name: Kubens | Install Autocomplete
-  copy:
-    src: "{{ setup_dir }}/kubectx/completion/kubens.zsh"
-    dest: "{{ shell_completions_dir }}/_kubens"

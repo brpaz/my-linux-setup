@@ -4,10 +4,11 @@
 - include: polari.yml
 - include: skype.yml
 - include: slack.yml
-- include: ramme.yml
+- include: discord.yml
 - include: caprine.yml
 - include: reminna.yml
 - include: wireshark.yml
 - include: feedreader.yml
 - include: transmission.yml
 - include: uget.yml
+- include: zoom.yml

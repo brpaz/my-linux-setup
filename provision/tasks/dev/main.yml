@@ -75,6 +75,10 @@
   tags: ["kubernetes", "kubeseal"]
 - include: kubernetes/kustomize.yml
   tags: ["kubernetes", "kustomize"]
+- include: kubernetes/kubeval.yml
+  tags: ["kubernetes", "kubeval"]
+- include: kubernetes/k9s.yml
+  tags: ["kubernetes", "k9s"]
 
 # ===================
 # Cloud tools
@@ -114,3 +118,7 @@
   tags: ["spotlight-studio"]
 - include: gh-cli.yml
   tags: ["gh-cli"]
+- include: snipline.yml
+  tags: ["snipline"]
+- include: libvirt.yml
+  tags: ["libvirt"]

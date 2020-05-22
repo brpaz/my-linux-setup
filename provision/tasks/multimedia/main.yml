@@ -21,3 +21,4 @@
 - include: youtubedl.yml
 - include: givemelyrics.yml
 - include: gnome-music.yml
+- include: avvie.yml

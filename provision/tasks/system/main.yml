@@ -1,4 +1,3 @@
-
 - name: install the rpmfusion repo packages
   dnf:
     name:
@@ -22,3 +21,4 @@
 - include: base.yml
 - include: flatpak.yml
 - include: user.yml
+- include: selinux.yml

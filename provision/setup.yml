@@ -15,6 +15,7 @@
       file:
         path: "{{ setup_dir }}"
         state: directory
+      tags: [always]
 
   post_tasks:
     - name: Remove setup directory
@@ -22,6 +23,7 @@
         path: "{{ setup_dir }}"
         state: absent
       become: true
+      tags: [always]
   tasks:
     - import_tasks: tasks/system/main.yml
       tags: ["system"]

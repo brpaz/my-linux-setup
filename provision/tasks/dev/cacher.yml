@@ -1,6 +1,6 @@
 - name: Cacher | Download AppImage
   get_url:
-    url: "https://s3.amazonaws.com/download.cacher.io/Cacher-2.23.0.AppImage"
+    url: "https://s3.amazonaws.com/download.cacher.io/Cacher-{{cacher_version}}.AppImage"
     dest: "/opt/Cacher.AppImage"
     mode: a+x
   become: true

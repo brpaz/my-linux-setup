@@ -52,3 +52,4 @@
     - "fx"
     - "@cacherapp/cli@"
     - "fast-cli"
+    - "@nestjs/cli"
