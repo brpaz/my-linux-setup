@@ -23,7 +23,7 @@ jobs:
           #   playbook_1.yml
           #   playbook_2.yml
           targets: |
-            setup.yml
+            provision/setup.yml
 
           # [optional]
           # Arguments to override a package and its version to be set explicitly.
