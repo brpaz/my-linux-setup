@@ -1,6 +1,6 @@
 - name: Jetbrains Toolbox
   unarchive:
-    src: https://download.jetbrains.com/toolbox/jetbrains-toolbox-{{jetbrains_toolbox_version}}.tar.gz
+    src: https://download.jetbrains.com/toolbox/jetbrains-toolbox-{{ jetbrains_toolbox_version }}.tar.gz
     remote_src: true
     dest: "{{ bin_dir }}"
     extra_opts: [--strip-components=1]
@@ -8,6 +8,6 @@
   become: true
 
 - name: Jetbrains Toolbox | Install Desktop file
-  template:
+  copy:
     src: applications/jetbrains-toolbox.desktop
     dest: "{{ applications_dir }}/jetbrains-toolbox.desktop"

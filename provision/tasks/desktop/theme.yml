@@ -1,4 +1,3 @@
-
 - name: Add Folder Color copr
   command: dnf copr enable -y kleong/folder-color
   args:

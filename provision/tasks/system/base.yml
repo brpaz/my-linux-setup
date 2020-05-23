@@ -5,8 +5,6 @@
       - "curl"
       - "wget"
       - "unzip"
-      - "vim"
-      - "python2"
       - "python-psutil"
       - "dconf-editor"
       - "dnf-plugins-core"

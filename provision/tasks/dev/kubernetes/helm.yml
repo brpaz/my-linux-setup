@@ -13,7 +13,7 @@
 
 - name: Helm | Download Archive
   unarchive:
-    src: "https://get.helm.sh/helm-{{helm_release.tag}}-linux-amd64.tar.gz"
+    src: "https://get.helm.sh/helm-{{ helm_release.tag} }-linux-amd64.tar.gz"
     remote_src: true
     dest: "{{ setup_dir }}/helm"
 
@@ -24,6 +24,11 @@
     mode: a+x
   become: true
 
+- name: Helm | Install helm-secrets plugin
+  command: helm plugin install https://github.com/futuresimple/helm-secrets
+  args:
+    creates: "{{ ansible_env.HOME }}/.local/share/helm/plugins/helm-secrets"
+
 - name: Helm | Install autocomplete
   shell: helm completion zsh > {{ shell_completions_dir }}/_helm
 
@@ -33,8 +38,8 @@
 - name: Helm | Add bitnani repo
   command: helm repo add bitnami https://charts.bitnami.com/bitnami
 
-- name: Helm | Install helm-secrets plugin
-  command: helm plugin install https://github.com/futuresimple/helm-secrets
-
 - name: Helm | Add fluxcd repo
   command: helm repo add fluxcd https://charts.fluxcd.io
+
+- name: Helm | Update repos
+  command: helm repo update # noqa 301

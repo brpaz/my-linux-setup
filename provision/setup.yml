@@ -60,3 +60,9 @@
 
     - import_tasks: tasks/desktop/main.yml
       tags: ["desktop"]
+
+    - import_tasks: tasks/virtualization/main.yml
+      tags: ["virtualization"]
+
+    - import_tasks: tasks/webapps/main.yml
+      tags: ["webapps"]

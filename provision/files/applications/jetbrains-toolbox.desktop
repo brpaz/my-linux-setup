@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec={{ansbile_env.HOME}}.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox %u
-Icon={{ansbile_env.HOME}}.local/share/JetBrains/Toolbox/toolbox.svg
+Exec=~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox %u
+Icon=~/.local/share/JetBrains/Toolbox/toolbox.svg
 MimeType=x-scheme-handler/jetbrains;
 Name=JetBrains Toolbox
 StartupNotify=false

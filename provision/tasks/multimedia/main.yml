@@ -22,3 +22,5 @@
 - include: givemelyrics.yml
 - include: gnome-music.yml
 - include: avvie.yml
+- include: inkscape.yml
+  tags: ["inkscape"]

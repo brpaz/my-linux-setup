@@ -7,7 +7,7 @@
 
 - name: "ctop | Download and Install"
   get_url:
-    url:  https://github.com/bcicen/ctop/releases/download/{{release.tag}}/ctop-{{release.tag[1:]}}-linux-amd64
+    url: https://github.com/bcicen/ctop/releases/download/{{ release.tag }}/ctop-{{ release.tag[1:] }}-linux-amd64
     dest: "{{ bin_dir }}/ctop"
     mode: a+x
     force: true

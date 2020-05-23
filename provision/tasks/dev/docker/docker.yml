@@ -2,19 +2,24 @@
   command: dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
   args:
     warn: false
+    creates: /etc/yum.repos/docker-ce.repo
+  become: true
+
+- name: Docker | Force to use Fedora 31 repo
+  shell: sed -i 's/$releasever/31/g' /etc/yum.repos.d/docker-ce.repo
   become: true
 
 - name: Docker | Install Packages
   dnf:
-   name:
-    - docker-ce
-    - docker-ce-cli
-    - containerd.io
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
   become: true
 
 - name: Docker | Add current user to Docker group
   user:
-    name: "{{ ansible_env.USER }}"
+    name: "{{ user }}"
     groups: docker
     append: yes
   become: true

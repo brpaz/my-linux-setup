@@ -1,18 +1,18 @@
-- name: K9s Get Latest release
+- name: k9s | Get Latest release
   github_release:
     user: derailed
     repo: k9s
     action: latest_release
+    token: "{{ github_token }}"
   register: release
 
-- name: K9s install
+- name: k9s | download archive
   unarchive:
     src: "https://github.com/derailed/k9s/releases/download/{{ release.tag }}/k9s_Linux_x86_64.tar.gz"
     remote_src: true
-    extra_opts: [--strip-components=1]
     dest: "{{ setup_dir }}"
 
-- name: Kail Install
+- name: k9s | Install binary
   copy:
     src: "{{ setup_dir }}/k9s"
     dest: "{{ bin_dir }}"

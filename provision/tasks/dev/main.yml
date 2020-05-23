@@ -13,10 +13,14 @@
   tags: ["golang"]
 - include: java.yml
   tags: ["java"]
+- include: vala.yml
+  tags: ["vala"]
 
 # =======================
 # Tools
 # =======================
+- include: vim.yml
+  tags: ["vim"]
 - include: vscode.yml
   tags: ["vscode"]
 - include: postman.yml
@@ -27,8 +31,6 @@
   tags: ["gitkraken"]
 - include: regex-tester.yml
   tags: ["regex-tester"]
-- include: virtualbox.yml
-  tags: ["virtualbox"]
 - include: dbeaver.yml
   tags: ["dbeaver"]
 - include: glade.yml
@@ -45,18 +47,22 @@
   tags: ["docker"]
 - include: docker/compose.yml
   tags: ["docker", "docker-compose"]
-- include: docker/traefik.yml
-  tags: ["docker", "traefik"]
-- include: docker/portainer.yml
-  tags: ["docker", "portainer"]
+
+# # TODO only enable this after booting with cgroups v1
+# # - include: docker/traefik.yml
+# #   tags: ["docker", "traefik"]
+# # - include: docker/portainer.yml
+# #   tags: ["docker", "portainer"]
 - include: docker/ctop.yml
   tags: ["docker", "ctop"]
 - include: docker/dive.yml
   tags: ["docker", "dive"]
+- include: sops.yml
+  tags: ["sops"]
 
-# ============================
-# Kubernetes
-# ============================
+# # ============================
+# # Kubernetes
+# # ============================
 - include: kubernetes/minikube.yml
   tags: ["minikube"]
 - include: kubernetes/kubectl.yml
@@ -112,13 +118,11 @@
 - include: cacher.yml
 - include: pulumi.yml
   tags: ["pulumi"]
-- include: sops.yml
-  tags: ["sops"]
 - include: spotlight-studio.yml
   tags: ["spotlight-studio"]
 - include: gh-cli.yml
   tags: ["gh-cli"]
 - include: snipline.yml
   tags: ["snipline"]
-- include: libvirt.yml
-  tags: ["libvirt"]
+- include: fluxctl.yml
+  tags: ["fluxctl"]

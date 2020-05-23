@@ -6,5 +6,7 @@
   copy:
     content: |
       # heroku autocomplete setup
-      HEROKU_AC_ZSH_SETUP_PATH={{ansible_env.HOME}}/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+      HEROKU_AC_ZSH_SETUP_PATH={{ ansible_env.HOME }}/.cache/heroku/autocomplete/zsh_setup &&
+      test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
     dest: "~/.zshrc.d/heroku.zsh"
+    force: no

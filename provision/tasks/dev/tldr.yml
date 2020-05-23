@@ -19,4 +19,4 @@
   become: true
 
 - name: Tldr | Update pages
-  command: tldr -u
+  command: tldr -u # noqa 301

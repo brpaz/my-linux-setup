@@ -1,7 +1,7 @@
 - name: Flatpak | Install
   dnf:
     name: "flatpak"
-    state: latest
+    state: present
   become: true
 
 - name: Flatpak | Add the flathub flatpak repository remote

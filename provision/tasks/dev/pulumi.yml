@@ -1,6 +1,6 @@
 - name: Pulumi | Ensure bin dir exists
   file:
-    path: "{{ ansible_env.HOME}}/.pulumi/bin"
+    path: "{{ ansible_env.HOME }}/.pulumi/bin"
     state: directory
 
 - name: Pulimi | Install
@@ -9,4 +9,4 @@
     remote_src: true
     extra_opts: [--strip-components=1]
     mode: a+x
-    dest: "{{ ansible_env.HOME}}/.pulumi/bin"
+    dest: "{{ ansible_env.HOME }}/.pulumi/bin"

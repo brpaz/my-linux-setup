@@ -4,20 +4,6 @@
     state: present
   become: true
 
-- name: Tilix | Remove gnome terminal
-  file:
-    path: "/usr/bin/gnome-terminal"
-    state: absent
-  become: true
-
-- name: Tilix | Set as default Terminal
-  file:
-    src: "/usr/bin/gnome-terminal"
-    dest: "/usr/bin/tilix"
-    state: link
-    force: true
-  become: true
-
 - name: Tilix | Settings
   dconf:
     key: "{{ item.key }}"

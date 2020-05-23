@@ -8,7 +8,7 @@
 
 - name: Kubeval | Download Archive
   unarchive:
-    src: "https://github.com/instrumenta/kubeval/releases/download/{{release.tag}}/kubeval-linux-amd64.tar.gz"
+    src: "https://github.com/instrumenta/kubeval/releases/download/{{ release.tag }}/kubeval-linux-amd64.tar.gz"
     remote_src: true
     dest: "{{ setup_dir }}"
   become: true

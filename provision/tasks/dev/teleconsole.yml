@@ -8,7 +8,7 @@
 
 - name: Teleconsole | Install
   unarchive:
-     src: "https://github.com/gravitational/teleconsole/releases/download/{{ release.tag }}/teleconsole-v{{ release.tag }}-linux-amd64.tar.gz"
-     remote_src: true
-     dest: "{{bin_dir}}"
+    src: "https://github.com/gravitational/teleconsole/releases/download/{{ release.tag }}/teleconsole-v{{ release.tag }}-linux-amd64.tar.gz"
+    remote_src: true
+    dest: "{{ bin_dir }}"
   become: true

@@ -5,7 +5,7 @@
 
 - name: Kubernetic | Download
   unarchive:
-    src: https://kubernetic.s3.amazonaws.com/Kubernetic-{{kubernetic_version }}.tar.gz
+    src: https://kubernetic.s3.amazonaws.com/Kubernetic-{{ kubernetic_version }}.tar.gz
     remote_src: true
     dest: "{{ setup_dir }}/kubernetic"
     extra_opts: [--strip-components=1]

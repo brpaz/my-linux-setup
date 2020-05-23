@@ -15,7 +15,7 @@
 - name: upgrade system packages
   dnf:
     name: "*"
-    state: latest
+    state: latest # noqa 403
   become: true
 
 - include: base.yml

@@ -72,7 +72,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
-* [Ramme](https://github.com/terkelg/ramme) - Unofficial Instagram Desktop App.
 * [Caprine](https://github.com/sindresorhus/caprine) - Elegant Facebook Messenger desktop app
 * [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window
 * [Gufw Firewall](http://gufw.org/) - Gui for ufw, Uncomplicated Firewall.

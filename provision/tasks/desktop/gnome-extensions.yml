@@ -12,7 +12,6 @@
       - 307
       - 16
       - 1544
-      - 1480
       - 1460
       - 1319
       - 1238
@@ -63,7 +62,7 @@
         value: "'#ffffff'",
       }
     - {
-        key: "/org/gnome/shell/extensions/dash-to-dockbackground-opacity",
+        key: "/org/gnome/shell/extensions/dash-to-dock/background-opacity",
         value: 0.0,
       }
     - {
@@ -82,6 +81,18 @@
         key: "/org/gnome/shell/extensions/dash-to-dock/transparency-mode",
         value: "'FIXED'",
       }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/hot-keys",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/show-trash",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/show-mounts",
+        value: "false",
+      }
 
 - name: Gnome Extensions | Notifications Alert Settings
   dconf:
@@ -93,23 +104,6 @@
         key: "/org/gnome/shell/extensions/notifications-alert/color",
         value: "'#feb03e'",
       }
-
-- name: Gnome Extensions | TopIcons Redux Settings
-  dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-  with_items:
-    - {
-        key: "/org/gnome/shell/extensions/topicons-redux/alignment",
-        value: "'right'",
-      }
-    - {
-        key: "/org/gnome/shell/extensions/topicons-redux/desaturation",
-        value: 0.4,
-      }
-    - { key: "/org/gnome/shell/extensions/topicons-redux/icon-size", value: 20 }
-    - { key: "/org/gnome/shell/extensions/topicons-redux/offset", value: 10 }
 
 - name: Gnome Extensions | Vitals Settings
   dconf:
@@ -138,3 +132,25 @@
       }
     - { key: "/org/gnome/shell/extensions/timepp/unicon-mode", value: "true" }
     # - { key: '/org/gnome/shell/extensions/timepp/sections', value: "{'Timer': {'enabled': false}, 'Stopwatch': {'enabled': false}, 'Pomodoro': {'enabled': false}, 'Alarms': {'enabled': true}, 'Todo': {'enabled': true}} }"
+
+- name: Gnome Extensions | Emoji Selector Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/emoji-selector/use-keybinding",
+        value: "false",
+      }
+
+- name: Gnome Extensions | Auto Move Windows Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
+        value: "['cacher.desktop:3','code.desktop:2']",
+      }

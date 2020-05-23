@@ -34,16 +34,18 @@
     value: "'file://{{ ansible_env.HOME }}/.wallpaper.jpg'"
 
 - include: gnome-extensions.yml
+  tags: ["gnome-extensions"]
+
 - include: settings/gedit.yml
 - include: settings/nautilus.yml
 - include: settings/desktop.yml
+  tags: ["settings-desktop"]
 - include: settings/shell.yml
 - include: settings/shortcuts.yml
+  tags: ["shortcuts"]
 - include: settings/terminal.yml
 - include: settings/wm.yml
-- include: keybindings.yml
 - include: theme.yml
-- include: hardcode-tray.yml
 - include: autostart.yml
 
 - name: Remove Pre-installed software

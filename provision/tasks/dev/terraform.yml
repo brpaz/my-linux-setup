@@ -8,8 +8,8 @@
 
 - name: "Terraform | Download and install"
   unarchive:
-    src: "https://releases.hashicorp.com/terraform/{{ release.tag[1:]}}/terraform_{{ release.tag[1:]}}_linux_amd64.zip"
+    src: "https://releases.hashicorp.com/terraform/{{ release.tag[1:] }}/terraform_{{ release.tag[1:] }}_linux_amd64.zip"
     remote_src: true
-    dest: "{{bin_dir}}"
+    dest: "{{ bin_dir }}"
     mode: u+rwx
   become: true

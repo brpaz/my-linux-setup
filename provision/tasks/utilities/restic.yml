@@ -11,7 +11,7 @@
 
 - name: Restic | Install Systemd units
   copy:
-    src: "{{item}}"
+    src: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.config/systemd/user"
   loop:
     - restic/restic-backup.service
