@@ -4,16 +4,17 @@
 
 ## Pre-requisites
 
-* A machie running Fedora. (This playbook was tested with Fedora 30).
+* A machine running Fedora OS. This playbook was tested with Fedora 32.
+* Git (`dnf install -y git`)
 * GitHub personal access token. You can get one [here](https://github.com/settings/tokens).
 
-## Initial Setup of a New machine
+## Initial Setup
 
 To provision a new machine open a terminal window and run the following commands:
 
 ```sh
 export GITHUB_TOKEN=<my_github_token>
-git clone https://github.com/brpaz/fedora-bootstrap.git
+git clone https://github.com/brpaz/my-linux-setup
 sudo chmod +x setup.sh
 ./setup.sh
 ```
@@ -29,6 +30,7 @@ Unfortunately not everything can be automated and some manual steps will be requ
 * Install [DevDocs Desktop](https://github.com/hardpixel/devdocs-desktop) and enable docsets
 * Install [Ulauncher Extensions](https://ext.ulauncher.io/)
 * Login into applications (Spotify, etc).
+* Install Graphics Drivers
 
 ---
 

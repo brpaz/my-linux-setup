@@ -1,0 +1,4 @@
+- name: Shortwave | Install
+  flatpak:
+    name: de.haeckerfelix.Shortwave
+    state: present

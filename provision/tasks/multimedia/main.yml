@@ -20,7 +20,13 @@
 - include: wireframe-sketcher.yml
 - include: youtubedl.yml
 - include: givemelyrics.yml
-- include: gnome-music.yml
+#- include: gnome-music.yml
+- include: lollypop.yml
+  tags: ["lollypop"]
 - include: avvie.yml
 - include: inkscape.yml
   tags: ["inkscape"]
+- include: figma.yml
+  tags: [figma]
+- include: shortwave.yml
+  tags: ["shortwave"]

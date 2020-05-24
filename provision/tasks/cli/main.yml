@@ -6,3 +6,5 @@
 - include: yq.yml
 - include: pandoc.yml
 - include: asciinema.yml
+- include: bat.yml
+  tags: ["bat"]

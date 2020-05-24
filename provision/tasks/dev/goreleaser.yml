@@ -1,0 +1,13 @@
+- name: Goreleaser | Get latest release
+  github_release:
+    user: goreleaser
+    repo: goreleaser
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Goreleaser
+  dnf:
+    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag }}/goreleaser_amd64.rpm
+    state: present
+  become: true

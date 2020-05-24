@@ -1,5 +1,4 @@
-
-- name: Python | Install packages
+- name: Python | Install PIP packages
   pip:
     name:
       - requests
@@ -12,4 +11,15 @@
       - mkdocs
       - glances
       - socli
+      - lorem
+      - algoliasearch
+      - python-gitlab
+      - pwgen
+  become: true
+
+- name: Python | Install system packages
+  dnf:
+    name:
+      - python3-ansible-lint
+    state: present
   become: true

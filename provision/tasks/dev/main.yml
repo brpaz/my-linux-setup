@@ -55,6 +55,8 @@
 # #   tags: ["docker", "portainer"]
 - include: docker/ctop.yml
   tags: ["docker", "ctop"]
+- include: docker/lazydocker.yml
+  tags: ["docker", "lazydocker"]
 - include: docker/dive.yml
   tags: ["docker", "dive"]
 - include: sops.yml
@@ -126,3 +128,5 @@
   tags: ["snipline"]
 - include: fluxctl.yml
   tags: ["fluxctl"]
+- include: goreleaser.yml
+  tags: ["goreleaser"]

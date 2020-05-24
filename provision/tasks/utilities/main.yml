@@ -17,3 +17,5 @@
   tags: ["weather", "utilities"]
 - include: restic.yml
   tags: ["restic", "utilities"]
+- include: grsync.yml
+  tags: ["grsync", "utilities"]
