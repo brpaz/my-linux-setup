@@ -48,8 +48,7 @@ You can execute a specific tag, by running:
 
 ## TODO
 
-* Add nativefier based applications: (Google Keep, TickTick, Notion)
-* Clean up Gnome configurations.
+* Fix ansible lint warnings and improve idenpontency of some tasks
 
 ---
 
