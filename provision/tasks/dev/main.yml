@@ -130,3 +130,5 @@
   tags: ["fluxctl"]
 - include: goreleaser.yml
   tags: ["goreleaser"]
+- include: direnv.yml
+  tags: ["direnv"]
