@@ -20,6 +20,7 @@
       - 1007
       - 657
       - 2890
+      - 2224
 
 - name: Gnome Extensions | Auto move windows Settings
   dconf:

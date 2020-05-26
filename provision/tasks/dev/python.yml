@@ -13,8 +13,9 @@
       - socli
       - lorem
       - algoliasearch
-      - python-gitlab
       - pwgen
+      - glob2
+      - gitlab
   become: true
 
 - name: Python | Install system packages
