@@ -50,6 +50,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Development Runtimes](#development-runtimes)
   - [Other](#other-1)
     - [Gnome Extensions](#gnome-extensions)
+    - [VS Code Extensions](#vs-code-extensions)
   - [Firefox Extensions](#firefox-extensions)
 
 ## Graphical Applications
@@ -372,8 +373,9 @@ I use ZSH shell with the following extras:
     * [pionl/bitbar-gitlab-ci](https://github.com/pionl/bitbar-gitlab-ci) -  Shows currently running pipelines from your GitLab in your bar.
 * [VSCode Search Provider](https://extensions.gnome.org/extension/1207/vscode-search-provider/) - Provide recent VSCode projects as search results in overview
   
-* ### VS Code Extensions
-* 
+### VS Code Extensions
+
+ 
 * 42Crunch.vscode-openapi
 * adamhartford.vscode-base64
 * adrianwilczynski.alpine-js-intellisense
