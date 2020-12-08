@@ -20,4 +20,5 @@
   copy:
     src: "{{ setup_dir }}/kustomize"
     dest: "{{ bin_dir }}/kustomize"
+    mode: a+x
   become: true

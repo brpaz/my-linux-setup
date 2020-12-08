@@ -4,7 +4,10 @@
 - include: ranger.yml
 - include: jq.yml
 - include: yq.yml
+  tags: ["yq"]
 - include: pandoc.yml
 - include: asciinema.yml
 - include: bat.yml
   tags: ["bat"]
+- include: sd.yml
+  tags: ["sd"]

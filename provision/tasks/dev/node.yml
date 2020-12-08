@@ -25,7 +25,6 @@
     - "conventional-changelog-cli"
     - "create-nuxt-app"
     - "create-react-app"
-    - "degit"
     - "electron"
     - "eslint"
     - "fauna-shell"

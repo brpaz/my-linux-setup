@@ -1,2 +1,5 @@
 - include: libvirt.yml
   tags: ["libvirt"]
+
+- include: virtualbox.yml
+  tags: ["virtualbox"]

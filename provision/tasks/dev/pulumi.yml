@@ -2,6 +2,7 @@
   file:
     path: "{{ ansible_env.HOME }}/.pulumi/bin"
     state: directory
+    mode: 0644
 
 - name: Pulimi | Install
   unarchive:

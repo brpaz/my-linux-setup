@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Snipline
+Comment=Snipline
+GenericName=Snipline
+Exec=/opt/snipline/Snipline
+Icon={{ansbile_env.HOME}/.local/share/icons/apps/snipline.png
+Type=Application
+StartupNotify=true
+Categories=Utility;
+StartupWMClass=snipline-nativefier-bf73b4

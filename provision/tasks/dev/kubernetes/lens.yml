@@ -1,0 +1,22 @@
+- name: Lens | Get latest release
+  github_release:
+    user: lensapp
+    repo: lens
+    action: latest_release
+    token: "{{ github_token }}"
+  register: lens_release
+
+- name: Kubernetes Lens | Download AppImage
+  get_url:
+    url: "
+https://github.com/lensapp/lens/releases/download/{{ lens_release.tag }}/Lens-{{ lens_release.tag[1:] }}.AppImage"
+    dest: "/opt/Lens.AppImage"
+    mode: a+x
+  become: true
+
+- name: Kubernetes Lens | Install Desktop file
+  copy:
+    src: applications/kubernetes-lens.desktop
+    dest: "{{ applications_dir }}/kubernetes-lens.desktop"
+    mode: 0644
+

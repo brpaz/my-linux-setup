@@ -23,7 +23,6 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Graphical Applications](#graphical-applications)
     - [Productivity](#productivity)
     - [Internet](#internet)
-    - [Communication Tools](#communication-tools)
     - [Graphics & Design](#graphics--design)
     - [Sound & Video](#sound--video)
     - [Development Tools](#development-tools)
@@ -51,8 +50,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Development Runtimes](#development-runtimes)
   - [Other](#other-1)
     - [Gnome Extensions](#gnome-extensions)
-    - [VS Code Extensions](#vs-code-extensions)
-  - [Chrome Extensions](#chrome-extensions)
+  - [Firefox Extensions](#firefox-extensions)
 
 ## Graphical Applications
 
@@ -63,13 +61,14 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Libreoffice](https://libreoffice.org) - Office suite.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
-* [Marker](https://flathub.org/apps/details/com.github.fabiocolacio.marker) - Powerfull Markdown editor.
-* [Master PDF Editor](https://code-industry.net/masterpdfeditor/) - Edit text and images in PDF files
-* [OpenPaper.work](https://openpaper.work/en-us/) -  Paperwork - Document management made fast and eas
+* [Marker](https://flathub.org/apps/details/com.github.fabiocolacio.marker) - Powerful markdown editor for the GNOME desktop.
 * [Planner](https://flathub.org/apps/details/com.github.alainm23.planner) - Native TODO list application.
 * [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
+* [Workspaces](https://flathub.org/apps/details/com.github.devalien.workspaces) - Workspaces lets you configure and quickly launch all you need to work on a project. It can open in a second different instances of code, a specific website and a directory.
 * [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application. Powered by [Nativefier](https://github.com/jiahaog/nativefier)
 * [TickTick (Web App)](https://www.ticktick.com) - Todo list and reminders app. Powered by [Nativefier](https://github.com/jiahaog/nativefier)
+
+---
 
 ### Internet
 
@@ -78,17 +77,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
 * [Transmission](https://transmissionbt.com/) - Torrent client
 * [uget](https://ugetdm.com/) - Download manager
-* [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window
 * [Gufw Firewall](http://gufw.org/) - Gui for ufw, Uncomplicated Firewall.
 * [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application.
-
-### Communication Tools
-
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application.
-* [Polari](https://wiki.gnome.org/Apps/Polari) - Gnome IRC client.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
-* [Caprine](https://github.com/sindresorhus/caprine) - Elegant Facebook Messenger desktop app
+
+---
 
 ### Graphics & Design
 
@@ -104,11 +99,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
   
+---
 ### Sound & Video
 
 * [Spotify](https://www.spotify.com/) - Music for everyone.
 * [Kdenlive](http://www.kdenlive.org/) - Video editor
-* [Kazam](https://launchpad.net/kazam) - Screentast tool for linux
 * [VLC](http://www.videolan.org/vlc/) - Media player
 * [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor
@@ -118,7 +113,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit.
 * [youtube-dl-gui](https://github.com/MrS0m30n3/youtube-dl-gui) - A cross platform front\-end GUI of the popular youtube-dl.
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
-* [obs](https://obsproject.com/download) - Open Broadcaster Software.
+* [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
+
+---
 
 ### Development Tools
 
@@ -131,14 +128,15 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
-* [virt-manager](https://virt-manager.org/) - The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers)
+* [VM VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [Postman](https://www.getpostman.com/) - Rest API Client
 * [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 * [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
-* [Kubernetic](https://kubernetic.com/) - The Kubernetes Desktop Client
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
-
+* [Lens](https://k8slens.dev/) - The Kubernetes IDE.
+  
+---
 ### Utilities
 
 * [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
@@ -152,23 +150,25 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
+* [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window.
 
+---
 ### Games
 
 * [Steam](https://store.steampowered.com)
 * [Gens/GS - Sega Retro](https://segaretro.org/Gens/GS)
 * [Mines](https://wiki.gnome.org/Apps/Mines)
 
+---
 ### Themes and Icons
 
 * [nana-4/materia-theme](https://github.com/nana-4/materia-theme) - A Material Design theme for GNOME/GTK+ based desktop environments
 * [arc-theme](https://github.com/horst3180/arc-theme) -  A flat theme with transparent elements.
 * [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) - Papirus icon theme for Linux.
 
+--- 
 ### Fonts
 
-* [tonsky/FiraCode](https://github.com/tonsky/FiraCode) - Monospaced font with programming ligatures
-* [i-tu/Hasklig: Hasklig](https://github.com/i-tu/Hasklig) - A code font with monospaced ligatures
 * [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) - A typeface for developers. By Jetbrains.
 
 ---
@@ -199,15 +199,14 @@ I use ZSH shell with the following extras:
 * [facebook/PathPicker](https://github.com/facebook/pathpicker/) - PathPicker accepts a wide range of input/output from git commands, grep results, searches pretty much anything.After parsing the input, PathPicker presents you with a nice UI to select which files you're interested in. After that you can open them in your favorite editor or execute arbitrary commands.
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
+* [chmln/sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)]
 
 ### Text Mainuplation
 
 * [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings. 
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
-* [fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
-* [markdown-toc](https://github.com/jonschlinkert/markdown-toc) - Generate a markdown TOC (table of contents) for a README or any markdown files, using remgearkable.
 * [tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [parse-columns-cli](https://github.com/sindresorhus/parse-columns-cli) - Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like jq or underscore-cli.
@@ -234,7 +233,6 @@ I use ZSH shell with the following extras:
 
 * [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
 * [Artillery](https://artillery.io/) - A modern load testing toolkit
-* [wg/wrk](https://github.com/wg/wrk) - Modern HTTP benchmarking tool
 
 ### Package Managers
 
@@ -243,6 +241,7 @@ I use ZSH shell with the following extras:
 
 ### Version Control
 
+* [cli/cli](https://github.com/cli/cli) - GitHub’s official command line tool
 * [hub](https://github.com/github/hub) - hub helps you win at git.
 * [lab](https://github.com/zaquestion/lab) - Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 * [tig](https://github.com/jonas/tig) - Text-mode interface for git
@@ -261,11 +260,11 @@ I use ZSH shell with the following extras:
 * [saojs/sao](https://github.com/saojs/sao) - : Futuristic scaffolding tool.
 * [hugo](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
 * [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development.
+* [nuxt/create-nuxt-app](https://github.com/nuxt/create-nuxt-app) - Create Nuxt.js App in seconds.
 * [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 * [@gridsome/cli](https://www.npmjs.com/package/@gridsome/cli) - A command line tool for creating new Gridsome projects.
 * [Symfony CLI](https://symfony.com/download) - Symfony command line tool
 * [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
-* [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) - The Gatsby command line interface (CLI). It is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
 * [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
   
 ### Snippets and Cheat sheets
@@ -297,7 +296,7 @@ I use ZSH shell with the following extras:
 * [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
 * [k9s](https://github.com/derailed/k9s) - Kubernetes CLI To Manage Your Clusters In Style!
-* [fluxctl](https://github.com/fluxcd/flux) - Flux Command line tool.
+* [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
 * [kubeval](https://github.com/instrumenta/kubeval) - Validate your Kubernetes configuration files, supports multiple Kubernetes versions
 * [kubeseal](https://github.com/bitnami-labs/sealed-secrets) - CLI tool for encrypt and decrypt Bitnani sealed secrets
@@ -373,33 +372,30 @@ I use ZSH shell with the following extras:
     * [pionl/bitbar-gitlab-ci](https://github.com/pionl/bitbar-gitlab-ci) -  Shows currently running pipelines from your GitLab in your bar.
 * [VSCode Search Provider](https://extensions.gnome.org/extension/1207/vscode-search-provider/) - Provide recent VSCode projects as search results in overview
   
-### VS Code Extensions
-
+* ### VS Code Extensions
+* 
 * 42Crunch.vscode-openapi
-* abusaidm.html-snippets
+* adamhartford.vscode-base64
 * adrianwilczynski.alpine-js-intellisense
 * akamud.vscode-caniuse
 * AlanWalk.markdown-toc
 * alefragnani.project-manager
+* alexkrechik.cucumberautocomplete
 * andischerer.theme-atom-one-dark
 * anseki.vscode-color
-* ashinzekene.nestjs
 * axetroy.vscode-comment-autocomplete
-* bajdzis.vscode-twig-pack
 * be5invis.toml
 * benjaminromano.typings-installer
 * bradlc.vscode-tailwindcss
+* brpaz.contextual-snips
 * Cacher.cacher-vscode
 * capaj.vscode-exports-autocomplete
-* castwide.solargraph
 * christian-kohler.npm-intellisense
 * codezombiech.gitignore
 * CoenraadS.bracket-pair-colorizer
 * cssho.vscode-svgviewer
 * dbaeumer.vscode-eslint
-* dbankier.vscode-gist
 * dinhani.divider
-* donjayamanne.jquerysnippets
 * DotJoshJohnson.xml
 * eamodio.gitlens
 * EditorConfig.EditorConfig
@@ -408,56 +404,57 @@ I use ZSH shell with the following extras:
 * ericadamski.carbon-now-sh
 * eriklynd.json-tools
 * esbenp.prettier-vscode
-* fatihacet.gitlab-workflow
 * fauna.faunadb
 * felixfbecker.php-debug
-* gio00.css-inline
+* GitHub.vscode-pull-request-github
+* GitLab.gitlab-workflow
+* golang.go
 * haaaad.ansible
+* hashicorp.terraform
 * idleberg.badges
 * idleberg.icon-fonts
-* ikappas.composer
 * ipedrazas.kubernetes-snippets
 * JakeWilson.vscode-placeholder-images
 * jcmordan.mark-as-excluded
-* jerriepelser.copy-markdown-as-html
 * jgsqware.gitlab-ci-templates
-* joelday.docthis
 * johnpapa.vscode-peacock
-* josa.markdown-table-formatter
+* mads-hartmann.bash-ide-vscode
 * marclipovsky.string-manipulation
 * MattiasPernhult.vscode-todo
-* mauve.terraform
 * michelemelluso.gitignore
 * mikestead.dotenv
 * milovidov.escape-quotes
 * mindginative.terraform-snippets
-* mohsen1.prettify-json
-* mrmlnc.vscode-autoprefixer
 * ms-azuretools.vscode-docker
 * ms-kubernetes-tools.vscode-kubernetes-tools
 * ms-python.python
-* ms-vscode.Go
+* ms-toolsai.jupyter
 * msjsdiag.debugger-for-chrome
 * nickdemayo.vscode-json-editor
 * octref.vetur
 * octref.vscode-json-transform
 * Orta.vscode-jest
+* pflannery.vscode-versionlens
 * qinjia.view-in-browser
-* ragingwind.web-manifest-snippets
-* rebornix.project-snippets
+* quicktype.quicktype
 * rebornix.ruby
 * redhat.vscode-yaml
+* richie5um2.vscode-sort-json
 * rpinski.shebang-snippets
 * rubbersheep.gi
+* rust-lang.rust
 * ryanolsonx.snippet-creator
 * ryu1kn.annotator
+* sdras.vue-vscode-snippets
 * Shan.code-settings-sync
 * shanoor.vscode-nginx
 * Sophisticode.php-formatter
+* sourcegraph.sourcegraph
 * stylelint.vscode-stylelint
-* teamchilla.blueprint
-* thekalinga.bootstrap4-vscode
 * thomas-baumgaertner.vcl
+* Tim-Koehler.helm-intellisense
+* toiroakr.stringified-json-editor
+* tsandall.opa
 * Tyriar.lorem-ipsum
 * ultram4rine.vscode-choosealicense
 * vscoss.vscode-ansible
@@ -471,59 +468,6 @@ I use ZSH shell with the following extras:
 * zhuangtongfa.material-theme
 * Zignd.html-css-class-completion
 
-## Chrome Extensions
-
-* 365Scores - Live Scores and Sports News
-* Auto Replay for YouTube™
-* Blackfire Companion
-* Copycat
-* Copyfish 🐟 Free OCR Software
-* Create Link
-* Docs
-* DownAlbum
-* EditThisCookie
-* Export links of all extensions
-* Feedly Subscribe Button
-* GNOME Shell integration
-* Google Docs Offline
-* Google Drive
-* Google Keep
-* Google Maps
-* Google Photos
-* Grammarly for Chrome
-* I don't care about cookies
-* JetBrains Toolbox Extension
-* JSON Editor Online
-* JSON Formatter
-* Kindle Cloud Reader
-* LastPass: Free Password Manager
-* Notion Web Clipper
-* Omnibox for Github
-* Photo Zoom for Facebook
-* Picture-in-Picture Extension (by Google)
-* Qlearly - Tab and Bookmark Manager
-* Saka
-* Save to Pocket
-* SearchPreview
-* Sheets
-* Slides
-* Speedtest by Ookla
-* Split Tabs
-* StackEdit
-* Tab to Window/Popup - Keyboard Shortcut
-* Trello
-* TurboNote
-* TweetDeck
-* Twitter
-* uBlock Origin
-* Vue.js devtools
-* Web Developer
-* WhatFont
-* Cacher
-* Diigo Web Collector - Capture and Annotate
-* imgur Uploader
-* Linkclump
-* Office Editing for Docs, Sheets & Slides
-* Pinterest Save Button
-* The Great Suspender
-* Xdebug helper
+## Firefox Extensions
+ 
+TODO

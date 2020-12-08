@@ -1,0 +1,37 @@
+- name: WhatsApp | Check if installed
+  stat:
+    path: /opt/snipline
+  register: snipline_dir
+
+- name: Snipline | Nativefy
+  command: nativefier -e 10.1.5 -p linux --always-on-top --hide-window-frame --tray --single-instance  https://app.snipline.io
+  args:
+    chdir: "{{ setup_dir }}"
+  when: not snipline_dir.stat.exists
+
+- name: Snipline | Install
+  copy:
+    src: "{{ setup_dir }}/Snipline-linux-x64/"
+    dest: "/opt/snipline/"
+    mode: 0644
+  become: true
+  when: not snipline_dir.stat.exists
+
+- name: Snipline | make executable
+  file:
+    path: "/opt/snipline/Snipline"
+    mode: a+x
+  become: true
+  when: not snipline_dir.stat.exists
+
+- name: Snipline | Fix application name
+  shell: cat <<< $(jq '.name = "Snipline"' /opt/Snipline/resources/app/package.json ) > /opt/Snipline/resources/app/package.json
+  become: true
+  when: not snipline_dir.stat.exists
+
+- name: Snipline | Copy desktop file
+  copy:
+    src: applications/snipline.desktop
+    dest: "{{ applications_dir }}/snipline.desktop"
+    mode: 0644
+  when: not snipline_dir.stat.exists

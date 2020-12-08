@@ -10,4 +10,6 @@
   dnf:
     name: https://github.com/Figma-Linux/figma-linux/releases/download/{{ release.tag }}/figma-linux-{{ release.tag[1:] }}.x86_64.rpm
     state: present
+    disable_gpg_check: true
+
   become: true

@@ -6,7 +6,6 @@
 - include: gnome-photos.yml
 - include: image-optimizer.yml
 - include: gnome-podcasts.yml
-- include: kazam.yml
 - include: kdenlive.yml
 - include: obs.yml
 - include: peek.yml
@@ -20,7 +19,6 @@
 - include: wireframe-sketcher.yml
 - include: youtubedl.yml
 - include: givemelyrics.yml
-#- include: gnome-music.yml
 - include: lollypop.yml
   tags: ["lollypop"]
 - include: avvie.yml
@@ -30,3 +28,5 @@
   tags: [figma]
 - include: shortwave.yml
   tags: ["shortwave"]
+- include: sound-recorder.yml
+  tags: ["sound-recorder"]

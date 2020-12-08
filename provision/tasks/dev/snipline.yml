@@ -1,6 +1,14 @@
-- name: Snipline Install
+- name: Snipline | Get latest cli version
+  github_release:
+    user: snipline
+    repo: snipcli
+    action: latest_release
+    token: "{{ github_token }}"
+  register: snipline_cli_release
+
+- name: Snipline Cli Install
   unarchive:
-    src: "https://github.com/snipline/snipcli/releases/download/0.4.0/snipcli-0.4.0_linux_x86_64.tar.gz"
+    src: https://github.com/snipline/snipcli/releases/download/{{ snipline_cli_release.tag }}/snipcli-{{ snipline_cli_release.tag }}_linux_x86_64.tar.gz
     remote_src: true
     dest: "{{ bin_dir }}"
   become: true

@@ -1,11 +1,5 @@
-# TODO not supported by Fedora 32
-# - name: Menulibre
-#   dnf:
-#     name: menulibre
-#     state: present
-#   become: true
-
-- name: AppEditor
-  flatpak:
-    name: com.github.donadigo.appeditor
+- name: Menulibre
+  dnf:
+    name: menulibre
     state: present
+  become: true

@@ -10,9 +10,9 @@
     warn: false
   become: true
 
-- name:  Fira Code | Install
+- name: Fira Code | Install
   dnf:
-    name:  fira-code-fonts
+    name: fira-code-fonts
     state: present
   become: true
 
@@ -20,8 +20,10 @@
   file:
     path: "{{ ansible_env.HOME }}/.local/share/fonts"
     state: directory
+    mode: 0644
 
 - name: Copy Fonts
   copy:
     src: fonts
     dest: "{{ ansible_env.HOME }}/.local/share"
+    mode: 0644

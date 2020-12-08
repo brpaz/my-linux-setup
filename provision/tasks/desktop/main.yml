@@ -17,6 +17,7 @@
   copy:
     src: wallpaper.jpg
     dest: "{{ ansible_env.HOME }}/.wallpaper.jpg"
+    mode: 0644
 
 - name: Set Wallpaper
   dconf:
@@ -53,5 +54,6 @@
     name:
       - rhytmbox
       - cheese
+      - totem
     state: absent
   become: true

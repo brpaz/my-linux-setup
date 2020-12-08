@@ -26,3 +26,4 @@
   copy:
     src: icons
     dest: "{{ ansible_env.HOME }}/.local/share"
+    mode: 0644

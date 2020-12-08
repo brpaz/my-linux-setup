@@ -15,12 +15,16 @@
       - algoliasearch
       - pwgen
       - glob2
-      - gitlab
+      - python-gitlab
+      - docker
+      - memoization
+      - PyGithub
+      - Cloudflare
+      - ansible-lint
   become: true
 
 - name: Python | Install system packages
   dnf:
-    name:
-      - python3-ansible-lint
+    name: python3-ansible-lint
     state: present
   become: true

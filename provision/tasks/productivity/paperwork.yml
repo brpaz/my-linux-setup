@@ -1,4 +1,0 @@
-- name: Paperwork
-  flatpak:
-    name:  work.openpaper.Paperwork
-    state: present

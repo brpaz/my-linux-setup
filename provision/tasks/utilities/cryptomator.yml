@@ -9,3 +9,4 @@
   copy:
     src: applications/cryptomator.desktop
     dest: "{{ applications_dir }}/crytomator.desktop"
+    mode: 0644

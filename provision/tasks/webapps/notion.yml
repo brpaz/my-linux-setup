@@ -13,6 +13,7 @@
   copy:
     src: "{{ setup_dir }}/Notion-linux-x64/"
     dest: "/opt/Notion/"
+    mode: 0644
   become: true
   when: not notion_dir.stat.exists
 
@@ -32,4 +33,5 @@
   copy:
     src: applications/notion.desktop
     dest: "{{ applications_dir }}/notion.desktop"
+    mode: 0644
   when: not notion_dir.stat.exists

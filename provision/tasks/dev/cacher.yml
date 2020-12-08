@@ -9,3 +9,4 @@
   copy:
     src: applications/cacher.desktop
     dest: "{{ applications_dir }}/cacher.desktop"
+    mode: 0644

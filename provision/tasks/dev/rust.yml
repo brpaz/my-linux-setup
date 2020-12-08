@@ -1,0 +1,7 @@
+- name: Rust | Install
+  dnf:
+    name:
+      - rust
+      - cargo
+    state: present
+  become: true

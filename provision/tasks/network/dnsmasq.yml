@@ -4,6 +4,7 @@
     content: |
       [main]
       dns=dnsmasq
+    mode: 0644
   become: true
 
 - name: Set nameservers
@@ -14,30 +15,35 @@
       method=auto
       dns=8.8.8.8;4.2.2.2;
       ignore-auto-dns=true
+    mode: 0644
   become: true
 
 - name: Dnsmasq | Ensure config directory
   file:
     path: /etc/NetworkManager/dnsmasq.d
     state: directory
+    mode: 0644
   become: true
 
 - name: Dnsmasq | Configure entry for .lh domain
   copy:
     dest: "/etc/NetworkManager/dnsmasq.d/lh.conf"
     content: "address=/lh/127.0.0.1"
+    mode: 0644
   become: true
 
 - name: Dnsmasq | Configure entry for .docker domain
   copy:
     dest: "/etc/NetworkManager/dnsmasq.d/docker.conf"
     content: "address=/docker/127.0.0.1"
+    mode: 0644
   become: true
 
 - name: Dnsmasq | Configure entry for .mkbube domain
   copy:
     dest: "/etc/NetworkManager/dnsmasq.d/mkube.conf"
     content: "address=/docker/192.168.1.100"
+    mode: 0644
   become: true
 
 - name: Restart network manager

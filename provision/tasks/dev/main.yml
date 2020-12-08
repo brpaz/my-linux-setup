@@ -15,6 +15,8 @@
   tags: ["java"]
 - include: vala.yml
   tags: ["vala"]
+- include: rust.yml
+  tags: ["rust"]
 
 # =======================
 # Tools
@@ -75,10 +77,6 @@
   tags: ["kubernetes", "helm"]
 - include: kubernetes/kail.yml
   tags: ["kubernetes", "kail"]
-- include: kubernetes/kubernetic.yml
-  tags: ["kubernetes", "kubernetic"]
-- include: kubernetes/telepresence.yml
-  tags: ["kubernetes", "telepresence"]
 - include: kubernetes/kubeseal.yml
   tags: ["kubernetes", "kubeseal"]
 - include: kubernetes/kustomize.yml
@@ -87,6 +85,10 @@
   tags: ["kubernetes", "kubeval"]
 - include: kubernetes/k9s.yml
   tags: ["kubernetes", "k9s"]
+- include: kubernetes/kind.yml
+  tags: ["kubernetes", "kind"]
+- include: kubernetes/lens.yml
+  tags: ["kubernetes", "lens"]
 
 # ===================
 # Cloud tools
@@ -113,7 +115,7 @@
   tags: ["tldr"]
 - include: git-tools.yml
 - include: teleconsole.yml
-- include: charles.yml
+  tags: teleconsole
 - include: terraform.yml
   tags: ["terraform"]
 - include: sqllitebrowser.yml
@@ -126,8 +128,8 @@
   tags: ["gh-cli"]
 - include: snipline.yml
   tags: ["snipline"]
-- include: fluxctl.yml
-  tags: ["fluxctl"]
+- include: flux.yml
+  tags: ["fluxc"]
 - include: goreleaser.yml
   tags: ["goreleaser"]
 - include: direnv.yml

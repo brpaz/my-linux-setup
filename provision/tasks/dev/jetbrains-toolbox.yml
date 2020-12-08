@@ -11,3 +11,4 @@
   copy:
     src: applications/jetbrains-toolbox.desktop
     dest: "{{ applications_dir }}/jetbrains-toolbox.desktop"
+    mode: 0644

@@ -2,3 +2,4 @@
   copy:
     src: autostart
     dest: "{{ ansible_env.HOME }}/.config"
+    mode: 0644

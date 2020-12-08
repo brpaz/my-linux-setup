@@ -24,6 +24,10 @@
     append: yes
   become: true
 
+- name: Configure Firewall
+  command: firewall-cmd --permanent --zone=trusted --add-interface=docker0 && firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
+  become: true
+
 - name: Docker | Start service
   systemd:
     name: docker

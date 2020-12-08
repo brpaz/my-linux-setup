@@ -13,6 +13,7 @@
   copy:
     src: "{{ setup_dir }}/WhatsApp-linux-x64/"
     dest: "/opt/WhatsApp/"
+    mode: 0644
   become: true
   when: not whatsapp_dir.stat.exists
 
@@ -32,4 +33,5 @@
   copy:
     src: applications/whatsapp.desktop
     dest: "{{ applications_dir }}/whatsapp.desktop"
+    mode: 0644
   when: not whatsapp_dir.stat.exists

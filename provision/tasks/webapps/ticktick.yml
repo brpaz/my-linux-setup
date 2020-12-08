@@ -13,6 +13,7 @@
   copy:
     src: "{{ setup_dir }}/TickTick-linux-x64/"
     dest: "/opt/TickTick/"
+    mode: 0644
   become: true
   when: not ticktick_dir.stat.exists
 
@@ -32,4 +33,5 @@
   copy:
     src: applications/ticktick.desktop
     dest: "{{ applications_dir }}/ticktick.desktop"
+    mode: 0644
   when: not ticktick_dir.stat.exists

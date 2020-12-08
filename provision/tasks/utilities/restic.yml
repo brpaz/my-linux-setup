@@ -8,11 +8,13 @@
   file:
     path: "{{ ansible_env.HOME }}/.config/systemd/user"
     state: directory
+    mode: 0644
 
 - name: Restic | Install Systemd units
   copy:
     src: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.config/systemd/user"
+    mode: 0644
   loop:
     - restic/restic-backup.service
     - restic/restic-backup.timer

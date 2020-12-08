@@ -1,4 +1,0 @@
-- name: Polari
-  dnf:
-    name: polari
-  become: true

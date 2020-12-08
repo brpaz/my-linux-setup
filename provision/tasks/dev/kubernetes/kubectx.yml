@@ -9,6 +9,7 @@
   file:
     path: "{{ setup_dir }}/kubectx"
     state: directory
+    mode: 0644
 
 - name: Kubectx | Download tarball
   unarchive:

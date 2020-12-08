@@ -9,3 +9,4 @@
   copy:
     src: applications/spotlight-studio.desktop
     dest: "{{ applications_dir }}/spotlight-studio.desktop"
+    mode: 0644

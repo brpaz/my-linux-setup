@@ -3,24 +3,29 @@
     name: ansible-gnome-extensions
   vars:
     gnome_extension_ids:
-      - 97
-      - 937
-      - 800
-      - 779
-      - 517
-      - 355
-      - 307
+      - 2594
       - 16
+      - 615
+      - 517
       - 1544
-      - 1460
-      - 1319
-      - 1238
-      - 1176
-      - 1162
-      - 1007
-      - 657
-      - 2890
+      - 779
+      - 97
       - 2224
+      - 307
+      - 1162
+      - 1125
+      - 3535
+      - 1319
+      - 3115
+      - 937
+      - 1379
+      - 800
+      - 355
+      - 2890
+      - 1238
+      - 1460
+      - 1207
+      - 1007
 
 - name: Gnome Extensions | Auto move windows Settings
   dconf:
@@ -155,3 +160,12 @@
         key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
         value: "['cacher.desktop:3','code.desktop:2']",
       }
+
+- name: Install Pop shell
+  dnf:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - gnome-shell-extension-pop-shell
+    - gnome-shell-extension-pop-shell-shortcut-overrides
+  become: true

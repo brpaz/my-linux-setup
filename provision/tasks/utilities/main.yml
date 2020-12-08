@@ -1,6 +1,5 @@
-# TODO not supported by Fedora 32
-#- include: bleachbit.yml
-#  tags: ["bleachbit", "utilities"]
+- include: bleachbit.yml
+  tags: ["bleachbit", "utilities"]
 - include: cryptomator.yml
   tags: ["cryptomator", "utilities"]
 - include: etcher.yml

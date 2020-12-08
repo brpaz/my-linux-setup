@@ -1,0 +1,4 @@
+- name: Workspaces | Install
+  flatpak:
+    name: com.github.devalien.workspaces
+    state: present
