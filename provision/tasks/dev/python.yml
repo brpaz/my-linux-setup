@@ -21,7 +21,10 @@
       - PyGithub
       - Cloudflare
       - ansible-lint
-  become: true
+      - brotab
+      - dateparser
+      - jinja2
+      - python-frontmatter
 
 - name: Python | Install system packages
   dnf:
