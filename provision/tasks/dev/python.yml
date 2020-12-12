@@ -25,6 +25,7 @@
       - dateparser
       - jinja2
       - python-frontmatter
+      - validator-collection
 
 - name: Python | Install system packages
   dnf:
