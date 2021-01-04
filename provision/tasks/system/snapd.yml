@@ -1,0 +1,5 @@
+- name: Snapd | Install
+  dnf:
+    name: "snapd"
+    state: present
+  become: true

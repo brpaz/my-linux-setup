@@ -1,0 +1,5 @@
+- name: Install Authy
+  snap:
+    name: authy
+    channel: beta
+  become: true

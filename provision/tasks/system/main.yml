@@ -20,5 +20,7 @@
 
 - include: base.yml
 - include: flatpak.yml
+- include: snapd.yml
+  tags: ["snapd"]
 - include: user.yml
 - include: selinux.yml
