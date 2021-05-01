@@ -1,0 +1,44 @@
+- name: Grafana | Create persistent volume
+  docker_volume:
+    name: grafana-storage
+    state: present
+
+- name: Grafana | Create Configuration folder
+  copy:
+    src: grafana/
+    dest: /etc/grafana
+  become: true
+
+- name: Grafana Create the overlay network
+  docker_network:
+    name: grafana-net
+    state: present
+
+- name: Grafana | Start Container
+  docker_container:
+    name: grafana
+    image: grafana/grafana:7.5.3
+    state: started
+    restart_policy: "unless-stopped"
+    networks:
+      - name: grafana-net
+    volumes:
+      - "grafana-storage:/var/lib/grafana"
+      - "/etc/grafana/provisioning:/etc/grafana/provisioning"
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.grafana.rule: "Host(`grafana.docker`)"
+      traefik.http.services.grafana.loadbalancer.server.port: "3000"
+    networks_cli_compatible: "yes"
+
+- name: Loki | Start container
+  docker_container:
+    name: loki
+    image: grafana/loki:2.0.0
+    state: started
+    networks:
+      - name: grafana-net
+    ports:
+      - "3100:3100"
+    restart_policy: "unless-stopped"
+    networks_cli_compatible: "yes"

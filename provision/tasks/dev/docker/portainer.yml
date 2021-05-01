@@ -1,18 +1,22 @@
 - name: Docker | Create Portainer volume
   docker_volume:
-    name:  portainer_data
+    name: portainer_data
     state: present
   become: true
 
 - name: Docker | Start Portainer container
   docker_container:
     name: portainer
-    image: portainer/portainer
+    image: portainer/portainer-ce:2.1.1-alpine
     state: started
-    ports:
-      - "9000:9000"
-    restart_policy: "always"
+    restart_policy: "unless-stopped"
     volumes:
       - "portainer_data:/data"
       - "/var/run/docker.sock:/var/run/docker.sock"
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.portainer.rule: "Host(`portainer.docker`)"
+      traefik.http.routers.portainer.tls: "true"
+      traefik.http.routers.portainer.entrypoints: "websecure"
+      traefik.http.services.portainer.loadbalancer.server.port: "9000"
   become: true

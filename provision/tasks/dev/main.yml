@@ -50,11 +50,12 @@
 - include: docker/compose.yml
   tags: ["docker", "docker-compose"]
 
-# # TODO only enable this after booting with cgroups v1
-# # - include: docker/traefik.yml
-# #   tags: ["docker", "traefik"]
-# # - include: docker/portainer.yml
-# #   tags: ["docker", "portainer"]
+- include: docker/traefik.yml
+  tags: ["docker", "traefik"]
+- include: docker/portainer.yml
+  tags: ["docker", "portainer"]
+- include: docker/grafana.yml
+  tags: ["docker", "grafana"]
 - include: docker/ctop.yml
   tags: ["docker", "ctop"]
 - include: docker/lazydocker.yml

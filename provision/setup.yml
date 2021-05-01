@@ -25,6 +25,14 @@
         state: absent
       become: true
       tags: [always]
+
+  handlers:
+    - name: restart docker
+      service:
+        name: docker
+        state: restarted
+      become: true
+
   tasks:
     - import_tasks: tasks/system/main.yml
       tags: ["system"]

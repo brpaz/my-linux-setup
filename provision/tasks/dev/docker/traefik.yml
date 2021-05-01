@@ -6,20 +6,41 @@
 
 - name: Traefik | Configuration file
   copy:
-    src: conf/traefik.toml
-    dest: "/etc/traefik/traefik.toml"
+    src: traefik/traefik.yaml
+    dest: "/etc/traefik/traefik.yaml"
+  become: true
+
+- name: Traefik | Dynamic config
+  copy:
+    src: traefik/conf
+    dest: "/etc/traefik"
+  become: true
+
+- name: Traefik | Install ssl certificates
+  copy:
+    src: traefik/certs
+    dest: "/etc/traefik"
   become: true
 
 - name: Start Traefik Container
   docker_container:
     name: traefik
-    image: traefik:v2.2
+    image: traefik:v2.4.8
     ports:
       - "80:80"
+      - "443:443"
       - "8080:8080"
     state: started
     restart_policy: "unless-stopped"
     volumes:
-      - /etc/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - /etc/traefik/traefik.yaml:/etc/traefik/traefik.yaml
       - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/traefik/certs:/etc/certs:ro
+      - /etc/traefik/conf:/etc/traefik/conf:ro
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.api.rule: "Host(`traefik.docker`)"
+      traefik.http.routers.api.service: api@internal
+      traefik.http.routers.api.tls: "true"
+      traefik.http.routers.api.entrypoints: "websecure"
   become: true

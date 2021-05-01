@@ -11,3 +11,5 @@
   tags: ["bat"]
 - include: sd.yml
   tags: ["sd"]
+- include: bitwarden-cli.yml
+  tags: ["bitwarden"]

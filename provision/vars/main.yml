@@ -5,7 +5,7 @@ dotfiles_repo_url: https://brpaz:{{ github_token }}@github.com/brpaz/dotfiles.gi
 dotfiles_ssh_repo_url: git@github.com:brpaz/dotfiles.git
 shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"
 applications_dir: "{{ ansible_env.HOME }}/.local/share/applications"
-cryptomator_version: 1.4.15
+cryptomator_version: 1.5.12
 kubernetic_version: 2.6.0
 pulumi_version: 2.2.1
 jetbrains_toolbox_version: 1.16.6319
