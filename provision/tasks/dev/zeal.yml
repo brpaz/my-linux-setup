@@ -1,0 +1,4 @@
+- name: Zeal Docs
+  flatpak:
+    name: org.zealdocs.Zeal
+    state: present

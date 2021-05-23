@@ -39,3 +39,9 @@
     port: "1714:1764"
     proto: udp
   become: true
+
+- name: Allow access from Docker containers to the host
+  ufw:
+    rule: allow
+    src: "172.18.0.0/24"
+  become: true

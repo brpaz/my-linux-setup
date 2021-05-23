@@ -1,5 +1,5 @@
 - name: Ulauncher
   dnf:
-    name: "https://github.com/Ulauncher/Ulauncher/releases/download/5.7.5/ulauncher_5.7.5_fedora32.rpm"
+    name: "https://github.com/Ulauncher/Ulauncher/releases/download/5.11.0/ulauncher_5.11.0_fedora33.rpm"
     state: present
   become: true

@@ -106,12 +106,9 @@
 # ===================
 # Other
 # ===================
-- include: autoenv.yml
 - include: mkcert.yml
   tags: ["mkcert"]
 - include: dbcli.yml
-- include: pet.yml
-  tags: ["pet"]
 - include: tldr.yml
   tags: ["tldr"]
 - include: git-tools.yml
@@ -127,11 +124,13 @@
   tags: ["spotlight-studio"]
 - include: gh-cli.yml
   tags: ["gh-cli"]
-- include: snipline.yml
-  tags: ["snipline"]
 - include: flux.yml
-  tags: ["fluxc"]
+  tags: ["fluxcd"]
 - include: goreleaser.yml
   tags: ["goreleaser"]
 - include: direnv.yml
   tags: ["direnv"]
+- include: zeal.yml
+  tags: ["zeal"]
+#- include: the-way.yml
+#  tags: ["the-way"]

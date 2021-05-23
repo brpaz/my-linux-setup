@@ -2,6 +2,7 @@
 .PHONY: galaxy lint setup run run-tag preview help
 
 .DEFAULT_GOAL := help
+SETUP_PLAYBOOK_PATH := "playbooks/setup.sh"
 
 galaxy: ## Install roles from ansible galaxy
 	ansible-galaxy install -r requirements.yml
@@ -12,16 +13,19 @@ lint: ## Lints the ansible playbook
 setup: ## Run initial setup script
 	sudo pip3 install -r requirements.txt
 	ansible-galaxy install -r requirements.yml
-	ansible-playbook setup.yml --ask-become-pass -i hosts
+	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts
 
 run: ## Runs the main playbook
-	ansible-playbook setup.yml --ask-become-pass -i hosts -v
+	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts -v
 
 run-tag: ## Runs the playbook for a specific tag
-	ansible-playbook setup.yml --ask-become-pass -i hosts --tags $(TAG)
+	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts --tags $(TAG)
 
 preview: ## Preview
-	ansible-playbook setup.yml --ask-become-pass -i hosts --check --diff
+	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts --check --diff
+
+update-node: ## Preview
+	ansible-playbook playbooks/update-node.yml --ask-become-pass -i hosts
 
 help: ## Display this help screen
 	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

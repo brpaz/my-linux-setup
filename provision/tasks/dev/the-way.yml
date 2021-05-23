@@ -1,0 +1,20 @@
+- name: The way cli Snippets management | Get latest release
+  github_release:
+    user: out-of-cheese-error
+    repo: the-way
+    action: latest_release
+  register: release
+
+- name: The way cli Snippets management | Download package
+  unarchive:
+    src: "https://github.com/out-of-cheese-error/the-way/releases/download/{{release.tag}}/the-way-{{release.tag}}-x86_64-unknown-linux-gnu.tar.gz"
+    remote_src: true
+    dest: "{{ setup_dir }}"
+  become: true
+
+- name: "The way cli Snippets management | Install"
+  copy:
+    src: "{{ setup_dir }}/the-way"
+    dest: "{{ bin_dir }}/the-way"
+    mode: "a+x"
+  become: true
