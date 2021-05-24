@@ -35,7 +35,9 @@
 - name: Dnsmasq | Configure entry for .docker domain
   copy:
     dest: "/etc/NetworkManager/dnsmasq.d/docker.conf"
-    content: "address=/docker/127.0.0.1"
+    content: |
+      address=/docker/127.0.0.1
+      server=/docker.svc.local/172.17.0.1
     mode: 0644
   become: true
 
@@ -48,9 +50,6 @@
 
 - name: Restart network manager
   systemd:
-    name: "{{ item }}"
+    name: "NetworkManager"
     state: restarted
-  with_items:
-    - dnsmasq
-    - NetworkManager
   become: true
