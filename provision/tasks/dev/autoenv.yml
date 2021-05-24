@@ -1,6 +1,0 @@
-
-- name: Autoenv | Install
-  pip:
-    name:
-      - autoenv
-  become: true

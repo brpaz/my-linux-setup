@@ -22,7 +22,12 @@
     dest: "/etc/traefik"
   become: true
 
-- name: Start Traefik Container
+- name: Traefik | Create the overlay network
+  docker_network:
+    name: traefik-public
+    state: present
+
+- name: Traefik | Start Traefik Container
   docker_container:
     name: traefik
     image: traefik:v2.4.8
@@ -39,6 +44,7 @@
       - /etc/traefik/conf:/etc/traefik/conf:ro
     labels:
       traefik.enable: "true"
+      traefik.docker.network: traefik-public
       traefik.http.routers.api.rule: "Host(`traefik.docker`)"
       traefik.http.routers.api.service: api@internal
       traefik.http.routers.api.tls: "true"

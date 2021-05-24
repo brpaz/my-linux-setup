@@ -2,7 +2,7 @@
   hosts: all
 
   vars_files:
-    - ../vars/main.yml
+    - vars/main.yml
 
   vars_prompt:
     - name: github_token
@@ -15,7 +15,7 @@
       file:
         path: "{{ setup_dir }}"
         state: directory
-        mode: 0644
+        mode: 0755
       tags: [always]
 
   post_tasks:
@@ -34,44 +34,44 @@
       become: true
 
   tasks:
-    - import_tasks: ../tasks/system/main.yml
+    - import_tasks: tasks/system/main.yml
       tags: ["system"]
 
-    - import_tasks: ../tasks/dotfiles.yml
+    - import_tasks: tasks/dotfiles.yml
       tags: ["dotfiles"]
 
-    - import_tasks: ../tasks/shell/main.yml
+    - import_tasks: tasks/shell/main.yml
       tags: ["shell"]
 
-    - import_tasks: ../tasks/cli/main.yml
+    - import_tasks: tasks/cli/main.yml
       tags: ["cli"]
 
-    - import_tasks: ../tasks/internet/main.yml
+    - import_tasks: tasks/internet/main.yml
       tags: ["internet"]
 
-    - import_tasks: ../tasks/productivity/main.yml
+    - import_tasks: tasks/productivity/main.yml
       tags: ["productivity"]
 
-    - import_tasks: ../tasks/utilities/main.yml
+    - import_tasks: tasks/utilities/main.yml
       tags: ["utilities"]
 
-    - import_tasks: ../tasks/multimedia/main.yml
+    - import_tasks: tasks/multimedia/main.yml
       tags: ["multimedia"]
 
-    - import_tasks: ../tasks/dev/main.yml
+    - import_tasks: tasks/dev/main.yml
       tags: ["dev"]
 
-    - import_tasks: ../tasks/games/main.yml
+    - import_tasks: tasks/games/main.yml
       tags: ["games"]
 
-    - import_tasks: ../tasks/network/main.yml
+    - import_tasks: tasks/network/main.yml
       tags: ["networking"]
 
-    - import_tasks: ../tasks/desktop/main.yml
+    - import_tasks: tasks/desktop/main.yml
       tags: ["desktop"]
 
-    - import_tasks: ../tasks/virtualization/main.yml
+    - import_tasks: tasks/virtualization/main.yml
       tags: ["virtualization"]
 
-    - import_tasks: ../tasks/webapps/main.yml
+    - import_tasks: tasks/webapps/main.yml
       tags: ["webapps"]

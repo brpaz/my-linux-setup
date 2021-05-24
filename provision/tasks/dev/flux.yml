@@ -8,7 +8,7 @@
 
 - name: Fkux Install
   unarchive:
-    src: https://github.com/fluxcd/flux2/releases/download//{{ flux_release.tag }}/flux_release-{{ flux_release.tag[1:] }}_linux_amd64.tar.gz
+    src: https://github.com/fluxcd/flux2/releases/download/{{ flux_release.tag }}/flux_{{ flux_release.tag[1:] }}_linux_amd64.tar.gz
     remote_src: true
     dest: "{{ bin_dir }}"
   become: true

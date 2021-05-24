@@ -10,6 +10,8 @@
     image: portainer/portainer-ce:2.1.1-alpine
     state: started
     restart_policy: "unless-stopped"
+    networks:
+      - name: traefik-public
     volumes:
       - "portainer_data:/data"
       - "/var/run/docker.sock:/var/run/docker.sock"

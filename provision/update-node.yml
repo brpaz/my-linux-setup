@@ -2,7 +2,7 @@
   hosts: all
 
   vars_files:
-    - ../vars/main.yml
+    - vars/main.yml
 
   tasks:
-    - import_tasks: ../tasks/dev/node.yml
+    - import_tasks: tasks/dev/node.yml

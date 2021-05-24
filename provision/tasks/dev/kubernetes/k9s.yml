@@ -6,9 +6,9 @@
     token: "{{ github_token }}"
   register: release
 
-- name: k9s | download archive
+- name: k9s | Download Tarball
   unarchive:
-    src: "https://github.com/derailed/k9s/releases/download/{{ release.tag }}/k9s_Linux_x86_64.tar.gz"
+    src: "https://github.com/derailed/k9s/releases/download/{{ release.tag }}/k9s_{{ release.tag }}_Linux_x86_64.tar.gz"
     remote_src: true
     dest: "{{ setup_dir }}"
 

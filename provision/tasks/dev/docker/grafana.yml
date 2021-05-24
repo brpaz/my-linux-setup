@@ -22,6 +22,7 @@
     restart_policy: "unless-stopped"
     networks:
       - name: grafana-net
+      - name: traefik-public
     volumes:
       - "grafana-storage:/var/lib/grafana"
       - "/etc/grafana/provisioning:/etc/grafana/provisioning"
@@ -29,7 +30,7 @@
       traefik.enable: "true"
       traefik.http.routers.grafana.rule: "Host(`grafana.docker`)"
       traefik.http.services.grafana.loadbalancer.server.port: "3000"
-    networks_cli_compatible: "yes"
+    networks_cli_compatible: "false"
 
 - name: Loki | Start container
   docker_container:

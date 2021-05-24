@@ -4,12 +4,12 @@
 - include: ranger.yml
 - include: jq.yml
 - include: yq.yml
-  tags: ["yq"]
+  tags: ["yq", "github"]
 - include: pandoc.yml
 - include: asciinema.yml
 - include: bat.yml
   tags: ["bat"]
 - include: sd.yml
-  tags: ["sd"]
+  tags: ["sd", "github"]
 - include: bitwarden-cli.yml
-  tags: ["bitwarden"]
+  tags: ["bitwarden", "githuv"]

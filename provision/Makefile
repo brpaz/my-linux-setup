@@ -2,7 +2,7 @@
 .PHONY: galaxy lint setup run run-tag preview help
 
 .DEFAULT_GOAL := help
-SETUP_PLAYBOOK_PATH := "playbooks/setup.sh"
+SETUP_PLAYBOOK_PATH := "setup.yml"
 
 galaxy: ## Install roles from ansible galaxy
 	ansible-galaxy install -r requirements.yml
@@ -25,7 +25,10 @@ preview: ## Preview
 	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts --check --diff
 
 update-node: ## Preview
-	ansible-playbook playbooks/update-node.yml --ask-become-pass -i hosts
+	ansible-playbook update-node.yml --ask-become-pass -i hosts
+
+update-github: ## Updates applications downloaded from GitHub
+		ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts -v --tags "github"
 
 help: ## Display this help screen
 	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

@@ -6,7 +6,7 @@
     token: "{{ github_token }}"
   register: bw_release
 
-- name: SD | Download
+- name: Bitwarden | Download
   unarchive:
     remote_src: true
     src: https://github.com/bitwarden/cli/releases/download/{{ bw_release.tag }}/bw-linux-{{ bw_release.tag[1:] }}.zip

@@ -9,7 +9,7 @@
 - name: Kubernetes Lens | Download AppImage
   get_url:
     url: "
-https://github.com/lensapp/lens/releases/download/{{ lens_release.tag }}/Lens-{{ lens_release.tag[1:] }}.AppImage"
+https://github.com/lensapp/lens/releases/download/{{ lens_release.tag }}/Lens-{{ lens_release.tag[1:] }}.x86_64.AppImage"
     dest: "/opt/Lens.AppImage"
     mode: a+x
   become: true

@@ -48,22 +48,22 @@
 - include: docker/docker.yml
   tags: ["docker"]
 - include: docker/compose.yml
-  tags: ["docker", "docker-compose"]
+  tags: ["docker", "docker-compose", "github"]
 
 - include: docker/traefik.yml
-  tags: ["docker", "traefik"]
+  tags: ["docker", "traefik", "docker-app"]
 - include: docker/portainer.yml
-  tags: ["docker", "portainer"]
+  tags: ["docker", "portainer", "docker-app"]
 - include: docker/grafana.yml
-  tags: ["docker", "grafana"]
+  tags: ["docker", "grafana", "docker-app"]
 - include: docker/ctop.yml
-  tags: ["docker", "ctop"]
+  tags: ["docker", "ctop", "github"]
 - include: docker/lazydocker.yml
-  tags: ["docker", "lazydocker"]
+  tags: ["docker", "lazydocker", "github"]
 - include: docker/dive.yml
-  tags: ["docker", "dive"]
+  tags: ["docker", "dive", "github"]
 - include: sops.yml
-  tags: ["sops"]
+  tags: ["sops", "github"]
 
 # # ============================
 # # Kubernetes
@@ -73,23 +73,23 @@
 - include: kubernetes/kubectl.yml
   tags: ["kubernetes", "kubectl"]
 - include: kubernetes/kubectx.yml
-  tags: ["kubernetes", "kubectx"]
+  tags: ["kubernetes", "kubectx", "github"]
 - include: kubernetes/helm.yml
   tags: ["kubernetes", "helm"]
 - include: kubernetes/kail.yml
-  tags: ["kubernetes", "kail"]
+  tags: ["kubernetes", "kail", "github"]
 - include: kubernetes/kubeseal.yml
-  tags: ["kubernetes", "kubeseal"]
+  tags: ["kubernetes", "kubeseal", "github"]
 - include: kubernetes/kustomize.yml
-  tags: ["kubernetes", "kustomize"]
+  tags: ["kubernetes", "kustomize", "github"]
 - include: kubernetes/kubeval.yml
-  tags: ["kubernetes", "kubeval"]
+  tags: ["kubernetes", "kubeval", "github"]
 - include: kubernetes/k9s.yml
-  tags: ["kubernetes", "k9s"]
+  tags: ["kubernetes", "k9s", "github"]
 - include: kubernetes/kind.yml
-  tags: ["kubernetes", "kind"]
+  tags: ["kubernetes", "kind", "github"]
 - include: kubernetes/lens.yml
-  tags: ["kubernetes", "lens"]
+  tags: ["kubernetes", "lens", "github"]
 
 # ===================
 # Cloud tools
@@ -97,7 +97,7 @@
 - include: cloud/awscli.yml
   tags: ["awscli"]
 - include: cloud/doctl.yml
-  tags: ["doctl"]
+  tags: ["doctl", "github"]
 - include: cloud/gcloud.yml
   tags: ["gcloud"]
 - include: cloud/heroku.yml
@@ -107,15 +107,14 @@
 # Other
 # ===================
 - include: mkcert.yml
-  tags: ["mkcert"]
+  tags: ["mkcert", "github"]
 - include: dbcli.yml
 - include: tldr.yml
   tags: ["tldr"]
 - include: git-tools.yml
-- include: teleconsole.yml
-  tags: teleconsole
+  tags: ["github"]
 - include: terraform.yml
-  tags: ["terraform"]
+  tags: ["terraform", "github"]
 - include: sqllitebrowser.yml
 - include: cacher.yml
 - include: pulumi.yml
@@ -123,14 +122,14 @@
 - include: spotlight-studio.yml
   tags: ["spotlight-studio"]
 - include: gh-cli.yml
-  tags: ["gh-cli"]
+  tags: ["gh-cli", "githhub"]
 - include: flux.yml
-  tags: ["fluxcd"]
+  tags: ["fluxcd", "github"]
 - include: goreleaser.yml
-  tags: ["goreleaser"]
+  tags: ["goreleaser", "github"]
 - include: direnv.yml
   tags: ["direnv"]
 - include: zeal.yml
   tags: ["zeal"]
-#- include: the-way.yml
-#  tags: ["the-way"]
+- include: the-way.yml
+  tags: ["the-way"]
