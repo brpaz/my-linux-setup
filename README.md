@@ -52,6 +52,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
     - [Gnome Extensions](#gnome-extensions)
     - [VS Code Extensions](#vs-code-extensions)
   - [Firefox Extensions](#firefox-extensions)
+  - [Ulauncher Extensions](#ulauncher-extensions)
 
 ## Graphical Applications
 
@@ -66,8 +67,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Planner](https://flathub.org/apps/details/com.github.alainm23.planner) - Native TODO list application.
 * [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
 * [Workspaces](https://flathub.org/apps/details/com.github.devalien.workspaces) - Workspaces lets you configure and quickly launch all you need to work on a project. It can open in a second different instances of code, a specific website and a directory.
-* [Notion (Web App)](https://www.notion.so) - My personal Knowledge base and notes application. Powered by [Nativefier](https://github.com/jiahaog/nativefier)
-* [TickTick (Web App)](https://www.ticktick.com) - Todo list and reminders app. Powered by [Nativefier](https://github.com/jiahaog/nativefier)
+* [Dendron](https://www.dendron.so/) - Dendron makes it easy to add, find and share anything in seconds, regardless of how much information you have
 
 ---
 
@@ -78,11 +78,12 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
 * [Transmission](https://transmissionbt.com/) - Torrent client
 * [uget](https://ugetdm.com/) - Download manager
-* [Gufw Firewall](http://gufw.org/) - Gui for ufw, Uncomplicated Firewall.
 * [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application.
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
+* [Youp for WhatsApp](https://flathub.org/apps/details/com.gigitux.youp) - WhatsApp GTK Client
+* [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal)
 
 ---
 
@@ -99,6 +100,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Graphviz](https://www.graphviz.org/) - Graph Visualization Software
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
+* [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
   
 ---
 ### Sound & Video
@@ -115,6 +117,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [youtube-dl-gui](https://github.com/MrS0m30n3/youtube-dl-gui) - A cross platform front\-end GUI of the popular youtube-dl.
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
+* [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
 
 ---
 
@@ -136,7 +139,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
 * [Lens](https://k8slens.dev/) - The Kubernetes IDE.
-  
+* [Boop](https://github.com/zoeyfyi/Boop-GTK) - Port of @IvanMathy's Boop to GTK, a scriptable scratchpad for developers.
+
 ---
 ### Utilities
 
@@ -151,7 +155,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
-* [pennywise](https://github.com/kamranahmedse/pennywise) -  Cross-platform application to open any website or media in a floating window.
 
 ---
 ### Games
@@ -163,8 +166,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ---
 ### Themes and Icons
 
-* [nana-4/materia-theme](https://github.com/nana-4/materia-theme) - A Material Design theme for GNOME/GTK+ based desktop environments
-* [arc-theme](https://github.com/horst3180/arc-theme) -  A flat theme with transparent elements.
 * [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) - Papirus icon theme for Linux.
 
 --- 
@@ -194,14 +195,13 @@ I use ZSH shell with the following extras:
 ### File Navigation and Search
 
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
-* [agkozak/zsh-z](https://github.com/agkozak/zsh-z) - Jump quickly to directories that you have visited "frecently". A native ZSH port of z.
 * [ranger](https://github.com/ranger/ranger) - A VIM-inspired filemanager for the console.
 * [junegunn/fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [facebook/PathPicker](https://github.com/facebook/pathpicker/) - PathPicker accepts a wide range of input/output from git commands, grep results, searches pretty much anything.After parsing the input, PathPicker presents you with a nice UI to select which files you're interested in. After that you can open them in your favorite editor or execute arbitrary commands.
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
 * [chmln/sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)]
-
+* [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
 ### Text Mainuplation
 
 * [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
@@ -233,7 +233,8 @@ I use ZSH shell with the following extras:
 ### Http Tools
 
 * [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
-* [Artillery](https://artillery.io/) - A modern load testing toolkit
+* [Artillery](https://artillery.io/) - A modern load testing toolkit.
+* [k6](https://k6.io/) - Load testing for engineering teams.
 
 ### Package Managers
 
@@ -246,7 +247,6 @@ I use ZSH shell with the following extras:
 * [hub](https://github.com/github/hub) - hub helps you win at git.
 * [lab](https://github.com/zaquestion/lab) - Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 * [tig](https://github.com/jonas/tig) - Text-mode interface for git
-* [git-semver](https://github.com/ziishaned/git-semver) - A CLI tool to generate semver compliant tags for your git repositories 
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
 * [arc90/git-sweep](https://github.com/arc90/git-sweep) - : A command-line tool that helps you clean up Git branches that have been merged into master.
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
@@ -272,9 +272,8 @@ I use ZSH shell with the following extras:
 
 * [cacher-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
 * [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
-* [snipline](https://snipline.io/) - Command-line snippet organizer for power users.
-* [santinic/how2](https://github.com/santinic/how2) - stackoverflow from the terminal
 * [sgentle/caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - Caniuse command line tool.
+* [out-of-cheese-error/the-way:](https://github.com/out-of-cheese-error/the-way) - A code snippets manager for your terminal.
 
 ### Cloud clients
 
@@ -282,24 +281,26 @@ I use ZSH shell with the following extras:
 * [Google Cloud SDK](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK.
 * [AWS CLI](https://aws.amazon.com/cli) - AWS Command Line Interface.
 * [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
+* [Vercel CLI](https://vercel.com/cli)
 * [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [firebase-tools](https://firebase.google.com/docs/cli) - Firebase Command Line tools
-
+  
 ### Docker Tools
 
 * [docker-compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
 * [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 * [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
-* [stern](https://github.com/wercker/stern) - Multi pod and container log tailing for Kubernetes
+* [kail](https://github.com/boz/kail) - kubernetes log viewer.
 * [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 * [minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
+* [Kind](https://github.com/kubernetes-sigs/kind) - Kubernetes IN Docker - local clusters for testing Kubernete
 * [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
 * [k9s](https://github.com/derailed/k9s) - Kubernetes CLI To Manage Your Clusters In Style!
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
-* [kubeval](https://github.com/instrumenta/kubeval) - Validate your Kubernetes configuration files, supports multiple Kubernetes versions
+* [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
 * [kubeseal](https://github.com/bitnami-labs/sealed-secrets) - CLI tool for encrypt and decrypt Bitnani sealed secrets
 
 ## Infrastucture As Code
@@ -314,7 +315,7 @@ I use ZSH shell with the following extras:
 ### Security
 
 * [pwgen](https://linux.die.net/man/1/pwgen) - make pronounceable passwords.
-* [lastpass-cli](https://github.com/lastpass/lastpass-cli) - LastPass command line interface tool
+* [bitwarden/cli](https://github.com/bitwarden/cli) - The command line vault (Windows, macOS, & Linux
 
 ### System Utils
 
@@ -333,14 +334,13 @@ I use ZSH shell with the following extras:
 * [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
 * [serverless/serverless](https://github.com/serverless/serverless)
 * [mycli](https://www.mycli.net/) - MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
-* [carbon-now-cli](https://github.com/mixn/carbon-now-cli) - Beautiful images of your code — from right inside your terminal.
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
-* [Teleconsole](https://www.teleconsole.com/) - your UNIX terminal in seconds!
 * [sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open source tool that helps you monitor, analyze and optimize your website speed and performance, based on performance best practices advices.
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
 * [Devilspie2](http://www.nongnu.org/devilspie2/) - Devilspie2 is a window matching utility, allowing the user to perform scripted actions on windows as they are created. For example you can script a terminal program to always be positioned at a specific screen position, or position a window on a specific workspace
 * [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
-
+* [mitmproxy/mitmproxy](https://github.com/mitmproxy/mitmproxy) -  An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
+* [pre-commit](https://pre-commit.com/) -  A framework for managing and maintaining multi-language pre-commit hooks.
 ## Development Runtimes
 
 * PHP
@@ -364,15 +364,14 @@ I use ZSH shell with the following extras:
 * [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages. Features: 1) New message indicator is always shown if there are notifications.
 * [Time ++](https://extensions.gnome.org/extension/1238/time/) - A todo.txt manager, time tracker, timer, stopwatch, pomodoro, and alarm clock
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, network speed and storage stats.
-* [ShellTile](https://extensions.gnome.org/extension/657/shelltile/) - A tiling window extension for GNOME Shell. Just move a window to the edges of the screen to create a tiling, otherwise move a window over another one, holding down the Control key.
+* [pop-os/shell: Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows. 
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
 * [Cast to TV](https://extensions.gnome.org/extension/1544/cast-to-tv/) - Cast files to Chromecast, web browser or media player app over local network.
 * [Laine](https://extensions.gnome.org/extension/937/laine/) - Volume control extension.
-* [Argos](https://extensions.gnome.org/extension/1176/argos/) - Create GNOME Shell extensions in seconds.
-    * [pionl/bitbar-gitlab-ci](https://github.com/pionl/bitbar-gitlab-ci) -  Shows currently running pipelines from your GitLab in your bar.
 * [VSCode Search Provider](https://extensions.gnome.org/extension/1207/vscode-search-provider/) - Provide recent VSCode projects as search results in overview
-  
+* [Proxy Profiles](https://extensions.gnome.org/extension/3379/proxy-profiles/) - Swich easily between several proxy profiles.
+
 ### VS Code Extensions
 
  
@@ -473,3 +472,44 @@ I use ZSH shell with the following extras:
 ## Firefox Extensions
  
 TODO
+
+## Ulauncher Extensions
+
+* [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop) 
+* [Dendron — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-dendron)
+* [Window Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-window-switcher)
+* [Workspace Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-xfwm-workspace-switcher)
+* [Obsidian — Ulauncher Extensions](https://ext.ulauncher.io/-/github-mikebarkmin-ulauncher-obsidian)
+* [Snippets — Ulauncher Extensions](https://ext.ulauncher.io/-/github-mikebarkmin-ulauncher-snippets)
+* [ShortIT — Ulauncher Extensions](https://ext.ulauncher.io/-/github-sergius02-ulauncher-shortit)
+* [UUID — Ulauncher Extensions](https://ext.ulauncher.io/-/github-fsevenm-ulauncher-uuid)
+* [Timezones — Ulauncher Extensions](https://ext.ulauncher.io/-/github-epholys-ultz)
+* [Zealdocs — Ulauncher Extensions](https://ext.ulauncher.io/-/github-kwaadpepper-zealdoc)
+* [Color converter — Ulauncher Extensions](https://ext.ulauncher.io/-/github-sergius02-ulauncher-colorconverter)
+* [Spotify API — Ulauncher Extensions](https://ext.ulauncher.io/-/github-the-lay-ulauncher-spotify-api)
+* [Shortcuts — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-shortcuts)
+* [DockerHub Search — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-dockerhub)
+* [Brotab — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-brotab)
+* [DocSearch — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-docsearch)
+* [IpCopy — Ulauncher Extensions](https://ext.ulauncher.io/-/github-pwnyprod-ulauncher-ipcopy)
+* [DuckDuckGo Bangs — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dhelmr-ulauncher-duckduckgo-bangs)
+* [Ulauncher Extensions](https://ext.ulauncher.io/-/github-kuenzelit-ulauncher-firefox-bookmarks)
+* [Password Generator — Ulauncher Extensions](https://ext.ulauncher.io/-/github-rkarami-ulauncher-password-generator)
+* [VirtualBox — Ulauncher Extensions](https://ext.ulauncher.io/-/github-luispabon-ulauncher-virtualbox)
+* [Unicode extension — Ulauncher Extensions](https://ext.ulauncher.io/-/github-zensoup-ulauncher-unicode)
+* [Converter — Ulauncher Extensions](https://ext.ulauncher.io/-/github-skykooler-ulauncher-conversion)
+* [IpCopy — Ulauncher Extensions](https://ext.ulauncher.io/-/github-pwnyprod-ulauncher-ipcopy)
+* [jetbrains Recent Projects — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-jetbrains)
+* [GCP Launcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-zeue-ulauncher-gcp)
+* [VSCode Projects Opener — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-vscode-projects)
+* [DigitalOcean — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-digiralocean)
+* [GitHub — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-github)
+* [Status Pages — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-statuspages)
+* [Repl.it — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-repl)
+* [Cloudflare — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-cloudflare)
+* [Netlify — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-netlify)
+* [cdnjs — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-cdnjs)
+* [SSH Launcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-jetbug123-ulauncher-ssh)
+* [Process Killer — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-kill)
+* [Emoji — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-emoji)
+* [Timer — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-timer)

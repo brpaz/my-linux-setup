@@ -1,0 +1,14 @@
+- name: Update System
+  hosts: all
+
+  tasks:
+    - name: Update system installed packages
+      dnf:
+        name: "*"
+        state: latest
+        update_only: yes
+        update_cache: yes
+      become: true
+
+    - name: Update flatpak installed packages
+      command: flatpak update -y

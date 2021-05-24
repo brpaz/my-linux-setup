@@ -30,3 +30,5 @@
   tags: ["shortwave"]
 - include: sound-recorder.yml
   tags: ["sound-recorder"]
+- include: kooha.yml
+  tags: ["kooha"]

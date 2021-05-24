@@ -27,6 +27,9 @@ preview: ## Preview
 update-node: ## Preview
 	ansible-playbook update-node.yml --ask-become-pass -i hosts
 
+update-system: ## Updates applications downloaded from GitHub
+		ansible-playbook update-system.yml --ask-become-pass -i hosts -v
+
 update-github: ## Updates applications downloaded from GitHub
 		ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts -v --tags "github"
 
