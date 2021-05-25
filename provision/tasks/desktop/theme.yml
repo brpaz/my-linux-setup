@@ -11,7 +11,6 @@
       - papirus-icon-theme
       - folder-color-common
       - folder-color-nautilus
-      - arc-theme
       - adwaita-qt4
       - adwaita-qt5
     state: present
@@ -26,4 +25,4 @@
   copy:
     src: icons
     dest: "{{ ansible_env.HOME }}/.local/share"
-    mode: 0644
+    mode: 0755

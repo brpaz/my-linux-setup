@@ -98,13 +98,9 @@
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding', value: "'<Super>t'" }
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command', value: "'tilix --focus-window'" }
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name', value: "'Open Terminal Window'" }
-    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding', value: "'<Alt><Super>M'" }
-    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command', value: "'minbrowser.sh'" }
-    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name', value: "'Open min browser'" }
 
 - name: Set Custom Shortcuts List
   dconf:
     key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
     value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"

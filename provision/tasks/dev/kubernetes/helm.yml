@@ -10,7 +10,7 @@
   file:
     path: "{{ setup_dir }}/helm"
     state: directory
-    mode: 0644
+    mode: 0755
 
 - name: Helm | Download Archive
   unarchive:

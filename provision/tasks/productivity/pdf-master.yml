@@ -1,5 +1,5 @@
 - name: Pdf Master
-  dnf:
-    name: http://code-industry.net/public/master-pdf-editor-4.3.89_qt5.x86_64.rpm
+  flatpak:
+    name: net.codeindustry.MasterPDFEditor
     state: present
   become: true

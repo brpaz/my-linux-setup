@@ -8,7 +8,7 @@
   file:
     path: "{{ ansible_env.HOME }}/.config/systemd/user"
     state: directory
-    mode: 0644
+    mode: 0755
 
 - name: Restic | Install Systemd units
   copy:

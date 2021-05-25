@@ -20,10 +20,10 @@
   file:
     path: "{{ ansible_env.HOME }}/.local/share/fonts"
     state: directory
-    mode: 0644
+    mode: 0755
 
 - name: Copy Fonts
   copy:
     src: fonts
     dest: "{{ ansible_env.HOME }}/.local/share"
-    mode: 0644
+    mode: 0755

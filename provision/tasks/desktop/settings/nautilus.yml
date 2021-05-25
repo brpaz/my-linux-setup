@@ -21,10 +21,10 @@
   file:
     path: "{{ ansible_env.HOME }}/Templates"
     state: directory
-    mode: 0644
+    mode: 0755
 
 - name: Nautilus | Install new file templates
   copy:
     src: nautilus/templates
     dest: "{{ ansible_env.HOME }}/Templates"
-    mode: 0644
+    mode: 0755

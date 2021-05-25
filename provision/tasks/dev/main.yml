@@ -118,7 +118,7 @@
 - include: sqllitebrowser.yml
 - include: cacher.yml
 - include: pulumi.yml
-  tags: ["pulumi"]
+  tags: ["pulumi", "github"]
 - include: spotlight-studio.yml
   tags: ["spotlight-studio"]
 - include: gh-cli.yml
