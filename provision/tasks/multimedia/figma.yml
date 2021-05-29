@@ -1,15 +1,4 @@
-- name: Figma | Latest Release
-  github_release:
-    user: Figma-Linux
-    repo: figma-linux
-    action: latest_release
-    token: "{{ github_token }}"
-  register: release
-
-- name: Figma | Install
-  dnf:
-    name: https://github.com/Figma-Linux/figma-linux/releases/download/{{ release.tag }}/figma-linux-{{ release.tag[1:] }}.x86_64.rpm
+- name: Figma
+  flatpak:
+    name: io.github.Figma_Linux.figma_linux
     state: present
-    disable_gpg_check: true
-
-  become: true

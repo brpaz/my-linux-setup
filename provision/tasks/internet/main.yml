@@ -9,3 +9,4 @@
 - include: transmission.yml
 - include: uget.yml
 - include: zoom.yml
+- include: whatip.yml

@@ -1,0 +1,4 @@
+- name: WhatIP
+  flatpak:
+    name: org.gabmus.whatip
+    state: present

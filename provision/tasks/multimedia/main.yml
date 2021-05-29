@@ -32,3 +32,4 @@
   tags: ["sound-recorder"]
 - include: kooha.yml
   tags: ["kooha"]
+- include: video-downloader.yml
