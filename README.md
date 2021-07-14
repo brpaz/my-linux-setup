@@ -84,6 +84,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
 * [Youp for WhatsApp](https://flathub.org/apps/details/com.gigitux.youp) - WhatsApp GTK Client
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal)
+* [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps
 
 ---
 
@@ -140,6 +141,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
 * [Lens](https://k8slens.dev/) - The Kubernetes IDE.
 * [Boop](https://github.com/zoeyfyi/Boop-GTK) - Port of @IvanMathy's Boop to GTK, a scriptable scratchpad for developers.
+* [Kube Forwarder](https://www.electronjs.org/apps/kube-forwarder) - Easy to use Kubernetes port forwarding manager.
 
 ---
 ### Utilities
@@ -155,6 +157,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
+* [Authy](https://authy.com/download/)
+* [Bitwarden](https://bitwarden.com/download/) - Password manager
 
 ---
 ### Games
@@ -202,6 +206,7 @@ I use ZSH shell with the following extras:
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
 * [chmln/sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)]
 * [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
+
 ### Text Mainuplation
 
 * [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
@@ -229,6 +234,7 @@ I use ZSH shell with the following extras:
 - iotop
 - nmap
 * [get-port-cli](https://github.com/sindresorhus/get-port-cli) - Get an available port
+* [mitmproxy](https://github.com/mitmproxy/mitmproxy) -  An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
 
 ### Http Tools
 
@@ -244,7 +250,6 @@ I use ZSH shell with the following extras:
 ### Version Control
 
 * [cli/cli](https://github.com/cli/cli) - GitHub’s official command line tool
-* [hub](https://github.com/github/hub) - hub helps you win at git.
 * [lab](https://github.com/zaquestion/lab) - Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab
 * [tig](https://github.com/jonas/tig) - Text-mode interface for git
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
@@ -301,7 +306,6 @@ I use ZSH shell with the following extras:
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
 * [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
-* [kubeseal](https://github.com/bitnami-labs/sealed-secrets) - CLI tool for encrypt and decrypt Bitnani sealed secrets
 
 ## Infrastucture As Code
 
@@ -311,6 +315,7 @@ I use ZSH shell with the following extras:
   * [Ansible Galaxy](https://galaxy.ansible.com/) - Jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work known to Ansible as roles.
 * [Pulumi](https://www.pulumi.com/) -  Modern Infrastructure as Code
 * [terratest](https://github.com/gruntwork-io/terratest/releases) - Terratest is a Go library that makes it easier to write automated tests for your infrastructure code. 
+* [mozilla/sops](https://github.com/mozilla/sops) - Simple and flexible tool for managing secrets
 
 ### Security
 
@@ -332,15 +337,14 @@ I use ZSH shell with the following extras:
 
 * [localtunnel/localtunnel](https://github.com/localtunnel/localtunnel) - expose your machine to the world.
 * [FiloSottile/mkcert: A simple zero-config tool to make locally trusted development certificates with any names you'd like.](https://github.com/FiloSottile/mkcert)
-* [serverless/serverless](https://github.com/serverless/serverless)
 * [mycli](https://www.mycli.net/) - MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
 * [sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open source tool that helps you monitor, analyze and optimize your website speed and performance, based on performance best practices advices.
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
 * [Devilspie2](http://www.nongnu.org/devilspie2/) - Devilspie2 is a window matching utility, allowing the user to perform scripted actions on windows as they are created. For example you can script a terminal program to always be positioned at a specific screen position, or position a window on a specific workspace
 * [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
-* [mitmproxy/mitmproxy](https://github.com/mitmproxy/mitmproxy) -  An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
 * [pre-commit](https://pre-commit.com/) -  A framework for managing and maintaining multi-language pre-commit hooks.
+
 ## Development Runtimes
 
 * PHP
@@ -363,7 +367,8 @@ I use ZSH shell with the following extras:
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
 * [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages. Features: 1) New message indicator is always shown if there are notifications.
 * [Time ++](https://extensions.gnome.org/extension/1238/time/) - A todo.txt manager, time tracker, timer, stopwatch, pomodoro, and alarm clock
-* [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, network speed and storage stats.
+* [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, 
+speed and storage stats.
 * [pop-os/shell: Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows. 
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
