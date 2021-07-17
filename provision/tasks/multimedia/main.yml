@@ -33,3 +33,5 @@
 - include: kooha.yml
   tags: ["kooha"]
 - include: video-downloader.yml
+- include: video-trimmer.yml
+- include: image-roll.yml
