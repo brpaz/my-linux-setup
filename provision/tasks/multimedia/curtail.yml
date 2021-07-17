@@ -1,0 +1,4 @@
+- name: Curtail - Compress your images
+  flatpak:
+    name: com.github.huluti.Curtail
+    state: present

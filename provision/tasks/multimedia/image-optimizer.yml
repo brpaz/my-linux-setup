@@ -1,7 +1,0 @@
-# Compress your images with ease without the cost of loosing the images quality using JpegOptim and OptiPng.
-# https://flathub.org/apps/details/com.github.gijsgoudzwaard.image-optimizer
-
-- name: Image optimizer
-  flatpak:
-    name: gijsgoudzwaard.image-optimizer
-    state: present

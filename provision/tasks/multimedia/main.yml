@@ -4,7 +4,7 @@
 - include: gcolor.yml
 - include: gimp.yml
 - include: gnome-photos.yml
-- include: image-optimizer.yml
+- include: curtail.yml
 - include: gnome-podcasts.yml
 - include: kdenlive.yml
 - include: obs.yml

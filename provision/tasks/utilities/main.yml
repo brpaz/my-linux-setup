@@ -20,3 +20,5 @@
   tags: ["grsync", "utilities"]
 - include: authy.yml
   tags: ["authy"]
+- include: obfuscate.yml
+  tags: ["obfuscate"]
