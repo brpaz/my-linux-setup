@@ -137,7 +137,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [VM VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [Postman](https://www.getpostman.com/) - Rest API Client
 * [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
-* [Glade](https://glade.gnome.org/) -  A User Interface Designer for Gnome based applications.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
 * [Lens](https://k8slens.dev/) - The Kubernetes IDE.
@@ -149,7 +148,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3
-* [Bleachbit](https://www.bleachbit.org/) - System cleaner tool
 * [Menulibre](https://launchpad.net/menulibre) - Menu editor
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [GParted](https://gparted.sourceforge.io/) - GParted is a free partition editor for graphically managing your disk partitions
@@ -189,14 +187,13 @@ A big part of my Development life is spent on the Terminal, so having a good set
 
 I use ZSH shell with the following extras:
 
+* [Starship](https://starship.rs/) - Starship: Cross-Shell Prompt
 * [zplug](https://github.com/zplug/zplug) - A next-generation plugin manager for zsh
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
-* [powerlevel10k](https://github.com/romkatv/powerlevel10k) - A fast reimplementation of Powerlevel9k ZSH theme
-* [fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users.
 
 ### File Navigation and Search
 
