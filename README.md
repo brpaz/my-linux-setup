@@ -94,7 +94,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
-* [Image Optimizer](https://flathub.org/apps/details/com.github.gijsgoudzwaard.image-optimizer) - Simple lossless image compression.
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 * [drawio-desktop](https://github.com/jgraph/drawio-desktop) - Official electron build of draw.io
 * [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
@@ -102,7 +101,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
-  
+* [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
+* [Image Roll](https://flathub.org/apps/details/com.github.weclaw1.ImageRoll) - Image Roll is a simple and fast GTK image viewer with basic image manipulation tools. Written in rust.
 ---
 ### Sound & Video
 
@@ -115,7 +115,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://wiki.gnome.org/Apps/Podcasts) - Listen to your favorite podcasts.
 * [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit.
-* [youtube-dl-gui](https://github.com/MrS0m30n3/youtube-dl-gui) - A cross platform front\-end GUI of the popular youtube-dl.
+* [Video Downloader](https://flathub.org/apps/details/com.github.unrud.VideoDownloader) - Download videos from websites like YouTube and many others
+* [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
@@ -159,6 +160,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
 * [Authy](https://authy.com/download/)
 * [Bitwarden](https://bitwarden.com/download/) - Password manager
+* [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 
 ---
 ### Games
