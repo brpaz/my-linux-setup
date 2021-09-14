@@ -3,42 +3,25 @@
     name: ansible-gnome-extensions
   vars:
     gnome_extension_ids:
-      - 2594
-      - 16
+      - 97
+      - 906
+      - 800
+      - 779
       - 615
       - 517
-      - 1544
-      - 779
-      - 97
-      - 2224
-      - 307
-      - 1162
-      - 1125
-      - 3535
-      - 1319
-      - 3115
-      - 937
-      - 1379
-      - 800
       - 355
-      - 2890
-      - 1238
+      - 2594
+      - 2224
+      - 16
+      - 1544
       - 1460
-      - 1207
+      - 1379
+      - 1319
+      - 1162
+      - 1160
       - 1007
 
-- name: Gnome Extensions | Auto move windows Settings
-  dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-  with_items:
-    - {
-        key: "/org/gnome/shell/extensions/auto-move-windows",
-        value: "['whatsapp.desktop:4', 'com.slack.Slack.desktop:4', 'code.desktop:2', 'cacher.desktop:3']",
-      }
-
-- name: Gnome Extensions | Clipboard indicator Settings
+- name: Gnome Extensions | Configure clipboard indicator
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -53,7 +36,7 @@
         value: "false",
       }
 
-- name: Gnome Extensions | Dash to Dock Settings
+- name: Gnome Extensions | Configure Dash to Dock
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -100,7 +83,7 @@
         value: "false",
       }
 
-- name: Gnome Extensions | Notifications Alert Settings
+- name: Gnome Extensions | Configure notifications alert
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -111,7 +94,7 @@
         value: "'#feb03e'",
       }
 
-- name: Gnome Extensions | Vitals Settings
+- name: Gnome Extensions | Configure Vitals
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -126,7 +109,7 @@
     - { key: "/org/gnome/shell/extensions/vitals/show-fan", value: "false" }
     - { key: "/org/gnome/shell/extensions/vitals/show-voltage", value: "false" }
 
-- name: Gnome Extensions | TimeApp Settings
+- name: Gnome Extensions | Configure TimeApp
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -139,7 +122,7 @@
     - { key: "/org/gnome/shell/extensions/timepp/unicon-mode", value: "true" }
     # - { key: '/org/gnome/shell/extensions/timepp/sections', value: "{'Timer': {'enabled': false}, 'Stopwatch': {'enabled': false}, 'Pomodoro': {'enabled': false}, 'Alarms': {'enabled': true}, 'Todo': {'enabled': true}} }"
 
-- name: Gnome Extensions | Emoji Selector Settings
+- name: Gnome Extensions | Configure Emoji Selector
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
@@ -150,7 +133,7 @@
         value: "false",
       }
 
-- name: Gnome Extensions | Auto Move Windows Settings
+- name: Gnome Extensions | Configure Auto Move Windows
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"

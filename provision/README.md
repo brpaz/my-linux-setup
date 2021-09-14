@@ -27,10 +27,10 @@ Unfortunately not everything can be automated and some manual steps will be requ
 
 * Execute Jetbrains toolbox and install the IDEs
 * Open Web browser and enter the "Sync Password" to sync all the extensions, bookmarks etc.
-* Install [DevDocs Desktop](https://github.com/hardpixel/devdocs-desktop) and enable docsets
 * Install [Ulauncher Extensions](https://ext.ulauncher.io/)
 * Login into applications (Spotify, etc).
-* Install Graphics Drivers
+* Install NVIDIA Drivers
+* Install Web Apps using Web Catalog (TickTick, Netlifx, Instagram, Google Photos)
 
 ---
 

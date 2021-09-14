@@ -3,6 +3,18 @@
     name: io.github.mmstick.FontFinder
     state: present
 
+- name: Ensure Local Fonts folder exists
+  file:
+    path: "{{ ansible_env.HOME }}/.local/share/fonts"
+    state: directory
+    mode: 0755
+
+- name: Copy Fonts
+  copy:
+    src: fonts
+    dest: "{{ ansible_env.HOME }}/.local/share"
+    mode: 0755
+
 - name: Fira Code | Add repository
   command: dnf copr enable -y evana/fira-code-fonts
   args:
@@ -15,15 +27,3 @@
     name: fira-code-fonts
     state: present
   become: true
-
-- name: Ensure Local Fonts folder exists
-  file:
-    path: "{{ ansible_env.HOME }}/.local/share/fonts"
-    state: directory
-    mode: 0755
-
-- name: Copy Fonts
-  copy:
-    src: fonts
-    dest: "{{ ansible_env.HOME }}/.local/share"
-    mode: 0755

@@ -8,7 +8,7 @@
 
 - name: Etcher | Install
   dnf:
-    name: https://github.com/balena-io/etcher/releases/download/{{etcher_release.tag}}/balena-etcher-electron-{{ etcher_release.tag[1:]}}.x86_64.rpm
+    name: "https://github.com/balena-io/etcher/releases/download/{{ etcher_release.tag }}/balena-etcher-electron-{{ etcher_release.tag[1:] }}.x86_64.rpm"
     state: present
     disable_gpg_check: true
   become: true

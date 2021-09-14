@@ -2,18 +2,21 @@
   file:
     path: /etc/traefik
     state: directory
+    mode: 0644
   become: true
 
 - name: Traefik | Configuration file
   copy:
     src: traefik/traefik.yaml
     dest: "/etc/traefik/traefik.yaml"
+    mode: 0644
   become: true
 
 - name: Traefik | Dynamic config
   copy:
     src: traefik/conf
     dest: "/etc/traefik"
+    mode: 0644
   become: true
 
 - name: Traefik | Install ssl certificates

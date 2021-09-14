@@ -1,0 +1,4 @@
+- name: Markets
+  flatpak:
+    name: com.bitstower.Markets
+    state: present

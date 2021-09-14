@@ -10,5 +10,6 @@
 - include: uget.yml
 - include: zoom.yml
 - include: whatip.yml
+- include: markets.yml
 - include: webcatalog.yml
   tags: ["webcatalog"]

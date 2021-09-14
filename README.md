@@ -1,8 +1,8 @@
 # My Linux machine setup
 
-> A List of applications and tools installed on my Linux Machine. This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os), but for Linux Based Systems.
+> This repository contains a List of applications and tools that are installed on my Linux Machine (Running Fedora). This is inspired by nikitavoloboev´s [my-mac-os](https://github.com/nikitavoloboev/my-mac-os), but for Linux Based Systems.
 
-For an automated provision scripts, powered by Ansible, please check the [provision](provision) folder.
+For automated provision scripts, powered by Ansible, please check the [provision](provision) folder. This scripts will provision the installation of most of these applications in an automatic way, which makes it a lot faster, to start from scratch in a new machine.
 
 ## Motivation
 
@@ -30,6 +30,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
     - [Games](#games)
     - [Themes and Icons](#themes-and-icons)
     - [Fonts](#fonts)
+    - [Other](#other)
   - [Terminal Applications](#terminal-applications)
     - [Shell configuration](#shell-configuration)
     - [File Navigation and Search](#file-navigation-and-search)
@@ -46,11 +47,10 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Infrastucture As Code](#infrastucture-as-code)
     - [Security](#security)
     - [System Utils](#system-utils)
-    - [Other](#other)
+    - [Other](#other-1)
   - [Development Runtimes](#development-runtimes)
-  - [Other](#other-1)
-    - [Gnome Extensions](#gnome-extensions)
-    - [VS Code Extensions](#vs-code-extensions)
+  - [Gnome Extensions](#gnome-extensions)
+  - [VS Code Extensions](#vs-code-extensions)
   - [Firefox Extensions](#firefox-extensions)
   - [Ulauncher Extensions](#ulauncher-extensions)
 
@@ -61,6 +61,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Productivity
 
 * [Libreoffice](https://libreoffice.org) - Office suite.
+* [Evince](https://flathub.org/apps/details/org.gnome.Evince) - A document viewer for the GNOME desktop.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Marker](https://flathub.org/apps/details/com.github.fabiocolacio.marker) - Powerful markdown editor for the GNOME desktop.
@@ -68,7 +69,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
 * [Workspaces](https://flathub.org/apps/details/com.github.devalien.workspaces) - Workspaces lets you configure and quickly launch all you need to work on a project. It can open in a second different instances of code, a specific website and a directory.
 * [Dendron](https://www.dendron.so/) - Dendron makes it easy to add, find and share anything in seconds, regardless of how much information you have
-
+* [Dialect](https://flathub.org/apps/details/com.github.gi_lom.dialect) - A translation app for GNOME.
+* [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
+* [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
+  
 ---
 
 ### Internet
@@ -81,84 +85,89 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application.
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application.
-* [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers
+* [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
 * [Youp for WhatsApp](https://flathub.org/apps/details/com.gigitux.youp) - WhatsApp GTK Client
-* [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal)
-* [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps
+* [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
+* [Mailspring](https://getmailspring.com/) - Email Client.
+* [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 
 ---
 
 ### Graphics & Design
 
-* [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program
-* [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
+* [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
+* [Figma Desktop](https://flathub.org/apps/details/io.github.Figma_Linux.figma_linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
-* [drawio-desktop](https://github.com/jgraph/drawio-desktop) - Official electron build of draw.io
-* [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
 * [Graphviz](https://www.graphviz.org/) - Graph Visualization Software
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
 * [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
 * [Image Roll](https://flathub.org/apps/details/com.github.weclaw1.ImageRoll) - Image Roll is a simple and fast GTK image viewer with basic image manipulation tools. Written in rust.
+
 ---
 ### Sound & Video
 
 * [Spotify](https://www.spotify.com/) - Music for everyone.
-* [Kdenlive](http://www.kdenlive.org/) - Video editor
-* [VLC](http://www.videolan.org/vlc/) - Media player
-* [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor
-* [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor
-* [Lollypop](https://wiki.gnome.org/Apps/Lollypop) - Lollypop is a modern music player for GNOME.
+* [Kdenlive](http://www.kdenlive.org/) - Kdenlive is a non linear video editor. It is based on the MLT framework and accepts many audio and video formats, allows you to add effects, transitions and render into the format of your choice.
+* [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+* [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor.
+* [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
+* [GNOME Music](https://flathub.org/apps/details/org.gnome.Music) - An easy way to play your music. Automatically discover music on your computer, the local network and internet services.
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://wiki.gnome.org/Apps/Podcasts) - Listen to your favorite podcasts.
 * [Headset](https://headsetapp.co/) - Desktop Music Player Built on YouTube And Reddit.
-* [Video Downloader](https://flathub.org/apps/details/com.github.unrud.VideoDownloader) - Download videos from websites like YouTube and many others
-* [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
+* [Video Downloader](https://flathub.org/apps/details/com.github.unrud.VideoDownloader) - Download videos from websites like YouTube and many others.
+* [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given. the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
+* [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam. 
 
 ---
 
 ### Development Tools
 
-* [JetBrains Toolbox App](https://www.jetbrains.com/toolbox/app/) -  Manage Your Jetbrains Tools with Ease.
+* [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) -  Manage Your Jetbrains Tools with Ease.
     * [PHPStorm](https://www.jetbrains.com/phpstorm/) - The Best PHP IDE by Jetbrains.
     * [Intelij](https://www.jetbrains.com/idea/) - Java and Android IDE.
     * [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
-    * [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers
+    * [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers.
+    * [DataGrip](https://www.jetbrains.com/datagrip/) -  The Cross-Platform IDE for Databases & SQL by JetBrains
 * [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
 * [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
-* [VM VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
+* [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [Postman](https://www.getpostman.com/) - Rest API Client
 * [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
 * [Lens](https://k8slens.dev/) - The Kubernetes IDE.
-* [Boop](https://github.com/zoeyfyi/Boop-GTK) - Port of @IvanMathy's Boop to GTK, a scriptable scratchpad for developers.
+* [Boop](https://flathub.org/apps/details/fyi.zoey.Boop-GTK)- Port of @IvanMathy's Boop to GTK, a scriptable scratchpad for developers.
 * [Kube Forwarder](https://www.electronjs.org/apps/kube-forwarder) - Easy to use Kubernetes port forwarding manager.
 
 ---
 ### Utilities
 
 * [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
-* [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3
+* [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
 * [Menulibre](https://launchpad.net/menulibre) - Menu editor
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [GParted](https://gparted.sourceforge.io/) - GParted is a free partition editor for graphically managing your disk partitions
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
+* [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
-* [Authy](https://authy.com/download/)
-* [Bitwarden](https://bitwarden.com/download/) - Password manager
+* [Authy](https://snapcraft.io/authy) - The Twilio Authy app generates secure 2 step verification tokens on your device. It help’s you protect your account from hackers and hijackers by adding an additional layer of security.
+* [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
+* [AutoKey](https://github.com/autokey/autokey) - A desktop automation utility for Linux and X11.
+* [Timeshift](https://github.com/teejee2008/timeshift) - System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backup levels, and exclude filters. Snapshots can be restored while system is running or from Live CD/USB.
 
 ---
 ### Games
@@ -177,6 +186,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) - A typeface for developers. By Jetbrains.
 
+### Other
+
+* [Markets](https://flathub.org/apps/details/com.bitstower.Markets) - A stock, currency and cryptocurrency tracker.
+
 ---
 
 ## Terminal Applications
@@ -187,10 +200,10 @@ A big part of my Development life is spent on the Terminal, so having a good set
 
 I use ZSH shell with the following extras:
 
-* [Starship](https://starship.rs/) - Starship: Cross-Shell Prompt
+* [Starship](https://starship.rs/) - Cross-Shell Prompt
 * [zplug](https://github.com/zplug/zplug) - A next-generation plugin manager for zsh
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
-* [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed
+* [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
@@ -277,7 +290,7 @@ I use ZSH shell with the following extras:
 * [cacher-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
 * [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
 * [sgentle/caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - Caniuse command line tool.
-* [out-of-cheese-error/the-way:](https://github.com/out-of-cheese-error/the-way) - A code snippets manager for your terminal.
+* [out-of-cheese-error/the-way](https://github.com/out-of-cheese-error/the-way) - A code snippets manager for your terminal.
 
 ### Cloud clients
 
@@ -355,10 +368,10 @@ I use ZSH shell with the following extras:
 
 ---
 
-## Other
 
-### Gnome Extensions
+## Gnome Extensions
 
+* [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) - Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
 * [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) - Replacement of Alt-Tab, iterates through windows in a cover-flow manner.
@@ -372,11 +385,14 @@ speed and storage stats.
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
 * [Cast to TV](https://extensions.gnome.org/extension/1544/cast-to-tv/) - Cast files to Chromecast, web browser or media player app over local network.
-* [Laine](https://extensions.gnome.org/extension/937/laine/) - Volume control extension.
 * [VSCode Search Provider](https://extensions.gnome.org/extension/1207/vscode-search-provider/) - Provide recent VSCode projects as search results in overview
 * [Proxy Profiles](https://extensions.gnome.org/extension/3379/proxy-profiles/) - Swich easily between several proxy profiles.
+* [Easy Docker Containers](https://extensions.gnome.org/extension/2224/easy-docker-containers/) - A GNOME Shell extension (GNOME Panel applet) to be able to generally control your available Docker containers.
+* [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) - An icon taskbar for the Gnome Shell.
+* [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/) - Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider.
+* [Mpris Indicator Button](https://extensions.gnome.org/extension/1379/mpris-indicator-button/) - A full featured MPRIS indicator.
 
-### VS Code Extensions
+## VS Code Extensions
 
  
 * 42Crunch.vscode-openapi

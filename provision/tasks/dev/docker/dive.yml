@@ -8,7 +8,7 @@
 
 - name: "dive | Download"
   unarchive:
-    src: "https://github.com/wagoodman/dive/releases/download/{{dive_release.tag}}/dive_{{dive_release.tag[1:]}}_linux_amd64.tar.gz"
+    src: "https://github.com/wagoodman/dive/releases/download/{{ dive_release.tag }}/dive_{{ dive_release.tag[1:] }}_linux_amd64.tar.gz"
     remote_src: true
     dest: "{{ setup_dir }}"
   become: true

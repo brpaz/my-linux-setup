@@ -7,7 +7,7 @@
 
 - name: The way cli Snippets management | Download package
   unarchive:
-    src: "https://github.com/out-of-cheese-error/the-way/releases/download/{{release.tag}}/the-way-{{release.tag}}-x86_64-unknown-linux-gnu.tar.gz"
+    src: "https://github.com/out-of-cheese-error/the-way/releases/download/{{ release.tag }}/the-way-{{ release.tag }}-x86_64-unknown-linux-gnu.tar.gz"
     remote_src: true
     dest: "{{ setup_dir }}"
   become: true
