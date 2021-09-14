@@ -5,10 +5,6 @@
     creates: /etc/yum.repos/docker-ce.repo
   become: true
 
-- name: Docker | Force to use Fedora 31 repo
-  shell: sed -i 's/$releasever/31/g' /etc/yum.repos.d/docker-ce.repo
-  become: true
-
 - name: Docker | Install Packages
   dnf:
     name:

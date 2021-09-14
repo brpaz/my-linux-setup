@@ -1,5 +1,0 @@
-- name: Install vala compiler
-  dnf:
-    name: vala
-    state: present
-  become: true

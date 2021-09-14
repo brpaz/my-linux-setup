@@ -4,4 +4,4 @@
 - include: marker.yml
 - include: pdf-master.yml
 - include: planner.yml
-  tags: ["productivity", "planner"]
+- include: dialect.yml

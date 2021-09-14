@@ -9,7 +9,6 @@
 - include: kdenlive.yml
 - include: obs.yml
 - include: peek.yml
-- include: picard.yml
 - include: spotify.yml
 - include: vlc.yml
 - include: xnconvert.yml

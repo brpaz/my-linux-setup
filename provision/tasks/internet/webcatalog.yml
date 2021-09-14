@@ -1,0 +1,12 @@
+- name: WebCatalog | Download AppImage
+  get_url:
+    url: "https://github.com/webcatalog/webcatalog-app/releases/download/v37.0.0/webcatalog-37.0.0.AppImage"
+    dest: "/opt/WebCatalog.AppImage"
+    mode: a+x
+  become: true
+
+- name: WebCatalog | Install Desktop file
+  copy:
+    src: applications/webcatalog.desktop
+    dest: "{{ applications_dir }}/webcatalog.desktop"
+    mode: 0644

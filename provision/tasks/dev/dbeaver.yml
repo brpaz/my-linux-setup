@@ -1,5 +1,5 @@
 - name: DBeaver
   dnf:
-    name: "https://dbeaver.com/files/dbeaver-ee-latest-stable.x86_64.rpm"
+    name: "https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm"
     state: present
   become: true

@@ -2,7 +2,6 @@
   dnf:
     name:
       - ruby
-      - ruby-devel
       - zlib
     state: present
   become: true
@@ -11,5 +10,5 @@
   gem:
     name: "{{ item }}"
   with_items:
-     - rake
-     - bundler
+    - rake
+    - bundler

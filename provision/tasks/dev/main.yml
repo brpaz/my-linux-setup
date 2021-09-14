@@ -13,8 +13,6 @@
   tags: ["golang"]
 - include: java.yml
   tags: ["java"]
-- include: vala.yml
-  tags: ["vala"]
 - include: rust.yml
   tags: ["rust"]
 
