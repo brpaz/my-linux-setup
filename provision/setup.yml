@@ -34,41 +34,41 @@
       become: true
 
   tasks:
-    - import_tasks: tasks/system/main.yml
+    - import_tasks: tasks/system/_main.yml
       tags: ["system"]
 
     - import_tasks: tasks/dotfiles.yml
       tags: ["dotfiles"]
 
-    - import_tasks: tasks/shell/main.yml
+    - import_tasks: tasks/shell/_main.yml
       tags: ["shell"]
 
-    - import_tasks: tasks/cli/main.yml
+    - import_tasks: tasks/cli/_main.yml
       tags: ["cli"]
 
-    - import_tasks: tasks/internet/main.yml
+    - import_tasks: tasks/internet/_main.yml
       tags: ["internet"]
 
-    - import_tasks: tasks/productivity/main.yml
+    - import_tasks: tasks/productivity/_main.yml
       tags: ["productivity"]
 
-    - import_tasks: tasks/utilities/main.yml
+    - import_tasks: tasks/utilities/_main.yml
       tags: ["utilities"]
 
-    - import_tasks: tasks/multimedia/main.yml
+    - import_tasks: tasks/multimedia/_main.yml
       tags: ["multimedia"]
 
-    - import_tasks: tasks/dev/main.yml
+    - import_tasks: tasks/dev/_main.yml
       tags: ["dev"]
 
-    - import_tasks: tasks/games/main.yml
+    - import_tasks: tasks/games/_main.yml
       tags: ["games"]
 
-    - import_tasks: tasks/network/main.yml
+    - import_tasks: tasks/network/_main.yml
       tags: ["networking"]
 
-    - import_tasks: tasks/desktop/main.yml
+    - import_tasks: tasks/desktop/_main.yml
       tags: ["desktop"]
 
-    - import_tasks: tasks/virtualization/main.yml
+    - import_tasks: tasks/virtualization/_main.yml
       tags: ["virtualization"]
