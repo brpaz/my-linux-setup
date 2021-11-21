@@ -9,7 +9,7 @@
   dnf:
     name:
       - ufw
-      # - gufw NOT COMPATIBLE with latest version
+      - gufw
   become: true
 
 - name: Enable ufw

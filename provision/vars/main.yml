@@ -7,4 +7,4 @@ shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"
 applications_dir: "{{ ansible_env.HOME }}/.local/share/applications"
 cryptomator_version: 1.5.19
 jetbrains_toolbox_version: 1.21.9712
-cacher_version: 2.42.4
+cacher_version: 2.42.7

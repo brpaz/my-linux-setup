@@ -9,19 +9,25 @@
     dest: /etc/grafana
   become: true
 
-- name: Grafana Create the overlay network
+- name: Promtail | Create Configuration folder
+  copy:
+    src: promtail/
+    dest: /etc/promtail
+  become: true
+
+- name: Loki overlay network
   docker_network:
-    name: grafana-net
+    name: loki
     state: present
 
 - name: Grafana | Start Container
   docker_container:
     name: grafana
-    image: grafana/grafana:7.5.3
+    image: grafana/grafana
     state: started
     restart_policy: "unless-stopped"
     networks:
-      - name: grafana-net
+      - name: loki
       - name: traefik-public
     volumes:
       - "grafana-storage:/var/lib/grafana"
@@ -35,11 +41,23 @@
 - name: Loki | Start container
   docker_container:
     name: loki
-    image: grafana/loki:2.0.0
+    image: grafana/loki
     state: started
     networks:
-      - name: grafana-net
-    ports:
-      - "3100:3100"
+      - name: loki
+    restart_policy: "unless-stopped"
+    networks_cli_compatible: "yes"
+
+- name: Promtail | Start container
+  docker_container:
+    name: promtail
+    image: grafana/promtail
+    state: started
+    networks:
+      - name: loki
+    command: -config.file=/etc/promtail/docker-config.yml
+    volumes:
+      - /var/lib/docker/containers:/var/lib/docker/containers
+      - /etc/promtail/docker-config.yml:/etc/promtail/docker-config.yml
     restart_policy: "unless-stopped"
     networks_cli_compatible: "yes"

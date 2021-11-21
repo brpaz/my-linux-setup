@@ -1,7 +1,6 @@
 - include: gnome-calendar.yml
 - include: gnome-contacts.yml
 - include: foliate.yml
-- include: marker.yml
 - include: pdf-master.yml
-- include: planner.yml
+- include: gnome-todo.yml
 - include: dialect.yml

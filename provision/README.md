@@ -25,12 +25,15 @@ sudo chmod +x setup.sh
 
 Unfortunately not everything can be automated and some manual steps will be required after running this scripts.
 
+* Rsync backup of $HOME folder from external backup.
 * Execute Jetbrains toolbox and install the IDEs
 * Open Web browser and enter the "Sync Password" to sync all the extensions, bookmarks etc.
 * Install [Ulauncher Extensions](https://ext.ulauncher.io/)
+* Enable Restic Backups
 * Login into applications (Spotify, etc).
 * Install NVIDIA Drivers
 * Install Web Apps using Web Catalog (TickTick, Netlifx, Instagram, Google Photos)
+* Install and configure Pop shell.
 
 ---
 

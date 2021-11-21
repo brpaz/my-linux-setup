@@ -18,8 +18,6 @@
 - include: wireframe-sketcher.yml
 - include: youtubedl.yml
 - include: givemelyrics.yml
-- include: lollypop.yml
-  tags: ["lollypop"]
 - include: avvie.yml
 - include: inkscape.yml
   tags: ["inkscape"]
@@ -35,3 +33,4 @@
 - include: video-trimmer.yml
 - include: image-roll.yml
 - include: feh.yml
+- include: gnome-music.yml

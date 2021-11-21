@@ -1,6 +1,14 @@
+- name: WebCatalog | Get latest release
+  github_release:
+    user: webcatalog
+    repo: webcatalog-app
+    action: latest_release
+    token: "{{ github_token }}"
+  register: wc_release
+
 - name: WebCatalog | Download AppImage
   get_url:
-    url: "https://github.com/webcatalog/webcatalog-app/releases/download/v37.0.0/webcatalog-37.0.0.AppImage"
+    url: "https://github.com/webcatalog/webcatalog-app/releases/download/{{ wc_release.tag }}/WebCatalog-{{ wc_release.tag[1:] }}.AppImage"
     dest: "/opt/WebCatalog.AppImage"
     mode: a+x
   become: true

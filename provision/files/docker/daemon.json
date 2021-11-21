@@ -1,6 +1,6 @@
 {
-    "log-driver": "loki",
+    "log-driver": "json-file",
     "log-opts": {
-        "loki-url": "http://localhost:3100/loki/api/v1/push"
+        "tag": "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
     }
 }

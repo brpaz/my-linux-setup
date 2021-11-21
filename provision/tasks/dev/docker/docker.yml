@@ -1,16 +1,8 @@
-- name: Docker | Add Docker repository
-  command: dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-  args:
-    warn: false
-    creates: /etc/yum.repos/docker-ce.repo
-  become: true
-
 - name: Docker | Install Packages
   dnf:
     name:
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
+      - moby-engine
+      - docker-compose
   become: true
 
 - name: Docker | Add current user to Docker group
@@ -20,9 +12,10 @@
     append: yes
   become: true
 
-- name: Configure Firewall
-  command: firewall-cmd --permanent --zone=trusted --add-interface=docker0 && firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
-  become: true
+# Not needed for Fedora 35
+# - name: Configure Firewall
+#   command: firewall-cmd --permanent --zone=trusted --add-interface=docker0 && firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
+#   become: true
 
 - name: Docker | Start service
   systemd:
@@ -36,7 +29,7 @@
   register: docker_plugins
 
 - name: Dcoker | Install docker plugin
-  command: docker plugin install grafana/loki-docker-driver:2.2.1 --alias loki --grant-all-permissions
+  command: docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
   when: "'Loki Logging Driver' not in docker_plugins.stdout"
   notify: restart docker
 

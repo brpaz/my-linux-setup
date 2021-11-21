@@ -9,10 +9,11 @@
     name: community-mysql
     state: present
   become: true
-# - name: RBDMS cli tools
-#   dnf:
-#     name:
-#       - "pgcli"
-#       - "mycli"
-#     state: present
-#   become: true
+
+- name: RBDMS cli tools
+  dnf:
+    name:
+      - "pgcli"
+      - "mycli"
+    state: present
+  become: true

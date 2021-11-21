@@ -1,0 +1,4 @@
+- name: Gnome TODO
+  flatpak:
+    name: org.gnome.Todo
+    state: present

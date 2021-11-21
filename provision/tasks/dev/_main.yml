@@ -45,9 +45,6 @@
 # ===================
 - include: docker/docker.yml
   tags: ["docker"]
-- include: docker/compose.yml
-  tags: ["docker", "docker-compose", "github"]
-
 - include: docker/traefik.yml
   tags: ["docker", "traefik", "docker-app"]
 - include: docker/portainer.yml

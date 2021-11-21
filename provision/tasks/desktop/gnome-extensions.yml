@@ -143,12 +143,11 @@
         key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
         value: "['cacher.desktop:3','code.desktop:2']",
       }
-
-- name: Install Pop shell
-  dnf:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - gnome-shell-extension-pop-shell
-    - gnome-shell-extension-pop-shell-shortcut-overrides
-  become: true
+# - name: Install Pop shell
+#   dnf:
+#     name: "{{ item }}"
+#     state: present
+#   with_items:
+#     - gnome-shell-extension-pop-shell
+#     - gnome-shell-extension-pop-shell-shortcut-overrides
+#   become: true

@@ -1,12 +1,5 @@
-
-- name: Headset | Add repo
-  command:  dnf config-manager --add-repo http://headsetapp.co/headset-electron/redhat/headset.repo
-  become: true
-  args:
-    creates: /etc/yum.d/headset.repo
-
 - name: Headset | Install
-  dnf:
-    name: headset
+  flatpak:
+    name: co.headsetapp.headset
     state: present
   become: true

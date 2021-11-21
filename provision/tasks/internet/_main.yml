@@ -1,6 +1,7 @@
 - include: dropbox.yml
 - include: google-chrome.yml
 - include: mailspring.yml
+  tags: ["mailspring", "flatpak"]
 - include: skype.yml
 - include: slack.yml
 - include: discord.yml
@@ -13,3 +14,5 @@
 - include: markets.yml
 - include: webcatalog.yml
   tags: ["webcatalog"]
+- include: youp.yml
+  tags: ["whatsapp", "flatpak"]

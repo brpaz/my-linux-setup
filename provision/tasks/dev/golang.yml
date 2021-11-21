@@ -7,6 +7,5 @@
 - name: Golang | Install global Go tools
   command: go get {{ item }}
   with_items:
-    - github.com/mgechev/revive
     - honnef.co/go/tools/cmd/staticcheck
-    - github.com/golangci/golangci-lint/cmd/golangci-lint@v1.27.0
+    - github.com/golangci/golangci-lint/cmd/golangci-lint

@@ -24,11 +24,11 @@
 - name: Restic | Enable Restic Backup timer
   systemd:
     name: restic-backup.timer
-    enabled: yes
+    enabled: "no"
     scope: user
 
 - name: Restic | Enable Restic Prune timer
   systemd:
     name: restic-prune.timer
-    enabled: yes
+    enabled: "no"
     scope: user

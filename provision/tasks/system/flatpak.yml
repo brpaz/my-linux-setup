@@ -10,3 +10,9 @@
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
   become: true
+
+- name: Flatpak | Install Flatseal app
+  flatpak:
+    name: com.github.tchx84.Flatseal
+    state: present
+  become: true

@@ -7,7 +7,7 @@
 - name: Docker | Start Portainer container
   docker_container:
     name: portainer
-    image: portainer/portainer-ce:2.1.1-alpine
+    image: portainer/portainer-ce:2.9.3-alpine
     state: started
     restart_policy: "unless-stopped"
     networks:

@@ -9,7 +9,6 @@
 
 - name: ZSH | Set as default shell
   shell: chsh -s $(which zsh ) {{ user }}
-  become: true
 
 - name: Zplug | Download zplug installer
   get_url:

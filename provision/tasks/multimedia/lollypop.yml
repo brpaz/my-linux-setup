@@ -1,4 +1,0 @@
-- name: Lollypop
-  flatpak:
-    name: org.gnome.Lollypop
-    state: present

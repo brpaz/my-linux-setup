@@ -1,10 +1,3 @@
-- name: YADM | Add repository
-  command: dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_33/home:TheLocehiliosan:yadm.repo
-  args:
-    warn: false
-    creates: /etc/yum.repos/yadm.repo
-  become: true
-
 - name: Installs yadm
   dnf:
     name: yadm
