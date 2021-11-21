@@ -1,0 +1,5 @@
+- name: Install Timeshift
+  dnf:
+    name: "timeshift"
+    state: present
+  become: true
