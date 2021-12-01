@@ -24,3 +24,5 @@
   tags: ["obfuscate"]
 - include: timeshift.yml
   tags: ["utilities"]
+- include: mediawriter.yml
+  tags: ["mediawriter"]

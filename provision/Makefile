@@ -24,10 +24,10 @@ run-tag: ## Runs the playbook for a specific tag
 preview: ## Preview
 	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts --check --diff
 
-update-node: ## Preview
-	ansible-playbook update-node.yml --ask-become-pass -i hosts
+update-npm: ## Update NPM packages
+	ansible-playbook update-npm.yml --ask-become-pass -i hosts
 
-update-system: ## Updates applications downloaded from GitHub
+update-system: ## Updates system packages
 		ansible-playbook update-system.yml --ask-become-pass -i hosts -v
 
 update-github: ## Updates applications downloaded from GitHub
