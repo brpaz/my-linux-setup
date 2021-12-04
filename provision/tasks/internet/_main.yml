@@ -16,3 +16,5 @@
   tags: ["webcatalog"]
 - include: youp.yml
   tags: ["whatsapp", "flatpak"]
+- include: edge.yml
+  tags: ["edge", "browsers"]
