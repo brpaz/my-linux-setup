@@ -1,0 +1,12 @@
+- name: Brave | Add Repository
+  yum_repository:
+    name: brave
+    description: Brave Browser
+    baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/
+    gpgkey: https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+  become: true
+
+- name: Brave Browser | Install
+  dnf:
+    name: brave-browser
+  become: true

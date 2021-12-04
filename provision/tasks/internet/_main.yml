@@ -18,3 +18,5 @@
   tags: ["whatsapp", "flatpak"]
 - include: edge.yml
   tags: ["edge", "browsers"]
+- include: brave-browser.yml
+  tags: ["brave", "browsers"]
