@@ -3,6 +3,7 @@
     user: ahmetb
     repo: kubectx
     action: latest_release
+    token: "{{ github_token }}"
   register: kubectx_release
 
 - name: Kubectx | Create tmp dir

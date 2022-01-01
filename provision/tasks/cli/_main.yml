@@ -12,4 +12,6 @@
 - include: sd.yml
   tags: ["sd", "github"]
 - include: bitwarden-cli.yml
-  tags: ["bitwarden", "githuv"]
+  tags: ["bitwarden", "github"]
+- include: glow.yml
+  tags: ["glow", "github"]

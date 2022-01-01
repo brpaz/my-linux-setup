@@ -1,20 +1,6 @@
-- name: Lens | Get latest release
-  github_release:
-    user: lensapp
-    repo: lens
-    action: latest_release
-    token: "{{ github_token }}"
-  register: lens_release
-
-- name: Kubernetes Lens | Download AppImage
-  get_url:
-    url: "https://github.com/lensapp/lens/releases/download/{{ lens_release.tag }}/Lens-{{ lens_release.tag[1:] }}.x86_64.AppImage"
-    dest: "/opt/Lens.AppImage"
-    mode: a+x
+- name: "Lens | Install"
+  dnf:
+    name: "https://api.k8slens.dev/binaries/Lens-5.3.3-latest.20211223.1.x86_64.rpm"
+    state: present
+    disable_gpg_check: yes
   become: true
-
-- name: Kubernetes Lens | Install Desktop file
-  copy:
-    src: applications/kubernetes-lens.desktop
-    dest: "{{ applications_dir }}/kubernetes-lens.desktop"
-    mode: 0644

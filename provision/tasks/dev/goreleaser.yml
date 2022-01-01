@@ -8,7 +8,7 @@
 
 - name: Goreleaser
   dnf:
-    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag }}/goreleaser_amd64.rpm
+    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag }}/goreleaser-{{ release.tag[1:] }}.x86_64.rpm
     state: present
     disable_gpg_check: yes
   become: true

@@ -73,10 +73,6 @@
   tags: ["kubernetes", "helm"]
 - include: kubernetes/kail.yml
   tags: ["kubernetes", "kail", "github"]
-- include: kubernetes/kubeseal.yml
-  tags: ["kubernetes", "kubeseal", "github"]
-- include: kubernetes/kustomize.yml
-  tags: ["kubernetes", "kustomize", "github"]
 - include: kubernetes/kubeval.yml
   tags: ["kubernetes", "kubeval", "github"]
 - include: kubernetes/k9s.yml
@@ -84,7 +80,7 @@
 - include: kubernetes/kind.yml
   tags: ["kubernetes", "kind", "github"]
 - include: kubernetes/lens.yml
-  tags: ["kubernetes", "lens", "github"]
+  tags: ["kubernetes", "lens"]
 
 # ===================
 # Cloud tools
