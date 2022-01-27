@@ -20,6 +20,7 @@
 
 - include: base.yml
 - include: flatpak.yml
+  tags: ["flatpak"]
 - include: snapd.yml
   tags: ["snapd"]
 - include: user.yml

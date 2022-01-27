@@ -93,6 +93,8 @@
   tags: ["gcloud"]
 - include: cloud/heroku.yml
   tags: ["heroku"]
+- include: cloud/fly.yml
+  tags: ["fly"]
 
 # ===================
 # Other
@@ -122,5 +124,3 @@
   tags: ["direnv"]
 - include: zeal.yml
   tags: ["zeal"]
-- include: the-way.yml
-  tags: ["the-way"]

@@ -141,7 +141,7 @@
   with_items:
     - {
         key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
-        value: "['cacher.desktop:3','code.desktop:2']",
+        value: "['firefox.desktop:1','chrome.desktop:1','code.desktop:2']",
       }
 # - name: Install Pop shell
 #   dnf:

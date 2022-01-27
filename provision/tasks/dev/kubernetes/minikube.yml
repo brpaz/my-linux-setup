@@ -20,4 +20,3 @@
     - minikube config set cpus 2
     - minikube config set memory 4096
     - minikube config set disk-size 10Gi
-    - minikube config set driver kvm2
