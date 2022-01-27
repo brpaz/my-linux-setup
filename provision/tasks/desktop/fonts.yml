@@ -1,6 +1,6 @@
-- name: Font Finder
+- name: Install Font Downloader
   flatpak:
-    name: io.github.mmstick.FontFinder
+    name: org.gustavoperedo.FontDownloader
     state: present
 
 - name: Ensure Local Fonts folder exists
