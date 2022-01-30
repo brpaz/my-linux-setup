@@ -151,3 +151,14 @@
 #     - gnome-shell-extension-pop-shell
 #     - gnome-shell-extension-pop-shell-shortcut-overrides
 #   become: true
+
+- name: Gnome Extensions | Configure Dash to Panel
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-panel/dot-position",
+        value: "'BOTTOM'",
+      }

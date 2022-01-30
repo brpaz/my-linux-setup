@@ -1,7 +1,16 @@
+- name: Docker | Install Repo
+  yum_repository:
+    name: docker
+    description: Docker
+    baseurl: https://download.docker.com/linux/fedora/docker-ce.repo
+    gpgkey: https://download.docker.com/linux/fedora/gpg
+
 - name: Docker | Install Packages
   dnf:
     name:
-      - moby-engine
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
       - docker-compose
   become: true
 
@@ -23,15 +32,6 @@
     state: started
     enabled: yes
   become: true
-
-- name: Docker | Check Loki driver plugin is installed
-  command: docker plugin ls
-  register: docker_plugins
-
-- name: Dcoker | Install docker plugin
-  command: docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
-  when: "'Loki Logging Driver' not in docker_plugins.stdout"
-  notify: restart docker
 
 - name: Docker | Copy Daemon.json
   copy:

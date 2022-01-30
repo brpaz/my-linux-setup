@@ -33,3 +33,6 @@
     name: python3-ansible-lint
     state: present
   become: true
+
+- name: Setup brotab
+  command: bt install

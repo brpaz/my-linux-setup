@@ -48,6 +48,8 @@
 - include: settings/wm.yml
 - include: theme.yml
 - include: autostart.yml
+- include: gnome-extensions-manager.yml
+  tags: ["gnome-extensions-manager"]
 
 - name: Remove Pre-installed software
   dnf:
