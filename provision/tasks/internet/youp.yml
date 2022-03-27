@@ -1,4 +1,0 @@
-- name: Youp for whatsapp
-  flatpak:
-    name: com.gigitux.youp
-    state: present

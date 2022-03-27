@@ -34,3 +34,4 @@
 - include: image-roll.yml
 - include: feh.yml
 - include: gnome-music.yml
+- include: drawing.yml

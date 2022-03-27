@@ -33,13 +33,14 @@
 - name: Traefik | Start Traefik Container
   docker_container:
     name: traefik
-    image: traefik:v2.5.4
+    image: traefik:v2.6.2
     ports:
       - "80:80"
       - "443:443"
-      - "8080:8080"
     state: started
     restart_policy: "unless-stopped"
+    networks:
+      - name: traefik-public
     volumes:
       - /etc/traefik/traefik.yaml:/etc/traefik/traefik.yaml
       - /var/run/docker.sock:/var/run/docker.sock

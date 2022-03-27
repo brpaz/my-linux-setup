@@ -18,7 +18,6 @@ scrape_configs:
           __path__: /var/log/*log
 
   - job_name: containers
-    entry_parser: raw
     static_configs:
       - targets:
           - localhost
@@ -26,22 +25,25 @@ scrape_configs:
           job: containerlogs
           __path__: /var/lib/docker/containers/*/*log
 
-    # --log-opt tag="{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
     pipeline_stages:
       - json:
           expressions:
+            output: log
             stream: stream
-            attrs: attrs
-            tag: attrs.tag
-
+            attrs:
+      - json:
+          expressions:
+            tag:
+          source: attrs
       - regex:
-          expression: (?P<image_name>(?:[^|]*[^|])).(?P<container_name>(?:[^|]*[^|])).(?P<image_id>(?:[^|]*[^|])).(?P<container_id>(?:[^|]*[^|]))
-          source: "tag"
-
+          expression: (?P<container_name>(?:[^|]*[^|]))
+          source: tag
+      - timestamp:
+          format: RFC3339Nano
+          source: time
       - labels:
-          tag:
+          # tag:
           stream:
-          image_name:
           container_name:
-          image_id:
-          container_id:
+      - output:
+          source: output

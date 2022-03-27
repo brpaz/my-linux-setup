@@ -3,3 +3,21 @@
     name: "ulauncher"
     state: present
   become: true
+
+- name: Install Ulauncher extension Python packages dependencies
+  pip:
+    name:
+      - requests
+      - memoization
+      - dateparser
+      - faker
+      - semver
+      - github3.py
+      - cloudFlare
+      - algoliasearch
+      - docker
+      - frontmatter
+      - typing_extensions
+      - raindropio
+      - python-raindropio
+      - brotab

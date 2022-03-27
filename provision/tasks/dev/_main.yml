@@ -45,12 +45,6 @@
 # ===================
 - include: docker/docker.yml
   tags: ["docker"]
-- include: docker/traefik.yml
-  tags: ["docker", "traefik", "docker-app"]
-- include: docker/portainer.yml
-  tags: ["docker", "portainer", "docker-app"]
-- include: docker/grafana.yml
-  tags: ["docker", "grafana", "docker-app"]
 - include: docker/ctop.yml
   tags: ["docker", "ctop", "github"]
 - include: docker/lazydocker.yml
@@ -59,6 +53,15 @@
   tags: ["docker", "dive", "github"]
 - include: sops.yml
   tags: ["sops", "github"]
+
+- include: docker/containers/traefik.yml
+  tags: ["docker", "traefik", "docker-app"]
+- include: docker/containers/portainer.yml
+  tags: ["docker", "portainer", "docker-app"]
+- include: docker/containers/grafana.yml
+  tags: ["docker", "grafana", "docker-app"]
+- include: docker/containers/devdns.yml
+  tags: ["docker", "grafana", "docker-app"]
 
 # # ============================
 # # Kubernetes

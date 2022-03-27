@@ -44,7 +44,7 @@
     - "netlify-cli"
     - "pageres-cli"
     - "readme-md-generator"
-    - "sao@next"
+    - "sao@beta"
     - "semantic-release"
     - "serve"
     - "svgo"
@@ -60,3 +60,19 @@
     - "plop"
     - "vercel"
     - "@cloudflare/wrangler"
+
+- name: FNM | Get latest release version
+  github_release:
+    user: bitwarden
+    repo: cli
+    action: latest_release
+    token: "{{ github_token }}"
+  register: fnm_release
+
+- name: FNM | Install
+  unarchive:
+    remote_src: true
+    src: https://github.com/Schniz/fnm/releases/download/{{ fnm_release.tag }}/fnm-linux.zip
+    dest: "{{ bin_dir }}"
+    mode: a+x
+  become: true

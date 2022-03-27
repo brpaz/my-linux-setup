@@ -23,7 +23,7 @@
 - name: Grafana | Start Container
   docker_container:
     name: grafana
-    image: grafana/grafana
+    image: grafana/grafana:8.4.4
     state: started
     restart_policy: "unless-stopped"
     networks:
@@ -35,18 +35,20 @@
     labels:
       traefik.enable: "true"
       traefik.http.routers.grafana.rule: "Host(`grafana.docker`)"
+      traefik.http.routers.grafana.service: grafana
+      traefik.http.routers.grafana.entrypoints: "websecure"
       traefik.http.services.grafana.loadbalancer.server.port: "3000"
-    networks_cli_compatible: "false"
 
 - name: Loki | Start container
   docker_container:
     name: loki
     image: grafana/loki
     state: started
+    labels:
+      traefik.enable: "false"
     networks:
       - name: loki
     restart_policy: "unless-stopped"
-    networks_cli_compatible: "yes"
 
 - name: Promtail | Start container
   docker_container:
@@ -55,9 +57,10 @@
     state: started
     networks:
       - name: loki
+    labels:
+      traefik.enable: "false"
     command: -config.file=/etc/promtail/docker-config.yml
     volumes:
       - /var/lib/docker/containers:/var/lib/docker/containers
       - /etc/promtail/docker-config.yml:/etc/promtail/docker-config.yml
     restart_policy: "unless-stopped"
-    networks_cli_compatible: "yes"

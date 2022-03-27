@@ -14,3 +14,11 @@
     src: fonts
     dest: "{{ ansible_env.HOME }}/.local/share"
     mode: 0755
+
+- name: Install fonts packages
+  dnf:
+    name:
+      - jetbrains-mono-fonts
+      - fira-code-fonts
+    state: present
+  become: true

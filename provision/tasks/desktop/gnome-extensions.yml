@@ -3,12 +3,13 @@
     name: ansible-gnome-extensions
   vars:
     gnome_extension_ids:
+      - 21
       - 97
       - 906
       - 800
       - 779
       - 615
-      - 517
+      - 307
       - 355
       - 2594
       - 2224
@@ -20,6 +21,8 @@
       - 1162
       - 1160
       - 1007
+      - 3843
+      - 4135
 
 - name: Gnome Extensions | Configure clipboard indicator
   dconf:
@@ -83,17 +86,6 @@
         value: "false",
       }
 
-- name: Gnome Extensions | Configure notifications alert
-  dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-  with_items:
-    - {
-        key: "/org/gnome/shell/extensions/notifications-alert/color",
-        value: "'#feb03e'",
-      }
-
 - name: Gnome Extensions | Configure Vitals
   dconf:
     key: "{{ item.key }}"
@@ -141,7 +133,7 @@
   with_items:
     - {
         key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
-        value: "['firefox.desktop:1','chrome.desktop:1','code.desktop:2']",
+        value: "['com.slack.Slack.desktop:5', 'md.obsidian.Obsidian.desktop:3', 'code.desktop:2', 'jetbrains-goland.desktop:3', 'menulibre-cacher.desktop:4', 'jetbrains-idea.desktop:2', 'jetbrains-webstorm.desktop:2']",
       }
 # - name: Install Pop shell
 #   dnf:
@@ -152,13 +144,13 @@
 #     - gnome-shell-extension-pop-shell-shortcut-overrides
 #   become: true
 
-- name: Gnome Extensions | Configure Dash to Panel
+- name: Gnome Extension Settings | Just Perfection
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
   with_items:
     - {
-        key: "/org/gnome/shell/extensions/dash-to-panel/dot-position",
-        value: "'BOTTOM'",
+        key: "/org/gnome/shell/extensions/just-perfection/workspace-switcher-size",
+        value: 8,
       }

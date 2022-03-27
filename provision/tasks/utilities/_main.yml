@@ -24,3 +24,5 @@
   tags: ["utilities"]
 - include: mediawriter.yml
   tags: ["mediawriter"]
+- include: text-snatcher.yml
+  tags: ["text-snatcher"]

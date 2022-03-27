@@ -1,0 +1,4 @@
+- name: WhatsApp Desktop
+  flatpak:
+    name: io.github.mimbrero.WhatsAppDesktop
+    state: present

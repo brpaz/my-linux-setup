@@ -3,3 +3,6 @@
 
 - include: virtualbox.yml
   tags: ["virtualbox"]
+
+- include: gnome-boxes.yml
+  tags: ["gnome-boxes"]

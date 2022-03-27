@@ -1,0 +1,4 @@
+- name: Drawing
+  flatpak:
+    name: com.github.maoschanz.drawing
+    state: present

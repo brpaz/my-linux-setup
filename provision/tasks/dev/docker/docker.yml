@@ -21,20 +21,15 @@
     append: yes
   become: true
 
-# Not needed for Fedora 35
-# - name: Configure Firewall
-#   command: firewall-cmd --permanent --zone=trusted --add-interface=docker0 && firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
-#   become: true
+- name: Docker | Copy Daemon.json
+  copy:
+    src: docker/daemon.json
+    dest: /etc/docker/daemon.json
+  become: true
 
 - name: Docker | Start service
   systemd:
     name: docker
     state: started
     enabled: yes
-  become: true
-
-- name: Docker | Copy Daemon.json
-  copy:
-    src: docker/daemon.json
-    dest: /etc/docker/daemon.json
   become: true
