@@ -1,0 +1,4 @@
+- name: Fragments torrent client
+  flatpak:
+    name: de.haeckerfelix.Fragments
+    state: present

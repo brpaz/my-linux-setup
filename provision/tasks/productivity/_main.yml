@@ -4,3 +4,5 @@
 - include: pdf-master.yml
 - include: gnome-todo.yml
 - include: dialect.yml
+- include: apostrophe.yml
+- include: notejot.yml

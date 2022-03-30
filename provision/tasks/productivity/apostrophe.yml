@@ -1,0 +1,4 @@
+- name: Apostrophe Markdown Editor
+  flatpak:
+    name: org.gnome.gitlab.somas.Apostrophe
+    state: present

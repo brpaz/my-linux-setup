@@ -1,0 +1,4 @@
+- name: Dialect
+  flatpak:
+    name: com.github.liferooter.textpieces
+    state: present
