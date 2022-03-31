@@ -10,7 +10,7 @@ Setup a new machine from scratch is always a very time consuming task. Last time
 
 What if most of that, can be automated?
 
-That´s what this repository does. In this README file you will encounter a list of software I use and can be seen as a reference. The more interesting part is in 
+That´s what this repository does. In this README file you will encounter a list of software I use and can be seen as a reference. The more interesting part is in
 [provision](provision) folder, which contains a set of Ansible playbooks to automatically install that softtware.
 
 As a Developer I need my main OS to be very stable but I also want to have regularly updated packages. After working with Debian based OSes for many years, in 2019 I decided to give a try to [Fedora](https://getfedora.org/) and so this playbook is optimized for Fedora.
@@ -60,35 +60,36 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Productivity
 
-* [Libreoffice](https://libreoffice.org) - Office suite.
-* [Evince](https://flathub.org/apps/details/org.gnome.Evince) - A document viewer for the GNOME desktop.
+* [Obsidian](https://obsidian.md/) - Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files.
+* [Notejot](https://flathub.org/apps/details/io.github.lainsce.Notejot) - Jot your ideas.
+* [Espanso](https://espanso.org/) - A Privacy-first, Cross-platform Text Expander
+* [Gnome TODO](https://wiki.gnome.org/Apps/Todo) - Personal task manager for GNOME.
+* [Apostrophe](https://flathub.org/apps/details/org.gnome.gitlab.somas.Apostrophe) - Edit Markdown in style
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOME
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
-* [Marker](https://flathub.org/apps/details/com.github.fabiocolacio.marker) - Powerful markdown editor for the GNOME desktop.
-* [Planner](https://flathub.org/apps/details/com.github.alainm23.planner) - Native TODO list application.
-* [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
-* [Workspaces](https://flathub.org/apps/details/com.github.devalien.workspaces) - Workspaces lets you configure and quickly launch all you need to work on a project. It can open in a second different instances of code, a specific website and a directory.
-* [Dendron](https://www.dendron.so/) - Dendron makes it easy to add, find and share anything in seconds, regardless of how much information you have
 * [Dialect](https://flathub.org/apps/details/com.github.gi_lom.dialect) - A translation app for GNOME.
 * [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
 * [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
-  
+* [Libreoffice](https://libreoffice.org) - Office suite.
+* [Evince](https://flathub.org/apps/details/org.gnome.Evince) - A document viewer for the GNOME desktop.
+* [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
+
 ---
 
 ### Internet
 
-* [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser
-* [Google Chrome](https://www.google.com/chrome/) - My secondary browser
+* [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
+* [Google Chrome](https://www.google.com/chrome/) - My secondary browser.
+* [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
-* [Transmission](https://transmissionbt.com/) - Torrent client
 * [uget](https://ugetdm.com/) - Download manager
 * [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application.
 * [Skype](https://www.skype.com/) - Official Skype Application.
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
-* [Youp for WhatsApp](https://flathub.org/apps/details/com.gigitux.youp) - WhatsApp GTK Client
+* [WhatsApp Desktop](https://flathub.org/apps/details/io.github.mimbrero.WhatsAppDesktop) - Unofficial WhatsApp Web Desktop client.
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
-* [Mailspring](https://getmailspring.com/) - Email Client.
+* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 
 ---
@@ -106,6 +107,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
 * [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
 * [Image Roll](https://flathub.org/apps/details/com.github.weclaw1.ImageRoll) - Image Roll is a simple and fast GTK image viewer with basic image manipulation tools. Written in rust.
+* [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
 
 ---
 ### Sound & Video
@@ -124,7 +126,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
-* [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam. 
+* [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
 
 ---
 
@@ -145,8 +147,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Spotlight studio](https://stoplight.io/) - The API Design Management Platform powering the world's leading API first companies.
+* [Text Pieces](https://flathub.org/apps/details/com.github.liferooter.textpieces) - Transform text without using random websites
 * [Lens](https://k8slens.dev/) - The Kubernetes IDE.
-* [Boop](https://flathub.org/apps/details/fyi.zoey.Boop-GTK)- Port of @IvanMathy's Boop to GTK, a scriptable scratchpad for developers.
 * [Kube Forwarder](https://www.electronjs.org/apps/kube-forwarder) - Easy to use Kubernetes port forwarding manager.
 
 ---
@@ -166,7 +168,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Authy](https://snapcraft.io/authy) - The Twilio Authy app generates secure 2 step verification tokens on your device. It help’s you protect your account from hackers and hijackers by adding an additional layer of security.
 * [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
-* [AutoKey](https://github.com/autokey/autokey) - A desktop automation utility for Linux and X11.
 * [Timeshift](https://github.com/teejee2008/timeshift) - System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backup levels, and exclude filters. Snapshots can be restored while system is running or from Live CD/USB.
 
 ---
@@ -181,7 +182,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) - Papirus icon theme for Linux.
 
---- 
+---
 ### Fonts
 
 * [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) - A typeface for developers. By Jetbrains.
@@ -222,7 +223,7 @@ I use ZSH shell with the following extras:
 ### Text Mainuplation
 
 * [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
-* [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings. 
+* [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
 * [tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
@@ -284,7 +285,7 @@ I use ZSH shell with the following extras:
 * [Symfony CLI](https://symfony.com/download) - Symfony command line tool
 * [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
 * [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
-  
+
 ### Snippets and Cheat sheets
 
 * [cacher-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
@@ -302,7 +303,7 @@ I use ZSH shell with the following extras:
 * [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [firebase-tools](https://firebase.google.com/docs/cli) - Firebase Command Line tools
-  
+
 ### Docker Tools
 
 * [docker-compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
@@ -326,7 +327,7 @@ I use ZSH shell with the following extras:
   * [ansible/ansible-lint](https://github.com/ansible/ansible-lint) - Best practices checker for Ansible
   * [Ansible Galaxy](https://galaxy.ansible.com/) - Jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work known to Ansible as roles.
 * [Pulumi](https://www.pulumi.com/) -  Modern Infrastructure as Code
-* [terratest](https://github.com/gruntwork-io/terratest/releases) - Terratest is a Go library that makes it easier to write automated tests for your infrastructure code. 
+* [terratest](https://github.com/gruntwork-io/terratest/releases) - Terratest is a Go library that makes it easier to write automated tests for your infrastructure code.
 * [mozilla/sops](https://github.com/mozilla/sops) - Simple and flexible tool for managing secrets
 
 ### Security
@@ -355,7 +356,7 @@ I use ZSH shell with the following extras:
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
 * [Devilspie2](http://www.nongnu.org/devilspie2/) - Devilspie2 is a window matching utility, allowing the user to perform scripted actions on windows as they are created. For example you can script a terminal program to always be positioned at a specific screen position, or position a window on a specific workspace
 * [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
-* [pre-commit](https://pre-commit.com/) -  A framework for managing and maintaining multi-language pre-commit hooks.
+* [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 
 ## Development Runtimes
 
@@ -379,9 +380,9 @@ I use ZSH shell with the following extras:
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
 * [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages. Features: 1) New message indicator is always shown if there are notifications.
 * [Time ++](https://extensions.gnome.org/extension/1238/time/) - A todo.txt manager, time tracker, timer, stopwatch, pomodoro, and alarm clock
-* [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, 
+* [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources,
 speed and storage stats.
-* [pop-os/shell: Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows. 
+* [pop-os/shell: Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows.
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
 * [Cast to TV](https://extensions.gnome.org/extension/1544/cast-to-tv/) - Cast files to Chromecast, web browser or media player app over local network.
@@ -394,7 +395,7 @@ speed and storage stats.
 
 ## VS Code Extensions
 
- 
+
 * 42Crunch.vscode-openapi
 * adamhartford.vscode-base64
 * adrianwilczynski.alpine-js-intellisense
@@ -490,12 +491,12 @@ speed and storage stats.
 * Zignd.html-css-class-completion
 
 ## Firefox Extensions
- 
+
 TODO
 
 ## Ulauncher Extensions
 
-* [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop) 
+* [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop)
 * [Dendron — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-dendron)
 * [Window Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-window-switcher)
 * [Workspace Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-xfwm-workspace-switcher)
