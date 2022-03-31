@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.1
-Type=Application
-Name=Cryptomator
-Comment=Free client-side encryption for your cloud files
-Icon=cryptomator
-Exec=/opt/Cryptomator.AppImage
-Actions=
-Categories=Utility;
