@@ -6,7 +6,7 @@
 - include: gnome-photos.yml
 - include: curtail.yml
 - include: gnome-podcasts.yml
-- include: kdenlive.yml
+- include: pitivi.yml
 - include: obs.yml
 - include: peek.yml
 - include: spotify.yml

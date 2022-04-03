@@ -3,7 +3,7 @@
 # transitions and render into the format of your choice.
 # https://flathub.org/apps/details/org.kde.kdenlive
 
-- name: Kdeenlive
+- name: Pitivi
   flatpak:
-    name: org.kde.kdenlive
+    name: org.pitivi.Pitivi
     state: present
