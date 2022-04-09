@@ -1,0 +1,15 @@
+- name: Mage | Get latest version from GitHub
+  github_release:
+    user: magefile
+    repo: mage
+    action: latest_release
+    token: "{{ github_token }}"
+  register: mage_release
+
+- name: Mage | Download
+  unarchive:
+    remote_src: true
+    src: https://github.com/magefile/mage/releases/download/{{ mage_release.tag }}/mage_{{ mage_release.tag[1:] }}_Linux-64bit.tar.gz
+    dest: "{{ bin_dir }}"
+    mode: a+x
+  become: true

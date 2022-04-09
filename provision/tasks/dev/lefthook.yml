@@ -1,0 +1,13 @@
+- name: "Lefthook | Get Latest release"
+  github_release:
+    user: evilmartians
+    repo: lefthook
+    action: latest_release
+    token: "{{ github_token }}"
+  register: lefthook_release
+
+- name: "Lefthook | Install"
+  dnf:
+    name: "https://github.com/evilmartians/lefthook/releases/download/{{ lefthook_release.tag }}/lefthook_amd64.rpm"
+    state: present
+  become: true

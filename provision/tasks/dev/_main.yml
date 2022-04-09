@@ -127,3 +127,7 @@
   tags: ["direnv"]
 - include: zeal.yml
   tags: ["zeal"]
+- include: mage.yml
+  tags: ["go", "mage"]
+- include: lefthook.yml
+  tags: ["go", "lefthook"]
