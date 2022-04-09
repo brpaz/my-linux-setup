@@ -1,4 +1,0 @@
-- name: Glade
-  flatpak:
-    name: org.gnome.Glade
-    state: present

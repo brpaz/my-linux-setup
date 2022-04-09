@@ -33,8 +33,6 @@
   tags: ["regex-tester"]
 - include: dbeaver.yml
   tags: ["dbeaver"]
-- include: glade.yml
-  tags: ["glade"]
 - include: hugo.yml
   tags: ["hugo"]
 - include: jetbrains-toolbox.yml
