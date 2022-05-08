@@ -26,3 +26,5 @@
   tags: ["mediawriter"]
 - include: text-snatcher.yml
   tags: ["text-snatcher"]
+- include: text-editor.yml
+  tags: ["text-editor"]

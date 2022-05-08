@@ -1,7 +1,6 @@
 - name: Git Tools
   dnf:
     name:
-      - hub
       - tig
       - git-extras
     state: present
@@ -17,14 +16,14 @@
 
 - name: "Lab | Download"
   unarchive:
-     src: "https://github.com/zaquestion/lab/releases/download/{{ lab_release.tag }}/lab_{{ lab_release.tag[1:] }}_linux_amd64.tar.gz"
-     remote_src: true
-     dest: "{{ setup_dir }}"
+    src: "https://github.com/zaquestion/lab/releases/download/{{ lab_release.tag }}/lab_{{ lab_release.tag[1:] }}_linux_amd64.tar.gz"
+    remote_src: true
+    dest: "{{ setup_dir }}"
   become: true
 
 - name: "Lab | install"
   copy:
     src: "{{ setup_dir }}/lab"
     dest: "{{ bin_dir }}"
-    mode: 'a+x'
+    mode: "a+x"
   become: true
