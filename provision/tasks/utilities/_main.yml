@@ -28,3 +28,7 @@
   tags: ["text-snatcher"]
 - include: text-editor.yml
   tags: ["text-editor"]
+- include: solaar.yml
+  tags: ["solaar"]
+- include: deskcreen.yml
+  tags: ["deskscreen"]

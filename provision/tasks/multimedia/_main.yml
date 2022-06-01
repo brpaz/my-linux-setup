@@ -35,3 +35,6 @@
 - include: feh.yml
 - include: gnome-music.yml
 - include: drawing.yml
+- include: boxysvg.yml
+- include: clapper.yml
+  tags: ["flatpak", "clapper"]

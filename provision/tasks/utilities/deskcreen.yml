@@ -1,0 +1,14 @@
+- name: Deskscreen | Get latest release
+  github_release:
+    user: pavlobu
+    repo: deskreen
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Deskscreen | Install
+  dnf:
+    name: https://github.com/pavlobu/deskreen/releases/download/{{ release.tag }}/deskreen-{{ release.tag[1:]}}.x86_64.rpm
+    state: present
+    disable_gpg_check: yes
+  become: true

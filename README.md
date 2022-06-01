@@ -30,7 +30,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
     - [Games](#games)
     - [Themes and Icons](#themes-and-icons)
     - [Fonts](#fonts)
-    - [Other](#other)
+    - [Finance](#finance)
   - [Terminal Applications](#terminal-applications)
     - [Shell configuration](#shell-configuration)
     - [File Navigation and Search](#file-navigation-and-search)
@@ -47,7 +47,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Infrastucture As Code](#infrastucture-as-code)
     - [Security](#security)
     - [System Utils](#system-utils)
-    - [Other](#other-1)
+    - [Other](#other)
   - [Development Runtimes](#development-runtimes)
   - [Gnome Extensions](#gnome-extensions)
   - [VS Code Extensions](#vs-code-extensions)
@@ -69,7 +69,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/com.github.gi_lom.dialect) - A translation app for GNOME.
 * [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
-* [WireframeSketcher](https://wireframesketcher.com/) - Wireframing Tool for Professionals
 * [Libreoffice](https://libreoffice.org) - Office suite.
 * [Evince](https://flathub.org/apps/details/org.gnome.Evince) - A document viewer for the GNOME desktop.
 * [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
@@ -81,16 +80,18 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
 * [Google Chrome](https://www.google.com/chrome/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
+* [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge)
 * [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
 * [uget](https://ugetdm.com/) - Download manager
-* [Remmina](https://remmina.org/) - A feature rich Remote Desktop Application.
-* [Skype](https://www.skype.com/) - Official Skype Application.
+* [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
-* [WhatsApp Desktop](https://flathub.org/apps/details/io.github.mimbrero.WhatsAppDesktop) - Unofficial WhatsApp Web Desktop client.
+* [Fractal](https://flathub.org/apps/details/org.gnome.Fractal) - Matrix group messaging app.
+* [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
 * [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
+
 
 ---
 
@@ -108,13 +109,15 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
 * [Image Roll](https://flathub.org/apps/details/com.github.weclaw1.ImageRoll) - Image Roll is a simple and fast GTK image viewer with basic image manipulation tools. Written in rust.
 * [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
+* [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
 
 ---
 ### Sound & Video
 
 * [Spotify](https://www.spotify.com/) - Music for everyone.
-* [Kdenlive](http://www.kdenlive.org/) - Kdenlive is a non linear video editor. It is based on the MLT framework and accepts many audio and video formats, allows you to add effects, transitions and render into the format of your choice.
+* [Pitivi—Linux](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+* [Clapper](https://flathub.org/apps/details/com.github.rafostar.Clapper) - Simple and modern GNOME media player.
 * [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor.
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
 * [GNOME Music](https://flathub.org/apps/details/org.gnome.Music) - An easy way to play your music. Automatically discover music on your computer, the local network and internet services.
@@ -139,10 +142,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
     * [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers.
     * [DataGrip](https://www.jetbrains.com/datagrip/) -  The Cross-Platform IDE for Databases & SQL by JetBrains
 * [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
-* [Cacher](https://www.cacher.io/) - Code snippet organizer for pros
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
-* [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 * [Postman](https://www.getpostman.com/) - Rest API Client
 * [Regex Tester](https://flathub.org/apps/details/com.github.artemanufrij.regextester) - A simple app for testing regular expressions.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
@@ -158,17 +159,20 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
 * [Menulibre](https://launchpad.net/menulibre) - Menu editor
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
-* [GParted](https://gparted.sourceforge.io/) - GParted is a free partition editor for graphically managing your disk partitions
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
+* [Déjà Dup Backups](https://flathub.org/apps/details/org.gnome.DejaDup) - Déjà Dup is a simple backup tool. It hides the complexity of backing up the Right Way (encrypted, off-site, and regular) and uses duplicity as the backend.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 * [Cryptomator](https://cryptomator.org/) - Free client-side encryption for your cloud files.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
-* [Etcher](https://www.balena.io/etcher/) - Flash OS images to SD cards & USB drives, safely and easily.
 * [Authy](https://snapcraft.io/authy) - The Twilio Authy app generates secure 2 step verification tokens on your device. It help’s you protect your account from hackers and hijackers by adding an additional layer of security.
 * [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Timeshift](https://github.com/teejee2008/timeshift) - System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backup levels, and exclude filters. Snapshots can be restored while system is running or from Live CD/USB.
+- [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
+- [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
+- [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
+- [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
 
 ---
 ### Games
@@ -187,7 +191,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) - A typeface for developers. By Jetbrains.
 
-### Other
+### Finance
 
 * [Markets](https://flathub.org/apps/details/com.bitstower.Markets) - A stock, currency and cryptocurrency tracker.
 
@@ -365,7 +369,7 @@ I use ZSH shell with the following extras:
 * Golang
 * Ruby
 * Python
-* Vala
+* Rust
 
 ---
 

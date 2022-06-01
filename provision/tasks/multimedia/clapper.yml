@@ -1,0 +1,4 @@
+- name: Clapper
+  flatpak:
+    name: com.github.rafostar.Clapper
+    state: present
