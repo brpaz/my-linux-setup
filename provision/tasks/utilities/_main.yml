@@ -32,3 +32,4 @@
   tags: ["solaar"]
 - include: deskcreen.yml
   tags: ["deskscreen"]
+- include: smile.yml

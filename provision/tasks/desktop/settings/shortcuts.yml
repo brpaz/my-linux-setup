@@ -98,6 +98,9 @@
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding', value: "'<Super>t'" }
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command', value: "'tilix --focus-window'" }
     - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name', value: "'Open Terminal Window'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding', value: "'<Super>e'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command', value: "'flatpak run it.mijorus.smile'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name', value: "'Open Emoji Picker'" }
 
 - name: Set Custom Shortcuts List
   dconf:
