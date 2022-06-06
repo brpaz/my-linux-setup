@@ -1,0 +1,4 @@
+- name: Cowbird
+  flatpak:
+    name: uk.co.ibboard.cawbird
+    state: present

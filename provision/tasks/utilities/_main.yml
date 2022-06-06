@@ -33,3 +33,6 @@
 - include: deskcreen.yml
   tags: ["deskscreen"]
 - include: smile.yml
+  tags: ["flatpak"]
+- include: blanket.yml
+  tags: ["flatpak"]

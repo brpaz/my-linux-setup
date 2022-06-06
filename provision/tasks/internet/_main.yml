@@ -20,3 +20,5 @@
   tags: ["brave", "browsers"]
 - include: geary.yml
   tags: ["geary", "email", "flatpak"]
+- include: cowbird.yml
+  tags: [cowbird, twitter]

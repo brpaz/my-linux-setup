@@ -23,6 +23,7 @@ As a Developer I need my main OS to be very stable but I also want to have regul
   - [Graphical Applications](#graphical-applications)
     - [Productivity](#productivity)
     - [Internet](#internet)
+      - [Web Apps (powered by Web Catalog)](#web-apps-powered-by-web-catalog)
     - [Graphics & Design](#graphics--design)
     - [Sound & Video](#sound--video)
     - [Development Tools](#development-tools)
@@ -91,7 +92,19 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
 * [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
+* [Cawbird](https://flathub.org/apps/details/uk.co.ibboard.cawbird) - Cawbird is a native GTK+ twitter client that provides vital features such as Direct Messages (DMs), tweet notifications, conversation views.
+* [Headlines](https://flathub.org/apps/details/io.gitlab.caveman250.headlines) - A GTK4/libAdwaita Reddit client designed for use with Linux phones.
+* [Feeds](https://flathub.org/apps/details/org.gabmus.gfeeds) - News reader for GNOME.
 
+#### Web Apps (powered by Web Catalog)
+
+- TickTick
+- Google Photos
+- Excalidraw
+- Instagram
+- Feedly
+- Google Meet
+- Mermaid Editor
 
 ---
 
@@ -107,7 +120,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
 * [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
-* [Image Roll](https://flathub.org/apps/details/com.github.weclaw1.ImageRoll) - Image Roll is a simple and fast GTK image viewer with basic image manipulation tools. Written in rust.
 * [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
 * [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
 
@@ -115,7 +127,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Sound & Video
 
 * [Spotify](https://www.spotify.com/) - Music for everyone.
-* [Pitivi—Linux](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
+* [Pitivi](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 * [Clapper](https://flathub.org/apps/details/com.github.rafostar.Clapper) - Simple and modern GNOME media player.
 * [EasyTag](https://wiki.gnome.org/Apps/EasyTAG) - Audio file metadata editor.
@@ -173,8 +185,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
+- [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 
----
+--
 ### Games
 
 * [Steam](https://store.steampowered.com)
@@ -209,10 +222,9 @@ I use ZSH shell with the following extras:
 * [zplug](https://github.com/zplug/zplug) - A next-generation plugin manager for zsh
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
-* [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) - ZSH port of Fish history search (up arrow)
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
-
+* [Fig](https://fig.io/?ref=github_autocomplete) Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig. (Not compatible with Linux but WIP)
 ### File Navigation and Search
 
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
@@ -496,8 +508,29 @@ speed and storage stats.
 
 ## Firefox Extensions
 
-TODO
-
+- [Add to Feedly Plus — quasiyoke](https://quasiyoke.me/en/add-to-feedly-plus/)
+- [Auto Tab Discard :: add0n.com](https://add0n.com/tab-discard.html)
+- [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
+- [Brotab](https://addons.mozilla.org/en-US/firefox/addon/brotab/)
+- [CSS Scan](https://getcssscan.com/)
+- [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - The Web Developer extension adds various web developer tools to the browser.
+- [Enchancer For Youtube](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/) - Take control of YouTube and boost your user experience!
+- [I Don´t care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/) - Get rid of cookie warnings from almost all websites!
+- [Memex](https://addons.mozilla.org/en-US/firefox/addon/worldbrain/) - Remember Everything You Read Online.
+- [Raindrop](https://addons.mozilla.org/en-US/firefox/addon/raindropio/) - All-in-one bookmark manager
+- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) - Finally, an efficient wide-spectrum content blocker. Easy on CPU and memory.
+- [Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/) - Allows you to restore the tab you just closed with a single click—plus it can offer a list of recently closed tabs within a convenient context menu.
+- [Markdown Web Clipper](https://addons.mozilla.org/en-US/firefox/addon/markdownload/) - This extension works like a web clipper, but it downloads articles in a markdown format. Turndown and Readability.js are used as core libraries. It is not guaranteed to work with all websites.
+- [Grammarly](https://addons.mozilla.org/en-US/firefox/addon/grammarly-1/) - Improve your writing with Grammarly's communication assistance. Spell check, grammar check, and punctuation check in one tool.
+- [Copy as Markdown](https://addons.mozilla.org/en-US/firefox/addon/copy-as-markdown/) - Copy Links, Tabs & Images as Markdown via right clicks
+- [Coil](https://addons.mozilla.org/en-US/firefox/addon/coil/) - Support websites and creators with Web Monetization.
+- [Vue Dev Tools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/) - DevTools extension for debugging Vue.js applications.
+- [Firemonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/) - Super Lightweight User Script and Style Manager.
+- [Google Lighthouse](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/) - Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
+- [EditThisCookie](https://addons.mozilla.org/en-US/firefox/addon/etc2/) - EditThisCookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
+- [Smart HTTPS](https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/) - This extension automatically changes HTTP web addresses to the secure HTTPS, whenever possible.
+- [JSON Light](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files.
+- [WhatFont](https://addons.mozilla.org/en-US/firefox/addon/zjm-whatfont/) - A wrapper for Chengyin Liu's WhatFont tool
 ## Ulauncher Extensions
 
 * [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop)

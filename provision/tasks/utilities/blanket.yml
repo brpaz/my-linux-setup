@@ -1,0 +1,4 @@
+- name: Blanket
+  flatpak:
+    name: com.rafaelmardojai.Blanket
+    state: present

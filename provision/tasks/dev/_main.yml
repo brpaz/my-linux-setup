@@ -133,3 +133,5 @@
   tags: ["github-desktop"]
 - include: mongodb.yml
   tags: [mongodb]
+- include: redis.yml
+  tags: [redis]

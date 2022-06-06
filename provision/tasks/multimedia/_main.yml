@@ -38,3 +38,5 @@
 - include: boxysvg.yml
 - include: clapper.yml
   tags: ["flatpak", "clapper"]
+- include: mousai.yml
+  tags: ["flatpak", "mousai"]
