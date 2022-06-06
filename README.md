@@ -531,6 +531,11 @@ speed and storage stats.
 - [Smart HTTPS](https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/) - This extension automatically changes HTTP web addresses to the secure HTTPS, whenever possible.
 - [JSON Light](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files.
 - [WhatFont](https://addons.mozilla.org/en-US/firefox/addon/zjm-whatfont/) - A wrapper for Chengyin Liu's WhatFont tool
+- [Whappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/) - Identify technologies on websites.
+- [VideoDownloaderHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) - The easy way to download and convert Web videos from hundreds of YouTube-like sites.
+- [zvizvi/GitHub-Web-IDE](https://github.com/zvizvi/GitHub-Web-IDE) - Open GitHub repositories in online web IDE.
+- [User Agent switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+- [Fake Data](https://addons.mozilla.org/en-US/firefox/addon/fake-data-haterapps/) -  Fill form fields on the fly with fake random data.
 ## Ulauncher Extensions
 
 * [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop)
