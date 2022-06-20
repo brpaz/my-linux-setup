@@ -1,38 +1,38 @@
-- include: bleachbit.yml
+- import_tasks: bleachbit.yml
   tags: ["bleachbit", "utilities"]
-- include: cryptomator.yml
+- import_tasks: cryptomator.yml
   tags: ["cryptomator", "utilities"]
-- include: menulibre.yml
+- import_tasks: menulibre.yml
   tags: ["menulibre", "utilities"]
-- include: stacer.yml
+- import_tasks: stacer.yml
   tags: ["stacer", "utilities"]
-- include: tilix.yml
+- import_tasks: tilix.yml
   tags: ["tilix", "utilities"]
-- include: ulauncher.yml
+- import_tasks: ulauncher.yml
   tags: ["ulauncher", "utilities"]
-- include: weather.yml
+- import_tasks: weather.yml
   tags: ["weather", "utilities"]
-- include: restic.yml
+- import_tasks: restic.yml
   tags: ["restic", "utilities"]
-- include: grsync.yml
+- import_tasks: grsync.yml
   tags: ["grsync", "utilities"]
-- include: authy.yml
+- import_tasks: authy.yml
   tags: ["authy"]
-- include: obfuscate.yml
+- import_tasks: obfuscate.yml
   tags: ["obfuscate"]
-- include: timeshift.yml
+- import_tasks: timeshift.yml
   tags: ["utilities"]
-- include: mediawriter.yml
+- import_tasks: mediawriter.yml
   tags: ["mediawriter"]
-- include: text-snatcher.yml
+- import_tasks: text-snatcher.yml
   tags: ["text-snatcher"]
-- include: text-editor.yml
+- import_tasks: text-editor.yml
   tags: ["text-editor"]
-- include: solaar.yml
+- import_tasks: solaar.yml
   tags: ["solaar"]
-- include: deskcreen.yml
+- import_tasks: deskcreen.yml
   tags: ["deskscreen"]
-- include: smile.yml
+- import_tasks: smile.yml
   tags: ["flatpak"]
-- include: blanket.yml
+- import_tasks: blanket.yml
   tags: ["flatpak"]

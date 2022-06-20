@@ -1,139 +1,139 @@
 # =======================
 # Languages and runtimes
 # =======================
-- include: python.yml
+- import_tasks: python.yml
   tags: ["python"]
-- include: ruby.yml
+- import_tasks: ruby.yml
   tags: ["ruby"]
-- include: php.yml
+- import_tasks: php.yml
   tags: ["php"]
-- include: node.yml
+- import_tasks: node.yml
   tags: ["node"]
-- include: golang.yml
+- import_tasks: golang.yml
   tags: ["golang"]
-- include: java.yml
+- import_tasks: java.yml
   tags: ["java"]
-- include: rust.yml
+- import_tasks: rust.yml
   tags: ["rust"]
 
 # =======================
 # Tools
 # =======================
-- include: vim.yml
+- import_tasks: vim.yml
   tags: ["vim"]
-- include: vscode.yml
+- import_tasks: vscode.yml
   tags: ["vscode"]
-- include: postman.yml
+- import_tasks: postman.yml
   tags: ["postman"]
-- include: meld.yml
+- import_tasks: meld.yml
   tags: ["meld"]
-- include: gitkraken.yml
+- import_tasks: gitkraken.yml
   tags: ["gitkraken"]
-- include: regex-tester.yml
+- import_tasks: regex-tester.yml
   tags: ["regex-tester"]
-- include: dbeaver.yml
+- import_tasks: dbeaver.yml
   tags: ["dbeaver"]
-- include: hugo.yml
+- import_tasks: hugo.yml
   tags: ["hugo"]
-- include: jetbrains-toolbox.yml
+- import_tasks: jetbrains-toolbox.yml
   tags: ["jetbrains"]
 
 # ===================
 # Docker
 # ===================
-- include: docker/docker.yml
+- import_tasks: docker/docker.yml
   tags: ["docker"]
-- include: docker/ctop.yml
+- import_tasks: docker/ctop.yml
   tags: ["docker", "ctop", "github"]
-- include: docker/lazydocker.yml
+- import_tasks: docker/lazydocker.yml
   tags: ["docker", "lazydocker", "github"]
-- include: docker/dive.yml
+- import_tasks: docker/dive.yml
   tags: ["docker", "dive", "github"]
-- include: sops.yml
+- import_tasks: sops.yml
   tags: ["sops", "github"]
 
-- include: docker/containers/traefik.yml
+- import_tasks: docker/containers/traefik.yml
   tags: ["docker", "traefik", "docker-app"]
-- include: docker/containers/portainer.yml
+- import_tasks: docker/containers/portainer.yml
   tags: ["docker", "portainer", "docker-app"]
-- include: docker/containers/grafana.yml
+- import_tasks: docker/containers/grafana.yml
   tags: ["docker", "grafana", "docker-app"]
-- include: docker/containers/devdns.yml
+- import_tasks: docker/containers/devdns.yml
   tags: ["docker", "grafana", "docker-app"]
 
 # # ============================
 # # Kubernetes
 # # ============================
-- include: kubernetes/minikube.yml
+- import_tasks: kubernetes/minikube.yml
   tags: ["minikube"]
-- include: kubernetes/kubectl.yml
+- import_tasks: kubernetes/kubectl.yml
   tags: ["kubernetes", "kubectl"]
-- include: kubernetes/kubectx.yml
+- import_tasks: kubernetes/kubectx.yml
   tags: ["kubernetes", "kubectx", "github"]
-- include: kubernetes/helm.yml
+- import_tasks: kubernetes/helm.yml
   tags: ["kubernetes", "helm"]
-- include: kubernetes/kail.yml
+- import_tasks: kubernetes/kail.yml
   tags: ["kubernetes", "kail", "github"]
-- include: kubernetes/kubeval.yml
+- import_tasks: kubernetes/kubeval.yml
   tags: ["kubernetes", "kubeval", "github"]
-- include: kubernetes/k9s.yml
+- import_tasks: kubernetes/k9s.yml
   tags: ["kubernetes", "k9s", "github"]
-- include: kubernetes/kind.yml
+- import_tasks: kubernetes/kind.yml
   tags: ["kubernetes", "kind", "github"]
-- include: kubernetes/lens.yml
+- import_tasks: kubernetes/lens.yml
   tags: ["kubernetes", "lens"]
 
 # ===================
 # Cloud tools
 # ===================
-- include: cloud/awscli.yml
+- import_tasks: cloud/awscli.yml
   tags: ["awscli"]
-- include: cloud/doctl.yml
+- import_tasks: cloud/doctl.yml
   tags: ["doctl", "github"]
-- include: cloud/gcloud.yml
+- import_tasks: cloud/gcloud.yml
   tags: ["gcloud"]
-- include: cloud/heroku.yml
+- import_tasks: cloud/heroku.yml
   tags: ["heroku"]
-- include: cloud/fly.yml
+- import_tasks: cloud/fly.yml
   tags: ["fly"]
 
 # ===================
 # Other
 # ===================
-- include: mkcert.yml
+- import_tasks: mkcert.yml
   tags: ["mkcert", "github"]
-- include: dbcli.yml
-- include: tldr.yml
+- import_tasks: dbcli.yml
+- import_tasks: tldr.yml
   tags: ["tldr"]
-- include: git-tools.yml
+- import_tasks: git-tools.yml
   tags: ["github"]
-- include: terraform.yml
+- import_tasks: terraform.yml
   tags: ["terraform", "github"]
-- include: sqllitebrowser.yml
-- include: cacher.yml
-- include: pulumi.yml
+- import_tasks: sqllitebrowser.yml
+#- import_tasks: cacher.yml
+- import_tasks: pulumi.yml
   tags: ["pulumi", "github"]
-- include: spotlight-studio.yml
+- import_tasks: spotlight-studio.yml
   tags: ["spotlight-studio"]
-- include: gh-cli.yml
+- import_tasks: gh-cli.yml
   tags: ["gh-cli", "githhub"]
-- include: flux.yml
+- import_tasks: flux.yml
   tags: ["fluxcd", "github"]
-- include: goreleaser.yml
+- import_tasks: goreleaser.yml
   tags: ["goreleaser", "github"]
-- include: direnv.yml
+- import_tasks: direnv.yml
   tags: ["direnv"]
-- include: zeal.yml
+- import_tasks: zeal.yml
   tags: ["zeal"]
-- include: mage.yml
+- import_tasks: mage.yml
   tags: ["go", "mage"]
-- include: lefthook.yml
+- import_tasks: lefthook.yml
   tags: ["go", "lefthook"]
-- include: github-desktop.yml
+- import_tasks: github-desktop.yml
   tags: ["github-desktop"]
-- include: mongodb.yml
+- import_tasks: mongodb.yml
   tags: [mongodb]
-- include: redis.yml
+- import_tasks: redis.yml
   tags: [redis]
 - import_tasks: fnm.yml
   tags: [fnm]

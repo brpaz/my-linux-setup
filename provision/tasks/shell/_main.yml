@@ -1,1 +1,1 @@
-- include: zsh.yml
+- import_tasks: zsh.yml

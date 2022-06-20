@@ -11,9 +11,9 @@
   become: true
   tags: ["networking"]
 
-- include: firewall.yml
+- import_tasks: firewall.yml
   tags: ["networking", "firewalll"]
-- include: speedtest-cli.yml
+- import_tasks: speedtest-cli.yml
   tags: ["networking", "speedtest"]
-- include: dnsmasq.yml
+- import_tasks: dnsmasq.yml
   tags: ["networking", "dns"]

@@ -1,8 +1,8 @@
-- include: gnome-calendar.yml
-- include: gnome-contacts.yml
-- include: foliate.yml
-- include: pdf-master.yml
-- include: gnome-todo.yml
-- include: dialect.yml
-- include: apostrophe.yml
-- include: notejot.yml
+- import_tasks: gnome-calendar.yml
+- import_tasks: gnome-contacts.yml
+- import_tasks: foliate.yml
+- import_tasks: pdf-master.yml
+- import_tasks: gnome-todo.yml
+- import_tasks: dialect.yml
+- import_tasks: apostrophe.yml
+- import_tasks: notejot.yml

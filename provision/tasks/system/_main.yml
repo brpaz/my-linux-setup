@@ -18,10 +18,10 @@
     state: latest # noqa 403
   become: true
 
-- include: base.yml
-- include: flatpak.yml
+- import_tasks: base.yml
+- import_tasks: flatpak.yml
   tags: ["flatpak"]
-- include: snapd.yml
+- import_tasks: snapd.yml
   tags: ["snapd"]
-- include: user.yml
-- include: selinux.yml
+- import_tasks: user.yml
+- import_tasks: selinux.yml
