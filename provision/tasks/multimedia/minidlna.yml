@@ -1,0 +1,19 @@
+- name: MiniDLNA | Install
+  dnf:
+    name: minidlna
+    state: present
+  become: true
+
+- name: Set the MiniDLNA configuration file
+  template:
+    src: minidlna/minidlna.conf.j2
+    dest: "/etc/minidlna.conf"
+    mode: 0644
+  become: true
+
+- name: Enable MiniDLNA Server
+  systemd:
+    name: minidlna
+    state: started
+    enabled: true
+  become: true

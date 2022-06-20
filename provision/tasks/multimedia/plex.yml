@@ -1,0 +1,4 @@
+- name: Plex
+  flatpak:
+    name: tv.plex.PlexDesktop
+    state: present

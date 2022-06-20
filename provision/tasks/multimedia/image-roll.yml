@@ -1,4 +1,0 @@
-- name: Image roll
-  flatpak:
-    name: com.github.weclaw1.ImageRoll
-    state: present

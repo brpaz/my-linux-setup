@@ -135,3 +135,5 @@
   tags: [mongodb]
 - include: redis.yml
   tags: [redis]
+- import_tasks: fnm.yml
+  tags: [fnm]

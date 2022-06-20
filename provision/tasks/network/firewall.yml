@@ -45,3 +45,19 @@
     rule: allow
     src: "172.18.0.0/24"
   become: true
+
+- name: Allow TCP access for MiniDLNA
+  ufw:
+    rule: allow
+    port: "1900:1900"
+    src: "192.168.0.0/24"
+    proto: tcp
+  become: true
+
+- name: Allow UDP access for MiniDLNA
+  ufw:
+    rule: allow
+    port: "1900:1900"
+    src: "192.168.0.0/24"
+    proto: udp
+  become: true

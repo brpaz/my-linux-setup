@@ -119,7 +119,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
-* [Curtail](https://flathub.org/apps/details/com.github.huluti.Curtail) - Curtail is an useful image compressor, supporting PNG, JPEG and WEBP file types.
+* [Yoga Image optimizer](https://flathub.org/apps/details/org.flozz.yoga-image-optimizer) - A graphical tool to convert and optimize JPEG, PNG and WebP images
 * [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
 * [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
 

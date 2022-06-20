@@ -4,7 +4,7 @@
 - include: gcolor.yml
 - include: gimp.yml
 - include: gnome-photos.yml
-- include: curtail.yml
+- include: yoga.yml
 - include: gnome-podcasts.yml
 - include: pitivi.yml
 - include: obs.yml
@@ -31,7 +31,6 @@
   tags: ["kooha"]
 - include: video-downloader.yml
 - include: video-trimmer.yml
-- include: image-roll.yml
 - include: feh.yml
 - include: gnome-music.yml
 - include: drawing.yml
@@ -40,3 +39,6 @@
   tags: ["flatpak", "clapper"]
 - include: mousai.yml
   tags: ["flatpak", "mousai"]
+- include: minidlna.yml
+- include: plex.yml
+  tags: ["flatpak", "plex"]

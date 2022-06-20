@@ -1,0 +1,3 @@
+- name: Install FNM Node version manager
+  shell: curl https://cli-assets.heroku.com/install.sh --skip-shell | sh
+  become: true

@@ -28,7 +28,9 @@ sudo chmod +x setup.sh
 
 **Note** When installing dotfiles you will be prompted for the "pgp" key to decrypt the secure files. Make sure to have it at hand.
 
-## Manual Steps
+---
+
+## Post install steps
 
 Unfortunately not everything can be automated and some manual steps will be required after running this scripts.
 
@@ -42,6 +44,8 @@ To do so, you can run the [scripts/restore_home.sh] script.
 sudo chmod +x scripts/restore_home.sh
 BACKUP_PATH=/path/to/home/backup scripts/restore_home.sh
 ```
+Alternatively you can also use Rsync or DejaDup Restore function if you need more customization of the restore process.
+
 
 ### Restoring Ulauncher configurations.
 
@@ -54,26 +58,53 @@ BACKUP_PATH=/path/to/home/backup scripts/ulauncger_backup.sh --restore
 
 ### Install NVIDIA Drivers
 
-Check [Howto/NVIDIA - RPM Fusion](https://rpmfusion.org/Howto/NVIDIA).
+- Check [Howto/NVIDIA - RPM Fusion](https://rpmfusion.org/Howto/NVIDIA).
 
 ### Install Web Apps
 
-Open [WebCatalog](https://webcatalog.io/webcatalog/) and install the following applications:
+I use [WebCatalog](https://webcatalog.io/webcatalog/) to allow easy installation of web applications.
+
+I have the following:
 
 - Feedly
 - Instagram
 - Google Keep
 - Google Photos
-- WhatsApp
+- Fast
 - TickTick
+
+### Mount Home NAS
+
+In order to be able to backup the machine and access the files stored on the home NAS, we should mount their folders using NFS.
+
+For that, first make sure you have `nfs` installed on your machine.
+
+Then we can try to mount the volumes manually, using:
+
+```bash
+sudo mkdir /mnt/qnap-media
+sudo mkdir /mnt/qnap-backups
+sudo mount -t nfs 192.168.1.108:/Multimedia /mnt/qnap-media
+````
+
+If the test is successfull, we can now instruct the system to mount the volumes automatically on boot, by adding the following lines to the `/etc/fstab` file:
+
+
+```
+192.168.1.108:/Multimedia /mnt/qnap-media  nfs      defaults,nofail,nobootwait,noauto,x-systemd.automount    0       0
+192.168.1.108:/Backups /mnt/qnap-backups  nfs      defaults,nofail,nobootwait,noauto,x-systemd.automount    0       0
+```
+
+**Replace the IP Address and mount path accordingly.**
 
 ### Other tasks
 
-* [] Execute Jetbrains toolbox and install the IDEs
+* [] Execute [Jetbrains toolbox](https://www.jetbrains.com/toolbox-app/) and install the IDEs. (DataGrip, Goland, IDEA, PHPStorm, WebStorm, CLion, Android Studio).
 * [] Open Chrome and Firefox browsers and login to start syncing all the extensions, bookmarks etc.
 * [] Enable Restic Backups
-* [] Login into applications (Spotify, etc).
-* [] Install [Pop!_OS Shell](https://github.com/pop-os/shell) from source.
+* [] Login into applications (Gnome Accounts, Spotify, etc).
+* [] Install [Pop!_OS Shell](https://github.com/pop-os/shell) from source as the latest version is not yet available from the repositories.
+* [] Configure Deja-Dup Backups
 
 ---
 
