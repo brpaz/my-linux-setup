@@ -15,3 +15,5 @@
   tags: ["bitwarden", "github"]
 - import_tasks: glow.yml
   tags: ["glow", "github"]
+- import_tasks: neofetch.yml
+  tags: ["neofetch"]
