@@ -42,3 +42,5 @@
 - import_tasks: minidlna.yml
 - import_tasks: plex.yml
   tags: ["flatpak", "plex"]
+- import_tasks: tagger.yml
+  tags: ["tagger", "flathub"]
