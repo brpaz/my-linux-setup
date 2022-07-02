@@ -219,7 +219,7 @@ A big part of my Development life is spent on the Terminal, so having a good set
 I use ZSH shell with the following extras:
 
 * [Starship](https://starship.rs/) - Cross-Shell Prompt
-* [zplug](https://github.com/zplug/zplug) - A next-generation plugin manager for zsh
+* [antidote](https://github.com/mattmc3/antidote) - Antidote is a feature complete Zsh implementation of the legacy Antibody plugin manager.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
