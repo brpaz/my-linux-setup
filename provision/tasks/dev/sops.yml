@@ -9,7 +9,6 @@
 - name: Sops | Install binary
   get_url:
     url: "https://github.com/mozilla/sops/releases/download/{{ release.tag }}/sops-{{ release.tag }}.linux"
-    remote_src: true
     dest: "{{ bin_dir }}/sops"
     mode: a+x
   become: true

@@ -1,7 +1,7 @@
 - import_tasks: audacity.yml
 - import_tasks: drawio.yml
 - import_tasks: ffaudioconverter.yml
-- import_tasks: gcolor.yml
+- import_tasks: eyedropper.yml
 - import_tasks: gimp.yml
 - import_tasks: gnome-photos.yml
 - import_tasks: yoga.yml

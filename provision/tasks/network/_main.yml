@@ -12,7 +12,7 @@
   tags: ["networking"]
 
 - import_tasks: firewall.yml
-  tags: ["networking", "firewalll"]
+  tags: ["networking", "firewall"]
 - import_tasks: speedtest-cli.yml
   tags: ["networking", "speedtest"]
 - import_tasks: dnsmasq.yml

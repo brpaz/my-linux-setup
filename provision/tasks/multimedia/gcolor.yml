@@ -1,8 +1,0 @@
-# Gcolor3 is a color selection dialog written in GTK+ 3.
-# It is much alike Gcolor2, but uses the newer GTK+ version and other modernisations to better integrate into your modern desktop.
-# https://flathub.org/apps/details/nl.hjdskes.gcolor3
-
-- name: Gcolor3
-  flatpak:
-    name: nl.hjdskes.gcolor3
-    state: present

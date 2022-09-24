@@ -19,16 +19,10 @@
     enabled: true
   become: true
 
-- name: Allow all access to tcp port 80
-  ufw:
-    rule: allow
-    port: "80"
-    proto: tcp
-  become: true
-
 - name: Allow TCP access for GSConnect
   ufw:
     rule: allow
+    src: "192.168.1.0/24"
     port: "1714:1764"
     proto: tcp
   become: true
@@ -36,6 +30,7 @@
 - name: Allow UDP access for GSConnect
   ufw:
     rule: allow
+    src: "192.168.1.0/24"
     port: "1714:1764"
     proto: udp
   become: true
@@ -49,15 +44,15 @@
 - name: Allow TCP access for MiniDLNA
   ufw:
     rule: allow
-    port: "1900:1900"
-    src: "192.168.0.0/24"
+    src: "192.168.1.0/24"
+    port: "8200"
     proto: tcp
   become: true
 
 - name: Allow UDP access for MiniDLNA
   ufw:
     rule: allow
-    port: "1900:1900"
-    src: "192.168.0.0/24"
+    port: "1900"
+    src: "192.168.1.0/24"
     proto: udp
   become: true
