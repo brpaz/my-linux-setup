@@ -12,13 +12,11 @@
 - import_tasks: markets.yml
 - import_tasks: webcatalog.yml
   tags: ["webcatalog"]
-- import_tasks: whatsapp-desktop.yml
+- import_tasks: zapzap.yml
   tags: ["whatsapp", "flatpak"]
 - import_tasks: edge.yml
   tags: ["edge", "browsers"]
 - import_tasks: brave-browser.yml
   tags: ["brave", "browsers"]
-- import_tasks: geary.yml
-  tags: ["geary", "email", "flatpak"]
 - import_tasks: cowbird.yml
   tags: [cowbird, twitter]

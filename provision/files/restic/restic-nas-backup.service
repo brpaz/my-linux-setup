@@ -1,0 +1,7 @@
+[Unit]
+Description=Restic NAS backup service
+[Service]
+Type=oneshot
+ExecStartPost=restic forget --verbose  --group-by "paths,tags" --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS
+ExecStart=restic backup --verbose --exclude-caches --one-file-system $BACKUP_EXCLUDES $BACKUP_PATHS
+EnvironmentFile=%h/.config/restic/restic-nas-backup.conf

@@ -1,5 +1,5 @@
 [Unit]
-Description=Prune data from the restic repository monthly
+Description=Prune data from Restic NAS Backup
 [Timer]
 OnCalendar=monthly
 Persistent=true

@@ -94,7 +94,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [Cawbird](https://flathub.org/apps/details/uk.co.ibboard.cawbird) - Cawbird is a native GTK+ twitter client that provides vital features such as Direct Messages (DMs), tweet notifications, conversation views.
 * [Headlines](https://flathub.org/apps/details/io.gitlab.caveman250.headlines) - A GTK4/libAdwaita Reddit client designed for use with Linux phones.
-* [Feeds](https://flathub.org/apps/details/org.gabmus.gfeeds) - News reader for GNOME.
+* [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 
 #### Web Apps (powered by Web Catalog)
 
@@ -114,11 +114,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Figma Desktop](https://flathub.org/apps/details/io.github.Figma_Linux.figma_linux) - Figma is the first interface design tool based in the browser, making it easier for teams to create software
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
+* [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 * [Graphviz](https://www.graphviz.org/) - Graph Visualization Software
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
-* [Color Picker](https://flathub.org/apps/details/nl.hjdskes.gcolor3) - Choose colors from the picker or the screen
 * [Yoga Image optimizer](https://flathub.org/apps/details/org.flozz.yoga-image-optimizer) - A graphical tool to convert and optimize JPEG, PNG and WebP images
 * [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
 * [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.

@@ -56,6 +56,19 @@ sudo chmod +x scripts/ulauncher_backup.sh
 BACKUP_PATH=/path/to/home/backup scripts/ulauncger_backup.sh --restore
 ```
 
+### Enabling Restic backups
+
+The setup should have installed systemd units to backup the system using Restic, both to Backblaze B2 and to external NAS. These units are disabled by default, for better control, since we don´t want to start backup, until we have restored our files.
+
+To enable the restic backups, run the following commands on your terminal:
+
+```bash
+systemctl --user enable restic-nas-backup.timer
+systemctl --user enable restic-nas-prune.timer
+systemctl --user enable restic-b2-backup.timer
+systemctl --user enable restic-b2-prune.timer
+```
+
 ### Install NVIDIA Drivers
 
 - Check [Howto/NVIDIA - RPM Fusion](https://rpmfusion.org/Howto/NVIDIA).

@@ -1,0 +1,6 @@
+[Unit]
+Description=Restic backup service
+[Service]
+Type=oneshot
+ExecStart=restic backup --verbose --exclude-caches --one-file-system --tag systemd.timer -o b2.connections=10 $BACKUP_EXCLUDES $BACKUP_PATHS
+EnvironmentFile=%h/.config/restic/restic-backup.conf

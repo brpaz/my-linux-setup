@@ -4,5 +4,5 @@
 - import_tasks: pdf-master.yml
 - import_tasks: gnome-todo.yml
 - import_tasks: dialect.yml
-- import_tasks: apostrophe.yml
 - import_tasks: notejot.yml
+- import_tasks: textpieces.yml

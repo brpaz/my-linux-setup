@@ -1,4 +1,4 @@
 - name: WhatsApp Desktop
   flatpak:
-    name: io.github.mimbrero.WhatsAppDesktop
+    name: com.rtosta.zapzap
     state: present

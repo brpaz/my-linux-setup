@@ -16,19 +16,35 @@
     dest: "{{ ansible_env.HOME }}/.config/systemd/user"
     mode: 0644
   loop:
-    - restic/restic-backup.service
-    - restic/restic-backup.timer
-    - restic/restic-prune.service
-    - restic/restic-prune.timer
+    - restic/restic-r2-backup.service
+    - restic/restic-r2-backup.timer
+    - restic/restic-r2-prune.service
+    - restic/restic-r2-prune.timer
+    - restic/restic-nas-backup.service
+    - restic/restic-nas-backup.timer
+    - restic/restic-nas-prune.service
+    - restic/restic-nas-prune.timer
 
-- name: Restic | Enable Restic Backup timer
+- name: Restic | Enable Restic Backup timer for B2
   systemd:
-    name: restic-backup.timer
+    name: restic-b2-backup.timer
     enabled: "no"
     scope: user
 
-- name: Restic | Enable Restic Prune timer
+- name: Restic | Enable Restic Prune timer for B2
   systemd:
-    name: restic-prune.timer
+    name: restic-b2-prune.timer
+    enabled: "no"
+    scope: user
+
+- name: Restic | Enable Restic Backup timer for NAS
+  systemd:
+    name: restic-nas-backup.timer
+    enabled: "no"
+    scope: user
+
+- name: Restic | Enable Restic Prune timer for NAS
+  systemd:
+    name: restic-nas-backup.timer
     enabled: "no"
     scope: user
