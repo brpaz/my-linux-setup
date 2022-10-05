@@ -1,0 +1,4 @@
+- name: NewsFlash
+  flatpak:
+    name: com.gitlab.newsflash
+    state: present

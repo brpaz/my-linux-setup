@@ -1,9 +1,8 @@
 - import_tasks: dropbox.yml
 - import_tasks: google-chrome.yml
-- import_tasks: skype.yml
 - import_tasks: slack.yml
 - import_tasks: discord.yml
-- import_tasks: reminna.yml
+- import_tasks: connections.yml
 - import_tasks: wireshark.yml
 - import_tasks: fragments.yml
 - import_tasks: uget.yml
@@ -19,4 +18,8 @@
 - import_tasks: brave-browser.yml
   tags: ["brave", "browsers"]
 - import_tasks: cowbird.yml
-  tags: [cowbird, twitter]
+  tags: ["cowbird", "twitter"]
+- import_tasks: newsflash.yml
+  tags: ["newsflash"]
+- import_tasks: fractal.yml
+  tags: ["fractal"]
