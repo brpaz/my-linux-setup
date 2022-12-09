@@ -17,3 +17,5 @@
   tags: ["glow", "github"]
 - import_tasks: neofetch.yml
   tags: ["neofetch"]
+- import_tasks: the-way.yml
+  tags: ["the-way", "github"]

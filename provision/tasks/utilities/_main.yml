@@ -36,3 +36,5 @@
   tags: ["flatpak"]
 - import_tasks: blanket.yml
   tags: ["flatpak"]
+- import_tasks: nap.yml
+  tags: ["nap"]

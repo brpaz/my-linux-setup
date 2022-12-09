@@ -1,0 +1,4 @@
+- name: EarTag
+  flatpak:
+    name: app.drey.EarTag
+    state: present

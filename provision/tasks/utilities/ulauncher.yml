@@ -12,12 +12,19 @@
       - dateparser
       - faker
       - semver
-      - github3.py
-      - cloudFlare
-      - algoliasearch
+      - PyGithub~=1.57
+      - cloudFlare~=2.11.0
+      - algoliasearch~=2.6.0
       - docker
       - frontmatter
       - typing_extensions
-      - raindropio
       - python-raindropio
-      - brotab
+      - brotab~=1.3.0
+      - jira
+      - atlassian-python-api~=3.0
+      - lorem
+      - fuzzywuzzy
+      - python-gitlab
+      - google-api-python-client
+      - google-auth-httplib2
+      - google-auth-oauthlib

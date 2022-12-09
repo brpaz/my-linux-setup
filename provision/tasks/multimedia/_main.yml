@@ -17,6 +17,7 @@
 - import_tasks: graphviz.yml
 - import_tasks: wireframe-sketcher.yml
 - import_tasks: youtubedl.yml
+  tags: ["youtubedl"]
 - import_tasks: givemelyrics.yml
 - import_tasks: avvie.yml
 - import_tasks: inkscape.yml
@@ -44,3 +45,5 @@
   tags: ["flatpak", "plex"]
 - import_tasks: tagger.yml
   tags: ["tagger", "flathub"]
+- import_tasks: eartag.yml
+  tags: ["eartag", "flathub"]

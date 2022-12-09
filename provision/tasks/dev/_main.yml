@@ -110,7 +110,6 @@
 - import_tasks: terraform.yml
   tags: ["terraform", "github"]
 - import_tasks: sqllitebrowser.yml
-#- import_tasks: cacher.yml
 - import_tasks: pulumi.yml
   tags: ["pulumi", "github"]
 - import_tasks: spotlight-studio.yml
