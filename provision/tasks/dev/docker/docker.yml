@@ -11,7 +11,7 @@
       - docker-ce
       - docker-ce-cli
       - containerd.io
-      - docker-compose
+      - docker-compose-plugin
   become: true
 
 - name: Docker | Add current user to Docker group

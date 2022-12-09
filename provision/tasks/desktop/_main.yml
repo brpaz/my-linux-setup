@@ -7,7 +7,6 @@
       - python3-psutil
       - gnome-tweak-tool
       - wmctrl
-      - devilspie2
       - dconf-editor
     state: present
   become: true

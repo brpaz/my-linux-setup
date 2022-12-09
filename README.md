@@ -24,8 +24,8 @@ As a Developer I need my main OS to be very stable but I also want to have regul
     - [Productivity](#productivity)
     - [Internet](#internet)
       - [Web Apps (powered by Web Catalog)](#web-apps-powered-by-web-catalog)
-    - [Graphics & Design](#graphics--design)
-    - [Sound & Video](#sound--video)
+    - [Graphics \& Design](#graphics--design)
+    - [Sound \& Video](#sound--video)
     - [Development Tools](#development-tools)
     - [Utilities](#utilities)
     - [Games](#games)
@@ -304,7 +304,6 @@ I use ZSH shell with the following extras:
 
 ### Snippets and Cheat sheets
 
-* [cacher-cli](https://github.com/CacherApp/cacher-cli) - The command line interface to Cacher.
 * [tldr](https://github.com/tldr-pages/tldr) - Simplified and community\-driven man pages.
 * [sgentle/caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - Caniuse command line tool.
 * [out-of-cheese-error/the-way](https://github.com/out-of-cheese-error/the-way) - A code snippets manager for your terminal.
@@ -426,7 +425,6 @@ speed and storage stats.
 * benjaminromano.typings-installer
 * bradlc.vscode-tailwindcss
 * brpaz.contextual-snips
-* Cacher.cacher-vscode
 * capaj.vscode-exports-autocomplete
 * christian-kohler.npm-intellisense
 * codezombiech.gitignore
