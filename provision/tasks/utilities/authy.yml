@@ -1,5 +1,4 @@
-- name: Install Authy
-  snap:
-    name: authy
-    channel: beta
-  become: true
+- name: Authy
+  flatpak:
+    name: com.authy.Authy
+    state: present

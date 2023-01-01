@@ -21,7 +21,6 @@
 - import_tasks: base.yml
 - import_tasks: flatpak.yml
   tags: ["flatpak"]
-- import_tasks: snapd.yml
-  tags: ["snapd"]
 - import_tasks: user.yml
 - import_tasks: selinux.yml
+- import_tasks: drivers.yml

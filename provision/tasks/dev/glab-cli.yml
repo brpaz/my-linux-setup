@@ -1,0 +1,6 @@
+- name: Glab CLI | Install
+  dnf:
+    name: https://gitlab.com/gitlab-org/cli/-/releases/v1.24.1/downloads/glab_1.24.1_Linux_x86_64.rpm
+    state: present
+    disable_gpg_check: yes
+  become: true

@@ -115,7 +115,9 @@
 - import_tasks: spotlight-studio.yml
   tags: ["spotlight-studio"]
 - import_tasks: gh-cli.yml
-  tags: ["gh-cli", "githhub"]
+  tags: ["gh-cli", "github"]
+- import_tasks: glab-cli.yml
+  tags: ["glab-cli", "gitlab"]
 - import_tasks: flux.yml
   tags: ["fluxcd", "github"]
 - import_tasks: goreleaser.yml
