@@ -8,9 +8,9 @@
 
 - name: Kail | Download Archive
   unarchive:
-    src: "https://github.com/boz/kail/releases/download/{{ kail_release.tag }}/kail_{{ kail_release.tag[1:] }}_linux_amd64.tar.gz"
+    src: "https://github.com/boz/kail/releases/download/{{ kail_release.tag }}/kail_{{ kail_release.tag }}_linux_amd64.tar.gz"
     remote_src: true
-    dest:  "{{ setup_dir }}"
+    dest: "{{ setup_dir }}"
 
 - name: Kail Install
   copy:

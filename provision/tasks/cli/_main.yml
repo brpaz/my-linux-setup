@@ -19,3 +19,5 @@
   tags: ["neofetch"]
 - import_tasks: the-way.yml
   tags: ["the-way", "github"]
+- import_tasks: gum.yml
+  tags: ["github", "gum"]
