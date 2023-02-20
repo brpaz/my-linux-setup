@@ -138,3 +138,9 @@
   tags: [redis]
 - import_tasks: fnm.yml
   tags: [fnm]
+- import_tasks: copier.yml
+  tags: [copier]
+- import_tasks: watchexec.yml
+  tags: [watchexec]
+- import_tasks: nix.yml
+  tags: [nix]

@@ -38,3 +38,5 @@
   tags: ["flatpak"]
 - import_tasks: nap.yml
   tags: ["nap"]
+- import_tasks: denaro.yml
+  tags: ["denaro", "flathub"]

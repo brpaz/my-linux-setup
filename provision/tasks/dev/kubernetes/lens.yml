@@ -1,6 +1,5 @@
-- name: "Lens | Install"
-  dnf:
-    name: "https://api.k8slens.dev/binaries/Lens-5.3.3-latest.20211223.1.x86_64.rpm"
+- name: "Open Lens | Install"
+  flatpak:
+    name: dev.k8slens.OpenLens
     state: present
-    disable_gpg_check: yes
   become: true

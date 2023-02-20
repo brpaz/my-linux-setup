@@ -41,9 +41,10 @@
 - import_tasks: mousai.yml
   tags: ["flatpak", "mousai"]
 - import_tasks: minidlna.yml
-- import_tasks: plex.yml
   tags: ["flatpak", "plex"]
-- import_tasks: tagger.yml
-  tags: ["tagger", "flathub"]
+#- import_tasks: tagger.yml
+#  tags: ["tagger", "flathub"]
 - import_tasks: eartag.yml
   tags: ["eartag", "flathub"]
+- import_tasks: kodi.yml
+  tags: ["kodi", "flathub"]

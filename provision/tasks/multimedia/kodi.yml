@@ -1,0 +1,4 @@
+- name: Kodi
+  flatpak:
+    name: tv.kodi.Kodi
+    state: present

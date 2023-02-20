@@ -27,6 +27,7 @@
       - python-frontmatter
       - validator-collection
       - invoke
+      - pipx
 
 - name: Python | Install system packages
   dnf:
