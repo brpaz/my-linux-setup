@@ -92,8 +92,6 @@
   tags: ["doctl", "github"]
 - import_tasks: cloud/gcloud.yml
   tags: ["gcloud"]
-- import_tasks: cloud/heroku.yml
-  tags: ["heroku"]
 - import_tasks: cloud/fly.yml
   tags: ["fly"]
 
