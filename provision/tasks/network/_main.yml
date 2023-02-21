@@ -17,3 +17,5 @@
   tags: ["networking", "speedtest"]
 - import_tasks: dnsmasq.yml
   tags: ["networking", "dns"]
+- import_tasks: tailscale.yml
+  tags: ["networking", "tailscale"]

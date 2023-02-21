@@ -1,0 +1,10 @@
+- name: Install Tailscale
+  command: curl -fsSL https://tailscale.com/install.sh | sh
+  become: true
+
+- name: Enable Tailscale
+  systemd:
+    name: tailscaled
+    state: started
+    enabled: true
+  become: true
