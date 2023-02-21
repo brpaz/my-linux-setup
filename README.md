@@ -91,6 +91,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
+* [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 
 #### Web Apps (powered by Web Catalog)
 
@@ -187,6 +188,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
+- [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
+- [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 
 
 --
