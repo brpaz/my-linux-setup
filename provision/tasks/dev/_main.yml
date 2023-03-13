@@ -142,3 +142,5 @@
   tags: [watchexec]
 - import_tasks: nix.yml
   tags: [nix]
+- import_tasks: scriptkit.yml
+  tags: [scriptkit]

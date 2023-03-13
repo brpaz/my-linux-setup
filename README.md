@@ -51,7 +51,6 @@ As a Developer I need my main OS to be very stable but I also want to have regul
     - [Other](#other)
   - [Development Runtimes](#development-runtimes)
   - [Gnome Extensions](#gnome-extensions)
-  - [Ulauncher Extensions](#ulauncher-extensions)
 
 ## Graphical Applications
 
@@ -171,7 +170,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ---
 ### Utilities
 
-* [Ulauncher](https://ulauncher.io/) - Application Launcher for Linux. A Linux alternative to [Alfted](https://www.alfredapp.com/)
+* [Script Kit](https://www.scriptkit.com/) - Shortcut to Everything
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
 * [Menulibre](https://launchpad.net/menulibre) - Menu editor
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
@@ -535,37 +534,4 @@ speed and storage stats.
 - [Fake Data](https://addons.mozilla.org/en-US/firefox/addon/fake-data-haterapps/) -  Fill form fields on the fly with fake random data.
 - [SimpleLogin](https://addons.mozilla.org/en-US/firefox/addon/simplelogin/)
 - [StartPage](https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search)
-## Ulauncher Extensions
 
-* [Raindrop — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-raindrop)
-* [Window Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-window-switcher)
-* [Workspace Switcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dflock-ulauncher-xfwm-workspace-switcher)
-* [Obsidian — Ulauncher Extensions](https://ext.ulauncher.io/-/github-mikebarkmin-ulauncher-obsidian)
-* [ShortIT — Ulauncher Extensions](https://ext.ulauncher.io/-/github-sergius02-ulauncher-shortit)
-* [UUID — Ulauncher Extensions](https://ext.ulauncher.io/-/github-fsevenm-ulauncher-uuid)
-* [Timezones — Ulauncher Extensions](https://ext.ulauncher.io/-/github-epholys-ultz)
-* [Color converter — Ulauncher Extensions](https://ext.ulauncher.io/-/github-sergius02-ulauncher-colorconverter)
-* [Spotify API — Ulauncher Extensions](https://ext.ulauncher.io/-/github-the-lay-ulauncher-spotify-api)
-* [DockerHub Search — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-dockerhub)
-* [Brotab — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-brotab)
-* [DocSearch — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-docsearch)
-* [IpCopy — Ulauncher Extensions](https://ext.ulauncher.io/-/github-pwnyprod-ulauncher-ipcopy)
-* [DuckDuckGo Bangs — Ulauncher Extensions](https://ext.ulauncher.io/-/github-dhelmr-ulauncher-duckduckgo-bangs)
-* [Firefox bookmarks](https://ext.ulauncher.io/-/github-kuenzelit-ulauncher-firefox-bookmarks)
-* [Password Generator — Ulauncher Extensions](https://ext.ulauncher.io/-/github-rkarami-ulauncher-password-generator)
-* [VirtualBox — Ulauncher Extensions](https://ext.ulauncher.io/-/github-luispabon-ulauncher-virtualbox)
-* [Unicode extension — Ulauncher Extensions](https://ext.ulauncher.io/-/github-zensoup-ulauncher-unicode)
-* [Converter — Ulauncher Extensions](https://ext.ulauncher.io/-/github-skykooler-ulauncher-conversion)
-* [jetbrains Recent Projects — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-jetbrains)
-* [GCP Launcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-zeue-ulauncher-gcp)
-* [VSCode Projects Opener — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-vscode-projects)
-* [DigitalOcean — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-digiralocean)
-* [GitHub — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-github)
-* [Status Pages — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-statuspages)
-* [Repl.it — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-repl)
-* [Cloudflare — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-cloudflare)
-* [cdnjs — Ulauncher Extensions](https://ext.ulauncher.io/-/github-brpaz-ulauncher-cdnjs)
-* [SSH Launcher — Ulauncher Extensions](https://ext.ulauncher.io/-/github-jetbug123-ulauncher-ssh)
-* [Process Killer — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-kill)
-* [Emoji — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-emoji)
-* [Timer — Ulauncher Extensions](https://ext.ulauncher.io/-/github-ulauncher-ulauncher-timer)

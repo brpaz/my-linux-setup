@@ -8,8 +8,8 @@
   tags: ["stacer", "utilities"]
 - import_tasks: tilix.yml
   tags: ["tilix", "utilities"]
-- import_tasks: ulauncher.yml
-  tags: ["ulauncher", "utilities"]
+# - import_tasks: ulauncher.yml
+#   tags: ["ulauncher", "utilities"]
 - import_tasks: weather.yml
   tags: ["weather", "utilities"]
 - import_tasks: restic.yml

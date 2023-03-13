@@ -1,2 +1,2 @@
 - name: Install nix
-  comand: curl -sfL https://nixos.org/nix/install | sh
+  shell: curl -sfL https://nixos.org/nix/install | sh

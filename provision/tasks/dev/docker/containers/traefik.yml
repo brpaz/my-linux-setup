@@ -33,7 +33,7 @@
 - name: Traefik | Start Traefik Container
   docker_container:
     name: traefik
-    image: traefik:v2.6.2
+    image: traefik:v2.9
     ports:
       - "127.0.0.1:80:80"
       - "127.0.0.1:443:443"
