@@ -1,5 +1,0 @@
-- name: Headset | Install
-  flatpak:
-    name: co.headsetapp.headset
-    state: present
-  become: true

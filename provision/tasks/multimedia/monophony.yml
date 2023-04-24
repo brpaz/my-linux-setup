@@ -1,0 +1,5 @@
+- name: Monophony | Install
+  flatpak:
+    name: io.gitlab.zehkira.Monophony
+    state: present
+  become: true

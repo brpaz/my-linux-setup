@@ -13,7 +13,7 @@
 - import_tasks: vlc.yml
 - import_tasks: xnconvert.yml
 - import_tasks: flameshot.yml
-- import_tasks: headset.yml
+- import_tasks: monophony.yml
 - import_tasks: graphviz.yml
 - import_tasks: wireframe-sketcher.yml
 - import_tasks: youtubedl.yml
