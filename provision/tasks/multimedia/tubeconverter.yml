@@ -1,0 +1,4 @@
+- name: TubeConverter
+  flatpak:
+    name: org.nickvision.tubeconverter
+    state: present

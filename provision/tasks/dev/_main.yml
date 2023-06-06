@@ -144,3 +144,5 @@
   tags: [nix]
 - import_tasks: scriptkit.yml
   tags: [scriptkit]
+- import_tasks: _hostctl.yml
+  tags: [hostctl]

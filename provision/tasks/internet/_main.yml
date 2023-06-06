@@ -8,7 +8,6 @@
 - import_tasks: uget.yml
 - import_tasks: zoom.yml
 - import_tasks: whatip.yml
-- import_tasks: markets.yml
 - import_tasks: webcatalog.yml
   tags: ["webcatalog"]
 - import_tasks: zapzap.yml
@@ -17,9 +16,11 @@
   tags: ["edge", "browsers"]
 - import_tasks: brave-browser.yml
   tags: ["brave", "browsers"]
-- import_tasks: cowbird.yml
-  tags: ["cowbird", "twitter"]
 - import_tasks: newsflash.yml
   tags: ["newsflash"]
 - import_tasks: fractal.yml
   tags: ["fractal"]
+- import_tasks: iplookup.yml
+  tags: ["iplookup"]
+- import_tasks: protonvpn.yml
+  tags: ["protonvpn"]

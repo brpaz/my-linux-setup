@@ -1,0 +1,4 @@
+- name: ProtonVPN
+  flatpak:
+    name: com.protonvpn.www
+    state: present

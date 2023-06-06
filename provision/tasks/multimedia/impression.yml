@@ -1,0 +1,4 @@
+- name: Impression
+  flatpak:
+    name: io.gitlab.adhami3310.Impression
+    state: present

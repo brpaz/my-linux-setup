@@ -1,8 +1,0 @@
-# Fondo allows you to see thousands of beautiful photographs from the most recent to the one you are to looking for.
-# Give a single click on a picture, wait until the download is complete and enjoy your new wallpaper!
-# https://flathub.org/apps/details/com.github.calo001.fondo
-
-- name: Fondo | Install
-  flatpak:
-    name:  com.github.calo001.fondo
-    state: present

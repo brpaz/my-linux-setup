@@ -1,4 +1,3 @@
-- import_tasks: fondo.yml
 - import_tasks: fonts.yml
 
 - name: Desktop Control tools

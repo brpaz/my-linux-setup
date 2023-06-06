@@ -8,3 +8,8 @@
     state: started
     enabled: true
   become: true
+
+- name: Install Trayscale
+  flatpak:
+    name: dev.deedles.Trayscale
+    state: present

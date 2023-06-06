@@ -48,3 +48,7 @@
   tags: ["eartag", "flathub"]
 - import_tasks: kodi.yml
   tags: ["kodi", "flathub"]
+- import_tasks: impression.yml
+  tags: ["impression", "flathub"]
+- import_tasks: tubeconverter.yml
+  tags: ["tubeconverter", "flathub"]

@@ -91,6 +91,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
+* [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
 
 #### Web Apps (powered by Web Catalog)
 
@@ -130,7 +131,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://flathub.org/apps/details/org.gnome.Podcasts) - Listen to your favorite podcasts.
 * [Monophony](https://flathub.org/apps/io.gitlab.zehkira.Monophony) - Stream music from YouTube
-* [Video Downloader](https://flathub.org/apps/details/com.github.unrud.VideoDownloader) - Download videos from websites like YouTube and many others.
 * [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given. the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
 * [Ear Tag](https://flathub.org/apps/details/app.drey.EarTag) - Small and simple music tag editor
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
@@ -139,10 +139,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
 * [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet. It's optimized for a 10-foot user interface to be used with televisions and remote controls.
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
-
+* [TubeConverter](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 ### Networking
 
-* [Proton VPN](https://protonvpn.com/) - Secure and Free VPN service for protecting your privacy
 * [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
 * [Tailscale](https://tailscale.com/) - Best VPN Service for Secure Networks
 
