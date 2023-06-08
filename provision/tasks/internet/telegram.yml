@@ -1,0 +1,4 @@
+- name: Telegram Desktop
+  flatpak:
+    name: org.telegram.desktop
+    state: present

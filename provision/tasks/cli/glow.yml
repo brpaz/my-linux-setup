@@ -8,7 +8,7 @@
 
 - name: Glow | Install
   dnf:
-    name: https://github.com/charmbracelet/glow/releases/download/{{ release.tag }}/glow_{{ release.tag[1:] }}_linux_amd64.rpm
+    name: https://github.com/charmbracelet/glow/releases/download/{{ release.tag }}/glow-{{ release.tag[1:] }}.x86_64.rpm
     state: present
     disable_gpg_check: yes
   become: true

@@ -52,3 +52,5 @@
   tags: ["impression", "flathub"]
 - import_tasks: tubeconverter.yml
   tags: ["tubeconverter", "flathub"]
+- import_tasks: upscayl.yml
+  tags: ["upscayl", "flathub"]

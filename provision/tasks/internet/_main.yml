@@ -24,3 +24,7 @@
   tags: ["iplookup"]
 - import_tasks: protonvpn.yml
   tags: ["protonvpn"]
+- import_tasks: telegram.yml
+  tags: ["telegram", "flatpak"]
+- import_tasks: signal.yml
+  tags: ["signal", "flatpak"]

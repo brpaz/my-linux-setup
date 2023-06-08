@@ -1,0 +1,4 @@
+- name: Pinta
+  flatpak:
+    name: com.github.PintaProject.Pinta
+    state: present

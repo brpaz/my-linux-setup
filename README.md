@@ -26,7 +26,6 @@ As a Developer I need my main OS to be very stable but I also want to have regul
       - [Web Apps (powered by Web Catalog)](#web-apps-powered-by-web-catalog)
     - [Graphics \& Design](#graphics--design)
     - [Sound \& Video](#sound--video)
-    - [Networking](#networking)
     - [Development Tools](#development-tools)
     - [Utilities](#utilities)
     - [Games](#games)
@@ -92,6 +91,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
+* [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
+* [Tailscale](https://tailscale.com/) - Best VPN Service for Secure Networks
+* [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
+* [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
+
 
 #### Web Apps (powered by Web Catalog)
 
@@ -109,6 +113,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Graphics & Design
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
+* [Pinta](https://flathub.org/apps/com.github.PintaProject.Pinta) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
@@ -116,8 +121,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Yoga Image optimizer](https://flathub.org/apps/details/org.flozz.yoga-image-optimizer) - A graphical tool to convert and optimize JPEG, PNG and WebP images
-* [Drawing](https://flathub.org/apps/details/com.github.maoschanz.drawing) - Edit screenshots or memes.
 * [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
+* [Upscayl](https://flathub.org/apps/org.upscayl.Upscayl) - Free and Open Source AI Image Upscaler
 
 ---
 ### Sound & Video
@@ -131,7 +136,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://flathub.org/apps/details/org.gnome.Podcasts) - Listen to your favorite podcasts.
 * [Monophony](https://flathub.org/apps/io.gitlab.zehkira.Monophony) - Stream music from YouTube
-* [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given. the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
+* [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given.
 * [Ear Tag](https://flathub.org/apps/details/app.drey.EarTag) - Small and simple music tag editor
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
@@ -140,10 +145,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet. It's optimized for a 10-foot user interface to be used with televisions and remote controls.
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 * [TubeConverter](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
-### Networking
-
-* [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
-* [Tailscale](https://tailscale.com/) - Best VPN Service for Secure Networks
 
 ---
 
@@ -210,7 +211,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Finance
 
 * [Money](https://flathub.org/apps/details/org.nickvision.money) - A personal finance manager
-* [Markets](https://flathub.org/apps/details/com.bitstower.Markets) - A stock, currency and cryptocurrency tracker.
 
 ---
 
@@ -258,7 +258,7 @@ I use ZSH shell with the following extras:
 * [svg/svgo](https://github.com/svg/svgo) - Node.js tool for optimizing SVG files
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
 * [asciinema](https://asciinema.org/) - Record and share your terminal sessions, the right way
-* [svg-term-cli](https://github.com/marionebl/svg-term-cli) - Share terminal sessions via SVG and CSS]
+* [svg-term-cli](https://github.com/marionebl/svg-term-cli) - Share terminal sessions via SVG and CSS
 
 ### Http Tools
 
@@ -390,6 +390,7 @@ speed and storage stats.
 * [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) - An icon taskbar for the Gnome Shell.
 * [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
 * [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
+- [Switcher - GNOME Shell Extensions](https://extensions.gnome.org/extension/973/switcher/) - Switch windows or launch applications quickly by typing
 
 ---
 * ## VS Code Extensions
@@ -504,7 +505,6 @@ speed and storage stats.
 * zhuangtongfa.material-theme
 
 * ## Firefox Extensions
-
 
 - [Add to Feedly Plus — quasiyoke](https://quasiyoke.me/en/add-to-feedly-plus/)
 - [Auto Tab Discard :: add0n.com](https://add0n.com/tab-discard.html)
