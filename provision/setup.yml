@@ -72,3 +72,6 @@
 
     - import_tasks: tasks/virtualization/_main.yml
       tags: ["virtualization"]
+
+    - import_tasks: tasks/docker-apps/_main.yml
+      tags: ["docker-apps"]

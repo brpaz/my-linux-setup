@@ -65,7 +65,8 @@ log:
 #
 # Optional
 #
-#accessLog:
+accessLog:
+  format: common
 # Sets the file path for the access log. If not specified, stdout will be used.
 # Intermediate directories are created if necessary.
 #
@@ -109,7 +110,8 @@ api:
 ################################################################
 
 # Enable ping
-#ping:
+ping:
+  entryPoint: traefik
 # Name of the related entry point
 #
 # Optional
@@ -129,3 +131,6 @@ providers:
   file:
     directory: /etc/traefik/conf
     watch: true
+
+metrics:
+  prometheus: {}

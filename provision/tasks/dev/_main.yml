@@ -52,13 +52,6 @@
 - import_tasks: sops.yml
   tags: ["sops", "github"]
 
-- import_tasks: docker/containers/traefik.yml
-  tags: ["docker", "traefik", "docker-app"]
-- import_tasks: docker/containers/portainer.yml
-  tags: ["docker", "portainer", "docker-app"]
-- import_tasks: docker/containers/grafana.yml
-  tags: ["docker", "grafana", "docker-app"]
-
 # # ============================
 # # Kubernetes
 # # ============================

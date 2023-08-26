@@ -1,14 +1,12 @@
-- name: Docker | Create Portainer volume
-  docker_volume:
+- name: Docker | Ensure Portainer volume is present
+  community.docker.docker_volume:
     name: portainer_data
     state: present
-  become: true
 
 - name: Docker | Start Portainer container
-  docker_container:
+  community.docker.docker_container:
     name: portainer
-    image: portainer/portainer-ce:2.17.1-alpine
-    state: started
+    image: portainer/portainer-ce:2.18.4-alpine
     restart_policy: "unless-stopped"
     networks:
       - name: traefik-public
@@ -21,4 +19,9 @@
       traefik.http.routers.portainer.tls: "true"
       traefik.http.routers.portainer.entrypoints: "websecure"
       traefik.http.services.portainer.loadbalancer.server.port: "9000"
-  become: true
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:9000/api/status"]
+      interval: 10s
+      timeout: 2s
+      retries: 3
+      start_period: 10s

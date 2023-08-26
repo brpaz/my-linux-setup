@@ -1,39 +1,39 @@
 - name: Traefik | Ensure Configuration folder exists
-  file:
+  ansible.builtin.file:
     path: /etc/traefik
     state: directory
     mode: 0644
   become: true
 
 - name: Traefik | Configuration file
-  copy:
+  ansible.builtin.copy:
     src: traefik/traefik.yaml
     dest: "/etc/traefik/traefik.yaml"
     mode: 0644
   become: true
 
 - name: Traefik | Dynamic config
-  copy:
+  ansible.builtin.copy:
     src: traefik/conf
     dest: "/etc/traefik"
     mode: 0644
   become: true
 
 - name: Traefik | Install ssl certificates
-  copy:
+  ansible.builtin.copy:
     src: traefik/certs
     dest: "/etc/traefik"
   become: true
 
 - name: Traefik | Create the overlay network
-  docker_network:
+  community.docker.docker_network:
     name: traefik-public
     state: present
 
 - name: Traefik | Start Traefik Container
-  docker_container:
+  community.docker.docker_container:
     name: traefik
-    image: traefik:v2.9
+    image: traefik:v3.0
     ports:
       - "127.0.0.1:80:80"
       - "127.0.0.1:443:443"
@@ -53,4 +53,9 @@
       traefik.http.routers.api.service: api@internal
       traefik.http.routers.api.tls: "true"
       traefik.http.routers.api.entrypoints: "websecure"
-  become: true
+    healthcheck:
+      test: ["CMD", "traefik", "healthcheck", "--ping"]
+      interval: 10s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
