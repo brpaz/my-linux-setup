@@ -1,4 +1,0 @@
-- name: Video Downloader
-  flatpak:
-    name: com.github.unrud.VideoDownloader
-    state: present

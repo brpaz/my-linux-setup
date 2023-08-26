@@ -21,15 +21,17 @@
     append: yes
   become: true
 
+- name: Docker | Reload group
+  command: newgrp docker
+  become: true
+
 - name: Docker | Copy Daemon.json
   copy:
     src: docker/daemon.json
     dest: /etc/docker/daemon.json
-  become: true
 
 - name: Docker | Start service
   systemd:
     name: docker
     state: started
     enabled: yes
-  become: true

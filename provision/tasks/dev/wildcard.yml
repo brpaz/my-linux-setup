@@ -1,0 +1,4 @@
+- name:  Wildcard | Regex Tester | Download
+  flatpak:
+    name: com.felipekinoshita.Wildcard
+    state: present

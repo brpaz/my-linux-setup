@@ -29,8 +29,8 @@
   tags: ["meld"]
 - import_tasks: gitkraken.yml
   tags: ["gitkraken"]
-- import_tasks: regex-tester.yml
-  tags: ["regex-tester"]
+- import_tasks: wildcard.yml
+  tags: ["wildcard"]
 - import_tasks: dbeaver.yml
   tags: ["dbeaver"]
 - import_tasks: hugo.yml
@@ -58,8 +58,6 @@
   tags: ["docker", "portainer", "docker-app"]
 - import_tasks: docker/containers/grafana.yml
   tags: ["docker", "grafana", "docker-app"]
-- import_tasks: docker/containers/devdns.yml
-  tags: ["docker", "grafana", "docker-app"]
 
 # # ============================
 # # Kubernetes
@@ -74,8 +72,8 @@
   tags: ["kubernetes", "helm"]
 - import_tasks: kubernetes/kail.yml
   tags: ["kubernetes", "kail", "github"]
-- import_tasks: kubernetes/kubeval.yml
-  tags: ["kubernetes", "kubeval", "github"]
+- import_tasks: kubernetes/kubeconform.yml
+  tags: ["kubernetes", "kubeconform", "github"]
 - import_tasks: kubernetes/k9s.yml
   tags: ["kubernetes", "k9s", "github"]
 - import_tasks: kubernetes/kind.yml
@@ -92,8 +90,8 @@
   tags: ["doctl", "github"]
 - import_tasks: cloud/gcloud.yml
   tags: ["gcloud"]
-- import_tasks: cloud/fly.yml
-  tags: ["fly"]
+- import_tasks: cloud/hcloud.yml
+  tags: ["hcloud"]
 
 # ===================
 # Other
@@ -122,10 +120,6 @@
   tags: ["goreleaser", "github"]
 - import_tasks: direnv.yml
   tags: ["direnv"]
-- import_tasks: zeal.yml
-  tags: ["zeal"]
-- import_tasks: mage.yml
-  tags: ["go", "mage"]
 - import_tasks: lefthook.yml
   tags: ["go", "lefthook"]
 - import_tasks: github-desktop.yml
@@ -134,8 +128,6 @@
   tags: [mongodb]
 - import_tasks: redis.yml
   tags: [redis]
-- import_tasks: fnm.yml
-  tags: [fnm]
 - import_tasks: copier.yml
   tags: [copier]
 - import_tasks: watchexec.yml
@@ -144,5 +136,9 @@
   tags: [nix]
 - import_tasks: scriptkit.yml
   tags: [scriptkit]
-- import_tasks: _hostctl.yml
+- import_tasks: hostctl.yml
   tags: [hostctl]
+- import_tasks:  insomnia.yml
+  tags: [ insomnia ]
+- import_tasks: dev-toolbox.yml
+  tags: [ dev-toolbox ]

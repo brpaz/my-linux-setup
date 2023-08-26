@@ -91,10 +91,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
+* [Element](https://flathub.org/apps/im.riot.Riot) - Create, share, communicate, chat and call securely, and bridge to other apps
 * [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
 * [Tailscale](https://tailscale.com/) - Best VPN Service for Secure Networks
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
+* [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
+* [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 
 
 #### Web Apps (powered by Web Catalog)
@@ -130,12 +133,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Spotify](https://www.spotify.com/) - Music for everyone.
 * [Pitivi](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
-* [Clapper](https://flathub.org/apps/details/com.github.rafostar.Clapper) - Simple and modern GNOME media player.
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
 * [GNOME Music](https://flathub.org/apps/details/org.gnome.Music) - An easy way to play your music. Automatically discover music on your computer, the local network and internet services.
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://flathub.org/apps/details/org.gnome.Podcasts) - Listen to your favorite podcasts.
-* [Monophony](https://flathub.org/apps/io.gitlab.zehkira.Monophony) - Stream music from YouTube
 * [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given.
 * [Ear Tag](https://flathub.org/apps/details/app.drey.EarTag) - Small and simple music tag editor
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
@@ -144,7 +145,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
 * [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet. It's optimized for a 10-foot user interface to be used with televisions and remote controls.
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
-* [TubeConverter](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
+* [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
+* [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
 
 ---
 
@@ -162,10 +164,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
 * [Insomnia](https://insomnia.rest/) - The Collaborative API Development Platform
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
-* [TextPieces](https://flathub.org/apps/details/com.github.liferooter.textpieces) - Transform text without using random websites
 * [Open Lens](https://k8slens.dev/) - The Kubernetes IDE.
 * [Kube Forwarder](https://www.electronjs.org/apps/kube-forwarder) - Easy to use Kubernetes port forwarding manager.
 * [RESP.app](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
+* [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
+* [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
 
 ---
 ### Utilities
@@ -178,12 +181,12 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
-* [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup)
+* [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup) - Doing backups the easy way. Plugin your USB drive and let the Pika do the rest for you.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [Authy](https://flathub.org/apps/details/com.authy.Authy) - The Twilio Authy app generates secure 2 step verification tokens on your device. It help’s you protect your account from hackers and hijackers by adding an additional layer of security.
 * [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
-- [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
+* [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.
 - [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
 - [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
@@ -210,7 +213,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Finance
 
-* [Money](https://flathub.org/apps/details/org.nickvision.money) - A personal finance manager
+* [Denaro](https://flathub.org/apps/details/org.nickvision.money) - A personal finance manager
+* [Currency Converter](https://flathub.org/apps/io.github.idevecore.CurrencyConverter) - The currency converter is simple and fast, ideal for those who need to convert currencies repeatedly.
 
 ---
 
@@ -306,7 +310,7 @@ I use ZSH shell with the following extras:
 * [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
 * [Vercel CLI](https://vercel.com/cli)
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
-* [firebase-tools](https://firebase.google.com/docs/cli) - Firebase Command Line tools
+* [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
 
 ### Docker Tools
 
@@ -337,7 +341,7 @@ I use ZSH shell with the following extras:
 ### Security
 
 * [pwgen](https://linux.die.net/man/1/pwgen) - make pronounceable passwords.
-* [bitwarden/cli](https://github.com/bitwarden/cli) - The command line vault (Windows, macOS, & Linux
+* [bitwarden/cli](https://github.com/bitwarden/cli) - The command line vault (Windows, macOS, & Linux)
 
 ### System Utils
 
@@ -361,7 +365,9 @@ I use ZSH shell with the following extras:
 * [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [D2 Lang](https://d2lang.com/tour/intro/) - D2 is a diagram scripting language that turns text to diagrams. It stands for Declarative Diagramming. Declarative, as in, you describe what you want diagrammed, it generates the image.
-* [watchexec](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications
+* [watchexec](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications.
+* [devenv](https://devenv.sh/) - Fast, Declarative, Reproducible, and Composable Developer Environments -
+
 ## Development Runtimes
 
 * PHP

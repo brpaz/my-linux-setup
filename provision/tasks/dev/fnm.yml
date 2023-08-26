@@ -1,3 +1,0 @@
-- name: Install FNM Node version manager
-  shell: curl -fsSL https://fnm.vercel.app/install --skip-shell | bash
-  become: true

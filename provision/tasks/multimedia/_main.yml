@@ -3,7 +3,6 @@
 - import_tasks: ffaudioconverter.yml
 - import_tasks: eyedropper.yml
 - import_tasks: gimp.yml
-- import_tasks: gnome-photos.yml
 - import_tasks: yoga.yml
 - import_tasks: gnome-podcasts.yml
 - import_tasks: pitivi.yml
@@ -13,9 +12,7 @@
 - import_tasks: vlc.yml
 - import_tasks: xnconvert.yml
 - import_tasks: flameshot.yml
-- import_tasks: monophony.yml
 - import_tasks: graphviz.yml
-- import_tasks: wireframe-sketcher.yml
 - import_tasks: youtubedl.yml
   tags: ["youtubedl"]
 - import_tasks: givemelyrics.yml
@@ -30,14 +27,11 @@
   tags: ["sound-recorder"]
 - import_tasks: kooha.yml
   tags: ["kooha"]
-- import_tasks: video-downloader.yml
+- import_tasks: parabolic.yml
 - import_tasks: video-trimmer.yml
 - import_tasks: feh.yml
 - import_tasks: gnome-music.yml
-- import_tasks: drawing.yml
 - import_tasks: boxysvg.yml
-- import_tasks: clapper.yml
-  tags: ["flatpak", "clapper"]
 - import_tasks: mousai.yml
   tags: ["flatpak", "mousai"]
 - import_tasks: minidlna.yml
@@ -54,3 +48,5 @@
   tags: ["tubeconverter", "flathub"]
 - import_tasks: upscayl.yml
   tags: ["upscayl", "flathub"]
+- import_tasks: amberol.yml
+  tags: ["amberol", "flathub"]

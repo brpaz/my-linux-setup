@@ -1,5 +1,0 @@
-- name: Wireframe Sketcher
-  dnf:
-    name: https://wireframesketcher.com/downloads/WireframeSketcher-latest.x86_64.rpm
-    state: present
-  become: true

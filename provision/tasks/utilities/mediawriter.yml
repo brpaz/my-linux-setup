@@ -1,5 +1,0 @@
-- name: Fedora Mediawriter
-  dnf:
-    name: mediawriter
-    state: present
-  become: true
