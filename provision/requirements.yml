@@ -3,5 +3,8 @@ roles:
   - src: https://github.com/jaredhocutt/ansible-gnome-extensions
 
 collections:
+  - name: community.general
+    version:  7.3.0
+
   - name: community.docker
     version: 3.4.8
