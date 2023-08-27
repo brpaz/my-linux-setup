@@ -28,3 +28,9 @@
 
 - import_tasks: 'node-exporter.yml'
   tags: ['node-exporter', 'docker-monitoring-stack']
+
+- import_tasks: 'sourcegraph.yml'
+  tags: ['sourcegraph']
+
+- import_tasks: 'flame.yml'
+  tags: ['flame']
