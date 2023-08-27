@@ -1,6 +1,6 @@
 # Postman makes working with APIs faster and easier by supporting developers at every stage of their workflow.
 
 - name: Postman
-  flatpak:
+  community.general.flatpak:
     name: com.getpostman.Postman
     state: present

@@ -1,4 +1,4 @@
 - name: Figma
-  flatpak:
+  community.general.flatpak:
     name: io.github.Figma_Linux.figma_linux
     state: present

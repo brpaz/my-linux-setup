@@ -1,5 +1,5 @@
 - name: GitHub Desktop
-  flatpak:
+  community.general.flatpak:
     name: io.github.shiftey.Desktop
     state: present
   become: true

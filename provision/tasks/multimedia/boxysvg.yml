@@ -1,4 +1,4 @@
 - name: BoxySVG
-  flatpak:
+  community.general.flatpak:
     name: com.boxy_svg.BoxySVG
     state: present

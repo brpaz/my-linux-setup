@@ -1,5 +1,5 @@
 - name: Bleachbit
-  dnf:
-    name:  bleachbit
+  ansible.builtin.dnf:
+    name: bleachbit
     state: present
   become: true

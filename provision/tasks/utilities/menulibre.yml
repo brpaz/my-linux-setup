@@ -1,5 +1,5 @@
 - name: Menulibre
-  dnf:
+  ansible.builtin.dnf:
     name: menulibre
     state: present
   become: true

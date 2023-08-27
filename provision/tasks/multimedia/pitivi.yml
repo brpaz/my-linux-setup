@@ -4,6 +4,6 @@
 # https://flathub.org/apps/details/org.kde.kdenlive
 
 - name: Pitivi
-  flatpak:
+  community.general.flatpak:
     name: org.pitivi.Pitivi
     state: present

@@ -1,5 +1,5 @@
 - name: Direnv
-  dnf:
+  ansible.builtin.dnf:
     name: direnv
     state: present
   become: true

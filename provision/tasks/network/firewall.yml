@@ -1,56 +1,49 @@
 - name: Disable firewalld
-  systemd:
+  ansible.builtin.systemd:
     name: firewalld
     state: stopped
     enabled: false
   become: true
-
 - name: Install ufw
-  dnf:
+  ansible.builtin.dnf:
     name:
       - ufw
       - gufw
   become: true
-
 - name: Enable ufw
-  systemd:
+  ansible.builtin.systemd:
     name: ufw
     state: started
     enabled: true
   become: true
-
 - name: Allow TCP access for GSConnect
-  ufw:
+  community.general.ufw:
     rule: allow
     src: "192.168.1.0/24"
     port: "1714:1764"
     proto: tcp
   become: true
-
 - name: Allow UDP access for GSConnect
-  ufw:
+  community.general.ufw:
     rule: allow
     src: "192.168.1.0/24"
     port: "1714:1764"
     proto: udp
   become: true
-
 - name: Allow access from Docker containers to the host
-  ufw:
+  community.general.ufw:
     rule: allow
     src: "172.18.0.0/24"
   become: true
-
 - name: Allow TCP access for MiniDLNA
-  ufw:
+  community.general.ufw:
     rule: allow
     src: "192.168.1.0/24"
     port: "8200"
     proto: tcp
   become: true
-
 - name: Allow UDP access for MiniDLNA
-  ufw:
+  community.general.ufw:
     rule: allow
     port: "1900"
     src: "192.168.1.0/24"

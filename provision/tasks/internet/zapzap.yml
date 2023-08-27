@@ -1,4 +1,4 @@
 - name: WhatsApp Desktop
-  flatpak:
+  community.general.flatpak:
     name: com.rtosta.zapzap
     state: present

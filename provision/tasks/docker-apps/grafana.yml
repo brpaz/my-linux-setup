@@ -2,13 +2,12 @@
   community.docker.docker_volume:
     name: grafana-storage
     state: present
-
 - name: Grafana | Create Configuration folder
   ansible.builtin.copy:
     src: grafana/
     dest: /etc/grafana
+    mode: "0755"
   become: true
-
 - name: Grafana | Start Container
   community.docker.docker_container:
     name: grafana
@@ -38,5 +37,3 @@
       GF_AUTH_ANONYMOUS_ENABLED: "true"
       GF_AUTH_ANONYMOUS_ORG_ROLE: "Admin"
       GF_AUTH_ANONYMOUS_ORG_NAME: "Main Org."
-
-

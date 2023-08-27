@@ -1,4 +1,4 @@
 - name: Telegram Desktop
-  flatpak:
+  community.general.flatpak:
     name: org.telegram.desktop
     state: present

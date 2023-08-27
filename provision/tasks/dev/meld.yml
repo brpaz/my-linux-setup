@@ -1,5 +1,4 @@
-
 - name: Meld
-  dnf:
+  ansible.builtin.dnf:
     name: meld
   become: true

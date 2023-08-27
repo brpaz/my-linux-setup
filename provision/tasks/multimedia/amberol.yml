@@ -1,4 +1,4 @@
 - name: Amberol
-  flatpak:
+  community.general.flatpak:
     name: io.bassi.Amberol
     state: present

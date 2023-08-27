@@ -1,5 +1,5 @@
 - name: Ranger
-  dnf:
+  ansible.builtin.dnf:
     name: ranger
     state: present
   become: true

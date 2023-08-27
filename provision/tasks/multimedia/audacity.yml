@@ -2,6 +2,6 @@
 # https://flathub.org/apps/details/org.audacityteam.Audacity
 
 - name: Audacity
-  flatpak:
+  community.general.flatpak:
     name: org.audacityteam.Audacity
     state: present

@@ -1,5 +1,5 @@
 - name: Allow sudo without re entering the passowrd
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: /etc/sudoers
     state: present
     regexp: '^# %wheel  ALL=(ALL) NOPASSWD: ALL'

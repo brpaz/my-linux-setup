@@ -2,20 +2,18 @@
   ansible.builtin.file:
     path: /etc/loki
     state: directory
-    mode: '0755'
+    mode: '"0755"'
   become: true
-
 - name: Loki | Ensure Configuration file exists
   ansible.builtin.template:
     src: loki/loki-local-config.yaml.j2
     dest: /etc/loki/config.yaml
+    mode: "0644"
   become: true
-
 - name: Loki | Ensure data volume exists
   community.docker.docker_volume:
     name: loki-storage
     state: present
-
 - name: Loki | Start container
   community.docker.docker_container:
     name: loki

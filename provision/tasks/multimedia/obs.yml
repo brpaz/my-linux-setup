@@ -2,6 +2,6 @@
 # https://flathub.org/apps/details/org.gnome.Podcasts
 
 - name: Gnome Podcasts
-  flatpak:
+  community.general.flatpak:
     name: com.obsproject.Studio
     state: present

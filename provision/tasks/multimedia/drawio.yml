@@ -3,6 +3,6 @@
 # https://flathub.org/apps/details/com.jgraph.drawio.desktop
 
 - name: Draw.io Desktop
-  flatpak:
+  community.general.flatpak:
     name: com.jgraph.drawio.desktop
     state: present

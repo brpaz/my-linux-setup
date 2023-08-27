@@ -1,4 +1,4 @@
 - name: Dropbox
-  flatpak:
+  community.general.flatpak:
     name: com.dropbox.Client
     state: present

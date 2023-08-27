@@ -1,5 +1,5 @@
 - name: Sqllite browser
-  dnf:
+  ansible.builtin.dnf:
     name: sqlitebrowser
     state: present
   become: true

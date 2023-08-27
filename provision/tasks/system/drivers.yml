@@ -1,11 +1,10 @@
 - name: Install NVIDIA Drivers
-  dnf:
+  ansible.builtin.dnf:
     name:
       - "akmod-nvidia"
       - "vulkan"
     state: present
   become: true
-
 - name: Blacklist the nouveau driver module
   community.general.kernel_blacklist:
     name: nouveau

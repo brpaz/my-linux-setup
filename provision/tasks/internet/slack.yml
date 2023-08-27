@@ -1,4 +1,4 @@
 - name: Slack
-  flatpak:
+  community.general.flatpak:
     name: com.slack.Slack
     state: present

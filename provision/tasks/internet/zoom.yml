@@ -1,4 +1,4 @@
 - name: Zoom
-  flatpak:
+  community.general.flatpak:
     name: us.zoom.Zoom
     state: present

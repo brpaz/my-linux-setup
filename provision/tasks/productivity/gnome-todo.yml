@@ -1,4 +1,4 @@
 - name: Gnome TODO
-  flatpak:
+  community.general.flatpak:
     name: org.gnome.Todo
     state: present

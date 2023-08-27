@@ -2,6 +2,6 @@
 # https://flathub.org/apps/details/com.uploadedlobster.peek
 
 - name: Peek
-  flatpak:
+  community.general.flatpak:
     name: com.uploadedlobster.peek
     state: present

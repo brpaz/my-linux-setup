@@ -1,5 +1,5 @@
 - name: Google Cloud SDK | Add Repository
-  yum_repository:
+  ansible.builtin.yum_repository:
     name: google-cloud-sdk
     description: Google Cloud SDK
     baseurl: https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
@@ -9,8 +9,7 @@
     enabled: true
     gpgcheck: true
   become: true
-
 - name: Google Cloud SDK | Install
-  dnf:
+  ansible.builtin.dnf:
     name: google-cloud-sdk
   become: true

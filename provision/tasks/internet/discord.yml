@@ -1,4 +1,4 @@
 - name: Discord
-  flatpak:
+  community.general.flatpak:
     name: com.discordapp.Discord
     state: present

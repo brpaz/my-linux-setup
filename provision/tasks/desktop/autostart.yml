@@ -1,5 +1,5 @@
 - name: Set autostart applications
-  copy:
+  ansible.builtin.copy:
     src: autostart
     dest: "{{ ansible_env.HOME }}/.config"
-    mode: 0755
+    mode: "0755"

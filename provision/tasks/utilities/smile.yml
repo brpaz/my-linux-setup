@@ -1,4 +1,4 @@
 - name: Smile
-  flatpak:
+  community.general.flatpak:
     name: it.mijorus.smile
     state: present

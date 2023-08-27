@@ -1,4 +1,4 @@
 - name: Signal Desktop
-  flatpak:
+  community.general.flatpak:
     name: org.signal.Signal
     state: present

@@ -1,5 +1,5 @@
 - name: Python | Install PIP packages
-  pip:
+  ansible.builtin.pip:
     name:
       - requests
       - bandit
@@ -28,12 +28,10 @@
       - validator-collection
       - invoke
       - pipx
-
 - name: Python | Install system packages
-  dnf:
+  ansible.builtin.dnf:
     name: python3-ansible-lint
     state: present
   become: true
-
 - name: Setup brotab
-  command: bt install
+  ansible.builtin.command: bt install

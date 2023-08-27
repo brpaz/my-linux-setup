@@ -1,6 +1,4 @@
 - name: Insomnia
-  flatpak:
+  community.general.flatpak:
     name: rest.insomnia.Insomnia
     state: present
-
-

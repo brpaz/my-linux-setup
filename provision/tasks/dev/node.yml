@@ -1,13 +1,12 @@
 - name: Installs NodeJS
-  dnf:
+  ansible.builtin.dnf:
     name: nodejs
     state: present
   become: true
-
 - name: Installs Global NPM Packages
-  npm:
+  community.general.npm:
     name: "{{ item }}"
-    global: yes
+    global: true
   with_items:
     - "@nestjs/cli"
     - "@vue/cli"
@@ -52,17 +51,15 @@
     - "plop"
     - "vercel"
     - "@cloudflare/wrangler"
-
 - name: FNM | Get latest release version
-  github_release:
+  community.general.github_release:
     user: bitwarden
     repo: cli
     action: latest_release
     token: "{{ github_token }}"
   register: fnm_release
-
 - name: FNM | Install
-  unarchive:
+  ansible.builtin.unarchive:
     remote_src: true
     src: https://github.com/Schniz/fnm/releases/download/{{ fnm_release.tag }}/fnm-linux.zip
     dest: "{{ bin_dir }}"

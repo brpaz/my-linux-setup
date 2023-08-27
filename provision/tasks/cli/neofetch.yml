@@ -1,5 +1,5 @@
 - name: Neofetch
-  dnf:
+  ansible.builtin.dnf:
     name: neotfetch
     state: present
   become: true

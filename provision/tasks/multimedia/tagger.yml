@@ -1,4 +1,4 @@
 - name: Tagger | Install
-  flatpak:
+  community.general.flatpak:
     name: org.nickvision.tagger
     state: present

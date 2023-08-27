@@ -1,5 +1,5 @@
 - name: Install networking tools
-  dnf:
+  ansible.builtin.dnf:
     name:
       - net-tools
       - traceroute
@@ -10,12 +10,11 @@
     state: present
   become: true
   tags: ["networking"]
-
-- import_tasks: firewall.yml
+- ansible.builtin.import_tasks: firewall.yml
   tags: ["networking", "firewall"]
-- import_tasks: speedtest-cli.yml
+- ansible.builtin.import_tasks: speedtest-cli.yml
   tags: ["networking", "speedtest"]
-- import_tasks: dnsmasq.yml
+- ansible.builtin.import_tasks: dnsmasq.yml
   tags: ["networking", "dns"]
-- import_tasks: tailscale.yml
+- ansible.builtin.import_tasks: tailscale.yml
   tags: ["networking", "tailscale"]

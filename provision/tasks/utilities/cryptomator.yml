@@ -1,5 +1,5 @@
 - name: Cryptomator
-  dnf:
+  ansible.builtin.dnf:
     name: org.cryptomator.Cryptomator
     state: present
   become: true

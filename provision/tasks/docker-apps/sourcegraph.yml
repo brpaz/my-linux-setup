@@ -2,19 +2,16 @@
   community.docker.docker_volume:
     name: sourcegraph_data
     state: present
-
 - name: Sourcegraph | Create configuration directory
   ansible.builtin.file:
     path: /etc/sourcegraph
     state: directory
     mode: "0755"
   become: true
-
 - name: Sourcegraph | Create network
   community.docker.docker_network:
     name: sourcegraph
     state: present
-
 - name: Sourcegraph | Start Server container
   community.docker.docker_container:
     name: sourcegraph
@@ -34,7 +31,6 @@
       traefik.http.routers.sourcegraph.tls: "false"
       traefik.http.routers.sourcegraph.entrypoints: "web"
       traefik.http.services.sourcegraph.loadbalancer.server.port: "7080"
-
 - name: Sourcegraph | Start Serve git
   community.docker.docker_container:
     name: sourcegraph-serv-git

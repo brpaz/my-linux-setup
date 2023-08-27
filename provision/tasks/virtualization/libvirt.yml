@@ -1,5 +1,5 @@
 - name: Install required virtualization packages
-  dnf:
+  ansible.builtin.dnf:
     name:
       - bridge-utils
       - libvirt
@@ -10,24 +10,21 @@
       - virt-manager
     state: present
   become: true
-
 - name: Run libvirt as non-root user
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: /etc/libvirt/qemu.conf
     regexp: "^user ="
     line: "user = {{ user }}"
   become: true
-
 - name: Run libvirt as non-root user
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: /etc/libvirt/qemu.conf
     regexp: "^group ="
     line: "group = {{ user }}"
   become: true
-
 - name: Enable libvirtd service
-  systemd:
+  ansible.builtin.systemd:
     name: libvirtd
     state: started
-    enabled: yes
+    enabled: true
   become: true

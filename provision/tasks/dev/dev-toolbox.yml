@@ -1,6 +1,4 @@
 - name: Dev Toolbox
-  flatpak:
+  community.general.flatpak:
     name: me.iepure.devtoolbox
     state: present
-
-

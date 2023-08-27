@@ -1,14 +1,13 @@
 - name: Glow | Get latest release
-  github_release:
+  community.general.github_release:
     user: charmbracelet
     repo: glow
     action: latest_release
     token: "{{ github_token }}"
   register: release
-
 - name: Glow | Install
-  dnf:
+  ansible.builtin.dnf:
     name: https://github.com/charmbracelet/glow/releases/download/{{ release.tag }}/glow-{{ release.tag[1:] }}.x86_64.rpm
     state: present
-    disable_gpg_check: yes
+    disable_gpg_check: true
   become: true

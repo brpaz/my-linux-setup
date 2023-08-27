@@ -1,4 +1,4 @@
 - name: Fractal
-  flatpak:
+  community.general.flatpak:
     name: org.gnome.Fractal
     state: present

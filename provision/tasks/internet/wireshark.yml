@@ -1,4 +1,4 @@
 - name: Wireshark
-  dnf:
+  ansible.builtin.dnf:
     name: wireshark
   become: true

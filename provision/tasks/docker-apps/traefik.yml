@@ -2,34 +2,30 @@
   ansible.builtin.file:
     path: /etc/traefik
     state: directory
-    mode: 0644
+    mode: "0644"
   become: true
-
 - name: Traefik | Configuration file
   ansible.builtin.copy:
     src: traefik/traefik.yaml
     dest: "/etc/traefik/traefik.yaml"
-    mode: 0644
+    mode: "0644"
   become: true
-
 - name: Traefik | Dynamic config
   ansible.builtin.copy:
     src: traefik/conf
     dest: "/etc/traefik"
-    mode: 0644
+    mode: "0644"
   become: true
-
 - name: Traefik | Install ssl certificates
   ansible.builtin.copy:
     src: traefik/certs
     dest: "/etc/traefik"
+    mode: "0644"
   become: true
-
 - name: Traefik | Create the overlay network
   community.docker.docker_network:
     name: traefik-public
     state: present
-
 - name: Traefik | Start Traefik Container
   community.docker.docker_container:
     name: traefik

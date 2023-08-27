@@ -2,20 +2,18 @@
   community.docker.docker_volume:
     name: prometheus-data
     state: present
-
 - name: Prometheus | Ensure configuration directory exists
   ansible.builtin.file:
     path: /etc/prometheus
     state: directory
-    mode: '0755'
+    mode: '"0755"'
   become: true
-
 - name: Prometheus | Ensure Configuration folder exists
   ansible.builtin.template:
     src: prometheus/prometheus.yml.j2
     dest: /etc/prometheus/prometheus.yml
+    mode: "0644"
   become: true
-
 - name: Prometheus | Start Container
   community.docker.docker_container:
     name: prometheus
@@ -45,4 +43,3 @@
       timeout: 2s
       retries: 3
       start_period: 5s
-

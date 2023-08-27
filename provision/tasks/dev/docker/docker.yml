@@ -1,12 +1,12 @@
 - name: Docker | Install Repo
-  yum_repository:
+  ansible.builtin.yum_repository:
     name: docker
     description: Docker
     baseurl: https://download.docker.com/linux/fedora/docker-ce.repo
     gpgkey: https://download.docker.com/linux/fedora/gpg
 
 - name: Docker | Install Packages
-  dnf:
+  ansible.builtin.dnf:
     name:
       - docker-ce
       - docker-ce-cli
@@ -18,20 +18,22 @@
   user:
     name: "{{ user }}"
     groups: docker
-    append: yes
+    append: true
   become: true
 
 - name: Docker | Reload group
-  command: newgrp docker
+  ansible.builtin.command: newgrp docker
   become: true
 
 - name: Docker | Copy Daemon.json
-  copy:
+  ansible.builtin.copy:
     src: docker/daemon.json
     dest: /etc/docker/daemon.json
+    mode: "0644"
+  become: true
 
 - name: Docker | Start service
-  systemd:
+  ansible.builtin.systemd:
     name: docker
     state: started
-    enabled: yes
+    enabled: true

@@ -12,7 +12,6 @@
 global:
   checkNewVersion: false
   sendAnonymousUsage: false
-
 ################################################################
 # EntryPoints configuration
 ################################################################
@@ -24,10 +23,8 @@ global:
 entryPoints:
   web:
     address: :80
-
   websecure:
     address: :443
-
 ################################################################
 # Traefik logs configuration
 ################################################################
@@ -39,7 +36,6 @@ entryPoints:
 #
 log:
   level: INFO
-
 # Sets the filepath for the traefik log. If not specified, stdout will be used.
 # Intermediate directories are created if necessary.
 #
@@ -122,15 +118,12 @@ ping:
 ################################################################
 # Docker configuration backend
 ################################################################
-
 providers:
   docker:
     endpoint: "unix:///var/run/docker.sock"
     exposedByDefault: true
-
-  file:
+  ansible.builtin.file:
     directory: /etc/traefik/conf
     watch: true
-
 metrics:
   prometheus: {}

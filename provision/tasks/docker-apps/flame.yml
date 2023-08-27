@@ -1,4 +1,3 @@
-
 - name: Flame | Create volume
   community.docker.docker_volume:
     name: flame_data

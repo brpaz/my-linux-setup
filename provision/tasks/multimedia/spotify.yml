@@ -1,4 +1,4 @@
 - name: Spotify | Install
-  flatpak:
+  community.general.flatpak:
     name: com.spotify.Client
     state: present

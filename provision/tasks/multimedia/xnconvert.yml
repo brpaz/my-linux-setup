@@ -2,6 +2,6 @@
 # https://www.xnview.com/en/xnconvert/
 
 - name: XnConverter
-  flatpak:
+  community.general.flatpak:
     name: com.xnview.XnConvert
     state: present

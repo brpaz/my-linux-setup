@@ -2,6 +2,6 @@
 # It can convert files or whole folders containing music and video files to other audio formats.
 # https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter
 - name: FF Audio Converter
-  flatpak:
+  community.general.flatpak:
     name: com.github.Bleuzen.FFaudioConverter
     state: present

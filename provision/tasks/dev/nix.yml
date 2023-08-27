@@ -1,2 +1,2 @@
 - name: Install nix
-  shell: curl -sfL https://nixos.org/nix/install | sh
+  ansible.builtin.shell: curl -sfL https://nixos.org/nix/install | sh

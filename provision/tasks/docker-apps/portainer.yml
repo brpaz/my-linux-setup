@@ -2,7 +2,6 @@
   community.docker.docker_volume:
     name: portainer_data
     state: present
-
 - name: Docker | Start Portainer container
   community.docker.docker_container:
     name: portainer

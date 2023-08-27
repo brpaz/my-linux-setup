@@ -1,11 +1,10 @@
 - name: Ulauncher
-  dnf:
+  ansible.builtin.dnf:
     name: "ulauncher"
     state: present
   become: true
-
 - name: Install Ulauncher extension Python packages dependencies
-  pip:
+  ansible.builtin.pip:
     name:
       - requests
       - memoization

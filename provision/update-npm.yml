@@ -1,8 +1,6 @@
 - name: Updates NodeJS packages
   hosts: all
-
   vars_files:
     - vars/main.yml
-
   tasks:
-    - import_tasks: tasks/dev/node.yml
+    - ansible.builtin.import_tasks: tasks/dev/node.yml

@@ -1,17 +1,15 @@
 - name: Install PostgresSQL client
-  dnf:
+  ansible.builtin.dnf:
     name: libpq-devel
     state: present
   become: true
-
 - name: Install MySQL client
-  dnf:
+  ansible.builtin.dnf:
     name: community-mysql
     state: present
   become: true
-
 - name: RBDMS cli tools
-  dnf:
+  ansible.builtin.dnf:
     name:
       - "pgcli"
       - "mycli"

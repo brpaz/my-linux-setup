@@ -2,14 +2,13 @@
 # https://flathub.org/apps/details/org.gnome.Podcasts
 
 - name: Gnome Podcasts
-  flatpak:
+  community.general.flatpak:
     name: org.gnome.Podcasts
     state: present
-
 - name: Gnome Podcasts Settings
-  dconf:
+  community.general.dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { key: '/org/gnome/Podcasts/dark-theme', value: "true" }
+    - {key: '/org/gnome/Podcasts/dark-theme', value: "true"}

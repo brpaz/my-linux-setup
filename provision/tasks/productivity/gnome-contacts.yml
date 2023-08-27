@@ -1,5 +1,5 @@
 - name: Gnome Contacts
-  dnf:
+  ansible.builtin.dnf:
     name: 'gnome-contacts'
     state: present
   become: true
