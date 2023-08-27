@@ -1,18 +1,18 @@
-- ansible.builtin.dnf:
+- name: Installs yadm
+  ansible.builtin.dnf:
     name: yadm
     state: present
   become: true
-  name: Installs yadm
-- ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
+- name: Dotfiles | Clone Repository
+  ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
   args:
     creates: '{{ ansible_env.HOME }}/.config/.yadm'
-  name: Dotfiles | Clone Repository
-- ansible.builtin.command: yadm decrypt
-  name: Dotfiles | Decrypt
-- ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"
-  name: Dotfiles | Update remote url to ssh
-- ansible.builtin.file:
+- name: Dotfiles | Decrypt
+  ansible.builtin.command: yadm decrypt
+- name: Dotfiles | Update remote url to ssh
+  ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"
+- name: Dotfiles | Fix netrc permissions
+  ansible.builtin.file:
     mode: '0600'
     path: '{{ ansible_env.HOME }}/.netrc'
   become: true
-  name: Dotfiles | Fix netrc permissions

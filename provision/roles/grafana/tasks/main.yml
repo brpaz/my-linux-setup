@@ -1,14 +1,15 @@
-- community.docker.docker_volume:
+- name: Grafana | Create persistent volume
+  community.docker.docker_volume:
     name: grafana-storage
     state: present
-  name: Grafana | Create persistent volume
-- ansible.builtin.copy:
+- name: Grafana | Create Configuration folder
+  ansible.builtin.copy:
     dest: /etc/grafana
     mode: '0755'
     src: grafana/
   become: true
-  name: Grafana | Create Configuration folder
-- community.docker.docker_container:
+- name: Grafana | Start Container
+  community.docker.docker_container:
     env:
       GF_AUTH_ANONYMOUS_ENABLED: 'true'
       GF_AUTH_ANONYMOUS_ORG_NAME: Main Org.
@@ -18,11 +19,11 @@
       retries: 3
       start_period: 10s
       test:
-      - CMD
-      - wget
-      - -q
-      - --spider
-      - http://localhost:3000/api/health
+        - CMD
+        - wget
+        - -q
+        - --spider
+        - http://localhost:3000/api/health
       timeout: 2s
     image: grafana/grafana:10.1.0
     labels:
@@ -34,11 +35,10 @@
       traefik.http.services.grafana.loadbalancer.server.port: '3000'
     name: grafana
     networks:
-    - name: monitoring
-    - name: traefik-public
+      - name: monitoring
+      - name: traefik-public
     restart_policy: unless-stopped
     state: started
     volumes:
-    - grafana-storage:/var/lib/grafana
-    - /etc/grafana/provisioning:/etc/grafana/provisioning
-  name: Grafana | Start Container
+      - grafana-storage:/var/lib/grafana
+      - /etc/grafana/provisioning:/etc/grafana/provisioning

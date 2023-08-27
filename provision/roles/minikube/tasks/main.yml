@@ -1,20 +1,20 @@
-- community.general.github_release:
+- name: Minikube | Get Latest version
+  community.general.github_release:
     action: latest_release
     repo: minikube
     token: '{{ github_token }}'
     user: kubernetes
-  name: Minikube | Get Latest version
   register: release
-- ansible.builtin.get_url:
+- name: Minikube | Download and Install
+  ansible.builtin.get_url:
     dest: '{{ bin_dir }}/minikube'
     force: true
     mode: a+x
     url: https://github.com/kubernetes/minikube/releases/download/{{ release.tag }}/minikube-linux-amd64
   become: true
-  name: Minikube | Download and Install
-- ansible.builtin.command: '{{ item }}'
-  name: Minikube | Set configs
+- name: Minikube | Set configs
+  ansible.builtin.command: '{{ item }}'
   with_items:
-  - minikube config set cpus 2
-  - minikube config set memory 4096
-  - minikube config set disk-size 10Gi
+    - minikube config set cpus 2
+    - minikube config set memory 4096
+    - minikube config set disk-size 10Gi

@@ -1,20 +1,20 @@
-- community.general.github_release:
+- name: Tldr | Get client latest release
+  community.general.github_release:
     action: latest_release
     repo: tldr
     user: isacikgoz
-  name: Tldr | Get client latest release
   register: release
-- ansible.builtin.unarchive:
+- name: Tldr | Install command line client
+  ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
     src: https://github.com/isacikgoz/tldr/releases/download/{{ release.tag }}/tldr_{{
       release.tag[1:] }}_linux_amd64.tar.gz
-  name: Tldr | Install command line client
-- ansible.builtin.copy:
+- name: Tldr | Install
+  ansible.builtin.copy:
     dest: '{{ bin_dir }}'
     mode: a+x
     src: '{{ setup_dir }}/tldr'
   become: true
-  name: Tldr | Install
-- ansible.builtin.command: tldr -u
-  name: Tldr | Update pages
+- name: Tldr | Update pages
+  ansible.builtin.command: tldr -u

@@ -1,20 +1,20 @@
-- ansible.builtin.dnf:
+- name: PHP | Install
+  ansible.builtin.dnf:
     name:
-    - php-cli
-    - php-curl
-    - php-intl
-    - php-pdo
-    - php-mysqlnd
-    - php-json
-    - php-mcrypt
-    - composer
+      - php-cli
+      - php-curl
+      - php-intl
+      - php-pdo
+      - php-mysqlnd
+      - php-json
+      - php-mcrypt
+      - composer
   become: true
-  name: PHP | Install
-- ansible.builtin.get_url:
+- name: Symfony CLI | Download Installer
+  ansible.builtin.get_url:
     dest: '{{ setup_dir }}/symfony-installer'
     mode: '0644'
     url: https://get.symfony.com/cli/installer
-  name: Symfony CLI | Download Installer
-- ansible.builtin.command: bash {{ setup_dir }}/symfony-installer
+- name: Symfony CLI | Install
+  ansible.builtin.command: bash {{ setup_dir }}/symfony-installer
   become: true
-  name: Symfony CLI | Install

@@ -1,15 +1,15 @@
-- community.general.github_release:
+- name: Hetzner Cloud | Get latest version from GitHub
+  community.general.github_release:
     action: latest_release
     repo: cli
     token: '{{ github_token }}'
     user: hetznercloud
-  name: Hetzner Cloud | Get latest version from GitHub
   register: hcloud_release
-- ansible.builtin.unarchive:
+- name: Hetzner Cloud Cli | Download
+  ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     mode: a+x
     remote_src: true
     src: https://github.com/hetznercloud/cli/releases/download/{{ hcloud_release.tag
       }}/hcloud-linux-amd64.tar.gz
   become: true
-  name: Hetzner Cloud Cli | Download

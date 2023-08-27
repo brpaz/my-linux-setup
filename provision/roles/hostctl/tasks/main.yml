@@ -1,15 +1,15 @@
-- community.general.github_release:
+- name: Get latest release version
+  community.general.github_release:
     action: latest_release
     repo: hostctl
     token: '{{ github_token }}'
     user: guumaster
-  name: Get latest release version
   register: latest_release
-- ansible.builtin.unarchive:
+- name: Hostctl | Download
+  ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     mode: a+x
     remote_src: true
     src: https://github.com/guumaster/hostctl/releases/download/{{ latest_release.tag
       }}/hostctl_{{ latest_release.tag[1:] }}_linux_64-bit.tar.gz
   become: true
-  name: Hostctl | Download

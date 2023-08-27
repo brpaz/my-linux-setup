@@ -8,6 +8,6 @@
 
 - name: Install the rpmsphere repo
   ansible.builtin.dnf:
-    name: "https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-{{ ansible_distribution_version }}-1.noarch.rpm"
+    name: https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-{{ ansible_distribution_version }}-1.noarch.rpm
     state: present
   become: true

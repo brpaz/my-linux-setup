@@ -1,13 +1,13 @@
-- community.general.github_release:
+- name: Lefthook | Get Latest release
+  community.general.github_release:
     action: latest_release
     repo: lefthook
     token: '{{ github_token }}'
     user: evilmartians
-  name: Lefthook | Get Latest release
   register: lefthook_release
-- ansible.builtin.dnf:
+- name: Lefthook | Install
+  ansible.builtin.dnf:
     name: https://github.com/evilmartians/lefthook/releases/download/{{ lefthook_release.tag
       }}/lefthook_amd64.rpm
     state: present
   become: true
-  name: Lefthook | Install

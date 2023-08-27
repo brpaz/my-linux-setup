@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: Inkscape
+  ansible.builtin.dnf:
     name: inkscape
     state: present
   become: true
-  name: Inkscape

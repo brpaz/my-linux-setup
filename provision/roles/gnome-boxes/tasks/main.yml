@@ -1,9 +1,9 @@
-- community.general.flatpak:
+- name: Install Gnome Boxes
+  community.general.flatpak:
     name: org.gnome.Boxes
     state: present
-  name: Install Gnome Boxes
-- ansible.builtin.dnf:
+- name: Install Spice-WebdavD
+  ansible.builtin.dnf:
     name: spice-webdavd
     state: present
   become: true
-  name: Install Spice-WebdavD

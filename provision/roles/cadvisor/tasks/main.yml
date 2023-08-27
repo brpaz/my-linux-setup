@@ -1,14 +1,14 @@
-- community.docker.docker_container:
+- name: CAdvisor | Start container
+  community.docker.docker_container:
     command: --docker_only=true
     image: gcr.io/cadvisor/cadvisor:v0.47.2
     labels:
       traefik.enable: 'false'
     name: cadvisor
     networks:
-    - name: monitoring
-    - name: traefik-public
+      - name: monitoring
+      - name: traefik-public
     restart_policy: unless-stopped
     state: started
     volumes:
-    - /var/lib/docker/:/var/lib/docker:ro
-  name: CAdvisor | Start container
+      - /var/lib/docker/:/var/lib/docker:ro

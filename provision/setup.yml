@@ -152,7 +152,7 @@
     - { role: gitkraken, tags: [gitkraken, dev] }
     - { role: goreleaser, tags: [goreleaser, dev, github] }
     - { role: hcloud, tags: [hcloud, github, dev] }
-    - { role: helm, tags: [helm, github, dev] }
+    - { role: helm, tags: [helm, dev] }
     - { role: hugo, tags: [hugo, github, dev] }
     - { role: jetbrains-toolbox, tags: [jetbrains-toolbox, dev] }
     - { role: insomnia, tags: [insomnia, dev] }
@@ -161,7 +161,7 @@
     - { role: kind, tags: [kind, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
-    - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github ] }
+    - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
     - { role: lens, tags: [lens, dev, kubernetes] }

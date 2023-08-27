@@ -1,19 +1,19 @@
-- community.general.github_release:
+- name: Kail | Get release
+  community.general.github_release:
     action: latest_release
     repo: kail
     token: '{{ github_token }}'
     user: boz
-  name: Kail | Get release
   register: kail_release
-- ansible.builtin.unarchive:
+- name: Kail | Download Archive
+  ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
     src: https://github.com/boz/kail/releases/download/{{ kail_release.tag }}/kail_{{
       kail_release.tag }}_linux_amd64.tar.gz
-  name: Kail | Download Archive
-- ansible.builtin.copy:
+- name: Kail Install
+  ansible.builtin.copy:
     dest: '{{ bin_dir }}'
     mode: a+x
     src: '{{ setup_dir }}/kail'
   become: true
-  name: Kail Install

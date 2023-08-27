@@ -1,14 +1,14 @@
-- community.general.github_release:
+- name: Kind | Get Latest release
+  community.general.github_release:
     action: latest_release
     repo: kind
     token: '{{ github_token }}'
     user: kubernetes-sigs
-  name: Kind | Get Latest release
   register: kind_release
-- ansible.builtin.get_url:
+- name: Kind | Download and install
+  ansible.builtin.get_url:
     dest: '{{ bin_dir }}/kind'
     mode: a+x
     url: https://github.com/kubernetes-sigs/kind/releases/download/{{ kind_release.tag
       }}/kind-linux-amd64
   become: true
-  name: Kind | Download and install

@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: Grsync
+  ansible.builtin.dnf:
     name: grsync
     state: present
   become: true
-  name: Grsync

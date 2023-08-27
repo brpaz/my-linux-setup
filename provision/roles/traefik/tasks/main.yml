@@ -1,47 +1,38 @@
-- ansible.builtin.file:
+- name: Traefik | Ensure Configuration folder exists
+  ansible.builtin.file:
     mode: '0644'
     path: /etc/traefik
     state: directory
   become: true
-  name: Traefik | Ensure Configuration folder exists
 
-- ansible.builtin.copy:
+- name: Traefik | Configuration file
+  ansible.builtin.copy:
     dest: /etc/traefik/traefik.yaml
     mode: '0644'
     src: traefik.yaml
   become: true
-  name: Traefik | Configuration file
 
-- ansible.builtin.copy:
+- name: Traefik | Dynamic config
+  ansible.builtin.copy:
     dest: /etc/traefik
     mode: '0644'
     src: conf
   become: true
-  name: Traefik | Dynamic config
 
-- ansible.builtin.copy:
+- name: Traefik | Install ssl certificates
+  ansible.builtin.copy:
     dest: /etc/traefik
     mode: '0644'
     src: certs
   become: true
-  name: Traefik | Install ssl certificates
 
-- community.docker.docker_network:
+- name: Traefik | Create the overlay network
+  community.docker.docker_network:
     name: traefik-public
     state: present
-  name: Traefik | Create the overlay network
 
-- community.docker.docker_container:
-    healthcheck:
-      interval: 10s
-      retries: 3
-      start_period: 5s
-      test:
-      - CMD
-      - traefik
-      - healthcheck
-      - --ping
-      timeout: 2s
+- name: Traefik | Start Traefik Container
+  community.docker.docker_container:
     image: traefik:v3.0
     labels:
       traefik.docker.network: traefik-public
@@ -52,15 +43,24 @@
       traefik.http.routers.api.tls: 'true'
     name: traefik
     networks:
-    - name: traefik-public
+      - name: traefik-public
     ports:
-    - 127.0.0.1:80:80
-    - 127.0.0.1:443:443
+      - 127.0.0.1:80:80
+      - 127.0.0.1:443:443
     restart_policy: unless-stopped
     state: started
     volumes:
-    - /etc/traefik/traefik.yaml:/etc/traefik/traefik.yaml
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /etc/traefik/certs:/etc/certs:ro
-    - /etc/traefik/conf:/etc/traefik/conf:ro
-  name: Traefik | Start Traefik Container
+      - /etc/traefik/traefik.yaml:/etc/traefik/traefik.yaml
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/traefik/certs:/etc/certs:ro
+      - /etc/traefik/conf:/etc/traefik/conf:ro
+    healthcheck:
+      interval: 10s
+      retries: 3
+      start_period: 5s
+      test:
+        - CMD
+        - traefik
+        - healthcheck
+        - --ping
+      timeout: 2s

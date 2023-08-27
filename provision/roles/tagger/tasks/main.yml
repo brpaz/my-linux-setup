@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Tagger | Install
+  community.general.flatpak:
     name: org.nickvision.tagger
     state: present
-  name: Tagger | Install

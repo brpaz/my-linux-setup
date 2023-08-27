@@ -1,20 +1,20 @@
-- community.general.github_release:
+- name: Hugo | Get latest release
+  community.general.github_release:
     action: latest_release
     repo: hugo
     token: '{{ github_token }}'
     user: gohugoio
-  name: hugo | Get latest release
   register: release
-- ansible.builtin.unarchive:
+- name: Hugo | Download
+  ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
     src: https://github.com/gohugoio/hugo/releases/download/{{ release.tag }}/hugo_{{
       release.tag[1:] }}_Linux-64bit.tar.gz
   become: true
-  name: Hugo | Download
-- ansible.builtin.copy:
+- name: Hugo | install
+  ansible.builtin.copy:
     dest: '{{ bin_dir }}/hugo'
     mode: a+x
     src: '{{ setup_dir }}/hugo'
   become: true
-  name: Hugo | install

@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Kodi
+  community.general.flatpak:
     name: tv.kodi.Kodi
     state: present
-  name: Kodi

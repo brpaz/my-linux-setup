@@ -1,9 +1,10 @@
-- ansible.builtin.dnf:
+- name: Ulauncher
+  ansible.builtin.dnf:
     name: ulauncher
     state: present
   become: true
-  name: Ulauncher
-- ansible.builtin.pip:
+- name: Install Ulauncher extension Python packages dependencies
+  ansible.builtin.pip:
     name:
     - requests
     - memoization
@@ -26,4 +27,3 @@
     - google-api-python-client
     - google-auth-httplib2
     - google-auth-oauthlib
-  name: Install Ulauncher extension Python packages dependencies

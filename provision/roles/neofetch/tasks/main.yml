@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: Neofetch
+  ansible.builtin.dnf:
     name: neotfetch
     state: present
   become: true
-  name: Neofetch

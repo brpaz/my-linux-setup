@@ -1,4 +1,4 @@
-- ansible.builtin.dnf:
+- name: Meld
+  ansible.builtin.dnf:
     name: meld
   become: true
-  name: Meld

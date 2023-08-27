@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: EarTag
+  community.general.flatpak:
     name: app.drey.EarTag
     state: present
-  name: EarTag

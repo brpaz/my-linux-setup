@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: EyeDropper
+  community.general.flatpak:
     name: com.github.finefindus.eyedropper
     state: present
-  name: EyeDropper

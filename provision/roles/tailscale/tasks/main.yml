@@ -1,13 +1,13 @@
-- ansible.builtin.command: curl -fsSL https://tailscale.com/install.sh | sh
+- name: Install Tailscale
+  ansible.builtin.command: curl -fsSL https://tailscale.com/install.sh | sh
   become: true
-  name: Install Tailscale
-- ansible.builtin.systemd:
+- name: Enable Tailscale
+  ansible.builtin.systemd:
     enabled: true
     name: tailscaled
     state: started
   become: true
-  name: Enable Tailscale
-- community.general.flatpak:
+- name: Install Trayscale
+  community.general.flatpak:
     name: dev.deedles.Trayscale
     state: present
-  name: Install Trayscale

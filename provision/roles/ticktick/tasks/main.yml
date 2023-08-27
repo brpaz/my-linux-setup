@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: TickTick
+  community.general.flatpak:
     name: com.ticktick.TickTick
     state: present
-  name: TickTick

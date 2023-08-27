@@ -1,16 +1,16 @@
-- community.general.github_release:
+- name: Mkcert | Get latest release
+  community.general.github_release:
     action: latest_release
     repo: mkcert
     token: '{{ github_token }}'
     user: FiloSottile
-  name: Mkcert | Get latest release
   register: release
-- ansible.builtin.get_url:
+- name: Mkcert | Install Binary
+  ansible.builtin.get_url:
     dest: '{{ bin_dir }}/mkcert'
     mode: a+x
     url: https://github.com/FiloSottile/mkcert/releases/download/{{ release.tag }}/mkcert-{{
       release.tag }}-linux-amd64
   become: true
-  name: Mkcert | Install Binary
-- ansible.builtin.command: mkcert -install
-  name: Mkcert | Install certificates
+- name: Mkcert | Install certificates
+  ansible.builtin.command: mkcert -install

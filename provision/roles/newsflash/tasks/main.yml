@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: NewsFlash
+  community.general.flatpak:
     name: com.gitlab.newsflash
     state: present
-  name: NewsFlash

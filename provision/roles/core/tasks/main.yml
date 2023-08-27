@@ -1,31 +1,28 @@
 - name: Install core system packages
   ansible.builtin.dnf:
     name:
-    - git
-    - curl
-    - wget
-    - unzip
-    - python-psutil
-    - dconf-editor
-    - dnf-plugins-core
-    - make
-    - pwgen
-    - lnav
-    - httpie
-    - htop
-    - iotop
-    - ncdu
-    - tree
-    - figlet
+      - curl
+      - wget
+      - unzip
+      - python-psutil
+      - dconf-editor
+      - dnf-plugins-core
+      - make
+      - pwgen
+      - lnav
+      - httpie
+      - htop
+      - iotop
+      - ncdu
+      - tree
+      - figlet
     state: present
   become: true
-
 - name: Put SELinux in permissive mode, logging actions that would be blocked.
   ansible.posix.selinux:
     policy: targeted
     state: permissive
   become: true
-
 - name: Allow sudo without re entering the passowrd
   ansible.builtin.lineinfile:
     line: '%%wheel  ALL=(ALL) NOPASSWD: ALL'

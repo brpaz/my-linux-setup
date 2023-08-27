@@ -1,5 +1,5 @@
-- ansible.builtin.pip:
+- name: Speedtest
+  ansible.builtin.pip:
     name: speedtest-cli
     state: present
   become: true
-  name: Speedtest

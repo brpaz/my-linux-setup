@@ -1,20 +1,21 @@
-- community.general.github_release:
+- name: Lazydocker | Get latest release
+  community.general.github_release:
     action: latest_release
     repo: lazydocker
     token: '{{ github_token }}'
     user: jesseduffield
-  name: lazydocker | Get latest release
   register: release
-- ansible.builtin.unarchive:
+
+- name: Lazydocker | Download
+  ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
-    src: https://github.com/jesseduffield/lazydocker/releases/download/{{ release.tag
-      }}/lazydocker_{{ release.tag[1:] }}_Linux_x86_64.tar.gz
+    src: https://github.com/jesseduffield/lazydocker/releases/download/{{ release.tag }}/lazydocker_{{ release.tag[1:] }}_Linux_x86_64.tar.gz
   become: true
-  name: lazydocker | Download
-- ansible.builtin.copy:
+
+- name: Lazydocker | Install
+  ansible.builtin.copy:
     dest: '{{ bin_dir }}/lazydocker'
     mode: a+x
     src: '{{ setup_dir }}/lazydocker'
   become: true
-  name: lazydocker | Install

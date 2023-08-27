@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Install Text snatcher
+  community.general.flatpak:
     name: com.github.rajsolai.textsnatcher
     state: present
-  name: Install Text snatcher

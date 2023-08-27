@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Gnome Podcasts
+  community.general.flatpak:
     name: com.obsproject.Studio
     state: present
-  name: Gnome Podcasts

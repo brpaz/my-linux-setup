@@ -1,18 +1,18 @@
-- community.general.github_release:
+- name: K9s | Get Latest release
+  community.general.github_release:
     action: latest_release
     repo: k9s
     token: '{{ github_token }}'
     user: derailed
-  name: k9s | Get Latest release
   register: release
-- ansible.builtin.unarchive:
+- name: K9s | Download Tarball
+  ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
     src: https://github.com/derailed/k9s/releases/download/{{ release.tag }}/k9s_Linux_amd64.tar.gz
-  name: k9s | Download Tarball
-- ansible.builtin.copy:
+- name: K9s | Install binary
+  ansible.builtin.copy:
     dest: '{{ bin_dir }}'
     mode: a+x
     src: '{{ setup_dir }}/k9s'
   become: true
-  name: k9s | Install binary

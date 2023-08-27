@@ -1,8 +1,8 @@
-- ansible.builtin.dnf:
+- name: Vim Install
+  ansible.builtin.dnf:
     name: '{{ item }}'
     state: present
   become: true
   loop:
-  - vim
-  - neovim
-  name: Vim Install
+    - vim
+    - neovim

@@ -1,34 +1,35 @@
-- community.docker.docker_volume:
+- name: Prometheus | Ensure Prometheus data volume exists
+  community.docker.docker_volume:
     name: prometheus-data
     state: present
-  name: Prometheus | Ensure Prometheus data volume exists
-- ansible.builtin.file:
+- name: Prometheus | Ensure configuration directory exists
+  ansible.builtin.file:
     mode: '"0755"'
     path: /etc/prometheus
     state: directory
   become: true
-  name: Prometheus | Ensure configuration directory exists
-- ansible.builtin.template:
+- name: Prometheus | Ensure Configuration folder exists
+  ansible.builtin.template:
     dest: /etc/prometheus/prometheus.yml
     mode: '0644'
     src: prometheus/prometheus.yml.j2
   become: true
-  name: Prometheus | Ensure Configuration folder exists
-- community.docker.docker_container:
+- name: Prometheus | Start Container
+  community.docker.docker_container:
     command:
-    - --config.file=/etc/prometheus/prometheus.yml
-    - --storage.tsdb.path=/prometheus
-    - --storage.tsdb.retention.time=7d
-    - --storage.tsdb.retention.size=5GB
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=7d
+      - --storage.tsdb.retention.size=5GB
     healthcheck:
       interval: 10s
       retries: 3
       start_period: 5s
       test:
-      - CMD
-      - wget
-      - -qO-
-      - http://localhost:9090/-/healthy
+        - CMD
+        - wget
+        - -qO-
+        - http://localhost:9090/-/healthy
       timeout: 2s
     image: prom/prometheus:v2.46.0
     labels:
@@ -39,11 +40,10 @@
       traefik.http.services.prometheus.loadbalancer.server.port: '9090'
     name: prometheus
     networks:
-    - name: monitoring
-    - name: traefik-public
+      - name: monitoring
+      - name: traefik-public
     restart_policy: unless-stopped
     state: started
     volumes:
-    - prometheus-data:/prometheus
-    - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-  name: Prometheus | Start Container
+      - prometheus-data:/prometheus
+      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml

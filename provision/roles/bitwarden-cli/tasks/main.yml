@@ -1,15 +1,15 @@
-- community.general.github_release:
+- name: Bitwarden | Get latest release version
+  community.general.github_release:
     action: latest_release
     repo: cli
     token: '{{ github_token }}'
     user: bitwarden
-  name: Bitwarden | Get latest release version
   register: bw_release
-- ansible.builtin.unarchive:
+- name: Bitwarden | Download
+  ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     mode: a+x
     remote_src: true
     src: https://github.com/bitwarden/cli/releases/download/{{ bw_release.tag }}/bw-linux-{{
       bw_release.tag[1:] }}.zip
   become: true
-  name: Bitwarden | Download

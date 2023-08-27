@@ -1,15 +1,15 @@
-- ansible.builtin.unarchive:
+- name: Jetbrains Toolbox
+  ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     extra_opts:
-    - --strip-components=1
+      - --strip-components=1
     mode: a+x
     remote_src: true
-    src: https://download.jetbrains.com/toolbox/jetbrains-toolbox-{{ jetbrains_toolbox_version
-      }}.tar.gz
+    src: https://download.jetbrains.com/toolbox/jetbrains-toolbox-{{ jetbrains_toolbox_version }}.tar.gz
   become: true
-  name: Jetbrains Toolbox
-- ansible.builtin.copy:
+
+- name: Jetbrains Toolbox | Install Desktop file
+  ansible.builtin.copy:
     dest: '{{ applications_dir }}/jetbrains-toolbox.desktop'
     mode: '0644'
     src: jetbrains-toolbox.desktop
-  name: Jetbrains Toolbox | Install Desktop file

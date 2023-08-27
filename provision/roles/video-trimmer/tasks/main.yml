@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Video Trimmer
+  community.general.flatpak:
     name: org.gnome.gitlab.YaLTeR.VideoTrimmer
     state: present
-  name: Video Trimmer

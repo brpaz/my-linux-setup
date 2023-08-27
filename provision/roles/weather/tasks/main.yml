@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Gnome Weather
+  community.general.flatpak:
     name: org.gnome.Weather
     state: present
-  name: Gnome Weather

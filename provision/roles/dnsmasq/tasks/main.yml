@@ -1,25 +1,25 @@
-- ansible.builtin.copy:
-    content: >
-      [main]
-      dns=dnsmasq
+- name: Dnsmasq | Configure Network Manager
+  ansible.builtin.copy:
+    content: '[main] dns=dnsmasq
+
+      '
     dest: /etc/NetworkManager/conf.d/dnsmasq.conf
     mode: '0644'
   become: true
-  name: Dnsmasq | Configure Network Manager
-- ansible.builtin.file:
+- name: Dnsmasq | Ensure config directory
+  ansible.builtin.file:
     mode: '0644'
     path: /etc/NetworkManager/dnsmasq.d
     state: directory
   become: true
-  name: Dnsmasq | Ensure config directory
-- ansible.builtin.copy:
+- name: Dnsmasq | Configure entry for .lh domain
+  ansible.builtin.copy:
     content: address=/lh/127.0.0.1
     dest: /etc/NetworkManager/dnsmasq.d/lh.conf
     mode: '0644'
   become: true
-  name: Dnsmasq | Configure entry for .lh domain
-- ansible.builtin.systemd:
+- name: Restart network manager
+  ansible.builtin.systemd:
     name: NetworkManager
     state: restarted
   become: true
-  name: Restart network manager

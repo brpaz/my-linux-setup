@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: MongoDB Compass
+  ansible.builtin.dnf:
     name: https://downloads.mongodb.com/compass/mongodb-compass-1.32.1.x86_64.rpm
     state: present
   become: true
-  name: MongoDB Compass

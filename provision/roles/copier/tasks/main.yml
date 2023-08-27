@@ -1,2 +1,2 @@
-- ansible.builtin.command: pipx install copier
-  name: Install Copier
+- name: Install Copier
+  ansible.builtin.command: pipx install copier

@@ -2,120 +2,117 @@
   community.general.flatpak:
     name: com.mattjakeman.ExtensionManager
     state: present
-
 - name: Gnome Extensions | Install
   ansible.builtin.include_role:
     name: ansible-gnome-extensions
   vars:
-    gnome_extension_ids:
-    - 21
-    - 97
-    - 906
-    - 800
-    - 779
-    - 615
-    - 307
-    - 355
-    - 2594
-    - 2224
-    - 16
-    - 1460
-    - 1379
-    - 1319
-    - 1162
-    - 1160
-    - 1007
-    - 3843
-    - 4135
-
+    gnome_extension_ids: # noqa var-naming[no-role-prefix] # TODO is this needed?
+      - 21
+      - 97
+      - 906
+      - 800
+      - 779
+      - 615
+      - 307
+      - 355
+      - 2594
+      - 2224
+      - 16
+      - 1460
+      - 1379
+      - 1319
+      - 1162
+      - 1160
+      - 1007
+      - 3843
+      - 4135
 - name: Clipboard Indicator extension | Configure settings
   community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
   with_items:
-  - key: /org/gnome/shell/extensions/clipboard-indicator/history-size
-    value: 20
-  - key: /org/gnome/shell/extensions/clipboard-indicator/notify-on-copy
-    value: 'false'
-
+    - key: /org/gnome/shell/extensions/clipboard-indicator/history-size
+      value: 20
+    - key: /org/gnome/shell/extensions/clipboard-indicator/notify-on-copy
+      value: 'false'
 - name: Dash to dock extension | Configure settings
   community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
   with_items:
-  - key: /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme
-    value: 'false'
-  - key: /org/gnome/shell/extensions/dash-to-dock/background-color
-    value: '''#ffffff'''
-  - key: /org/gnome/shell/extensions/dash-to-dock/background-opacity
-    value: 0.0
-  - key: /org/gnome/shell/extensions/dash-to-dock/dock-position
-    value: '''BOTTOM'''
-  - key: /org/gnome/shell/extensions/dash-to-dock/multi-monitor
-    value: 'true'
-  - key: /org/gnome/shell/extensions/dash-to-dock/extend-height
-    value: 'false'
-  - key: /org/gnome/shell/extensions/dash-to-dock/transparency-mode
-    value: '''FIXED'''
-  - key: /org/gnome/shell/extensions/dash-to-dock/hot-keys
-    value: 'false'
-  - key: /org/gnome/shell/extensions/dash-to-dock/show-trash
-    value: 'false'
-  - key: /org/gnome/shell/extensions/dash-to-dock/show-mounts
-    value: 'false'
-- community.general.dconf:
+    - key: /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme
+      value: 'false'
+    - key: /org/gnome/shell/extensions/dash-to-dock/background-color
+      value: '''#ffffff'''
+    - key: /org/gnome/shell/extensions/dash-to-dock/background-opacity
+      value: 0.0
+    - key: /org/gnome/shell/extensions/dash-to-dock/dock-position
+      value: '''BOTTOM'''
+    - key: /org/gnome/shell/extensions/dash-to-dock/multi-monitor
+      value: 'true'
+    - key: /org/gnome/shell/extensions/dash-to-dock/extend-height
+      value: 'false'
+    - key: /org/gnome/shell/extensions/dash-to-dock/transparency-mode
+      value: '''FIXED'''
+    - key: /org/gnome/shell/extensions/dash-to-dock/hot-keys
+      value: 'false'
+    - key: /org/gnome/shell/extensions/dash-to-dock/show-trash
+      value: 'false'
+    - key: /org/gnome/shell/extensions/dash-to-dock/show-mounts
+      value: 'false'
+- name: Gnome Extensions | Configure Vitals
+  community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
-  name: Gnome Extensions | Configure Vitals
   with_items:
-  - key: /org/gnome/shell/extensions/vitals/hot-sensors
-    value:
-    - _memory_usage_
-    - _system_load_1m_
-  - key: /org/gnome/shell/extensions/vitals/position-in-panel
-    value: 1
-  - key: /org/gnome/shell/extensions/vitals/show-battery
-    value: 'false'
-  - key: /org/gnome/shell/extensions/vitals/show-fan
-    value: 'false'
-  - key: /org/gnome/shell/extensions/vitals/show-voltage
-    value: 'false'
-- community.general.dconf:
+    - key: /org/gnome/shell/extensions/vitals/hot-sensors
+      value:
+        - _memory_usage_
+        - _system_load_1m_
+    - key: /org/gnome/shell/extensions/vitals/position-in-panel
+      value: 1
+    - key: /org/gnome/shell/extensions/vitals/show-battery
+      value: 'false'
+    - key: /org/gnome/shell/extensions/vitals/show-fan
+      value: 'false'
+    - key: /org/gnome/shell/extensions/vitals/show-voltage
+      value: 'false'
+- name: Gnome Extensions | Configure TimeApp
+  community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
-  name: Gnome Extensions | Configure TimeApp
   with_items:
-  - key: /org/gnome/shell/extensions/timepp/alarms-separate-menu
-    value: 'true'
-  - key: /org/gnome/shell/extensions/timepp/unicon-mode
-    value: 'true'
-- community.general.dconf:
+    - key: /org/gnome/shell/extensions/timepp/alarms-separate-menu
+      value: 'true'
+    - key: /org/gnome/shell/extensions/timepp/unicon-mode
+      value: 'true'
+- name: Gnome Extensions | Configure Emoji Selector
+  community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
-  name: Gnome Extensions | Configure Emoji Selector
   with_items:
-  - key: /org/gnome/shell/extensions/emoji-selector/use-keybinding
-    value: 'false'
-- community.general.dconf:
+    - key: /org/gnome/shell/extensions/emoji-selector/use-keybinding
+      value: 'false'
+- name: Gnome Extensions | Configure Auto Move Windows
+  community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
-  name: Gnome Extensions | Configure Auto Move Windows
   with_items:
-  - key: /org/gnome/shell/extensions/auto-move-windows/application-list
-    value: '[''com.slack.Slack.desktop:5'', ''md.obsidian.Obsidian.desktop:3'', ''code.desktop:2'',
-      ''jetbrains-goland.desktop:3'', ''menulibre-cacher.desktop:4'', ''jetbrains-idea.desktop:2'',
-      ''jetbrains-webstorm.desktop:2'']'
-- community.general.dconf:
+    - key: /org/gnome/shell/extensions/auto-move-windows/application-list
+      value: '[''com.slack.Slack.desktop:5'', ''md.obsidian.Obsidian.desktop:3'', ''code.desktop:2'',
+        ''jetbrains-goland.desktop:3'', ''menulibre-cacher.desktop:4'', ''jetbrains-idea.desktop:2'',
+        ''jetbrains-webstorm.desktop:2'']'
+- name: Gnome Extension Settings | Just Perfection
+  community.general.dconf:
     key: '{{ item.key }}'
     state: present
     value: '{{ item.value }}'
-  name: Gnome Extension Settings | Just Perfection
   with_items:
-  - key: /org/gnome/shell/extensions/just-perfection/workspace-switcher-size
-    value: 8
+    - key: /org/gnome/shell/extensions/just-perfection/workspace-switcher-size
+      value: 8

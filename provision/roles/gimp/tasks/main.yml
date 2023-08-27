@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Gimp
+  community.general.flatpak:
     name: org.gimp.GIMP
     state: present
-  name: Gimp

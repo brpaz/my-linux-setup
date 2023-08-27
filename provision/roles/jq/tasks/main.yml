@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: JQ
+  ansible.builtin.dnf:
     name: jq
     state: present
   become: true
-  name: JQ

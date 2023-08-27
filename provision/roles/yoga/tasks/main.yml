@@ -1,4 +1,4 @@
-- community.general.flatpak:
+- name: Yoga - Compress your images
+  community.general.flatpak:
     name: org.flozz.yoga-image-optimizer
     state: present
-  name: Yoga - Compress your images

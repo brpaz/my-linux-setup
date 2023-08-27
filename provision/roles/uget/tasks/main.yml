@@ -1,4 +1,4 @@
-- ansible.builtin.dnf:
+- name: Uget
+  ansible.builtin.dnf:
     name: uget
   become: true
-  name: Uget

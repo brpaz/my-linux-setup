@@ -1,5 +1,5 @@
-- become: true
+- name: GitHub Desktop
+  become: true
   community.general.flatpak:
     name: io.github.shiftey.Desktop
     state: present
-  name: GitHub Desktop

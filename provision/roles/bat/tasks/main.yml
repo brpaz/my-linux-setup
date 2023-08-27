@@ -1,5 +1,5 @@
-- ansible.builtin.dnf:
+- name: Bat | Install
+  ansible.builtin.dnf:
     name: bat
     state: present
   become: true
-  name: Bat | Install
