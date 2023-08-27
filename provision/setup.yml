@@ -182,24 +182,24 @@
     # =============================================
     # CLI Tools
     # =============================================
-    - { role: asciinema, tags: [asciinema, cli] }
-    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli] }
-    - { role: bat, tags: [bat] }
+    - { role: asciinema, tags: [asciinema, cli, github] }
+    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
+    - { role: bat, tags: [bat, github] }
     - { role: copier, tags: [copier, utilities] }
-    - { role: fzf, tags: [fzf, cli] }
-    - { role: fd, tags: [fd, cli] }
+    - { role: fzf, tags: [fzf, cli, github] }
+    - { role: fd, tags: [fd, cli, github] }
+    - { role: rigrep, tags: [rigrep, github, cli] }
+    - { role: sd, tags: [sd, cli, github] }
+    - { role: jq, tags: [jq, cli, dev, github] }
+    - { role: yq, tags: [yq, github, cli] }
     - { role: glow, tags: [glow, github, cli] }
     - { role: graphviz, tags: [graphviz, multimedia] }
     - { role: gum, tags: [gum, github, cli] }
     - { role: hostctl, tags: [hostctl, github, dev] }
-    - { role: jq, tags: [jq, cli, dev, github] }
     - { role: neofetch, tags: [neofetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
-    - { role: rigrep, tags: [rigrep, github, cli] }
-    - { role: sd, tags: [sd, cli, github] }
     - { role: sops, tags: [sops, dev, github, cli] }
     - { role: ranger, tags: [ranger, cli, github] }
-    - { role: yq, tags: [yq, github, cli] }
     - { role: the-way, tags: [the-way, cli, dev, github] }
     - { role: tldr, tags: [tldr, cli, github] }
 
@@ -209,7 +209,6 @@
     - { role: docker, tags: [docker, dev] }
     - { role: traefik, tags: [traefik, docker-apps] }
     - { role: cadvisor, tags: [cadvisor, docker] }
-    - { role: flame, tags: [flame, docker-app] }
     - { role: grafana, tags: [grafana, docker-apps] }
     - { role: loki, tags: [loki, docker-apps] }
     - { role: node-exporter, tags: [node-exporter, docker-apps] }
@@ -217,6 +216,7 @@
     - { role: prometheus, tags: [prometheus, docker-apps] }
     - { role: promtail, tags: [promtail, docker-apps] }
     - { role: portainer, tags: [portainer, docker-apps] }
+    - { role: flame, tags: [flame, docker-app] }
 
     # =============================================
     # Utilities
