@@ -1,5 +1,0 @@
-- name: Direnv
-  dnf:
-    name: direnv
-    state: present
-  become: true

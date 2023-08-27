@@ -1,8 +1,0 @@
-- import_tasks: libvirt.yml
-  tags: ["libvirt"]
-
-- import_tasks: virtualbox.yml
-  tags: ["virtualbox"]
-
-- import_tasks: gnome-boxes.yml
-  tags: ["gnome-boxes"]

@@ -1,0 +1,14 @@
+- name: Fluxctl | Get latest release
+  community.general.github_release:
+    action: latest_release
+    repo: flux2
+    token: '{{ github_token }}'
+    user: fluxcd
+  register: flux_release
+- name: Fkux Install
+  ansible.builtin.unarchive:
+    dest: '{{ bin_dir }}'
+    remote_src: true
+    src: https://github.com/fluxcd/flux2/releases/download/{{ flux_release.tag }}/flux_{{
+      flux_release.tag[1:] }}_linux_amd64.tar.gz
+  become: true

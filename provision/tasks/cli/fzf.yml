@@ -1,5 +1,0 @@
-- name: Fzf install
-  dnf:
-    name: fzf
-    state: present
-  become: true

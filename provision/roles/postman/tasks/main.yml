@@ -1,0 +1,4 @@
+- name: Postman
+  community.general.flatpak:
+    name: com.getpostman.Postman
+    state: present

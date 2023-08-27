@@ -1,6 +1,0 @@
-- name: Portmaster | Install
-  dnf:
-    name: https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.rpm
-    state: present
-    disable_gpg_check: yes
-  become: true

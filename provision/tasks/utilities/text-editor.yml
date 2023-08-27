@@ -1,4 +1,0 @@
-- name: Gnome Text Editor
-  flatpak:
-    name: flathub org.gnome.TextEditor
-    state: present

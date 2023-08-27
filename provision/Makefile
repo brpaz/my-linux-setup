@@ -8,10 +8,10 @@ galaxy: ## Install roles from ansible galaxy
 	ansible-galaxy install -r requirements.yml
 
 lint: ## Lints the ansible playbook
-	ansible-lint setup.yml tasks
+	ansible-lint setup.yml roles
 
 setup: ## Run initial setup script
-	sudo pip3 install -r requirements.txt
+	sudo pip install -r requirements.txt
 	ansible-galaxy install -r requirements.yml
 	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts
 
@@ -23,9 +23,6 @@ run-tag: ## Runs the playbook for a specific tag
 
 preview: ## Preview
 	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts --check --diff
-
-update-npm: ## Update NPM packages
-	ansible-playbook update-npm.yml --ask-become-pass -i hosts
 
 update-system: ## Updates system packages
 		ansible-playbook update-system.yml --ask-become-pass -i hosts -v

@@ -1,0 +1,13 @@
+- name: Youtube DL | Get latest version from GitHub
+  community.general.github_release:
+    action: latest_release
+    repo: yt-dlp
+    token: '{{ github_token }}'
+    user: yt-dlp
+  register: ytdlp_release
+- name: Youtube DL | Download
+  ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/yt-dlp'
+    mode: a+x
+    url: https://github.com/yt-dlp/yt-dlp/releases/download/{{ ytdlp_release.tag }}/yt-dlp_linux
+  become: true

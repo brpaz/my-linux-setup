@@ -1,5 +1,0 @@
-- name: Stacer
-  dnf:
-    name: solaar
-    state: present
-  become: true

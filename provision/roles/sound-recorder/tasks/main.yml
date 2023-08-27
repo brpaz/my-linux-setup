@@ -1,0 +1,4 @@
+- name: Sound Recorder | Install
+  community.general.flatpak:
+    name: org.gnome.SoundRecorder
+    state: present

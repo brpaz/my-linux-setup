@@ -1,0 +1,4 @@
+- name: Currency Converter
+  community.general.flatpak:
+    name: io.github.idevecore.CurrencyConverter
+    state: present

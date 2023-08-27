@@ -1,4 +1,0 @@
-- name: Amberol
-  flatpak:
-    name: io.bassi.Amberol
-    state: present

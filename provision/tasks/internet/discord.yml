@@ -1,4 +1,0 @@
-- name: Discord
-  flatpak:
-    name: com.discordapp.Discord
-    state: present

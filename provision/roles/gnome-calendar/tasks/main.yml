@@ -1,0 +1,5 @@
+- name: Gnome Calendar
+  ansible.builtin.dnf:
+    name: gnome-calendar
+    state: present
+  become: true

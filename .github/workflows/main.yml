@@ -1,20 +1,36 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      branches:
+        - main
+  workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: ./provision
 jobs:
-  build:
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Lint Ansible Playbook
-        uses: ansible/ansible-lint-action@v4.1.0
-        with:
-          targets: |
-            provision/setup.yml
-          override-deps: |
-            ansible==2.9
-            ansible-lint==4.2.0
-          args: ""
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x  # Use the desired Python version
+
+    - name: Install Ansible
+      run: |
+        pip install ansible ansible-lint
+        ansible --version
+
+    - name: Lint playbooks and roles
+      run: ansible-lint setup.yml
+

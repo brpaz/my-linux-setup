@@ -1,5 +1,0 @@
-- name: Gnome Music | Install from Flathub
-  flatpak:
-    name: org.gnome.Music
-    state: present
-  become: true

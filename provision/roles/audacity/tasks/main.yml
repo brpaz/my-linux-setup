@@ -1,0 +1,4 @@
+- name: Audacity
+  community.general.flatpak:
+    name: org.audacityteam.Audacity
+    state: present

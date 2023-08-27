@@ -1,4 +1,0 @@
-- name: Foliate
-  flatpak:
-    name: com.github.johnfactotum.Foliate
-    state: present

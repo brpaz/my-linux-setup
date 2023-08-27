@@ -1,7 +1,0 @@
-- name: Git Tools
-  dnf:
-    name:
-      - tig
-      - git-extras
-    state: present
-  become: true

@@ -1,0 +1,4 @@
+- name: Pitivi
+  community.general.flatpak:
+    name: org.pitivi.Pitivi
+    state: present

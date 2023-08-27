@@ -1,4 +1,0 @@
-- name: TickTick
-  flatpak:
-    name: com.ticktick.TickTick
-    state: present

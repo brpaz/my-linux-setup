@@ -1,0 +1,4 @@
+- name: IP lookup
+  community.general.flatpak:
+    name: io.github.bytezz.IPLookup
+    state: present

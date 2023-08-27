@@ -1,0 +1,129 @@
+################################################################
+#
+# Configuration sample for Traefik v2.
+#
+# For Traefik v1: https://github.com/traefik/traefik/blob/v1.7/traefik.sample.toml
+#
+################################################################
+
+################################################################
+# Global configuration
+################################################################
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+################################################################
+# EntryPoints configuration
+################################################################
+
+# EntryPoints definition
+#
+# Optional
+#
+entryPoints:
+  web:
+    address: :80
+  websecure:
+    address: :443
+################################################################
+# Traefik logs configuration
+################################################################
+
+# Traefik logs
+# Enabled by default and log to stdout
+#
+# Optional
+#
+log:
+  level: INFO
+# Sets the filepath for the traefik log. If not specified, stdout will be used.
+# Intermediate directories are created if necessary.
+#
+# Optional
+# Default: os.Stdout
+#
+#  filePath: log/traefik.log
+
+# Format is either "json" or "common".
+#
+# Optional
+# Default: "common"
+#
+#  format: json
+
+################################################################
+# Access logs configuration
+################################################################
+
+# Enable access logs
+# By default it will write to stdout and produce logs in the textual
+# Common Log Format (CLF), extended with additional fields.
+#
+# Optional
+#
+accessLog:
+  format: common
+# Sets the file path for the access log. If not specified, stdout will be used.
+# Intermediate directories are created if necessary.
+#
+# Optional
+# Default: os.Stdout
+#
+#  filePath: /path/to/log/log.txt
+
+# Format is either "json" or "common".
+#
+# Optional
+# Default: "common"
+#
+#  format: json
+
+################################################################
+# API and dashboard configuration
+################################################################
+
+# Enable API and dashboard
+#
+# Optional
+#
+api:
+  # Enable the API in insecure mode
+  #
+  # Optional
+  # Default: false
+  #
+  #  insecure: true
+
+  # Enabled Dashboard
+  #
+  # Optional
+  # Default: true
+  #
+  insecure: false
+  dashboard: true
+################################################################
+# Ping configuration
+################################################################
+
+# Enable ping
+ping:
+  entryPoint: traefik
+# Name of the related entry point
+#
+# Optional
+# Default: "traefik"
+#
+#  entryPoint: traefik
+
+################################################################
+# Docker configuration backend
+################################################################
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: true
+  file:
+    directory: /etc/traefik/conf
+    watch: true
+metrics:
+  prometheus: {}

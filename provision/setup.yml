@@ -1,6 +1,5 @@
 - name: Ansible playbook to setup my local machine
   hosts: all
-
   vars_files:
     - vars/main.yml
 
@@ -8,70 +7,258 @@
     - name: github_token
       prompt: "What is your GitHub Token?"
       default: "{{ lookup('env','GITHUB_TOKEN') }}"
-      private: yes
+      private: true
 
   pre_tasks:
     - name: Ensure setup directory exists
-      file:
+      ansible.builtin.file:
         path: "{{ setup_dir }}"
         state: directory
-        mode: 0755
+        mode: "0755"
       tags: [always]
 
   post_tasks:
     - name: Remove setup directory
-      file:
+      ansible.builtin.file:
         path: "{{ setup_dir }}"
         state: absent
       become: true
       tags: [always]
 
-  handlers:
-    - name: restart docker
-      service:
-        name: docker
-        state: restarted
-      become: true
+  roles:
+    # ===========================================
+    # Infrastructure roles. Need to be run first
+    # ============================================
+    - { role: core, tags: [core] }
+    - { role: dotfiles, tags: [core, dotfiles] }
+    - { role: rpmrepos, tags: [core] }
+    - { role: flatpak, tags: [core, flatpak] }
+    - { role: nvdia, tags: [core, drivers] }
+    - { role: shell, tags: [core, zsh, shell] }
 
-  tasks:
-    - import_tasks: tasks/system/_main.yml
-      tags: ["system"]
+    # =============================================
+    # Networking
+    # =============================================
+    - { role: network-tools, tags: [nettwork]}
+    - { role: dnsmasq, tags: [dnsmasq, networking] }
+    - { role: firewall, tags: [networking, firewall] }
+    - { role: iplookup, tags: [iplookup, networking] }
+    - { role: portmaster, tags: [portmaster, security, networking] }
+    - { role: protonvpn, tags: [protonvpn, networking] }
+    - { role: speedtest-cli, tags: [speedtest-cli, networking] }
+    - { role: tailscale, tags: [tailscale, networking] }
+    - { role: wireshark, tags: [wireshark, networking] }
+    - { role: whatip, tags: [whatip, networking] }
 
-    - import_tasks: tasks/dotfiles.yml
-      tags: ["dotfiles"]
+    # =============================================
+    # Internet
+    # =============================================
+    - { role: google-chrome, tags: [google-chrome, internet] }
+    - { role: brave-browser, tags: [brave-browser, internet] }
+    - { role: edge, tags: [edge, internet] }
+    - { role: discord, tags: [discord, communications, internet] }
+    - { role: zoom, tags: [zoom, communications, internet] }
+    - { role: signal, tags: [signal, communications, internet] }
+    - { role: slack, tags: [slack, communications, internet] }
+    - { role: telegram, tags: [telegram, communications, internet] }
+    - { role: zapzap, tags: [zapzap, communications, internet] }
+    - { role: dropbox, tags: [dropbox, internet] }
+    - { role: fragments, tags: [fragments, internet] }
+    - { role: connections, tags: [connections, internet] }
+    - { role: newsflash, tags: [newsflash, internet] }
+    - { role: uget, tags: [uget, internet] }
+    - { role: webcatalog, tags: [webcatalog, internet] }
 
-    - import_tasks: tasks/shell/_main.yml
-      tags: ["shell"]
+    # =============================================
+    # Productivity
+    # =============================================
+    - { role: text-editor, tags: [text-editor] }
+    - { role: drawio, tags: [drawio, multimedia, productivity] }
+    - { role: foliate, tags: [foliate, utilities] }
+    - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
+    - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
+    - { role: gnome-todo, tags: [gnome-todo, productivity] }
+    - { role: notejot, tags: [notejot, productivity, flatpak] }
+    - { role: remembrance, tags: [remembrance, productivity] }
+    - { role: ticktick, tags: [ticktick, productivity, flatpak] }
 
-    - import_tasks: tasks/cli/_main.yml
-      tags: ["cli"]
+    # =============================================
+    # Multimedia (Audio & Video)
+    # =============================================
+    - { role: amberol, tags: [amberol, audio_video] }
+    - { role: audacity, tags: [audacity, audio_video] }
+    - { role: blanket, tags: [blanket, audio_video] }
+    - { role: eartag, tags: [eartag, audio_video] }
+    - { role: ffaudioconverter, tags: [ffaudioconverter, audio_video] }
+    - { role: givemelyrics, tags: [givemelyrics, audio_video] }
+    - { role: gnome-music, tags: [gnome-music, audio_video] }
+    - { role: gnome-podcasts, tags: [gnome-podcasts, audio_video] }
+    - { role: kodi, tags: [kodi, audio_video] }
+    - { role: kooha, tags: [kooha, audio_video] }
+    - { role: obs, tags: [obs, audio_video, flatpak] }
+    - { role: vlc, tags: [vlc, audio_video] }
+    - { role: mousai, tags: [mousai, audio_video] }
+    - { role: minidlna, tags: [minidlna, audio_video] }
+    - { role: spotify, tags: [spotify, audio_video] }
+    - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
+    - { role: sound-recorder, tags: [sound-recorder, audio_video] }
+    - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
+    - { role: peek, tags: [peek, graphics_design] }
+    - { role: shortwave, tags: [shortwave, audio_video] }
+    - { role: tagger, tags: [tagger, audio_video] }
+    - { role: tubeconverter, tags: [tubeconverter, audio_video] }
+    - { role: xnconvert, tags: [xnconvert, audio_vide] }
+    - { role: video-trimmer, tags: [video-trimmer, audio_video] }
 
-    - import_tasks: tasks/internet/_main.yml
-      tags: ["internet"]
+    # =============================================
+    # Graphics Design
+    # =============================================
+    - { role: gimp, tags: [gimp, graphics_design] }
+    - { role: boxysvg, tags: [boxysvg, graphics_design] }
+    - { role: avvie, tags: [avvie, graphics_design] }
+    - { role: eyedropper, tags: [eyedropper, graphics_design] }
+    - { role: pinta, tags: [pinta, graphics_design, flatpak] }
+    - { role: inkscape, tags: [inkscape, graphics_design] }
+    - { role: upscayl, tags: [upscayl, graphics_design] }
+    - { role: figma, tags: [figma, graphics_design] }
+    - { role: feh, tags: [feh, graphics_design] }
+    - { role: flameshot, tags: [flameshot, graphics_design] }
+    - { role: yoga, tags: [yoga, graphics_design] }
 
-    - import_tasks: tasks/productivity/_main.yml
-      tags: ["productivity"]
+    # =============================================
+    # Development
+    # =============================================
+    - { role: git, tags: [git, github, dev] }
+    - { role: java, tags: [java, dev, programming-language] }
+    - { role: node, tags: [node, dev, programming-language] }
+    - { role: python, tags: [python, dev, programming-language] }
+    - { role: php, tags: [php, dev, programming-language] }
+    - { role: golang, tags: [golang, dev, programming-language] }
+    - { role: rust, tags: [rust, dev, programming-language] }
+    - { role: ruby, tags: [ruby, dev, programming-language] }
+    - { role: vim, tags: [vim, dev] }
+    - { role: vscode, tags: [vscode, dev] }
+    - { role: dbeaver, tags: [dbeaver, dev] }
+    - { role: awscli, tags: [awscli, cli, dev] }
+    - { role: ctop, tags: [ctop, dev, docker] }
+    - { role: dbcli, tags: [dbcli, dev, cli] }
+    - { role: dev-toolbox, tags: [dev-toolbox, dev] }
+    - { role: direnv, tags: [direnv, dev] }
+    - { role: dive, tags: [dive, dev, cli] }
+    - { role: doctl, tags: [doctl, dev] }
+    - { role: flux, tags: [flux, dev] }
+    - { role: gcloud, tags: [gcloud, dev] }
+    - { role: github-desktop, tags: [github-desktop, dev] }
+    - { role: gitkraken, tags: [gitkraken, dev] }
+    - { role: goreleaser, tags: [goreleaser, dev, github] }
+    - { role: hcloud, tags: [hcloud, github, dev] }
+    - { role: helm, tags: [helm, dev] }
+    - { role: hugo, tags: [hugo, github, dev] }
+    - { role: jetbrains-toolbox, tags: [jetbrains-toolbox, dev] }
+    - { role: insomnia, tags: [insomnia, dev] }
+    - { role: k9s, tags: [k9s, cli, dev, github, kubernetes] }
+    - { role: kail, tags: [kail, cli, dev, github, kubernetes] }
+    - { role: kind, tags: [kind, dev, kubernetes, github] }
+    - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
+    - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
+    - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
+    - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
+    - { role: lefthook, tags: [lefthook, dev, github] }
+    - { role: lens, tags: [lens, dev, kubernetes] }
+    - { role: minikube, tags: [minikube, dev, github, kubernetes] }
+    - { role: mitmproxy, tags: [mitmproxy, github, dev, internet] }
+    - { role: mkcert, tags: [mkcert, dev, github] }
+    - { role: mongodb, tags: [mongodb, dev] }
+    - { role: nix, tags: [nix, dev] }
+    - { role: postman, tags: [postman, dev] }
+    - { role: pulumi, tags: [pulumi, dev, github] }
+    - { role: redis, tags: [redis, dev] }
+    - { role: spotlight-studio, tags: [spotlight-studio, dev] }
+    - { role: sqllitebrowser, tags: [sqllitebrowser, dev] }
+    - { role: terraform, tags: [terraform, cli, dev, github] }
+    - { role: wildcard, tags: [wildcard, dev, flatpak] }
+    - { role: watchexec, tags: [watchexec, github, dev] }
 
-    - import_tasks: tasks/utilities/_main.yml
-      tags: ["utilities"]
+    # =============================================
+    # CLI Tools
+    # =============================================
+    - { role: asciinema, tags: [asciinema, cli, github] }
+    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
+    - { role: bat, tags: [bat, github] }
+    - { role: copier, tags: [copier, utilities] }
+    - { role: fzf, tags: [fzf, cli, github] }
+    - { role: fd, tags: [fd, cli, github] }
+    - { role: rigrep, tags: [rigrep, github, cli] }
+    - { role: sd, tags: [sd, cli, github] }
+    - { role: jq, tags: [jq, cli, dev, github] }
+    - { role: yq, tags: [yq, github, cli] }
+    - { role: glow, tags: [glow, github, cli] }
+    - { role: graphviz, tags: [graphviz, multimedia] }
+    - { role: gum, tags: [gum, github, cli] }
+    - { role: hostctl, tags: [hostctl, github, dev] }
+    - { role: neofetch, tags: [neofetch, cli] }
+    - { role: pandoc, tags: [pandoc, cli] }
+    - { role: sops, tags: [sops, dev, github, cli] }
+    - { role: ranger, tags: [ranger, cli, github] }
+    - { role: the-way, tags: [the-way, cli, dev, github] }
+    - { role: tldr, tags: [tldr, cli, github] }
 
-    - import_tasks: tasks/multimedia/_main.yml
-      tags: ["multimedia"]
+    # =============================================
+    # Docker
+    # =============================================
+    - { role: docker, tags: [docker, dev] }
+    - { role: traefik, tags: [traefik, docker-apps] }
+    - { role: cadvisor, tags: [cadvisor, docker] }
+    - { role: grafana, tags: [grafana, docker-apps] }
+    - { role: loki, tags: [loki, docker-apps] }
+    - { role: node-exporter, tags: [node-exporter, docker-apps] }
+    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
+    - { role: prometheus, tags: [prometheus, docker-apps] }
+    - { role: promtail, tags: [promtail, docker-apps] }
+    - { role: portainer, tags: [portainer, docker-apps] }
+    - { role: flame, tags: [flame, docker-app] }
 
-    - import_tasks: tasks/dev/_main.yml
-      tags: ["dev"]
+    # =============================================
+    # Utilities
+    # =============================================
+    - { role: authy, tags: [authy, security, utilities] }
+    - { role: bleachbit, tags: [bleachbit, utilities] }
+    - { role: cryptomator, tags: [cryptomator, utilities] }
+    - { role: currency-converter, tags: [currency-converter, utilities] }
+    - { role: deskcreen, tags: [deskcreen, utilities] }
+    - { role: dialect, tags: [dialect, utilities] }
+    - { role: gnome-boxes, tags: [gnome-boxes, utilities] }
+    - { role: grsync, tags: [grsync, utilities] }
+    - { role: impression, tags: [impression, utilities] }
+    - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
+    - { role: meld, tags: [meld, dev] }
+    - { role: libvirt, tags: [libvirt, virtualization, utilities] }
+    - { role: menulibre, tags: [menulibre, utilities] }
+    - { role: restic, tags: [restic, utilities] }
+    - { role: scriptkit, tags: [scriptkit, utilities] }
+    - { role: solaar, tags: [solaar, utilities] }
+    - { role: smile, tags: [smile, utilities] }
+    - { role: stacer, tags: [stacer, utilities] }
+    - { role: youtubedl, tags: [youtubedl, multimedia, github, cli] }
+    - { role: weather, tags: [weather, utilities] }
+    - { role: virtualbox, tags: [virtualbox, utilities] }
+    - { role: tilix, tags: [tilix, utilities] }
 
-    - import_tasks: tasks/games/_main.yml
-      tags: ["games"]
+    # =============================================
+    # Finance
+    # =============================================
+    - { role: denaro, tags: [denaro, finance] }
 
-    - import_tasks: tasks/network/_main.yml
-      tags: ["networking"]
+    # =============================================
+    # Games
+    # =============================================
+    - { role: steam, tags: [steam, games] }
+    - { role: mines, tags: [mines, games] }
+    - { role: snes, tags: [snes, games] }
 
-    - import_tasks: tasks/desktop/_main.yml
-      tags: ["desktop"]
-
-    - import_tasks: tasks/virtualization/_main.yml
-      tags: ["virtualization"]
-
-    - import_tasks: tasks/docker-apps/_main.yml
-      tags: ["docker-apps"]
+    # =============================================
+    # Gnome Desktop
+    # =============================================
+    - { role: gnome-desktop, tags: [gnome-desktop] }
+    - { role: fonts, tags: [fonts, gnome-desktop] }
+    - { role: nautilus, tags: [nautilus, gnome-desktop] }

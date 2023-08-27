@@ -1,5 +1,0 @@
-- name: Rigrep
-  dnf:
-    name: ripgrep
-    state: present
-  become: true

@@ -1,4 +1,0 @@
-- name: Obfuscate
-  flatpak:
-    name: com.belmoussaoui.Obfuscate
-    state: present

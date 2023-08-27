@@ -1,9 +1,0 @@
-- import_tasks: gnome-calendar.yml
-- import_tasks: gnome-contacts.yml
-- import_tasks: foliate.yml
-- import_tasks: pdf-master.yml
-- import_tasks: gnome-todo.yml
-- import_tasks: dialect.yml
-- import_tasks: notejot.yml
-- import_tasks: ticktick.yml
-- import_tasks: remembrance.yml

@@ -1,5 +1,0 @@
-- name: Fd install
-  dnf:
-    name: fd-find
-    state: present
-  become: true

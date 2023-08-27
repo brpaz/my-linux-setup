@@ -1,4 +1,0 @@
-- name: WhatsApp Desktop
-  flatpak:
-    name: com.rtosta.zapzap
-    state: present

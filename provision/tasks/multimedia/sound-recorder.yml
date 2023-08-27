@@ -1,4 +1,0 @@
-- name: Sound Recorder | Install
-  flatpak:
-    name: org.gnome.SoundRecorder
-    state: present

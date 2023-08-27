@@ -1,9 +1,0 @@
-- name: Vim Install
-  dnf:
-    name: vim
-    state: present
-    item: "{{ item }}"
-  loop:
-    - vim
-    - neovim
-  become: true

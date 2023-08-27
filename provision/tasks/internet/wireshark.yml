@@ -1,4 +1,0 @@
-- name: Wireshark
-  dnf:
-    name: wireshark
-  become: true

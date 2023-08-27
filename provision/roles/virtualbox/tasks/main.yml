@@ -1,0 +1,5 @@
+- name: VirtualBox | Install
+  ansible.builtin.dnf:
+    name: VirtualBox
+    state: present
+  become: true

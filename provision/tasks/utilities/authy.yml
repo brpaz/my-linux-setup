@@ -1,4 +1,0 @@
-- name: Authy
-  flatpak:
-    name: com.authy.Authy
-    state: present

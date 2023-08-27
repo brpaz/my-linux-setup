@@ -1,5 +1,0 @@
-- name: Neofetch
-  dnf:
-    name: neotfetch
-    state: present
-  become: true

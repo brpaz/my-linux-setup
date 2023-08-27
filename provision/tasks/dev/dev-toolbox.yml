@@ -1,6 +1,0 @@
-- name: Dev Toolbox
-  flatpak:
-    name: me.iepure.devtoolbox
-    state: present
-
-

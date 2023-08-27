@@ -1,2 +1,0 @@
-- name: Install nix
-  shell: curl -sfL https://nixos.org/nix/install | sh

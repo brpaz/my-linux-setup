@@ -1,4 +1,0 @@
-- name: Dropbox
-  flatpak:
-    name: com.dropbox.Client
-    state: present

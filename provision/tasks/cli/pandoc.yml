@@ -1,5 +1,0 @@
-- name: Pandoc
-  dnf:
-    name: pandoc
-    state: present
-  become: true

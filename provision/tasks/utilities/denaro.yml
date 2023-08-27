@@ -1,4 +1,0 @@
-- name: Denaro
-  flatpak:
-    name: org.nickvision.money
-    state: present

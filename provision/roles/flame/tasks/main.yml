@@ -1,0 +1,23 @@
+- name: Flame | Create volume
+  community.docker.docker_volume:
+    name: flame_data
+    state: present
+
+- name: Flame | Start container
+  community.docker.docker_container:
+    env:
+      PASSWORD: admin
+    image: pawelmalak/flame:2.3.1
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.flame.entrypoints: web
+      traefik.http.routers.flame.rule: Host(`flame.docker`)
+      traefik.http.routers.flame.tls: 'false'
+      traefik.http.services.flame.loadbalancer.server.port: '5005'
+    name: flame
+    networks:
+      - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+      - flame_data:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock

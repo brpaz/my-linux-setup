@@ -1,4 +1,0 @@
-- name: BoxySVG
-  flatpak:
-    name: com.boxy_svg.BoxySVG
-    state: present

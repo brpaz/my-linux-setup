@@ -1,6 +1,0 @@
-- name: Insomnia
-  flatpak:
-    name: rest.insomnia.Insomnia
-    state: present
-
-

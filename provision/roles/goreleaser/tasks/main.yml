@@ -1,0 +1,14 @@
+- name: Goreleaser | Get latest release
+  community.general.github_release:
+    action: latest_release
+    repo: goreleaser
+    token: '{{ github_token }}'
+    user: goreleaser
+  register: release
+- name: Goreleaser
+  ansible.builtin.dnf:
+    disable_gpg_check: true
+    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag
+      }}/goreleaser-{{ release.tag[1:] }}.x86_64.rpm
+    state: present
+  become: true

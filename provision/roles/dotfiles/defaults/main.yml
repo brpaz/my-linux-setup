@@ -1,0 +1,2 @@
+dotfiles_repo_url: https://brpaz:{{ github_token }}@github.com/brpaz/dotfiles.git
+dotfiles_ssh_repo_url: git@github.com:brpaz/dotfiles.git

@@ -1,0 +1,22 @@
+- name: Settings | Nautilus
+  community.general.dconf:
+    key: '{{ item.key }}'
+    state: present
+    value: '{{ item.value }}'
+  with_items:
+    - key: /org/gnome/nautilus/preferences/default-folder-viewer
+      value: '''icon-view'''
+    - key: /org/gnome/nautilus/preferences/show-hidden-files
+      value: 'true'
+    - key: /org/gnome/nautilus/preferences/recursive-search
+      value: '''never'''
+- name: Nautilus | Ensure Templates folder exists
+  ansible.builtin.file:
+    mode: '0755'
+    path: '{{ ansible_env.HOME }}/Templates'
+    state: directory
+- name: Nautilus | Install new file templates
+  ansible.builtin.copy:
+    dest: '{{ ansible_env.HOME }}/Templates'
+    mode: '0755'
+    src: nautilus/templates

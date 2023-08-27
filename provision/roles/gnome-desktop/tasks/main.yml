@@ -1,0 +1,49 @@
+- name: Desktop Control tools
+  ansible.builtin.dnf:
+    name:
+      - python3-psutil
+      - gnome-tweak-tool
+      - wmctrl
+      - dconf-editor
+    state: present
+  become: true
+- name: Remove Pre-installed software
+  ansible.builtin.dnf:
+    name:
+      - rhytmbox
+      - cheese
+      - totem
+    state: absent
+  become: true
+- name: Copy Wallpaper
+  ansible.builtin.copy:
+    dest: '{{ ansible_env.HOME }}/.wallpaper.jpg'
+    mode: '0644'
+    src: wallpaper.jpg
+- name: Set Wallpaper
+  community.general.dconf:
+    key: /org/gnome/desktop/background/picture-uri
+    value: '''file://{{ ansible_env.HOME }}/.wallpaper.jpg'''
+- name: Set Wallpaper position
+  community.general.dconf:
+    key: /org/gnome/desktop/background/picture-options
+    value: '''zoom'''
+- name: Set Lock screen wallpaper
+  community.general.dconf:
+    key: /org/gnome/desktop/screensaver/picture-uri
+    value: '''file://{{ ansible_env.HOME }}/.wallpaper.jpg'''
+
+- name: Gnome Shortcuts
+  ansible.builtin.import_tasks: shortcuts.yml
+
+- name: Gnome settings
+  ansible.builtin.import_tasks: desktop-settings.yml
+
+- name: Gnome extensions
+  ansible.builtin.import_tasks: extensions.yml
+
+- name: Terminal settings
+  ansible.builtin.import_tasks: terminal-settings.yml
+
+- name: Nautilus settings
+  ansible.builtin.import_tasks: nautilus-settings.yml

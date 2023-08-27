@@ -1,0 +1,10 @@
+- name: Golang
+  ansible.builtin.dnf:
+    name: golang
+    state: present
+  become: true
+- name: Golang | Install global Go tools
+  ansible.builtin.command: go get {{ item }}
+  with_items:
+    - honnef.co/go/tools/cmd/staticcheck
+    - github.com/golangci/golangci-lint/cmd/golangci-lint

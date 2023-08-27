@@ -1,4 +1,0 @@
-- name: Smile
-  flatpak:
-    name: it.mijorus.smile
-    state: present

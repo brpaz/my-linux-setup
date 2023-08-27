@@ -1,5 +1,0 @@
-- name: Ascicinema
-  dnf:
-    name: asciinema
-    state: present
-  become: true

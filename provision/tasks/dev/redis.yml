@@ -1,5 +1,0 @@
-- name: Redis Desktop Manager
-  flatpak:
-    name: app.resp.RESP
-    state: present
-  become: true

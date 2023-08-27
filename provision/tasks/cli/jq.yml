@@ -1,5 +1,0 @@
-- name: JQ
-  dnf:
-    name: jq
-    state: present
-  become: true

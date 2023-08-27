@@ -1,0 +1,37 @@
+- name: Python | Install PIP packages
+  ansible.builtin.pip:
+    name:
+      - requests
+      - bandit
+      - flake8
+      - pyflakes
+      - pycodestyle
+      - yapf
+      - pre-commit
+      - mkdocs
+      - glances
+      - socli
+      - lorem
+      - algoliasearch
+      - pwgen
+      - glob2
+      - python-gitlab
+      - docker
+      - memoization
+      - PyGithub
+      - Cloudflare
+      - ansible-lint
+      - brotab
+      - dateparser
+      - jinja2
+      - python-frontmatter
+      - validator-collection
+      - invoke
+      - pipx
+- name: Python | Install system packages
+  ansible.builtin.dnf:
+    name: python3-ansible-lint
+    state: present
+  become: true
+- name: Setup brotab
+  ansible.builtin.command: bt install

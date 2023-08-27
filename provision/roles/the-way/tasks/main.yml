@@ -1,0 +1,15 @@
+- name: The Way | Get latest version from GitHub
+  community.general.github_release:
+    action: latest_release
+    repo: the-way
+    token: '{{ github_token }}'
+    user: out-of-cheese-error
+  register: way_release
+- name: The Way | Download
+  ansible.builtin.unarchive:
+    dest: '{{ bin_dir }}'
+    mode: a+x
+    remote_src: true
+    src: https://github.com/out-of-cheese-error/the-way/releases/download/{{ way_release.tag
+      }}/the-way-linux.tar.gz
+  become: true

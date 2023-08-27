@@ -1,0 +1,5 @@
+- name: Redis Desktop Manager
+  become: true
+  community.general.flatpak:
+    name: app.resp.RESP
+    state: present

@@ -1,5 +1,0 @@
-- name: "Open Lens | Install"
-  flatpak:
-    name: dev.k8slens.OpenLens
-    state: present
-  become: true

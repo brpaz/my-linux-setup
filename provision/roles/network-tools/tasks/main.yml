@@ -1,0 +1,11 @@
+- name: Install networking tools
+  ansible.builtin.dnf:
+    name:
+      - net-tools
+      - traceroute
+      - whois
+      - nmap
+      - iftop
+      - tcpdump
+    state: present
+  become: true

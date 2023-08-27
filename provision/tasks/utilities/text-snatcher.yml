@@ -1,4 +1,0 @@
-- name: Install Text snatcher
-  flatpak:
-    name: com.github.rajsolai.textsnatcher
-    state: present

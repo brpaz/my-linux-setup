@@ -1,0 +1,5 @@
+- name: Impression
+  ansible.builtin.dnf:
+    name: io.gitlab.adhami3310.Impression
+    state: present
+  become: true

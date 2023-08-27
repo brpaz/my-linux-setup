@@ -1,0 +1,4 @@
+- name: Peek
+  community.general.flatpak:
+    name: com.uploadedlobster.peek
+    state: present

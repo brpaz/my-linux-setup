@@ -1,0 +1,4 @@
+- name: Draw.io Desktop
+  community.general.flatpak:
+    name: com.jgraph.drawio.desktop
+    state: present

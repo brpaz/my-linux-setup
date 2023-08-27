@@ -1,0 +1,4 @@
+- name: NoteJot
+  community.general.flatpak:
+    name: io.github.lainsce.Notejot
+    state: present

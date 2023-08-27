@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=ScriptKit
+Comment=Script Kit makes it easy to create and run scripts that solve your daily problems.
+Icon=/home/bruno/.kenv/assets/scriptkit.png
+Exec=/opt/ScriptKit.AppImage
+Actions=
+Categories=Utility;
+StartupNotify=true

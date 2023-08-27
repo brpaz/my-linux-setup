@@ -1,0 +1,19 @@
+- name: WebCatalog | Get latest release
+  community.general.github_release:
+    action: latest_release
+    repo: webcatalog-app
+    token: '{{ github_token }}'
+    user: webcatalog
+  register: wc_release
+- name: WebCatalog | Download AppImage
+  ansible.builtin.get_url:
+    dest: /opt/WebCatalog.AppImage
+    mode: a+x
+    url: https://github.com/webcatalog/webcatalog-app/releases/download/{{ wc_release.tag
+      }}/WebCatalog-{{ wc_release.tag[1:] }}.AppImage
+  become: true
+- name: WebCatalog | Install Desktop file
+  ansible.builtin.copy:
+    dest: '{{ applications_dir }}/webcatalog.desktop'
+    mode: '0644'
+    src: webcatalog.desktop

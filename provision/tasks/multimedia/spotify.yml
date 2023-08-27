@@ -1,4 +1,0 @@
-- name: Spotify | Install
-  flatpak:
-    name: com.spotify.Client
-    state: present

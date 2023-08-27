@@ -1,5 +1,0 @@
-- name: Ranger
-  dnf:
-    name: ranger
-    state: present
-  become: true

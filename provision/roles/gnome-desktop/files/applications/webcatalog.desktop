@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Web Catalog
+Comment=Turn Any Websites Into Real Desktop Apps
+Icon=/home/bruno/.local/share/icons/apps/webcatalog.png
+Exec=/opt/WebCatalog.AppImage
+Actions=
+Categories=Internet;Utility;
+StartupWMClass=WebCatalog

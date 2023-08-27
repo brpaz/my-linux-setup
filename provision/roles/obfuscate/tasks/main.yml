@@ -1,0 +1,4 @@
+- name: Obfuscate
+  community.general.flatpak:
+    name: com.belmoussaoui.Obfuscate
+    state: present
