@@ -1,0 +1,11 @@
+- ansible.builtin.dnf:
+    name: java-11-openjdk
+    state: present
+  become: true
+  name: Java
+- become: true
+  community.general.alternatives:
+    link: /usr/bin/java
+    name: java
+    path: /usr/lib/jvm/java-11-openjdk-11.0.6.10-0.fc32.x86_64/bin/java
+  name: Java | Set the correct version

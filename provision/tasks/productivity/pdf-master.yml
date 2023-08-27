@@ -1,5 +1,0 @@
-- name: Pdf Master
-  community.general.flatpak:
-    name: net.codeindustry.MasterPDFEditor
-    state: present
-  become: true

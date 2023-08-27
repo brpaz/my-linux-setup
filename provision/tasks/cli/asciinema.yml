@@ -1,5 +1,0 @@
-- name: Ascicinema
-  ansible.builtin.dnf:
-    name: asciinema
-    state: present
-  become: true

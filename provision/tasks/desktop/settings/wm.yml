@@ -1,8 +1,0 @@
-- name: Settings | Window manager
-  community.general.dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-  with_items:
-    - {key: '/org/gnome/desktop/wm/preferences/num-workspaces', value: 6}
-    - {key: '/org/gnome/desktop/wm/preferences/audible-bell', value: "false"}

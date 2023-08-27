@@ -1,0 +1,14 @@
+- community.general.github_release:
+    action: latest_release
+    repo: deskreen
+    token: '{{ github_token }}'
+    user: pavlobu
+  name: Deskscreen | Get latest release
+  register: release
+- ansible.builtin.dnf:
+    disable_gpg_check: true
+    name: https://github.com/pavlobu/deskreen/releases/download/{{ release.tag }}/deskreen-{{
+      release.tag[1:] }}.x86_64.rpm
+    state: present
+  become: true
+  name: Deskscreen | Install

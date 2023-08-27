@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.authy.Authy
+    state: present
+  name: Authy

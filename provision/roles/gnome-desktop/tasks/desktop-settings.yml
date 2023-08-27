@@ -1,0 +1,45 @@
+- community.general.dconf:
+    key: /org/gnome/desktop/background/show-desktop-icons
+    value: 'true'
+  name: Settings | Show Desktop icons
+
+- community.general.dconf:
+    key: /org/gnome/desktop/datetime/automatic-timezone
+    value: 'true'
+  name: Settings | Set Automatic Timezone
+
+- community.general.dconf:
+    key: /org/gnome/desktop/calendar/show-weekdate
+    value: 'true'
+  name: Settings | Show Week Day on calendar
+
+- community.general.dconf:
+    key: /org/gnome/mutter/dynamic-workspaces
+    value: 'false'
+  name: Settings | Set Static workspaces
+
+- community.general.dconf:
+    key: /org/gnome/desktop/wm/preferences/num-workspaces
+    value: '4'
+  name: Settings | Set Number of workspaces
+
+- community.general.dconf:
+    key: /org/gnome/desktop/wm/preferences/button-layout
+    value: '''appmenu:minimize,minimize,maximize,close'''
+  name: Settings | Window Titlebars
+
+- name: Configure window manager settings
+  community.general.dconf:
+    key: '{{ item.key }}'
+    state: present
+    value: '{{ item.value }}'
+  with_items:
+  - key: /org/gnome/desktop/wm/preferences/num-workspaces
+    value: 6
+  - key: /org/gnome/desktop/wm/preferences/audible-bell
+    value: 'false'
+
+- name: Set Favorite apps
+  community.general.dconf:
+    key: "/org/gnome/shell/favorite-apps"
+    value: "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'com.gexperts.Tilix.desktop', 'com.slack.Slack.desktop','code.desktop', 'md.obsidian.Obsidian.desktop', 'webcatalog-ticktick.desktop', 'jetbrains-goland.desktop']"

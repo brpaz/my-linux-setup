@@ -1,4 +1,0 @@
-- name: Give me lyrics
-  community.general.flatpak:
-    name: com.github.muriloventuroso.givemelyrics
-    state: present

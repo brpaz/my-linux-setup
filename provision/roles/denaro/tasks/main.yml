@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: org.nickvision.money
+    state: present
+  name: Denaro

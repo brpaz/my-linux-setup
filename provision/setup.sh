@@ -20,7 +20,7 @@ EOF
 echo -e "${Yellow}Updating base system and installing ansible and dependencies${NC}"
 
 ## Installs Ansible
-sudo dnf -y update && sudo dnf install -y ansible make
+sudo dnf -y update && sudo dnf install-y ansible make python-pip
 
 make setup
 

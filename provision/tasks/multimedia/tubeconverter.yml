@@ -1,4 +1,0 @@
-- name: TubeConverter
-  community.general.flatpak:
-    name: org.nickvision.tubeconverter
-    state: present

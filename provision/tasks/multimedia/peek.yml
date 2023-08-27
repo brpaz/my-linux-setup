@@ -1,7 +1,0 @@
-# Peek makes it easy to create short screencasts of a screen area.
-# https://flathub.org/apps/details/com.uploadedlobster.peek
-
-- name: Peek
-  community.general.flatpak:
-    name: com.uploadedlobster.peek
-    state: present

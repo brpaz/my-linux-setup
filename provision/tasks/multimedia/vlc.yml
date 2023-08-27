@@ -1,7 +1,0 @@
-# VLC media player, the open-source multimedia player
-# https://www.videolan.org
-- name: VLC
-  ansible.builtin.dnf:
-    name: vlc
-    state: present
-  become: true

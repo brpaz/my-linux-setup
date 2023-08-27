@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: flathub org.gnome.TextEditor
+    state: present
+  name: Gnome Text Editor

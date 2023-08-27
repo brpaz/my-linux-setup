@@ -1,5 +1,0 @@
-- name: Snes
-  ansible.builtin.dnf:
-    name: snes9x
-    state: present
-  become: true

@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: org.gnome.Connections
+    state: present
+  name: Gnome Connections

@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.github.Bleuzen.FFaudioConverter
+    state: present
+  name: FF Audio Converter

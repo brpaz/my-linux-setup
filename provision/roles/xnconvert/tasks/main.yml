@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.xnview.XnConvert
+    state: present
+  name: XnConverter

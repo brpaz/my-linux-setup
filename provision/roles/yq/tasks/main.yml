@@ -1,0 +1,13 @@
+- community.general.github_release:
+    action: latest_release
+    repo: yq
+    token: '{{ github_token }}'
+    user: mikefarah
+  name: YQ | Get latest release
+  register: release
+- ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/yq'
+    mode: a+x
+    url: https://github.com/mikefarah/yq/releases/download/{{ release.tag }}/yq_linux_amd64
+  become: true
+  name: YQ | Download and Install

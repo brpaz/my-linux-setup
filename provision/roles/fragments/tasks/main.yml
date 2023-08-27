@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: de.haeckerfelix.Fragments
+    state: present
+  name: Fragments torrent client

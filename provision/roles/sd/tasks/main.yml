@@ -1,0 +1,14 @@
+- community.general.github_release:
+    action: latest_release
+    repo: sd
+    token: '{{ github_token }}'
+    user: chmln
+  name: SD | Get latest release version
+  register: sd_release
+- ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/sd'
+    mode: a+x
+    url: https://github.com/chmln/sd/releases/download/{{ sd_release.tag }}/sd-{{
+      sd_release.tag }}-x86_64-unknown-linux-gnu
+  become: true
+  name: SD | Download

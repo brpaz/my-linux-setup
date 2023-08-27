@@ -1,4 +1,0 @@
-- name: Dialect
-  community.general.flatpak:
-    name: com.github.gi_lom.dialect
-    state: present

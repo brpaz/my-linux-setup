@@ -1,0 +1,5 @@
+- become: true
+  community.general.flatpak:
+    name: io.dbeaver.DBeaverCommunity
+    state: present
+  name: DBeaver

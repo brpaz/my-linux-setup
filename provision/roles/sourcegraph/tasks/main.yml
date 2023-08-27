@@ -1,0 +1,46 @@
+- community.docker.docker_volume:
+    name: sourcegraph_data
+    state: present
+  name: Sourcegraph | Ensure Sourcegraph data volume is present
+- ansible.builtin.file:
+    mode: '0755'
+    path: /etc/sourcegraph
+    state: directory
+  become: true
+  name: Sourcegraph | Create configuration directory
+- community.docker.docker_network:
+    name: sourcegraph
+    state: present
+  name: Sourcegraph | Create network
+- community.docker.docker_container:
+    env:
+      DISABLE_OBSERVABILITY: 'true'
+    image: sourcegraph/server:5.1.7
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.sourcegraph.entrypoints: web
+      traefik.http.routers.sourcegraph.rule: Host(`sg.docker`)
+      traefik.http.routers.sourcegraph.tls: 'false'
+      traefik.http.services.sourcegraph.loadbalancer.server.port: '7080'
+    name: sourcegraph
+    networks:
+    - name: sourcegraph
+    - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+    - sourcegraph_data:/var/opt/sourcegraph sourcegraph/
+    - /etc/sourcegraph/:/etc/sourcegraph/
+  name: Sourcegraph | Start Server container
+- community.docker.docker_container:
+    command: serve-git /data/repos
+    image: sourcegraph/src-cli:5.1
+    labels:
+      traefik.docker.network: traefik-public
+      traefik.enable: 'true'
+    name: sourcegraph-serv-git
+    networks:
+    - name: sourcegraph
+    restart_policy: unless-stopped
+    volumes:
+    - ~/Code:/data/repos
+  name: Sourcegraph | Start Serve git

@@ -1,0 +1,16 @@
+- ansible.builtin.yum_repository:
+    baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+    description: Kubernetes
+    enabled: true
+    gpgcheck: true
+    gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+    name: kubernetes
+    repo_gpgcheck: true
+  become: true
+  name: Kubectl | Add Repository
+- ansible.builtin.dnf:
+    name: kubectl
+  become: true
+  name: Kubectl | Install
+- ansible.builtin.shell: kubectl completion zsh > {{ shell_completions_dir }}/_kubectl
+  name: Kubectl | Install autocomplete

@@ -1,7 +1,0 @@
-# Live streaming and video recording software
-# https://flathub.org/apps/details/org.gnome.Podcasts
-
-- name: Gnome Podcasts
-  community.general.flatpak:
-    name: com.obsproject.Studio
-    state: present

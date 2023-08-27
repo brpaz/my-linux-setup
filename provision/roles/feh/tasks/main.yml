@@ -1,0 +1,5 @@
+- ansible.builtin.dnf:
+    name: feh
+    state: present
+  become: true
+  name: Feh Image viewer

@@ -1,0 +1,20 @@
+- ansible.builtin.file:
+    mode: '0755'
+    path: '{{ ansible_env.HOME }}/.pulumi/bin'
+    state: directory
+  name: Pulumi | Ensure bin dir exists
+- community.general.github_release:
+    action: latest_release
+    repo: pulumi
+    token: '{{ github_token }}'
+    user: pulumi
+  name: Pulumi | Get latest release version
+  register: pulumi_release
+- ansible.builtin.unarchive:
+    dest: '{{ ansible_env.HOME }}/.pulumi/bin'
+    extra_opts:
+    - --strip-components=1
+    mode: a+x
+    remote_src: true
+    src: https://get.pulumi.com/releases/sdk/pulumi-{{ pulumi_release.tag }}-linux-x64.tar.gz
+  name: Pulimi | Install

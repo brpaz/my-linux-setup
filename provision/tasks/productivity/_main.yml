@@ -1,9 +1,0 @@
-- ansible.builtin.import_tasks: gnome-calendar.yml
-- ansible.builtin.import_tasks: gnome-contacts.yml
-- ansible.builtin.import_tasks: foliate.yml
-- ansible.builtin.import_tasks: pdf-master.yml
-- ansible.builtin.import_tasks: gnome-todo.yml
-- ansible.builtin.import_tasks: dialect.yml
-- ansible.builtin.import_tasks: notejot.yml
-- ansible.builtin.import_tasks: ticktick.yml
-- ansible.builtin.import_tasks: remembrance.yml

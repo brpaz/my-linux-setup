@@ -1,0 +1,13 @@
+- ansible.builtin.dnf:
+    name:
+    - ruby
+    - zlib
+    state: present
+  become: true
+  name: Ruby | Install
+- community.general.gem:
+    name: '{{ item }}'
+  name: Installs Global Rubygems
+  with_items:
+  - rake
+  - bundler

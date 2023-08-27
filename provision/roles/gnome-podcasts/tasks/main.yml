@@ -1,0 +1,12 @@
+- community.general.flatpak:
+    name: org.gnome.Podcasts
+    state: present
+  name: Gnome Podcasts
+- community.general.dconf:
+    key: '{{ item.key }}'
+    state: present
+    value: '{{ item.value }}'
+  name: Gnome Podcasts Settings
+  with_items:
+  - key: /org/gnome/Podcasts/dark-theme
+    value: 'true'

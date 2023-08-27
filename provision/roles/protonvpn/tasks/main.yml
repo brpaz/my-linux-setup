@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.protonvpn.www
+    state: present
+  name: ProtonVPN

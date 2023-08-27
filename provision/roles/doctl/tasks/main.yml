@@ -1,0 +1,14 @@
+- community.general.github_release:
+    action: latest_release
+    repo: doctl
+    token: '{{ github_token }}'
+    user: digitalocean
+  name: doctl | Get latest release
+  register: release
+- ansible.builtin.unarchive:
+    dest: '{{ bin_dir }}'
+    remote_src: true
+    src: https://github.com/digitalocean/doctl/releases/download/{{ release.tag }}/doctl-{{
+      release.tag[1:] }}-linux-amd64.tar.gz
+  become: true
+  name: doctl | Download

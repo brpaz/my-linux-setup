@@ -1,0 +1,5 @@
+- ansible.builtin.dnf:
+    name: fd-find
+    state: present
+  become: true
+  name: Fd install

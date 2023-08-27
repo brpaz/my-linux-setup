@@ -1,0 +1,22 @@
+- ansible.builtin.template:
+    dest: /etc/promtail/promtail-local-config.yml
+    mode: '0644'
+    src: promtail/promtail-local-config.yml.j2
+  become: true
+  name: Promtail | Create Promtail configuration file
+- community.docker.docker_container:
+    command: -config.file=/etc/promtail/config.yml
+    image: grafana/promtail:2.8.4
+    labels:
+      traefik.enable: 'false'
+    name: promtail
+    networks:
+    - name: monitoring
+    restart_policy: unless-stopped
+    state: started
+    volumes:
+    - /etc/promtail/promtail-local-config.yml:/etc/promtail/config.yml:ro
+    - /var/log:/var/log:ro
+    - /var/log/journal:/var/log/journal:ro
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+  name: Promtail | Start container

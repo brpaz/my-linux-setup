@@ -1,4 +1,0 @@
-- name: Avvie
-  community.general.flatpak:
-    name: com.github.taiko2k.avvie
-    state: present

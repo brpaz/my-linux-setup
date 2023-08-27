@@ -1,7 +1,0 @@
-- name: Git Tools
-  ansible.builtin.dnf:
-    name:
-      - tig
-      - git-extras
-    state: present
-  become: true

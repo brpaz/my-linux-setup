@@ -1,0 +1,5 @@
+- ansible.builtin.dnf:
+    name: https://packages.microsoft.com/yumrepos/edge/microsoft-edge-stable-96.0.1054.43-1.x86_64.rpm
+    state: present
+  become: true
+  name: Microsoft edge

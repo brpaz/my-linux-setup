@@ -1,0 +1,5 @@
+- ansible.builtin.dnf:
+    name: bat
+    state: present
+  become: true
+  name: Bat | Install

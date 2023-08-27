@@ -1,0 +1,17 @@
+- ansible.builtin.dnf:
+    name: minidlna
+    state: present
+  become: true
+  name: MiniDLNA | Install
+- ansible.builtin.template:
+    dest: /etc/minidlna.conf
+    mode: '0644'
+    src: minidlna/minidlna.conf.j2
+  become: true
+  name: Set the MiniDLNA configuration file
+- ansible.builtin.systemd:
+    enabled: true
+    name: minidlna
+    state: started
+  become: true
+  name: Enable MiniDLNA Server

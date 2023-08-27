@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: io.github.seadve.Kooha
+    state: present
+  name: Kooha

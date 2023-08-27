@@ -1,0 +1,14 @@
+- community.general.github_release:
+    action: latest_release
+    repo: mitmproxy
+    token: '{{ github_token }}'
+    user: mitmproxy
+  name: Mitmproxy | Get Latest release
+  register: mitmproxy_release
+- ansible.builtin.unarchive:
+    dest: '{{ bin_dir }}'
+    remote_src: true
+    src: https://mitmproxy.org/downloads/#{{ mitmproxy_release.tag }} /mitmproxy-{{
+      mitmproxy_release.tag }}-linux.tar.gz
+  become: true
+  name: Mitmproxy | Download

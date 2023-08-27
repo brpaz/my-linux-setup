@@ -1,4 +1,0 @@
-- name: Set Favorite apps
-  dconf:
-    key: "/org/gnome/shell/favorite-apps"
-    value: "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'com.gexperts.Tilix.desktop', 'com.slack.Slack.desktop','code.desktop', 'md.obsidian.Obsidian.desktop', 'webcatalog-ticktick.desktop', 'jetbrains-goland.desktop']"

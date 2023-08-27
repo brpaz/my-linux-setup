@@ -1,0 +1,19 @@
+- community.general.github_release:
+    action: latest_release
+    repo: kitapp
+    token: '{{ github_token }}'
+    user: johnlindquist
+  name: ScriptKit | Get latest release
+  register: kit_release
+- ansible.builtin.get_url:
+    dest: /opt/ScriptKit.AppImage
+    mode: a+x
+    url: https://github.com/johnlindquist/kitapp/releases/download/{{ kit_release.tag
+      }}//Kit-Linux-{{ kit_release.tag[1:] }}-x86_64.AppImage
+  become: true
+  name: ScriptKit | Download AppImage
+- ansible.builtin.copy:
+    dest: '{{ applications_dir }}/scriptkit.desktop'
+    mode: '0644'
+    src: scriptkit.desktop
+  name: ScriptKit | Install Desktop file

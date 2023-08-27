@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.felipekinoshita.Wildcard
+    state: present
+  name: Wildcard | Regex Tester | Download

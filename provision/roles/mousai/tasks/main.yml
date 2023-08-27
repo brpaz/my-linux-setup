@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: io.github.seadve.Mousai
+    state: present
+  name: Mousai Install

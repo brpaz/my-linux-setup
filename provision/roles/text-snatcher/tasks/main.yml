@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.github.rajsolai.textsnatcher
+    state: present
+  name: Install Text snatcher

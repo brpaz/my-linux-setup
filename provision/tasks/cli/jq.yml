@@ -1,5 +1,0 @@
-- name: JQ
-  ansible.builtin.dnf:
-    name: jq
-    state: present
-  become: true

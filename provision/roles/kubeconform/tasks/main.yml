@@ -1,0 +1,13 @@
+- community.general.github_release:
+    action: latest_release
+    repo: kubeconform
+    token: '{{ github_token }}'
+    user: yannh
+  name: Kubeconform | Get latest release
+  register: release
+- ansible.builtin.unarchive:
+    dest: '{{ setup_dir }}'
+    remote_src: true
+    src: https://github.com/yannh/kubeconform/releases/download/{{ release.tag }}/kubeconform-linux-amd64.tar.gz
+  become: true
+  name: Kubeconform | Download Archive

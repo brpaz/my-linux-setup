@@ -1,3 +1,0 @@
-- ansible.builtin.import_tasks: steam.yml
-- ansible.builtin.import_tasks: mines.yml
-- ansible.builtin.import_tasks: snes.yml

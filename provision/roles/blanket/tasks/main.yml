@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: com.rafaelmardojai.Blanket
+    state: present
+  name: Blanket

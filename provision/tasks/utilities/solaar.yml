@@ -1,5 +1,0 @@
-- name: Stacer
-  ansible.builtin.dnf:
-    name: solaar
-    state: present
-  become: true

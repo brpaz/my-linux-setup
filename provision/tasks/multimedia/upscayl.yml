@@ -1,4 +1,0 @@
-- name: Upscaiyl
-  community.general.flatpak:
-    name: org.upscayl.Upscayl
-    state: present

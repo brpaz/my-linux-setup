@@ -1,0 +1,4 @@
+- community.general.flatpak:
+    name: io.github.dgsasha.Remembrance
+    state: present
+  name: Remembrance
