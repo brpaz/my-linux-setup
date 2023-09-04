@@ -3,7 +3,7 @@ tls:
     default:
       defaultCertificate:
         certFile: "/etc/certs/_wildcard.docker.pem"
-        keyFile: "/etc/traefcerts/_wildcard.docker-key.pem"
+        keyFile: "/etc/certs/_wildcard.docker-key.pem"
   certificates:
     - certFile: "/etc/certs/traefik.docker.pem"
       keyFile: "/etc/certs/traefik.docker-key.pem"

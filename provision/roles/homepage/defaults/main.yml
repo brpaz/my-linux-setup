@@ -1,0 +1,1 @@
+homepage_config_dir: "{{ ansible_env.HOME }}/.config/homepage"

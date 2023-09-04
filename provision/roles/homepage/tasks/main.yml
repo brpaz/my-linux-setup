@@ -1,0 +1,65 @@
+- name: Homepage | Create config directory
+  ansible.builtin.file:
+    mode: '0755'
+    path: "{{ homepage_config_dir }}"
+    state: directory
+
+- name: Homepage | Copy config files
+  ansible.builtin.template:
+    dest: "{{ homepage_config_dir }}/{{ item }}"
+    src: "config/{{ item }}.j2"
+  loop:
+    - docker.yaml
+    - settings.yaml
+    - bookmarks.yaml
+    - widgets.yaml
+    - services.yaml
+
+- name: Homepage | Create icons directory
+  ansible.builtin.file:
+    mode: '0755'
+    path: "{{ homepage_config_dir }}/icons"
+    state: directory
+
+- name: Homepage | Copy icon files
+  ansible.builtin.copy:
+    dest: "{{ homepage_config_dir }}/icons/{{ item }}"
+    src: "icons/{{ item }}"
+    mode: '0755'
+  loop:
+    - jwt.io.png
+    - chatgpt.png
+    - regex101.png
+    - replit.png
+    - ticktick.png
+    - raindrop.png
+    - abola.png
+    - vuejs.png
+    - symfony.png
+    - stack-overflow.png
+    - nestjs.svg
+    - nuxt.png
+    - astro.png
+    - tailwindcss.png
+    - namecheap.png
+
+- name: Homepage | Start container
+  community.docker.docker_container:
+    name: homepage
+    image: ghcr.io/benphelps/homepage:v0.6.29
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.homepage.entrypoints: "websecure"
+      traefik.http.routers.homepage.rule: Host(`homepage.docker`)
+      traefik.http.routers.homepage.tls: 'true'
+      traefik.http.services.homepage.loadbalancer.server.port: '3000'
+    # env:
+    #   PUID: "1000"
+    #   PGID: "1000"
+    networks:
+      - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+      - "{{ homepage_config_dir }}:/config"
+      - "{{ homepage_config_dir }}/icons:/app/public/icons"
+      - /var/run/docker.sock:/var/run/docker.sock

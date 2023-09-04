@@ -1,8 +1,6 @@
 - name: Dnsmasq | Configure Network Manager
   ansible.builtin.copy:
-    content: '[main] dns=dnsmasq
-
-      '
+    content: '[main] dns=dnsmasq'
     dest: /etc/NetworkManager/conf.d/dnsmasq.conf
     mode: '0644'
   become: true

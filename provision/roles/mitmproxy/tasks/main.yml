@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: mitmproxy
   register: mitmproxy_release
+
 - name: Mitmproxy | Download
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'

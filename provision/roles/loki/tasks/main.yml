@@ -4,19 +4,33 @@
     path: /etc/loki
     state: directory
   become: true
+
 - name: Loki | Ensure Configuration file exists
   ansible.builtin.template:
     dest: /etc/loki/config.yaml
     mode: '0644'
-    src: loki/loki-local-config.yaml.j2
+    src: loki-local-config.yaml.j2
   become: true
+
 - name: Loki | Ensure data volume exists
   community.docker.docker_volume:
     name: loki-storage
     state: present
+
 - name: Loki | Start container
   community.docker.docker_container:
+    name: loki
+    image: grafana/loki:2.8.4
+    state: started
+    restart_policy: unless-stopped
     command: -config.file=/etc/loki/config.yaml
+    labels:
+      traefik.enable: 'false'
+    networks:
+      - name: monitoring
+    volumes:
+      - /etc/loki/config.yaml:/etc/loki/config.yaml
+      - loki-storage:/loki
     healthcheck:
       interval: 10s
       retries: 3
@@ -27,14 +41,3 @@
         - -qO-
         - http://localhost:3100/ready
       timeout: 2s
-    image: grafana/loki:2.8.4
-    labels:
-      traefik.enable: 'false'
-    name: loki
-    networks:
-      - name: monitoring
-    restart_policy: unless-stopped
-    state: started
-    volumes:
-      - /etc/loki/config.yaml:/etc/loki/config.yaml
-      - loki-storage:/loki

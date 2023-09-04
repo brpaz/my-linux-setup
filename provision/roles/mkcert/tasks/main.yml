@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: FiloSottile
   register: release
+
 - name: Mkcert | Install Binary
   ansible.builtin.get_url:
     dest: '{{ bin_dir }}/mkcert'

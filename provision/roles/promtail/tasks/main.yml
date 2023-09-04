@@ -2,7 +2,7 @@
   ansible.builtin.template:
     dest: /etc/promtail/promtail-local-config.yml
     mode: '0644'
-    src: promtail/promtail-local-config.yml.j2
+    src: promtail-local-config.yml.j2
   become: true
 
 - name: Promtail | Start container

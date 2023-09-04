@@ -25,6 +25,7 @@ entryPoints:
     address: :80
   websecure:
     address: :443
+
 ################################################################
 # Traefik logs configuration
 ################################################################
@@ -99,7 +100,7 @@ api:
   # Optional
   # Default: true
   #
-  insecure: false
+  insecure: true
   dashboard: true
 ################################################################
 # Ping configuration
