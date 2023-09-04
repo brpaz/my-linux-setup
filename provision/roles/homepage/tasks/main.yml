@@ -53,13 +53,10 @@
       traefik.http.routers.homepage.rule: Host(`homepage.docker`)
       traefik.http.routers.homepage.tls: 'true'
       traefik.http.services.homepage.loadbalancer.server.port: '3000'
-    # env:
-    #   PUID: "1000"
-    #   PGID: "1000"
     networks:
       - name: traefik-public
     restart_policy: unless-stopped
     volumes:
       - "{{ homepage_config_dir }}:/config"
       - "{{ homepage_config_dir }}/icons:/app/public/icons"
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock:ro

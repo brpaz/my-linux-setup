@@ -43,7 +43,7 @@
     - { role: dnsmasq, tags: [dnsmasq, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
-    - { role: portmaster, tags: [portmaster, security, networking] }
+    #- { role: portmaster, tags: [portmaster, security, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
     - { role: tailscale, tags: [tailscale, networking] }

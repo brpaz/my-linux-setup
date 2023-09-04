@@ -43,10 +43,11 @@ scrape_configs:
       - docker: {}
       - static_labels:
           job: "containerlogs"
+          instance: "{{ ansible_hostname }}"
     relabel_configs:
       - source_labels: ['__meta_docker_container_name']
         regex: '/(.*)'
-        target_label: 'instance'
+        target_label: 'container'
       - source_labels: ['__meta_docker_container_label_com_docker_compose_project']
         target_label: 'project'
       - source_labels: ['__meta_docker_container_label_com_docker_compose_service']
