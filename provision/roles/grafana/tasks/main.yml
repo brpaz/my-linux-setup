@@ -10,6 +10,10 @@
   become: true
 - name: Grafana | Start Container
   community.docker.docker_container:
+    name: grafana
+    image: grafana/grafana:10.1.0
+    state: started
+    restart_policy: unless-stopped
     env:
       GF_AUTH_ANONYMOUS_ENABLED: 'true'
       GF_AUTH_ANONYMOUS_ORG_NAME: Main Org.
@@ -25,7 +29,6 @@
         - --spider
         - http://localhost:3000/api/health
       timeout: 2s
-    image: grafana/grafana:10.1.0
     labels:
       traefik.docker.network: traefik-public
       traefik.enable: 'true'
@@ -33,12 +36,10 @@
       traefik.http.routers.grafana.rule: Host(`grafana.docker`)
       traefik.http.routers.grafana.tls: 'true'
       traefik.http.services.grafana.loadbalancer.server.port: '3000'
-    name: grafana
     networks:
       - name: monitoring
       - name: traefik-public
-    restart_policy: unless-stopped
-    state: started
     volumes:
       - grafana-storage:/var/lib/grafana
       - /etc/grafana/provisioning:/etc/grafana/provisioning
+      - /etc/grafana/dashboards:/etc/grafana/dashboards
