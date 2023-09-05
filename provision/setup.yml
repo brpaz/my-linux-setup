@@ -29,11 +29,12 @@
     # ===========================================
     # Infrastructure roles. Need to be run first
     # ============================================
-    - { role: core, tags: [core] }
+    - { role: system, tags: [core] }
+    - { role: users, tags: [core, users] }
+    - { role: selinux, tags: [core, sellinux] }
     - { role: dotfiles, tags: [core, dotfiles] }
     - { role: rpmrepos, tags: [core] }
     - { role: flatpak, tags: [core, flatpak] }
-    - { role: nvdia, tags: [core, drivers] }
     - { role: shell, tags: [core, zsh, shell] }
 
     # =============================================
@@ -54,6 +55,7 @@
     # Internet
     # =============================================
     - { role: google-chrome, tags: [google-chrome, internet] }
+    - { role: firefox, tags: [firefox, internet] }
     - { role: brave-browser, tags: [brave-browser, internet] }
     - { role: edge, tags: [edge, internet] }
     - { role: discord, tags: [discord, communications, internet] }
@@ -262,3 +264,4 @@
     - { role: gnome-desktop, tags: [gnome-desktop] }
     - { role: fonts, tags: [fonts, gnome-desktop] }
     - { role: nautilus, tags: [nautilus, gnome-desktop] }
+    - { role: nvidia, tags: [gnome-desktop, drivers] }

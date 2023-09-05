@@ -5,6 +5,7 @@
       - zlib
     state: present
   become: true
+
 - name: Installs Global Rubygems
   community.general.gem:
     name: '{{ item }}'

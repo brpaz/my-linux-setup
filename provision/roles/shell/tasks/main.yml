@@ -6,5 +6,9 @@
       - powerline-fonts
     state: present
   become: true
+
+- name: ZSH | Install starship prompt
+  ansible.builtin.shell: sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
+
 - name: ZSH | Set as default shell
   ansible.builtin.shell: chsh -s $(which zsh ) {{ user }}

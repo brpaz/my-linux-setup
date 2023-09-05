@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: guumaster
   register: latest_release
+
 - name: Hostctl | Download
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
@@ -12,4 +13,8 @@
     remote_src: true
     src: https://github.com/guumaster/hostctl/releases/download/{{ latest_release.tag
       }}/hostctl_{{ latest_release.tag[1:] }}_linux_64-bit.tar.gz
+  become: true
+
+- name: Hostctl | Setup docker-internal profile
+  command: hostctl sync docker docker-internal -d {{ docker_internal_domain }}
   become: true

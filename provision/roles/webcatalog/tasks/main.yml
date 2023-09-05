@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: webcatalog
   register: wc_release
+
 - name: WebCatalog | Download AppImage
   ansible.builtin.get_url:
     dest: /opt/WebCatalog.AppImage
@@ -12,6 +13,7 @@
     url: https://github.com/webcatalog/webcatalog-app/releases/download/{{ wc_release.tag
       }}/WebCatalog-{{ wc_release.tag[1:] }}.AppImage
   become: true
+
 - name: WebCatalog | Install Desktop file
   ansible.builtin.copy:
     dest: '{{ applications_dir }}/webcatalog.desktop'

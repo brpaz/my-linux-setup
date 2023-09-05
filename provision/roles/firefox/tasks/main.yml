@@ -1,0 +1,5 @@
+- name: Firefox | Install
+  dnf:
+    name: firefox
+    state: present
+  become: true
