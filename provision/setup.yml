@@ -50,6 +50,7 @@
     - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
+    - { role: cloudflare-warp-client, tags: [cloudflare-warp, networking] }
 
     # =============================================
     # Internet

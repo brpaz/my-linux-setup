@@ -1,0 +1,13 @@
+- name: Cloudflare Warp client | Add repository
+  ansible.builtin.yum_repository:
+    baseurl: https://pkg.cloudflareclient.com/rpm
+    description: Cloudflare Warp
+    gpgkey: https://pkg.cloudflareclient.com/pubkey.gpg
+    name: cloudflare-warp-stable
+  become: true
+
+- name: Cloudflare Warp client | Install
+  ansible.builtin.dnf:
+    name: cloudflare-warp
+    state: present
+  become: true
