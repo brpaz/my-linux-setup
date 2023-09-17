@@ -11,7 +11,7 @@ lint: ## Lints the ansible playbook
 	ansible-lint setup.yml roles
 
 setup: ## Run initial setup script
-	sudo pip install -r requirements.txt
+	pip install -r requirements.txt
 	ansible-galaxy install -r requirements.yml
 	ansible-playbook $(SETUP_PLAYBOOK_PATH) --ask-become-pass -i hosts
 

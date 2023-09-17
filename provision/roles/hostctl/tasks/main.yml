@@ -16,5 +16,5 @@
   become: true
 
 - name: Hostctl | Setup docker-internal profile
-  command: hostctl sync docker docker-internal -d {{ docker_internal_domain }}
+  ansible.builtin.command: hostctl sync docker docker-internal -d {{ docker_internal_domain }}
   become: true

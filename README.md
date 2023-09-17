@@ -93,13 +93,12 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
 * [Element](https://flathub.org/apps/im.riot.Riot) - Create, share, communicate, chat and call securely, and bridge to other apps
 * [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
-* [Tailscale](https://tailscale.com/) - Best VPN Service for Secure Networks
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
 * [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
-
-
+- [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
+- [Cloudflare Warp](https://1.1.1.1/)
 #### Web Apps (powered by Web Catalog)
 
 - ProtonMail
@@ -192,7 +191,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
-
+- [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
 
 --
 ### Games

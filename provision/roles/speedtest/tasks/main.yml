@@ -1,0 +1,4 @@
+- name: Speedtest GTK | Install
+  community.general.flatpak:
+    name: xyz.ketok.Speedtest
+    state: present

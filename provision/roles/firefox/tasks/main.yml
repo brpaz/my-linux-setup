@@ -1,5 +1,5 @@
 - name: Firefox | Install
-  dnf:
+  ansible.builtin.dnf:
     name: firefox
     state: present
   become: true

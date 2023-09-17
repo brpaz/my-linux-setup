@@ -36,7 +36,6 @@
     - { role: rpmrepos, tags: [core] }
     - { role: flatpak, tags: [core, flatpak] }
     - { role: shell, tags: [core, zsh, shell] }
-
     # =============================================
     # Networking
     # =============================================
@@ -44,13 +43,13 @@
     - { role: dnsmasq, tags: [dnsmasq, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
-    #- { role: portmaster, tags: [portmaster, security, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
+    - { role: cloudflare-warp-client, tags: [cloudflare-warp, networking] }
+    - { role: speedtest, tags: [networking, speedtest]}
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
     - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
-    - { role: cloudflare-warp-client, tags: [cloudflare-warp, networking] }
 
     # =============================================
     # Internet

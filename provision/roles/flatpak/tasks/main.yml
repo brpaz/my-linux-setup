@@ -3,14 +3,22 @@
     name: flatpak
     state: present
   become: true
+
 - name: Flatpak | Add the flathub flatpak repository remote
   become: true
   community.general.flatpak_remote:
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     name: flathub
     state: present
+
 - name: Flatpak | Install Flatseal app
   become: true
   community.general.flatpak:
     name: com.github.tchx84.Flatseal
+    state: present
+
+- name: Flatpak | Install Flatswap app
+  become: true
+  community.general.flatpak:
+    name: io.github.giantpinkrobots.flatsweep
     state: present
