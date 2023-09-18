@@ -51,6 +51,7 @@
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
 
+
     # =============================================
     # Internet
     # =============================================
@@ -70,6 +71,7 @@
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: uget, tags: [uget, internet] }
     - { role: webcatalog, tags: [webcatalog, internet] }
+    - { role: warp, tags: [internet,warp]}
 
     # =============================================
     # Productivity

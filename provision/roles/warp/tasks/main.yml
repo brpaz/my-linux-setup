@@ -1,0 +1,4 @@
+- name: Warp | Install from Flathub
+  community.general.flatpak:
+    name: app.drey.Warp
+    state: present

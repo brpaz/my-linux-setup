@@ -99,6 +99,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 - [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
 - [Cloudflare Warp](https://1.1.1.1/)
+- [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
+
 #### Web Apps (powered by Web Catalog)
 
 - ProtonMail
