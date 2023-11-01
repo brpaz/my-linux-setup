@@ -4,7 +4,7 @@
 
 ## Pre-requisites
 
-* A machine running Fedora OS. This playbook was tested with Fedora 32.
+* A machine running Fedora OS. This playbook was tested with Fedora 38
 * Git (`dnf install -y git`)
 * GitHub personal access token. You can get one [here](https://github.com/settings/tokens).
 
@@ -34,7 +34,7 @@ sudo chmod +x setup.sh
 
 Unfortunately not everything can be automated and some manual steps will be required after running this scripts.
 
-### Restoring $HOME directory
+### Restoring $HOME directory from backup
 
 The Ansible playbook syncs mostly of the dotfiles. Still, user data like Pictures, Music etc, must be restored manually from backup.
 
@@ -44,17 +44,9 @@ To do so, you can run the [scripts/restore_home.sh] script.
 sudo chmod +x scripts/restore_home.sh
 BACKUP_PATH=/path/to/home/backup scripts/restore_home.sh
 ```
-Alternatively you can also use Rsync or DejaDup Restore function if you need more customization of the restore process.
 
+This will rsync the most important folders like `Documents`, `Video`, `Music`, `Code` etc from the specified backup location.
 
-### Restoring Ulauncher configurations.
-
-To restore [Ulauncher](https://ulauncher.io) settings and extensions from a backup, run:
-
-```bash
-sudo chmod +x scripts/ulauncher_backup.sh
-BACKUP_PATH=/path/to/home/backup scripts/ulauncger_backup.sh --restore
-```
 
 ### Enabling Restic backups
 
@@ -69,10 +61,6 @@ systemctl --user enable restic-b2-backup.timer
 systemctl --user enable restic-b2-prune.timer
 ```
 
-### Install NVIDIA Drivers
-
-- Check [Howto/NVIDIA - RPM Fusion](https://rpmfusion.org/Howto/NVIDIA).
-
 ### Install Web Apps
 
 I use [WebCatalog](https://webcatalog.io/webcatalog/) to allow easy installation of web applications.
@@ -85,6 +73,7 @@ I have the following:
 - Google Photos
 - Fast
 - TickTick
+- ProtonMail
 
 ### Mount Home NAS
 
@@ -98,7 +87,7 @@ Then we can try to mount the volumes manually, using:
 sudo mkdir /mnt/qnap-media
 sudo mkdir /mnt/qnap-backups
 sudo mount -t nfs 192.168.1.108:/Multimedia /mnt/qnap-media
-````
+```
 
 If the test is successfull, we can now instruct the system to mount the volumes automatically on boot, by adding the following lines to the `/etc/fstab` file:
 
@@ -117,7 +106,7 @@ If the test is successfull, we can now instruct the system to mount the volumes 
 * [] Enable Restic Backups
 * [] Login into applications (Gnome Accounts, Spotify, etc).
 * [] Install [Pop!_OS Shell](https://github.com/pop-os/shell) from source as the latest version is not yet available from the repositories.
-* [] Configure Deja-Dup Backups
+* [] Configure Pika Backup
 
 ---
 
@@ -127,15 +116,9 @@ Most of the tasks are idenpotent and you can use this playbook to keep your syst
 
 You can execute a specific tag, by running:
 
-```
+```bash
  TAG=node make run-tag
 ```
-
----
-
-## TODO
-
-* Fix ansible lint warnings and improve idenpontency of some tasks
 
 ---
 

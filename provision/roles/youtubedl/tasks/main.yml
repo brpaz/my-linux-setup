@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: yt-dlp
   register: ytdlp_release
+
 - name: Youtube DL | Download
   ansible.builtin.get_url:
     dest: '{{ bin_dir }}/yt-dlp'
