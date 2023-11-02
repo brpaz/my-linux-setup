@@ -1,0 +1,4 @@
+- name: Notify
+  community.general.flatpak:
+    name: com.ranfdev.Notify
+    state: present

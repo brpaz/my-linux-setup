@@ -72,6 +72,7 @@
     - { role: uget, tags: [uget, internet] }
     - { role: webcatalog, tags: [webcatalog, internet] }
     - { role: warp, tags: [internet,warp]}
+    - { role: ntfy, tags: [ntfy, internet] }
 
     # =============================================
     # Productivity
