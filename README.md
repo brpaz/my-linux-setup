@@ -86,7 +86,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
-* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
+* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.- name: Authy
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
@@ -100,6 +100,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
 - [Cloudflare Warp](https://1.1.1.1/)
 - [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
+- [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
 
 #### Web Apps (powered by Web Catalog)
 
