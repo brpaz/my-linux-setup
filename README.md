@@ -181,7 +181,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
-* [Font Finder](https://flathub.org/apps/details/io.github.mmstick.FontFinder) - An application for browsing and installing fonts from Google's font archive from the comfort of your Linux desktop.
+* [Font Downloader](https://flathub.org/apps/org.gustavoperedo.FontDownloader) - Install fonts from online sources
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
 * [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup) - Doing backups the easy way. Plugin your USB drive and let the Pika do the rest for you.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).

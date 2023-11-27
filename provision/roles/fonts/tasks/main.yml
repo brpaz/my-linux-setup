@@ -2,16 +2,19 @@
   community.general.flatpak:
     name: org.gustavoperedo.FontDownloader
     state: present
+
 - name: Ensure Local Fonts folder exists
   ansible.builtin.file:
     mode: '0755'
     path: '{{ ansible_env.HOME }}/.local/share/fonts'
     state: directory
+
 - name: Copy Fonts
   ansible.builtin.copy:
     dest: '{{ ansible_env.HOME }}/.local/share'
     mode: '0755'
     src: fonts
+
 - name: Install fonts packages
   ansible.builtin.dnf:
     name:
