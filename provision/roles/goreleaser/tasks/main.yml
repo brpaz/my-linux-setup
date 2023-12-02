@@ -5,10 +5,10 @@
     token: '{{ github_token }}'
     user: goreleaser
   register: release
-- name: Goreleaser
+
+- name: Goreleaser | Install
   ansible.builtin.dnf:
     disable_gpg_check: true
-    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag
-      }}/goreleaser-{{ release.tag[1:] }}.x86_64.rpm
+    name: https://github.com/goreleaser/goreleaser/releases/download/{{ release.tag }}/goreleaser-{{ release.tag[1:] }}-1.x86_64.rpm
     state: present
   become: true

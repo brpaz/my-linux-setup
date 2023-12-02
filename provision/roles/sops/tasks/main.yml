@@ -10,5 +10,5 @@
     dest: '{{ bin_dir }}/sops'
     mode: a+x
     url: https://github.com/mozilla/sops/releases/download/{{ release.tag }}/sops-{{
-      release.tag }}.linux
+      release.tag }}.linux.amd64
   become: true

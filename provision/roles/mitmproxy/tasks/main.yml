@@ -10,6 +10,5 @@
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     remote_src: true
-    src: https://mitmproxy.org/downloads/#{{ mitmproxy_release.tag }} /mitmproxy-{{
-      mitmproxy_release.tag }}-linux.tar.gz
+    src: https://downloads.mitmproxy.org/{{ mitmproxy_release.tag }}/mitmproxy-{{ mitmproxy_release.tag }}-linux.tar.gz
   become: true

@@ -9,6 +9,5 @@
   ansible.builtin.get_url:
     dest: '{{ bin_dir }}/sd'
     mode: a+x
-    url: https://github.com/chmln/sd/releases/download/{{ sd_release.tag }}/sd-{{
-      sd_release.tag }}-x86_64-unknown-linux-gnu
+    url: https://github.com/chmln/sd/releases/download/{{ sd_release.tag }}/sd-{{ sd_release.tag }}-x86_64-unknown-linux-gnu.tar.gz
   become: true

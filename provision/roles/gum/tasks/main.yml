@@ -5,10 +5,11 @@
     token: '{{ github_token }}'
     user: charmbracelet
   register: release
+
 - name: Gum | Install
   ansible.builtin.dnf:
     disable_gpg_check: true
     name: https://github.com/charmbracelet/gum/releases/download/{{ release.tag }}/gum-{{
-      release.tag[1:] }}.x86_64.rpm
+      release.tag[1:] }}-1.x86_64.rpm
     state: present
   become: true

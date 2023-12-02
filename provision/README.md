@@ -120,6 +120,12 @@ You can execute a specific tag, by running:
  TAG=node make run-tag
 ```
 
+## Keep GitHub installed software updated
+
+```bash
+ TAG=github make run-tag
+```
+
 ---
 
 ## Reference
