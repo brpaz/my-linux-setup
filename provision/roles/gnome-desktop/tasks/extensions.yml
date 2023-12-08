@@ -2,30 +2,24 @@
   community.general.flatpak:
     name: com.mattjakeman.ExtensionManager
     state: present
+
+- name: Gnome extensions | Install gnome-extensions-cli
+  ansible.builtin.shell: pipx install gnome-extensions-cli
+
 - name: Gnome Extensions | Install
-  ansible.builtin.include_role:
-    name: ansible-gnome-extensions
-  vars:
-    gnome_extension_ids: # noqa var-naming[no-role-prefix] # TODO is this needed?
-      - 21
-      - 97
-      - 906
-      - 800
-      - 779
-      - 615
-      - 307
-      - 355
-      - 2594
-      - 2224
-      - 16
-      - 1460
-      - 1379
-      - 1319
-      - 1162
-      - 1160
-      - 1007
-      - 3843
-      - 4135
+  ansible.builtin.shell: gext install {{ item }}
+  with_items:
+    - appindicatorsupport@rgcjonas.gmail.com
+    - affeine@patapon.info
+    - clipboard-indicator@tudmotu.com
+    - CoverflowAltTab@palatis.blogspot.com
+    - dash-to-panel@jderose9.github.com
+    - gsconnect@andyholmes.github.io
+    - lineup@hedgie.tech
+    - netspeedsimplified@prateekmedia.extension
+    - status-area-horizontal-spacing@mathematical.coffee.gmail.com
+    - Vitals@CoreCoding.com
+
 - name: Clipboard Indicator extension | Configure settings
   community.general.dconf:
     key: '{{ item.key }}'

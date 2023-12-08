@@ -195,6 +195,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
+- [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 
 --
 ### Games
