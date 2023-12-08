@@ -184,6 +184,7 @@
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
+    - { role: devbox, tags: [devbox, dev] }
 
     # =============================================
     # CLI Tools

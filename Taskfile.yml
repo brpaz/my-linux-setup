@@ -15,11 +15,13 @@ tasks:
 
   lint:
     desc: Runs Ansible Lint againt manifests
+    dir: provision
     cmds:
       - ansible-lint setup.yml roles
 
   setup:
     desc: Setup development environment
+    dir: provision
     cmds:
       - pip install -r requirements.txt
       - ansible-galaxy install -r requirements.yml
@@ -27,11 +29,13 @@ tasks:
 
   run:
     desc: Run main playbook
+    dir: provision
     cmds:
       - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts -v
 
   run-tag:
     desc: Run main playbook with tag
+    dir: provision
     cmds:
       - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts --tags {{ .TAG }}
     preconditions:
@@ -41,10 +45,12 @@ tasks:
 
   update-system:
     desc: Update system
+    dir: provision
     cmds:
       - ansible-playbook update-system.yml --ask-become-pass -i hosts -v
 
   update-github:
     desc: Update all software installed from GitHub
+    dir: provision
     cmds:
       - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts -v --tags "github"
