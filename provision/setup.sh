@@ -19,10 +19,17 @@ EOF
 
 echo -e "${Yellow}Updating base system and installing ansible and dependencies${NC}"
 
-## Installs Ansible
+# curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+# nix --version
+
+# curl -fsSL https://get.jetpack.io/devbox | bash
+# devbox --version
+
 sudo dnf -y update && sudo dnf install-y ansible make python-pip
 
-make setup
+## Installs Ansible
+sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+task setup
 
 exec zsh
 

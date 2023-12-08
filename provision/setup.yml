@@ -86,6 +86,7 @@
     - { role: notejot, tags: [notejot, productivity, flatpak] }
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
+    - { role: anytype, tags: [anytype, productivity] }
 
     # =============================================
     # Multimedia (Audio & Video)
