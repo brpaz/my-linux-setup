@@ -110,3 +110,16 @@
   with_items:
     - key: /org/gnome/shell/extensions/just-perfection/workspace-switcher-size
       value: 8
+
+- name: PopShell | Clone repository
+  ansible.builtin.git:
+    repo: https://github.com/pop-os/shell
+    dest: /tmp/pop-shell
+    version: master_mantic
+    force: yes
+    depth: 1
+
+- name: PopShell | Install
+  ansible.builtin.shell: make local-install
+  args:
+    chdir: /tmp/pop-shell
