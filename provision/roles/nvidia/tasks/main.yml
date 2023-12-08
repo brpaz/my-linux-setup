@@ -1,3 +1,9 @@
+- name: Check if Nvidia card is available
+  ansible.builtin.command: lspci | grep -i nvidia
+  register: nvidia_card
+  failed_when: nvidia_card.rc != 0
+  ignore_errors: true
+
 - name: Install NVIDIA Drivers
   ansible.builtin.dnf:
     name:
@@ -5,8 +11,10 @@
       - vulkan
     state: present
   become: true
+  when: nvidia_card.rc == 0
 
 - name: Blacklist the nouveau driver module
   community.general.kernel_blacklist:
     name: nouveau
     state: present
+  when: nvidia_card.rc == 0
