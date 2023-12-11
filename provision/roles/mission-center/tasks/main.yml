@@ -1,0 +1,4 @@
+- name: Mission Center
+  flatpak:
+    name: io.missioncenter.MissionCenter
+    state: present

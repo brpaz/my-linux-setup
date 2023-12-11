@@ -1,0 +1,4 @@
+- name: Main Center
+  flatpak:
+    name: page.codeberg.libre_menu_editor.LibreMenuEditor
+    state: present

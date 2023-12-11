@@ -123,13 +123,13 @@ Most of the tasks are idenpotent and you can use this playbook to keep your syst
 You can execute a specific tag, by running:
 
 ```bash
- TAG=node make run-tag
+ TAG=node task run-tag
 ```
 
 ## Keep GitHub installed software updated
 
 ```bash
- TAG=github make run-tag
+TAG=github task run-tag
 ```
 
 ---

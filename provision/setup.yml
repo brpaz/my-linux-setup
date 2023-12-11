@@ -73,6 +73,7 @@
     - { role: webcatalog, tags: [webcatalog, internet] }
     - { role: warp, tags: [internet,warp]}
     - { role: ntfy, tags: [ntfy, internet] }
+    - { role: fractal, tags: [fractal, internet] }
 
     # =============================================
     # Productivity
@@ -240,7 +241,6 @@
     - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
     - { role: meld, tags: [meld, dev] }
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
-    - { role: menulibre, tags: [menulibre, utilities] }
     - { role: restic, tags: [restic, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: solaar, tags: [solaar, utilities] }
@@ -250,6 +250,9 @@
     - { role: weather, tags: [weather, utilities] }
     - { role: virtualbox, tags: [virtualbox, utilities] }
     - { role: tilix, tags: [tilix, utilities] }
+    - { role: mission-center, tags: [mission-center, utilities] }
+    - { role: mainmenu, tags: [mainmenu, utilities] }
+    - { role: gear-level, tags: [gear-level, utilities] }
 
     # =============================================
     # Finance

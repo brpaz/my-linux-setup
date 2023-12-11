@@ -75,7 +75,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
-* [Element](https://flathub.org/apps/im.riot.Riot) - Create, share, communicate, chat and call securely, and bridge to other apps
+* [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
 * [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
@@ -161,7 +161,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Script Kit](https://www.scriptkit.com/) - Shortcut to Everything
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
-* [Menulibre](https://launchpad.net/menulibre) - Menu editor
+* [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
@@ -180,6 +180,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
+- [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter)
+- [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you, generate desktop entries and app metadata, update apps in-place or keep multiple versions side-by-side.
 
 --
 ### Games
