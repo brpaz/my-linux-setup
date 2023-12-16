@@ -182,6 +182,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter) - Monitor your CPU, Memory, Disk, Network and GPU usage
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you, generate desktop entries and app metadata, update apps in-place or keep multiple versions side-by-side.
+- [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 
 --
 ### Games

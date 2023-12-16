@@ -1,0 +1,4 @@
+- name: Gnome Authenticator
+  community.general.flatpak:
+    name: com.belmoussaoui.Authenticator
+    state: present

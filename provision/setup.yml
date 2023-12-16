@@ -252,7 +252,8 @@
     - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
-    - { role: gear-level, tags: [gear-level, utilities] }
+    - { role: gearlevel, tags: [gearlevel, utilities] }
+    - { role: authenticator, tags: [authenticator, utilities] }
 
     # =============================================
     # Finance
