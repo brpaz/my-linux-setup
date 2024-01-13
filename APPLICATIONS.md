@@ -85,6 +85,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Cloudflare Warp](https://1.1.1.1/)
 - [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 - [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
+- [noscl](https://github.com/fiatjaf/noscl) - Command line client for Nostr.
 
 #### Web Apps (powered by Web Catalog)
 

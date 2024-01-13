@@ -74,6 +74,7 @@
     - { role: warp, tags: [internet,warp]}
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
+    - { role: noscl, tags: [noscl, internet] }
 
     # =============================================
     # Productivity

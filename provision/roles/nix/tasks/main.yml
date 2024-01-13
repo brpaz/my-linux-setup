@@ -8,3 +8,15 @@
   ansible.builtin.shell: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
   when: nix_installed.rc != 0
   become: true
+
+- name: Ensure nixpkgs config directory exists
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/.config/nixpkgs"
+    state: directory
+    mode: '0755'
+
+- name: Configure NUR
+  ansible.builtin.template:
+    src: nixpkgs.config.nix.j2
+    dest: "{{ ansible_env.HOME }}/.config/nixpkgs/config.nix"
+    mode: '0644'
