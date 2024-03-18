@@ -1,0 +1,4 @@
+- name: Pika Backup
+  community.general.flatpak:
+    name: org.gnome.World.PikaBackup
+    state: present

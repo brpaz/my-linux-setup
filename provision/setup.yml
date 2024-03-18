@@ -39,18 +39,17 @@
     # =============================================
     # Networking
     # =============================================
-    - { role: network-tools, tags: [nettwork]}
+    - { role: network-tools, tags: [nettwork] }
     - { role: dnsmasq, tags: [dnsmasq, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
     - { role: cloudflare-warp-client, tags: [cloudflare-warp, networking] }
-    - { role: speedtest, tags: [networking, speedtest]}
+    - { role: speedtest, tags: [networking, speedtest] }
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
-    - { role: tailscale, tags: [tailscale, networking] }
+    #- { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
-
 
     # =============================================
     # Internet
@@ -71,7 +70,7 @@
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: uget, tags: [uget, internet] }
     - { role: webcatalog, tags: [webcatalog, internet] }
-    - { role: warp, tags: [internet,warp]}
+    - { role: warp, tags: [internet, warp] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
@@ -106,17 +105,16 @@
     - { role: obs, tags: [obs, audio_video, flatpak] }
     - { role: vlc, tags: [vlc, audio_video] }
     - { role: mousai, tags: [mousai, audio_video] }
-    - { role: minidlna, tags: [minidlna, audio_video] }
     - { role: spotify, tags: [spotify, audio_video] }
     - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
     - { role: sound-recorder, tags: [sound-recorder, audio_video] }
     - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
     - { role: peek, tags: [peek, graphics_design] }
     - { role: shortwave, tags: [shortwave, audio_video] }
-    - { role: tagger, tags: [tagger, audio_video] }
     - { role: tubeconverter, tags: [tubeconverter, audio_video] }
     - { role: xnconvert, tags: [xnconvert, audio_vide] }
     - { role: video-trimmer, tags: [video-trimmer, audio_video] }
+    - { role: komikku, tags: [komikku, audio_video] }
 
     # =============================================
     # Graphics Design
@@ -187,6 +185,7 @@
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
     - { role: devbox, tags: [devbox, dev] }
+    - { role: warp-terminal, tags: [warp-terminal, dev] }
 
     # =============================================
     # CLI Tools
@@ -230,7 +229,6 @@
     # =============================================
     # Utilities
     # =============================================
-    - { role: authy, tags: [authy, security, utilities] }
     - { role: bleachbit, tags: [bleachbit, utilities] }
     - { role: cryptomator, tags: [cryptomator, utilities] }
     - { role: currency-converter, tags: [currency-converter, utilities] }
@@ -249,12 +247,12 @@
     - { role: stacer, tags: [stacer, utilities] }
     - { role: youtubedl, tags: [youtubedl, multimedia, github, cli] }
     - { role: weather, tags: [weather, utilities] }
-    - { role: virtualbox, tags: [virtualbox, utilities] }
     - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: gearlevel, tags: [gearlevel, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
+    - { role: pika-backup, tags: [pika-backup, utilities] }
 
     # =============================================
     # Finance

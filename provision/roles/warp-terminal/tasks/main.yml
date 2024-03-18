@@ -1,0 +1,11 @@
+- name: Warp Terminal | Download rpm
+  ansible.builtin.get_url:
+    url: https://app.warp.dev/download?package=rpm
+    dest: "{{ setup_dir }}/warp.rpm"
+
+- name: Warp Terminal | Install
+  ansible.builtin.dnf:
+    disable_gpg_check: true
+    name: "{{ setup_dir }}/warp.rpm"
+    state: present
+  become: true

@@ -1,0 +1,4 @@
+- name: Komiku
+  community.general.flatpak:
+    name: info.febvre.Komikku
+    state: present
