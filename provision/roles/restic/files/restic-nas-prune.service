@@ -1,7 +1,0 @@
-[Unit]
-Description=Restic NAS backup service (data pruning)
-[Service]
-Type=oneshot
-ExecStartPre=restic forget --verbose  --group-by "paths,tags" --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS
-ExecStart=restic prune --verbose
-EnvironmentFile=%h/.config/restic/restic-nas-backup.conf
