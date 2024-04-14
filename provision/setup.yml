@@ -74,7 +74,7 @@
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
-
+    - { role: nextcloud, tags: [nextcloud, internet] }
     # =============================================
     # Productivity
     # =============================================
@@ -83,8 +83,8 @@
     - { role: foliate, tags: [foliate, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
     - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
-    - { role: gnome-todo, tags: [gnome-todo, productivity] }
-    - { role: notejot, tags: [notejot, productivity, flatpak] }
+    - { role: errands, tags: [errands, productivity] }
+    - { role: iotas, tags: [iotas, productivity, flatpak] }
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
     - { role: anytype, tags: [anytype, productivity] }
@@ -123,7 +123,6 @@
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
-    - { role: pinta, tags: [pinta, graphics_design, flatpak] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
     - { role: upscayl, tags: [upscayl, graphics_design] }
     - { role: figma, tags: [figma, graphics_design] }
@@ -170,7 +169,6 @@
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
-    - { role: lens, tags: [lens, dev, kubernetes] }
     - { role: minikube, tags: [minikube, dev, github, kubernetes] }
     - { role: mitmproxy, tags: [mitmproxy, github, dev, internet] }
     - { role: mkcert, tags: [mkcert, dev, github] }

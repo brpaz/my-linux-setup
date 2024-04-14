@@ -43,9 +43,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Obsidian](https://obsidian.md/) - Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files.
-* [Notejot](https://flathub.org/apps/details/io.github.lainsce.Notejot) - Jot your ideas.
+* [Iotas](https://flathub.org/apps/org.gnome.World.Iotas) - Iotas aims to provide distraction-free note taking via its mobile-first design.
 * [Espanso](https://espanso.org/) - A Privacy-first, Cross-platform Text Expander
-* [Gnome TODO](https://flathub.org/apps/details/org.gnome.Todo) - Personal task manager for GNOME.
+* [Errands](https://flathub.org/apps/io.github.mrvladus.List) - Todo application for those who prefer simplicity.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOM
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/app.drey.Dialect) - A translation app for GNOME.
@@ -70,7 +70,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
 * [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
-* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.- name: Authy
+* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
@@ -86,15 +86,15 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 - [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
 - [noscl](https://github.com/fiatjaf/noscl) - Command line client for Nostr.
+- [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - Nextcloud desktop synchronization client
 
 #### Web Apps (powered by Web Catalog)
 
 - ProtonMail
-- RegexR
+- ChatGPT
 - Google Photos
 - Excalidraw
 - Instagram
-- Feedly
 - Google Meet
 - Mermaid Editor
 
@@ -103,7 +103,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Graphics & Design
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
-* [Pinta](https://flathub.org/apps/com.github.PintaProject.Pinta) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
@@ -125,7 +124,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://flathub.org/apps/details/org.gnome.Podcasts) - Listen to your favorite podcasts.
 * [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given.
-* [Ear Tag](https://flathub.org/apps/details/app.drey.EarTag) - Small and simple music tag editor
+* [EarTag](https://flathub.org/apps/details/app.drey.EarTag) - Small and simple music tag editor
 * [Shortwave](https://flathub.org/apps/details/de.haeckerfelix.Shortwave) - Shortwave is an internet radio player that provides access to a station database with over 25,000 stations.
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
@@ -170,12 +169,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
 * [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup) - Doing backups the easy way. Plugin your USB drive and let the Pika do the rest for you.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
-* [Authy](https://flathub.org/apps/details/com.authy.Authy) - The Twilio Authy app generates secure 2 step verification tokens on your device. It help’s you protect your account from hackers and hijackers by adding an additional layer of security.
 * [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.
 - [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
-- [VirtualBox](https://www.virtualbox.org/) - VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions

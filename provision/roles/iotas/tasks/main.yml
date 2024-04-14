@@ -1,4 +1,4 @@
-- name: Authy
+- name: Iotas
   community.general.flatpak:
-    name: com.authy.Authy
+    name: org.gnome.World.Iotas
     state: present
