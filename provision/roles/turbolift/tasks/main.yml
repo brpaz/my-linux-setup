@@ -1,0 +1,21 @@
+- name: Turbolift | Get latest release version
+  community.general.github_release:
+    user: Skyscanner
+    action: latest_release
+    repo: turbolift
+    token: "{{ github_token }}"
+  register: turbolift_release
+
+- name: Turbolift | Download
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/Skyscanner/turbolift/releases/download/{{ turbolift_release.tag }}/turbolift_{{ turbolift_release.tag }}_Linux_x86_64.tar.gz
+  become: true
+
+- name: Turbolift | install
+  ansible.builtin.copy:
+    dest: "{{ bin_dir }}/turbolift"
+    mode: a+x
+    src: "{{ setup_dir }}/turbolift"
+  become: true
