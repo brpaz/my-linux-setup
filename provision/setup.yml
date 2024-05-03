@@ -209,7 +209,7 @@
     - { role: ranger, tags: [ranger, cli, github] }
     - { role: the-way, tags: [the-way, cli, dev, github] }
     - { role: tldr, tags: [tldr, cli, github] }
-
+    - { role: shellcheck, tags: [shellcheck, cli] }
     # =============================================
     # Docker
     # =============================================
@@ -252,7 +252,7 @@
     - { role: gearlevel, tags: [gearlevel, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
-
+    - { role: rclone, tags: [rclone, utilities]}
     # =============================================
     # Finance
     # =============================================

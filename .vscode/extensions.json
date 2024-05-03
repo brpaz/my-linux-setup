@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "redhat.vscode-yaml",
+        "redhat.ansible",
+        "adhoeric.ansible-vault",
+        "task.vscode-task"
+    ]
+}
