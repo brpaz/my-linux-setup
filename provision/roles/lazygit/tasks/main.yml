@@ -1,0 +1,22 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: jesseduffield
+    repo: lazygit
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download binary
+  ansible.builtin.unarchive:
+    remote_src: true
+    src: "https://github.com/jesseduffield/lazygit/releases/download/{{ release.tag }}/lazygit_{{ release.tag[1:] }}_Linux_x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+
+
+- name: Copy binary to bin
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/lazygit"
+    dest: "{{ bin_dir }}/lazygit"
+    mode: a+x
+  become: true
+

@@ -2,5 +2,6 @@
   "files.associations": {
       "**/provision/**/*.yml": "ansible",
       "**/provision/**/requirements.yml": "yaml",
-    }
+    },
+    "ansible.python.interpreterPath": "/bin/python"
 }

@@ -1,0 +1,21 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: stern
+    repo: stern
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/stern/stern/releases/download/{{ release.tag }}/stern_{{ release.tag[1:] }}_linux_amd64.tar.gz
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    dest: "{{ bin_dir }}"
+    mode: a+x
+    src: "{{ setup_dir }}/stern"
+  become: true

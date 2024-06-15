@@ -185,7 +185,7 @@
     - { role: devbox, tags: [devbox, dev] }
     - { role: warp-terminal, tags: [warp-terminal, dev] }
     - { role: turbolift, tags: [turbolift, dev] }
-
+    - { role: stern, tags: [stern, dev, github, kubernetes] }
     # =============================================
     # CLI Tools
     # =============================================
@@ -210,6 +210,7 @@
     - { role: the-way, tags: [the-way, cli, dev, github] }
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
+    - { role: lazygit, tags: [lazygit, dev, github] }
     # =============================================
     # Docker
     # =============================================
@@ -252,7 +253,7 @@
     - { role: gearlevel, tags: [gearlevel, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
-    - { role: rclone, tags: [rclone, utilities]}
+    - { role: rclone, tags: [rclone, utilities] }
     # =============================================
     # Finance
     # =============================================
