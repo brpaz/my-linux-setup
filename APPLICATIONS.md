@@ -32,6 +32,7 @@
     - [Security](#security)
     - [System Utils](#system-utils)
     - [Other](#other)
+    - [Dev Envrionments](#dev-envrionments)
   - [Development Runtimes](#development-runtimes)
   - [Gnome Extensions](#gnome-extensions)
 
@@ -224,12 +225,12 @@ I use ZSH shell with the following extras:
 
 ### File Navigation and Search
 
+- [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
-* [ranger](https://github.com/ranger/ranger) - A VIM-inspired filemanager for the console.
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
-* [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)]
+* [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
 * [enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
 
 ### Text Mainuplation
@@ -242,7 +243,7 @@ I use ZSH shell with the following extras:
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [lnav](http://lnav.org/) - The Log File Navigator
-* [hasha-cli](https://github.com/sindrehasha-clisorhus/hasha-cli) - hashing made simple. Get the hash of text or stdin.
+* [hasha-cli](https://github.com/sindresorus/hasha-cli) - hashing made simple. Get the hash of text or stdin.
 
 ### Multimedia
 
@@ -261,14 +262,14 @@ I use ZSH shell with the following extras:
 ### Package Managers
 
 * [composer](https://getcomposer.org/) - Dependency Manager for PHP
-* [Yarn](https://yarnpkg.com/en/) - Modern Javascript Package manager.
+* [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
 
 ### Version Control
 
 * [GitHub CLI](https://github.com/cli/cli) - GitHub’s official command line tool
 * [GitLab CLI](https://gitlab.com/gitlab-org/cli) - GLab is an open source GitLab CLI tool bringing GitLab to your terminal next to where you are already working with git and your code without switching between windows and browser tabs. Work with issues, merge requests, watch running pipelines directly from your CLI among other features.
-* [tig](https://github.com/jonas/tig) - Text-mode interface for git
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
+* [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 * [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
 * [goreleaser/goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
@@ -282,7 +283,7 @@ I use ZSH shell with the following extras:
 * [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 * [Symfony CLI](https://symfony.com/download) - Symfony command line tool
 * [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
-* [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files]
+* [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files
 
 ### Snippets and Cheat sheets
 
@@ -295,7 +296,6 @@ I use ZSH shell with the following extras:
 * [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 * [Google Cloud SDK](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK.
 * [AWS CLI](https://aws.amazon.com/cli) - AWS Command Line Interface.
-* [Netlify Command Line Tools](https://www.netlify.com/docs/cli/) - Netlify’s command line tools let you deploy sites or configure continuous deployment straight from the command line.
 * [Vercel CLI](https://vercel.com/cli)
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
@@ -307,7 +307,6 @@ I use ZSH shell with the following extras:
 * [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
 * [kail](https://github.com/boz/kail) - kubernetes log viewer.
 * [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
-* [minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
 * [Kind](https://github.com/kubernetes-sigs/kind) - Kubernetes IN Docker - local clusters for testing Kubernete
 * [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
@@ -322,7 +321,6 @@ I use ZSH shell with the following extras:
 * [Ansible](https://www.ansible.com/) - Simple, agentless IT automation that anyone can use.
   * [ansible/ansible-lint](https://github.com/ansible/ansible-lint) - Best practices checker for Ansible
   * [Ansible Galaxy](https://galaxy.ansible.com/) - Jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work known to Ansible as roles.
-* [Pulumi](https://www.pulumi.com/) -  Modern Infrastructure as Code
 * [terratest](https://github.com/gruntwork-io/terratest/releases) - Terratest is a Go library that makes it easier to write automated tests for your infrastructure code.
 * [sops](https://github.com/mozilla/sops) - Simple and flexible tool for managing secrets
 
@@ -338,15 +336,12 @@ I use ZSH shell with the following extras:
 * [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
 * [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
-* [direnv](https://direnv.net/) - direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
 * [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
 * [glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
 
 ### Other
 
-* [localtunnel](https://github.com/localtunnel/localtunnel) - expose your machine to the world.
-* [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
-* [mycli](https://www.mycli.net/) - MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
+* [jorgerojas26/lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
 * [sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open source tool that helps you monitor, analyze and optimize your website speed and performance, based on performance best practices advices.
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
@@ -354,7 +349,14 @@ I use ZSH shell with the following extras:
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [D2 Lang](https://d2lang.com/tour/intro/) - D2 is a diagram scripting language that turns text to diagrams. It stands for Declarative Diagramming. Declarative, as in, you describe what you want diagrammed, it generates the image.
 * [watchexec](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications.
-* [devenv](https://devenv.sh/) - Fast, Declarative, Reproducible, and Composable Developer Environments -
+
+### Dev Envrionments
+
+- [Devbox](https://www.jetify.com/devbox) - Portable, Isolated Dev Environments
+- [Vagrant by HashiCorp](https://www.vagrantup.com/)
+- [localtunnel](https://github.com/localtunnel/localtunnel) - expose your machine to the world.
+- [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+* [direnv](https://direnv.net/) - direnv is an extension for your shell.
 
 ## Development Runtimes
 
@@ -372,7 +374,6 @@ I use ZSH shell with the following extras:
 * [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) - Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
-* [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) - Replacement of Alt-Tab, iterates through windows in a cover-flow manner.
 * [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/) - This extension provides a parametrable popup menu displaying most emojis, clicking on an emoji copies it to the clipboard.
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
 * [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages. Features: 1) New message indicator is always shown if there are notifications.
@@ -385,6 +386,7 @@ speed and storage stats.
 * [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
 * [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
 - [Switcher - GNOME Shell Extensions](https://extensions.gnome.org/extension/973/switcher/) - Switch windows or launch applications quickly by typing
+- [hedgieinsocks/gnome-extension-lineup](https://github.com/hedgieinsocks/gnome-extension-lineup) - Set width for right-side panel indicators
 
 ---
 * ## VS Code Extensions

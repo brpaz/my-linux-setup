@@ -211,6 +211,8 @@
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
     - { role: lazygit, tags: [lazygit, dev, github] }
+    - { role: lazysql, tags: [lazysql, cli, github] }
+    - { role: superfile, tags: [superfile, cli, github] }
     # =============================================
     # Docker
     # =============================================
@@ -254,6 +256,7 @@
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
+    - { role: knock, tags: [knock, ebooks, utilities] }
     # =============================================
     # Finance
     # =============================================

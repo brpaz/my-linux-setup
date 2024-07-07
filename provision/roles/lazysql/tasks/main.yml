@@ -1,0 +1,22 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: jorgerojas26
+    repo: lazysql
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: '{{ setup_dir }}'
+    remote_src: true
+    src: https://github.com/jorgerojas26/lazysql/releases/download/{{ release.tag }}/lazysql_Linux_x86_64.tar.gz
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    dest: '{{ bin_dir }}/lazysql'
+    mode: a+x
+    src: '{{ setup_dir }}/lazysql'
+  become: true
+

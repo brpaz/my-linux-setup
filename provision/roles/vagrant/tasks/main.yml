@@ -1,0 +1,11 @@
+- name: Install Repo
+  ansible.builtin.yum_repository:
+    baseurl: https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+    description: Hashicorp Repository
+    name: hashicorp
+
+- name: Install
+  ansible.builtin.dnf:
+    name:
+      - vagrant
+  become: true
