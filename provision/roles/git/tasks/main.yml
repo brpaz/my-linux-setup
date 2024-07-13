@@ -21,6 +21,12 @@
     state: present
   become: true
 
+- name: GitHub CLI | Install plugins
+  ansible.builtin.shell:
+    cmd: gh extension install {{item}}
+  loop:
+    - "dlvhdr/gh-dash"
+
 - name: GitLab CLI | Install
   ansible.builtin.dnf:
     disable_gpg_check: true
