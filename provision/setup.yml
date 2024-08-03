@@ -115,6 +115,7 @@
     - { role: xnconvert, tags: [xnconvert, audio_vide] }
     - { role: video-trimmer, tags: [video-trimmer, audio_video] }
     - { role: komikku, tags: [komikku, audio_video] }
+    - { role: delfin, tags: [delfin, audio_video, jellyfin] }
 
     # =============================================
     # Graphics Design
@@ -257,6 +258,7 @@
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
     - { role: knock, tags: [knock, ebooks, utilities] }
+    - { role: decoder, tags: [decoder,utilities,flathub] }
     # =============================================
     # Finance
     # =============================================

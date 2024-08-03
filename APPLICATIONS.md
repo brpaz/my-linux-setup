@@ -134,6 +134,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 * [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
+* [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - Stream movies and TV shows from Jellyfin
 
 ---
 
@@ -182,6 +183,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter) - Monitor your CPU, Memory, Disk, Network and GPU usage
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you, generate desktop entries and app metadata, update apps in-place or keep multiple versions side-by-side.
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
+- [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
 
 --
 ### Games

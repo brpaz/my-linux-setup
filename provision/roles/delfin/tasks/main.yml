@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: cafe.avery.Delfin
+    state: present
