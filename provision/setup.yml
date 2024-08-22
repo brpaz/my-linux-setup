@@ -75,6 +75,9 @@
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
     - { role: nextcloud, tags: [nextcloud, internet] }
+    - { role: trayscale, tags: [trayscale, internet] }
+    - { role: wike, tags: [wike, internet, flatpak] }
+    - { role: network-displays, tags: [network-displays, internet,flatpak] }
     # =============================================
     # Productivity
     # =============================================
@@ -88,6 +91,7 @@
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
     - { role: anytype, tags: [anytype, productivity] }
+    - { role: xournalpp, tags: [xournalpp,productivity] }
 
     # =============================================
     # Multimedia (Audio & Video)
@@ -116,7 +120,8 @@
     - { role: video-trimmer, tags: [video-trimmer, audio_video] }
     - { role: komikku, tags: [komikku, audio_video] }
     - { role: delfin, tags: [delfin, audio_video, jellyfin] }
-
+    - { role: handbrake, tags: [handbrake, audio_video] }
+    - { role: pipeline, tags: [pipeline, audio_video] }
     # =============================================
     # Graphics Design
     # =============================================
@@ -125,7 +130,6 @@
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
-    - { role: upscayl, tags: [upscayl, graphics_design] }
     - { role: figma, tags: [figma, graphics_design] }
     - { role: feh, tags: [feh, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
@@ -170,10 +174,8 @@
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
-    - { role: minikube, tags: [minikube, dev, github, kubernetes] }
     - { role: mitmproxy, tags: [mitmproxy, github, dev, internet] }
     - { role: mkcert, tags: [mkcert, dev, github] }
-    - { role: mongodb, tags: [mongodb, dev] }
     - { role: nix, tags: [nix, dev] }
     - { role: postman, tags: [postman, dev] }
     - { role: pulumi, tags: [pulumi, dev, github] }
@@ -187,6 +189,10 @@
     - { role: warp-terminal, tags: [warp-terminal, dev] }
     - { role: turbolift, tags: [turbolift, dev] }
     - { role: stern, tags: [stern, dev, github, kubernetes] }
+    - { role: seabird, tags: [seabird, dev, flatpak, kubernetes ]}
+    - { role: filezilla, tags: [filezilla, dev] }
+    - { role: zeal, tags: [zeal, dev, flatpak] }
+    - { role: usebruno, tags: [bruno, dev, flatpak] }
     # =============================================
     # CLI Tools
     # =============================================
@@ -258,7 +264,12 @@
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
     - { role: knock, tags: [knock, ebooks, utilities] }
-    - { role: decoder, tags: [decoder,utilities,flathub] }
+    - { role: decoder, tags: [decoder,utilities,flatpak] }
+    - { role: keyrack, tags: [keyrack,utilities,flatpak] }
+    - { role: embellish, tags: [embellish,utilities,flatpak] }
+    - { role: calligraphy, tags: [calligraphy,utilities,flatpak] }
+    - { role: papers, tags: [calligraphy,utilities,flatpak] }
+
     # =============================================
     # Finance
     # =============================================

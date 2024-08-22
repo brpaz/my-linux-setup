@@ -1,4 +1,9 @@
-- name: Spotify | Install
+# - name: Spotify | Install
+#   community.general.flatpak:
+#     name: com.spotify.Client
+#     state: present
+
+- name: Install
   community.general.flatpak:
-    name: com.spotify.Client
+    name: com.github.KRTirtho.Spotube
     state: present

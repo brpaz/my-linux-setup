@@ -1,4 +1,4 @@
-- name: Upscaiyl
+- name: Install
   community.general.flatpak:
-    name: org.upscayl.Upscayl
+    name: dev.deedles.Trayscale
     state: present

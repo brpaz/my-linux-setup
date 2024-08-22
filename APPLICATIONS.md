@@ -42,19 +42,20 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Productivity
 
-* [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Obsidian](https://obsidian.md/) - Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files.
+* [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Iotas](https://flathub.org/apps/org.gnome.World.Iotas) - Iotas aims to provide distraction-free note taking via its mobile-first design.
-* [Espanso](https://espanso.org/) - A Privacy-first, Cross-platform Text Expander
 * [Errands](https://flathub.org/apps/io.github.mrvladus.List) - Todo application for those who prefer simplicity.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOM
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/app.drey.Dialect) - A translation app for GNOME.
 * [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
 * [Libreoffice](https://libreoffice.org) - Office suite.
-* [Evince](https://flathub.org/apps/details/org.gnome.Evince) - A document viewer for the GNOME desktop.
+* [Papers](https://flathub.org/apps/org.gnome.Papers) - A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.
 * [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
+* [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
+* [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
 
 ---
 
@@ -87,7 +88,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 - [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
 - [noscl](https://github.com/fiatjaf/noscl) - Command line client for Nostr.
-- [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - Nextcloud desktop synchronization client
+- [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
+- [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 
 #### Web Apps (powered by Web Catalog)
 
@@ -117,7 +119,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ---
 ### Sound & Video
 
-* [Spotify](https://www.spotify.com/) - Music for everyone.
+* [Spotube](https://flathub.org/apps/com.github.KRTirtho.Spotube) - Open source Spotify client.
 * [Pitivi](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
@@ -135,6 +137,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
 * [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - Stream movies and TV shows from Jellyfin
+* [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
+* [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
 
 ---
 
@@ -148,17 +152,18 @@ In this section will be listed all the Graphical Applications. A separate sectio
     * [DataGrip](https://www.jetbrains.com/datagrip/) -  The Cross-Platform IDE for Databases & SQL by JetBrains
 * [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
+* [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
 * [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
-* [Insomnia](https://insomnia.rest/) - The Collaborative API Development Platform
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
-* [Open Lens](https://k8slens.dev/) - The Kubernetes IDE.
-* [Kube Forwarder](https://www.electronjs.org/apps/kube-forwarder) - Easy to use Kubernetes port forwarding manager.
-* [RESP.app](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
+* [Redis Insight](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
 * [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
+- [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
+- [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
 
 ---
+
 ### Utilities
 
 * [Script Kit](https://www.scriptkit.com/) - Shortcut to Everything
@@ -184,6 +189,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you, generate desktop entries and app metadata, update apps in-place or keep multiple versions side-by-side.
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
+- [Key Rack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
+- [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
+- [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
 
 --
 ### Games

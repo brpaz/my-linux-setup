@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: com.github.hugolabe.Wike
+    state: present

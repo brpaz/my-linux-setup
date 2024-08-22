@@ -1,0 +1,5 @@
+- name: Install
+  ansible.builtin.dnf:
+    name: com.toolstack.Folio
+    state: present
+  become: true
