@@ -69,7 +69,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
-* [Signal Desktop](https://flathub.org/apps/details/org.signal.Signal) - Signal Desktop client.
 * [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
 * [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
@@ -163,7 +162,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Utilities
 
-* [Script Kit](https://www.scriptkit.com/) - Shortcut to Everything
+* [ScriptKit](https://www.scriptkit.com/) - Shortcut to Everything
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
 * [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
 * [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
@@ -189,7 +188,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
 - [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
-- [Valuta](https://flathub.org/apps/io.github.idevecore.Valuta) - Valuta is a simple and fast conversion tool, ideal for those who need to convert between different currencies repeatedly.
+
 
 --
 ### Games
@@ -227,16 +226,14 @@ I use ZSH shell with the following extras:
 * [antidote](https://github.com/mattmc3/antidote) - Antidote is a feature complete Zsh implementation of the legacy Antibody plugin manager.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
-* [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
 - [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
+* [eza](https://github.com/eza-community/eza) - A modern alternative to ls
 * [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
 * [enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
-* [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
@@ -257,7 +254,6 @@ I use ZSH shell with the following extras:
 ### Http Tools
 
 * [httpie](https://github.com/jakubroztocil/httpie) - Modern command line HTTP client – user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc
-* [Artillery](https://artillery.io/) - A modern load testing toolkit.
 * [k6](https://k6.io/) - Load testing for engineering teams.
 
 ### Package Managers

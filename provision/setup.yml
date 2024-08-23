@@ -269,12 +269,13 @@
     - { role: embellish, tags: [embellish,utilities,flatpak] }
     - { role: calligraphy, tags: [calligraphy,utilities,flatpak] }
     - { role: papers, tags: [calligraphy,utilities,flatpak] }
+    - { role: frog, tags: [frog,utilities,flatpak] }
 
     # =============================================
     # Finance
     # =============================================
-    - { role: denaro, tags: [denaro, finance] }
-    - { role: valuta, tags: [valuta, finance] }
+    - { role: denaro, tags: [denaro, finance, flatpak] }
+    - { role: valuta, tags: [valuta, finance, flatpak] }
     # =============================================
     # Games
     # =============================================
