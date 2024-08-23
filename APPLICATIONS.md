@@ -18,8 +18,6 @@
     - [Finance](#finance)
   - [Terminal Applications](#terminal-applications)
     - [Shell configuration](#shell-configuration)
-    - [File Navigation and Search](#file-navigation-and-search)
-    - [Text Mainuplation](#text-mainuplation)
     - [Multimedia](#multimedia)
     - [Http Tools](#http-tools)
     - [Package Managers](#package-managers)
@@ -78,7 +76,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
 * [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
-* [HTTP Toolkit](https://httptoolkit.com/) - Intercept, debug & mock HTTP with HTTP Toolkit
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
@@ -114,7 +111,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Yoga Image optimizer](https://flathub.org/apps/details/org.flozz.yoga-image-optimizer) - A graphical tool to convert and optimize JPEG, PNG and WebP images
 * [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
-* [Upscayl](https://flathub.org/apps/org.upscayl.Upscayl) - Free and Open Source AI Image Upscaler
+
 
 ---
 ### Sound & Video
@@ -186,12 +183,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter) - Monitor your CPU, Memory, Disk, Network and GPU usage
-- [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you, generate desktop entries and app metadata, update apps in-place or keep multiple versions side-by-side.
+- [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you.
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
-- [Key Rack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
+- [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
 - [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
+- [Valuta](https://flathub.org/apps/io.github.idevecore.Valuta) - Valuta is a simple and fast conversion tool, ideal for those who need to convert between different currencies repeatedly.
 
 --
 ### Games
@@ -231,10 +229,6 @@ I use ZSH shell with the following extras:
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) -  Additional completion definitions for Zsh.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) -  Fish-like autosuggestions for Zsh.
-* [Fig](https://fig.io/) Fig adds IDE-style autocomplete to your existing terminal.
-
-### File Navigation and Search
-
 - [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
@@ -242,9 +236,6 @@ I use ZSH shell with the following extras:
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
 * [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
 * [enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
-
-### Text Mainuplation
-
 * [vim](https://vim.org) with [vim-plug](https://github.com/junegunn/vim-plug) - Terminal based text editor.
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
