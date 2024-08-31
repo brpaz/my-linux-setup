@@ -193,6 +193,8 @@
     - { role: filezilla, tags: [filezilla, dev] }
     - { role: zeal, tags: [zeal, dev, flatpak] }
     - { role: usebruno, tags: [bruno, dev, flatpak] }
+    - { role: taskfile, tags: [taskfile, dev, github] }
+
     # =============================================
     # CLI Tools
     # =============================================
@@ -263,13 +265,15 @@
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
-    - { role: knock, tags: [knock, ebooks, utilities] }
+    - { role: knock, tags: [knock, ebooks, utilities, github] }
     - { role: decoder, tags: [decoder,utilities,flatpak] }
     - { role: keyrack, tags: [keyrack,utilities,flatpak] }
     - { role: embellish, tags: [embellish,utilities,flatpak] }
     - { role: calligraphy, tags: [calligraphy,utilities,flatpak] }
     - { role: papers, tags: [calligraphy,utilities,flatpak] }
     - { role: frog, tags: [frog,utilities,flatpak] }
+    - { role: asciidraw, tags: [asciidraw,utilities,flatpak] }
+    - { role: kepubify, tags: [kepubify,utilities,github] }
 
     # =============================================
     # Finance

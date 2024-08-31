@@ -188,9 +188,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
 - [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
+- [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
+- [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
 
+---
 
---
 ### Games
 
 * [Steam](https://store.steampowered.com)

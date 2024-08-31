@@ -1,0 +1,22 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    token: '{{ github_token }}'
+    user: go-task
+    repo: task
+  register: release
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: '{{ setup_dir }}'
+    mode: a+x
+    remote_src: true
+    src: https://github.com/go-task/task/releases/download/{{ release.tag }}/task_linux_amd64.tar.gz
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    mode: a+x
+    src: '{{ setup_dir }}/task'
+    dest: '{{ bin_dir }}/task'
+  become: true
