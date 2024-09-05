@@ -1,22 +1,29 @@
 {
-  description = "Laptop setup";
+  description = "Laptop configuratioansiblen";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
   };
 
-  outputs = { self, nixpkgs }: {
-    devShells.default = nixpkgs.lib.mkShell {
-      # List of packages to include in the devshell
-      packages = with nixpkgs; [
-        ansible          # Ansible package
-        go-task             # Taskfile task runner
-      ];
-
-      # Additional shell setup
-      shellHook = ''
-         ansible-galaxy install -r requirements.yml
-      '';
+  outputs = { self, nixpkgs, ... }:
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        inherit system;
+      };
+    in
+    {
+      devShells.${system}.default = pkgs.mkShell {
+        packages = with pkgs; [
+          python312Packages.ansible
+          python312Packages.github3-py
+          python312Packages.docker-py
+          go-task
+          ansible-lint
+        ];
+         shellHook = ''
+          ansible --version
+        '';
+      };
     };
-  };
 }

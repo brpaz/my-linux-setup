@@ -4,7 +4,7 @@ roles:
 
 collections:
   - name: community.general
-    version:  8.1.0
+    version: 9.3.0
 
   - name: community.docker
-    version: 3.4.8
+    version: 3.12.1
