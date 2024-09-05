@@ -1,0 +1,2 @@
+dnsdock_domain: "docker.internal"
+dnsdock_version: "v1.18.0-rc2-amd64"

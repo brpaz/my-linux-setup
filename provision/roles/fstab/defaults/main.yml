@@ -1,0 +1,1 @@
+fstab_nfs_default_opts: defaults,nofail,noauto,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.after=graphical.target,_netdev,rsize=65536,wsize=65536,noatime,hard,intr,vers=4

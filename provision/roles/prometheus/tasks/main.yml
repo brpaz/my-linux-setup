@@ -39,7 +39,7 @@
       traefik.docker.network: traefik-public
       traefik.enable: 'true'
       traefik.http.routers.prometheus.entrypoints: web
-      traefik.http.routers.prometheus.rule: Host(`prometheus.docker`)
+      traefik.http.routers.prometheus.rule: Host(`prometheus.internal`)
       traefik.http.services.prometheus.loadbalancer.server.port: '9090'
     name: prometheus
     networks:

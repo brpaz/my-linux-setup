@@ -20,7 +20,7 @@
     labels:
       traefik.enable: 'true'
       traefik.http.routers.portainer.entrypoints: websecure
-      traefik.http.routers.portainer.rule: Host(`portainer.docker`)
+      traefik.http.routers.portainer.rule: Host(`portainer.internal`)
       traefik.http.routers.portainer.tls: 'true'
       traefik.http.services.portainer.loadbalancer.server.port: '9000'
     name: portainer

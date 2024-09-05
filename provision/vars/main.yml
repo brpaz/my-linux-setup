@@ -3,3 +3,4 @@ setup_dir: /tmp/setup
 bin_dir: /usr/local/bin
 shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"
 applications_dir: "{{ ansible_env.HOME }}/.local/share/applications"
+nas_ip: "192.168.1.10"

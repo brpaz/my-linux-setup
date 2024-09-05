@@ -110,6 +110,7 @@
     - { role: vlc, tags: [vlc, audio_video] }
     - { role: mousai, tags: [mousai, audio_video] }
     - { role: spotify, tags: [spotify, audio_video] }
+    - { role: spotdl, tags: [spotdl, audio_video, spotify] }
     - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
     - { role: sound-recorder, tags: [sound-recorder, audio_video] }
     - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
@@ -235,7 +236,7 @@
     - { role: prometheus, tags: [prometheus, docker-apps] }
     - { role: promtail, tags: [promtail, docker-apps] }
     - { role: portainer, tags: [portainer, docker-apps] }
-    - { role: homepage, tags: [homepage, docker-app] }
+    - { role: dnsdock, tags: [dnsdock, docker-apps] }
 
     # =============================================
     # Utilities
@@ -294,3 +295,4 @@
     - { role: fonts, tags: [fonts, gnome-desktop] }
     - { role: nautilus, tags: [nautilus, gnome-desktop] }
     - { role: nvidia, tags: [gnome-desktop, drivers] }
+    - { role: fstab, tags: [fstab, gnome-desktop] }

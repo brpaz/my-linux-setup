@@ -22,7 +22,7 @@
     labels:
       traefik.enable: 'true'
       traefik.http.routers.sourcegraph.entrypoints: websecure
-      traefik.http.routers.sourcegraph.rule: Host(`sg.docker`)
+      traefik.http.routers.sourcegraph.rule: Host(`sg.internal`)
       traefik.http.routers.sourcegraph.tls: 'true'
       traefik.http.services.sourcegraph.loadbalancer.server.port: '7080'
     networks:

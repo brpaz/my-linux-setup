@@ -1,0 +1,24 @@
+- name: Get docker0 ip address
+  ansible.builtin.shell: |
+    ip -4 addr show docker0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+  register: docker0_ip
+  changed_when: false
+  check_mode: no
+
+- name: Print docker0 ip address
+  ansible.builtin.debug:
+    var: docker0_ip.stdout
+
+- name: Start container
+  community.docker.docker_container:
+    name: dnsdock
+    image: "aacebedo/dnsdock:{{ dnsdock_version }}"
+    command: "--domain={{ dnsdock_domain }}"
+    ports:
+     - "{{ docker0_ip.stdout }}:53:53/udp"
+    restart_policy: unless-stopped
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    env:
+      DOCKER_API_VERSION: '1.41'
+
