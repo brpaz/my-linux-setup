@@ -6,7 +6,7 @@
 
 Setup a new machine from scratch is always a very time consuming task. Last time I did it, it took an entire weekend to install everything.
 
-And there is a high change of forget some less used command line tool. Also as the Developer I install many tools directly from GitHub and so checking if they are updated is a very manual process, like going to GitHub, check latest release, download the binary and move it to the correct place.
+And there is a high chance I forgot someting, that I not use everyday. Also as the Developer I install many tools directly from GitHub and so checking if for new versions is a very manual process, like going to GitHub, check latest release, download the binary and move it to the correct place.
 
 What if most of this setup, can be automated? That´s where [Ansible](https://ansible.readthedocs.io/en/latest/) and this reposiory comes in.
 
