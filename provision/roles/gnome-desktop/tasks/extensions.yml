@@ -10,15 +10,16 @@
   ansible.builtin.shell: gext install {{ item }}
   with_items:
     - appindicatorsupport@rgcjonas.gmail.com
-    - affeine@patapon.info
+    - caffeine@patapon.info
     - clipboard-indicator@tudmotu.com
-    - CoverflowAltTab@palatis.blogspot.com
     - dash-to-panel@jderose9.github.com
     - gsconnect@andyholmes.github.io
     - lineup@hedgie.tech
     - netspeedsimplified@prateekmedia.extension
     - status-area-horizontal-spacing@mathematical.coffee.gmail.com
     - Vitals@CoreCoding.com
+    - org.gnome.shell.extensions.lilypad
+    - cloudflare-warp-toggle@khaled.is-a.dev
 
 - name: Clipboard Indicator extension | Configure settings
   community.general.dconf:
@@ -100,23 +101,14 @@
   with_items:
     - key: /org/gnome/shell/extensions/auto-move-windows/application-list
       value: '[''com.slack.Slack.desktop:5'', ''md.obsidian.Obsidian.desktop:3'', ''code.desktop:2'',
-        ''jetbrains-goland.desktop:3'', ''menulibre-cacher.desktop:4'', ''jetbrains-idea.desktop:2'',
+        ''jetbrains-goland.desktop:3'', ''jetbrains-idea.desktop:2'',
         ''jetbrains-webstorm.desktop:2'']'
-- name: Gnome Extension Settings | Just Perfection
-  community.general.dconf:
-    key: '{{ item.key }}'
-    state: present
-    value: '{{ item.value }}'
-  with_items:
-    - key: /org/gnome/shell/extensions/just-perfection/workspace-switcher-size
-      value: 8
 
 - name: PopShell | Clone repository
   ansible.builtin.git:
     repo: https://github.com/pop-os/shell
     dest: /tmp/pop-shell
-    version: master_mantic
-    force: yes
+    force: true
     depth: 1
 
 - name: PopShell | Install

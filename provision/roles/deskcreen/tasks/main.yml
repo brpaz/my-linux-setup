@@ -1,11 +1,11 @@
-- name: Deskscreen | Get latest release
+- name: Get latest release
   community.general.github_release:
     action: latest_release
     repo: deskreen
     token: '{{ github_token }}'
     user: pavlobu
   register: release
-- name: Deskscreen | Install
+- name: Install
   ansible.builtin.dnf:
     disable_gpg_check: true
     name: https://github.com/pavlobu/deskreen/releases/download/{{ release.tag }}/deskreen-{{

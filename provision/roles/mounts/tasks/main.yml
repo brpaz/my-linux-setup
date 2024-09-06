@@ -21,7 +21,7 @@
     src: "{{ nas_ip }}:/media"
     fstype: nfs
     state: mounted
-    opts: "{{ fstab_nfs_default_opts }}"
+    opts: "{{ mounts_nfs_default_opts }}"
   become: true
 
 - name: Mount NAS backups share
@@ -30,6 +30,6 @@
     src: "{{ nas_ip }}:/backups"
     fstype: nfs
     state: mounted
-    opts: "{{ fstab_nfs_default_opts }}"
+    opts: "{{ mounts_nfs_default_opts }}"
   become: true
 

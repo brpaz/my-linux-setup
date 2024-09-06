@@ -4,7 +4,6 @@
 
 - name: Enable Tailscale
   ansible.builtin.systemd:
-    enabled: true
     name: tailscaled
     state: started
   become: true

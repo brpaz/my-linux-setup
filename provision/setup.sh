@@ -1,5 +1,5 @@
-#!/usr/bin/env sh
-set -e
+#!/usr/bin/env bash
+set -eo pipefail
 
 trap "exit" INT
 
@@ -19,17 +19,16 @@ EOF
 
 echo -e "${Yellow}Updating base system and installing ansible and dependencies${NC}"
 
-# curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-# nix --version
+# Install Base Packages
+echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
+sudo dnf -y update && sudo dnf install-y git curl
 
-# curl -fsSL https://get.jetpack.io/devbox | bash
-# devbox --version
+echo -e "${Yellow}Installing Nix${NC}"
 
-sudo dnf -y update && sudo dnf install-y ansible make python-pip
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+nix --version
 
-## Installs Ansible
-sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
-task setup
+nix develop --command ansible-playbook -i inventory/hosts provision/setup.yml
 
 exec zsh
 

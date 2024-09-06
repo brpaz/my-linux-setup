@@ -1,5 +1,5 @@
 {
-  description = "Laptop configuratioansiblen";
+  description = "Laptop configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
@@ -15,11 +15,9 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
-          python312Packages.ansible
-          python312Packages.github3-py
-          python312Packages.docker-py
-          go-task
+          ansible
           ansible-lint
+          go-task
         ];
          shellHook = ''
           ansible --version

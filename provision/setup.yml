@@ -44,10 +44,10 @@
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
-    - { role: cloudflare-warp-client, tags: [cloudflare-warp, networking] }
+    - { role: cloudflare-warp, tags: [cloudflare-warp, networking] }
     - { role: speedtest, tags: [networking, speedtest] }
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
-    #- { role: tailscale, tags: [tailscale, networking] }
+    - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
 
@@ -159,7 +159,6 @@
     - { role: doctl, tags: [doctl, dev] }
     - { role: flux, tags: [flux, dev] }
     - { role: gcloud, tags: [gcloud, dev] }
-    - { role: github-desktop, tags: [github-desktop, dev] }
     - { role: gitkraken, tags: [gitkraken, dev] }
     - { role: goreleaser, tags: [goreleaser, dev, github] }
     - { role: hcloud, tags: [hcloud, github, dev] }
@@ -175,14 +174,12 @@
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
-    - { role: mitmproxy, tags: [mitmproxy, github, dev, internet] }
     - { role: mkcert, tags: [mkcert, dev, github] }
     - { role: nix, tags: [nix, dev] }
     - { role: postman, tags: [postman, dev] }
     - { role: pulumi, tags: [pulumi, dev, github] }
     - { role: redis, tags: [redis, dev] }
     - { role: spotlight-studio, tags: [spotlight-studio, dev] }
-    - { role: sqllitebrowser, tags: [sqllitebrowser, dev] }
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
@@ -257,7 +254,7 @@
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: stacer, tags: [stacer, utilities] }
-    - { role: youtubedl, tags: [youtubedl, multimedia, github, cli] }
+    - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: weather, tags: [weather, utilities] }
     - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
@@ -295,4 +292,4 @@
     - { role: fonts, tags: [fonts, gnome-desktop] }
     - { role: nautilus, tags: [nautilus, gnome-desktop] }
     - { role: nvidia, tags: [gnome-desktop, drivers] }
-    - { role: fstab, tags: [fstab, gnome-desktop] }
+    - { role: mounts, tags: [mounts, gnome-desktop] }
