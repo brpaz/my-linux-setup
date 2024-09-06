@@ -1,3 +1,10 @@
+- name: Configure yadm repository
+  ansible.builtin.yum_repository:
+    baseurl: https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_39/home:TheLocehiliosan:yadm.repo
+    description: YADM
+    gpgcheck: no
+    name: yadm
+
 - name: Installs yadm
   ansible.builtin.dnf:
     name: yadm
