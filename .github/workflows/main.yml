@@ -32,6 +32,11 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
+    - name: Install Ansible Galaxy roles
+      run: |
+        ansible-galaxy install -p .ansible_galaxy/roles -r requirements.yml
+        ansible-galaxy collection install -p .ansible_galaxy/collections -r requirements.yml
+
     - name: Run Ansible Lint
       run: ansible-lint playbooks/setup.yml roles
 
