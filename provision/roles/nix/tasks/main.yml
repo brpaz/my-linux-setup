@@ -5,7 +5,7 @@
   ignore_errors: true
 
 - name: Install nix
-  ansible.builtin.shell: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+  ansible.builtin.shell: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm
   when: nix_installed.rc != 0
   become: true
 

@@ -21,11 +21,12 @@ echo -e "${Yellow}Updating base system and installing ansible and dependencies${
 
 # Install Base Packages
 echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
-sudo dnf install-y git curl
+sudo dnf install -y git curl
 
 echo -e "${Yellow}Installing Nix${NC}"
 
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 nix --version
 
 nix develop --command ansible-playbook -i inventory/hosts provision/setup.yml
