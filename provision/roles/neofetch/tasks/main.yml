@@ -1,5 +1,5 @@
-- name: Neofetch
+- name: Install
   ansible.builtin.dnf:
-    name: neotfetch
+    name: fastfetch
     state: present
   become: true

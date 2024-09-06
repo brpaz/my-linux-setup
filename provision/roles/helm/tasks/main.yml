@@ -1,37 +1,30 @@
-- name: Helm | Get release
+- name: Get release
   community.general.github_release:
     action: latest_release
     repo: helm
     token: '{{ github_token }}'
     user: helm
   register: helm_release
-- name: Helm | Create tmp dir
+
+- name: Create tmp dir
   ansible.builtin.file:
     mode: '0755'
     path: '{{ setup_dir }}/helm'
     state: directory
-- name: Helm | Download Archive
+
+- name: Download Archive
   ansible.builtin.unarchive:
     dest: '{{ setup_dir }}/helm'
     remote_src: true
     src: https://get.helm.sh/helm-{{ helm_release.tag }}-linux-amd64.tar.gz
-- name: Helm | Install
+
+- name: Install
   ansible.builtin.copy:
     dest: '{{ bin_dir }}'
     mode: a+x
     src: '{{ setup_dir }}/helm/linux-amd64/helm'
   become: true
-- name: Helm | Install helm-secrets plugin
-  ansible.builtin.command: helm plugin install https://github.com/futuresimple/helm-secrets
-  args:
-    creates: '{{ ansible_env.HOME }}/.local/share/helm/plugins/helm-secrets'
-- name: Helm | Install autocomplete
+
+- name: Install autocomplete
   ansible.builtin.shell: helm completion zsh > {{ shell_completions_dir }}/_helm
-- name: Helm | Add stable repo
-  ansible.builtin.command: helm repo add stable https://kubernetes-charts.storage.googleapis.com
-- name: Helm | Add bitnani repo
-  ansible.builtin.command: helm repo add bitnami https://charts.bitnami.com/bitnami
-- name: Helm | Add fluxcd repo
-  ansible.builtin.command: helm repo add fluxcd https://charts.fluxcd.io
-- name: Helm | Update repos
-  ansible.builtin.command: helm repo update
+

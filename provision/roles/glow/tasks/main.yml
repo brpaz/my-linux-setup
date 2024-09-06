@@ -9,6 +9,8 @@
   ansible.builtin.dnf:
     disable_gpg_check: true
     name: https://github.com/charmbracelet/glow/releases/download/{{ release.tag }}/glow-{{
-      release.tag[1:] }}.x86_64.rpm
+      release.tag[1:] }}-1.x86_64.rpm
     state: present
   become: true
+
+

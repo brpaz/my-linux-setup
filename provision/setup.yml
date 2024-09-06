@@ -47,7 +47,7 @@
     - { role: cloudflare-warp, tags: [cloudflare-warp, networking] }
     - { role: speedtest, tags: [networking, speedtest] }
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
-    - { role: tailscale, tags: [tailscale, networking] }
+    #- { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
 
@@ -81,7 +81,6 @@
     # =============================================
     # Productivity
     # =============================================
-    - { role: text-editor, tags: [text-editor] }
     - { role: drawio, tags: [drawio, multimedia, productivity] }
     - { role: foliate, tags: [foliate, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
@@ -93,9 +92,9 @@
     - { role: anytype, tags: [anytype, productivity] }
     - { role: xournalpp, tags: [xournalpp,productivity] }
 
-    # =============================================
-    # Multimedia (Audio & Video)
-    # =============================================
+    # # =============================================
+    # # Multimedia (Audio & Video)
+    # # =============================================
     - { role: amberol, tags: [amberol, audio_video] }
     - { role: audacity, tags: [audacity, audio_video] }
     - { role: blanket, tags: [blanket, audio_video] }
@@ -114,7 +113,6 @@
     - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
     - { role: sound-recorder, tags: [sound-recorder, audio_video] }
     - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
-    - { role: peek, tags: [peek, graphics_design] }
     - { role: shortwave, tags: [shortwave, audio_video] }
     - { role: tubeconverter, tags: [tubeconverter, audio_video] }
     - { role: xnconvert, tags: [xnconvert, audio_vide] }
@@ -123,9 +121,9 @@
     - { role: delfin, tags: [delfin, audio_video, jellyfin] }
     - { role: handbrake, tags: [handbrake, audio_video] }
     - { role: pipeline, tags: [pipeline, audio_video] }
-    # =============================================
-    # Graphics Design
-    # =============================================
+    # # =============================================
+    # # Graphics Design
+    # # =============================================
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
     - { role: avvie, tags: [avvie, graphics_design] }
@@ -159,13 +157,10 @@
     - { role: doctl, tags: [doctl, dev] }
     - { role: flux, tags: [flux, dev] }
     - { role: gcloud, tags: [gcloud, dev] }
-    - { role: gitkraken, tags: [gitkraken, dev] }
     - { role: goreleaser, tags: [goreleaser, dev, github] }
     - { role: hcloud, tags: [hcloud, github, dev] }
     - { role: helm, tags: [helm, dev] }
-    - { role: hugo, tags: [hugo, github, dev] }
     - { role: jetbrains-toolbox, tags: [jetbrains-toolbox, dev] }
-    - { role: insomnia, tags: [insomnia, dev] }
     - { role: k9s, tags: [k9s, cli, dev, github, kubernetes] }
     - { role: kail, tags: [kail, cli, dev, github, kubernetes] }
     - { role: kind, tags: [kind, dev, kubernetes, github] }
@@ -179,13 +174,12 @@
     - { role: postman, tags: [postman, dev] }
     - { role: pulumi, tags: [pulumi, dev, github] }
     - { role: redis, tags: [redis, dev] }
-    - { role: spotlight-studio, tags: [spotlight-studio, dev] }
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
     - { role: devbox, tags: [devbox, dev] }
     - { role: warp-terminal, tags: [warp-terminal, dev] }
-    - { role: turbolift, tags: [turbolift, dev] }
+    - { role: turbolift, tags: [turbolift, dev, github] }
     - { role: stern, tags: [stern, dev, github, kubernetes] }
     - { role: seabird, tags: [seabird, dev, flatpak, kubernetes ]}
     - { role: filezilla, tags: [filezilla, dev] }
@@ -196,10 +190,7 @@
     # =============================================
     # CLI Tools
     # =============================================
-    - { role: asciinema, tags: [asciinema, cli, github] }
-    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
     - { role: bat, tags: [bat, github] }
-    - { role: copier, tags: [copier, utilities] }
     - { role: fzf, tags: [fzf, cli, github] }
     - { role: fd, tags: [fd, cli, github] }
     - { role: rigrep, tags: [rigrep, github, cli] }
@@ -213,60 +204,58 @@
     - { role: neofetch, tags: [neofetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
-    - { role: ranger, tags: [ranger, cli, github] }
     - { role: the-way, tags: [the-way, cli, dev, github] }
-    - { role: tldr, tags: [tldr, cli, github] }
-    - { role: shellcheck, tags: [shellcheck, cli] }
+    # - { role: tldr, tags: [tldr, cli, github] }
+    - { role: shellcheck, tags: [shellcheck, cli ]}
     - { role: lazygit, tags: [lazygit, dev, github] }
     - { role: lazysql, tags: [lazysql, cli, github] }
+    - { role: asciinema, tags: [asciinema, cli, github] }
+    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
     - { role: superfile, tags: [superfile, cli, github] }
+    - { role: copier, tags: [copier, utilities] }
     # =============================================
     # Docker
     # =============================================
-    - { role: docker, tags: [docker, dev] }
-    - { role: traefik, tags: [traefik, docker-apps] }
-    - { role: cadvisor, tags: [cadvisor, docker] }
-    - { role: grafana, tags: [grafana, docker-apps] }
-    - { role: loki, tags: [loki, docker-apps] }
-    - { role: node-exporter, tags: [node-exporter, docker-apps] }
-    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
-    - { role: prometheus, tags: [prometheus, docker-apps] }
-    - { role: promtail, tags: [promtail, docker-apps] }
-    - { role: portainer, tags: [portainer, docker-apps] }
-    - { role: dnsdock, tags: [dnsdock, docker-apps] }
+    # - { role: docker, tags: [docker, dev] }
+    # - { role: traefik, tags: [traefik, docker-apps] }
+    # - { role: cadvisor, tags: [cadvisor, docker] }
+    # - { role: grafana, tags: [grafana, docker-apps] }
+    # - { role: loki, tags: [loki, docker-apps] }
+    # - { role: node-exporter, tags: [node-exporter, docker-apps] }
+    # - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
+    # - { role: prometheus, tags: [prometheus, docker-apps] }
+    # - { role: promtail, tags: [promtail, docker-apps] }
+    # - { role: portainer, tags: [portainer, docker-apps] }
+    # - { role: dnsdock, tags: [dnsdock, docker-apps] }
 
     # =============================================
     # Utilities
     # =============================================
-    - { role: bleachbit, tags: [bleachbit, utilities] }
-    - { role: cryptomator, tags: [cryptomator, utilities] }
-    - { role: currency-converter, tags: [currency-converter, utilities] }
-    - { role: deskcreen, tags: [deskcreen, utilities] }
-    - { role: dialect, tags: [dialect, utilities] }
-    - { role: gnome-boxes, tags: [gnome-boxes, utilities] }
-    - { role: grsync, tags: [grsync, utilities] }
-    - { role: impression, tags: [impression, utilities] }
-    - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
-    - { role: meld, tags: [meld, dev] }
-    - { role: libvirt, tags: [libvirt, virtualization, utilities] }
-    - { role: restic, tags: [restic, utilities] }
-    - { role: scriptkit, tags: [scriptkit, utilities] }
-    - { role: solaar, tags: [solaar, utilities] }
-    - { role: smile, tags: [smile, utilities] }
-    - { role: stacer, tags: [stacer, utilities] }
-    - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
-    - { role: weather, tags: [weather, utilities] }
+    # - { role: bleachbit, tags: [bleachbit, utilities] }
+    # - { role: cryptomator, tags: [cryptomator, utilities] }
+    # - { role: currency-converter, tags: [currency-converter, utilities] }
+    # - { role: dialect, tags: [dialect, utilities] }
+    # - { role: grsync, tags: [grsync, utilities] }
+    # - { role: impression, tags: [impression, utilities] }
+    # - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
+    # - { role: meld, tags: [meld, dev] }
+    # - { role: libvirt, tags: [libvirt, virtualization, utilities] }
+    # - { role: restic, tags: [restic, utilities] }
+    # - { role: scriptkit, tags: [scriptkit, utilities] }
+    # - { role: solaar, tags: [solaar, utilities] }
+    # - { role: smile, tags: [smile, utilities] }
+    # - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
+    # - { role: weather, tags: [weather, utilities] }
     - { role: tilix, tags: [tilix, utilities] }
-    - { role: mission-center, tags: [mission-center, utilities] }
-    - { role: mainmenu, tags: [mainmenu, utilities] }
-    - { role: gearlevel, tags: [gearlevel, utilities] }
-    - { role: authenticator, tags: [authenticator, utilities] }
-    - { role: pika-backup, tags: [pika-backup, utilities] }
-    - { role: rclone, tags: [rclone, utilities] }
-    - { role: knock, tags: [knock, ebooks, utilities, github] }
+    # - { role: mission-center, tags: [mission-center, utilities] }
+    # - { role: mainmenu, tags: [mainmenu, utilities] }
+    # - { role: gearlevel, tags: [gearlevel, utilities] }
+    # - { role: authenticator, tags: [authenticator, utilities] }
+    # - { role: pika-backup, tags: [pika-backup, utilities] }
+    # - { role: rclone, tags: [rclone, utilities] }
+    #- { role: knock, tags: [knock, ebooks, utilities, github] }
     - { role: decoder, tags: [decoder,utilities,flatpak] }
     - { role: keyrack, tags: [keyrack,utilities,flatpak] }
-    - { role: embellish, tags: [embellish,utilities,flatpak] }
     - { role: calligraphy, tags: [calligraphy,utilities,flatpak] }
     - { role: papers, tags: [calligraphy,utilities,flatpak] }
     - { role: frog, tags: [frog,utilities,flatpak] }
@@ -291,5 +280,5 @@
     - { role: gnome-desktop, tags: [gnome-desktop] }
     - { role: fonts, tags: [fonts, gnome-desktop] }
     - { role: nautilus, tags: [nautilus, gnome-desktop] }
-    - { role: nvidia, tags: [gnome-desktop, drivers] }
-    - { role: mounts, tags: [mounts, gnome-desktop] }
+    #- { role: nvidia, tags: [gnome-desktop, drivers] }
+    #- { role: mounts, tags: [mounts, gnome-desktop] }

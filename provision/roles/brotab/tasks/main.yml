@@ -1,0 +1,9 @@
+- name: Install 
+  ansible.builtin.command: 
+    cmd: pipx install brotab 
+
+- name: Activate
+  ansible.builtin.command: 
+    cmd: bt activate
+
+  

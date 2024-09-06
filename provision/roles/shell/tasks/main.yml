@@ -12,3 +12,4 @@
 
 - name: ZSH | Set as default shell
   ansible.builtin.shell: chsh -s $(which zsh ) {{ user }}
+  become: true

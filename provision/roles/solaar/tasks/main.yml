@@ -1,4 +1,4 @@
-- name: Stacer
+- name: Install
   ansible.builtin.dnf:
     name: solaar
     state: present

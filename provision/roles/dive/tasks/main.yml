@@ -1,18 +1,20 @@
-- name: Dive | Get latest release version
+- name: Get latest release version
   community.general.github_release:
     action: latest_release
     repo: dive
     token: '{{ github_token }}'
     user: wagoodman
   register: dive_release
-- name: Dive | Download
+
+- name: Download
   ansible.builtin.unarchive:
     dest: '{{ setup_dir }}'
     remote_src: true
     src: https://github.com/wagoodman/dive/releases/download/{{ dive_release.tag }}/dive_{{
       dive_release.tag[1:] }}_linux_amd64.tar.gz
   become: true
-- name: Dive | install
+
+- name: Install
   ansible.builtin.copy:
     dest: '{{ bin_dir }}/dive'
     mode: a+x

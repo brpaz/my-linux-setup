@@ -3,6 +3,7 @@
     name: nodejs
     state: present
   become: true
+
 - name: FNM | Get latest release version
   community.general.github_release:
     action: latest_release
@@ -10,6 +11,7 @@
     token: '{{ github_token }}'
     user: Schniz
   register: fnm_release
+
 - name: FNM | Install
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
@@ -17,51 +19,17 @@
     remote_src: true
     src: https://github.com/Schniz/fnm/releases/download/{{ fnm_release.tag }}/fnm-linux.zip
   become: true
-- name: Node | Install Global NPM packages
+
+- name: Install Global NPM packages
   community.general.npm:
     global: true
     name: '{{ item }}'
   with_items:
-    - '@nestjs/cli'
-    - '@vue/cli'
-    - add-gitignore
-    - artillery
-    - caniuse-cmd
-    - carbon-now-cli
-    - cloudinary-cli
+    - pnpm
     - commitizen
     - conduct
-    - conventional-changelog-cli
-    - nuxi
-    - electron
-    - fast-cli
-    - firebase-tools
-    - fkill-cli
-    - fx
-    - gatsby-cli
-    - get-port-cli
-    - localtunnel
-    - hasha-cli
-    - mdless
-    - mermaid.cli
-    - mklicense
-    - nativefier
-    - nativescript
-    - netlify-cli
     - pageres-cli
     - readme-md-generator
-    - '@brpaz/sao-reloaded'
     - serve
     - svgo
-    - serverless
-    - sitespeed.io
-    - svg-term-cli
-    - tablemark-cli
-    - trash-cli
-    - typescript
-    - vuepress
-    - weallcontribute
-    - yarn
     - plop
-    - vercel
-    - '@cloudflare/wrangler'

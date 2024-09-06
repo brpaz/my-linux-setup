@@ -1,5 +1,4 @@
-- name: Bleachbit
-  ansible.builtin.dnf:
-    name: bleachbit
+- name: Bleachbi
+  community.general.flatpak:
+    name: org.bleachbit.BleachBit
     state: present
-  become: true

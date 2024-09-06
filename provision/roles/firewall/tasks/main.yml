@@ -7,9 +7,7 @@
 
 - name: Install ufw
   ansible.builtin.dnf:
-    name:
-      - ufw
-      - gufw
+    name: ufw
   become: true
 
 - name: Enable ufw

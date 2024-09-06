@@ -1,4 +1,0 @@
-- name: GitKraken
-  community.general.flatpak:
-    name: com.axosoft.GitKraken
-    state: present

@@ -1,11 +1,12 @@
-- name: Fluxctl | Get latest release
+- name: Get latest release
   community.general.github_release:
     action: latest_release
     repo: flux2
     token: '{{ github_token }}'
     user: fluxcd
   register: flux_release
-- name: Fkux Install
+
+- name: Install
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'
     remote_src: true

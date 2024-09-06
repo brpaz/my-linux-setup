@@ -6,8 +6,3 @@
   loop:
     - vim
     - neovim
-
-- name: Install LVIM
-  ansible.builtin.shell:
-    cmd: |
-      curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | bash

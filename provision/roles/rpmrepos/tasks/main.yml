@@ -1,13 +1,16 @@
+- name: Importing rpmfusion keys
+  ansible.builtin.rpm_key:
+      state: present
+      key: "{{ item }}"
+  loop:
+    - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+    - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+  become: true
+
 - name: Install the rpmfusion repo
   ansible.builtin.dnf:
     name:
       - http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm
       - http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_version }}.noarch.rpm
-    state: present
-  become: true
-
-- name: Install the rpmsphere repo
-  ansible.builtin.dnf:
-    name: https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-{{ ansible_distribution_version }}-1.noarch.rpm
     state: present
   become: true

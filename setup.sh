@@ -22,7 +22,7 @@ EOF
 echo -e "${Yellow}Updating base system and installing ansible and dependencies${NC}"
 
 # Install Base Packages
-echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
+echo -e "${Yellow}Updating system and Installing Base Packages${NC}"#
 sudo dnf install -y git curl python3
 
 python3 -m venv ansible_venv && source ansible_venv/bin/activate
@@ -30,7 +30,7 @@ python3 -m venv ansible_venv && source ansible_venv/bin/activate
 pip install -r "${PROVISION_DIR}/requirements.txt"
 
 ansible-galaxy install -r "${PROVISION_DIR}/requirements.yml"
-ansible-playbook -i "${PROVISION_DIR}/hosts" "${PROVISION_DIR}/setup.yml"
+ansible-playbook -i "${PROVISION_DIR}/hosts" "${PROVISION_DIR}/setup.yml" --ask-become-pass
 
 exec zsh
 

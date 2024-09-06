@@ -4,9 +4,9 @@
     mode: '0755'
     remote_src: true
     src: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+
 - name: AWS CLI | Run install command
-  ansible.builtin.command: ./aws/install --bin-dir {{ bin_dir }}--install-dir /usr/local/aws-cli
-    --update
+  ansible.builtin.command: ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
   args:
     chdir: /tmp
   become: true
