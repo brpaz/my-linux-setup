@@ -3,11 +3,17 @@ name: CI
 on:
   push:
     branches:
+      - master
       - main
   pull_request:
       branches:
+        - master
         - main
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   lint:
@@ -24,9 +30,7 @@ jobs:
         python-version: 3.x  # Use the desired Python version
 
     - name: Install Dependencies
-      run: |
-        python3 -m venv .venv && source .venv/bin/activate
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
     - name: Run Ansible Lint
       run: ansible-lint playbooks/setup.yml roles
