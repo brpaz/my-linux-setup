@@ -25,8 +25,6 @@ echo -e "${Yellow}Updating base system and installing ansible and dependencies${
 echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
 sudo dnf install -y git curl python3
 
-ansible --version
-
 python3 -m venv ansible_venv && source ansible_venv/bin/activate
 
 pip install -r "${PROVISION_DIR}/requirements.txt"
