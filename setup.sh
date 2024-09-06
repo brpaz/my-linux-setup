@@ -26,6 +26,8 @@ sudo dnf install -y git curl ansible python3 python3-pip
 
 ansible --version
 
+pip install -r requirements.txt
+
 ansible-galaxy install -r provision/requirements.yml
 ansible-playbook -i inventory/hosts provision/setup.yml
 
