@@ -9,9 +9,6 @@ on:
         - main
   workflow_dispatch:
 
-defaults:
-  run:
-    working-directory: ./provision
 jobs:
   lint:
     name: Lint
