@@ -21,7 +21,7 @@ echo -e "${Yellow}Updating base system and installing ansible and dependencies${
 
 # Install Base Packages
 echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
-sudo dnf -y update && sudo dnf install-y git curl
+sudo dnf install-y git curl
 
 echo -e "${Yellow}Installing Nix${NC}"
 

@@ -12,8 +12,7 @@ What if most of this setup, can be automated? That´s where [Ansible](https://an
 
 ## Pre-requisites
 
-* A machine running Fedora OS. This playbook was tested with Fedora 38
-* Git (`dnf install -y git`)
+* A machine running Fedora OS. This playbook was tested with Fedora 39, but it should work on other versions.
 * GitHub personal access token. You can get one [here](https://github.com/settings/tokens).
 
 ## What is included
@@ -24,11 +23,13 @@ What if most of this setup, can be automated? That´s where [Ansible](https://an
 
 ## Provision a new machine
 
-To provision a new machine open a terminal window and run the following commands:
+To provision a new machine, open a terminal window and run the following commands:
 
 ```sh
 export GITHUB_TOKEN=<my_github_token>
+sudo dnf update && dnf install -y git
 git clone https://github.com/brpaz/my-linux-setup
+cd my-linux-setup
 sudo chmod +x setup.sh
 ./setup.sh
 ```
@@ -82,27 +83,6 @@ I have the following:
 - TickTick
 - ProtonMail
 
-### Mount Home NAS
-
-In order to be able to backup the machine and access the files stored on the home NAS, we should mount their folders using NFS.
-
-For that, first make sure you have `nfs` installed on your machine.
-
-Then we can try to mount the volumes manually, using:
-
-```bash
-sudo mkdir /mnt/qnap-media
-sudo mkdir /mnt/qnap-backups
-sudo mount -t nfs 192.168.1.108:/Multimedia /mnt/qnap-media
-```
-
-If the test is successfull, we can now instruct the system to mount the volumes automatically on boot, by adding the following lines to the `/etc/fstab` file:
-
-
-```
-192.168.1.108:/Multimedia /mnt/qnap-media  nfs      defaults,nofail,nobootwait,noauto,x-systemd.automount    0       0
-192.168.1.108:/Backups /mnt/qnap-backups  nfs      defaults,nofail,nobootwait,noauto,x-systemd.automount    0       0
-```
 
 **Replace the IP Address and mount path accordingly.**
 
