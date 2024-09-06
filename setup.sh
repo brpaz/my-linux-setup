@@ -8,6 +8,7 @@ Red='\033[0;31m'          # Red
 Green='\033[0;32m'        # Green
 Yellow='\033[0;33m'       # Yellow
 
+PROVISION_DIR="provision"
 
 cat << "EOF"
    _________       __
@@ -22,14 +23,16 @@ echo -e "${Yellow}Updating base system and installing ansible and dependencies${
 
 # Install Base Packages
 echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
-sudo dnf install -y git curl ansible python3 python3-pip
+sudo dnf install -y git curl python3
 
 ansible --version
 
-pip install -r requirements.txt
+python3 -m venv ansible_venv && source ansible_venv/bin/activate
 
-ansible-galaxy install -r provision/requirements.yml
-ansible-playbook -i inventory/hosts provision/setup.yml
+pip install -r "${PROVISION_DIR}/requirements.txt"
+
+ansible-galaxy install -r "${PROVISION_DIR}/requirements.yml"
+ansible-playbook -i "${PROVISION_DIR}/inventory/hosts" "${PROVISION_DIR}/setup.yml"
 
 exec zsh
 
