@@ -36,6 +36,7 @@
     - { role: rpmrepos, tags: [core] }
     - { role: flatpak, tags: [core, flatpak] }
     - { role: shell, tags: [core, zsh, shell] }
+   
     # =============================================
     # Networking
     # =============================================
@@ -69,7 +70,6 @@
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: uget, tags: [uget, internet] }
-    - { role: webcatalog, tags: [webcatalog, internet] }
     - { role: warp, tags: [internet, warp] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
@@ -78,6 +78,7 @@
     - { role: trayscale, tags: [trayscale, internet] }
     - { role: wike, tags: [wike, internet, flatpak] }
     - { role: network-displays, tags: [network-displays, internet,flatpak] }
+    - { role: protonmail, tags: [protonmail, internet, flatpak ]}
     # =============================================
     # Productivity
     # =============================================
@@ -205,7 +206,7 @@
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
     - { role: the-way, tags: [the-way, cli, dev, github] }
-    # - { role: tldr, tags: [tldr, cli, github] }
+    - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli ]}
     - { role: lazygit, tags: [lazygit, dev, github] }
     - { role: lazysql, tags: [lazysql, cli, github] }
@@ -213,20 +214,10 @@
     - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
     - { role: superfile, tags: [superfile, cli, github] }
     - { role: copier, tags: [copier, utilities] }
-    # =============================================
-    # Docker
-    # =============================================
-    # - { role: docker, tags: [docker, dev] }
-    # - { role: traefik, tags: [traefik, docker-apps] }
-    # - { role: cadvisor, tags: [cadvisor, docker] }
-    # - { role: grafana, tags: [grafana, docker-apps] }
-    # - { role: loki, tags: [loki, docker-apps] }
-    # - { role: node-exporter, tags: [node-exporter, docker-apps] }
-    # - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
-    # - { role: prometheus, tags: [prometheus, docker-apps] }
-    # - { role: promtail, tags: [promtail, docker-apps] }
-    # - { role: portainer, tags: [portainer, docker-apps] }
-    # - { role: dnsdock, tags: [dnsdock, docker-apps] }
+    - { role: brotab, tags: [brotab, utilities ]}
+    - { role: docker, tags: [docker, dev] }
+    - { role: zoxide, tags: [zoxide ]}
+
 
     # =============================================
     # Utilities
@@ -241,7 +232,6 @@
     - { role: meld, tags: [meld, dev] }
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
     - { role: restic, tags: [restic, utilities] }
-    - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
@@ -282,3 +272,17 @@
     - { role: nautilus, tags: [nautilus, gnome-desktop] }
     - { role: nvidia, tags: [gnome-desktop, drivers] }
     - { role: mounts, tags: [mounts, gnome-desktop] }
+
+     # =============================================
+     # Docker apps
+     # =============================================
+    - { role: traefik, tags: [traefik, docker-apps] }
+    - { role: cadvisor, tags: [cadvisor,  docker-app] }
+    - { role: grafana, tags: [grafana, docker-apps] }
+    - { role: loki, tags: [loki, docker-apps] }
+    - { role: node-exporter, tags: [node-exporter, docker-apps] }
+    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
+    - { role: prometheus, tags: [prometheus, docker-apps] }
+    - { role: promtail, tags: [promtail, docker-apps] }
+    - { role: portainer, tags: [portainer, docker-apps] }
+    - { role: dnsdock, tags: [dnsdock, docker-apps] }

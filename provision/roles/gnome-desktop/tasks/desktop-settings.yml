@@ -18,6 +18,12 @@
   community.general.dconf:
     key: /org/gnome/desktop/wm/preferences/num-workspaces
     value: '4'
+
+- name: Settings | Namespaces only on primary monitor
+  community.general.dconf:
+    key: '/org/gnome/mutter/workspaces-only-on-primary'
+    value: 'true'
+
 - name: Settings | Window Titlebars
   community.general.dconf:
     key: /org/gnome/desktop/wm/preferences/button-layout

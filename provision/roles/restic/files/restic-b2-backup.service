@@ -1,7 +1,0 @@
-[Unit]
-Description=Restic backup service
-[Service]
-Type=oneshot
-ExecStart=restic backup --verbose --exclude-caches --one-file-system --tag systemd.timer -o b2.connections=10 $BACKUP_EXCLUDES $BACKUP_PATHS
-ExecStopPost=/usr/bin/curl -fsS --retry 3 https://hc-ping.com/8a3ef792-7276-473c-b566-73e625530e51
-EnvironmentFile=%h/.config/restic/restic-backup.conf

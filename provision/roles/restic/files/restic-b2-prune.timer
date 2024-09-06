@@ -1,7 +1,0 @@
-[Unit]
-Description=Prune data from Restic B2 Backup
-[Timer]
-OnCalendar=monthly
-Persistent=true
-[Install]
-WantedBy=timers.target

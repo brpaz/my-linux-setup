@@ -5,4 +5,5 @@
       - bandit
       - flake8
       - black
+      - setuptools
       - pipx

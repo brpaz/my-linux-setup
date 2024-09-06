@@ -69,24 +69,31 @@ systemctl --user enable restic-b2-backup.timer
 systemctl --user enable restic-b2-prune.timer
 ```
 
-### Install Web Apps
 
-I use [WebCatalog](https://webcatalog.io/webcatalog/) to allow easy installation of web applications.
+### Manual Apps install
 
-I have the following:
 
-- Feedly
+#### AppImages (with GearLever)
+
+- [WebCatalog Desktop for Mac, Windows, Linux - WebCatalog](https://webcatalog.io/en/desktop/)
+- [script-kit/app](https://github.com/script-kit/app/releases/tag/v2.3.0)
+- [Proxyman Proxyman - macOS, iOS, Windows and Linux](https://proxyman.io/download)
+
+
+#### WebCatalog
+
 - Instagram
-- Google Keep
-- Google Photos
-- Fast
-- TickTick
-- ProtonMail
+- Immich
+- ChatGPT
+- [Excalidraw | Hand-drawn look & feel • Collaborative • Secure](https://excalidraw.com/)
+- [Online FlowChart & Diagrams Editor - Mermaid Live Editor](https://mermaid.live/)
 
+#### Others
 
-**Replace the IP Address and mount path accordingly.**
+- [Download · Tailscale](https://tailscale.com/download/linux)
+- [pop-os/shell: Pop!_OS Shell](https://github.com/pop-os/shell)
 
-### Other tasks
+## Other tasks
 
 * [] Execute [Jetbrains toolbox](https://www.jetbrains.com/toolbox-app/) and install the IDEs. (DataGrip, Goland, IDEA, PHPStorm, WebStorm, CLion, Android Studio).
 * [] Open Chrome and Firefox browsers and login to start syncing all the extensions, bookmarks etc.

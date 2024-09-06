@@ -32,4 +32,6 @@
     - readme-md-generator
     - serve
     - svgo
+    - sharp-cli
     - plop
+    - typescript

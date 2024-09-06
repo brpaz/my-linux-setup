@@ -5,7 +5,7 @@
 
 - name: Prometheus | Ensure configuration directory exists
   ansible.builtin.file:
-    mode: '"0755"'
+    mode: "0755"
     path: /etc/prometheus
     state: directory
   become: true
@@ -34,7 +34,7 @@
         - -qO-
         - http://localhost:9090/-/healthy
       timeout: 2s
-    image: prom/prometheus:v2.46.0
+    image: prom/prometheus:v2.54.1
     labels:
       traefik.docker.network: traefik-public
       traefik.enable: 'true'

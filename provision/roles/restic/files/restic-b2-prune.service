@@ -1,7 +1,0 @@
-[Unit]
-Description=Restic backup service (data pruning)
-[Service]
-Type=oneshot
-ExecStartPre=restic forget --verbose --tag systemd.timer --group-by "paths,tags" --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS
-ExecStart=restic prune
-EnvironmentFile=%h/.config/restic/restic-backup.conf

@@ -1,9 +1,12 @@
-- name: Install 
-  ansible.builtin.command: 
-    cmd: pipx install brotab 
+- name: Install Dependencies
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+  loop:
+    - "python3-devel"
+  become: true
 
-- name: Activate
-  ansible.builtin.command: 
-    cmd: bt activate
+- name: Install
+  ansible.builtin.command: pipx install brotab 
 
-  
+- name: Browser setup
+  ansible.builtin.command:  bt install

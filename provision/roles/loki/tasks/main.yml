@@ -1,26 +1,26 @@
-- name: Loki | Ensure Configuration folder exists
+- name: Ensure Configuration folder exists
   ansible.builtin.file:
-    mode: '"0755"'
+    mode: "0755"
     path: /etc/loki
     state: directory
   become: true
 
-- name: Loki | Ensure Configuration file exists
+- name: Ensure Configuration file exists
   ansible.builtin.template:
     dest: /etc/loki/config.yaml
     mode: '0644'
     src: loki-local-config.yaml.j2
   become: true
 
-- name: Loki | Ensure data volume exists
+- name: Ensure data volume exists
   community.docker.docker_volume:
     name: loki-storage
     state: present
 
-- name: Loki | Start container
+- name: Start container
   community.docker.docker_container:
     name: loki
-    image: grafana/loki:2.8.4
+    image: grafana/loki:3.1.1
     state: started
     restart_policy: unless-stopped
     command: -config.file=/etc/loki/config.yaml

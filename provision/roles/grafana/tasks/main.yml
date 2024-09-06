@@ -1,14 +1,21 @@
-- name: Grafana | Create persistent volume
+- name: Create persistent volume
   community.docker.docker_volume:
     name: grafana-storage
     state: present
-- name: Grafana | Create Configuration folder
+
+- name: Ensure monitoring network exists
+  community.docker.docker_network:
+    name: monitoring
+    state: present
+
+- name: Create Configuration folder
   ansible.builtin.copy:
     dest: /etc/grafana
     mode: '0755'
     src: grafana/
   become: true
-- name: Grafana | Start Container
+  
+- name: Start Container
   community.docker.docker_container:
     name: grafana
     image: grafana/grafana:10.1.0

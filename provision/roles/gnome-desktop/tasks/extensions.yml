@@ -101,7 +101,7 @@
   with_items:
     - key: /org/gnome/shell/extensions/auto-move-windows/application-list
       value: '[''com.slack.Slack.desktop:5'', ''md.obsidian.Obsidian.desktop:3'', ''code.desktop:2'',
-        ''jetbrains-goland.desktop:3'', ''jetbrains-idea.desktop:2'',
+        ''jetbrains-goland.desktop:2'', ''jetbrains-idea.desktop:2'',
         ''jetbrains-webstorm.desktop:2'']'
 
 - name: PopShell | Clone repository
@@ -111,7 +111,7 @@
     force: true
     depth: 1
 
-- name: PopShell | Install
-  ansible.builtin.shell: make local-install
-  args:
-    chdir: /tmp/pop-shell
+#- name: PopShell | Install
+#  ansible.builtin.shell: make local-install
+#  args:
+#    chdir: /tmp/pop-shell
