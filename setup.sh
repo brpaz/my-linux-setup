@@ -8,6 +8,7 @@ Red='\033[0;31m'          # Red
 Green='\033[0;32m'        # Green
 Yellow='\033[0;33m'       # Yellow
 
+
 cat << "EOF"
    _________       __
  /   _____/ _____/  |_ __ ________
@@ -21,15 +22,12 @@ echo -e "${Yellow}Updating base system and installing ansible and dependencies${
 
 # Install Base Packages
 echo -e "${Yellow}Updating system and Installing Base Packages${NC}"
-sudo dnf install -y git curl
+sudo dnf install -y git curl ansible python3 python3-pip
 
-echo -e "${Yellow}Installing Nix${NC}"
+ansible --version
 
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm
-. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-nix --version
-
-nix develop --command ansible-playbook -i inventory/hosts provision/setup.yml
+ansible-galaxy install -r provision/requirements.yml
+ansible-playbook -i inventory/hosts provision/setup.yml
 
 exec zsh
 
