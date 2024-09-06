@@ -30,7 +30,7 @@ python3 -m venv ansible_venv && source ansible_venv/bin/activate
 pip install -r "${PROVISION_DIR}/requirements.txt"
 
 ansible-galaxy install -r "${PROVISION_DIR}/requirements.yml"
-ansible-playbook -i "${PROVISION_DIR}/inventory/hosts" "${PROVISION_DIR}/setup.yml"
+ansible-playbook -i "${PROVISION_DIR}/hosts" "${PROVISION_DIR}/setup.yml"
 
 exec zsh
 
