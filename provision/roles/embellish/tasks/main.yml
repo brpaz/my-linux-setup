@@ -1,4 +1,0 @@
-- name: Install
-  community.general.flatpak:
-    name:  io.github.getnf.embellish
-    state: present

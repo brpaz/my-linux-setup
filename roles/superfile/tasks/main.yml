@@ -1,0 +1,21 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: yorukot
+    repo: superfile
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: https://github.com/yorukot/superfile/releases/download/{{ release.tag }}/superfile-linux-{{ release.tag }}-amd64.tar.gz
+    dest: '{{ setup_dir }}'
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: '{{ setup_dir }}/dist/superfile-linux-{{ release.tag }}-amd64/spf'
+    dest: '{{ bin_dir }}/spf'
+    mode: a+x
+  become: true

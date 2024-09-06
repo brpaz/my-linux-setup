@@ -1,0 +1,29 @@
+- name: Configure Network Manager to use Dnsmasq
+  ansible.builtin.copy:
+    content: |
+      [main]
+      dns=dnsmasq
+    dest: /etc/NetworkManager/conf.d/00-use.dnsmasq.conf
+    mode: '0644'
+  become: true
+
+- name: Ensure config directory
+  ansible.builtin.file:
+    mode: '0644'
+    path: /etc/NetworkManager/dnsmasq.d
+    state: directory
+  become: true
+
+- name: Configure Dnsmasq servers
+  ansible.builtin.copy:
+    content: "server=/{{ item.domain }}/{{ item.server }}"
+    dest: "/etc/NetworkManager/dnsmasq.d/{{ item.name }}.conf"
+    mode: '0644'
+  loop: "{{ dnsmasq_servers }}"
+  become: true
+
+- name: Restart network manager to apply configurations
+  ansible.builtin.systemd:
+    name: NetworkManager
+    state: restarted
+  become: true

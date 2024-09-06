@@ -1,0 +1,9 @@
+- name: Install Tailscale
+  ansible.builtin.command: curl -fsSL https://tailscale.com/install.sh | sh
+  become: true
+
+- name: Enable Tailscale
+  ansible.builtin.systemd:
+    name: tailscaled
+    state: started
+  become: true

@@ -1,8 +1,0 @@
-- name: Bitwarden | Download
-  ansible.builtin.unarchive:
-    dest: '{{ bin_dir }}'
-    mode: a+x
-    remote_src: true
-    src: https://github.com/bitwarden/clients/releases/download/cli-{{ bitwarden_cli_version }}/bw-linux-{{ bitwarden_cli_version[1:] }}.zip
-  become: true
-

@@ -19,7 +19,7 @@ What if most of this setup, can be automated? That´s where [Ansible](https://an
 
 - Initial system update.
 - Install Dotfiles from my private dotfiles repository, using [Yet Another Dotfiles Manager - yadm](https://yadm.io/)
-- Install all my applications. Check [APPLICATIONS.md](APPLICATIONS.md) for a detailed list.
+- Install all my applications. Check [APPLICATIONS.md](docs/APPLICATIONS.md) for a detailed list.
 
 ## Provision a new machine
 
@@ -56,20 +56,6 @@ BACKUP_PATH=/path/to/home/backup scripts/restore_home.sh
 This will rsync the most important folders like `Documents`, `Video`, `Music`, `Code` etc from the specified backup location.
 
 
-### Enabling Restic backups
-
-The setup should have installed systemd units to backup the system using Restic, both to Backblaze B2 and to external NAS. These units are disabled by default, for better control, since we don´t want to start backup, until we have restored our files.
-
-To enable the restic backups, run the following commands on your terminal:
-
-```bash
-systemctl --user enable restic-nas-backup.timer
-systemctl --user enable restic-nas-prune.timer
-systemctl --user enable restic-b2-backup.timer
-systemctl --user enable restic-b2-prune.timer
-```
-
-
 ### Manual Apps install
 
 
@@ -97,7 +83,6 @@ systemctl --user enable restic-b2-prune.timer
 
 * [] Execute [Jetbrains toolbox](https://www.jetbrains.com/toolbox-app/) and install the IDEs. (DataGrip, Goland, IDEA, PHPStorm, WebStorm, CLion, Android Studio).
 * [] Open Chrome and Firefox browsers and login to start syncing all the extensions, bookmarks etc.
-* [] Enable Restic Backups
 * [] Login into applications (Gnome Accounts, Spotify, etc).
 * [] Configure Pika Backup
 

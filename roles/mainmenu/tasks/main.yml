@@ -1,0 +1,4 @@
+- name: Main Menu
+  community.general.flatpak:
+    name: page.codeberg.libre_menu_editor.LibreMenuEditor
+    state: present

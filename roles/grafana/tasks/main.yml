@@ -1,0 +1,52 @@
+- name: Create persistent volume
+  community.docker.docker_volume:
+    name: grafana-storage
+    state: present
+
+- name: Ensure monitoring network exists
+  community.docker.docker_network:
+    name: monitoring
+    state: present
+
+- name: Create Configuration folder
+  ansible.builtin.copy:
+    dest: /etc/grafana
+    mode: '0755'
+    src: grafana/
+  become: true
+
+- name: Start Container
+  community.docker.docker_container:
+    name: grafana
+    image: grafana/grafana:10.1.0
+    state: started
+    restart_policy: unless-stopped
+    env:
+      GF_AUTH_ANONYMOUS_ENABLED: 'true'
+      GF_AUTH_ANONYMOUS_ORG_NAME: Main Org.
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
+    healthcheck:
+      interval: 10s
+      retries: 3
+      start_period: 10s
+      test:
+        - CMD
+        - wget
+        - -q
+        - --spider
+        - http://localhost:3000/api/health
+      timeout: 2s
+    labels:
+      traefik.docker.network: traefik-public
+      traefik.enable: 'true'
+      traefik.http.routers.grafana.entrypoints: websecure
+      traefik.http.routers.grafana.rule: Host(`grafana.internal`)
+      traefik.http.routers.grafana.tls: 'true'
+      traefik.http.services.grafana.loadbalancer.server.port: '3000'
+    networks:
+      - name: monitoring
+      - name: traefik-public
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - /etc/grafana/provisioning:/etc/grafana/provisioning
+      - /etc/grafana/dashboards:/etc/grafana/dashboards

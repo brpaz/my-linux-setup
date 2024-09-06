@@ -1,0 +1,15 @@
+- name: Noscl | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: fiatjaf
+    repo: noscl
+    token: '{{ github_token }}'
+  register: release
+
+- name: Noscl | Download and Install
+  ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/noscl'
+    force: true
+    mode: a+x
+    url: https://github.com/fiatjaf/noscl/releases/download/{{ release.tag }}/noscl
+  become: true

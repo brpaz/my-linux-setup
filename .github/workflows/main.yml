@@ -26,11 +26,14 @@ jobs:
       with:
         python-version: 3.x  # Use the desired Python version
 
-    - name: Install Ansible
+    - name: Install Dependencies
       run: |
-        pip install ansible ansible-lint
-        ansible --version
+        python3 -m venv .venv && source .venv/bin/activate
+        pip install -r requirements.txt
 
-    - name: Lint playbooks and roles
-      run: ansible-lint setup.yml
+    - name: Run Ansible Lint
+      run: ansible-lint playbooks/setup.yml roles
+
+    - name: Check Syntax
+      run: ansible-playbook --syntax-check playbooks/*.yml
 

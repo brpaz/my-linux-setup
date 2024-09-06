@@ -1,0 +1,15 @@
+- name: Installs yadm
+  ansible.builtin.dnf:
+    name: "{{ dotfiles_yadm_url }}"
+    state: present
+    disable_gpg_check: true
+  become: true
+
+- name: Dotfiles | Clone Repository
+  ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
+
+- name: Dotfiles | Decrypt
+  ansible.builtin.command: yadm decrypt
+
+- name: Dotfiles | Update remote url to ssh
+  ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"

@@ -1,0 +1,14 @@
+- name: Get latest release version
+  community.general.github_release:
+    action: latest_release
+    user: spotDL
+    repo: spotify-downloader
+    token: '{{ github_token }}'
+  register: latest_release
+
+- name: SpotDL | Download
+  ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/spotdl'
+    mode: a+x
+    url: "https://github.com/spotDL/spotify-downloader/releases/download/{{ latest_release.tag }}/spotdl-{{ latest_release.tag[1:] }}-linux"
+  become: true

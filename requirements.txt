@@ -1,0 +1,5 @@
+ansible==10.3.*
+ansible-lint==24.7.*
+github3.py==4.0.*
+docker==7.1.*
+selinux==0.3.*

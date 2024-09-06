@@ -1,0 +1,43 @@
+- name: Install Repo
+  ansible.builtin.yum_repository:
+    baseurl: https://download.docker.com/linux/fedora/{{ ansible_distribution_version }}/$basearch/stable
+    description: Docker
+    gpgkey: https://download.docker.com/linux/fedora/gpg
+    name: docker
+    enabled: true
+  become: true
+
+- name: Install Packages
+  ansible.builtin.dnf:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-compose-plugin
+  become: true
+
+- name: Add current user to Docker group
+  ansible.builtin.user:
+    append: true
+    groups: docker
+    name: '{{ user }}'
+  become: true
+
+- name: Refresh groups
+  ansible.builtin.command: newgrp docker
+  become: true
+  become_user: "{{ user }}"
+
+- name: Copy Daemon.json
+  ansible.builtin.copy:
+    dest: /etc/docker/daemon.json
+    mode: '0644'
+    src: daemon.json
+  become: true
+
+- name: Start service
+  ansible.builtin.systemd:
+    enabled: true
+    name: docker
+    state: started
+  become: true

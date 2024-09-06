@@ -1,5 +1,0 @@
-- name: Install
-  community.general.flatpak:
-    name: me.proton.Mail
-    state: present
-

@@ -1,0 +1,288 @@
+- name: Ansible playbook to setup my local machine
+  hosts: all
+  vars_files:
+    - ../vars/main.yml
+
+  vars_prompt:
+    - name: github_token
+      prompt: "What is your GitHub Token?"
+      default: "{{ lookup('env','GITHUB_TOKEN') }}"
+      private: true
+
+  pre_tasks:
+    - name: Ensure setup directory exists
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: directory
+        mode: "0755"
+      tags: [always]
+
+  post_tasks:
+    - name: Remove setup directory
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: absent
+      become: true
+      tags: [always]
+
+  roles:
+    # ===========================================
+    # Infrastructure roles. Need to be run first
+    # ============================================
+    - { role: system, tags: [core] }
+    - { role: users, tags: [core, users] }
+    - { role: selinux, tags: [core, sellinux] }
+    - { role: dotfiles, tags: [core, dotfiles] }
+    - { role: rpmrepos, tags: [core] }
+    - { role: flatpak, tags: [core, flatpak] }
+    - { role: shell, tags: [core, zsh, shell] }
+
+    # =============================================
+    # Networking
+    # =============================================
+    - { role: network-tools, tags: [nettwork] }
+    - { role: dnsmasq, tags: [dnsmasq, networking] }
+    - { role: firewall, tags: [networking, firewall] }
+    - { role: iplookup, tags: [iplookup, networking] }
+    - { role: protonvpn, tags: [protonvpn, networking] }
+    - { role: cloudflare-warp, tags: [cloudflare-warp, networking] }
+    - { role: speedtest, tags: [networking, speedtest] }
+    - { role: speedtest-cli, tags: [speedtest-cli, networking] }
+    # - { role: tailscale, tags: [tailscale, networking] }
+    - { role: wireshark, tags: [wireshark, networking] }
+    - { role: whatip, tags: [whatip, networking] }
+
+    # =============================================
+    # Internet
+    # =============================================
+    - { role: google-chrome, tags: [google-chrome, internet] }
+    - { role: firefox, tags: [firefox, internet] }
+    - { role: brave-browser, tags: [brave-browser, internet] }
+    - { role: edge, tags: [edge, internet] }
+    - { role: discord, tags: [discord, communications, internet] }
+    - { role: zoom, tags: [zoom, communications, internet] }
+    - { role: signal, tags: [signal, communications, internet] }
+    - { role: slack, tags: [slack, communications, internet] }
+    - { role: telegram, tags: [telegram, communications, internet] }
+    - { role: zapzap, tags: [zapzap, communications, internet] }
+    - { role: dropbox, tags: [dropbox, internet] }
+    - { role: fragments, tags: [fragments, internet] }
+    - { role: connections, tags: [connections, internet] }
+    - { role: newsflash, tags: [newsflash, internet] }
+    - { role: uget, tags: [uget, internet] }
+    - { role: warp, tags: [internet, warp] }
+    - { role: ntfy, tags: [ntfy, internet] }
+    - { role: fractal, tags: [fractal, internet] }
+    - { role: noscl, tags: [noscl, internet] }
+    - { role: nextcloud, tags: [nextcloud, internet] }
+    - { role: trayscale, tags: [trayscale, internet] }
+    - { role: wike, tags: [wike, internet, flatpak] }
+    - { role: network-displays, tags: [network-displays, internet, flatpak] }
+    - { role: protonmail, tags: [protonmail, internet, flatpak]}
+    # =============================================
+    # Productivity
+    # =============================================
+    - { role: drawio, tags: [drawio, multimedia, productivity] }
+    - { role: foliate, tags: [foliate, utilities] }
+    - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
+    - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
+    - { role: errands, tags: [errands, productivity] }
+    - { role: iotas, tags: [iotas, productivity, flatpak] }
+    - { role: remembrance, tags: [remembrance, productivity] }
+    - { role: ticktick, tags: [ticktick, productivity, flatpak] }
+    - { role: anytype, tags: [anytype, productivity] }
+    - { role: xournalpp, tags: [xournalpp, productivity] }
+
+    # # =============================================
+    # # Multimedia (Audio & Video)
+    # # =============================================
+    - { role: amberol, tags: [amberol, audio_video] }
+    - { role: audacity, tags: [audacity, audio_video] }
+    - { role: blanket, tags: [blanket, audio_video] }
+    - { role: eartag, tags: [eartag, audio_video] }
+    - { role: ffaudioconverter, tags: [ffaudioconverter, audio_video] }
+    - { role: givemelyrics, tags: [givemelyrics, audio_video] }
+    - { role: gnome-music, tags: [gnome-music, audio_video] }
+    - { role: gnome-podcasts, tags: [gnome-podcasts, audio_video] }
+    - { role: kodi, tags: [kodi, audio_video] }
+    - { role: kooha, tags: [kooha, audio_video] }
+    - { role: obs, tags: [obs, audio_video, flatpak] }
+    - { role: vlc, tags: [vlc, audio_video] }
+    - { role: mousai, tags: [mousai, audio_video] }
+    - { role: spotify, tags: [spotify, audio_video] }
+    - { role: spotdl, tags: [spotdl, audio_video, spotify] }
+    - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
+    - { role: sound-recorder, tags: [sound-recorder, audio_video] }
+    - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
+    - { role: shortwave, tags: [shortwave, audio_video] }
+    - { role: tubeconverter, tags: [tubeconverter, audio_video] }
+    - { role: xnconvert, tags: [xnconvert, audio_vide] }
+    - { role: video-trimmer, tags: [video-trimmer, audio_video] }
+    - { role: komikku, tags: [komikku, audio_video] }
+    - { role: delfin, tags: [delfin, audio_video, jellyfin] }
+    - { role: handbrake, tags: [handbrake, audio_video] }
+    - { role: pipeline, tags: [pipeline, audio_video] }
+    # # =============================================
+    # # Graphics Design
+    # # =============================================
+    - { role: gimp, tags: [gimp, graphics_design] }
+    - { role: boxysvg, tags: [boxysvg, graphics_design] }
+    - { role: avvie, tags: [avvie, graphics_design] }
+    - { role: eyedropper, tags: [eyedropper, graphics_design] }
+    - { role: inkscape, tags: [inkscape, graphics_design] }
+    - { role: figma, tags: [figma, graphics_design] }
+    - { role: feh, tags: [feh, graphics_design] }
+    - { role: flameshot, tags: [flameshot, graphics_design] }
+    - { role: yoga, tags: [yoga, graphics_design] }
+
+    # =============================================
+    # Development
+    # =============================================
+    - { role: git, tags: [git, github, dev] }
+    - { role: java, tags: [java, dev, programming-language] }
+    - { role: node, tags: [node, dev, programming-language] }
+    - { role: python, tags: [python, dev, programming-language] }
+    - { role: php, tags: [php, dev, programming-language] }
+    - { role: golang, tags: [golang, dev, programming-language] }
+    - { role: rust, tags: [rust, dev, programming-language] }
+    - { role: ruby, tags: [ruby, dev, programming-language] }
+    - { role: vim, tags: [vim, dev] }
+    - { role: vscode, tags: [vscode, dev] }
+    - { role: dbeaver, tags: [dbeaver, dev] }
+    - { role: awscli, tags: [awscli, cli, dev] }
+    - { role: ctop, tags: [ctop, dev, docker] }
+    - { role: dbcli, tags: [dbcli, dev, cli] }
+    - { role: dev-toolbox, tags: [dev-toolbox, dev] }
+    - { role: direnv, tags: [direnv, dev] }
+    - { role: dive, tags: [dive, dev, cli] }
+    - { role: doctl, tags: [doctl, dev] }
+    - { role: flux, tags: [flux, dev] }
+    - { role: gcloud, tags: [gcloud, dev] }
+    - { role: goreleaser, tags: [goreleaser, dev, github] }
+    - { role: hcloud, tags: [hcloud, github, dev] }
+    - { role: helm, tags: [helm, dev] }
+    - { role: jetbrains-toolbox, tags: [jetbrains-toolbox, dev] }
+    - { role: k9s, tags: [k9s, cli, dev, github, kubernetes] }
+    - { role: kail, tags: [kail, cli, dev, github, kubernetes] }
+    - { role: kind, tags: [kind, dev, kubernetes, github] }
+    - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
+    - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
+    - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
+    - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
+    - { role: lefthook, tags: [lefthook, dev, github] }
+    - { role: mkcert, tags: [mkcert, dev, github] }
+    - { role: nix, tags: [nix, dev] }
+    - { role: postman, tags: [postman, dev] }
+    - { role: pulumi, tags: [pulumi, dev, github] }
+    - { role: redis, tags: [redis, dev] }
+    - { role: terraform, tags: [terraform, cli, dev, github] }
+    - { role: wildcard, tags: [wildcard, dev, flatpak] }
+    - { role: watchexec, tags: [watchexec, github, dev] }
+    - { role: devbox, tags: [devbox, dev] }
+    - { role: warp-terminal, tags: [warp-terminal, dev] }
+    - { role: turbolift, tags: [turbolift, dev, github] }
+    - { role: stern, tags: [stern, dev, github, kubernetes] }
+    - { role: seabird, tags: [seabird, dev, flatpak, kubernetes] }
+    - { role: filezilla, tags: [filezilla, dev] }
+    - { role: zeal, tags: [zeal, dev, flatpak] }
+    - { role: usebruno, tags: [bruno, dev, flatpak] }
+    - { role: taskfile, tags: [taskfile, dev, github] }
+
+    # =============================================
+    # CLI Tools
+    # =============================================
+    - { role: bat, tags: [bat, github] }
+    - { role: fzf, tags: [fzf, cli, github] }
+    - { role: fd, tags: [fd, cli, github] }
+    - { role: rigrep, tags: [rigrep, github, cli] }
+    - { role: sd, tags: [sd, cli, github] }
+    - { role: jq, tags: [jq, cli, dev, github] }
+    - { role: yq, tags: [yq, github, cli] }
+    - { role: glow, tags: [glow, github, cli] }
+    - { role: graphviz, tags: [graphviz, multimedia] }
+    - { role: gum, tags: [gum, github, cli] }
+    - { role: hostctl, tags: [hostctl, github, dev] }
+    - { role: neofetch, tags: [neofetch, cli] }
+    - { role: pandoc, tags: [pandoc, cli] }
+    - { role: sops, tags: [sops, dev, github, cli] }
+    - { role: the-way, tags: [the-way, cli, dev, github] }
+    - { role: tldr, tags: [tldr, cli, github] }
+    - { role: shellcheck, tags: [shellcheck, cli] }
+    - { role: lazygit, tags: [lazygit, dev, github] }
+    - { role: lazysql, tags: [lazysql, cli, github] }
+    - { role: asciinema, tags: [asciinema, cli, github] }
+    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
+    - { role: superfile, tags: [superfile, cli, github] }
+    - { role: copier, tags: [copier, utilities] }
+    - { role: brotab, tags: [brotab, utilities] }
+    - { role: docker, tags: [docker, dev] }
+    - { role: zoxide, tags: [zoxide]}
+
+
+    # =============================================
+    # Utilities
+    # =============================================
+    - { role: bleachbit, tags: [bleachbit, utilities] }
+    - { role: cryptomator, tags: [cryptomator, utilities] }
+    - { role: currency-converter, tags: [currency-converter, utilities] }
+    - { role: dialect, tags: [dialect, utilities] }
+    - { role: grsync, tags: [grsync, utilities] }
+    - { role: impression, tags: [impression, utilities] }
+    - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
+    - { role: meld, tags: [meld, dev] }
+    - { role: libvirt, tags: [libvirt, virtualization, utilities] }
+    - { role: restic, tags: [restic, utilities] }
+    - { role: solaar, tags: [solaar, utilities] }
+    - { role: smile, tags: [smile, utilities] }
+    - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
+    - { role: weather, tags: [weather, utilities] }
+    - { role: tilix, tags: [tilix, utilities] }
+    - { role: mission-center, tags: [mission-center, utilities] }
+    - { role: mainmenu, tags: [mainmenu, utilities] }
+    - { role: gearlevel, tags: [gearlevel, utilities] }
+    - { role: authenticator, tags: [authenticator, utilities] }
+    - { role: pika-backup, tags: [pika-backup, utilities] }
+    - { role: rclone, tags: [rclone, utilities] }
+    # - { role: knock, tags: [knock, ebooks, utilities, github] }
+    - { role: decoder, tags: [decoder, utilities, flatpak] }
+    - { role: keyrack, tags: [keyrack, utilities, flatpak] }
+    - { role: calligraphy, tags: [calligraphy, utilities, flatpak] }
+    - { role: papers, tags: [calligraphy, utilities, flatpak] }
+    - { role: frog, tags: [frog, utilities, flatpak] }
+    - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
+    - { role: kepubify, tags: [kepubify, utilities, github] }
+
+    # =============================================
+    # Finance
+    # =============================================
+    - { role: denaro, tags: [denaro, finance, flatpak] }
+    - { role: valuta, tags: [valuta, finance, flatpak] }
+    # =============================================
+    # Games
+    # =============================================
+    - { role: steam, tags: [steam, games] }
+    - { role: mines, tags: [mines, games] }
+    - { role: snes, tags: [snes, games] }
+
+    # =============================================
+    # Gnome Desktop
+    # =============================================
+    - { role: gnome-desktop, tags: [gnome-desktop] }
+    - { role: fonts, tags: [fonts, gnome-desktop] }
+    - { role: nautilus, tags: [nautilus, gnome-desktop] }
+    - { role: nvidia, tags: [gnome-desktop, drivers] }
+    - { role: mounts, tags: [mounts, gnome-desktop] }
+
+     # =============================================
+     # Docker apps
+     # =============================================
+    - { role: traefik, tags: [traefik, docker-apps] }
+    - { role: cadvisor, tags: [cadvisor, docker-app] }
+    - { role: grafana, tags: [grafana, docker-apps] }
+    - { role: loki, tags: [loki, docker-apps] }
+    - { role: node-exporter, tags: [node-exporter, docker-apps] }
+    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
+    - { role: prometheus, tags: [prometheus, docker-apps] }
+    - { role: promtail, tags: [promtail, docker-apps] }
+    - { role: portainer, tags: [portainer, docker-apps] }
+    - { role: dnsdock, tags: [dnsdock, docker-apps] }

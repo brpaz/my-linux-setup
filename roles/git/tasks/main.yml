@@ -1,0 +1,35 @@
+- name: Git | Install Git Tools
+  ansible.builtin.dnf:
+    name:
+      - git
+      - git-extras
+    state: present
+  become: true
+
+- name: GitHub CLI | Get Latest release
+  community.general.github_release:
+    action: latest_release
+    repo: cli
+    token: '{{ github_token }}'
+    user: cli
+  register: release
+
+- name: GitHub CLI | Install
+  ansible.builtin.dnf:
+    name: https://github.com/cli/cli/releases/download/{{ release.tag }}/gh_{{ release.tag[1:] }}_linux_amd64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true
+
+- name: GitHub CLI | Install plugins
+  ansible.builtin.command:
+    cmd: gh extension install {{ item }}
+  loop:
+    - "dlvhdr/gh-dash"
+
+- name: GitLab CLI | Install
+  ansible.builtin.dnf:
+    name: https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Linux_x86_64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

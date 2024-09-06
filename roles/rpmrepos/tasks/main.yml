@@ -1,0 +1,17 @@
+- name: Importing rpmfusion keys
+  ansible.builtin.rpm_key:
+      state: present
+      key: "{{ item }}"
+  loop:
+      - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+      - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+  become: true
+
+- name: Install the rpmfusion repo
+  ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: present
+  loop:
+      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  become: true

@@ -1,6 +1,0 @@
-- name: Java
-  ansible.builtin.dnf:
-    name: java-21-openjdk
-    state: present
-  become: true
-

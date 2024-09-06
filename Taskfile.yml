@@ -1,56 +1,44 @@
 version: '3'
 
-vars:
-  playbook_name: setup.yml
-
 tasks:
   default:
     cmds:
       - task -l
 
+  dev:
+    desc: Setup development environment
+    cmds:
+      - python3 -m venv .venv && source .venv/bin/activate
+      - pip install -r requirements.txt
+      - task galaxy
+
   galaxy:
     desc: Install Ansible Galaxy roles
     cmds:
-      - ansible-galaxy install -r requirements.yml
+      - ansible-galaxy install -p .ansible_galaxy/roles -r requirements.yml
+      - ansible-galaxy collection install -p .ansible_galaxy/collections -r requirements.yml
 
   lint:
-    desc: Runs Ansible Lint againt manifests
-    dir: provision
+    desc: Runs Ansible Lint agains manifests
     cmds:
-      - ansible-lint setup.yml roles
+      - ansible-lint playbooks/setup.yml roles
 
-  setup:
-    desc: Setup development environment
-    dir: provision
+  check:
+    desc: Check syntax of playbooks
     cmds:
-      - pip install -r requirements.txt
-      - ansible-galaxy install -r requirements.yml
-      - ansible-playbook setup.yml --ask-become-pass -i hosts
+      - ansible-playbook --syntax-check playbooks/*.yml
 
   run:
     desc: Run main playbook
-    dir: provision
     cmds:
-      - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts -v
+      - ansible-playbook --ask-become-pass
 
   run-tag:
     desc: Run main playbook with tag
-    dir: provision
     cmds:
-      - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts --tags {{ .TAG }}
+      - ansible-playbook --ask-become-pass --tags {{ .TAG }} playbooks/setup.yml
     preconditions:
       - test -n "${TAG}"
     vars:
       TAG: ${TAG}
 
-  update-system:
-    desc: Update system
-    dir: provision
-    cmds:
-      - ansible-playbook update-system.yml --ask-become-pass -i hosts -v
-
-  update-github:
-    desc: Update all software installed from GitHub
-    dir: provision
-    cmds:
-      - ansible-playbook {{ .playbook_name }} --ask-become-pass -i hosts -v --tags "github"
