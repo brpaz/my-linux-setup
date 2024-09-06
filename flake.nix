@@ -20,7 +20,7 @@
           go-task
         ];
          shellHook = ''
-          ansible --version
+          ansible-galaxy install -r provision/requirements.yml
         '';
       };
     };
