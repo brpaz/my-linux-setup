@@ -228,8 +228,8 @@ I use ZSH shell with the following extras:
 * [antidote](https://github.com/mattmc3/antidote) - Antidote is a feature complete Zsh implementation of the legacy Antibody plugin manager.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
+* [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
 - [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
-- [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
@@ -243,7 +243,6 @@ I use ZSH shell with the following extras:
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [lnav](http://lnav.org/) - The Log File Navigator
-* [hasha-cli](https://github.com/sindresorus/hasha-cli) - hashing made simple. Get the hash of text or stdin.
 
 ### Multimedia
 
@@ -271,8 +270,8 @@ I use ZSH shell with the following extras:
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
 * [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
 * [goreleaser/goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
-* [cezaraugusto/mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses\. Easily\.
-* [TejasQ/add-gitignore](https://github.com/TejasQ/add-gitignore) -  An interactive CLI tool that adds a .gitignore to your projects.
+* [cezaraugusto/mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses. Easily.
+* [conduct - npm](https://www.npmjs.com/package/conduct)
 
 ### Project Scaffolding
 

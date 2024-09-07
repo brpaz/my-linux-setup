@@ -5,7 +5,7 @@
   ignore_errors: true
 
 - name: Fail if cargo is not installed
-  fail:
+  ansible.builtin.fail:
     msg: "cargo is not installed"
   when: cargo_version.rc != 0
 
@@ -13,4 +13,4 @@
   ansible.builtin.command:
     cmd: cargo install netscanner
   args:
-    creates: /{{ ansible_env.HOME  }}/.cargo/bin/netscanner
+    creates: /{{ ansible_env.HOME }}/.cargo/bin/netscanner

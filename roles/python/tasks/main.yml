@@ -7,3 +7,5 @@
       - black
       - setuptools
       - pipx
+      - poetry
+    executable: "{{ python_pip_executable }}" # required to avoid installing on the venv used by ansible
