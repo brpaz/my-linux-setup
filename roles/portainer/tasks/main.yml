@@ -5,28 +5,29 @@
 
 - name: Docker | Start Portainer container
   community.docker.docker_container:
-    healthcheck:
-      interval: 10s
-      retries: 3
-      start_period: 10s
-      test:
-        - CMD
-        - wget
-        - -q
-        - --spider
-        - http://localhost:9000/api/system/status
-      timeout: 2s
-    image: portainer/portainer-ce:2.18.4-alpine
-    labels:
-      traefik.enable: 'true'
-      traefik.http.routers.portainer.entrypoints: websecure
-      traefik.http.routers.portainer.rule: Host(`portainer.internal`)
-      traefik.http.routers.portainer.tls: 'true'
-      traefik.http.services.portainer.loadbalancer.server.port: '9000'
     name: portainer
+    image: portainer/portainer-ce:{{ portainer_version }}
     networks:
       - name: traefik-public
     restart_policy: unless-stopped
     volumes:
       - portainer_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - -q
+        - --spider
+        - http://localhost:9000/api/system/status
+      interval: 10s
+      retries: 3
+      start_period: 10s
+      timeout: 2s
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.portainer.entrypoints: websecure
+      traefik.http.routers.portainer.rule: Host(`{{ portainer_domain }}`)
+      traefik.http.routers.portainer.tls: 'true'
+      traefik.http.services.portainer.loadbalancer.server.port: '{{ portainer_port }}'
+

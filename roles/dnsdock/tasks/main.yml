@@ -1,4 +1,4 @@
-- name: Get docker0 ip address
+- name: Get Docker Bridge ip address
   ansible.builtin.shell: |
     ip -4 addr show docker0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
   register: docker0_ip
@@ -8,6 +8,11 @@
 - name: Print docker0 ip address
   ansible.builtin.debug:
     var: docker0_ip.stdout
+
+- name: Get Docker client API version
+  ansible.builtin.command: |
+    docker version --format '\{\{ .Server.APIVersion \}\}'
+  register: docker_api_version
 
 - name: Start container
   community.docker.docker_container:
@@ -20,4 +25,5 @@
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     env:
-      DOCKER_API_VERSION: '1.41'
+      # This is required, otherwise the container will not start, if there are some differences
+      DOCKER_API_VERSION: "{{ docker_api_version.stdout }}"

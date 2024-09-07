@@ -33,22 +33,20 @@
 
 - name: Traefik | Start Traefik Container
   community.docker.docker_container:
+    name: traefik
     image: "traefik:{{ traefik_version }}"
     labels:
-      traefik.docker.network: traefik-public
       traefik.enable: 'true'
       traefik.http.routers.api.entrypoints: websecure
-      traefik.http.routers.api.rule: Host(`traefik.internal`)
+      traefik.http.routers.api.rule: Host(`{{ traefik_domain }}`)
       traefik.http.routers.api.service: api@internal
       traefik.http.routers.api.tls: 'true'
-    name: traefik
-    networks:
-      - name: traefik-public
     ports:
       - 127.0.0.1:80:80
       - 127.0.0.1:443:443
     restart_policy: unless-stopped
-    state: started
+    networks:
+      - name: traefik-public
     volumes:
       - /etc/traefik/traefik.yaml:/etc/traefik/traefik.yaml
       - /var/run/docker.sock:/var/run/docker.sock

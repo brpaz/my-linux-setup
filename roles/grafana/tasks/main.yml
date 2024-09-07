@@ -18,7 +18,7 @@
 - name: Start Container
   community.docker.docker_container:
     name: grafana
-    image: grafana/grafana:11.2.0
+    image: grafana/grafana:{{ grafana_version }}
     state: started
     restart_policy: unless-stopped
     env:
@@ -40,7 +40,7 @@
       traefik.docker.network: traefik-public
       traefik.enable: 'true'
       traefik.http.routers.grafana.entrypoints: websecure
-      traefik.http.routers.grafana.rule: Host(`grafana.internal`)
+      traefik.http.routers.grafana.rule: Host(`{{ grafana_domain }}`)
       traefik.http.routers.grafana.tls: 'true'
       traefik.http.services.grafana.loadbalancer.server.port: '3000'
     networks:

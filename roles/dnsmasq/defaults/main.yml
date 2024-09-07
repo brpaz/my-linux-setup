@@ -1,8 +1,4 @@
 dnsmasq_servers:
-  - name: docker.internal
-    domain: docker.internal
+  - name: docker
+    domain: docker
     server: "172.17.0.1"
-
-  - name: internal
-    domain: internal
-    server: "127.0.0.1"

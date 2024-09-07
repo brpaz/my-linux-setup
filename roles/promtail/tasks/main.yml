@@ -1,14 +1,14 @@
-- name: ENsure Promtail config exists
+- name: Ensure Promtail config exists
   ansible.builtin.file:
     path: /etc/promtail
     mode: "0755"
     state: directory
   become: true
 
-- name: Promtail | Create Promtail configuration file
+- name: Create Promtail configuration file
   ansible.builtin.template:
     dest: /etc/promtail/promtail-local-config.yml
-    mode: '0644'
+    mode: "0644"
     src: promtail-local-config.yml.j2
   become: true
 
@@ -17,12 +17,12 @@
     name: promtail
     image: grafana/promtail:3.0.1
     command: -config.file=/etc/promtail/config.yml
-    labels:
-      traefik.enable: 'false'
+    state: started
+    restart_policy: unless-stopped
     networks:
       - name: monitoring
-    restart_policy: unless-stopped
-    state: started
+    labels:
+      traefik.enable: "false"
     volumes:
       - /etc/promtail/promtail-local-config.yml:/etc/promtail/config.yml:ro
       - /var/log:/var/log:ro

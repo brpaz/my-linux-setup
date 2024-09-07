@@ -1,18 +1,18 @@
-- name: Node Exporter | Start Container
+- name: Start Container
   community.docker.docker_container:
+    name: node-exporter
+    image: prom/node-exporter:v1.8.2
     command:
       - --path.procfs=/host/proc
       - --path.rootfs=/rootfs
       - --path.sysfs=/host/sys
       - --collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)
-    image: prom/node-exporter:v1.6.1
+    state: started
+    restart_policy: unless-stopped
     labels:
       traefik.enable: 'false'
-    name: node-exporter
     networks:
       - name: monitoring
-    restart_policy: unless-stopped
-    state: started
     volumes:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro

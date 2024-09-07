@@ -1,9 +1,0 @@
-tls:
-  stores:
-    default:
-      defaultCertificate:
-        certFile: "/etc/certs/_wildcard.internal.pem"
-        keyFile: "/etc/certs/_wildcard.internal-key.pem"
-  certificates:
-    - certFile: "/etc/certs/_wildcard.docker.internal.docker.pem"
-      keyFile: "/etc/certs/_wildcard.docker.internal-key.pem"

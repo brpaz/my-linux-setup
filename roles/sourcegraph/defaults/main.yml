@@ -1,2 +1,4 @@
 sourcegraph_config_dir: "/etc/sourcegraph"
 sourcegraph_git_repos_dir: "{{ ansible_env.HOME }}/Code"
+sourcegraph_version: "5.2.7"
+sourcegraph_domain: "sourcegraph.localhost"

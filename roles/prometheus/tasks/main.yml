@@ -19,11 +19,21 @@
 
 - name: Prometheus | Start Container
   community.docker.docker_container:
+    name: prometheus
+    image: prom/prometheus:{{ prometheus_version }}
+    state: started
+    restart_policy: unless-stopped
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
       - --storage.tsdb.retention.time=7d
       - --storage.tsdb.retention.size=5GB
+    networks:
+      - name: monitoring
+      - name: traefik-public
+    volumes:
+      - prometheus-data:/prometheus
+      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     healthcheck:
       interval: 10s
       retries: 3
@@ -34,19 +44,10 @@
         - -qO-
         - http://localhost:9090/-/healthy
       timeout: 2s
-    image: prom/prometheus:v2.54.1
     labels:
       traefik.docker.network: traefik-public
       traefik.enable: 'true'
-      traefik.http.routers.prometheus.entrypoints: web
-      traefik.http.routers.prometheus.rule: Host(`prometheus.internal`)
+      traefik.http.routers.prometheus.entrypoints: websecure
+      traefik.http.routers.prometheus.rule: Host(`{{ prometheus_domain }}`)
+      traefik.http.routers.prometheus.tls: 'true'
       traefik.http.services.prometheus.loadbalancer.server.port: '9090'
-    name: prometheus
-    networks:
-      - name: monitoring
-      - name: traefik-public
-    restart_policy: unless-stopped
-    state: started
-    volumes:
-      - prometheus-data:/prometheus
-      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
