@@ -30,4 +30,3 @@
       traefik.http.routers.portainer.rule: Host(`{{ portainer_domain }}`)
       traefik.http.routers.portainer.tls: 'true'
       traefik.http.services.portainer.loadbalancer.server.port: '{{ portainer_port }}'
-

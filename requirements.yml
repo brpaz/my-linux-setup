@@ -1,7 +1,4 @@
 # Ansible Galaxy Roles
-roles:
-  - src: https://github.com/jaredhocutt/ansible-gnome-extensions
-
 collections:
   - name: community.general
     version: 9.3.0

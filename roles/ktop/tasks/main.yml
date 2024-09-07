@@ -1,0 +1,22 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: vladimirvivien
+    repo: ktop
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download and extract archive
+  ansible.builtin.unarchive:
+    src: https://github.com/vladimirvivien/ktop/releases/download/{{ release.tag }}/ktop_{{release.tag }}_linux_amd64.tar.gz
+    dest: '{{ setup_dir }}'
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/ktop"
+    dest: "{{ bin_dir }}/ktop"
+    mode: a+x
+  become: true
+

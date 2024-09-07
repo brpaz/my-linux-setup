@@ -17,7 +17,7 @@
     - [Fonts](#fonts)
     - [Finance](#finance)
   - [Terminal Applications](#terminal-applications)
-    - [Shell configuration](#shell-configuration)
+    - [Core shell stuff](#core-shell-stuff)
     - [Multimedia](#multimedia)
     - [Http Tools](#http-tools)
     - [Package Managers](#package-managers)
@@ -26,6 +26,7 @@
     - [Snippets and Cheat sheets](#snippets-and-cheat-sheets)
     - [Cloud clients](#cloud-clients)
     - [Docker Tools](#docker-tools)
+    - [Kubernetes](#kubernetes)
   - [Infrastucture As Code](#infrastucture-as-code)
     - [Security](#security)
     - [System Utils](#system-utils)
@@ -33,6 +34,7 @@
     - [Dev Envrionments](#dev-envrionments)
   - [Development Runtimes](#development-runtimes)
   - [Gnome Extensions](#gnome-extensions)
+  - [VS Code Extensions](#vs-code-extensions)
 
 ## Graphical Applications
 
@@ -150,7 +152,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
 * [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
-* [GitKraken](https://www.gitkraken.com/) - The legendary Git GUI client for Windows, Mac and Linux.
 * [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Redis Insight](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
 * [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
@@ -165,7 +166,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [ScriptKit](https://www.scriptkit.com/) - Shortcut to Everything
 * [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
 * [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
-* [Stacer](https://github.com/oguzhaninan/Stacer) - Linux System Optimizer and Monitoring
 * [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Downloader](https://flathub.org/apps/org.gustavoperedo.FontDownloader) - Install fonts from online sources
@@ -220,7 +220,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 A big part of my Development life is spent on the Terminal, so having a good set of tools there is essential.
 
-### Shell configuration
+### Core shell stuff
 
 I use ZSH shell with the following extras:
 
@@ -229,13 +229,13 @@ I use ZSH shell with the following extras:
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 - [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
+- [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
 * [eza](https://github.com/eza-community/eza) - A modern alternative to ls
 * [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
-* [enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
@@ -247,11 +247,10 @@ I use ZSH shell with the following extras:
 
 ### Multimedia
 
-* [jarun/imgp](https://github.com/jarun/imgp) - Multi-core batch image resizer and rotator
+* [sharp-cli](https://www.npmjs.com/package/sharp-cli) - CLI for sharp, a high performance Node.js image processing module.
 * [svg/svgo](https://github.com/svg/svgo) - Node.js tool for optimizing SVG files
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
 * [asciinema](https://asciinema.org/) - Record and share your terminal sessions, the right way
-* [svg-term-cli](https://github.com/marionebl/svg-term-cli) - Share terminal sessions via SVG and CSS
 
 ### Http Tools
 
@@ -281,7 +280,6 @@ I use ZSH shell with the following extras:
 * [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development.
 * [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 * [Symfony CLI](https://symfony.com/download) - Symfony command line tool
-* [serverless/serverless](https://github.com/serverless/serverless) - Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!
 * [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files
 
 ### Snippets and Cheat sheets
@@ -302,17 +300,21 @@ I use ZSH shell with the following extras:
 ### Docker Tools
 
 * [docker-compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
+* [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 * [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 * [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
-* [kail](https://github.com/boz/kail) - kubernetes log viewer.
-* [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
+
+### Kubernetes
+
 * [Kind](https://github.com/kubernetes-sigs/kind) - Kubernetes IN Docker - local clusters for testing Kubernete
 * [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
 * [k9s](https://github.com/derailed/k9s) - Kubernetes CLI To Manage Your Clusters In Style!
+* [ktop](https://github.com/vladimirvivien/ktop) - A top-like tool for your Kubernetes clusters
+* [kail](https://github.com/boz/kail) - kubernetes log viewer.
+* [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
-* [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
 
 ## Infrastucture As Code
 
@@ -373,11 +375,11 @@ I use ZSH shell with the following extras:
 * [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) - Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
-* [Emoji Selector](https://extensions.gnome.org/extension/1162/emoji-selector/) - This extension provides a parametrable popup menu displaying most emojis, clicking on an emoji copies it to the clipboard.
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
-* [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages. Features: 1) New message indicator is always shown if there are notifications.
+* [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages.
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources,
 speed and storage stats.
+* [Smile - complementary extension](https://extensions.gnome.org/extension/6096/smile-complementary-extension/) - Automatically paste Emojis from the Smile emoji picker
 * [Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows.
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
@@ -385,10 +387,13 @@ speed and storage stats.
 * [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
 * [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
 - [Switcher - GNOME Shell Extensions](https://extensions.gnome.org/extension/973/switcher/) - Switch windows or launch applications quickly by typing
-- [hedgieinsocks/gnome-extension-lineup](https://github.com/hedgieinsocks/gnome-extension-lineup) - Set width for right-side panel indicators
+- [Lineup](https://github.com/hedgieinsocks/gnome-extension-lineup) - Set width for right-side panel indicators
+- [Cloudflare Warp Toggle](https://extensions.gnome.org/extension/5982/cloudflare-warp-toggle/)
+- [Lilypad](https://extensions.gnome.org/extension/7266/lilypad/) - Organize, hide, and reorder top bar icons.
 
 ---
-* ## VS Code Extensions
+
+## VS Code Extensions
 
 * 42Crunch.vscode-openapi
 * 4ops.terraform

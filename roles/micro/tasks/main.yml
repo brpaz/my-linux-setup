@@ -1,0 +1,21 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: zyedidia
+    repo: micro
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download and extract archive
+  ansible.builtin.unarchive:
+    src: https://github.com/zyedidia/micro/releases/download/{{ release.tag }}/micro-{{ release.tag[1:] }}-linux64.tar.gz
+    dest: '{{ setup_dir }}'
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/micro-{{ release.tag[1:] }}/micro"
+    dest: "{{ bin_dir }}/micro"
+    mode: a+x
+  become: true

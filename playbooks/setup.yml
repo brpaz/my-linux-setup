@@ -165,6 +165,7 @@
     - { role: k9s, tags: [k9s, cli, dev, github, kubernetes] }
     - { role: kail, tags: [kail, cli, dev, github, kubernetes] }
     - { role: kind, tags: [kind, dev, kubernetes, github] }
+    - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
@@ -217,7 +218,9 @@
     - { role: brotab, tags: [brotab, utilities] }
     - { role: docker, tags: [docker, dev] }
     - { role: zoxide, tags: [zoxide]}
-
+    - { role: micro, tags: [micro, github]}
+    - { role: glances, tags: [glances, tui, utilities] }
+    - { role: netscanner, tags: [netscanner, tui, utilities] }
 
     # =============================================
     # Utilities

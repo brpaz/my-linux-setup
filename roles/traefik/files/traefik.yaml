@@ -134,4 +134,3 @@ providers:
     watch: true
 metrics:
   prometheus: {}
-

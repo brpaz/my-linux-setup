@@ -77,7 +77,7 @@
         - ''
     - key: /org/gnome/settings-daemon/plugins/media-keys/help
       value:
-        - '' 
+        - ''
     - key: /org/gnome/shell/keybindings/toggle-quick-settings
       value:
         - ''
@@ -88,16 +88,16 @@
       value:
         - ''
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-1
-      value: 
+      value:
         - <Shift><Control>1
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-2
-      value: 
-        - <Shift><Control>2    
+      value:
+        - <Shift><Control>2
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-3
-      value: 
+      value:
         - <Shift><Control>3
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-4
-      value: 
+      value:
         - <Shift><Control>4
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-right
       value:
@@ -111,10 +111,10 @@
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-left
       value:
         - <Shift><Super>Right
-    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left  
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Left
-    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left  
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Right
 

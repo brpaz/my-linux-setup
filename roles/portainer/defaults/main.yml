@@ -1,4 +1,3 @@
 portainer_version: "2.21.0-alpine"
 portainer_domain: "portainer.localhost"
 portainer_port: "9000"
-

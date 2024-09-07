@@ -1,0 +1,5 @@
+- name: Install
+  ansible.builtin.dnf:
+    name: glances
+    state: present
+  become: true

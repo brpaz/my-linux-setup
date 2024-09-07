@@ -4,10 +4,10 @@
     state: present
 
 - name: Gnome extensions | Install gnome-extensions-cli
-  ansible.builtin.shell: pipx install gnome-extensions-cli
+  ansible.builtin.shell: pipx install gnome-extensions-cli # noqa command-instead-of-shell
 
 - name: Gnome Extensions | Install
-  ansible.builtin.shell: gnome-extensions-cli install {{ item }}
+  ansible.builtin.shell: gnome-extensions-cli install {{ item }} # noqa command-instead-of-shell
   loop:
     - appindicatorsupport@rgcjonas.gmail.com
     - caffeine@patapon.info
@@ -20,6 +20,8 @@
     - Vitals@CoreCoding.com
     - org.gnome.shell.extensions.lilypad
     - cloudflare-warp-toggle@khaled.is-a.dev
+    - tailscale@joaophi.github.com
+    - mediacontrols@cliffniff.github.com
 
 - name: Clipboard Indicator extension settings
   community.general.dconf:
@@ -36,7 +38,7 @@
     - key: /org/gnome/shell/extensions/clipboard-indicator/enable-keybindings
       value: 'false'
     - key: /org/gnome/shell/extensions/clipboard-indicator/strip-text
-      value: 'true' 
+      value: 'true'
 
 - name: Set Dash to dock extension Settings
   community.general.dconf:
@@ -106,13 +108,13 @@
       value: '{''0'':[{''element'':''activitiesButton'',''visible'':true,''position'':''stackedTL''},{''element'':''showAppsButton'',''visible'':true,''position'':''stackedTL''},{''element'':''leftBox'',''visible'':true,''position'':''stackedTL''},{''element'':''taskbar'',''visible'':true,''position'':''stackedTL''},{''element'':''centerBox'',''visible'':true,''position'':''stackedBR''},{''element'':''rightBox'',''visible'':true,''position'':''stackedBR''},{''element'':''dateMenu'',''visible'':true,''position'':''stackedBR''},{''element'':''systemMenu'',''visible'':true,''position'':''stackedBR''},{''element'':''desktopButton'',''visible'':true,''position'':''stackedBR''}]}'
     - key: /org/gnome/shell/extensions/panel-sizes
       value: '{''0'':36}'
- 
+
 - name: GSConnect Extension settings
   community.general.dconf:
     key: "{{ item.key }}"
     state: present
     value: "{{ item.value }}"
-  loop: 
+  loop:
     - key: /org/gnome/shell/extensions/gsconnect/name
       value: 'Bruno Laptop'
 

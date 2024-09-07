@@ -3,7 +3,6 @@
     name:
       - python3-psutil
       - gnome-tweak-tool
-      - wmctrl
       - dconf-editor
     state: present
   become: true
@@ -12,8 +11,6 @@
   ansible.builtin.dnf:
     name:
       - rhytmbox
-      - cheese
-      - totem
     state: absent
   become: true
 
