@@ -52,3 +52,6 @@
 
 - name: Nautilus settings
   ansible.builtin.import_tasks: nautilus-settings.yml
+
+- name: Gnome Themes
+  ansible.builtin.import_tasks: theme.yml

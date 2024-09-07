@@ -14,7 +14,7 @@
         - wget
         - -q
         - --spider
-        - http://localhost:9000/api/status
+        - http://localhost:9000/api/system/status
       timeout: 2s
     image: portainer/portainer-ce:2.18.4-alpine
     labels:

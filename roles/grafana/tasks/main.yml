@@ -18,7 +18,7 @@
 - name: Start Container
   community.docker.docker_container:
     name: grafana
-    image: grafana/grafana:10.1.0
+    image: grafana/grafana:11.2.0
     state: started
     restart_policy: unless-stopped
     env:
@@ -27,15 +27,15 @@
       GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
     healthcheck:
       interval: 10s
-      retries: 3
-      start_period: 10s
+      retries: 5
+      start_period: 20s
       test:
         - CMD
         - wget
         - -q
         - --spider
         - http://localhost:3000/api/health
-      timeout: 2s
+      timeout: 5s
     labels:
       traefik.docker.network: traefik-public
       traefik.enable: 'true'

@@ -75,6 +75,49 @@
     - key: /org/gnome/desktop/wm/keybindings/switch-input-source
       value:
         - ''
+    - key: /org/gnome/settings-daemon/plugins/media-keys/help
+      value:
+        - '' 
+    - key: /org/gnome/shell/keybindings/toggle-quick-settings
+      value:
+        - ''
+    - key: /org/gnome/shell/keybindings/toggle-message-tray
+      value:
+        - ''
+    - key: /org/gnome/shell/keybindings/focus-active-notification
+      value:
+        - ''
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-1
+      value: 
+        - <Shift><Control>1
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-2
+      value: 
+        - <Shift><Control>2    
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-3
+      value: 
+        - <Shift><Control>3
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-4
+      value: 
+        - <Shift><Control>4
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-right
+      value:
+        - <Control><Super>Right
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-left
+      value:
+        - <Control><Super>Right
+    - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-right
+      value:
+        - <Shift><Super>Right
+    - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-left
+      value:
+        - <Shift><Super>Right
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left  
+      value:
+        - <Super>Left
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left  
+      value:
+        - <Super>Right
+
 - name: Set custom Gnome Shortcuts
   community.general.dconf:
     key: '{{ item.key }}'
@@ -99,6 +142,7 @@
       value: '''flatpak run it.mijorus.smile'''
     - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name
       value: '''Open Emoji Picker'''
+
 - name: Set Custom Shortcuts List
   community.general.dconf:
     key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings

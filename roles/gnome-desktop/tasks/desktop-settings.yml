@@ -28,6 +28,7 @@
   community.general.dconf:
     key: /org/gnome/desktop/wm/preferences/button-layout
     value: '''appmenu:minimize,minimize,maximize,close'''
+
 - name: Configure window manager settings
   community.general.dconf:
     key: '{{ item.key }}'
@@ -35,12 +36,12 @@
     value: '{{ item.value }}'
   with_items:
     - key: /org/gnome/desktop/wm/preferences/num-workspaces
-      value: 6
+      value: 4
     - key: /org/gnome/desktop/wm/preferences/audible-bell
       value: 'false'
+
 - name: Set Favorite apps
   community.general.dconf:
     key: /org/gnome/shell/favorite-apps
     value: '[''firefox.desktop'', ''org.gnome.Nautilus.desktop'', ''com.gexperts.Tilix.desktop'',
-      ''com.slack.Slack.desktop'',''code.desktop'', ''md.obsidian.Obsidian.desktop'',
-      ''webcatalog-ticktick.desktop'', ''jetbrains-goland.desktop'']'
+      ''code.desktop'', ''md.obsidian.Obsidian.desktop'']'
