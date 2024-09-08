@@ -164,7 +164,6 @@
     - { role: helm, tags: [helm, dev] }
     - { role: jetbrains-toolbox, tags: [jetbrains-toolbox, dev] }
     - { role: k9s, tags: [k9s, cli, dev, github, kubernetes] }
-    - { role: kail, tags: [kail, cli, dev, github, kubernetes] }
     - { role: kind, tags: [kind, dev, kubernetes, github] }
     - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }

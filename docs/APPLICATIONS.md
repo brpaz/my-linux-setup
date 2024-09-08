@@ -311,10 +311,10 @@ I use ZSH shell with the following extras:
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
 * [k9s](https://github.com/derailed/k9s) - Kubernetes CLI To Manage Your Clusters In Style!
 * [ktop](https://github.com/vladimirvivien/ktop) - A top-like tool for your Kubernetes clusters
-* [kail](https://github.com/boz/kail) - kubernetes log viewer.
 * [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
+* [stern/stern](https://github.com/stern/stern) -  Multi pod and container log tailing for Kubernetes
 
 ## Infrastucture As Code
 
