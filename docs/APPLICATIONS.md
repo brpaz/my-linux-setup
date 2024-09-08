@@ -56,6 +56,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
 * [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
 * [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
+- [heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 
 ---
 

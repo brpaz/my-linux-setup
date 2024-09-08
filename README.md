@@ -64,7 +64,7 @@ This will rsync the most important folders like `Documents`, `Video`, `Music`, `
 - [WebCatalog Desktop for Mac, Windows, Linux - WebCatalog](https://webcatalog.io/en/desktop/)
 - [script-kit/app](https://github.com/script-kit/app/releases/tag/v2.3.0)
 - [Proxyman Proxyman - macOS, iOS, Windows and Linux](https://proxyman.io/download)
-
+- [heyman/heynote: A dedicated scratchpad for developers](https://github.com/heyman/heynote/)
 
 #### WebCatalog
 

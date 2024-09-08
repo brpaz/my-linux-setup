@@ -139,6 +139,7 @@
     # Development
     # =============================================
     - { role: git, tags: [git, github, dev] }
+    - { role: docker, tags: [docker, dev] }
     - { role: java, tags: [java, dev, programming-language] }
     - { role: node, tags: [node, dev, programming-language] }
     - { role: python, tags: [python, dev, programming-language] }
@@ -192,6 +193,7 @@
     # =============================================
     # CLI Tools
     # =============================================
+    - { role: exa, tags: [exa, cli, github] }
     - { role: bat, tags: [bat, github] }
     - { role: fzf, tags: [fzf, cli, github] }
     - { role: fd, tags: [fd, cli, github] }
@@ -216,11 +218,11 @@
     - { role: superfile, tags: [superfile, cli, github] }
     - { role: copier, tags: [copier, utilities] }
     - { role: brotab, tags: [brotab, utilities] }
-    - { role: docker, tags: [docker, dev] }
     - { role: zoxide, tags: [zoxide]}
     - { role: micro, tags: [micro, github]}
     - { role: glances, tags: [glances, tui, utilities] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
+    - { role: tmux, tags: [tmux, tui, utilities] }
 
     # =============================================
     # Utilities

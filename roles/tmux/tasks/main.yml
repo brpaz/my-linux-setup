@@ -1,0 +1,17 @@
+- name: Install
+  ansible.builtin.dnf:
+    name: tmux
+    state: present
+  become: true
+
+- name: Check Ruby is installed
+  ansible.builtin.command:
+    cmd: ruby -v
+  register: ruby_version
+  failed_when: ruby_version.rc != 0
+
+- name: Install Tmuxinator
+  ansible.builtin.gem:
+    name: tmuxinator
+    state: present
+    user_install: true

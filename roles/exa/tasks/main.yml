@@ -1,0 +1,22 @@
+- name: Get Latest Release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: eza-community
+    repo: eza
+  register: eza_release
+
+- name: Download and Extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/eza-community/eza/releases/download/{{ eza_release.tag }}/eza_x86_64-unknown-linux-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: yes
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/eza"
+    dest: '{{ bin_dir }}/exa'
+    mode: a+x
+  become: true
+
+
+
