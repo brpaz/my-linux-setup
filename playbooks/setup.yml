@@ -188,6 +188,7 @@
     - { role: zeal, tags: [zeal, dev, flatpak] }
     - { role: usebruno, tags: [bruno, dev, flatpak] }
     - { role: taskfile, tags: [taskfile, dev, github] }
+    - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
 
     # =============================================
     # CLI Tools

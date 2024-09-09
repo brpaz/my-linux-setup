@@ -159,7 +159,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
 - [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
 - [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
-
+- [devcontainers/cli](https://github.com/devcontainers/cli) - A reference implementation for the specification that can create and configure a dev container from a devcontainer.json.
 ---
 
 ### Utilities
