@@ -256,7 +256,8 @@
     - { role: frog, tags: [frog, utilities, flatpak] }
     - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
     - { role: kepubify, tags: [kepubify, utilities, github] }
-
+    - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
+    - { role: waveterm, tags: [waveterm, utilities] }
     # =============================================
     # Finance
     # =============================================

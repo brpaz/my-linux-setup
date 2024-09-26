@@ -1,4 +1,4 @@
 *.log
 .venv
 .ansible_galaxy
-.tags
+tags

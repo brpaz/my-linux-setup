@@ -1,0 +1,14 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: wavetermdev
+    repo: waveterm
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download RPM Install
+  ansible.builtin.dnf:
+    name: https://github.com/wavetermdev/waveterm/releases/download/{{ release.tag }}/waveterm-linux-x86_64-{{ release.tag[1:] }}.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

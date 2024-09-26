@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: de.leopoldluley.Clapgrep
+    state: present

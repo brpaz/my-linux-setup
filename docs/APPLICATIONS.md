@@ -191,6 +191,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
+- [Clapgrep](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - One app to search through all your files, powered by ripgrep
+- [Wave Terminal](https://www.waveterm.dev/)
 
 ---
 
