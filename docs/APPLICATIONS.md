@@ -193,6 +193,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
 - [Clapgrep](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - One app to search through all your files, powered by ripgrep
 - [Wave Terminal](https://www.waveterm.dev/)
+- [Lock](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
 
 ---
 

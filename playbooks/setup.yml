@@ -258,6 +258,8 @@
     - { role: kepubify, tags: [kepubify, utilities, github] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: waveterm, tags: [waveterm, utilities] }
+    - { role: lock, tags: [lock,flatpak, utilities] }
+
     # =============================================
     # Finance
     # =============================================
