@@ -1,3 +1,2 @@
 dotfiles_repo_url: https://brpaz:{{ github_token }}@github.com/brpaz/dotfiles.git
 dotfiles_ssh_repo_url: git@github.com:brpaz/dotfiles.git
-dotfiles_yadm_url: https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_40/noarch/yadm-3.2.2-74.1.noarch.rpm

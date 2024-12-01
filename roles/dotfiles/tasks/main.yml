@@ -1,8 +1,13 @@
-- name: Installs yadm
+- name: Add YUM repository
+  ansible.builtin.yum_repository:
+    baseurl: https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_Rawhide/home:TheLocehiliosan:yadm.repo
+    description: YADM Repository
+    name: yadm
+
+- name: Install YADM
   ansible.builtin.dnf:
-    name: "{{ dotfiles_yadm_url }}"
+    name: yadm
     state: present
-    disable_gpg_check: true
   become: true
 
 - name: Dotfiles | Clone Repository

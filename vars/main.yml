@@ -1,4 +1,5 @@
 user: bruno
+hostname: bruno-laptop
 setup_dir: /tmp/setup
 bin_dir: /usr/local/bin
 shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"

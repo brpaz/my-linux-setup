@@ -30,6 +30,7 @@
     # Infrastructure roles. Need to be run first
     # ============================================
     - { role: system, tags: [core] }
+    - { role: hostname, tags: [core] }
     - { role: users, tags: [core, users] }
     - { role: selinux, tags: [core, sellinux] }
     - { role: dotfiles, tags: [core, dotfiles] }
@@ -41,14 +42,15 @@
     # Networking
     # =============================================
     - { role: network-tools, tags: [nettwork] }
-    - { role: dnsmasq, tags: [dnsmasq, networking] }
+    #- { role: dnsmasq, tags: [dnsmasq, networking] }
+    #- { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
     - { role: cloudflare-warp, tags: [cloudflare-warp, networking] }
     - { role: speedtest, tags: [networking, speedtest] }
     - { role: speedtest-cli, tags: [speedtest-cli, networking] }
-    # - { role: tailscale, tags: [tailscale, networking] }
+    - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
 
@@ -90,7 +92,6 @@
     - { role: iotas, tags: [iotas, productivity, flatpak] }
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
-    - { role: anytype, tags: [anytype, productivity] }
     - { role: xournalpp, tags: [xournalpp, productivity] }
 
     # # =============================================
@@ -189,6 +190,7 @@
     - { role: usebruno, tags: [bruno, dev, flatpak] }
     - { role: taskfile, tags: [taskfile, dev, github] }
     - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
+    - { role: zed, tags: [zed, dev, flatpak] }
 
     # =============================================
     # CLI Tools

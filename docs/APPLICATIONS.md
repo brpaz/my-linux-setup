@@ -400,7 +400,7 @@ speed and storage stats.
 
 * 42Crunch.vscode-openapi
 * 4ops.terraform
-* adamhartford.vscode-base64
+* adamhartford.v Sscode-base64
 * adrianwilczynski.alpine-js-intellisense
 * ahebrank.yaml2json
 * akamud.vscode-caniuse

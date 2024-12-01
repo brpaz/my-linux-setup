@@ -1,0 +1,29 @@
+- name: Ensure config directory
+  ansible.builtin.file:
+    mode: '0644'
+    path: /etc/systemd/resolved.conf.d
+    state: directory
+  become: true
+
+- name: Setup DNS servers on systemd-resolved
+  ansible.builtin.template:
+    src: resolved.conf.j2
+    dest: /etc/systemd/resolved.conf.d/00-default.conf
+    mode: '0644'
+  become: true
+
+- name: Setup resolver of .docker domain to localhosst
+  ansible.builtin.copy:
+  content: |
+    [Resolve]
+    DNS=127.0.0.1
+    Domains=.docker
+  dest: /etc/systemd/resolved.conf.d/01-docker.conf
+  mode: '0644'
+  become: true
+
+- name: Restart systemd-resolved to apply configurations
+  ansible.builtin.systemd:
+    name: systemd-resolved
+    state: restarted
+  become: true

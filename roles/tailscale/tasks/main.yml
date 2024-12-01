@@ -1,9 +1,13 @@
-- name: Install Tailscale
-  ansible.builtin.command: curl -fsSL https://tailscale.com/install.sh | sh
+- name: Add repository
+  ansible.builtin.yum_repository:
+    baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    description: Tailscale Repository
+    name: tailscale
   become: true
 
-- name: Enable Tailscale
-  ansible.builtin.systemd:
-    name: tailscaled
-    state: started
+- name: Install
+  ansible.builtin.dnf:
+    name: tailscale
+    state: present
   become: true
+
