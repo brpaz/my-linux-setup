@@ -1,0 +1,5 @@
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/script-kit/app/releases/download/v{{ scriptkit_version }}/Script-Kit-Linux-{{ scriptkit_version }}-x86_64.rpm
+    state: present
+  become: true

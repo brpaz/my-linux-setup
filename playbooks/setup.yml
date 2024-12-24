@@ -42,7 +42,6 @@
     # Networking
     # =============================================
     - { role: network-tools, tags: [nettwork] }
-    #- { role: dnsmasq, tags: [dnsmasq, networking] }
     #- { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
@@ -72,7 +71,6 @@
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: uget, tags: [uget, internet] }
-    - { role: warp, tags: [internet, warp] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
@@ -81,6 +79,8 @@
     - { role: wike, tags: [wike, internet, flatpak] }
     - { role: network-displays, tags: [network-displays, internet, flatpak] }
     - { role: protonmail, tags: [protonmail, internet, flatpak]}
+    - { role: carburetor, tags: [carbureactor, internet, flatpak]}
+
     # =============================================
     # Productivity
     # =============================================
@@ -126,12 +126,12 @@
     # # =============================================
     # # Graphics Design
     # # =============================================
+    - { role: pinta, tags: [pinta, graphics_design] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
-    - { role: figma, tags: [figma, graphics_design] }
     - { role: feh, tags: [feh, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
     - { role: yoga, tags: [yoga, graphics_design] }
@@ -181,7 +181,6 @@
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
     - { role: devbox, tags: [devbox, dev] }
-    - { role: warp-terminal, tags: [warp-terminal, dev] }
     - { role: turbolift, tags: [turbolift, dev, github] }
     - { role: stern, tags: [stern, dev, github, kubernetes] }
     - { role: seabird, tags: [seabird, dev, flatpak, kubernetes] }
@@ -225,6 +224,7 @@
     - { role: glances, tags: [glances, tui, utilities] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: tmux, tags: [tmux, tui, utilities] }
+    - { role: sgpt, tags: [sgpt, utilities, github] }
 
     # =============================================
     # Utilities
@@ -261,6 +261,7 @@
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: waveterm, tags: [waveterm, utilities] }
     - { role: lock, tags: [lock,flatpak, utilities] }
+    - { role: scriptkit, tags: [scriptkit, utilities] }
 
     # =============================================
     # Finance

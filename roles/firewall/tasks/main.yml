@@ -1,40 +1,34 @@
-- name: Disable firewalld
-  ansible.builtin.systemd:
-    enabled: false
-    name: firewalld
-    state: stopped
-  become: true
-
-- name: Install ufw
+- name: Install firewalld
   ansible.builtin.dnf:
-    name: ufw
+    name: firewalld
+    state: present
   become: true
 
-- name: Enable ufw
+- name: Enable and start firewalld
   ansible.builtin.systemd:
+    name: firewalld
     enabled: true
-    name: ufw
     state: started
   become: true
 
-- name: Allow TCP access for GSConnect
+- name: Enable masquerading in firewalld
+  ansible.builtin.firewalld:
+    zone: public
+    masquerade: true
+    permanent: true
+    state: enabled
   become: true
-  community.general.ufw:
-    port: 1714:1764
-    proto: tcp
-    rule: allow
-    src: 172.17.0.1/24
 
-- name: Allow UDP access for GSConnect
+- name: Allow access from Docker network to the host
+  ansible.builtin.firewalld:
+    zone: public
+    rule: "source address=172.17.0.1/24"
+    permanent: true
+    state: enabled
   become: true
-  community.general.ufw:
-    port: 1714:1764
-    proto: udp
-    rule: allow
-    src: 192.168.1.0/24
 
-- name: Allow access from Docker containers to the host
+- name: Install Firewalld config GUI
+  ansible.builtin.dnf:
+    name: firewall-config
+    state: present
   become: true
-  community.general.ufw:
-    rule: allow
-    src: 172.17.0.1/24

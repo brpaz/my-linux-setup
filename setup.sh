@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+# Trap Ctrl+C and exit
 trap "exit" INT
 
+# Color Variables
 NC='\033[0m'
 Red='\033[0;31m'          # Red
 Green='\033[0;32m'        # Green
 Yellow='\033[0;33m'       # Yellow
 
+# Display ASCII art
 cat << "EOF"
    _________       __
  /   _____/ _____/  |_ __ ________
@@ -17,22 +20,40 @@ cat << "EOF"
         \/     \/           |__|
 EOF
 
-echo -e "${Yellow}Updating base system and installing ansible and dependencies${NC}"
+echo -e "${Yellow}Updating the base system and installing required dependencies${NC}"
 
-# Install Base Packages
-echo -e "${Yellow}Updating system and Installing Base Packages${NC}"#
-sudo dnf install -y git curl python3
+# Update the system
+sudo dnf update -y
 
-echo -e "${Yellow}Installing setup dependencies${NC}"#
-python3 -m venv .venv && source .venv/bin/activate
+# Install Base Packages (ensure development tools and dependencies are included)
+echo -e "${Yellow}Installing essential packages: git, curl, python3, development tools${NC}"
+sudo dnf install -y git curl python3 dnf-plugins-core
+
+# Setup Virtual Environment if not already created
+if [ ! -d ".venv" ]; then
+  echo -e "${Yellow}Creating virtual environment .venv${NC}"
+  python3 -m venv .venv
+fi
+
+# Activate virtual environment
+source .venv/bin/activate
+
+# Install Python dependencies from requirements.txt
+echo -e "${Yellow}Installing Python dependencies from requirements.txt${NC}"
 pip install -r requirements.txt
 
+# Install Ansible roles and collections
+echo -e "${Yellow}Installing Ansible roles and collections from requirements.yml${NC}"
 ansible-galaxy install -r requirements.yml
 ansible-galaxy collection install -r requirements.yml
 
-echo -e "${Yellow}Running playbook${NC}"#
+# Run the Ansible playbook (assumes playbook/setup.yml exists)
+echo -e "${Yellow}Running Ansible playbook for setup${NC}"
 ansible-playbook playbooks/setup.yml --ask-become-pass
 
+# Set Zsh as the default shell for the session
+echo -e "${Yellow}Switching to Zsh${NC}"
 exec zsh
 
-echo -e "${Green}Setup complete${NC}"#
+# Final message
+echo -e "${Green}Setup complete!${NC}"

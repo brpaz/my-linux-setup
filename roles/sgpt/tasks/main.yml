@@ -1,0 +1,21 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: tbckr
+    repo: sgpt
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    dest: '{{ setup_dir }}'
+    remote_src: true
+    src: https://github.com/tbckr/sgpt/releases/download/{{ release.tag }}/sgpt_Linux_x86_64.tar.gz
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    dest: '{{ bin_dir }}/sgpt'
+    mode: a+x
+    src: '{{ setup_dir }}/sgpt'
+  become: true
