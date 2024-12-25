@@ -42,7 +42,7 @@
     # Networking
     # =============================================
     - { role: network-tools, tags: [nettwork] }
-    #- { role: dns, tags: [dns, networking] }
+    # - { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
@@ -56,7 +56,7 @@
     # =============================================
     # Internet
     # =============================================
-    - { role: google-chrome, tags: [google-chrome, internet] }
+    - { role: chromium, tags: [chromium, internet] }
     - { role: firefox, tags: [firefox, internet] }
     - { role: brave-browser, tags: [brave-browser, internet] }
     - { role: edge, tags: [edge, internet] }
@@ -67,7 +67,7 @@
     - { role: telegram, tags: [telegram, communications, internet] }
     - { role: zapzap, tags: [zapzap, communications, internet] }
     - { role: dropbox, tags: [dropbox, internet] }
-    - { role: fragments, tags: [fragments, internet] }
+    - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: uget, tags: [uget, internet] }
@@ -93,7 +93,8 @@
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
     - { role: xournalpp, tags: [xournalpp, productivity] }
-
+    - { role: alpaca, tags: [alpaca, productivity, flatpak] }
+    # - { role: ollama, tags: [ollama, productivity] }
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
@@ -102,7 +103,6 @@
     - { role: blanket, tags: [blanket, audio_video] }
     - { role: eartag, tags: [eartag, audio_video] }
     - { role: ffaudioconverter, tags: [ffaudioconverter, audio_video] }
-    - { role: givemelyrics, tags: [givemelyrics, audio_video] }
     - { role: gnome-music, tags: [gnome-music, audio_video] }
     - { role: gnome-podcasts, tags: [gnome-podcasts, audio_video] }
     - { role: kodi, tags: [kodi, audio_video] }
@@ -123,6 +123,7 @@
     - { role: delfin, tags: [delfin, audio_video, jellyfin] }
     - { role: handbrake, tags: [handbrake, audio_video] }
     - { role: pipeline, tags: [pipeline, audio_video] }
+    - { role: blender, tags: [blender, multimedia] }
     # # =============================================
     # # Graphics Design
     # # =============================================
@@ -174,13 +175,10 @@
     - { role: lefthook, tags: [lefthook, dev, github] }
     - { role: mkcert, tags: [mkcert, dev, github] }
     - { role: nix, tags: [nix, dev] }
-    - { role: postman, tags: [postman, dev] }
-    - { role: pulumi, tags: [pulumi, dev, github] }
     - { role: redis, tags: [redis, dev] }
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
     - { role: watchexec, tags: [watchexec, github, dev] }
-    - { role: devbox, tags: [devbox, dev] }
     - { role: turbolift, tags: [turbolift, dev, github] }
     - { role: stern, tags: [stern, dev, github, kubernetes] }
     - { role: seabird, tags: [seabird, dev, flatpak, kubernetes] }
@@ -260,7 +258,7 @@
     - { role: kepubify, tags: [kepubify, utilities, github] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: waveterm, tags: [waveterm, utilities] }
-    - { role: lock, tags: [lock,flatpak, utilities] }
+    - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
 
     # =============================================

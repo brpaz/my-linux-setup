@@ -12,7 +12,7 @@
   become: true
 
 - name: Enable masquerading in firewalld
-  ansible.builtin.firewalld:
+  ansible.posix.firewalld:
     zone: public
     masquerade: true
     permanent: true
@@ -20,9 +20,9 @@
   become: true
 
 - name: Allow access from Docker network to the host
-  ansible.builtin.firewalld:
+  ansible.posix.firewalld:
     zone: public
-    rule: "source address=172.17.0.1/24"
+    rich_rule: "source address=172.17.0.1/24"
     permanent: true
     state: enabled
   become: true

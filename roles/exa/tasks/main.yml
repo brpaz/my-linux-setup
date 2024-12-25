@@ -9,7 +9,7 @@
   ansible.builtin.unarchive:
     src: "https://github.com/eza-community/eza/releases/download/{{ eza_release.tag }}/eza_x86_64-unknown-linux-gnu.tar.gz"
     dest: "{{ setup_dir }}"
-    remote_src: yes
+    remote_src: true
 
 - name: Install
   ansible.builtin.copy:
@@ -17,6 +17,3 @@
     dest: '{{ bin_dir }}/exa'
     mode: a+x
   become: true
-
-
-

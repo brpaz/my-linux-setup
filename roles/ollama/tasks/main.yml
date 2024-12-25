@@ -1,0 +1,58 @@
+- name: Download Ollama tarball
+  ansible.builtin.get_url:
+    url: https://ollama.com/download/ollama-linux-amd64.tgz
+    dest: /tmp/ollama-linux-amd64.tgz
+
+- name: Extract Ollama tarball to /usr
+  ansible.builtin.unarchive:
+    src: /tmp/ollama-linux-amd64.tgz
+    dest: /usr/
+    remote_src: true
+
+- name: Create Ollama group and user
+  ansible.builtin.user:
+    name: ollama
+    system: true
+    shell: /bin/false
+    create_home: true
+    home: /usr/share/ollama
+    group: ollama
+    append: true
+
+- name: Add current user to the Ollama group
+  ansible.builtin.user:
+    name: "{{ ansible_user }}"
+    groups: ollama
+    append: true
+
+- name: Create systemd service file for Ollama
+  ansible.builtin.copy:
+    dest: /etc/systemd/system/ollama.service
+    content: |
+      [Unit]
+      Description=Ollama Service
+      After=network-online.target
+
+      [Service]
+      ExecStart=/usr/bin/ollama serve
+      User=ollama
+      Group=ollama
+      Restart=always
+      RestartSec=3
+      Environment="PATH=$PATH"
+
+      [Install]
+      WantedBy=default.target
+    mode: "0644"
+
+- name: Reload systemd daemon to apply the new service
+  ansible.builtin.systemd:
+    daemon_reload: true
+  become: true
+
+- name: Enable and start the Ollama service
+  ansible.builtin.systemd:
+    name: ollama
+    enabled: true
+    state: started
+  become: true

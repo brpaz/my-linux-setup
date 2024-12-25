@@ -1,0 +1,4 @@
+- name: Dev Toolbox
+  community.general.flatpak:
+    name: org.qbittorrent.qBittorrent
+    state: present

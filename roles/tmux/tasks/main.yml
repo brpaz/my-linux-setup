@@ -11,7 +11,7 @@
   failed_when: ruby_version.rc != 0
 
 - name: Install Tmuxinator
-  ansible.builtin.gem:
+  community.general.gem:
     name: tmuxinator
     state: present
     user_install: true
