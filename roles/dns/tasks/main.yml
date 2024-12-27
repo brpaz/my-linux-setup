@@ -1,8 +1,8 @@
 - name: Ensure config directory
   ansible.builtin.file:
-    mode: '0644'
     path: /etc/systemd/resolved.conf.d
     state: directory
+    mode: '0755'  # Corrected mode for directories
   become: true
 
 - name: Setup DNS servers on systemd-resolved
@@ -12,14 +12,24 @@
     mode: '0644'
   become: true
 
-- name: Setup resolver of .docker domain to localhosst
+- name: Setup resolver of .docker domain to localhost
   ansible.builtin.copy:
-  content: |
-    [Resolve]
-    DNS=127.0.0.1
-    Domains=.docker
-  dest: /etc/systemd/resolved.conf.d/01-docker.conf
-  mode: '0644'
+    content: |
+      [Resolve]
+      DNS=127.0.0.1
+      Domains=.docker
+    dest: /etc/systemd/resolved.conf.d/01-docker.conf
+    mode: '0644'
+  become: true
+
+- name: Setup resolver of .home.brunopaz.dev to Adguard Home
+  ansible.builtin.copy:
+    content: |
+      [Resolve]
+      DNS={{ dns_homelab_server }}
+      Domains={{ dns_homelab_domain }}
+    dest: /etc/systemd/resolved.conf.d/02-homelab.conf
+    mode: '0644'
   become: true
 
 - name: Restart systemd-resolved to apply configurations

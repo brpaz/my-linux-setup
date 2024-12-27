@@ -4,4 +4,5 @@ setup_dir: /tmp/setup
 bin_dir: /usr/local/bin
 shell_completions_dir: "{{ ansible_env.HOME }}/.zsh/completion"
 applications_dir: "{{ ansible_env.HOME }}/.local/share/applications"
+app_icons_path: "{{ ansible_env.HOME }}/.local/share/icons/hicolor/256x256/apps"
 nas_ip: "192.168.1.10"

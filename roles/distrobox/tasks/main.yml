@@ -1,0 +1,5 @@
+- name:
+  ansible.builtin.dnf:
+    name: distrobox
+    state: present
+  become: true

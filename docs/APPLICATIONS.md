@@ -7,7 +7,7 @@
   - [Graphical Applications](#graphical-applications)
     - [Productivity](#productivity)
     - [Internet](#internet)
-      - [Web Apps (powered by Web Catalog)](#web-apps-powered-by-web-catalog)
+      - [Web Apps](#web-apps)
     - [Graphics \& Design](#graphics--design)
     - [Sound \& Video](#sound--video)
     - [Development Tools](#development-tools)
@@ -63,7 +63,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Internet
 
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
-* [Google Chrome](https://www.google.com/chrome/) - My secondary browser.
+* [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge)
 * [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
@@ -72,11 +72,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Slack](https://slack.com) - Official Slack application.
 * [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
-* [Fragments](https://flathub.org/apps/details/de.haeckerfelix.Fragments) - A BitTorrent Client.
-* [WebCatalog](https://webcatalog.io/webcatalog/) - Turn Any Websites Into Real Desktop Apps.
+* [Web Apps](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Install websites as desktop apps, so that they appear in their own windows separate from any browsers installed.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
+* [qBittorrent](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Torrent Client
 * [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
@@ -90,14 +90,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 
-#### Web Apps (powered by Web Catalog)
+#### Web Apps
 
-- ProtonMail
 - ChatGPT
-- Google Photos
 - Excalidraw
 - Instagram
-- Google Meet
 - Mermaid Editor
 
 ---
@@ -105,6 +102,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Graphics & Design
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
+* [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
@@ -176,14 +174,12 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.
-- [Boxes](https://flathub.org/apps/details/org.gnome.Boxes)
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter) - Monitor your CPU, Memory, Disk, Network and GPU usage
-- [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) - An utility to manage AppImages with ease! Gear lever will organize and manage AppImage files for you.
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
 - [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.

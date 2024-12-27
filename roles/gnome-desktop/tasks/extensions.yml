@@ -13,7 +13,6 @@
     - caffeine@patapon.info
     - clipboard-indicator@tudmotu.com
     - dash-to-panel@jderose9.github.com
-    - gsconnect@andyholmes.github.io
     - lineup@hedgie.tech
     - netspeedsimplified@prateekmedia.extension
     - status-area-horizontal-spacing@mathematical.coffee.gmail.com
@@ -25,53 +24,53 @@
 
 - name: Clipboard Indicator extension settings
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/clipboard-indicator/history-size
       value: 25
     - key: /org/gnome/shell/extensions/clipboard-indicator/notify-on-copy
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/clipboard-indicator/clear-on-boot
-      value: 'true'
+      value: "true"
     - key: /org/gnome/shell/extensions/clipboard-indicator/enable-keybindings
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/clipboard-indicator/strip-text
-      value: 'true'
+      value: "true"
 
 - name: Set Dash to dock extension Settings
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/dash-to-dock/background-color
-      value: '''#ffffff'''
+      value: "'#ffffff'"
     - key: /org/gnome/shell/extensions/dash-to-dock/background-opacity
       value: 0.0
     - key: /org/gnome/shell/extensions/dash-to-dock/dock-position
-      value: '''BOTTOM'''
+      value: "'BOTTOM'"
     - key: /org/gnome/shell/extensions/dash-to-dock/multi-monitor
-      value: 'true'
+      value: "true"
     - key: /org/gnome/shell/extensions/dash-to-dock/extend-height
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/dash-to-dock/transparency-mode
-      value: '''FIXED'''
+      value: "'FIXED'"
     - key: /org/gnome/shell/extensions/dash-to-dock/hot-keys
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/dash-to-dock/show-trash
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/dash-to-dock/show-mounts
-      value: 'false'
+      value: "false"
 
 - name: Set Vitals extension Settings
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/vitals/hot-sensors
       value:
@@ -80,23 +79,23 @@
     - key: /org/gnome/shell/extensions/vitals/position-in-panel
       value: 1
     - key: /org/gnome/shell/extensions/vitals/show-battery
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/vitals/show-fan
-      value: 'false'
+      value: "false"
     - key: /org/gnome/shell/extensions/vitals/show-voltage
-      value: 'false'
-
+      value: "false"
 
 - name: Gnome Extensions | Configure Auto Move Windows
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/auto-move-windows/application-list
-      value: '[''com.slack.Slack.desktop:5'', ''md.obsidian.Obsidian.desktop:3'', ''code.desktop:2'',
-        ''jetbrains-goland.desktop:2'', ''jetbrains-idea.desktop:2'',
-        ''jetbrains-webstorm.desktop:2'']'
+      value:
+        "['com.slack.Slack.desktop:5', 'md.obsidian.Obsidian.desktop:3', 'code.desktop:2',
+        'jetbrains-goland.desktop:2', 'jetbrains-idea.desktop:2',
+        'jetbrains-webstorm.desktop:2']"
 
 - name: Dash to Panel Extension Settings
   community.general.dconf:
@@ -105,9 +104,9 @@
     value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/dash-to-panel/panel-element-positions
-      value: '{''0'':[{''element'':''activitiesButton'',''visible'':true,''position'':''stackedTL''},{''element'':''showAppsButton'',''visible'':true,''position'':''stackedTL''},{''element'':''leftBox'',''visible'':true,''position'':''stackedTL''},{''element'':''taskbar'',''visible'':true,''position'':''stackedTL''},{''element'':''centerBox'',''visible'':true,''position'':''stackedBR''},{''element'':''rightBox'',''visible'':true,''position'':''stackedBR''},{''element'':''dateMenu'',''visible'':true,''position'':''stackedBR''},{''element'':''systemMenu'',''visible'':true,''position'':''stackedBR''},{''element'':''desktopButton'',''visible'':true,''position'':''stackedBR''}]}'
+      value: "{'0':[{'element':'activitiesButton','visible':true,'position':'stackedTL'},{'element':'showAppsButton','visible':true,'position':'stackedTL'},{'element':'leftBox','visible':true,'position':'stackedTL'},{'element':'taskbar','visible':true,'position':'stackedTL'},{'element':'centerBox','visible':true,'position':'stackedBR'},{'element':'rightBox','visible':true,'position':'stackedBR'},{'element':'dateMenu','visible':true,'position':'stackedBR'},{'element':'systemMenu','visible':true,'position':'stackedBR'},{'element':'desktopButton','visible':true,'position':'stackedBR'}]}"
     - key: /org/gnome/shell/extensions/panel-sizes
-      value: '{''0'':36}'
+      value: "{'0':36}"
 
 - name: GSConnect Extension settings
   community.general.dconf:
@@ -116,9 +115,9 @@
     value: "{{ item.value }}"
   loop:
     - key: /org/gnome/shell/extensions/gsconnect/name
-      value: 'Bruno Laptop'
+      value: "Bruno Laptop"
 
 - name: Lillypad Extension settings
   community.general.dconf:
     key: /org/gnome/shell/extensions/lillypad/lillypad-order
-    value: '[''pop_shell'', ''StatusNotifierItem'', ''indicator_solaar'', ''appindicator_org_kde_StatusNotifierItem'', ''dropbox_client'']'
+    value: "['pop_shell', 'StatusNotifierItem', 'indicator_solaar', 'appindicator_org_kde_StatusNotifierItem', 'dropbox_client']"

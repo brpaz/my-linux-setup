@@ -1,0 +1,44 @@
+- name: Get Latest Release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: heyman
+    repo: heynote
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download App Image
+  get_url:
+    url: "https://github.com/heyman/heynote/releases/download/{{ release.tag }}/Heynote_{{ release.tag | regex_replace('^v', '') }}_x86_64.AppImage"
+    dest: "{{ setup_dir }}/Heynote.AppImage"
+
+- name: Install App Image
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/Heynote.AppImage"
+    dest: "/opt/Heynote.AppImage"
+    mode: "0755"
+
+- name: Ensure Icons folder exists
+  ansible.builtin.file:
+    path: "{{ heynote_icon_path | dirname }}"
+    state: directory
+    mode: "0755"
+
+- name: Copy Icon from files
+  ansible.builtin.copy:
+    src: "icon.png"
+    dest: "{{ heynote_icon_path }}"
+    mode: "0644"
+
+- name: Create Desktop Entry
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=Heynote
+      Comment=A modern note-taking app for Windows/Linux
+      Exec=/opt/Heynote.AppImage
+      Icon={{ heynote_icon_path }}
+      Type=Application
+      Categories=Office;
+      Terminal=false
+    dest: "{{ applications_dir }}/Heynote.desktop"
+    mode: "0644"

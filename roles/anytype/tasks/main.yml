@@ -1,6 +1,0 @@
-- name: Anytype | Install
-  ansible.builtin.dnf:
-    name: https://anytype-release.fra1.cdn.digitaloceanspaces.com/anytype-0.36.0.x86_64.rpm
-    state: present
-    disable_gpg_check: true
-  become: true

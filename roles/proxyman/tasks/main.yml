@@ -1,0 +1,44 @@
+- name: Get Latest Release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: ProxymanApp
+    repo: proxyman-windows-linux
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download App Image
+  get_url:
+    url: "https://github.com/ProxymanApp/proxyman-windows-linux/releases/download/{{ release.tag }}/Proxyman-{{ release.tag | regex_replace('^v', '') }}.AppImage"
+    dest: "{{ setup_dir }}/Proxyman.AppImage"
+
+- name: Install App Image
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/Proxyman.AppImage"
+    dest: "/opt/Proxyman.AppImage"
+    mode: "0755"
+
+- name: Ensure Icons folder exists
+  ansible.builtin.file:
+    path: "{{ proxyman_icon_path | dirname }}"
+    state: directory
+    mode: "0755"
+
+- name: Copy Icon from files
+  ansible.builtin.copy:
+    src: "proxyman.png"
+    dest: "{{ proxyman_icon_path }}"
+    mode: "0644"
+
+- name: Create Desktop Entry
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=Proxyman
+      Comment=A modern web debugging proxy for Windows/Linux
+      Exec=/opt/Proxyman.AppImage
+      Icon={{ proxyman_icon_path }}
+      Type=Application
+      Categories=Network;
+      Terminal=false
+    dest: "{{ applications_dir }}/Proxyman.desktop"
+    mode: "0644"
