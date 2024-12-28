@@ -263,6 +263,7 @@
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
+    - { role: systemmctl-tui, tags: [systemmctl-tui, utilities] }
 
     # =============================================
     # Finance
@@ -299,4 +300,4 @@
     - { role: promtail, tags: [promtail, docker-apps] }
     - { role: portainer, tags: [portainer, docker-apps] }
     - { role: dnsdock, tags: [dnsdock, docker-apps] }
-    - # TODO add dozzle and remove loki + promtail ??
+    #- TODO add dozzle and remove loki + promtail ??
