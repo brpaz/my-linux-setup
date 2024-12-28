@@ -1,4 +1,0 @@
-dnsmasq_servers:
-  - name: docker
-    domain: docker
-    server: "172.17.0.1"

@@ -5,6 +5,7 @@
     token: '{{ github_token }}'
     user: hashicorp
   register: release
+
 - name: Terraform | Download and install
   ansible.builtin.unarchive:
     dest: '{{ bin_dir }}'

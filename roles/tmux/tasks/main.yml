@@ -4,14 +4,7 @@
     state: present
   become: true
 
-- name: Check Ruby is installed
-  ansible.builtin.command:
-    cmd: ruby -v
-  register: ruby_version
-  failed_when: ruby_version.rc != 0
-
-- name: Install Tmuxinator
-  community.general.gem:
-    name: tmuxinator
+- name: Install Tmuxp
+  community.general.pip:
+    name: tmuxp
     state: present
-    user_install: true

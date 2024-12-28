@@ -1,0 +1,17 @@
+- name: Start container
+  community.docker.docker_container:
+    name: dozzle
+    image: "{{ dozzle_image }}:{{ dozzle_version }}"
+    networks:
+      - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080"
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.portainer.entrypoints: websecure
+      traefik.http.routers.portainer.rule: Host(`{{ dozzle_domain }}`)
+      traefik.http.routers.portainer.tls: 'true'
+      traefik.http.services.portainer.loadbalancer.server.port: '{{ dozzle_port }}'

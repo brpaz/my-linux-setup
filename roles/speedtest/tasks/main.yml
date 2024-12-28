@@ -2,3 +2,9 @@
   community.general.flatpak:
     name: xyz.ketok.Speedtest
     state: present
+
+- name: Speedtest CLI | Install
+  ansible.builtin.pip:
+    name: speedtest-cli
+    state: present
+  become: true

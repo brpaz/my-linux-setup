@@ -1,0 +1,4 @@
+dozzle_image: amir20/dozzle
+dozzle_version: "v8.9.0"
+dozzle_domain: dozzle.localhost
+dozzle_port: "8080"

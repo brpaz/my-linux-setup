@@ -48,7 +48,6 @@
     - { role: protonvpn, tags: [protonvpn, networking] }
     - { role: cloudflare-warp, tags: [cloudflare-warp, networking] }
     - { role: speedtest, tags: [networking, speedtest] }
-    - { role: speedtest-cli, tags: [speedtest-cli, networking] }
     - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
@@ -86,7 +85,7 @@
     # =============================================
     # Productivity
     # =============================================
-    - { role: drawio, tags: [drawio, multimedia, productivity] }
+    - { role: drawio, tags: [drawio, productivity] }
     - { role: foliate, tags: [foliate, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
     - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
@@ -98,9 +97,11 @@
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: heynote, tags: [heynote, productivity] }
     # - { role: ollama, tags: [ollama, productivity] }
+
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
+
     - { role: amberol, tags: [amberol, audio_video] }
     - { role: audacity, tags: [audacity, audio_video] }
     - { role: blanket, tags: [blanket, audio_video] }
@@ -127,9 +128,12 @@
     - { role: handbrake, tags: [handbrake, audio_video] }
     - { role: pipeline, tags: [pipeline, audio_video] }
     - { role: blender, tags: [blender, multimedia] }
+    - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
+
     # # =============================================
     # # Graphics Design
     # # =============================================
+
     - { role: pinta, tags: [pinta, graphics_design] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
@@ -151,7 +155,7 @@
     - { role: php, tags: [php, dev, programming-language] }
     - { role: golang, tags: [golang, dev, programming-language] }
     - { role: rust, tags: [rust, dev, programming-language] }
-    - { role: ruby, tags: [ruby, dev, programming-language] }
+    # - { role: ruby, tags: [ruby, dev, programming-language] }
     - { role: vim, tags: [vim, dev] }
     - { role: vscode, tags: [vscode, dev] }
     - { role: dbeaver, tags: [dbeaver, dev] }
@@ -242,7 +246,6 @@
     - { role: restic, tags: [restic, utilities] }
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
-    - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: weather, tags: [weather, utilities] }
     - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
@@ -300,4 +303,4 @@
     - { role: promtail, tags: [promtail, docker-apps] }
     - { role: portainer, tags: [portainer, docker-apps] }
     - { role: dnsdock, tags: [dnsdock, docker-apps] }
-    #- TODO add dozzle and remove loki + promtail ??
+    - { role: dozzle, tags: [dozzle, docker-apps] }

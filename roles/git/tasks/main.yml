@@ -3,6 +3,7 @@
     name:
       - git
       - git-extras
+      - git-delta
     state: present
   become: true
 
