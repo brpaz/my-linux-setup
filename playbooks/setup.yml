@@ -263,7 +263,7 @@
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
-    - { role: systemmctl-tui, tags: [systemmctl-tui, utilities] }
+    - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
 
     # =============================================
     # Finance
