@@ -5,6 +5,4 @@
   become: true
 
 - name: Install Tmuxp
-  community.general.pip:
-    name: tmuxp
-    state: present
+  command: pip install tmuxp

@@ -230,6 +230,7 @@
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: tmux, tags: [tmux, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
+    - { role: zellij, tags: [zellij, tui, utilities, github] }
 
     # =============================================
     # Utilities
