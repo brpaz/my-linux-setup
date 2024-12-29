@@ -1,0 +1,5 @@
+- name: Install
+  community.general.flatpak:
+    name: io.github.plrigaux.sysd-manager
+    state: present
+

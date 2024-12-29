@@ -1,0 +1,8 @@
+- name: Install Beets
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - beets
+    - beets-plugins
+  become: true

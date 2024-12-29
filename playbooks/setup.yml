@@ -129,6 +129,7 @@
     - { role: pipeline, tags: [pipeline, audio_video] }
     - { role: blender, tags: [blender, multimedia] }
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
+    - { role: beets, tags: [beets, multimedia] }
 
     # # =============================================
     # # Graphics Design
@@ -231,6 +232,7 @@
     - { role: tmux, tags: [tmux, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
     - { role: zellij, tags: [zellij, tui, utilities, github] }
+    - { role: rofi, tags: [rofi, tui, utilities] }
 
     # =============================================
     # Utilities
@@ -268,6 +270,7 @@
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
     - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
+    - { role: sysd-manager, tags: [sysd-manager, utilities] }
 
     # =============================================
     # Finance
