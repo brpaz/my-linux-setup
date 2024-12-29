@@ -81,6 +81,7 @@
     - { role: protonmail, tags: [protonmail, internet, flatpak]}
     - { role: carburetor, tags: [carbureactor, internet, flatpak]}
     - { role: webapps, tags: [webapps, internet, flatpak] }
+    - { role: tuba, tags: [tuba, internet, flatpak] }
 
     # =============================================
     # Productivity
@@ -96,7 +97,7 @@
     - { role: xournalpp, tags: [xournalpp, productivity] }
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: heynote, tags: [heynote, productivity] }
-    # - { role: ollama, tags: [ollama, productivity] }
+    - { role: ollama, tags: [ollama, productivity] }
 
     # # =============================================
     # # Multimedia (Audio & Video)
@@ -222,7 +223,6 @@
     - { role: lazysql, tags: [lazysql, cli, github] }
     - { role: asciinema, tags: [asciinema, cli, github] }
     - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
-    - { role: superfile, tags: [superfile, cli, github] }
     - { role: copier, tags: [copier, utilities] }
     - { role: brotab, tags: [brotab, utilities] }
     - { role: zoxide, tags: [zoxide]}
