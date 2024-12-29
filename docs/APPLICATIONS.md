@@ -230,7 +230,6 @@ I use ZSH shell with the following extras:
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 * [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
-- [yorukot/superfile](https://github.com/yorukot/superfile) - Pretty fancy and modern terminal file manager.
 * [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
@@ -244,6 +243,7 @@ I use ZSH shell with the following extras:
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [lnav](http://lnav.org/) - The Log File Navigator
+* [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 
 ### Multimedia
 

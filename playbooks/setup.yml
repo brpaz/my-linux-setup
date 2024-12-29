@@ -233,6 +233,7 @@
     - { role: sgpt, tags: [sgpt, utilities, github] }
     - { role: zellij, tags: [zellij, tui, utilities, github] }
     - { role: rofi, tags: [rofi, tui, utilities] }
+    - { role: yazi, tags: [yazi, tui, utilities] }
 
     # =============================================
     # Utilities
