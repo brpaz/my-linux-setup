@@ -234,6 +234,8 @@
     - { role: zellij, tags: [zellij, tui, utilities, github] }
     - { role: rofi, tags: [rofi, tui, utilities] }
     - { role: yazi, tags: [yazi, tui, utilities] }
+    - { role: shfmt, tags: [shfmt, utilities, github] }
+    - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
 
     # =============================================
     # Utilities

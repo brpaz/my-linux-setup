@@ -20,3 +20,18 @@
     src: nixpkgs.config.nix.j2
     dest: "{{ ansible_env.HOME }}/.config/nixpkgs/config.nix"
     mode: '0644'
+
+- name: Alejandra | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: kamadorueda
+    repo: alejandra
+    token: "{{ github_token }}"
+  register: alejandra_release
+
+- name: Alejandra | Install
+  ansible.builtin.get_url:
+    url: "https://github.com/kamadorueda/alejandra/releases/download/{{ alejandra_release.tag }}-x86_64-unknown-linux-gnu"
+    dest: "{{ bin_dir }}/alejandra"
+    mode: a+x
+  become: true

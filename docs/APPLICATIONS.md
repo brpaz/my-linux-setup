@@ -339,6 +339,7 @@ I use ZSH shell with the following extras:
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
 * [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
 * [glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
+* [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
 
 ### Other
 
