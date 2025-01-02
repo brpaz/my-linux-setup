@@ -179,6 +179,7 @@
     - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
+    - { role: kubectl-cnpg-plugin, tags: [kubectl-cnpg-plugin,kubectl-plugin, kubernetes, github] }
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }

@@ -1,0 +1,15 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: cloudnative-pg
+    repo: cloudnative-pg
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download latest release
+  ansible.builtin.dnf:
+    disable_gpg_check: true
+    name: "https://github.com/cloudnative-pg/cloudnative-pg/releases/download/{{ release.tag }}/kubectl-cnpg_{{ release.tag[1:] }}_linux_x86_64.rpm"
+    state: present
+  become: true
+
