@@ -1,4 +1,4 @@
-- name: Install core system packages
+- name: Install core packages
   ansible.builtin.dnf:
     name:
       - curl

@@ -1,0 +1,10 @@
+- name: Install
+  ansible.builtin.dnf:
+    name:
+      - zsh
+      - util-linux-user
+    state: present
+  become: true
+
+- name: Set as default shell
+  ansible.builtin.shell: chsh -s $(which zsh) {{ ansible_user }}

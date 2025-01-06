@@ -29,14 +29,15 @@
     # ===========================================
     # Infrastructure roles. Need to be run first
     # ============================================
-    - { role: system, tags: [core] }
+    - { role: dnf, tags: [core] }
+    - { role: rpmrepos, tags: [core] }
+    - { role: flatpak, tags: [core, flatpak] }
     - { role: hostname, tags: [core] }
     - { role: users, tags: [core, users] }
     - { role: selinux, tags: [core, sellinux] }
     - { role: dotfiles, tags: [core, dotfiles] }
-    - { role: rpmrepos, tags: [core] }
-    - { role: flatpak, tags: [core, flatpak] }
-    - { role: shell, tags: [core, zsh, shell] }
+    - { role: zsh, tags: [core, zsh, shell] }
+    - { role: starship, tags: [core, zsh, shell]}
 
     # =============================================
     # Networking
@@ -95,14 +96,16 @@
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
     - { role: xournalpp, tags: [xournalpp, productivity] }
-    - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: heynote, tags: [heynote, productivity] }
+    - { role: obsidian, tags: [obsidian, productivity] }
+
+    ## AI
+    - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: ollama, tags: [ollama, productivity] }
 
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
-
     - { role: amberol, tags: [amberol, audio_video] }
     - { role: audacity, tags: [audacity, audio_video] }
     - { role: blanket, tags: [blanket, audio_video] }
@@ -237,6 +240,7 @@
     - { role: yazi, tags: [yazi, tui, utilities] }
     - { role: shfmt, tags: [shfmt, utilities, github] }
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
+    - { role: television, tags: [television, utilities, github] }
 
     # =============================================
     # Utilities

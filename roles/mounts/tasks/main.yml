@@ -20,7 +20,7 @@
     path: /mnt/nas
     src: "{{ nas_ip }}:/media"
     fstype: nfs
-    state: mounted
+    state: present
     opts: "{{ mounts_nfs_default_opts }}"
   become: true
 
@@ -29,6 +29,6 @@
     path: /mnt/nas
     src: "{{ nas_ip }}:/backups"
     fstype: nfs
-    state: mounted
+    state: present
     opts: "{{ mounts_nfs_default_opts }}"
   become: true
