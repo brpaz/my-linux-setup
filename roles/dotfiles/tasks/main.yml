@@ -13,8 +13,5 @@
 - name: Dotfiles | Clone Repository
   ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
 
-- name: Dotfiles | Decrypt
-  ansible.builtin.command: yadm decrypt
-
 - name: Dotfiles | Update remote url to ssh
   ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"

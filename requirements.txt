@@ -1,7 +1,7 @@
-ansible==10.3.*
-ansible-lint==24.7.*
-github3.py==4.0.*
-docker==7.1.*
-selinux==0.3.*
-pipx==1.7.*
-requests==2.32.*
+ansible~=11.0
+ansible-lint~=24.12
+github3.py~=4.0
+docker~=7.1
+selinux~=0.3
+pipx~=1.7
+requests~=2.32

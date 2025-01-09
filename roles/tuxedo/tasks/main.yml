@@ -1,0 +1,16 @@
+- name: Add Repository
+  ansible.builtin.yum_repository:
+    baseurl: https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version}}/x86_64/base
+    gpgkey: https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version }}/0x54840598.pub.asc
+    description: Tuxedo Computers Repository
+    name: tuxedo
+    enabled: true
+
+- name: Install Tuxedo software
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - tuxedo-drivers
+    - tuxedo-control-center
+  become: true

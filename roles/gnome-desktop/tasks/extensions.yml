@@ -4,7 +4,9 @@
     state: present
 
 - name: Gnome extensions | Install gnome-extensions-cli
-  ansible.builtin.shell: pipx install gnome-extensions-cli # noqa command-instead-of-shell
+  community.general.pix:
+    name: gnome-extensions-cli
+    state: present
 
 - name: Gnome Extensions | Install
   ansible.builtin.shell: gnome-extensions-cli install {{ item }} # noqa command-instead-of-shell

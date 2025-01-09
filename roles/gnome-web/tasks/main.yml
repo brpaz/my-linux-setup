@@ -1,0 +1,5 @@
+- name:
+  ansible.builtin.dnf:
+    name: epiphany
+    state: present
+  become: true

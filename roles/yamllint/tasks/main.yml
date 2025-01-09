@@ -1,0 +1,3 @@
+- name: Install
+  ansible.builtin.pip:
+    name: yamllint

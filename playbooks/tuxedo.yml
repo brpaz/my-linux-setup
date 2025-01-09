@@ -1,0 +1,4 @@
+- name: Tuxedo setup
+  hosts: all
+  roles:
+    - { role: tuxedo }

@@ -33,9 +33,9 @@
     - { role: rpmrepos, tags: [core] }
     - { role: flatpak, tags: [core, flatpak] }
     - { role: hostname, tags: [core] }
+    - { role: btrfs, tags: [core, filesystem] }
     - { role: users, tags: [core, users] }
     - { role: selinux, tags: [core, sellinux] }
-    - { role: dotfiles, tags: [core, dotfiles] }
     - { role: zsh, tags: [core, zsh, shell] }
     - { role: starship, tags: [core, zsh, shell]}
 
@@ -53,6 +53,7 @@
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
     - { role: proxyman, tags: [proxyman, networking]}
+    - { role: cloudflared, tags: [cloudflared, networking] }
 
     # =============================================
     # Internet
@@ -61,6 +62,7 @@
     - { role: firefox, tags: [firefox, internet] }
     - { role: brave-browser, tags: [brave-browser, internet] }
     - { role: edge, tags: [edge, internet] }
+    - { role: gnome-web, tags: [gnome-web, internet] }
     - { role: discord, tags: [discord, communications, internet] }
     - { role: zoom, tags: [zoom, communications, internet] }
     - { role: signal, tags: [signal, communications, internet] }
@@ -71,7 +73,7 @@
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
-    - { role: uget, tags: [uget, internet] }
+    - { role: jdownloader, tags: [jdownloader, internet] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
@@ -213,11 +215,12 @@
     - { role: sd, tags: [sd, cli, github] }
     - { role: jq, tags: [jq, cli, dev, github] }
     - { role: yq, tags: [yq, github, cli] }
+    - { role: yamllint, tags: [yamllint, cli] }
     - { role: glow, tags: [glow, github, cli] }
     - { role: graphviz, tags: [graphviz, multimedia] }
     - { role: gum, tags: [gum, github, cli] }
     - { role: hostctl, tags: [hostctl, github, dev] }
-    - { role: neofetch, tags: [neofetch, cli] }
+    - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
     - { role: the-way, tags: [the-way, cli, dev, github] }
@@ -258,7 +261,7 @@
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: weather, tags: [weather, utilities] }
-    - { role: tilix, tags: [tilix, utilities] }
+    #- { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
@@ -273,7 +276,7 @@
     - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
     - { role: kepubify, tags: [kepubify, utilities, github] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
-    - { role: waveterm, tags: [waveterm, utilities] }
+    #- { role: waveterm, tags: [waveterm, utilities] }
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
@@ -298,21 +301,5 @@
     # =============================================
     - { role: gnome-desktop, tags: [gnome-desktop] }
     - { role: fonts, tags: [fonts, gnome-desktop] }
-    - { role: nautilus, tags: [nautilus, gnome-desktop] }
     - { role: nvidia, tags: [gnome-desktop, drivers] }
     - { role: mounts, tags: [mounts, gnome-desktop] }
-
-     # =============================================
-     # Docker apps
-     # =============================================
-    - { role: traefik, tags: [traefik, docker-apps] }
-    - { role: cadvisor, tags: [cadvisor, docker-app] }
-    - { role: grafana, tags: [grafana, docker-apps] }
-    - { role: loki, tags: [loki, docker-apps] }
-    - { role: node-exporter, tags: [node-exporter, docker-apps] }
-    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
-    - { role: prometheus, tags: [prometheus, docker-apps] }
-    - { role: promtail, tags: [promtail, docker-apps] }
-    - { role: portainer, tags: [portainer, docker-apps] }
-    - { role: dnsdock, tags: [dnsdock, docker-apps] }
-    - { role: dozzle, tags: [dozzle, docker-apps] }

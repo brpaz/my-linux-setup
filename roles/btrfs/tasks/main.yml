@@ -1,0 +1,9 @@
+- name: Install Btrfs utils
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+  loop:
+   - btrfs-assistant
+   - snapper
+   - dnf-plugin-snapper
+  become: true

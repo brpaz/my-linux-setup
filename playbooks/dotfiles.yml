@@ -1,0 +1,9 @@
+- name: Dotfiles
+  hosts: all
+  vars_prompt:
+    - name: github_token
+      prompt: "What is your GitHub Token?"
+      default: "{{ lookup('env','GITHUB_TOKEN') }}"
+      private: true
+  roles:
+    - { role: dotfiles }

@@ -6,12 +6,12 @@ trap "exit" INT
 
 # Color Variables
 NC='\033[0m'
-Red='\033[0;31m'          # Red
-Green='\033[0;32m'        # Green
-Yellow='\033[0;33m'       # Yellow
+Red='\033[0;31m'    # Red
+Green='\033[0;32m'  # Green
+Yellow='\033[0;33m' # Yellow
 
 # Display ASCII art
-cat << "EOF"
+cat <<"EOF"
    _________       __
  /   _____/ _____/  |_ __ ________
  \_____  \_/ __ \   __\  |  \____ \
@@ -22,21 +22,9 @@ EOF
 
 echo -e "${Yellow}Updating the base system and installing required dependencies${NC}"
 
-# Update the system
-sudo dnf update -y
-
 # Install Base Packages (ensure development tools and dependencies are included)
 echo -e "${Yellow}Installing essential packages: git, curl, python3, development tools${NC}"
-sudo dnf install -y git curl python3 dnf-plugins-core
-
-# Setup Virtual Environment if not already created
-if [ ! -d ".venv" ]; then
-  echo -e "${Yellow}Creating virtual environment .venv${NC}"
-  python3 -m venv .venv
-fi
-
-# Activate virtual environment
-source .venv/bin/activate
+sudo dnf update && sudo dnf install -y git curl python3 dnf-plugins-core
 
 # Install Python dependencies from requirements.txt
 echo -e "${Yellow}Installing Python dependencies from requirements.txt${NC}"
@@ -47,7 +35,11 @@ echo -e "${Yellow}Installing Ansible roles and collections from requirements.yml
 ansible-galaxy install -r requirements.yml
 ansible-galaxy collection install -r requirements.yml
 
-# Run the Ansible playbook (assumes playbook/setup.yml exists)
+# Setup dotfiles playbook
+echo -e "${Yellow}Setting up dotfiles${NC}"
+ansible-playbook playbooks/dotfiles.yml --ask-become-pass
+
+# Run Ansible playbook for setup
 echo -e "${Yellow}Running Ansible playbook for setup${NC}"
 ansible-playbook playbooks/setup.yml --ask-become-pass
 

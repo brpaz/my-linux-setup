@@ -1,0 +1,14 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: cloudflare
+    repo: cloudflared
+    token: '{{ github_token }}'
+  register: release
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: '{{ bin_dir }}/cloudflared'
+    mode: a+x
+    url: "https://github.com/cloudflare/cloudflared/releases/download/{{ release.tag }}/cloudflared-fips-linux-amd64"
+  become: true

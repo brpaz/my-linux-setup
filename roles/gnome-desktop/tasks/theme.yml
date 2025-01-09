@@ -10,10 +10,4 @@
 - name: Enable Papirus-Dark icon theme
   community.general.dconf.dconf:
     key: /org/gnome/desktop/interface/icon-theme
-    value: '''Papirus-Dark'''
-
-- name: Install appplication icons set
-  ansible.builtin.copy:
-    dest: '{{ ansible_env.HOME }}/.local/share'
-    mode: '0755'
-    src: icons
+    value: "'Papirus-Dark'"

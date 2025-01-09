@@ -1,10 +1,12 @@
 - name: Python | Install PIP packages
   ansible.builtin.pip:
-    name:
-      - requests
-      - bandit
-      - black
-      - setuptools
-      - pipx
-      - poetry
-    executable: "{{ python_pip_executable }}" # required to avoid installing on the venv used by ansible
+    name: "{{ item }}"
+  loop:
+    - requests
+    - bandit
+    - ruff
+    - setuptools
+    - pipx
+    - poetry
+
+
