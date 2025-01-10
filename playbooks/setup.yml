@@ -69,7 +69,6 @@
     - { role: slack, tags: [slack, communications, internet] }
     - { role: telegram, tags: [telegram, communications, internet] }
     - { role: zapzap, tags: [zapzap, communications, internet] }
-    - { role: dropbox, tags: [dropbox, internet] }
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
