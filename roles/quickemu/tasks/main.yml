@@ -1,0 +1,17 @@
+- name: Enable repo
+  ansible.builtin.yum_repository:
+    name: quickemu
+    description: quickemu
+    baseurl: https://download.copr.fedorainfracloud.org/results/alexhaydock/quickemu/fedora-$releasever-$basearch/
+    enabled: yes
+    gpgcheck: true
+    gpgkey: https://download.copr.fedorainfracloud.org/results/alexhaydock/quickemu/pubkey.gpg
+    state: present
+  become: true
+
+- name: Install quickemu
+  ansible.builtin.dnf:
+    name: quickemu
+    state: present
+  become: true
+

@@ -4,7 +4,7 @@
     state: present
 
 - name: Gnome extensions | Install gnome-extensions-cli
-  community.general.pix:
+  community.general.pipx:
     name: gnome-extensions-cli
     state: present
 

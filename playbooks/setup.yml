@@ -202,6 +202,7 @@
     - { role: taskfile, tags: [taskfile, dev, github] }
     - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
     - { role: zed, tags: [zed, dev, flatpak] }
+    - { role: quickemu , tags: [quickemu, dev, github] }
 
     # =============================================
     # CLI Tools
