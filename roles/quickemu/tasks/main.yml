@@ -15,3 +15,17 @@
     state: present
   become: true
 
+- name: QuickGUI - Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: quickemu-project
+    repo: quickgui
+    token: '{{ github_token }}'
+  register: quickgui_release
+
+- name: QuickGUI - Install
+  ansible.builtin.dnf:
+    name: https://github.com/quickemu-project/quickgui/releases/download/{{ quickgui_release.tag }}/quickgui-{{ quickgui_release.tag }}+1-linux.rpm
+    state: present
+    disable_gpg_check: true
+  become: true
