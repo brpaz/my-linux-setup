@@ -1,4 +1,4 @@
-- name: Amberol
+- name: Install
   community.general.flatpak:
     name: com.jeffser.Alpaca
     state: present

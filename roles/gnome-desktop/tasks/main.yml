@@ -11,6 +11,7 @@
   ansible.builtin.dnf:
     name:
       - rhytmbox
+      - gnome-boxes
     state: absent
   become: true
 
@@ -39,13 +40,13 @@
   ansible.builtin.import_tasks: shortcuts.yml
 
 - name: Gnome settings
-  ansible.builtin.import_tasks: desktop-settings.yml
+  ansible.builtin.import_tasks: settings.yml
 
 - name: Gnome extensions
   ansible.builtin.import_tasks: extensions.yml
 
-- name: Terminal settings
-  ansible.builtin.import_tasks: terminal-settings.yml
+#- name: Terminal settings
+#  ansible.builtin.import_tasks: terminal-settings.yml
 
 - name: Nautilus settings
   ansible.builtin.import_tasks: nautilus-settings.yml

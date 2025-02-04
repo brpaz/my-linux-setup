@@ -80,34 +80,34 @@
         - ''
     - key: /org/gnome/shell/keybindings/toggle-quick-settings
       value:
-        - ''
+        - '<Super>Comma'
     - key: /org/gnome/shell/keybindings/toggle-message-tray
       value:
-        - ''
+        - '<Super>N'
     - key: /org/gnome/shell/keybindings/focus-active-notification
       value:
         - ''
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-1
       value:
-        - <Shift><Control>1
+        - <Control><Super>1
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-2
       value:
-        - <Shift><Control>2
+        - <Control><Super>2
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-3
       value:
-        - <Shift><Control>3
+        - <Control><Super>3
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-4
       value:
-        - <Shift><Control>4
+        - <Control><Super>4
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-right
       value:
-        - <Control><Super>Right
+        - <Control><Super>Left
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-left
       value:
         - <Control><Super>Right
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-right
       value:
-        - <Shift><Super>Right
+        - <Shift><Super>Left
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-left
       value:
         - <Shift><Super>Right
@@ -117,34 +117,3 @@
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Right
-
-- name: Set custom Gnome Shortcuts
-  community.general.dconf:
-    key: '{{ item.key }}'
-    state: present
-    value: '{{ item.value }}'
-  with_items:
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding
-      value: '''Print'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command
-      value: '''flameshot gui'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name
-      value: '''Print screen with flameshot'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding
-      value: '''<Super>t'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command
-      value: '''tilix --focus-window'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name
-      value: '''Open Terminal Window'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding
-      value: '''<Super>e'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command
-      value: '''flatpak run it.mijorus.smile'''
-    - key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name
-      value: '''Open Emoji Picker'''
-
-- name: Set Custom Shortcuts List
-  community.general.dconf:
-    key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
-    value: '[''/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/'',
-      ''/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/'']'

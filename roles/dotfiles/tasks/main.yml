@@ -1,11 +1,9 @@
 - name: Add YUM repository
   ansible.builtin.yum_repository:
-    baseurl: https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_41/
+    baseurl: https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_41/home:TheLocehiliosan:yadm.repo
     description: YADM Repository
-    gpgkey: https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_41/repodata/repomd.xml.key
     name: yadm
-  become: true
-  
+
 - name: Install YADM
   ansible.builtin.dnf:
     name: yadm
@@ -14,6 +12,9 @@
 
 - name: Dotfiles | Clone Repository
   ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
+
+- name: Reset dotfiles to the remote repo
+  ansible.builtin.command: yadm reset --hard
 
 - name: Dotfiles | Update remote url to ssh
   ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"

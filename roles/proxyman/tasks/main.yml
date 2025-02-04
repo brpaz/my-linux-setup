@@ -16,6 +16,7 @@
     src: "{{ setup_dir }}/Proxyman.AppImage"
     dest: "/opt/Proxyman.AppImage"
     mode: "0755"
+  become: true
 
 - name: Ensure Icons folder exists
   ansible.builtin.file:

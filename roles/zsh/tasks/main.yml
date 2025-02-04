@@ -7,4 +7,5 @@
   become: true
 
 - name: Set as default shell
-  ansible.builtin.shell: chsh -s $(which zsh) {{ ansible_user }}
+  ansible.builtin.shell: chsh -s $(which zsh) {{ ansible_env.USER }}
+  become: true

@@ -39,11 +39,11 @@
     - { role: zsh, tags: [core, zsh, shell] }
     - { role: starship, tags: [core, zsh, shell]}
 
-    # =============================================
-    # Networking
-    # =============================================
+    # # =============================================
+    # # Networking
+    # # =============================================
     - { role: network-tools, tags: [nettwork] }
-    - { role: dns, tags: [dns, networking] }
+    #- { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
@@ -55,9 +55,9 @@
     - { role: proxyman, tags: [proxyman, networking]}
     - { role: cloudflared, tags: [cloudflared, networking] }
 
-    # =============================================
-    # Internet
-    # =============================================
+    # # =============================================
+    # # Internet
+    # # =============================================
     - { role: chromium, tags: [chromium, internet] }
     - { role: firefox, tags: [firefox, internet] }
     - { role: brave-browser, tags: [brave-browser, internet] }
@@ -85,9 +85,9 @@
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
 
-    # =============================================
-    # Productivity
-    # =============================================
+    # # =============================================
+    # # Productivity
+    # # =============================================
     - { role: drawio, tags: [drawio, productivity] }
     - { role: foliate, tags: [foliate, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
@@ -136,9 +136,9 @@
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: beets, tags: [beets, multimedia] }
 
-    # # =============================================
-    # # Graphics Design
-    # # =============================================
+    # # # =============================================
+    # # # Graphics Design
+    # # # =============================================
 
     - { role: pinta, tags: [pinta, graphics_design] }
     - { role: gimp, tags: [gimp, graphics_design] }
@@ -146,9 +146,8 @@
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
-    - { role: feh, tags: [feh, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
-    - { role: yoga, tags: [yoga, graphics_design] }
+    - { role: yoga, tags: [ yoga, graphics_design] }
 
     # =============================================
     # Development
@@ -188,7 +187,7 @@
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
     - { role: mkcert, tags: [mkcert, dev, github] }
-    - { role: nix, tags: [nix, dev] }
+    #- { role: nix, tags: [nix, dev] }
     - { role: redis, tags: [redis, dev] }
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
@@ -245,7 +244,7 @@
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
     - { role: television, tags: [television, utilities, github] }
 
-    # =============================================
+    # # =============================================
     # Utilities
     # =============================================
     - { role: bleachbit, tags: [bleachbit, utilities] }
@@ -261,13 +260,11 @@
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: weather, tags: [weather, utilities] }
-    #- { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
-    # - { role: knock, tags: [knock, ebooks, utilities, github] }
     - { role: decoder, tags: [decoder, utilities, flatpak] }
     - { role: keyrack, tags: [keyrack, utilities, flatpak] }
     - { role: calligraphy, tags: [calligraphy, utilities, flatpak] }
@@ -276,14 +273,13 @@
     - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
     - { role: kepubify, tags: [kepubify, utilities, github] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
-    #- { role: waveterm, tags: [waveterm, utilities] }
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
     - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
     - { role: sysd-manager, tags: [sysd-manager, utilities] }
 
-    # =============================================
+    # # =============================================
     # Finance
     # =============================================
     - { role: denaro, tags: [denaro, finance, flatpak] }
@@ -292,14 +288,14 @@
     # =============================================
     # Games
     # =============================================
-    - { role: steam, tags: [steam, games] }
-    - { role: mines, tags: [mines, games] }
-    - { role: snes, tags: [snes, games] }
+    #- { role: steam, tags: [steam, games] }
+    #- { role: mines, tags: [mines, games] }
+    #- { role: snes, tags: [snes, games] }
 
     # =============================================
     # Gnome Desktop
     # =============================================
     - { role: gnome-desktop, tags: [gnome-desktop] }
     - { role: fonts, tags: [fonts, gnome-desktop] }
-    - { role: nvidia, tags: [gnome-desktop, drivers] }
-    - { role: mounts, tags: [mounts, gnome-desktop] }
+    #- { role: nvidia, tags: [gnome-desktop, drivers] }
+    #- { role: mounts, tags: [mounts, gnome-desktop] }

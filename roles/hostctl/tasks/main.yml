@@ -11,6 +11,5 @@
     dest: '{{ bin_dir }}'
     mode: a+x
     remote_src: true
-    src: https://github.com/guumaster/hostctl/releases/download/{{ latest_release.tag
-      }}/hostctl_{{ latest_release.tag[1:] }}_linux_64-bit.tar.gz
-    become: true
+    src: https://github.com/guumaster/hostctl/releases/download/{{ latest_release.tag }}/hostctl_{{ latest_release.tag[1:] }}_linux_64-bit.tar.gz
+  become: true

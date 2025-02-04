@@ -99,27 +99,18 @@
         'jetbrains-goland.desktop:2', 'jetbrains-idea.desktop:2',
         'jetbrains-webstorm.desktop:2']"
 
-- name: Dash to Panel Extension Settings
-  community.general.dconf:
-    key: "{{ item.key }}"
-    state: present
-    value: "{{ item.value }}"
-  loop:
-    - key: /org/gnome/shell/extensions/dash-to-panel/panel-element-positions
-      value: "{'0':[{'element':'activitiesButton','visible':true,'position':'stackedTL'},{'element':'showAppsButton','visible':true,'position':'stackedTL'},{'element':'leftBox','visible':true,'position':'stackedTL'},{'element':'taskbar','visible':true,'position':'stackedTL'},{'element':'centerBox','visible':true,'position':'stackedBR'},{'element':'rightBox','visible':true,'position':'stackedBR'},{'element':'dateMenu','visible':true,'position':'stackedBR'},{'element':'systemMenu','visible':true,'position':'stackedBR'},{'element':'desktopButton','visible':true,'position':'stackedBR'}]}"
-    - key: /org/gnome/shell/extensions/panel-sizes
-      value: "{'0':36}"
+# - name: Dash to Panel Extension Settings
+#   community.general.dconf:
+#     key: "{{ item.key }}"
+#     state: present
+#     value: "{{ item.value }}"
+#   loop:
+#     - key: /org/gnome/shell/extensions/dash-to-panel/panel-element-positions
+#       value: "{'0':[{'element':'activitiesButton','visible':true,'position':'stackedTL'},{'element':'showAppsButton','visible':true,'position':'stackedTL'},{'element':'leftBox','visible':true,'position':'stackedTL'},{'element':'taskbar','visible':true,'position':'stackedTL'},{'element':'centerBox','visible':true,'position':'stackedBR'},{'element':'rightBox','visible':true,'position':'stackedBR'},{'element':'dateMenu','visible':true,'position':'stackedBR'},{'element':'systemMenu','visible':true,'position':'stackedBR'},{'element':'desktopButton','visible':true,'position':'stackedBR'}]}"
+#     - key: /org/gnome/shell/extensions/panel-sizes
+#       value: "{'0':36}"
 
-- name: GSConnect Extension settings
-  community.general.dconf:
-    key: "{{ item.key }}"
-    state: present
-    value: "{{ item.value }}"
-  loop:
-    - key: /org/gnome/shell/extensions/gsconnect/name
-      value: "Bruno Laptop"
-
-- name: Lillypad Extension settings
-  community.general.dconf:
-    key: /org/gnome/shell/extensions/lillypad/lillypad-order
-    value: "['pop_shell', 'StatusNotifierItem', 'indicator_solaar', 'appindicator_org_kde_StatusNotifierItem', 'dropbox_client']"
+# - name: Lillypad Extension settings
+#   community.general.dconf:
+#     key: /org/gnome/shell/extensions/lillypad/lillypad-order
+#     value: "['pop_shell', 'StatusNotifierItem', 'indicator_solaar', 'appindicator_org_kde_StatusNotifierItem', 'dropbox_client']"

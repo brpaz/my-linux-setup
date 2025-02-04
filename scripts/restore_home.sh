@@ -3,7 +3,7 @@
 # This script allows to restore user data folders from a backup location
 # to the users $HOME directory.
 # ======================================================================
-directoriesToRestore="Code Documents Music Pictures Knowledge Games Templates Videos"
+directoriesToRestore="Code Documents Music Pictures Knowledge Games Education Videos"
 
 error() {
   RED="\033[0;31m"

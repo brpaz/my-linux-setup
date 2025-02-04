@@ -16,6 +16,7 @@
     src: "{{ setup_dir }}/Heynote.AppImage"
     dest: "/opt/Heynote.AppImage"
     mode: "0755"
+  become: true
 
 - name: Ensure Icons folder exists
   ansible.builtin.file:

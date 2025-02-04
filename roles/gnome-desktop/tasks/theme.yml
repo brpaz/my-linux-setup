@@ -2,12 +2,10 @@
   ansible.builtin.dnf:
     name:
       - papirus-icon-theme
-      - adwaita-qt4
-      - adwaita-qt5
     state: present
   become: true
 
-- name: Enable Papirus-Dark icon theme
+- name: Enable Papirus icon theme
   community.general.dconf.dconf:
     key: /org/gnome/desktop/interface/icon-theme
-    value: "'Papirus-Dark'"
+    value: "'Papirus'"

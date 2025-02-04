@@ -10,22 +10,29 @@
     remote_src: true
   become: true
 
-- name: Create Ollama group and user
+- name: Create Group
+  ansible.builtin.group:
+    name: ollama
+    state: present
+  become: true
+
+- name: Create Ollama user and add to group
   ansible.builtin.user:
     name: ollama
     system: true
     shell: /bin/false
     create_home: true
     home: /usr/share/ollama
-    group: ollama
+    groups: ollama
     append: true
   become: true
 
 - name: Add current user to the Ollama group
   ansible.builtin.user:
-    name: "{{ ansible_user }}"
+    name: "{{ ansible_env.USER }}"
     groups: ollama
     append: true
+  become: true
 
 - name: Create systemd service file for Ollama
   ansible.builtin.copy:

@@ -19,13 +19,13 @@
     state: enabled
   become: true
 
-- name: Allow access from Docker network to the host
-  ansible.posix.firewalld:
-    zone: public
-    rich_rule: "source address=172.17.0.1/24"
-    permanent: true
-    state: enabled
-  become: true
+#"- name: Allow access from Docker network to the host
+#  ansible.posix.firewalld:
+#    zone: public
+#    rich_rule: "source address=172.17.0.1/24"
+#    permanent: true
+#    state: enabled
+#  become: true
 
 - name: Install Firewalld config GUI
   ansible.builtin.dnf:
