@@ -24,7 +24,7 @@ echo -e "${Yellow}Updating the base system and installing required dependencies$
 
 # Install Base Packages (ensure development tools and dependencies are included)
 echo -e "${Yellow}Installing essential packages: git, curl, python3, development tools${NC}"
-sudo dnf update && sudo dnf install -y git curl python3 dnf-plugins-core
+sudo dnf update && sudo dnf install -y git curl python3 python3-pip python3-libdnf5 dnf-plugins-core
 
 # Install Python dependencies from requirements.txt
 echo -e "${Yellow}Installing Python dependencies from requirements.txt${NC}"
@@ -35,17 +35,20 @@ echo -e "${Yellow}Installing Ansible roles and collections from requirements.yml
 ansible-galaxy install -r requirements.yml
 ansible-galaxy collection install -r requirements.yml
 
+echo -e "${Yellow}Setting up tuxedo{NC}"
+ansible-playbook playbooks/tuxedo.yml --ask-become-pass
+
 # Setup dotfiles playbook
 echo -e "${Yellow}Setting up dotfiles${NC}"
-ansible-playbook playbooks/dotfiles.yml --ask-become-pass
+#ansible-playbook playbooks/dotfiles.yml --ask-become-pass
 
 # Run Ansible playbook for setup
 echo -e "${Yellow}Running Ansible playbook for setup${NC}"
-ansible-playbook playbooks/setup.yml --ask-become-pass
+#ansible-playbook playbooks/setup.yml --ask-become-pass
 
 # Set Zsh as the default shell for the session
-echo -e "${Yellow}Switching to Zsh${NC}"
-exec zsh
+#echo -e "${Yellow}Switching to Zsh${NC}"
+#exec zsh
 
 # Final message
-echo -e "${Green}Setup complete!${NC}"
+#echo -e "${Green}Setup complete!${NC}"

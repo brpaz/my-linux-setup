@@ -1,9 +1,11 @@
 - name: Add YUM repository
   ansible.builtin.yum_repository:
-    baseurl: https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_41/home:TheLocehiliosan:yadm.repo
+    baseurl: https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_41/
     description: YADM Repository
+    gpgkey: https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_41/repodata/repomd.xml.key
     name: yadm
-
+  become: true
+  
 - name: Install YADM
   ansible.builtin.dnf:
     name: yadm
