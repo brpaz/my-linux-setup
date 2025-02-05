@@ -1,2 +1,4 @@
-dns_homelab_server: "192.168.1.10"
-dns_homelab_domain: "*.home.brunopaz.dev"
+dns_homelab_resolver: "192.168.1.10"
+dns_homelab_domain: "home.brunopaz.dev"
+dns_docker_domain: "docker"
+dns_docker_resolver: "172.17.0.1"

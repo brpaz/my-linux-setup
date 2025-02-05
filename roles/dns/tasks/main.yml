@@ -1,39 +1,77 @@
-- name: Ensure config directory
+- name: Configure Network manager to use Dnsmasq
   ansible.builtin.file:
-    path: /etc/systemd/resolved.conf.d
-    state: directory
-    mode: '0755'  # Corrected mode for directories
-  become: true
-
-- name: Setup DNS servers on systemd-resolved
-  ansible.builtin.template:
-    src: resolved.conf.j2
-    dest: /etc/systemd/resolved.conf.d/00-default.conf
-    mode: '0644'
-  become: true
-
-- name: Setup resolver of .docker domain to localhost
-  ansible.builtin.copy:
+    path: /etc/NetworkManager/conf.d/00-use-dnsmaq.conf
+    state: present
+    mode: "0644"
+    owner: root
+    group: root
     content: |
-      [Resolve]
-      DNS=127.0.0.1
-      Domains=.docker
-    dest: /etc/systemd/resolved.conf.d/01-docker.conf
-    mode: '0644'
+      [main]
+      dns=dnsmasq
   become: true
 
-- name: Setup resolver of .home.brunopaz.dev to Adguard Home
-  ansible.builtin.copy:
+- name: Configure Dnsmasq
+  ansible.builtin.file:
+    path: /etc/NetworkManager/dnsmasq.d/00-dnsmasq.conf
+    state: present
+    mode: "0644"
+    owner: root
+    group: root
     content: |
-      [Resolve]
-      DNS={{ dns_homelab_server }}
-      Domains={{ dns_homelab_domain }}
-    dest: /etc/systemd/resolved.conf.d/02-homelab.conf
-    mode: '0644'
+      # Use Quad9 DNS servers
+      server=9.9.9.9
+      server=149.112.112.112
+
+      # Use Cloudflare DNS servers
+      server=1.1.1.1
+      server=1.0.0.1
+
+      # Enable caching (optional)
+      cache-size=1000
+
+      # Disable reading /etc/resolv.conf
+      no-resolv
+
+      # Optional: Enable logging for debugging
+      #log-queries
+      #log-facility=/var/log/dnsmasq.log
   become: true
 
-- name: Restart systemd-resolved to apply configurations
+- name: Configure Dnsmasq to resolve homelab domains
+  ansible.builtin.file:
+    path: /etc/NetworkManager/dnsmasq.d/01-homelab.conf
+    state: present
+    mode: "0644"
+    owner: root
+    group: root
+    content: |
+      server=/{{ dns_homelab_domain }}/{{ dns_homelab_resolver }}
+
+- name: Configure Dnsmasq to resolve docker domains
+  ansible.builtin.file:
+    path: /etc/NetworkManager/dnsmasq.d/02-docker.conf
+    state: present
+    mode: "0644"
+    owner: root
+    group: root
+    content: |
+      server=/{{ dns_docker_domain }}/{{ dns_docker_resolver }}
+
+- name: Stop systemd-resolved
   ansible.builtin.systemd:
     name: systemd-resolved
+    state: stopped
+    enabled: no
+  become: true
+
+- name: Remove systemd-resolved symlink of /etc/resolv.conf
+  ansible.builtin.file:
+    path: /etc/resolv.conf
+    state: absent
+
+- name: Restart NetworkManager
+  ansible.builtin.systemd:
+    name: NetworkManager
     state: restarted
+    enabled: yes
   become: true
