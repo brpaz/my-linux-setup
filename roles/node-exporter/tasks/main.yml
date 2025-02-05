@@ -6,14 +6,14 @@
       - --path.procfs=/host/proc
       - --path.rootfs=/rootfs
       - --path.sysfs=/host/sys
-      - --collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)
+      - --collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc|mnt)($$|/)
     state: started
     restart_policy: unless-stopped
     labels:
-      traefik.enable: 'false'
+      traefik.enable: "false"
     networks:
       - name: monitoring
     volumes:
-      - /proc:/host/proc:ro
-      - /sys:/host/sys:ro
-      - /:/rootfs:ro
+      - /proc:/host/proc:ro,rslave
+      - /sys:/host/sys:ro,rslave
+      - /:/rootfs:ro,rslave

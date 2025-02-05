@@ -16,3 +16,5 @@ tls:
       keyFile: /etc/certs/portainer.localhost-key.pem
     - certFile: /etc/certs/prometheus.localhost.pem
       keyFile: /etc/certs/prometheus.localhost-key.pem
+    - certFile: /etc/certs/dozzle.localhost.pem
+      keyFile: /etc/certs/dozzle.localhost-key.pem

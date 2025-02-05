@@ -8,7 +8,7 @@
 - name: Ensure Configuration file exists
   ansible.builtin.template:
     dest: /etc/loki/config.yaml
-    mode: '0644'
+    mode: "0644"
     src: loki-local-config.yaml.j2
   become: true
 
@@ -20,12 +20,12 @@
 - name: Start container
   community.docker.docker_container:
     name: loki
-    image: grafana/loki:3.1.1
+    image: grafana/loki:3.3.2
     state: started
     restart_policy: unless-stopped
     command: -config.file=/etc/loki/config.yaml
     labels:
-      traefik.enable: 'false'
+      traefik.enable: "false"
     networks:
       - name: monitoring
     volumes:

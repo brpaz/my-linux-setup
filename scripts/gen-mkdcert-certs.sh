@@ -9,21 +9,18 @@ SITES=(
     "grafana.localhost"
     "prometheus.localhost"
     "portainer.localhost"
-    "sourcegraph.localhost"
+    "dozzle.localhost"
 )
 
 # ENsure we are in the root directory
 cd "$(dirname "$0")/../${CERTS_PATH}"
 
 # Check if mkcert is installed
-if ! command -v mkcert &> /dev/null
-then
+if ! command -v mkcert &>/dev/null; then
     echo "mkcert could not be found. Please follow the instructions at https://github.com/FiloSottile/mkcert?tab=readme-ov-file#installation"
     exit 1
 fi
 
-for SITE in "${SITES[@]}"
-do
+for SITE in "${SITES[@]}"; do
     mkcert "${SITE}"
 done
-

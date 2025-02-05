@@ -1,3 +1,8 @@
+- name: Ensure Monitoring netweork exists
+  community.docker.docker_network:
+    name: monitoring
+    state: present
+
 - name: CAdvisor | Start container
   community.docker.docker_container:
     name: cadvisor
@@ -5,11 +10,10 @@
     state: started
     restart_policy: unless-stopped
     labels:
-      traefik.enable: 'false'
+      traefik.enable: "false"
     networks:
       - name: monitoring
-    command:
-      --logtostderr
+    command: --logtostderr
       --docker_only
       --store_container_labels=false
     volumes:
