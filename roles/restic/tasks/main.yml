@@ -3,3 +3,21 @@
     name: restic
     state: present
   become: true
+
+- name: Create systemd unit files
+  ansible.builtin.template:
+    dest: "{{ ansible_env.HOME }}/.config/systemd/user/{{ item }}"
+    mode: "0644"
+    src: "{{ item }}.j2"
+  loop:
+    - restic-b2-backup.service
+    - restic-b2-backup.timer
+    - restic-b2-prune.service
+    - restic-b2-prune.timer
+
+- name: Reload systemd
+  ansible.builtin.systemd:
+    daemon_reload: yes
+  become: true
+#- msg: "Run 'systemctl --user enable --now restic-b2-backup.timer' to enable and start the backup timer"
+#- msg: "Run 'systemctl --user enable --now restic-b2-prune.timer' to enable and start the prune timer"

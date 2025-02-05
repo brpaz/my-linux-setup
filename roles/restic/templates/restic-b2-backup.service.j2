@@ -1,0 +1,13 @@
+[Unit]
+Description=Restic Backup to B2
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/restic/restic-b2-backup.conf
+ExecStart=/bin/sh -c 'restic backup --verbose --exclude-caches --one-file-system --tag systemd.timer --tag $(hostname) -o b2.connections=10 $BACKUP_EXCLUDES $BACKUP_PATHS'
+ExecStopPost=/usr/bin/curl -fsS --retry 3 https://hc-ping.com/8a3ef792-7276-473c-b566-73e625530e51
+
+[Install]
+WantedBy=multi-user.target

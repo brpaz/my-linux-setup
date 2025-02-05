@@ -1,0 +1,13 @@
+[Unit]
+Description=Restic B2 Backup Service (Data Pruning)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/restic/restic-b2-backup.conf
+ExecStartPre=/bin/sh -c 'restic forget --verbose --tag systemd.timer --group-by "paths,tags" --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS'
+ExecStart=/bin/sh -c 'restic prune'
+
+[Install]
+WantedBy=multi-user.target
