@@ -1,0 +1,19 @@
+- name: Install PostgresSQL client
+  dnf:
+    name: libpq
+    state: present
+  become: true
+
+- name: Install MySQL client
+  dnf:
+    name: community-mysql
+    state: present
+  become: true
+
+- name: RBDMS cli
+  pip:
+    name:
+      - pgcli
+      - mycli
+    state: present
+  become: true

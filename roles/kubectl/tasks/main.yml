@@ -1,0 +1,18 @@
+- name: Get Latest release
+  ansible.builtin.get_url:
+    url: https://cdn.dl.k8s.io/release/stable.txt
+    dest: "{{ setup_dir }}/kubectl_release"
+  register: kubectl_release
+
+- name: Read release tag
+  ansible.builtin.slurp:
+    src: "{{ setup_dir }}/kubectl_release"
+  register: kubectl_release_tag
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: "{{ bin_dir }}/kubectl"
+    force: true
+    mode: a+x
+    url: https://dl.k8s.io/release/{{ kubectl_release_tag['content'] | b64decode }}/bin/linux/amd64/kubectl
+  become: true

@@ -1,0 +1,14 @@
+- include: dropbox.yml
+- include: google-chrome.yml
+- include: mailspring.yml
+- include: polari.yml
+- include: skype.yml
+- include: slack.yml
+- include: discord.yml
+- include: caprine.yml
+- include: reminna.yml
+- include: wireshark.yml
+- include: feedreader.yml
+- include: transmission.yml
+- include: uget.yml
+- include: zoom.yml

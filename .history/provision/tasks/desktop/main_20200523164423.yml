@@ -1,0 +1,57 @@
+- include: fondo.yml
+- include: fonts.yml
+
+- name: Desktop Control tools
+  dnf:
+    name:
+      - python3-psutil
+      - gnome-tweak-tool
+      - wmctrl
+      - devilspie2
+      - dconf-editor
+    state: present
+  become: true
+
+#- name: Install Gnome extensions
+- name: Copy wallpaper file
+  copy:
+    src: wallpaper.jpg
+    dest: "{{ ansible_env.HOME }}/.wallpaper.jpg"
+
+- name: Set Wallpaper
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file://{{ ansible_env.HOME }}/.wallpaper.jpg'"
+
+- name: Set Wallpaper position
+  dconf:
+    key: "/org/gnome/desktop/background/picture-options"
+    value: "'zoom'"
+
+- name: Set Lock screen wallpaper
+  dconf:
+    key: "/org/gnome/desktop/screensaver/picture-uri"
+    value: "'file://{{ ansible_env.HOME }}/.wallpaper.jpg'"
+
+- include: gnome-extensions.yml
+  tags: ["gnome-extensions"]
+
+- include: settings/gedit.yml
+- include: settings/nautilus.yml
+- include: settings/desktop.yml
+  tags: ["settings-desktop"]
+- include: settings/shell.yml
+- include: settings/shortcuts.yml
+- include: settings/terminal.yml
+- include: settings/wm.yml
+- include: keybindings.yml
+- include: theme.yml
+- include: autostart.yml
+
+- name: Remove Pre-installed software
+  dnf:
+    name:
+      - rhytmbox
+      - cheese
+    state: absent
+  become: true

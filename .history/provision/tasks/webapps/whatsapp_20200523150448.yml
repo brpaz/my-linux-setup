@@ -1,0 +1,37 @@
+- name: WhatsApp | Check if installed
+  stat:
+    path: /opt/WhatsApp
+  register: whatsapp_dir
+
+- name: WhatsApp | Nativefy
+  shell: nativefier "https://web.whatsapp.com/" -p linux -n "WhatsApp" --maximize  --single-instance --tray
+  args:
+    chdir: "{{setup_dir}}"
+  when: not whatsapp_dir.stat.exists
+
+- name: WhatsApp | Install
+  copy:
+    src: "{{setup_dir}}/WhatsApp-linux-x64/"
+    dest: "/opt/WhatsApp/"
+  become: true
+  when: not whatsapp_dir.stat.exists
+
+- name: TickTick | make executable
+  file:
+    path: "/opt/WhatsApp/WhatsApp"
+    mode: a+x
+  become: true
+  when: not whatsapp_dir.stat.exists
+
+- name: WhatsApp | Fix application name
+  replace:
+    path: /opt/WhatsApp/resources/app/package.json
+    regexp: '\"name\":\"(.*)\"'
+    replace: '\1 "name": "WhatsApp"'
+  become: true
+
+- name: WhatsApp | Copy desktop file
+  copy:
+    src: applications/whatsapp.desktop
+    dest: "{{ applications_dir }}/whatsapp.desktop"
+  when: not whatsapp_dir.stat.exists

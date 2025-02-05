@@ -1,0 +1,6 @@
+- name: Install
+  ansible.builtin.dnf:
+    name:
+      - alacritty
+    state: present
+  become: true

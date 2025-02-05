@@ -1,0 +1,32 @@
+- name: Restic
+  dnf:
+    name: restic
+    state: present
+  become: true
+
+- name: Restic | Ensure systemd directory exists
+  file:
+    path: "{{ ansible_env.HOME }}/.config/systemd/user"
+    state: directory
+
+- name: Restic | Install Systemd units
+  copy:
+    src: "{{item}}"
+    dest: "{{ ansible_env.HOME }}/.config/systemd/user"
+  loop:
+    - restic/restic-backup.service
+    - restic/restic-backup.timer
+    - restic/restic-prune.service
+    - restic/restic-prune.timer
+
+- name: Restic | Enable Restic Backup timer
+  systemd:
+    name: restic-backup.timer
+    enabled: yes
+    scope: user
+
+- name: Restic | Enable Restic Prune timer
+  systemd:
+    name: restic-prune.timer
+    enabled: yes
+    scope: user

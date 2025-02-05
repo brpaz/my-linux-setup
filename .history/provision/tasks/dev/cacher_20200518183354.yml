@@ -1,0 +1,11 @@
+- name: Cacher | Download AppImage
+  get_url:
+    url: "https://s3.amazonaws.com/download.cacher.io/Cacher-{{cacher_version}}.AppImage"
+    dest: "/opt/Cacher.AppImage"
+    mode: a+x
+  become: true
+
+- name: Cacher | Install Desktop file
+  template:
+    src: applications/cacher.desktop
+    dest: "{{ applications_dir }}/cacher.desktop"

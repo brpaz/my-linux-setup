@@ -1,0 +1,25 @@
+- name: Docker | Add Docker repository
+  command: dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+  args:
+    warn: false
+  become: true
+
+- name: Docker | Install Packages
+  dnf:
+    name:
+      - docker-ce
+  become: true
+
+- name: Docker | Add current user to Docker group
+  user:
+    name: "{{ user }}"
+    groups: docker
+    append: yes
+  become: true
+
+- name: Docker | Start service
+  systemd:
+    name: docker
+    state: started
+    enabled: yes
+  become: true

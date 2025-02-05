@@ -1,0 +1,8 @@
+- name: Check if Nativefier is installed
+  command: which nativefdsier
+  changed_when: false
+  failed_when: nativefier_installed.rc not in [0,1]
+  register: nativefier_installed
+
+- name: Install Notion
+  comamnd: nativefier "https://notion.so" -p linux -n "Notion"

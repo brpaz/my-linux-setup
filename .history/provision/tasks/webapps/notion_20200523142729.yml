@@ -1,0 +1,29 @@
+- name: Notion | Check if exsits
+  stat:
+    path: /opt/Notion
+  register: st
+
+- name: Notion | Nativefy Notion
+  shell: nativefier "https://notion.so" -p linux -n "Notion" --maximize
+  args:
+    chdir: "{{setup_dir}}"
+    creates: "/opt/Notion"
+
+- name: Notion | Install
+  copy:
+    src: "{{setup_dir}}/Notion-linux-x64/"
+    dest: "/opt/Notion/"
+  args:
+    creates: "/opt/Notion"
+  become: true
+
+- name: Notion | Make executable
+  file:
+    path: "/opt/Notion/Notion"
+    mode: a+x
+  become: true
+
+- name: Notion | Copy desktop file
+  copy:
+    src: applications/notion.desktop
+    dest: "{{ applications_dir }}/notion.desktop"

@@ -1,0 +1,116 @@
+# =======================
+# Languages and runtimes
+# =======================
+- include: python.yml
+  tags: ["python"]
+- include: ruby.yml
+  tags: ["ruby"]
+- include: php.yml
+  tags: ["php"]
+- include: node.yml
+  tags: ["node"]
+- include: golang.yml
+  tags: ["golang"]
+- include: java.yml
+  tags: ["java"]
+
+# =======================
+# Tools
+# =======================
+- include: vscode.yml
+  tags: ["vscode"]
+- include: postman.yml
+  tags: ["postman"]
+- include: meld.yml
+  tags: ["meld"]
+- include: gitkraken.yml
+  tags: ["gitkraken"]
+- include: regex-tester.yml
+  tags: ["regex-tester"]
+- include: virtualbox.yml
+  tags: ["virtualbox"]
+- include: dbeaver.yml
+  tags: ["dbeaver"]
+- include: glade.yml
+  tags: ["glade"]
+- include: hugo.yml
+  tags: ["hugo"]
+- include: jetbrains-toolbox.yml
+  tags: ["jetbrains"]
+
+# ===================
+# Docker
+# ===================
+- include: docker/docker.yml
+  tags: ["docker"]
+- include: docker/compose.yml
+  tags: ["docker", "docker-compose"]
+- include: docker/traefik.yml
+  tags: ["docker", "traefik"]
+- include: docker/portainer.yml
+  tags: ["docker", "portainer"]
+- include: docker/ctop.yml
+  tags: ["docker", "ctop"]
+- include: docker/dive.yml
+  tags: ["docker", "dive"]
+
+# ============================
+# Kubernetes
+# ============================
+- include: kubernetes/minikube.yml
+  tags: ["minikube"]
+- include: kubernetes/kubectl.yml
+  tags: ["kubernetes", "kubectl"]
+- include: kubernetes/kubectx.yml
+  tags: ["kubernetes", "kubectx"]
+- include: kubernetes/helm.yml
+  tags: ["kubernetes", "helm"]
+- include: kubernetes/kail.yml
+  tags: ["kubernetes", "kail"]
+- include: kubernetes/kubernetic.yml
+  tags: ["kubernetes", "kubernetic"]
+- include: kubernetes/telepresence.yml
+  tags: ["kubernetes", "telepresence"]
+- include: kubernetes/kubeseal.yml
+  tags: ["kubernetes", "kubeseal"]
+- include: kubernetes/kustomize.yml
+  tags: ["kubernetes", "kustomize"]
+
+# ===================
+# Cloud tools
+# ===================
+- include: cloud/awscli.yml
+  tags: ["awscli"]
+- include: cloud/doctl.yml
+  tags: ["doctl"]
+- include: cloud/gcloud.yml
+  tags: ["gcloud"]
+- include: cloud/heroku.yml
+  tags: ["heroku"]
+
+# ===================
+# Other
+# ===================
+- include: autoenv.yml
+- include: mkcert.yml
+  tags: ["mkcert"]
+- include: dbcli.yml
+- include: pet.yml
+  tags: ["pet"]
+- include: tldr.yml
+  tags: ["tldr"]
+- include: git-tools.yml
+- include: teleconsole.yml
+- include: charles.yml
+- include: terraform.yml
+  tags: ["terraform"]
+- include: sqllitebrowser.yml
+- include: cacher.yml
+- include: pulumi.yml
+  tags: ["pulumi"]
+- include: sops.yml
+  tags: ["sops"]
+- include: spotlight-studio.yml
+  tags: ["spotlight-studio"]
+- include: gh-cli.yml
+  tags: ["gh-cli"]

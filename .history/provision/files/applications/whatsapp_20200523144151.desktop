@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=WhatsApp Web
+Comment=WhatsApp Web
+Icon=whatsapp
+Exec=/opt/WhatsApp/WhatsApp
+Actions=
+Categories=InstantMessaging;Utility;
+StartupWMClass=WhatsApp

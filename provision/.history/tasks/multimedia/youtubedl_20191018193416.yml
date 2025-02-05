@@ -1,0 +1,11 @@
+
+- name: Youtube-dl
+  dnf:
+    name: youtube-dl
+    state: present
+  become: true
+
+- name: Gydl
+  flatpak:
+      name: com.github.JannikHv.Gydl
+      state: present

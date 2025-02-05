@@ -1,0 +1,35 @@
+- name: Default Shortcuts
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/screenshot', value: "''" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/screenshot-clip', value: "''" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/area-screenshot', value: "''" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/area-screenshot-clip', value: "''" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/window-screenshot', value: "''" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/window-screenshot-clip', value: "''" }
+
+- name: Custom Shortcuts
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'Print'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command', value: "'flameshot gui'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name', value: "'Print screen with flameshot'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding', value: "'<Super>t'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command', value: "'tilix --focus-window'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name', value: "'Open Terminal Window'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding', value: "'<Alt><Super>M'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command', value: "'minbrowser.sh'" }
+    - { key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name', value: "'Open min browser'" }
+
+- name: Set Custom Shortcuts List
+  dconf:
+    key: /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
+    value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"

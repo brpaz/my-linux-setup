@@ -1,0 +1,19 @@
+- name: Helm | Get release
+  github_release:
+    user: kubernetes-sigs
+    repo: kustomize
+    action: latest_release
+    token: "{{ github_token }}"
+  register: kustomize_release
+
+- name: Kustomize | Download Archive
+  unarchive:
+    src: "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/{{ kustomize_release.tag }}/kustomize_{{ kustomize_release.tag }}_linux_amd64.tar.gz"
+    remote_src: true
+    dest: "{{ setup_dir }}"
+
+- name: Kustomize | Install binary
+  copy:
+    path: "{{setup_dir/kustomize_{{ kustomize_release.tag }}_linux_amd64/kustomize"
+    dest: "{{ bin_dir }}/kustomize"
+  become: true

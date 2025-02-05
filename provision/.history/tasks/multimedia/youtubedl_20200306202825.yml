@@ -1,0 +1,5 @@
+- name: Youtube-dl
+  dnf:
+    name: youtube-dl
+    state: present
+  become: true

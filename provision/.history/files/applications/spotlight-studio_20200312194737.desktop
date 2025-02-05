@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Spotlight Studio
+Comment=The API Design Management Platform powering the world&apos;s leading API first companies.
+Icon={{ansbile_env.HOME}}.local/share/icons/apps/spotlight.png
+Exec=/opt/Spotlight-Studio.AppImage
+Actions=
+Categories=Building;Utility;
+StartupWMClass=Stoplight Studio

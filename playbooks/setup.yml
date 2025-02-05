@@ -37,7 +37,7 @@
     - { role: users, tags: [core, users] }
     - { role: selinux, tags: [core, sellinux] }
     - { role: zsh, tags: [core, zsh, shell] }
-    - { role: starship, tags: [core, zsh, shell]}
+    - { role: starship, tags: [core, zsh, shell] }
 
     # # =============================================
     # # Networking
@@ -52,7 +52,7 @@
     - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
     - { role: whatip, tags: [whatip, networking] }
-    - { role: proxyman, tags: [proxyman, networking]}
+    - { role: proxyman, tags: [proxyman, networking] }
     - { role: cloudflared, tags: [cloudflared, networking] }
 
     # # =============================================
@@ -80,8 +80,8 @@
     - { role: trayscale, tags: [trayscale, internet] }
     - { role: wike, tags: [wike, internet, flatpak] }
     - { role: network-displays, tags: [network-displays, internet, flatpak] }
-    - { role: protonmail, tags: [protonmail, internet, flatpak]}
-    - { role: carburetor, tags: [carbureactor, internet, flatpak]}
+    - { role: protonmail, tags: [protonmail, internet, flatpak] }
+    - { role: carburetor, tags: [carbureactor, internet, flatpak] }
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
 
@@ -147,7 +147,7 @@
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
-    - { role: yoga, tags: [ yoga, graphics_design] }
+    - { role: yoga, tags: [yoga, graphics_design] }
 
     # =============================================
     # Development
@@ -182,7 +182,10 @@
     - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
-    - { role: kubectl-cnpg-plugin, tags: [kubectl-cnpg-plugin,kubectl-plugin, kubernetes, github] }
+    - {
+        role: kubectl-cnpg-plugin,
+        tags: [kubectl-cnpg-plugin, kubectl-plugin, kubernetes, github],
+      }
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
@@ -201,7 +204,7 @@
     - { role: taskfile, tags: [taskfile, dev, github] }
     - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
     - { role: zed, tags: [zed, dev, flatpak] }
-    - { role: quickemu , tags: [quickemu, dev, github] }
+    - { role: quickemu, tags: [quickemu, dev, github] }
 
     # =============================================
     # CLI Tools
@@ -231,8 +234,8 @@
     - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
     - { role: copier, tags: [copier, utilities] }
     - { role: brotab, tags: [brotab, utilities] }
-    - { role: zoxide, tags: [zoxide]}
-    - { role: micro, tags: [micro, github]}
+    - { role: zoxide, tags: [zoxide] }
+    - { role: micro, tags: [micro, github] }
     - { role: glances, tags: [glances, tui, utilities] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: tmux, tags: [tmux, tui, utilities] }
@@ -247,6 +250,7 @@
     # # =============================================
     # Utilities
     # =============================================
+    - { role: alacritty, tags: [alacritty, utilities] }
     - { role: bleachbit, tags: [bleachbit, utilities] }
     - { role: cryptomator, tags: [cryptomator, utilities] }
     - { role: currency-converter, tags: [currency-converter, utilities] }
@@ -260,6 +264,7 @@
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: weather, tags: [weather, utilities] }
+    # - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
@@ -273,13 +278,14 @@
     - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
     - { role: kepubify, tags: [kepubify, utilities, github] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
+    # - { role: waveterm, tags: [waveterm, utilities] }
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: scriptkit, tags: [scriptkit, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
     - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
     - { role: sysd-manager, tags: [sysd-manager, utilities] }
-
-    # # =============================================
+    - { role: brightnessctl, tags: [brightnessctl, utilities] }
+    # =============================================
     # Finance
     # =============================================
     - { role: denaro, tags: [denaro, finance, flatpak] }

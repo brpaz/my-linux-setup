@@ -1,0 +1,6 @@
+- name: Install
+  ansible.builtin.dnf:
+    name:
+      - brightnessctl
+    state: present
+  become: true

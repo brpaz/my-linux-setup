@@ -1,0 +1,23 @@
+- name: ZSH | Install
+  dnf:
+    name:
+      - zsh
+      - util-linux-user
+      - powerline-fonts
+    state: present
+  become: true
+
+- name: ZSH | Set as default shell
+  shell: chsh -s $(which zsh ) {{ user }}
+
+  become: true
+
+- name: Zplug | Download zplug installer
+  get_url:
+    url: https://raw.githubusercontent.com/zplug/installer/master/installer.zsh
+    dest: "{{ setup_dir }}/zplug-installer.zsh"
+
+- name: Zplug | Run installer
+  command: "zsh {{ setup_dir }}/zplug-installer.zsh"
+  args:
+    creates: "{{ ansible_env.HOME }}/.zplug"

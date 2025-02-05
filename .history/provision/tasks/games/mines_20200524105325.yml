@@ -1,0 +1,4 @@
+- name: Gnome Mines
+  flatpak:
+    name: org.gnome.Mines
+    state: present

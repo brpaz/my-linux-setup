@@ -1,0 +1,5 @@
+- name: "GitHub CLI | Install"
+  dnf:
+    name: "https://dbeaver.com/files/dbeaver-ee-latest-stable.x86_64.rpm"
+    state: present
+  become: true

@@ -1,0 +1,41 @@
+- name: Disable firewalld
+  systemd:
+    name: firewalld
+    state: stopped
+    enabled: false
+  become: true
+
+- name: Install ufw
+  dnf:
+    name:
+      - ufw
+      - gufw
+  become: true
+
+- name: Enable ufw
+  systemd:
+    name: ufw
+    state: started
+    enabled: true
+  become: true
+
+- name: Allow all access to tcp port 80
+  ufw:
+    rule: allow
+    port: "80"
+    proto: tcp
+  become: true
+
+- name: Allow TCP access for GSConnect
+  ufw:
+    rule: allow
+    port: "1714:1764"
+    proto: tcp
+  become: true
+
+- name: Allow UDP access for GSConnect
+  ufw:
+    rule: allow
+    port: "1714:1764"
+    proto: udp
+  become: true

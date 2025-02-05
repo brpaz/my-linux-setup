@@ -1,0 +1,26 @@
+- name: Kubeval | Get latest release
+  github_release:
+    user: instrumenta
+    repo: kubeval
+    action: latest_release
+    token: "{{ github_token }}"
+  register: gh_release
+
+- name: Kubeval | Download Archive
+  unarchive:
+     src: "https://github.com/instrumenta/kubeval/releases/download/0.15.0/kubeval-linux-amd64.tar.gz"
+     remote_src: true
+     dest: "{{ setup_dir }}"
+  become: true
+
+- name: "dive | install"
+  copy:
+    src: "{{ setup_dir }}/dive"
+    dest: "{{ bin_dir }}/dive"
+    mode: 'a+x'
+  become: true
+
+
+ instrumenta /
+kubeval
+

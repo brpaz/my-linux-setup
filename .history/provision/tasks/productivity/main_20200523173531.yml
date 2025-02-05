@@ -1,0 +1,8 @@
+- include: gnome-calendar.yml
+- include: gnome-contacts.yml
+- include: paperwork.yml
+- include: foliate.yml
+- include: marker.yml
+- include: pdf-master.yml
+- include: planner.yml
+  tags: ["productivity", "planner"]

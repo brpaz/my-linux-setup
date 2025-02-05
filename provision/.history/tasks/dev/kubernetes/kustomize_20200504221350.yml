@@ -1,0 +1,8 @@
+- name: Kustomize | Download installer
+  get_url:
+    url: https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh
+    dest: "{{setup_dir}}"
+
+- name: Kustomize | Install
+  command: "sh {{setup_dir}}/install_kustomize.sh"
+  become: true

@@ -1,0 +1,23 @@
+
+
+- name: Helm | Get release
+  github_release:
+    user: kubernetes-sigs
+    repo: kustomize
+    action: latest_release
+    token: "{{ github_token }}"
+  register: helm_release
+
+- name: Helm | Create tmp dir
+  file:
+    path: "{{ setup_dir }}/helm"
+    state: directory
+
+- name: Helm | Download Archive
+  unarchive:
+    src: "https://get.helm.sh/helm-{{helm_release.tag}}-linux-amd64.tar.gz"
+    remote_src: true
+    dest: "{{ setup_dir }}/helm"
+
+
+https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv3.5.5/kustomize_v3.5.5_linux_amd64.tar.gz

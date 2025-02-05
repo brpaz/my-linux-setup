@@ -1,0 +1,11 @@
+- name: Java
+  dnf:
+    name: java-11-openjdk
+    state: present
+  become: true
+
+- name: Java | Set the correct version
+  alternatives:
+    name: java
+    path: /usr/lib/jvm/java-11-openjdk-11.0.4.11-0.fc30.x86_64/bin/java
+  become: true

@@ -1,0 +1,17 @@
+- name: Check if Heroky is installed
+  command: which heroku
+  register: heroku_installed
+  ignore_errors: yes
+
+- name: Heroku CLI
+  shell: curl https://cli-assets.heroku.com/install.sh | sh
+  become: true
+  when: not heroku_installed.rc
+
+- name: Heroku | Install Autocomplete
+  copy:
+    content: |
+      # heroku autocomplete setup
+      HEROKU_AC_ZSH_SETUP_PATH={{ ansible_env.HOME }}/.cache/heroku/autocomplete/zsh_setup &&
+      test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+    dest: "~/.zshrc.d/heroku.zsh"

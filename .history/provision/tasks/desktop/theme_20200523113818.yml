@@ -1,0 +1,28 @@
+- name: Add Folder Color copr
+  command: dnf copr enable -y kleong/folder-color
+  args:
+    creates: /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:kleong:folder-color.repo
+    warn: false
+  become: true
+
+- name: Install Themes
+  dnf:
+    name:
+      - papirus-icon-theme
+      - folder-color-common
+      - folder-color-nautilus
+      - arc-theme
+      - adwaita-qt4
+      - adwaita-qt5
+    state: present
+  become: true
+
+- name: Enable Icon theme
+  dconf:
+    key: "/org/gnome/desktop/interface/icon-theme"
+    value: "'Papirus-Dark'"
+
+- name: Copy Icons
+  copy:
+    src: icons
+    dest: "{{ ansible_env.HOME }}/.local/share"

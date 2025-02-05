@@ -1,0 +1,19 @@
+- name: Install networking tools
+  dnf:
+    name:
+      - net-tools
+      - traceroute
+      - whois
+      - nmap
+      - iftop
+      - tcpdump
+    state: present
+  become: true
+  tags: ["networking"]
+
+- include: firewall.yml
+  tags: ["networking", "firewalll"]
+- include: speedtest-cli.yml
+  tags: ["networking", "speedtest"]
+- include: dnsmasq.yml
+  tags: ["networking", "dns"]

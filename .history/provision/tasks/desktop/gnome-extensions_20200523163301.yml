@@ -1,0 +1,157 @@
+- name: Gnome Extensions
+  include_role:
+    name: ansible-gnome-extensions
+  vars:
+    gnome_extension_ids:
+      - 97
+      - 937
+      - 800
+      - 779
+      - 517
+      - 355
+      - 307
+      - 16
+      - 1544
+      - 1460
+      - 1319
+      - 1238
+      - 1176
+      - 1162
+      - 1007
+      - 657
+      - 2890
+
+- name: Gnome Extensions | Auto move windows Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/auto-move-windows",
+        value: "['whatsapp.desktop:4', 'com.slack.Slack.desktop:4', 'code.desktop:2', 'cacher.desktop:3']",
+      }
+
+- name: Gnome Extensions | Clipboard indicator Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/clipboard-indicator/history-size",
+        value: 20,
+      }
+    - {
+        key: "/org/gnome/shell/extensions/clipboard-indicator/notify-on-copy",
+        value: "false",
+      }
+
+- name: Gnome Extensions | Dash to Dock Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/background-color",
+        value: "'#ffffff'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/background-opacity",
+        value: 0.0,
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/dock-position",
+        value: "'BOTTOM'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/multi-monitor",
+        value: "true",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/extend-height",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/transparency-mode",
+        value: "'FIXED'",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/hot-keys",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/show-trash",
+        value: "false",
+      }
+    - {
+        key: "/org/gnome/shell/extensions/dash-to-dock/show-mounts",
+        value: "false",
+      }
+
+- name: Gnome Extensions | Notifications Alert Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/notifications-alert/color",
+        value: "'#feb03e'",
+      }
+
+- name: Gnome Extensions | Vitals Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/vitals/hot-sensors",
+        value: ["_memory_usage_", "_system_load_1m_"],
+      }
+    - { key: "/org/gnome/shell/extensions/vitals/position-in-panel", value: 1 }
+    - { key: "/org/gnome/shell/extensions/vitals/show-battery", value: "false" }
+    - { key: "/org/gnome/shell/extensions/vitals/show-fan", value: "false" }
+    - { key: "/org/gnome/shell/extensions/vitals/show-voltage", value: "false" }
+
+- name: Gnome Extensions | TimeApp Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/timepp/alarms-separate-menu",
+        value: "true",
+      }
+    - { key: "/org/gnome/shell/extensions/timepp/unicon-mode", value: "true" }
+    # - { key: '/org/gnome/shell/extensions/timepp/sections', value: "{'Timer': {'enabled': false}, 'Stopwatch': {'enabled': false}, 'Pomodoro': {'enabled': false}, 'Alarms': {'enabled': true}, 'Todo': {'enabled': true}} }"
+
+- name: Gnome Extensions | Emoji Selector Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "org/gnome/shell/extensions/emoji-selector/use-keybinding",
+        value: "false",
+      }
+
+- name: Gnome Extensions | Auto Move Windows Settings
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - {
+        key: "/org/gnome/shell/extensions/auto-move-windows/application-list",
+        value: "['cacher.desktop:3']
+          ",
+      }

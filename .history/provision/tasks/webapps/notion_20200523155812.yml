@@ -1,0 +1,35 @@
+- name: Notion | Check if installed
+  stat:
+    path: /opt/Notion
+  register: notion_dir
+
+- name: Notion | Nativefy Notion
+  command: nativefier "https://notion.so" -p linux -n "Notion" --maximize
+  args:
+    chdir: "{{ setup_dir }}"
+  when: not notion_dir.stat.exists
+
+- name: Notion | Install
+  copy:
+    src: "{{ setup_dir }}/Notion-linux-x64/"
+    dest: "/opt/Notion/"
+  become: true
+  when: not notion_dir.stat.exists
+
+- name: Notion | Fix application name
+  shell: cat <<< $(jq '.name = "Notion"' /opt/Notion/resources/app/package.json ) > /opt/Notion/resources/app/package.json
+  become: true
+  when: not notion_dir.stat.exists
+
+- name: Notion | Make executable
+  file:
+    path: "/opt/Notion/Notion"
+    mode: a+x
+  become: true
+  when: not notion_dir.stat.exists
+
+- name: Notion | Copy desktop file
+  copy:
+    src: applications/notion.desktop
+    dest: "{{ applications_dir }}/notion.desktop"
+  when: not notion_dir.stat.exists

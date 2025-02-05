@@ -1,0 +1,33 @@
+- name: Install required virtualization packages
+  dnf:
+    name:
+      - bridge-utils
+      - libvirt
+      - virt-install
+      - qemu-kvm
+      - virt-top
+      - libguestfs-tools
+      - virt-manager
+    state: present
+  become: true
+
+- name: Run libvirt as non-root user
+  lineinfile:
+    path: /etc/libvirt/qemu.conf
+    regexp: "^user ="
+    line: "user = {{ user }}"
+  become: true
+
+- name: Run libvirt as non-root user
+  lineinfile:
+    path: /etc/libvirt/qemu.conf
+    regexp: "^group ="
+    line: "group = {{ user }}"
+  become: true
+
+- name: Enable libvirtd service
+  systemd:
+    name: libvirtd
+    state: started
+    enabled: yes
+  become: true

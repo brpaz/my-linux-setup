@@ -1,0 +1,7 @@
+- name: Kubeval | Get latest release
+  github_release:
+    user: instrumenta
+    repo: kubeval
+    action: latest_release
+    token: "{{ github_token }}"
+  register: gh_release

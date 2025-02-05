@@ -1,0 +1,10 @@
+- include: fzf.yml
+- include: fd.yml
+- include: rigrep.yml
+- include: ranger.yml
+- include: jq.yml
+- include: yq.yml
+- include: pandoc.yml
+- include: asciinema.yml
+- inclide: fpp.yml
+  tags: ["fpp"]

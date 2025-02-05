@@ -1,0 +1,4 @@
+- name: Planner
+  flatpak:
+    name: com.github.alainm23.planner
+    state: present

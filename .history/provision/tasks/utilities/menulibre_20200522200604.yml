@@ -1,0 +1,5 @@
+- name: Menulibre
+  dnf:
+    name: https://fedora.pkgs.org/31/fedora-aarch64/menulibre-2.2.1-2.fc31.noarch.rpm.html
+    state: present
+  become: true

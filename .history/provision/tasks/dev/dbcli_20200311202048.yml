@@ -1,0 +1,7 @@
+- name: RBDMS cli
+  pip:
+    name:
+      - pgcli
+      - mycli
+    state: present
+  become: true

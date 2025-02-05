@@ -1,0 +1,12 @@
+- name: Notable | Get latest release
+  github_release:
+    user: notable
+    repo: notable
+    action: latest_release
+    token: "{{ github_token }}"
+  register: release
+
+- name: Notable | Download and Install
+  yum:
+    name: https://github.com/notable/notable/releases/download/{{ release.tag }}/notable-{{ release.tag[1:] }}.x86_64.rpm
+  become: true
