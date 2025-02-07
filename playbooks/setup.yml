@@ -43,7 +43,7 @@
     # # Networking
     # # =============================================
     - { role: network-tools, tags: [nettwork] }
-    #- { role: dns, tags: [dns, networking] }
+    - { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
@@ -231,7 +231,6 @@
     - { role: lazygit, tags: [lazygit, dev, github] }
     - { role: lazysql, tags: [lazysql, cli, github] }
     - { role: asciinema, tags: [asciinema, cli, github] }
-    - { role: bitwarden-cli, tags: [bitwarden-cli, security, cli, github] }
     - { role: copier, tags: [copier, utilities] }
     - { role: brotab, tags: [brotab, utilities] }
     - { role: zoxide, tags: [zoxide] }
@@ -285,6 +284,7 @@
     - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
     - { role: sysd-manager, tags: [sysd-manager, utilities] }
     - { role: brightnessctl, tags: [brightnessctl, utilities] }
+    - { role: bitwarden, tags: [bitwarden, security, cli, github] }
     # =============================================
     # Finance
     # =============================================

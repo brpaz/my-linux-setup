@@ -1,7 +1,12 @@
-- name: Bitwarden | Download
+- name: Bitwarden CLI | Download
   ansible.builtin.unarchive:
-    dest: '{{ bin_dir }}'
+    dest: "{{ bin_dir }}"
     mode: a+x
     remote_src: true
     src: https://github.com/bitwarden/clients/releases/download/cli-{{ bitwarden_cli_version }}/bw-linux-{{ bitwarden_cli_version[1:] }}.zip
   become: true
+
+- name: Bitwarden Desktop | Download
+  ansible.builtin.flatpak:
+    name: com.bitwarden.desktop
+    state: present

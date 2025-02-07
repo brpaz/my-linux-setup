@@ -1,9 +1,0 @@
-- name: Check if devbox is installed
-  ansible.builtin.command: which devbox
-  register: devbox_installed
-  failed_when: devbox_installed.rc != 0
-  ignore_errors: true
-
-- name: Devbox | Install
-  ansible.builtin.shell: curl -fsSL https://get.jetpack.io/devbox | bash
-  when: devbox_installed.rc != 0

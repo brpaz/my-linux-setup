@@ -18,23 +18,29 @@
     owner: root
     group: root
     content: |
-      # Use Quad9 DNS servers
-      server=9.9.9.9
-      server=149.112.112.112
+      # Disable reading /etc/resolv.conf
+      no-resolv
 
-      # Use Cloudflare DNS servers
-      server=1.1.1.1
-      server=1.0.0.1
+      # Make fallback work properly
+      #strict-order
+
+      # Home DNS (Primary)
+      server=192.168.1.10
+
+      # DNS Crypt (Secondary)
+      server=127.0.0.53
+
+      # Fallback DNS servers
+      #server=9.9.9.9
+      #server=1.1.1.1
 
       # Enable caching (optional)
       cache-size=1000
 
-      # Disable reading /etc/resolv.conf
-      no-resolv
-
       # Optional: Enable logging for debugging
       #log-queries
       #log-facility=/var/log/dnsmasq.log
+
   become: true
 
 - name: Configure Dnsmasq to resolve homelab domains
@@ -73,5 +79,44 @@
   ansible.builtin.systemd:
     name: NetworkManager
     state: restarted
+    enabled: yes
+  become: true
+
+- name: DNSCrypt Proxy | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: DNSCrypt
+    repo: dnscrypt-proxy
+    token: "{{ github_token }}"
+  register: release
+
+- name: DNSCrypt Proxy | Download and Install
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/{{ release.tag }}/dnscrypt-proxy-linux_x86_64-{{ release.tag }}.tar.gz
+
+- name: Install DNSCrypt Proxy
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/linux-x86_64/dnscrypt-proxy"
+    dest: "{{ bin_dir }}/dnscrypt-proxy"
+    mode: a+x
+  become: true
+
+- name: DNSCrypt Proxy | Create configuration file
+  ansible.builtin.template:
+    src: templates/dnscrypt-proxy.toml.j2
+    dest: "{{ ansible_env.HOME }}/.config/dnscrypt-proxy.toml"
+    mode: "0644"
+
+- name: DNSCrypt Proxy | Start and enable service
+  ansible.builtin.command:
+    cmd: dnscrypt-proxy -config ~/.config/dnscrypt-proxy.toml -service install
+  become: true
+
+- name: Enable DNSCrypt Proxy service
+  ansible.builtin.systemd:
+    name: dnscrypt-proxy
+    state: started
     enabled: yes
   become: true

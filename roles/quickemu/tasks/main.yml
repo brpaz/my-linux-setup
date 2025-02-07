@@ -20,7 +20,7 @@
     action: latest_release
     user: quickemu-project
     repo: quickgui
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
   register: quickgui_release
 
 - name: QuickGUI - Install
@@ -28,4 +28,26 @@
     name: https://github.com/quickemu-project/quickgui/releases/download/{{ quickgui_release.tag }}/quickgui-{{ quickgui_release.tag }}+1-linux.rpm
     state: present
     disable_gpg_check: true
+  become: true
+
+- name: Create Quickemu group
+  ansible.builtin.group:
+    name: quickemu
+    state: present
+  become: true
+
+- name: Add curent user to quickemu group
+  ansible.builtin.user:
+    name: "{{ ansible_user }}"
+    groups: quickemu
+    append: true
+  become: true
+
+- name: Create directory to store quickemu vms
+  ansible.builtin.file:
+    path: /var/lib/quickemu
+    state: directory
+    owner: root
+    group: quickemu
+    mode: "g+rwX"
   become: true
