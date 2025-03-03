@@ -285,6 +285,7 @@
     - { role: sysd-manager, tags: [sysd-manager, utilities] }
     - { role: brightnessctl, tags: [brightnessctl, utilities] }
     - { role: bitwarden, tags: [bitwarden, security, cli, github] }
+    - { role: algokit, tags: [algokit, utilities] }
     # =============================================
     # Finance
     # =============================================
