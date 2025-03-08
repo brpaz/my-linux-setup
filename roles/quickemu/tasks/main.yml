@@ -38,7 +38,7 @@
 
 - name: Add curent user to quickemu group
   ansible.builtin.user:
-    name: "{{ ansible_user }}"
+    name: "{{ ansible_env.USER }}"
     groups: quickemu
     append: true
   become: true
