@@ -286,6 +286,7 @@
     - { role: brightnessctl, tags: [brightnessctl, utilities] }
     - { role: bitwarden, tags: [bitwarden, security, cli, github] }
     - { role: algokit, tags: [algokit, utilities] }
+    - { role: snapper, tags: [snapper, utilities] }
     # =============================================
     # Finance
     # =============================================

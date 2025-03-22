@@ -1,0 +1,8 @@
+# The next two actions emulate the DNF4 snapper plugin. It uses the "snapper" command-line proram.
+
+# Creates pre snapshot before the transaction and stores the snapshot number in the "tmp.snapper_pre_number" variable.
+pre_transaction::::/usr/bin/sh -c echo\ "tmp.snapper_desc=$(ps\ -o\ command\ --no-headers\ -p\ '${pid}')"
+pre_transaction::::/usr/bin/sh -c echo\ "tmp.snapper_pre_number=$(snapper\ create\ -t\ pre\ -p\ -d\ '${tmp.snapper_desc}')"
+
+# If the variable "tmp.snapper_pre_number" exists, it creates post snapshot after the transaction and removes the tmp variables
+post_transaction::::/usr/bin/sh -c [\ -n\ "${tmp.snapper_pre_number}"\ ]\ &&\ snapper\ create\ -t\ post\ --pre-number\ "${tmp.snapper_pre_number}"\ -d\ "${tmp.snapper_desc}";\ echo\ tmp.snapper_pre_number\ ;\ echo\ tmp.snapper_desc

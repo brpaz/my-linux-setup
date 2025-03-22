@@ -1,3 +1,11 @@
+- name: Install dnf plugins
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - dnf-plugins-core
+    - libdnf5-plugin-actions
+  become: true
 - name: Install core packages
   ansible.builtin.dnf:
     name:
@@ -5,7 +13,6 @@
       - wget
       - unzip
       - python-psutil
-      - dnf-plugins-core
       - make
       - pwgen
       - lnav

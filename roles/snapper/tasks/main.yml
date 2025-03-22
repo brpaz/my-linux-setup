@@ -1,0 +1,14 @@
+- name: Install snapper
+  ansible.builtin.dnf:
+    name: snapper
+    state: present
+  become: true
+
+- name: Install Snapper dnf plugin
+  ansible.builtin.template:
+    src: snapper.actions.j2
+    dest: /etc/dnf/libdnf5-plugins/actions.d/snapper.actions
+    owner: root
+    group: root
+    mode: "0755"
+  become: true
