@@ -1,0 +1,5 @@
+- name: Install
+  ansible.builtin.flatpak:
+    name: org.kiwix.desktop
+    state: present
+  become: true
