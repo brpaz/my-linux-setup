@@ -12,3 +12,4 @@
     - { role: portainer, tags: [portainer, docker-apps] }
     - { role: dnsdock, tags: [dnsdock, docker-apps] }
     - { role: dozzle, tags: [dozzle, docker-apps] }
+    - { role: whisper, tags: [whisper, docker-apps] }

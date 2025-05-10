@@ -1,0 +1,10 @@
+- name: Whisper | Start container
+  community.docker.docker_container:
+    name: whisper
+    image: "{{ whisper_image }}:{{ whisper_version }}"
+    restart_policy: unless-stopped
+    ports:
+      - 127.0.0.1:9010:9000
+    env:
+      ASR_MODEL: base
+      ASR_ENGINE: openai_whisper
