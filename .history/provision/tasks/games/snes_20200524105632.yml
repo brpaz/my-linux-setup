@@ -1,5 +1,0 @@
-- name: Snes
-  dnf:
-    name: snes9x
-    state: present
-  become: true

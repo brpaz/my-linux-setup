@@ -2,3 +2,4 @@
 .venv
 .ansible_galaxy
 tags
+.history

@@ -1,5 +1,0 @@
-- name: Menulibre
-  dnf:
-    name: https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/31/Everything/aarch64/os/Packages/m/menulibre-2.2.1-2.fc31.noarch.rpm
-    state: present
-  become: true

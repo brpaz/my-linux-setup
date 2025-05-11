@@ -1,5 +1,0 @@
-- name: Restic
-  dnf:
-    name: restic
-    state: present
-  become: true

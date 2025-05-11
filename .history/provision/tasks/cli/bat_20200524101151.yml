@@ -1,5 +1,0 @@
-- name: Bat | Install
-  dnf:
-    name: bat
-    state: present
-  become: true

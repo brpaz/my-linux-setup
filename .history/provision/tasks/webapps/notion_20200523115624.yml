@@ -1,6 +1,0 @@
-- name: Check if Nativefier is installed
-  command: which nativefdsier
-  register: nativefier_installed
-
-- name: Degub
-  debug: var=nativefier_installed

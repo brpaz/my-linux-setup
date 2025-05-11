@@ -1,5 +1,0 @@
-- name: "GitHub CLI | Install"
-  dnf:
-    name: "https://github.com/cli/cli/releases/download/v0.7.0/gh_0.7.0_linux_amd64.rpm"
-    state: present
-  become: true

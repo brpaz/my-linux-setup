@@ -1,8 +1,0 @@
-- name: Install required virtualization package
-  dnf:
-    name:
-      - bridge-utils
-      - libvirt
-      - virt-install
-      - qemu-kvm
-    state: present

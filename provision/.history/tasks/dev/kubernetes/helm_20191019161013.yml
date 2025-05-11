@@ -1,6 +1,0 @@
-- name: Helm | Install
-  shell: curl -L https://git.io/get_helm.sh | bash
-  become: true
-
-- name: Helm | Install autocomplete
-  shell: helm completion zsh > {{ shell_completions_dir }}/_helm

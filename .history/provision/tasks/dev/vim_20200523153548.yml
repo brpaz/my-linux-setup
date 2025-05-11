@@ -1,5 +1,0 @@
-- name: Vim Install
-  dnf:
-    name: vim
-    state: present
-  become: true

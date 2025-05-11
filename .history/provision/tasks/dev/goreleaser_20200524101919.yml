@@ -1,4 +1,0 @@
-- name: Goreleaser
-  dnf:
-    name: https://github.com/goreleaser/goreleaser/releases/download/v0.136.0/goreleaser_amd64.rpm
-    state: present

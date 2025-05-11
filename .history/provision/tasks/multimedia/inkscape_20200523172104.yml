@@ -1,5 +1,0 @@
-- name: Inkscape
-  dnf:
-    name: inkscape
-    state: present
-  become: true

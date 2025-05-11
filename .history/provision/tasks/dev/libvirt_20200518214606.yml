@@ -1,4 +1,0 @@
-- name: Install
-  dnf:
-    name: bridge-utils libvirt virt-install qemu-kvm
-    state: present
