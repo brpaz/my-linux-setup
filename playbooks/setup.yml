@@ -99,6 +99,7 @@
     - { role: xournalpp, tags: [xournalpp, productivity] }
     - { role: heynote, tags: [heynote, productivity] }
     - { role: obsidian, tags: [obsidian, productivity] }
+    - { role: eloquent, tags: [eloquent, productivity, flatpak] }
 
     ## AI
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
@@ -143,11 +144,12 @@
     - { role: pinta, tags: [pinta, graphics_design] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
+    - { role: ohmysvg, tags: [ohmysvg, graphics_design] }
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
-    - { role: yoga, tags: [yoga, graphics_design] }
+    - { role: curtail, tags: [curtail, graphics_design, flatpak] }
 
     # =============================================
     # Development
@@ -210,6 +212,7 @@
     # CLI Tools
     # =============================================
     - { role: exa, tags: [exa, cli, github] }
+    - { role: ghostty, tags: [ghostty] }
     - { role: bat, tags: [bat, github] }
     - { role: fzf, tags: [fzf, cli, github] }
     - { role: fd, tags: [fd, cli, github] }
@@ -287,6 +290,7 @@
     - { role: bitwarden, tags: [bitwarden, security, cli, github] }
     - { role: algokit, tags: [algokit, utilities] }
     - { role: snapper, tags: [snapper, utilities] }
+    - { role: gradia, tags: [gradia, graphics_design, flatpak] }
     # =============================================
     # Finance
     # =============================================

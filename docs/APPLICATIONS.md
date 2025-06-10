@@ -57,6 +57,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
 * [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
 - [heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
+* [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
 
 ---
 
@@ -109,8 +110,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 * [Inkscape](https://inkscape.org/) - Design tool
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
-* [Yoga Image optimizer](https://flathub.org/apps/details/org.flozz.yoga-image-optimizer) - A graphical tool to convert and optimize JPEG, PNG and WebP images
-* [Boxy SVG](https://flathub.org/apps/details/com.boxy_svg.BoxySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
+* [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - A simple image cropping tool.
+* [OhMySVG](https://flathub.org/apps/details/com.github.rafaelmardojai.OhMySVG) - A simple SVG editor.
+* [Boxy SVG](https://flathub.org/apps/re.sonny.OhMySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
 
 
 ---
@@ -188,9 +190,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
 - [Clapgrep](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - One app to search through all your files, powered by ripgrep
-- [Wave Terminal](https://www.waveterm.dev/)
+- [Ghostty](https://github.com/ghostty-org/ghostty) - Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 - [Lock](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
 - [sysD Manager](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - A GUI to manage systemd units
+- [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 
 ---
 
