@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: org.gnome.Polari
+    state: present

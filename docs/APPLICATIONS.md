@@ -67,7 +67,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge)
-* [Dropbox](https://www.dropbox.com/home#/) - Easly share files between computers.
 * [uget](https://ugetdm.com/) - Download manager
 * [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
@@ -90,6 +89,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [noscl](https://github.com/fiatjaf/noscl) - Command line client for Nostr.
 - [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
+- [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
 
 #### Web Apps
 

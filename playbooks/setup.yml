@@ -84,6 +84,7 @@
     - { role: carburetor, tags: [carbureactor, internet, flatpak] }
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
+    - { role: polari, tags: [polari, internet, flatpak] }
 
     # # =============================================
     # # Productivity
@@ -212,7 +213,7 @@
     # CLI Tools
     # =============================================
     - { role: exa, tags: [exa, cli, github] }
-    - { role: ghostty, tags: [ghostty] }
+    - { role: ghostty, tags: [ghostty, terminal] }
     - { role: bat, tags: [bat, github] }
     - { role: fzf, tags: [fzf, cli, github] }
     - { role: fd, tags: [fd, cli, github] }
