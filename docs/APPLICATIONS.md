@@ -58,6 +58,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
 - [heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 * [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
+* [MiniText](https://flathub.org/apps/io.github.nokse22.minitext) - A very small and minimalistic digital scratch pad with minimal editing capabilities.
+* [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
 
 ---
 
@@ -113,7 +115,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - A simple image cropping tool.
 * [OhMySVG](https://flathub.org/apps/details/com.github.rafaelmardojai.OhMySVG) - A simple SVG editor.
 * [Boxy SVG](https://flathub.org/apps/re.sonny.OhMySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
-
+* [Pigment](https://flathub.org/apps/com.jeffser.Pigment) - Pigment allows you to extract a palette of colors from your images offline. You can select the speed and accuracy by modifying the number and quality of colors.
 
 ---
 ### Sound & Video

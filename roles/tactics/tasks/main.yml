@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: io.gitlab.leesonwai.Tactics
+    state: present

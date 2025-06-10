@@ -101,6 +101,7 @@
     - { role: heynote, tags: [heynote, productivity] }
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
+    - { role: minitext, tags: [minitext, productivity, flatpak] }
 
     ## AI
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
@@ -151,6 +152,7 @@
     - { role: inkscape, tags: [inkscape, graphics_design] }
     - { role: flameshot, tags: [flameshot, graphics_design] }
     - { role: curtail, tags: [curtail, graphics_design, flatpak] }
+    - { role: pigment, tags: [pigment, graphics_design, flatpak] }
 
     # =============================================
     # Development
@@ -193,7 +195,7 @@
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
     - { role: mkcert, tags: [mkcert, dev, github] }
-    #- { role: nix, tags: [nix, dev] }
+    - { role: nix, tags: [nix, dev] }
     - { role: redis, tags: [redis, dev] }
     - { role: terraform, tags: [terraform, cli, dev, github] }
     - { role: wildcard, tags: [wildcard, dev, flatpak] }
@@ -292,6 +294,8 @@
     - { role: algokit, tags: [algokit, utilities] }
     - { role: snapper, tags: [snapper, utilities] }
     - { role: gradia, tags: [gradia, graphics_design, flatpak] }
+    - { role: tactics, tags: [tactics, utilities, flatpak] }
+    - { role: text-compare, tags: [text-compare, utilities, flatpak] }
     # =============================================
     # Finance
     # =============================================
