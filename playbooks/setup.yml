@@ -251,6 +251,7 @@
     - { role: shfmt, tags: [shfmt, utilities, github] }
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
     - { role: television, tags: [television, utilities, github] }
+    - { role: tailspin, tags: [tailspin, utilities, github] }
 
     # # =============================================
     # Utilities

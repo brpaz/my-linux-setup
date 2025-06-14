@@ -6,7 +6,7 @@
     - { role: grafana, tags: [grafana, docker-apps] }
     - { role: loki, tags: [loki, docker-apps] }
     - { role: node-exporter, tags: [node-exporter, docker-apps] }
-    #- { role: sourcegraph, tags: [sourcegraph, docker-apps] }
+    - { role: sourcegraph, tags: [sourcegraph, docker-apps] }
     - { role: prometheus, tags: [prometheus, docker-apps] }
     - { role: promtail, tags: [promtail, docker-apps] }
     - { role: portainer, tags: [portainer, docker-apps] }

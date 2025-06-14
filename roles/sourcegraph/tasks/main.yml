@@ -5,7 +5,7 @@
 
 - name: Sourcegraph | Create configuration directory
   ansible.builtin.file:
-    mode: '0755'
+    mode: "0755"
     path: "{{ sourcegraph_config_dir }}"
     state: directory
   become: true
@@ -20,11 +20,12 @@
     name: sourcegraph
     image: sourcegraph/server:{{ sourcegraph_version }}
     labels:
-      traefik.enable: 'true'
+      traefik.enable: "true"
       traefik.http.routers.sourcegraph.entrypoints: websecure
       traefik.http.routers.sourcegraph.rule: Host(`{{ sourcegraph_domain }}`)
-      traefik.http.routers.sourcegraph.tls: 'true'
-      traefik.http.services.sourcegraph.loadbalancer.server.port: '7080'
+      traefik.http.routers.sourcegraph.tls: "true"
+      traefik.http.services.sourcegraph.loadbalancer.server.port: "7080"
+      traefik.docker.network: traefik-public
     networks:
       - name: traefik-public
       - name: sourcegraph
@@ -33,12 +34,12 @@
       - "{{ sourcegraph_config_dir }}:/etc/sourcegraph"
       - sourcegraph_data:/var/opt/sourcegraph
     env:
-      DISABLE_OBSERVABILITY: 'true'
+      DISABLE_OBSERVABILITY: "true"
 
 - name: Start serve-git container
   community.docker.docker_container:
     name: sourcegraph-serve-git
-    image: sourcegraph/src-cli:latest
+    image: sourcegraph/src-cli:{{ sourcegraph_version }}
     command: serve-git /data/repos
     networks:
       - name: sourcegraph
