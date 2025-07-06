@@ -210,6 +210,7 @@
     - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
     - { role: zed, tags: [zed, dev, flatpak] }
     - { role: quickemu, tags: [quickemu, dev, github] }
+    - { role: radicle, tags: [radicle, dev] }
 
     # =============================================
     # CLI Tools
@@ -252,7 +253,8 @@
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
     - { role: television, tags: [television, utilities, github] }
     - { role: tailspin, tags: [tailspin, utilities, github] }
-
+    - { role: btop, tags: [btop, utilities] }
+    - { role: doggo, tags: [doggo, utilities, github, dns] }
     # # =============================================
     # Utilities
     # =============================================

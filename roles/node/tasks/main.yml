@@ -8,13 +8,13 @@
   community.general.github_release:
     action: latest_release
     repo: fnm
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: Schniz
   register: fnm_release
 
 - name: FNM | Install
   ansible.builtin.unarchive:
-    dest: '{{ bin_dir }}'
+    dest: "{{ bin_dir }}"
     mode: a+x
     remote_src: true
     src: https://github.com/Schniz/fnm/releases/download/{{ fnm_release.tag }}/fnm-linux.zip
@@ -23,7 +23,7 @@
 - name: Install Global NPM packages
   community.general.npm:
     global: true
-    name: '{{ item }}'
+    name: "{{ item }}"
   with_items:
     - pnpm
     - commitizen
@@ -34,3 +34,5 @@
     - svgo
     - sharp-cli
     - plop
+    - "@anthropic-ai/claude-code"
+    - "wrangler"

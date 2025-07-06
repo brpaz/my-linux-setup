@@ -22,7 +22,7 @@
     - [Http Tools](#http-tools)
     - [Package Managers](#package-managers)
     - [Version Control](#version-control)
-    - [Project Scaffolding](#project-scaffolding)
+    - [Scaffolding tools](#scaffolding-tools)
     - [Snippets and Cheat sheets](#snippets-and-cheat-sheets)
     - [Cloud clients](#cloud-clients)
     - [Docker Tools](#docker-tools)
@@ -31,7 +31,7 @@
     - [Security](#security)
     - [System Utils](#system-utils)
     - [Other](#other)
-    - [Dev Envrionments](#dev-envrionments)
+    - [Development tools](#development-tools-1)
   - [Development Runtimes](#development-runtimes)
   - [Gnome Extensions](#gnome-extensions)
   - [VS Code Extensions](#vs-code-extensions)
@@ -249,6 +249,8 @@ I use ZSH shell with the following extras:
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [lnav](http://lnav.org/) - The Log File Navigator
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
+* [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
+* [atuin](https://github.com/atuinsh/atuin) - A shell history tool that helps you find and reuse commands.
 
 ### Multimedia
 
@@ -272,14 +274,14 @@ I use ZSH shell with the following extras:
 * [GitHub CLI](https://github.com/cli/cli) - GitHub’s official command line tool
 * [GitLab CLI](https://gitlab.com/gitlab-org/cli) - GLab is an open source GitLab CLI tool bringing GitLab to your terminal next to where you are already working with git and your code without switching between windows and browser tabs. Work with issues, merge requests, watch running pipelines directly from your CLI among other features.
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
-* [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#readme)
-* [commitizen/cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
-* [goreleaser/goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
-* [cezaraugusto/mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses. Easily.
-* [conduct - npm](https://www.npmjs.com/package/conduct)
+* [lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
+* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
+* [cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+* [goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
+* [mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses. Easily.
+* [conduct](https://www.npmjs.com/package/conduct) - Generate a code of conduct file for your project.
 
-### Project Scaffolding
+### Scaffolding tools
 
 * [copier](https://copier.readthedocs.io/en/stable/) - A library and CLI app for rendering project templates.
 * [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development.
@@ -301,17 +303,18 @@ I use ZSH shell with the following extras:
 * [Vercel CLI](https://vercel.com/cli)
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
+* [wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) - Cloudflare Workers CLI
 
 ### Docker Tools
 
-* [docker-compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
+* [compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
 * [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 * [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
 * [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
 
 ### Kubernetes
 
-* [Kind](https://github.com/kubernetes-sigs/kind) - Kubernetes IN Docker - local clusters for testing Kubernete
+* [kind](https://github.com/kubernetes-sigs/kind) - Kubernetes IN Docker - local clusters for testing Kubernete
 * [kubectl](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl) - Kubernetes Control
 * [kubectx](https://github.com/ahmetb/kubectx) - Fast way to switch between clusters and namespaces in kubectl
 * [k9s](https://github.com/derailed/k9s) - Kubernetes CLI To Manage Your Clusters In Style!
@@ -319,7 +322,7 @@ I use ZSH shell with the following extras:
 * [kubeconform](https://github.com/yannh/kubeconform) - A FAST Kubernetes manifests validator, with support for Custom Resources.
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
-* [stern/stern](https://github.com/stern/stern) -  Multi pod and container log tailing for Kubernetes
+* [stern](https://github.com/stern/stern) -  Multi pod and container log tailing for Kubernetes
 
 ## Infrastucture As Code
 
@@ -338,32 +341,36 @@ I use ZSH shell with the following extras:
 ### System Utils
 
 * [htop](https://github.com/hishamhm/htop) - htop is an interactive text-mode process viewer for Unix systems.
+* [btop](https://github.com/aristocratos/btop) - A monitor of system resources.
 * [fkill-cli](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes. Cross-platform.
 * [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
-* [tmux](https://github.com/tmux/tmux) and [tmuxp](https://github.com/tmux-python/tmuxp) - Terminal multiplexer and session manager.
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
 * [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
 * [glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
 * [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
+* [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
 
 ### Other
 
-* [jorgerojas26/lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
+* [fastfetch](https://github.com/fastfetch-cli/fastfetch) - A maintained, feature-rich and performance oriented, neofetch like system information tool.
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
 * [sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open source tool that helps you monitor, analyze and optimize your website speed and performance, based on performance best practices advices.
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
-* [wmctrl](https://linux.die.net/man/1/wmctrl) - wmctrl is a command that can be used to interact with an X Window manager that is compatible with the EWMH/NetWM specification.
-* [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [D2 Lang](https://d2lang.com/tour/intro/) - D2 is a diagram scripting language that turns text to diagrams. It stands for Declarative Diagramming. Declarative, as in, you describe what you want diagrammed, it generates the image.
 * [watchexec](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications.
+* [basalt](https://github.com/erikjuhani/basalt) - TUI Application to manage Obsidian notes directly from the terminal
+* [markdownlint](https://github.com/markdownlint/markdownlint) - Markdown lint tool
 
-### Dev Envrionments
+### Development tools
 
-- [Devbox](https://www.jetify.com/devbox) - Portable, Isolated Dev Environments
-- [Vagrant by HashiCorp](https://www.vagrantup.com/)
+- [devenv](https://devenv.sh/) - A tool for creating and managing development environments.
+- [holesail](https://holesail.io/) - Peer to Peer tunnels forInstant Access.
 - [localtunnel](https://github.com/localtunnel/localtunnel) - expose your machine to the world.
 - [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
+* [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
+* [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
+* [go-task](https://taskfile.dev/) - A task runner / simpler Make alternative written in Go.
 
 ## Development Runtimes
 

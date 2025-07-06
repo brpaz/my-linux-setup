@@ -1,0 +1,5 @@
+- name: Install
+  ansible.builtin.shell:
+    cmd: curl -sSL https://radicle.xyz/install | sh
+  args:
+    executable: /bin/bash

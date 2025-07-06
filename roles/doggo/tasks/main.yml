@@ -1,0 +1,21 @@
+- name: Get latest release version
+  community.general.github_release:
+    action: latest_release
+    user: mr-karan
+    repo: doggo
+    token: "{{ github_token }}"
+  register: doggo_release
+
+- name: Download Doggo
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    mode: a+x
+    remote_src: true
+    src: "https://github.com/mr-karan/doggo/releases/download/{{ doggo_release.tag }}/doggo_{{ doggo_release.tag[1:] }}_Linux_x86_64.tar.gz"
+
+- name: Move Doggo binary to bin directory
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/doggo_{{ doggo_release.tag[1:] }}_Linux_x86_64/doggo"
+    dest: "{{ bin_dir }}/doggo"
+    mode: a+x
+  become: true
