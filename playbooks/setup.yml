@@ -299,6 +299,7 @@
     - { role: gradia, tags: [gradia, graphics_design, flatpak] }
     - { role: tactics, tags: [tactics, utilities, flatpak] }
     - { role: text-compare, tags: [text-compare, utilities, flatpak] }
+    - { role: keysmith, tags: [keysmith, utilities, flatpak] }
     # =============================================
     # Finance
     # =============================================

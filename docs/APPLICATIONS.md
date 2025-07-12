@@ -196,6 +196,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Lock](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
 - [sysD Manager](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - A GUI to manage systemd units
 - [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
+- [Keysmith](https://flathub.org/apps/io.github.tobagin.keysmith) - KeySmith is a user-friendly graphical application for managing SSH keys.
 
 ---
 
