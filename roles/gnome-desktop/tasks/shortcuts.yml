@@ -1,23 +1,23 @@
 - name: Set default Gnome shortcuts
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   with_items:
     - key: /org/gnome/settings-daemon/plugins/media-keys/screenshot
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/screenshot-clip
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/area-screenshot
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/area-screenshot-clip
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/window-screenshot
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/window-screenshot-clip
-      value: ''''''
+      value: "''"
     - key: /org/gnome/settings-daemon/plugins/media-keys/screenreader
-      value: ''''''
+      value: "''"
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-1
       value:
         - <Super>1
@@ -36,6 +36,12 @@
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-6
       value:
         - <Super>6
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-7
+      value:
+        - <Super>7
+    - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-8
+      value:
+        - <Super>8
     - key: /org/gnome/desktop/wm/keybindings/toggle-fullscreen
       value:
         - F11
@@ -44,10 +50,58 @@
         - <Super>D
     - key: /org/gnome/desktop/wm/keybindings/switch-input-source
       value:
-        - ''
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/switch-input-source-backwards
       value:
-        - ''
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-1
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-2
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-3
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-4
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-5
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-6
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-7
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/switch-to-application-8
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-1
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-2
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-3
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-4
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-5
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-6
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-7
+      value:
+        - ""
+    - key: /org/gnome/shell/keybindings/open-new-window-application-8
+      value:
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/maximize-horizontally
       value:
         - <Super>H
@@ -59,7 +113,7 @@
         - <Super>Q
     - key: /org/gnome/desktop/wm/keybindings/activate-window-menu
       value:
-        - ''
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/move-to-center
       value:
         - <Super>C
@@ -74,19 +128,19 @@
         - <Super><Alt>T
     - key: /org/gnome/desktop/wm/keybindings/switch-input-source
       value:
-        - ''
+        - ""
     - key: /org/gnome/settings-daemon/plugins/media-keys/help
       value:
-        - ''
+        - ""
     - key: /org/gnome/shell/keybindings/toggle-quick-settings
       value:
-        - '<Super>Comma'
+        - "<Super>Comma"
     - key: /org/gnome/shell/keybindings/toggle-message-tray
       value:
-        - '<Super>N'
+        - "<Super>N"
     - key: /org/gnome/shell/keybindings/focus-active-notification
       value:
-        - ''
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-1
       value:
         - <Control><Super>1
@@ -99,6 +153,18 @@
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-4
       value:
         - <Control><Super>4
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-5
+      value:
+        - <Control><Super>5
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-6
+      value:
+        - <Control><Super>6
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-7
+      value:
+        - <Control><Super>7
+    - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-8
+      value:
+        - <Control><Super>8
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-right
       value:
         - <Control><Super>Left
