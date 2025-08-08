@@ -191,12 +191,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
-- [Clapgrep](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - One app to search through all your files, powered by ripgrep
+- [Clapgrep](https://flathub.org/apps/de.leopoldluley.Clapgrep) - One app to search through all your files, powered by ripgrep
 - [Ghostty](https://github.com/ghostty-org/ghostty) - Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 - [Lock](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
 - [sysD Manager](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - A GUI to manage systemd units
 - [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 - [Keysmith](https://flathub.org/apps/io.github.tobagin.keysmith) - KeySmith is a user-friendly graphical application for managing SSH keys.
+- [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) -  NetPeek is a simple network scanner that helps you discover active devices on your local network.
 
 ---
 

@@ -1,0 +1,20 @@
+- name: Atuin | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: atuinsh
+    repo: atuin
+    token: "{{ github_token }}"
+  register: release
+
+- name: Atuin | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/atuinsh/atuin/releases/download/v{{ release.tag }}/atuin-x86_64-unknown-linux-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Atuin | Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/atuin"
+    dest: "{{ bin_dir }}/atuin"
+    mode: a+x

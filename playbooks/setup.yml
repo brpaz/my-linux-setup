@@ -42,7 +42,7 @@
     # # =============================================
     # # Networking
     # # =============================================
-    - { role: network-tools, tags: [nettwork] }
+    - { role: network-tools, tags: [networking] }
     - { role: dns, tags: [dns, networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
@@ -54,6 +54,7 @@
     - { role: whatip, tags: [whatip, networking] }
     - { role: proxyman, tags: [proxyman, networking] }
     - { role: cloudflared, tags: [cloudflared, networking] }
+    - { role: netpeek, tags: [netpeek, networking] }
 
     # # =============================================
     # # Internet
@@ -255,6 +256,7 @@
     - { role: tailspin, tags: [tailspin, utilities, github] }
     - { role: btop, tags: [btop, utilities] }
     - { role: doggo, tags: [doggo, utilities, github, dns] }
+    - { role: atuin, tags: [atuin, utilities, github] }
     # # =============================================
     # Utilities
     # =============================================
