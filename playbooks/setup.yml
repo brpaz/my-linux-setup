@@ -257,6 +257,7 @@
     - { role: btop, tags: [btop, utilities] }
     - { role: doggo, tags: [doggo, utilities, github, dns] }
     - { role: atuin, tags: [atuin, utilities, github] }
+    - { role: ouch, tags: [ouch, utilities, github] }
     # # =============================================
     # Utilities
     # =============================================

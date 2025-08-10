@@ -1,0 +1,21 @@
+- name: Ouch | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: ouch-org
+    repo: ouch
+    token: "{{ github_token }}"
+  register: release
+
+- name: Ouch | Download and extract
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/ouch-org/ouch/releases/download/{{ release.tag }}/ouch-x86_64-unknown-linux-gnu.tar.gz
+  become: true
+
+- name: Ouch | install
+  ansible.builtin.copy:
+    dest: "{{ bin_dir }}/ouch"
+    mode: a+x
+    src: "{{ setup_dir }}/ouch-x86_64-unknown-linux-gnu/ouch"
+  become: true
