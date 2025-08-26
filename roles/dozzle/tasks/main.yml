@@ -9,6 +9,8 @@
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "8080"
+    env:
+      DOZZLE_ENABLE_ACTIONS: "true"
     labels:
       traefik.enable: "true"
       traefik.http.routers.dozzle.entrypoints: websecure

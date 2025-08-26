@@ -33,11 +33,14 @@ tasks:
     cmds:
       - ansible-playbook --ask-become-pass
 
-  run-tag:
-    desc: Run main playbook with tag
+  run-i:
+    desc: Run interactive playbook
+    interactive: true
+    silent: true
     cmds:
-      - PLAYBOOK=${PLAYBOOK:-setup.yml} ansible-playbook --ask-become-pass --tags {{ .TAG }} playbooks/${PLAYBOOK}
-    preconditions:
-      - test -n "${TAG}"
-    vars:
-      TAG: ${TAG}
+      - |
+        ALL_PLAYBOOKS=$(ls playbooks/*.yml)
+        PLAYBOOK=$(gum choose --header "Select playbook to run" ${ALL_PLAYBOOKS})
+        TAG=$(gum input --header "Enter tag to run")
+
+        ansible-playbook --ask-become-pass ${PLAYBOOK:-setup.yml} --tags ${TAG:-all}
