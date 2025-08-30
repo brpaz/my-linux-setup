@@ -55,6 +55,7 @@
     - { role: proxyman, tags: [proxyman, networking] }
     - { role: cloudflared, tags: [cloudflared, networking] }
     - { role: netpeek, tags: [netpeek, networking] }
+    - { role: opensnitch, tags: [opensnitch, networking, firewall] }
 
     # # =============================================
     # # Internet
@@ -73,7 +74,6 @@
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
-    - { role: jdownloader, tags: [jdownloader, internet] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: noscl, tags: [noscl, internet] }
@@ -143,7 +143,6 @@
     # # # =============================================
     # # # Graphics Design
     # # # =============================================
-
     - { role: pinta, tags: [pinta, graphics_design] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
@@ -166,7 +165,6 @@
     - { role: php, tags: [php, dev, programming-language] }
     - { role: golang, tags: [golang, dev, programming-language] }
     - { role: rust, tags: [rust, dev, programming-language] }
-    # - { role: ruby, tags: [ruby, dev, programming-language] }
     - { role: vim, tags: [vim, dev] }
     - { role: vscode, tags: [vscode, dev] }
     - { role: dbeaver, tags: [dbeaver, dev] }
@@ -210,8 +208,10 @@
     - { role: taskfile, tags: [taskfile, dev, github] }
     - { role: devcontainers-cli, tags: [devcontainers-cli, dev, github] }
     - { role: zed, tags: [zed, dev, flatpak] }
-    - { role: quickemu, tags: [quickemu, dev, github] }
     - { role: radicle, tags: [radicle, dev] }
+    - { role: stu, tags: [stu, utilities, github] }
+    - { role: jwt-tui, tags: [jwt-tui, utilities, github] }
+    - { role: zrok, tags: [zrok, dev, github] }
 
     # =============================================
     # CLI Tools
@@ -243,7 +243,6 @@
     - { role: brotab, tags: [brotab, utilities] }
     - { role: zoxide, tags: [zoxide] }
     - { role: micro, tags: [micro, github] }
-    - { role: glances, tags: [glances, tui, utilities] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: tmux, tags: [tmux, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
@@ -256,7 +255,7 @@
     - { role: tailspin, tags: [tailspin, utilities, github] }
     - { role: btop, tags: [btop, utilities] }
     - { role: doggo, tags: [doggo, utilities, github, dns] }
-    - { role: atuin, tags: [atuin, utilities, github] }
+    #- { role: atuin, tags: [atuin, utilities, github] }
     - { role: ouch, tags: [ouch, utilities, github] }
     # # =============================================
     # Utilities
@@ -275,7 +274,6 @@
     - { role: solaar, tags: [solaar, utilities] }
     - { role: smile, tags: [smile, utilities] }
     - { role: weather, tags: [weather, utilities] }
-    # - { role: tilix, tags: [tilix, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
@@ -303,6 +301,7 @@
     - { role: tactics, tags: [tactics, utilities, flatpak] }
     - { role: text-compare, tags: [text-compare, utilities, flatpak] }
     - { role: keysmith, tags: [keysmith, utilities, flatpak] }
+    - { role: keeppassxc, tags: [keeppassxc, utilities, flatpak] }
     # =============================================
     # Finance
     # =============================================
@@ -312,9 +311,9 @@
     # =============================================
     # Games
     # =============================================
-    #- { role: steam, tags: [steam, games] }
-    #- { role: mines, tags: [mines, games] }
-    #- { role: snes, tags: [snes, games] }
+    - { role: steam, tags: [steam, games] }
+    - { role: mines, tags: [mines, games] }
+    - { role: snes, tags: [snes, games] }
 
     # =============================================
     # Gnome Desktop

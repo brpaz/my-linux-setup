@@ -1,8 +1,0 @@
-- name: Install
-  ansible.builtin.dnf:
-    name: tmux
-    state: present
-  become: true
-
-- name: Install Tmuxp
-  command: pip install tmuxp

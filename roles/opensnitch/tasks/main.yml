@@ -1,0 +1,20 @@
+- name: Get Latest release
+  community.general.github_release:
+    action: latest_release
+    user: evilsocket
+    repo: opensnitch
+  register: latest_release
+
+- name: Download
+  ansible.builtin.get_url:
+    url: "https://github.com/evilsocket/opensnitch/releases/download/{{ latest_release.tag }}/opensnitch-{{ latest_release.tag[0] }}-1.x86_64.rpm"
+    dest: "{{ setup_dir }}/opensnitch.rpm"
+    headers:
+      Authorization: "token {{ github_token }}"
+  register: download_result
+
+- name: Install
+  ansible.builtin.yum:
+    name: "{{ setup_dir }}/opensnitch.rpm"
+    state: present
+  become: true

@@ -1,0 +1,20 @@
+- name: Get Latest release
+  community.general.github_release:
+    action: latest_release
+    user: lusingander
+    repo: stu
+    token: "{{ github_token }}"
+  register: latest_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: https://github.com/lusingander/stu/releases/download/{{ latest_release.tag }}/stu-{{ latest_release.tag[1:] }}-x86_64-unknown-linux-gnu.tar.gz
+    dest: "{{ setup_dir }}"
+    remote_src: yes
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/stu"
+    dest: "{{ bin_dir }}"
+    mode: "a+x"
+  become: true

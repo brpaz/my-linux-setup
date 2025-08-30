@@ -92,6 +92,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 - [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
+- [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
 
 #### Web Apps
 
@@ -99,6 +100,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - Excalidraw
 - Instagram
 - Mermaid Editor
+- Dozzle
+- Portainer
 
 ---
 
@@ -133,7 +136,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [OBS](https://obsproject.com/download) - Open Broadcaster Software to record screencasts and streaming.
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
 * [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
-* [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet. It's optimized for a 10-foot user interface to be used with televisions and remote controls.
+* [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet.
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 * [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
@@ -162,6 +165,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
 - [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
 - [devcontainers/cli](https://github.com/devcontainers/cli) - A reference implementation for the specification that can create and configure a dev container from a devcontainer.json.
+- [zrok](https://github.com/openziti/zrok) - zrok lets you securely share web services, files, and network resources with anyone.
+- [stu](https://github.com/lusingander/stu) - TUI application for Amazon S3
+- [jwt-tui](https://jwtui.cli.rs/) - TUI for interacting with JSON Web Tokens
+
 ---
 
 ### Utilities
@@ -197,7 +204,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [sysD Manager](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - A GUI to manage systemd units
 - [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 - [Keysmith](https://flathub.org/apps/io.github.tobagin.keysmith) - KeySmith is a user-friendly graphical application for managing SSH keys.
-- [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) -  NetPeek is a simple network scanner that helps you discover active devices on your local network.
+- [KeepPassXC](https://keepassxc.org/) - Cross-Platform Password Manager
 
 ---
 
@@ -253,6 +260,8 @@ I use ZSH shell with the following extras:
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 * [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
 * [atuin](https://github.com/atuinsh/atuin) - A shell history tool that helps you find and reuse commands.
+* [gum](https://github.com/charmbracelet/gum) - Gum is a tool that makes it easier to write scripts that interact with users.
+* [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.
 
 ### Multimedia
 
@@ -302,7 +311,6 @@ I use ZSH shell with the following extras:
 * [doctl](https://github.com/digitalocean/doctl) - A command line tool for DigitalOcean services.
 * [Google Cloud SDK](https://cloud.google.com/sdk/gcloud/) - Google Cloud SDK.
 * [AWS CLI](https://aws.amazon.com/cli) - AWS Command Line Interface.
-* [Vercel CLI](https://vercel.com/cli)
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
 * [wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) - Cloudflare Workers CLI
@@ -348,7 +356,6 @@ I use ZSH shell with the following extras:
 * [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
 * [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
-* [glances](https://github.com/nicolargo/glances) - Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
 * [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
 * [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
 

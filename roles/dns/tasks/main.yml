@@ -22,17 +22,7 @@
       no-resolv
 
       # Make fallback work properly
-      #strict-order
-
-      # Home DNS (Primary)
-      server=192.168.1.10
-
-      # DNS Crypt (Secondary)
-      server=127.0.0.53
-
-      # Fallback DNS servers
-      #server=9.9.9.9
-      #server=1.1.1.1
+      strict-order
 
       # Enable caching (optional)
       cache-size=1000
@@ -40,12 +30,25 @@
       # Optional: Enable logging for debugging
       #log-queries
       #log-facility=/var/log/dnsmasq.log
+  become: true
 
+- name: Configure default DNS servers
+  ansible.builtin.file:
+    path: /etc/NetworkManager/dnsmasq.d/00-default.conf
+    state: present
+    mode: "0644"
+    owner: root
+    group: root
+    content: |
+      server=192.168.1.10
+      server=127.0.0.53
+      server=9.9.9.9
+      server=1.1.1.1
   become: true
 
 - name: Configure Dnsmasq to resolve homelab domains
   ansible.builtin.file:
-    path: /etc/NetworkManager/dnsmasq.d/01-homelab.conf
+    path: /etc/NetworkManager/dnsmasq.d/02-homelab.conf
     state: present
     mode: "0644"
     owner: root
@@ -55,7 +58,7 @@
 
 - name: Configure Dnsmasq to resolve docker domains
   ansible.builtin.file:
-    path: /etc/NetworkManager/dnsmasq.d/02-docker.conf
+    path: /etc/NetworkManager/dnsmasq.d/03-docker.conf
     state: present
     mode: "0644"
     owner: root
@@ -74,13 +77,6 @@
   ansible.builtin.file:
     path: /etc/resolv.conf
     state: absent
-
-- name: Restart NetworkManager
-  ansible.builtin.systemd:
-    name: NetworkManager
-    state: restarted
-    enabled: yes
-  become: true
 
 - name: DNSCrypt Proxy | Get latest release
   community.general.github_release:
@@ -118,5 +114,12 @@
   ansible.builtin.systemd:
     name: dnscrypt-proxy
     state: started
+    enabled: yes
+  become: true
+
+- name: Restart NetworkManager
+  ansible.builtin.systemd:
+    name: NetworkManager
+    state: restarted
     enabled: yes
   become: true
