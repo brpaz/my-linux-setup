@@ -93,6 +93,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 - [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
 - [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
+- [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
 
 #### Web Apps
 

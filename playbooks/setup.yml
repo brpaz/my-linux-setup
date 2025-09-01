@@ -86,7 +86,7 @@
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
     - { role: polari, tags: [polari, internet, flatpak] }
-
+    - { role: archives, tags: [archives, internet, flatpak] }
     # # =============================================
     # # Productivity
     # # =============================================
