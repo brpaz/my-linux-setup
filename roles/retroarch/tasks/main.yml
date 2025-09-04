@@ -1,0 +1,4 @@
+- name: Retroarch
+  community.general.flatpak:
+    name: org.libretro.RetroArch
+    state: present

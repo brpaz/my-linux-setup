@@ -313,7 +313,7 @@
     # =============================================
     - { role: steam, tags: [steam, games] }
     - { role: mines, tags: [mines, games] }
-    - { role: snes, tags: [snes, games] }
+    - { role: retroarch, tags: [retroarch, games, flatpak] }
 
     # =============================================
     # Gnome Desktop
