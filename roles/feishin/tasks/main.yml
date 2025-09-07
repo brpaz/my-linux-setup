@@ -1,0 +1,45 @@
+- name: Get Latest Release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: jeffvli
+    repo: feishin
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download App Image
+  ansible.builtin.get_url:
+    url: "https://github.com/jeffvli/feishin/releases/download/{{ release.tag }}/Feishin-linux-x86_64.AppImage"
+    dest: "{{ setup_dir }}/Feishin.AppImage"
+
+- name: Install App Image
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/Feishin.AppImage"
+    dest: "/opt/Feishin.AppImage"
+    mode: "0755"
+  become: true
+
+- name: Ensure Icons folder exists
+  ansible.builtin.file:
+    path: "{{ feishin_icon_path | dirname }}"
+    state: directory
+    mode: "0755"
+
+- name: Copy Icon from files
+  ansible.builtin.copy:
+    src: "icon.png"
+    dest: "{{ feishin_icon_path }}"
+    mode: "0644"
+
+- name: Create Desktop Entry
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=Feishin
+      Comment=A modern self-hosted music player.
+      Exec=/opt/Feishin.AppImage
+      Icon={{ feishin_icon_path }}
+      Type=Application
+      Categories=Multimedia;AudioVideo;
+      Terminal=false
+    dest: "{{ applications_dir }}/Feishin.desktop"
+    mode: "0644"

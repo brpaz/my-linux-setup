@@ -139,6 +139,7 @@
     - { role: blender, tags: [blender, multimedia] }
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: beets, tags: [beets, multimedia] }
+    - { role: feishin, tags: [feishin, multimedia] }
 
     # # # =============================================
     # # # Graphics Design
@@ -244,7 +245,6 @@
     - { role: zoxide, tags: [zoxide] }
     - { role: micro, tags: [micro, github] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
-    - { role: tmux, tags: [tmux, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
     - { role: zellij, tags: [zellij, tui, utilities, github] }
     - { role: rofi, tags: [rofi, tui, utilities] }

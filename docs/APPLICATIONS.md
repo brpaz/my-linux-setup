@@ -144,6 +144,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - Stream movies and TV shows from Jellyfin
 * [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
+* [Feishin](https://github.com/jeffvli/feishin) - A modern self-hosted music player.
 
 ---
 
