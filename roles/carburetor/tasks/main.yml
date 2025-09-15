@@ -1,4 +1,0 @@
-- name: Install
-  community.general.flatpak:
-    name: io.frama.tractor.carburetor
-    state: present

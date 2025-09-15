@@ -8,10 +8,12 @@
     - [Productivity](#productivity)
     - [Internet](#internet)
       - [Web Apps](#web-apps)
+    - [Networking](#networking)
     - [Graphics \& Design](#graphics--design)
     - [Sound \& Video](#sound--video)
     - [Development Tools](#development-tools)
     - [Utilities](#utilities)
+  - [AI](#ai)
     - [Games](#games)
     - [Themes and Icons](#themes-and-icons)
     - [Fonts](#fonts)
@@ -43,6 +45,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Productivity
 
 * [Obsidian](https://obsidian.md/) - Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files.
+* [Heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 * [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Iotas](https://flathub.org/apps/org.gnome.World.Iotas) - Iotas aims to provide distraction-free note taking via its mobile-first design.
 * [Errands](https://flathub.org/apps/io.github.mrvladus.List) - Todo application for those who prefer simplicity.
@@ -56,10 +59,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
 * [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
 * [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
-- [heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 * [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
 * [MiniText](https://flathub.org/apps/io.github.nokse22.minitext) - A very small and minimalistic digital scratch pad with minimal editing capabilities.
 * [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
+* [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 
 ---
 
@@ -69,29 +72,23 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge)
-* [uget](https://ugetdm.com/) - Download manager
 * [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
-* [Discord](https://discordapp.com/) - Free Voice and Text Chat for Gamers.
+* [WebCord](https://flathub.org/en/apps/io.github.spacingbat3.webcord) - Web-based Discord client
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
 * [Web Apps](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Install websites as desktop apps, so that they appear in their own windows separate from any browsers installed.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
-* [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Info on your IP
-* [Proton VPN](https://flathub.org/apps/com.protonvpn.www)
-* [qBittorrent](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Torrent Client
+* [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Get Info on your IP
+* [Proton VPN](https://flathub.org/apps/com.protonvpn.www) - Secure and private VPN
+* [qBittorrent](https://www.qbittorrent.org/) - Torrent Client
 * [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
-* [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop)
-* [Signal Desktop](https://flathub.org/apps/org.signal.Signal)
+* [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop) - Official Desktop app for Telegram Messenger
+* [Signal Desktop](https://flathub.org/apps/org.signal.Signal) - Private messenger
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
-* [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 - [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
-- [Cloudflare Warp](https://1.1.1.1/)
-- [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 - [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
-- [noscl](https://github.com/fiatjaf/noscl) - Command line client for Nostr.
-- [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
-- [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 - [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
+- [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 - [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
 - [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
 
@@ -106,25 +103,32 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ---
 
+### Networking
+
+- [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
+- [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
+- [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
+
+
+---
+
 ### Graphics & Design
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
 * [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
-* [Peek](https://github.com/phw/peek) - Simple animated GIF screen recorder with an easy to use interface
+* [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
-* [Inkscape](https://inkscape.org/) - Design tool
+* [Inkscape](https://inkscape.org/) - Vector Graphics Editor
 * [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
 * [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - A simple image cropping tool.
 * [OhMySVG](https://flathub.org/apps/details/com.github.rafaelmardojai.OhMySVG) - A simple SVG editor.
-* [Boxy SVG](https://flathub.org/apps/re.sonny.OhMySVG) - Boxy SVG project goal is to create the best tool for editing SVG files. For beginners as well as for professional web designers and web developers. On any device and operating system.
 * [Pigment](https://flathub.org/apps/com.jeffser.Pigment) - Pigment allows you to extract a palette of colors from your images offline. You can select the speed and accuracy by modifying the number and quality of colors.
 
 ---
 ### Sound & Video
 
-* [Spotube](https://flathub.org/apps/com.github.KRTirtho.Spotube) - Open source Spotify client.
 * [Pitivi](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
@@ -166,19 +170,14 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
 - [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
 - [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
-- [devcontainers/cli](https://github.com/devcontainers/cli) - A reference implementation for the specification that can create and configure a dev container from a devcontainer.json.
-- [zrok](https://github.com/openziti/zrok) - zrok lets you securely share web services, files, and network resources with anyone.
-- [stu](https://github.com/lusingander/stu) - TUI application for Amazon S3
-- [jwt-tui](https://jwtui.cli.rs/) - TUI for interacting with JSON Web Tokens
 
 ---
 
 ### Utilities
 
-* [ScriptKit](https://www.scriptkit.com/) - Shortcut to Everything
-* [Tilix](https://github.com/gnunn1/tilix) - A tiling terminal emulator for Linux using GTK+ 3.
+* [Ghostty](https://ghostty.org/) - A fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+* [ScriptKit](https://www.scriptkit.com/) - Command palette for running scripts and automations.
 * [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
-* [Restic](https://restic.net/) - Automatic and continuous backup to the cloud.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Downloader](https://flathub.org/apps/org.gustavoperedo.FontDownloader) - Install fonts from online sources
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
@@ -201,19 +200,24 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
 - [Clapgrep](https://flathub.org/apps/de.leopoldluley.Clapgrep) - One app to search through all your files, powered by ripgrep
-- [Ghostty](https://github.com/ghostty-org/ghostty) - Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
-- [Lock](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
-- [sysD Manager](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - A GUI to manage systemd units
-- [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
+- [Lock](https://flathub.org/en/apps/com.konstantintutsch.Lock) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
+- [sysD Manager](https://flathub.org/en/apps/io.github.plrigaux.sysd-manager) - A GUI to manage systemd units
 - [Keysmith](https://flathub.org/apps/io.github.tobagin.keysmith) - KeySmith is a user-friendly graphical application for managing SSH keys.
 - [KeepPassXC](https://keepassxc.org/) - Cross-Platform Password Manager
+- [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
+
+---
+
+## AI
+
+- [Alpaca](https://flathub.org/apps/details/com.github.alpaca.Alpaca) - Alpaca is a desktop application that allows you to run large language models (LLMs) locally on your machine, without the need for an internet connection.
 
 ---
 
 ### Games
 
 * [Steam](https://store.steampowered.com)
-* [Gens/GS - Sega Retro](https://segaretro.org/Gens/GS)
+* [RetroArch](https://www.retroarch.com/) - A frontend for emulators, game engines and media players.
 * [Mines](https://wiki.gnome.org/Apps/Mines)
 
 ---
@@ -241,24 +245,22 @@ A big part of my Development life is spent on the Terminal, so having a good set
 
 I use ZSH shell with the following extras:
 
-* [Starship](https://starship.rs/) - Cross-Shell Prompt
+* [starship](https://starship.rs/) - Cross-Shell Prompt
 * [antidote](https://github.com/mattmc3/antidote) - Antidote is a feature complete Zsh implementation of the legacy Antibody plugin manager.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
 * [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
-* [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
-* [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
+* [fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
+* [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
 * [eza](https://github.com/eza-community/eza) - A modern alternative to ls
 * [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
-* [tablemark-cli](https://github.com/citycide/tablemark-cli) - Generate markdown tables from JSON data at the command line.
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
-* [lnav](http://lnav.org/) - The Log File Navigator
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 * [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
 * [atuin](https://github.com/atuinsh/atuin) - A shell history tool that helps you find and reuse commands.
@@ -367,21 +369,23 @@ I use ZSH shell with the following extras:
 * [figlet](http://www.figlet.org/) - FIGlet is a program for making large letters out of ordinary text
 * [sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open source tool that helps you monitor, analyze and optimize your website speed and performance, based on performance best practices advices.
 * [mermaid.cli](https://github.com/mermaidjs/mermaid.cli) - Generate Diagrams using Mermaid.
-* [D2 Lang](https://d2lang.com/tour/intro/) - D2 is a diagram scripting language that turns text to diagrams. It stands for Declarative Diagramming. Declarative, as in, you describe what you want diagrammed, it generates the image.
 * [watchexec](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications.
 * [basalt](https://github.com/erikjuhani/basalt) - TUI Application to manage Obsidian notes directly from the terminal
 * [markdownlint](https://github.com/markdownlint/markdownlint) - Markdown lint tool
+* [nak](https://github.com/fiatjaf/nak) - a command line tool for doing all things nostr.
 
 ### Development tools
 
 - [devenv](https://devenv.sh/) - A tool for creating and managing development environments.
 - [holesail](https://holesail.io/) - Peer to Peer tunnels forInstant Access.
-- [localtunnel](https://github.com/localtunnel/localtunnel) - expose your machine to the world.
 - [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
 * [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [go-task](https://taskfile.dev/) - A task runner / simpler Make alternative written in Go.
+* [zrok](https://github.com/openziti/zrok) - zrok lets you securely share web services, files, and network resources with anyone.
+- [stu](https://github.com/lusingander/stu) - TUI application for Amazon S3
+- [jwt-tui](https://jwtui.cli.rs/) - TUI for interacting with JSON Web Tokens
 
 ## Development Runtimes
 
@@ -407,7 +411,6 @@ speed and storage stats.
 * [Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows.
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
-* [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) - An icon taskbar for the Gnome Shell.
 * [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
 * [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
 - [Switcher - GNOME Shell Extensions](https://extensions.gnome.org/extension/973/switcher/) - Switch windows or launch applications quickly by typing

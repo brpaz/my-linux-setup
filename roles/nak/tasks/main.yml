@@ -1,0 +1,15 @@
+- name: Get latest release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: fiatjaf
+    repo: nak
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: "{{ bin_dir }}/nak"
+    force: true
+    mode: a+x
+    url: https://github.com/fiatjaf/nak/releases/download/v0.16.2/nak-v0.16.2-linux-amd64
+  become: true

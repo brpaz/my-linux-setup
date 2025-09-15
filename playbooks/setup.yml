@@ -76,17 +76,17 @@
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
-    - { role: noscl, tags: [noscl, internet] }
+    - { role: nak, tags: [nak, nostr, internet] }
     - { role: nextcloud, tags: [nextcloud, internet] }
     - { role: trayscale, tags: [trayscale, internet] }
     - { role: wike, tags: [wike, internet, flatpak] }
     - { role: network-displays, tags: [network-displays, internet, flatpak] }
     - { role: protonmail, tags: [protonmail, internet, flatpak] }
-    - { role: carburetor, tags: [carbureactor, internet, flatpak] }
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
     - { role: polari, tags: [polari, internet, flatpak] }
     - { role: archives, tags: [archives, internet, flatpak] }
+    - { role: digger, tags: [digger, dns, internet, flatpak] }
     # # =============================================
     # # Productivity
     # # =============================================

@@ -1,0 +1,4 @@
+- name: Dialect
+  community.general.flatpak:
+    name: io.github.tobagin.digger
+    state: present
