@@ -1,0 +1,20 @@
+- name: OpenCode | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: sst
+    repo: opencode
+  register: opencode_release
+
+- name: OpenCode | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/sst/opencode/releases/download/{{ opencode_release.tag }}/opencode-linux-x64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: yes
+    mode: "0755"
+
+- name: OpenCode | Install OpenCode
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/opencode"
+    dest: "{{ bin_dir }}/opencode"
+    mode: "a+x"
+  become: true

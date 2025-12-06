@@ -1,0 +1,4 @@
+- name: Pitivi
+  community.general.flatpak:
+    name: io.github.alainm23.planify
+    state: present

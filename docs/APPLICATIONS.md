@@ -48,7 +48,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 * [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Iotas](https://flathub.org/apps/org.gnome.World.Iotas) - Iotas aims to provide distraction-free note taking via its mobile-first design.
-* [Errands](https://flathub.org/apps/io.github.mrvladus.List) - Todo application for those who prefer simplicity.
+* [Planify](https://flathub.org/en/apps/io.github.alainm23.planify) - A simple and elegant task manager for GNOME.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOM
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/app.drey.Dialect) - A translation app for GNOME.
@@ -149,7 +149,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
 * [Feishin](https://github.com/jeffvli/feishin) - A modern self-hosted music player.
-
+* [Scramble](https://flathub.org/en/apps/io.github.tobagin.scramble) - Scramble is a simple, privacy-focused utility for viewing and removing metadata from images.
 ---
 
 ### Development Tools
@@ -211,6 +211,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ## AI
 
 - [Alpaca](https://flathub.org/apps/details/com.github.alpaca.Alpaca) - Alpaca is a desktop application that allows you to run large language models (LLMs) locally on your machine, without the need for an internet connection.
+- [OpenCode](https://opencode.ai) - OpenCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
 
 ---
 
@@ -560,4 +561,3 @@ speed and storage stats.
 - [Fake Data](https://addons.mozilla.org/en-US/firefox/addon/fake-data-haterapps/) -  Fill form fields on the fly with fake random data.
 - [SimpleLogin](https://addons.mozilla.org/en-US/firefox/addon/simplelogin/)
 - [StartPage](https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search)
-

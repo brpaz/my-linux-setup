@@ -80,7 +80,6 @@
     - { role: nextcloud, tags: [nextcloud, internet] }
     - { role: trayscale, tags: [trayscale, internet] }
     - { role: wike, tags: [wike, internet, flatpak] }
-    - { role: network-displays, tags: [network-displays, internet, flatpak] }
     - { role: protonmail, tags: [protonmail, internet, flatpak] }
     - { role: webapps, tags: [webapps, internet, flatpak] }
     - { role: tuba, tags: [tuba, internet, flatpak] }
@@ -94,7 +93,7 @@
     - { role: foliate, tags: [foliate, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
     - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
-    - { role: errands, tags: [errands, productivity] }
+    - { role: planify, tags: [planify, productivity] }
     - { role: iotas, tags: [iotas, productivity, flatpak] }
     - { role: remembrance, tags: [remembrance, productivity] }
     - { role: ticktick, tags: [ticktick, productivity, flatpak] }
@@ -107,6 +106,7 @@
     ## AI
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: ollama, tags: [ollama, productivity] }
+    - { role: opencode, tags: [opencode, ai] }
 
     # # =============================================
     # # Multimedia (Audio & Video)
@@ -140,6 +140,7 @@
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: beets, tags: [beets, multimedia] }
     - { role: feishin, tags: [feishin, multimedia] }
+    - { role: scramble, tags: [scramble, flatpak, multimedia] }
 
     # # # =============================================
     # # # Graphics Design
@@ -243,11 +244,9 @@
     - { role: copier, tags: [copier, utilities] }
     - { role: brotab, tags: [brotab, utilities] }
     - { role: zoxide, tags: [zoxide] }
-    - { role: micro, tags: [micro, github] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
     - { role: zellij, tags: [zellij, tui, utilities, github] }
-    - { role: rofi, tags: [rofi, tui, utilities] }
     - { role: yazi, tags: [yazi, tui, utilities] }
     - { role: shfmt, tags: [shfmt, utilities, github] }
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }

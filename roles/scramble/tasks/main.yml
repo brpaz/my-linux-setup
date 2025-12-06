@@ -1,0 +1,4 @@
+- name: Scramble
+  community.general.flatpak:
+    name: io.github.tobagin.scramble
+    state: present

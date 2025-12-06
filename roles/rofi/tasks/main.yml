@@ -1,5 +1,0 @@
-- name: Install
-  ansible.builtin.dnf:
-    name: rofi
-    state: present
-  become: true
