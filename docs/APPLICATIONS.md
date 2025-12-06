@@ -176,7 +176,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Utilities
 
 * [Ghostty](https://ghostty.org/) - A fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
-* [ScriptKit](https://www.scriptkit.com/) - Command palette for running scripts and automations.
+* [Vicinae](https://docs.vicinae.com) - A modern launcher for Linux, compatible with MacOS Raycast.
 * [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
 * [Font Downloader](https://flathub.org/apps/org.gustavoperedo.FontDownloader) - Install fonts from online sources

@@ -288,7 +288,7 @@
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: kiwix, tags: [kiwix, utilities, flatpak] }
     - { role: lock, tags: [lock, flatpak, utilities] }
-    - { role: scriptkit, tags: [scriptkit, utilities] }
+    - { role: vicinae, tags: [vicinae, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }
     - { role: systemctl-tui, tags: [systemctl-tui, utilities] }
     - { role: sysd-manager, tags: [sysd-manager, utilities] }

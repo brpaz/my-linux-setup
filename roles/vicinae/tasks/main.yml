@@ -1,0 +1,2 @@
+- name: Vicinae | Install
+  ansible.builtin.shell: curl -sSL https://vicinae.dev/install.sh | sudo bash
