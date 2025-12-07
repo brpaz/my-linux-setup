@@ -1,12 +1,12 @@
-- name: Python | Install PIP packages
+- name: Python | Install Core PIP packages
   ansible.builtin.pip:
     name: "{{ item }}"
   loop:
     - requests
-    - bandit
-    - ruff
     - setuptools
     - pipx
-    - poetry
 
-
+- name: Install Uv for managing of Python envrionments
+  community.general.pipx:
+    name: uv
+    state: present
