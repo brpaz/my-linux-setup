@@ -17,7 +17,7 @@
 - name: Settings | Set Number of workspaces
   community.general.dconf:
     key: /org/gnome/desktop/wm/preferences/num-workspaces
-    value: "6"
+    value: "8"
 
 - name: Settings | Namespaces only on primary monitor
   community.general.dconf:
@@ -27,7 +27,7 @@
 - name: Settings | Window Titlebars
   community.general.dconf:
     key: /org/gnome/desktop/wm/preferences/button-layout
-    value: "'appmenu:minimize,minimize,maximize,close'"
+    value: "'appmenu:minimize,maximize,close'"
 
 - name: Configure window manager settings
   community.general.dconf:

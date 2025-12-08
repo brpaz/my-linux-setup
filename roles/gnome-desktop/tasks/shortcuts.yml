@@ -183,3 +183,102 @@
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Right
+
+- name: Set Custom Keys
+  community.general.dconf:
+    key: "{{ item.key }}"
+    state: present
+    value: "{{ item.value }}"
+  with_items:
+    - name: Set custom Gnome keybindings
+      community.general.dconf:
+        key: "{{ item.key }}"
+        state: present
+        value: "{{ item.value }}"
+      loop:
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding"
+          value:
+            - <Super>t
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name"
+          value: Open New Terminal Window
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command"
+          value: ghostty
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
+          value:
+            - <Alt><Super>e
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"
+          value: Toggle Emoji Picker
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"
+          value: flatpak run it.mijorus.smile
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/binding"
+          value:
+            - <Super>n
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/name"
+          value: Toggle Heynote
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/command"
+          value: /opt/Heynote.AppImage
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/binding"
+          value:
+            - <Alt>space
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/name"
+          value: Toggle Vicinae
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/command"
+          value: vicinae toggle
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/binding"
+          value:
+            - <Alt>c
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/name"
+          value: Toggle Clipboard History
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/command"
+          value: vicinae vicinae://extensions/vicinae/clipboard/history
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/binding"
+          value:
+            - <Super>w
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/name"
+          value: Toggle Window Switcher
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/command"
+          value: vicinae vicinae://extensions/vicinae/wm/switch-windows
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding"
+          value:
+            - <Super>space
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name"
+          value: Toggle Vicinae (Alternative)
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command"
+          value: vicinae toggle
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/binding"
+          value:
+            - <Super>plus
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/name"
+          value: Browser Tabs switcher
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/command"
+          value: vicinae vicinae://extensions/brpaz/brotab/tabs-list
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/binding"
+          value:
+            - <Super>dead_acute
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/name"
+          value: Toggle Snippets Search
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/command"
+          value: vicinae vicinae://extensions/brpaz/code-snippets/snippets-search
+
+        - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
+          value:
+            [
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/",
+            ]
