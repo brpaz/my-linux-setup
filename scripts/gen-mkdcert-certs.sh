@@ -10,7 +10,6 @@ SITES=(
     "prometheus.localhost"
     "portainer.localhost"
     "dozzle.localhost"
-    "sourcegraph.localhost"
 )
 
 # ENsure we are in the root directory

@@ -1,0 +1,4 @@
+/home/bruno/Code/Personal/my-linux-setup/.devenv/flake.json
+/home/bruno/Code/Personal/my-linux-setup/.devenv.flake.nix
+/home/bruno/Code/Personal/my-linux-setup/devenv.lock
+/home/bruno/Code/Personal/my-linux-setup/devenv.yaml

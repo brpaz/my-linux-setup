@@ -8,8 +8,6 @@ tls:
       keyFile: /etc/certs/traefik.localhost-key.pem
     - certFile: /etc/certs/grafana.localhost.pem
       keyFile: /etc/certs/grafana.localhost-key.pem
-    - certfile: /etc/certs/sourcegraph.localhost.pem
-      keyfile: /etc/certs/sourcegraph.localhost-key.pem
     - certFile: /etc/certs/grafana.localhost.pem
       keyFile: /etc/certs/grafana.localhost-key.pem
     - certFile: /etc/certs/portainer.localhost.pem

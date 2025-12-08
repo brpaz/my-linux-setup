@@ -1,0 +1,5 @@
+- name: Portmaster | Install
+  ansible.builtin.dnf:
+    name: https://updates.safing.io/latest/linux_amd64/packages/Portmaster-{{ portmaster_version }}-1.x86_64.rpm
+    state: present
+    disable_gpg_check: true

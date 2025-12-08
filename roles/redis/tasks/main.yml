@@ -1,5 +1,5 @@
-- name: Redis Desktop Manager
+- name: Redis Insight
   become: true
   community.general.flatpak:
-    name: app.resp.RESP
+    name: com.redis.RedisInsight
     state: present
