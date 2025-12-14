@@ -161,6 +161,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
     * [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers.
     * [DataGrip](https://www.jetbrains.com/datagrip/) -  The Cross-Platform IDE for Databases & SQL by JetBrains
 * [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
+* [Zed](https://zed.dev/) - Next Gen Code Editor and IDE
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
 * [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
@@ -170,6 +171,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
 - [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
 - [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
+- [PvTUI](https://github.com/devnullvoid/pvtui) - A terminal-based tool for managing Proxmox VE clusters.
 
 ---
 
@@ -264,9 +266,10 @@ I use ZSH shell with the following extras:
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 * [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
-* [atuin](https://github.com/atuinsh/atuin) - A shell history tool that helps you find and reuse commands.
 * [gum](https://github.com/charmbracelet/gum) - Gum is a tool that makes it easier to write scripts that interact with users.
 * [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.
+* [tv](https://github.com/alexpasmantier/television) - A portable and hackable fuzzy finder for the terminal.
+* [serpl](https://github.com/yassinebridi/serpl) - A simple terminal UI for search and replace, ala VS Code.
 
 ### Multimedia
 
@@ -374,6 +377,7 @@ I use ZSH shell with the following extras:
 * [basalt](https://github.com/erikjuhani/basalt) - TUI Application to manage Obsidian notes directly from the terminal
 * [markdownlint](https://github.com/markdownlint/markdownlint) - Markdown lint tool
 * [nak](https://github.com/fiatjaf/nak) - a command line tool for doing all things nostr.
+* [regex-tui](https://github.com/vitor-mariano/regex-tui) - A simple TUI to visualize regular expressions right in your terminal.
 
 ### Development tools
 
