@@ -219,6 +219,7 @@
     - { role: stu, tags: [stu, utilities, github] }
     - { role: jwt-tui, tags: [jwt-tui, utilities, github] }
     - { role: zrok, tags: [zrok, dev, github] }
+    - { role: pvtui, tags: [pvtui, dev, github] }
 
     # =============================================
     # CLI Tools

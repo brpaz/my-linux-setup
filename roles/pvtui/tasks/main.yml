@@ -1,0 +1,14 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: devnullvoid
+    repo: pvetui
+    token: "{{ github_token }}"
+  register: release
+
+- name: Install pvetui
+  ansible.builtin.dnf:
+    name: https://github.com/devnullvoid/pvetui/releases/download/{{ release.tag }}/pvetui_{{ release.tag[1:] }}_linux_386.rpm
+    state: present
+    disable_gpg_check: true
+  become: true
