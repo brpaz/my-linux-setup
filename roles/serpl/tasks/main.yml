@@ -1,0 +1,21 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: yassinebridi
+    repo: serpl
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download and Extract
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/yassinebridi/serpl/releases/download/{{ release.tag }}/serpl-{{ release.tag }}-linux-x86_64.tar.gz
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    dest: "{{ bin_dir }}/serpl"
+    mode: a+x
+    src: "{{ setup_dir }}/serpl"
+  become: true

@@ -260,6 +260,8 @@
     - { role: doggo, tags: [doggo, utilities, github, dns] }
     #- { role: atuin, tags: [atuin, utilities, github] }
     - { role: ouch, tags: [ouch, utilities, github] }
+    - { role: regex-tui, tags: [regex-tui, utilities, github] }
+    - { role: serpl, tags: [serpl, utilities, github] }
     # =============================================
     # Utilities
     # =============================================

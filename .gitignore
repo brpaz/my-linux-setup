@@ -4,3 +4,14 @@
 tags
 .history
 .ansible
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.devenv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

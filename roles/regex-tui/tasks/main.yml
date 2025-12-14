@@ -1,0 +1,15 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: vitor-mariano
+    repo: regex-tui
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: "{{ bin_dir }}/regex-tui"
+    force: true
+    mode: a+x
+    url: https://github.com/vitor-mariano/regex-tui/releases/download/{{ release.tag }}/regex-tui_{{ release.tag }}_linux.amd64
+  become: true
