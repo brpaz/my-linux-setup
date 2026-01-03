@@ -13,8 +13,6 @@
   loop:
     - appindicatorsupport@rgcjonas.gmail.com
     - caffeine@patapon.info
-    - clipboard-indicator@tudmotu.com
-    #- dash-to-panel@jderose9.github.com
     - lineup@hedgie.tech
     - netspeedsimplified@prateekmedia.extension
     - status-area-horizontal-spacing@mathematical.coffee.gmail.com
@@ -23,50 +21,8 @@
     - cloudflare-warp-toggle@khaled.is-a.dev
     - tailscale@joaophi.github.com
     - mediacontrols@cliffniff.github.com
-
-- name: Clipboard Indicator extension settings
-  community.general.dconf:
-    key: "{{ item.key }}"
-    state: present
-    value: "{{ item.value }}"
-  loop:
-    - key: /org/gnome/shell/extensions/clipboard-indicator/history-size
-      value: 25
-    - key: /org/gnome/shell/extensions/clipboard-indicator/notify-on-copy
-      value: "false"
-    - key: /org/gnome/shell/extensions/clipboard-indicator/clear-on-boot
-      value: "true"
-    - key: /org/gnome/shell/extensions/clipboard-indicator/enable-keybindings
-      value: "false"
-    - key: /org/gnome/shell/extensions/clipboard-indicator/strip-text
-      value: "true"
-
-- name: Set Dash to dock extension Settings
-  community.general.dconf:
-    key: "{{ item.key }}"
-    state: present
-    value: "{{ item.value }}"
-  loop:
-    - key: /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme
-      value: "false"
-    - key: /org/gnome/shell/extensions/dash-to-dock/background-color
-      value: "'#ffffff'"
-    - key: /org/gnome/shell/extensions/dash-to-dock/background-opacity
-      value: 0.0
-    - key: /org/gnome/shell/extensions/dash-to-dock/dock-position
-      value: "'BOTTOM'"
-    - key: /org/gnome/shell/extensions/dash-to-dock/multi-monitor
-      value: "true"
-    - key: /org/gnome/shell/extensions/dash-to-dock/extend-height
-      value: "false"
-    - key: /org/gnome/shell/extensions/dash-to-dock/transparency-mode
-      value: "'FIXED'"
-    - key: /org/gnome/shell/extensions/dash-to-dock/hot-keys
-      value: "false"
-    - key: /org/gnome/shell/extensions/dash-to-dock/show-trash
-      value: "false"
-    - key: /org/gnome/shell/extensions/dash-to-dock/show-mounts
-      value: "false"
+    - vicinae@dagimg-dot
+    - just-perfection-desktop@just-perfection
 
 - name: Set Vitals extension Settings
   community.general.dconf:
@@ -87,6 +43,19 @@
     - key: /org/gnome/shell/extensions/vitals/show-voltage
       value: "false"
 
+- name: Set Just Perfection Settings
+  community.general.dconf:
+    key: "{{ item.key }}"
+    state: present
+    value: "{{ item.value }}"
+  loop:
+    - key: /org/gnome/shell/extensions/just-perfection/workspace-switcher-size
+      value: 10
+    - key: /org/gnome/shell/extensions/just-perfection/dash
+      value: "false"
+    - key: /org/gnome/shell/extensions/just-perfection/window-demands-attention-focus
+      value: "true"
+
 - name: Gnome Extensions | Configure Auto Move Windows
   community.general.dconf:
     key: "{{ item.key }}"
@@ -95,10 +64,9 @@
   loop:
     - key: /org/gnome/shell/extensions/auto-move-windows/application-list
       value:
-        "['com.slack.Slack.desktop:5', 'md.obsidian.Obsidian.desktop:3', 'code.desktop:2',
+        "['org.mozilla.firefox.desktop:1','com.slack.Slack.desktop:5', 'md.obsidian.Obsidian.desktop:7', 'code.desktop:2', 'dev.zed.Zed.desktop:2',
         'jetbrains-goland.desktop:2', 'jetbrains-idea.desktop:2',
-        'jetbrains-webstorm.desktop:2']"
-
+        'jetbrains-webstorm.desktop:2', 'com.mitchellh.ghostty.desktop:3','Heynote.desktop:0']"
 # - name: Dash to Panel Extension Settings
 #   community.general.dconf:
 #     key: "{{ item.key }}"

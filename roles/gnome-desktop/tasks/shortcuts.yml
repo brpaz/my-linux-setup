@@ -107,7 +107,7 @@
         - <Super>H
     - key: /org/gnome/desktop/wm/keybindings/maximize-vertically
       value:
-        - <Super>V
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/close
       value:
         - <Super>Q
@@ -115,14 +115,12 @@
       value:
         - ""
     - key: /org/gnome/desktop/wm/keybindings/move-to-center
-      value:
-        - <Super>C
+      value: ""
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-down
       value:
-        - <Super><Alt>Down
+        - ""
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-up
-      value:
-        - <Super><Alt>Up
+      value: ""
     - key: /org/gnome/desktop/wm/keybindings/toggle-above
       value:
         - <Super><Alt>T
@@ -136,8 +134,7 @@
       value:
         - "<Super>Comma"
     - key: /org/gnome/shell/keybindings/toggle-message-tray
-      value:
-        - "<Super>N"
+      value: ""
     - key: /org/gnome/shell/keybindings/focus-active-notification
       value:
         - ""
@@ -173,10 +170,10 @@
         - <Control><Super>Right
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-right
       value:
-        - <Shift><Super>Left
+        - <Alt><Super>Left
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-left
       value:
-        - <Shift><Super>Right
+        - <Altt><Super>Right
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Left
