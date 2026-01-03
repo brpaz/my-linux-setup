@@ -1,0 +1,4 @@
+termix_image: ghcr.io/lukegus/termix
+termix_version: release-1.10.0
+termix_domain: termix.localhost
+termix_port: 8080

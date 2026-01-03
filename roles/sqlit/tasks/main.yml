@@ -1,0 +1,5 @@
+- name: Install
+  community.general.pipx:
+    name: sqlit-tui
+    state: present
+    python: "{{ host_python_interpreter }}"

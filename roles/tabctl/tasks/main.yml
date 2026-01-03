@@ -1,0 +1,28 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: slastra
+    repo: tabctl
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download and Install
+  ansible.builtin.unarchive:
+    src: "https://github.com/slastra/tabctl/releases/download/{{ release.tag }}/tabctl-linux-amd64-{{ release.tag }}.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Move tabctl binary to bin_dir
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/tabctl-linux-amd64"
+    dest: "{{ bin_dir }}/tabctl"
+    mode: a+x
+  become: true
+
+- name: Move mediator binary to bin_dir
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/tabctl-mediator-linux-amd64"
+    dest: "{{ bin_dir }}/tabctl-mediator"
+    mode: a+x
+  become: true

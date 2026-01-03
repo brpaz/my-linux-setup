@@ -55,10 +55,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
 * [Libreoffice](https://libreoffice.org) - Office suite.
 * [Papers](https://flathub.org/apps/org.gnome.Papers) - A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.
-* [Foliate](https://flathub.org/apps/details/com.github.johnfactotum.Foliate) - Epub Reader
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
 * [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
-* [Folio](https://flathub.org/apps/com.toolstack.Folio) - Create notebooks, take notes in markdown
 * [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
 * [MiniText](https://flathub.org/apps/io.github.nokse22.minitext) - A very small and minimalistic digital scratch pad with minimal editing capabilities.
 * [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
@@ -71,35 +69,34 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
-* [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge)
+* [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge) - Microsoft Edge is a web browser developed by Microsoft.
 * [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
 * [WebCord](https://flathub.org/en/apps/io.github.spacingbat3.webcord) - Web-based Discord client
 * [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
 * [Web Apps](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Install websites as desktop apps, so that they appear in their own windows separate from any browsers installed.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
-* [What IP](https://flathub.org/apps/details/org.gabmus.whatip) - Get Info on your IP
+* [WhatIP](https://flathub.org/apps/details/org.gabmus.whatip) - Get Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www) - Secure and private VPN
 * [qBittorrent](https://www.qbittorrent.org/) - Torrent Client
 * [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop) - Official Desktop app for Telegram Messenger
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal) - Private messenger
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
-- [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
-- [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
-- [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
-- [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
-- [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
-- [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
+* [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
+* [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
+* [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
+* [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
+* [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
+* [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
 
 #### Web Apps
 
-- ChatGPT
-- Excalidraw
-- Instagram
-- Mermaid Editor
-- Dozzle
-- Portainer
+- [Excalidraw](https://excalidraw.com/) - Excalidraw is a simple, distraction-free drawing tool that allows you to create diagrams, flowcharts, and more.
+- [Instagram](https://www.instagram.com/) - Instagram is a photo and video sharing app that allows you to share your life with friends and family.
+- [Mermaid Editor](https://mermaid-js.github.io/mermaid-live-editor/) - Mermaid Editor is a web-based tool for creating diagrams and flowcharts using a simple text-based syntax.
+- [Dozzle](https://dozzle.dev/) - Dozzle is a real-time log viewer for Docker containers.
+- [Portainer](https://portainer.io/) - Portainer is a lightweight management UI for Docker containers, images, and volumes.
 
 ---
 
@@ -108,7 +105,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
 - [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
 - [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
-
 
 ---
 
@@ -142,14 +138,16 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
 * [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
 * [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet.
+* [Reel](https://github.com/arsfeld/reel) - A modern GTK frontend for Plex and other media servers
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 * [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
-* [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - Stream movies and TV shows from Jellyfin
 * [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
 * [Feishin](https://github.com/jeffvli/feishin) - A modern self-hosted music player.
 * [Scramble](https://flathub.org/en/apps/io.github.tobagin.scramble) - Scramble is a simple, privacy-focused utility for viewing and removing metadata from images.
+* [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
+
 ---
 
 ### Development Tools
@@ -169,9 +167,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Redis Insight](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
 * [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
-- [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
-- [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
-- [PvTUI](https://github.com/devnullvoid/pvtui) - A terminal-based tool for managing Proxmox VE clusters.
+* [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
+* [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
+* [PvTUI](https://github.com/devnullvoid/pvtui) - A terminal-based tool for managing Proxmox VE clusters.
 
 ---
 
@@ -185,14 +183,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
 * [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup) - Doing backups the easy way. Plugin your USB drive and let the Pika do the rest for you.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
-* [Bitwarden](https://bitwarden.com/download/) - A secure and free password manager for all of your devices.
+* [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
-- [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter) - Monitor your CPU, Memory, Disk, Network and GPU usage
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
@@ -207,14 +204,15 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Keysmith](https://flathub.org/apps/io.github.tobagin.keysmith) - KeySmith is a user-friendly graphical application for managing SSH keys.
 - [KeepPassXC](https://keepassxc.org/) - Cross-Platform Password Manager
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
-
+- [DistroShelf](https://flathub.org/en/apps/com.ranfdev.DistroShelf) - Graphical interface for managing Distrobox containers
+- [Gnome Extensions Manager](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager) - Manage GNOME Shell extensions.
 ---
 
 ## AI
 
 - [Alpaca](https://flathub.org/apps/details/com.github.alpaca.Alpaca) - Alpaca is a desktop application that allows you to run large language models (LLMs) locally on your machine, without the need for an internet connection.
 - [OpenCode](https://opencode.ai) - OpenCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
-
+- [ClaudeCode](https://claude.ai) - ClaudeCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
 ---
 
 ### Games
@@ -252,11 +250,13 @@ I use ZSH shell with the following extras:
 * [antidote](https://github.com/mattmc3/antidote) - Antidote is a feature complete Zsh implementation of the legacy Antibody plugin manager.
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Additional completion definitions for Zsh.
 * [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use) - ZSH plugin that reminds you to use existing aliases for commands you just typed.
+* [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
 * [zoxide](https://github.com/ajeetdsouza/zoxide) -  A smarter cd command. Supports all major shells.
 * [fzf-marks](https://github.com/urbainvaes/fzf-marks) - Plugin to manage bookmarks in bash and zsh
 * [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 * [fzf](https://github.com/junegunn/fzf) -  A command-line fuzzy finder
 * [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern.
+* [gum](https://github.com/charmbracelet/gum) - Gum is a tool that makes it easier to write scripts that interact with users.
 * [eza](https://github.com/eza-community/eza) - A modern alternative to ls
 * [sd](https://github.com/chmln/sd) - Intuitive find & replace CLI (sed alternative)
 * [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings.
@@ -265,8 +265,6 @@ I use ZSH shell with the following extras:
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
-* [zelijj](https://zellij.dev/) - A terminal workspace with a focus on usability and accessibility.
-* [gum](https://github.com/charmbracelet/gum) - Gum is a tool that makes it easier to write scripts that interact with users.
 * [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.
 * [tv](https://github.com/alexpasmantier/television) - A portable and hackable fuzzy finder for the terminal.
 * [serpl](https://github.com/yassinebridi/serpl) - A simple terminal UI for search and replace, ala VS Code.
@@ -366,6 +364,8 @@ I use ZSH shell with the following extras:
 * [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
 * [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
 * [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
+- [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
+- [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
 
 ### Other
 
@@ -405,23 +405,22 @@ I use ZSH shell with the following extras:
 
 ## Gnome Extensions
 
+* [Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows.
+* [JustPerfection](https://extensions.gnome.org/extension/3843/just-perfection/) - JustPerfection is a collection of GNOME Shell extensions that provide a more modern and minimalistic look and feel.
 * [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) - Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
-* [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
 * [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control.
 * [Always Indicator](https://extensions.gnome.org/extension/2594/always-indicator/) - Always show the new messages indicator on new messages.
 * [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources,
 speed and storage stats.
-* [Smile - complementary extension](https://extensions.gnome.org/extension/6096/smile-complementary-extension/) - Automatically paste Emojis from the Smile emoji picker
-* [Pop!_OS Shell](https://github.com/pop-os/shell) - Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows.
 * [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/) - Move applications to specific workspaces when they create windows.
 * [Status Area Horizontal Spacing](https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/)
 * [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
 * [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
-- [Switcher - GNOME Shell Extensions](https://extensions.gnome.org/extension/973/switcher/) - Switch windows or launch applications quickly by typing
 - [Lineup](https://github.com/hedgieinsocks/gnome-extension-lineup) - Set width for right-side panel indicators
 - [Cloudflare Warp Toggle](https://extensions.gnome.org/extension/5982/cloudflare-warp-toggle/)
 - [Lilypad](https://extensions.gnome.org/extension/7266/lilypad/) - Organize, hide, and reorder top bar icons.
+- [Tailscale Quick Settings](https://extensions.gnome.org/extension/6139/tailscale-qs/) - Tailscale Quick Settings is a GNOME Shell extension that adds a quick settings button to the top bar.
 
 ---
 
@@ -541,7 +540,7 @@ speed and storage stats.
 - [Add to Feedly Plus — quasiyoke](https://quasiyoke.me/en/add-to-feedly-plus/)
 - [Auto Tab Discard :: add0n.com](https://add0n.com/tab-discard.html)
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
-- [Brotab](https://addons.mozilla.org/en-US/firefox/addon/brotab/)
+- [TabCTL](https://addons.mozilla.org/en-US/firefox/addon/tabctl1/) - Companion Extension for [TabCTL](https://github.com/slastra/tabctl)
 - [CSS Scan](https://getcssscan.com/)
 - [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - The Web Developer extension adds various web developer tools to the browser.
 - [Enchancer For Youtube](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/) - Take control of YouTube and boost your user experience!

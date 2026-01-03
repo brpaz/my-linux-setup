@@ -1,0 +1,14 @@
+- name: Get Latest release
+  community.general.github_release:
+    action: latest_release
+    user: arsfeld
+    repo: reel
+    token: "{{ github_token }}"
+  register: release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/arsfeld/reel/releases/download/{{ release.tag }}/reel-{{ release.tag[1:] }}-x86_64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

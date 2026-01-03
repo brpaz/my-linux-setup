@@ -1,0 +1,27 @@
+- name: Create volume
+  community.docker.docker_volume:
+    name: termix_data
+    state: present
+
+- name: Start termix server
+  community.docker.docker_container:
+    name: termix
+    image: "{{ termix_image }}:{{ termix_version }}"
+    networks:
+      - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+      - termix-data:/app/data
+    env:
+      PORT: "{{ termix_port | string }}"
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.termix.entrypoints: websecure
+      traefik.http.routers.termix.rule: Host(`{{ termix_domain }}`)
+      traefik.http.routers.termix.tls: "true"
+      traefik.http.services.termix.loadbalancer.server.port: "{{ termix_port }}"
+
+- name: Install Termix client
+  community.general.flatpak:
+    name: https://github.com/Termix-SSH/Termix/releases/download/{{ termix_version }}-tag/com.karmaa.termix.flatpakref
+    state: present

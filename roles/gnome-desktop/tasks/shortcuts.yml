@@ -258,7 +258,7 @@
         - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/name"
           value: Browser Tabs switcher
         - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/command"
-          value: vicinae vicinae://extensions/brpaz/brotab/tabs-list
+          value: vicinae vicinae://extensions/brpaz/tabctl/list
 
         - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/binding"
           value:

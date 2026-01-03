@@ -1,2 +1,2 @@
-traefik_version: "v3.6.4"
+traefik_version: "v3.6.6"
 traefik_domain: "traefik.localhost"

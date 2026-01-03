@@ -94,7 +94,7 @@
     # # Productivity
     # # =============================================
     - { role: drawio, tags: [drawio, productivity] }
-    - { role: foliate, tags: [foliate, utilities] }
+    - { role: readest, tags: [readest, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
     - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
     - { role: planify, tags: [planify, productivity] }
@@ -107,10 +107,13 @@
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
     - { role: minitext, tags: [minitext, productivity, flatpak] }
 
-    ## AI
+    ## ===============================================
+    # AI Tooling
+    # ================================================
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
     - { role: ollama, tags: [ollama, productivity] }
     - { role: opencode, tags: [opencode, ai] }
+    - { role: claude-code, tags: [claude-code, ai] }
 
     # # =============================================
     # # Multimedia (Audio & Video)
@@ -137,7 +140,6 @@
     - { role: xnconvert, tags: [xnconvert, audio_vide] }
     - { role: video-trimmer, tags: [video-trimmer, audio_video] }
     - { role: komikku, tags: [komikku, audio_video] }
-    - { role: delfin, tags: [delfin, audio_video, jellyfin] }
     - { role: handbrake, tags: [handbrake, audio_video] }
     - { role: pipeline, tags: [pipeline, audio_video] }
     - { role: blender, tags: [blender, multimedia] }
@@ -145,7 +147,7 @@
     - { role: beets, tags: [beets, multimedia] }
     - { role: feishin, tags: [feishin, multimedia] }
     - { role: scramble, tags: [scramble, flatpak, multimedia] }
-
+    - { role: reel, tags: [reel, multimedia, github] }
     # # # =============================================
     # # # Graphics Design
     # # # =============================================
@@ -247,7 +249,7 @@
     - { role: lazysql, tags: [lazysql, cli, github] }
     - { role: asciinema, tags: [asciinema, cli, github] }
     - { role: copier, tags: [copier, utilities] }
-    - { role: brotab, tags: [brotab, utilities] }
+    - { role: tabctl, tags: [tabctl, utilities] }
     - { role: zoxide, tags: [zoxide] }
     - { role: netscanner, tags: [netscanner, tui, utilities] }
     - { role: sgpt, tags: [sgpt, utilities, github] }
@@ -263,6 +265,7 @@
     - { role: ouch, tags: [ouch, utilities, github] }
     - { role: regex-tui, tags: [regex-tui, utilities, github] }
     - { role: serpl, tags: [serpl, utilities, github] }
+    - { role: sqlit, tags: [sqlit, utilities, github] }
     # =============================================
     # Utilities
     # =============================================

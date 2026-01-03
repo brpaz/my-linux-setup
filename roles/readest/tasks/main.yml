@@ -1,0 +1,4 @@
+- name: Readest
+  community.general.flatpak:
+    name: com.bilingify.readest
+    state: present

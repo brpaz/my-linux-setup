@@ -16,3 +16,5 @@ tls:
       keyFile: /etc/certs/prometheus.localhost-key.pem
     - certFile: /etc/certs/dozzle.localhost.pem
       keyFile: /etc/certs/dozzle.localhost-key.pem
+    - certFile: /etc/certs/termix.localhost.pem
+      keyFile: /etc/certs/termix.localhost-key.pem

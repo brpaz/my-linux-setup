@@ -3,3 +3,9 @@
     name: distrobox
     state: present
   become: true
+
+- name: DistroShelf
+  community.general.flatpak:
+    name: com.ranfdev.DistroShelf
+    state: present
+  become: true

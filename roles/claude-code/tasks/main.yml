@@ -1,0 +1,4 @@
+- name: Install
+  ansible.builtin.command:
+    cmd: curl -fsSL https://claude.ai/install.sh | bash
+    creates: /usr/local/bin/claude
