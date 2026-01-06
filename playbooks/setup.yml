@@ -311,6 +311,7 @@
     - { role: text-compare, tags: [text-compare, utilities, flatpak] }
     - { role: keysmith, tags: [keysmith, utilities, flatpak] }
     - { role: keeppassxc, tags: [keeppassxc, utilities, flatpak] }
+    - { role: ydotool, tags: [ydotool, utilities] }
     # =============================================
     # Finance
     # =============================================

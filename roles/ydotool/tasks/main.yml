@@ -1,0 +1,42 @@
+- name: Install
+  ansible.builtin.dnf:
+    name: ydotool
+    state: present
+  become: true
+
+- name: Ensure systemd override directory exists
+  ansible.builtin.file:
+    path: /etc/systemd/system/ydotool.service.d
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+    recurse: yes
+  become: true
+
+- name: Ensure user is part of input group
+  ansible.builtin.user:
+    name: "{{ ansible_user }}"
+    groups: input
+    append: yes
+  become: true
+
+- name: Create systemd override file
+  ansible.builtin.file:
+    content: |
+      [Service]
+      # Create socket with permissions that allow user access
+      ExecStartPost=/bin/chmod 660 /tmp/.ydotool_socket
+    path: /etc/systemd/system/ydotool.service.d/override.conf
+    state: file
+    mode: 0644
+    owner: root
+    group: root
+  become: true
+
+- name: Start Service
+  ansible.builtin.systemd:
+    name: ydotool.service
+    state: started
+    enabled: true
+  become: true

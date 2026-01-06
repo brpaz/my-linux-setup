@@ -64,9 +64,9 @@
   loop:
     - key: /org/gnome/shell/extensions/auto-move-windows/application-list
       value:
-        "['org.mozilla.firefox.desktop:1','com.slack.Slack.desktop:5', 'md.obsidian.Obsidian.desktop:7', 'code.desktop:2', 'dev.zed.Zed.desktop:2',
+        "['org.mozilla.firefox.desktop:1','md.obsidian.Obsidian.desktop:4', 'code.desktop:2', 'dev.zed.Zed.desktop:2',
         'jetbrains-goland.desktop:2', 'jetbrains-idea.desktop:2',
-        'jetbrains-webstorm.desktop:2', 'com.mitchellh.ghostty.desktop:3','Heynote.desktop:0']"
+        'jetbrains-webstorm.desktop:2', 'com.mitchellh.ghostty.desktop:3','Heynote.desktop:10']"
 # - name: Dash to Panel Extension Settings
 #   community.general.dconf:
 #     key: "{{ item.key }}"

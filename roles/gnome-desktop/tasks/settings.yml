@@ -1,7 +1,7 @@
 - name: Settings | Show Desktop icons
   community.general.dconf:
     key: /org/gnome/desktop/background/show-desktop-icons
-    value: "true"
+    value: "false"
 - name: Settings | Set Automatic Timezone
   community.general.dconf:
     key: /org/gnome/desktop/datetime/automatic-timezone
@@ -43,17 +43,16 @@
 - name: Set Favorite apps
   community.general.dconf:
     key: /org/gnome/shell/favorite-apps
-    value:
-      "['firefox.desktop', 'org.gnome.Nautilus.desktop',
-      'code.desktop', 'md.obsidian.Obsidian.desktop']"
+    value: "['firefox.desktop', 'org.gnome.Nautilus.desktop',
+      'zed.desktop', 'md.obsidian.Obsidian.desktop']"
 
 - name: Ptyxis settings
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   with_items:
     - key: /org/gnome/Ptyxis/audible-bell
-      value: 'false'
+      value: "false"
     - key: /org/gnome/Ptyxis/visual-bell
-      value: 'false'
+      value: "false"
