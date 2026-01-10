@@ -34,5 +34,5 @@
     - svgo
     - sharp-cli
     - plop
-    - "@anthropic-ai/claude-code"
     - "wrangler"
+    - "npm-check-updates"

@@ -312,11 +312,6 @@
     - { role: keysmith, tags: [keysmith, utilities, flatpak] }
     - { role: keeppassxc, tags: [keeppassxc, utilities, flatpak] }
     - { role: ydotool, tags: [ydotool, utilities] }
-    # =============================================
-    # Finance
-    # =============================================
-    - { role: denaro, tags: [denaro, finance, flatpak] }
-    - { role: valuta, tags: [valuta, finance, flatpak] }
 
     # =============================================
     # Games

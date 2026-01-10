@@ -231,11 +231,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) - A typeface for developers. By Jetbrains.
 
-### Finance
-
-* [Denaro](https://flathub.org/apps/details/org.nickvision.money) - A personal finance manager
-* [Currency Converter](https://flathub.org/apps/io.github.idevecore.CurrencyConverter) - The currency converter is simple and fast, ideal for those who need to convert currencies repeatedly.
-
 ---
 
 ## Terminal Applications
