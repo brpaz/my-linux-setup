@@ -1,4 +1,0 @@
-- name: Install
-  community.general.flatpak:
-    name: io.github.nokse22.minitext
-    state: present

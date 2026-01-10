@@ -282,7 +282,6 @@
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
     - { role: restic, tags: [restic, utilities] }
     - { role: solaar, tags: [solaar, utilities] }
-    - { role: smile, tags: [smile, utilities] }
     - { role: weather, tags: [weather, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }

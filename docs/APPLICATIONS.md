@@ -58,7 +58,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
 * [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) - Xournal++ is a hand note-taking software written in C++ with the target of flexibility, functionality and speed.
 * [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
-* [MiniText](https://flathub.org/apps/io.github.nokse22.minitext) - A very small and minimalistic digital scratch pad with minimal editing capabilities.
 * [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
 * [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 
