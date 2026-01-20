@@ -269,6 +269,7 @@ I use ZSH shell with the following extras:
 * [svg/svgo](https://github.com/svg/svgo) - Node.js tool for optimizing SVG files
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
 * [asciinema](https://asciinema.org/) - Record and share your terminal sessions, the right way
+* [gifski](https://gif.ski/) - Command-line tool for converting videos to GIFs
 
 ### Http Tools
 

@@ -105,7 +105,6 @@
     - { role: heynote, tags: [heynote, productivity] }
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
-    - { role: minitext, tags: [minitext, productivity, flatpak] }
 
     ## ===============================================
     # AI Tooling
@@ -311,6 +310,7 @@
     - { role: keysmith, tags: [keysmith, utilities, flatpak] }
     - { role: keeppassxc, tags: [keeppassxc, utilities, flatpak] }
     - { role: ydotool, tags: [ydotool, utilities] }
+    - { role: gifski, tags: [gifski, utilities] }
 
     # =============================================
     # Games
