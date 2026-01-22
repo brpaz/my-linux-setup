@@ -15,7 +15,7 @@
 - name: Start container
   community.docker.docker_container:
     name: promtail
-    image: grafana/promtail:3.3.2
+    image: grafana/promtail:3.6.4
     command: -config.file=/etc/promtail/config.yml
     state: started
     restart_policy: unless-stopped
