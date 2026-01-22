@@ -20,7 +20,7 @@
 - name: Start container
   community.docker.docker_container:
     name: loki
-    image: grafana/loki:3.3.2
+    image: grafana/loki:3.6.4
     state: started
     restart_policy: unless-stopped
     command: -config.file=/etc/loki/config.yaml
