@@ -1,0 +1,4 @@
+- name: Install
+  community.general.flatpak:
+    name: io.github.tobagin.karere
+    state: present

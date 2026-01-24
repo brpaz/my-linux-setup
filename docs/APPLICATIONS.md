@@ -72,7 +72,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
 * [WebCord](https://flathub.org/en/apps/io.github.spacingbat3.webcord) - Web-based Discord client
-* [ZapZap](https://flathub.org/apps/details/com.rtosta.zapzap) - Unofficial WhatsApp Web Desktop client.
+* [Karere](https://flathub.org/en/apps/io.github.tobagin.karere) - Unofficial WhatsApp Web Desktop client.
 * [Web Apps](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Install websites as desktop apps, so that they appear in their own windows separate from any browsers installed.
 * [NewsFlash](https://flathub.org/apps/details/com.gitlab.newsflash) - Follow your favorite blogs and news sites.
 * [WhatIP](https://flathub.org/apps/details/org.gabmus.whatip) - Get Info on your IP
@@ -361,6 +361,7 @@ I use ZSH shell with the following extras:
 * [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
+- [csvlens](https://github.com/YS-L/csvlens) - A command-line tool for viewing and filtering CSV files.
 
 ### Other
 

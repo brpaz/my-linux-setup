@@ -74,7 +74,7 @@
     - { role: signal, tags: [signal, communications, internet] }
     - { role: slack, tags: [slack, communications, internet] }
     - { role: telegram, tags: [telegram, communications, internet] }
-    - { role: zapzap, tags: [zapzap, communications, internet] }
+    - { role: karere, tags: [karere, communications, internet] }
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
     - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
@@ -265,6 +265,7 @@
     - { role: regex-tui, tags: [regex-tui, utilities, github] }
     - { role: serpl, tags: [serpl, utilities, github] }
     - { role: sqlit, tags: [sqlit, utilities, github] }
+    - { role: csvlens, tags: [csvlens, utilities, github] }
     # =============================================
     # Utilities
     # =============================================
