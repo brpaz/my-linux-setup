@@ -312,6 +312,7 @@
     - { role: keeppassxc, tags: [keeppassxc, utilities, flatpak] }
     - { role: ydotool, tags: [ydotool, utilities] }
     - { role: gifski, tags: [gifski, utilities] }
+    - { role: pj, tags: [pj, utilities] }
 
     # =============================================
     # Games
