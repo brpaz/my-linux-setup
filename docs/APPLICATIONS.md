@@ -387,6 +387,8 @@ I use ZSH shell with the following extras:
 * [zrok](https://github.com/openziti/zrok) - zrok lets you securely share web services, files, and network resources with anyone.
 - [stu](https://github.com/lusingander/stu) - TUI application for Amazon S3
 - [jwt-tui](https://jwtui.cli.rs/) - TUI for interacting with JSON Web Tokens
+- [redis-tui](https://github.com/redis-tui/redis-tui) - TUI for interacting with Redis
+- [ktea](https://github.com/jonas-grgt/ktea) - TUI for interacting with Kafka
 
 ## Development Runtimes
 

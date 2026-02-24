@@ -3,3 +3,25 @@
   community.general.flatpak:
     name: com.redis.RedisInsight
     state: present
+
+- name: Redis TUI | Get Latest Release
+  community.general.github_release:
+    action: latest_release
+    user: davidbudnick
+    repo: redis-tui
+    token: "{{ github_token }}"
+  register: release
+
+- name: Redis TUI | Download Binary
+  ansible.builtin.unarchive:
+    src: https://github.com/davidbudnick/redis-tui/releases/download/{{ release.tag }}/redis-tui_{{ release.tag[1:] }}_Linux_x86_64.tar.gz
+    dest: "{{ setup_dir }}"
+    remote_src: yes
+  become: true
+
+- name: Redis TUI | Install Binary
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/redis-tui"
+    dest: "{{ bin_dir }}/redis-tui"
+    mode: a+x
+  become: true
