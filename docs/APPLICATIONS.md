@@ -536,8 +536,7 @@ speed and storage stats.
 
 * ## Firefox Extensions
 
-- [Add to Feedly Plus — quasiyoke](https://quasiyoke.me/en/add-to-feedly-plus/)
-- [Auto Tab Discard :: add0n.com](https://add0n.com/tab-discard.html)
+- [Auto Tab Discard](https://add0n.com/tab-discard.html)
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
 - [TabCTL](https://addons.mozilla.org/en-US/firefox/addon/tabctl1/) - Companion Extension for [TabCTL](https://github.com/slastra/tabctl)
 - [CSS Scan](https://getcssscan.com/)
@@ -552,14 +551,16 @@ speed and storage stats.
 - [Copy as Markdown](https://addons.mozilla.org/en-US/firefox/addon/copy-as-markdown/) - Copy Links, Tabs & Images as Markdown via right clicks
 - [Vue Dev Tools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/) - DevTools extension for debugging Vue.js applications.
 - [Firemonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/) - Super Lightweight User Script and Style Manager.
-- [Google Lighthouse](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/) - Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
 - [EditThisCookie](https://addons.mozilla.org/en-US/firefox/addon/etc2/) - EditThisCookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
-- [Smart HTTPS](https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/) - This extension automatically changes HTTP web addresses to the secure HTTPS, whenever possible.
-- [JSON Light](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files.
 - [WhatFont](https://addons.mozilla.org/en-US/firefox/addon/zjm-whatfont/) - A wrapper for Chengyin Liu's WhatFont tool
 - [Whappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/) - Identify technologies on websites.
 - [VideoDownloaderHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) - The easy way to download and convert Web videos from hundreds of YouTube-like sites.
 - [User Agent switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 - [Fake Data](https://addons.mozilla.org/en-US/firefox/addon/fake-data-haterapps/) -  Fill form fields on the fly with fake random data.
 - [SimpleLogin](https://addons.mozilla.org/en-US/firefox/addon/simplelogin/)
-- [StartPage](https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search)
+- [ClearUrls](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) - Removes tracking elements from URLs
+- [XCancel](https://addons.mozilla.org/en-US/firefox/addon/xcancel/) - Use XCancel instead of Twitter.
+- [Linkding](https://addons.mozilla.org/en-US/firefox/addon/linkding-extension)
+- [Karakeep](https://addons.mozilla.org/en-US/firefox/addon/karakeep/) - An extension to bookmark links to karakeep.app
+- [SingleFile](https://addons.mozilla.org/en-US/firefox/addon/single-file/) - Save an entire web page—including images and styling—as a single HTML file.
+- [Soapbox Signer](https://addons.mozilla.org/en-US/firefox/addon/soapbox-pub-signer/) - A NIP-07 Nostr signer from Soapbox.
