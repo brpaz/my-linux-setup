@@ -1,0 +1,15 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    repo: onwatch
+    token: "{{ github_token }}"
+    user: onllm-dev
+  register: release
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: "{{ bin_dir }}/onwatch"
+    force: true
+    mode: a+x
+    url: https://github.com/onllm-dev/onwatch/releases/download/{{ release.tag }}/onwatch-linux-amd64
+  become: true

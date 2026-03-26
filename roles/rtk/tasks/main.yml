@@ -1,0 +1,21 @@
+- name: Get Latest Release
+  community.general.github_release:
+    action: latest_release
+    user: rtk-ai
+    repo: rtk
+    token: "{{ github_token }}"
+  register: release
+
+- name: RTK | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/rtk-ai/rtk/releases/download/{{ release.tag }}/rtk-x86_64-unknown-linux-musl.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: RTK | Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/rtk"
+    dest: "{{ bin_dir }}/rtk"
+    mode: a+x
+  become: true

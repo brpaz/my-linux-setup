@@ -1,0 +1,4 @@
+- name: Typesetter
+  community.general.flatpak:
+    name: net.trowell.typesetter
+    state: present

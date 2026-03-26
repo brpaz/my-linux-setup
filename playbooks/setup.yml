@@ -105,6 +105,7 @@
     - { role: heynote, tags: [heynote, productivity] }
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
+    - { role: typesetter, tags: [typesetter, typst, flatpak] }
 
     ## ===============================================
     # AI Tooling
@@ -113,6 +114,8 @@
     - { role: ollama, tags: [ollama, productivity] }
     - { role: opencode, tags: [opencode, ai] }
     - { role: claude-code, tags: [claude-code, ai] }
+    - { role: rtk, tags: [rtk, ai] }
+    - { role: onwatch, tags: [onwatch, ai] }
 
     # # =============================================
     # # Multimedia (Audio & Video)
@@ -144,7 +147,7 @@
     - { role: blender, tags: [blender, multimedia] }
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
     - { role: beets, tags: [beets, multimedia] }
-    - { role: feishin, tags: [feishin, multimedia] }
+    - { role: nocturne, tags: [nocturne, multimedia] }
     - { role: scramble, tags: [scramble, flatpak, multimedia] }
     - { role: reel, tags: [reel, multimedia, github] }
     # # # =============================================

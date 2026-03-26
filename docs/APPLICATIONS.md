@@ -60,6 +60,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Eloquent](https://flathub.org/apps/re.sonny.Eloquent) - Eloquent is a proofreading software for English, Spanish, French, German, Portuguese, Polish, Dutch, and more than 20 other languages.
 * [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
 * [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
+* [Typesetter](https://flathub.org/en/apps/net.trowell.typesetter) - Typesetter is a lightweight desktop application for creating beautiful documents with Typst.
 
 ---
 
@@ -143,7 +144,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
 * [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
-* [Feishin](https://github.com/jeffvli/feishin) - A modern self-hosted music player.
+* [Nocturne](https://github.com/Jeffser/Nocturne) - Nocturne is a Navidrome / Subsonic client that brings all your music together in one place, Nocturne not only connects to existing instances but it's capable of installing and managing it's own Navidrome instance
 * [Scramble](https://flathub.org/en/apps/io.github.tobagin.scramble) - Scramble is a simple, privacy-focused utility for viewing and removing metadata from images.
 * [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 
@@ -212,6 +213,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Alpaca](https://flathub.org/apps/details/com.github.alpaca.Alpaca) - Alpaca is a desktop application that allows you to run large language models (LLMs) locally on your machine, without the need for an internet connection.
 - [OpenCode](https://opencode.ai) - OpenCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
 - [ClaudeCode](https://claude.ai) - ClaudeCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
+- [rtk](https://github.com/rtk-ai/rtk) - CLI proxy that reduces LLM token consumption by 60-90% on common dev commands
+- [onwatch](https://onwatch.onllm.dev/) - Track usage and reset windows across Anthropic, Codex, Synthetic, Z.ai, Copilot, MiniMax, Gemini CLI, and Antigravit
+
 ---
 
 ### Games
