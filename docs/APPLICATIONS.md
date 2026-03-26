@@ -61,6 +61,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Text Compare](https://flathub.org/apps/io.github.josephmawa.TextCompare) - A simple text comparison tool that allows you to compare two text files side by side and highlight the differences between them.
 * [Nextcloud Desktop](https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud) - The Nextcloud desktop client allows you to keep one or more folders full of your photos, videos and documents synchronized with your server.
 * [Typesetter](https://flathub.org/en/apps/net.trowell.typesetter) - Typesetter is a lightweight desktop application for creating beautiful documents with Typst.
+* [Apostrophe](https://flathub.org/en/apps/org.gnome.gitlab.somas.Apostrophe) - Focus on your writing with a clean, distraction-free markdown editor.
+* [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 
 ---
 
@@ -83,11 +85,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop) - Official Desktop app for Telegram Messenger
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal) - Private messenger
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
-* [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
 * [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
 * [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
-* [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
-* [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
 * [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
 
 #### Web Apps
@@ -105,6 +104,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
 - [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
 - [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
+* [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
+* [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
+* [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
 
 ---
 
@@ -112,13 +114,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
 * [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
-* [Flameshot](https://github.com/lupoDharkael/flameshot) - Powerful yet simple to use screenshot software with annotation support and easy upload to Imgur.
 * [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor
 * [XnConvert](https://www.xnview.com/en/xnconvert/) - Batch Image Processing, Image Convertor, Image Resizer
 * [Inkscape](https://inkscape.org/) - Vector Graphics Editor
-* [Avvie](https://flathub.org/apps/details/com.github.taiko2k.avvie) - A simple tool cropping and downsizing images. Suitable for avatars or cropping photos for use as desktop wallpapers. Convert PNG to JPG. Export in one click to your Pictures folder.
-* [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - A simple image cropping tool.
+* [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - Optimize your images with Curtail, a useful image compressor that supports PNG, JPEG, WebP and SVG file types.
 * [OhMySVG](https://flathub.org/apps/details/com.github.rafaelmardojai.OhMySVG) - A simple SVG editor.
 * [Pigment](https://flathub.org/apps/com.jeffser.Pigment) - Pigment allows you to extract a palette of colors from your images offline. You can select the speed and accuracy by modifying the number and quality of colors.
 
@@ -146,7 +146,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
 * [Nocturne](https://github.com/Jeffser/Nocturne) - Nocturne is a Navidrome / Subsonic client that brings all your music together in one place, Nocturne not only connects to existing instances but it's capable of installing and managing it's own Navidrome instance
 * [Scramble](https://flathub.org/en/apps/io.github.tobagin.scramble) - Scramble is a simple, privacy-focused utility for viewing and removing metadata from images.
-* [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 
 ---
 
@@ -158,7 +157,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
     * [WebStorm](https://www.jetbrains.com/webstorm/) - General purpose Web IDE.
     * [GoLand](https://www.jetbrains.com/go/) - GoLand is a cross-platform IDE built specially for Go developers.
     * [DataGrip](https://www.jetbrains.com/datagrip/) -  The Cross-Platform IDE for Databases & SQL by JetBrains
-* [Visual Studio Code](https://code.visualstudio.com/) - My text editor of choice
 * [Zed](https://zed.dev/) - Next Gen Code Editor and IDE
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
 * [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
@@ -176,6 +174,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Utilities
 
 * [Ghostty](https://ghostty.org/) - A fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+* [Alarcritty](https://alacritty.org/) - Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration
 * [Vicinae](https://docs.vicinae.com) - A modern launcher for Linux, compatible with MacOS Raycast.
 * [Main Menu](https://flathub.org/apps/page.codeberg.libre_menu_editor.LibreMenuEditor) - This program lists all application launchers that are installed on your system. You can then use a clean, modern, and intuitive interface to customize the main menu to your liking.
 * [Font Manager](https://flathub.org/apps/details/org.gnome.FontManager) - Font Manager is intended to provide a way for average users to easily manage desktop fonts, without having to resort to command line tools or editing configuration files by hand.
@@ -206,6 +205,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 - [DistroShelf](https://flathub.org/en/apps/com.ranfdev.DistroShelf) - Graphical interface for managing Distrobox containers
 - [Gnome Extensions Manager](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager) - Manage GNOME Shell extensions.
+
 ---
 
 ## AI
@@ -215,6 +215,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [ClaudeCode](https://claude.ai) - ClaudeCode is an AI-powered code completion tool that helps developers write code faster and with fewer errors.
 - [rtk](https://github.com/rtk-ai/rtk) - CLI proxy that reduces LLM token consumption by 60-90% on common dev commands
 - [onwatch](https://onwatch.onllm.dev/) - Track usage and reset windows across Anthropic, Codex, Synthetic, Z.ai, Copilot, MiniMax, Gemini CLI, and Antigravit
+- [ollama](https://ollama.com/) - Start building with open models
 
 ---
 
@@ -282,20 +283,19 @@ I use ZSH shell with the following extras:
 
 ### Package Managers
 
-* [composer](https://getcomposer.org/) - Dependency Manager for PHP
 * [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
+* [uv](https://docs.astral.sh/uv/) - An extremely fast Python package and project manager, written in Rust.
 
-### Version Control
+### Git
 
 * [GitHub CLI](https://github.com/cli/cli) - GitHub’s official command line tool
 * [GitLab CLI](https://gitlab.com/gitlab-org/cli) - GLab is an open source GitLab CLI tool bringing GitLab to your terminal next to where you are already working with git and your code without switching between windows and browser tabs. Work with issues, merge requests, watch running pipelines directly from your CLI among other features.
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
 * [lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
-* [cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+* [czg](https://cz-git.qbb.sh/cli/) - The commitizen command line utility.
 * [goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
-* [mklicense](https://github.com/cezaraugusto/mklicense) -  CLI tool for generating Licenses. Easily.
 * [conduct](https://www.npmjs.com/package/conduct) - Generate a code of conduct file for your project.
+* [Forgejo cli](https://codeberg.org/forgejo-contrib/forgejo-cli)
 
 ### Scaffolding tools
 
@@ -303,7 +303,6 @@ I use ZSH shell with the following extras:
 * [Vue CLI 3](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development.
 * [vuejs/vuepress](https://github.com/vuejs/vuepress) - Minimalistic Vue-powered static site generator
 * [Symfony CLI](https://symfony.com/download) - Symfony command line tool
-* [readme-md-generator](https://github.com/kefranabg/readme-md-generator) - CLI that generates beautiful README.md files
 
 ### Snippets and Cheat sheets
 
@@ -318,7 +317,6 @@ I use ZSH shell with the following extras:
 * [AWS CLI](https://aws.amazon.com/cli) - AWS Command Line Interface.
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
-* [wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) - Cloudflare Workers CLI
 
 ### Docker Tools
 
@@ -382,7 +380,7 @@ I use ZSH shell with the following extras:
 ### Development tools
 
 - [devenv](https://devenv.sh/) - A tool for creating and managing development environments.
-- [holesail](https://holesail.io/) - Peer to Peer tunnels forInstant Access.
+- [holesail](https://holesail.io/) - Peer to Peer tunnels for Instant Access.
 - [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
 * [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
@@ -393,13 +391,12 @@ I use ZSH shell with the following extras:
 - [jwt-tui](https://jwtui.cli.rs/) - TUI for interacting with JSON Web Tokens
 - [redis-tui](https://github.com/redis-tui/redis-tui) - TUI for interacting with Redis
 - [ktea](https://github.com/jonas-grgt/ktea) - TUI for interacting with Kafka
+- [nats-tui](https://pypi.org/project/nats-tui/) - TUI for NATS Messaging service
 
 ## Development Runtimes
 
-* PHP
 * NodeJS
 * Golang
-* Ruby
 * Python
 * Rust
 

@@ -28,11 +28,11 @@
     - pnpm
     - commitizen
     - conduct
-    - pageres-cli
-    - readme-md-generator
     - serve
     - svgo
     - sharp-cli
     - plop
-    - "wrangler"
-    - "npm-check-updates"
+    - npm-check-updates
+    - czg
+    - "@vue/cli"
+    - "cloudflare-cli"

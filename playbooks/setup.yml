@@ -106,6 +106,7 @@
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
     - { role: typesetter, tags: [typesetter, typst, flatpak] }
+    - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
 
     ## ===============================================
     # AI Tooling
