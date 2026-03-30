@@ -3,18 +3,19 @@
     baseurl: https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_41/home:TheLocehiliosan:yadm.repo
     description: YADM Repository
     name: yadm
+  when: ansible_facts['os_family'] == 'RedHat'
 
 - name: Install YADM
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: yadm
     state: present
   become: true
 
 - name: Dotfiles | Clone Repository
-  ansible.builtin.command: yadm clone -f "{{ dotfiles_repo_url }}"
+  ansible.builtin.command: yadm clone -f "{{ dotfiles_clone_url }}"
 
 - name: Reset dotfiles to the remote repo
   ansible.builtin.command: yadm reset --hard
 
 - name: Dotfiles | Update remote url to ssh
-  ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_repo_url }}"
+  ansible.builtin.command: yadm remote set-url origin "{{ dotfiles_ssh_url }}"

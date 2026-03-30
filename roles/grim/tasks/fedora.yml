@@ -1,6 +1,7 @@
 - name: Install
-  ansible.builtin.package:
+  ansible.builtin.dnf:
     name:
-      - alacritty
+      - grim
+      - slurp
     state: present
   become: true

@@ -1,6 +1,6 @@
-- name: Install
+- name: Install Waybar
   ansible.builtin.package:
     name:
-      - alacritty
+      - waybar
     state: present
   become: true

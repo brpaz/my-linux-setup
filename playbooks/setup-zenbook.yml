@@ -1,0 +1,35 @@
+- name: Ansible playbook to setup my local machine
+  hosts: all
+  vars_files:
+    - ../vars/main.yml
+
+  vars_prompt:
+    - name: github_token
+      prompt: "What is your GitHub Token?"
+      default: "{{ lookup('env','GITHUB_TOKEN') }}"
+      private: true
+
+  pre_tasks:
+    - name: Ensure setup directory exists
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: directory
+        mode: "0755"
+      tags: [always]
+
+    - name: Update pacman cache
+      ansible.builtin.pacman:
+        update_cache: true
+      tags: [always]
+
+  post_tasks:
+    - name: Remove setup directory
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: absent
+      become: true
+      tags: [always]
+
+  roles:
+    - { role: dotfiles }
+    - { role: hyprland, tags: [hyprland] }
