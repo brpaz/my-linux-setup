@@ -6,7 +6,7 @@
   become: true
 
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: tailscale
     state: present
   become: true

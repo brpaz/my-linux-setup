@@ -1,4 +1,19 @@
-dns_homelab_resolver: "192.168.1.10"
-dns_homelab_domain: "home.brunopaz.dev"
-dns_docker_domain: "docker"
-dns_docker_resolver: "172.17.0.1"
+
+# Primary upstream DNS servers (tested first)
+dns_upstream_servers:
+  - "192.168.1.10"
+  - "127.0.0.1#55353"
+
+# DNS cache configuration
+dns_cache_size: 5000
+dns_min_ttl: 300
+
+# DNS-over-HTTPS configuration (fallback when primary is down)
+dns_dnscrypt_enabled: true
+dns_dnscrypt_address: "127.0.0.1"
+dns_dnscrypt_port: "55353"
+
+# Domain resolvers: list of {domain, resolver, name} dicts
+dns_custom_resolvers:
+  - { name: "homelab", domain: "home.brunopaz.dev", resolver: "192.168.1.10" }
+  - { name: "docker", domain: "docker.local", resolver: "172.17.0.1" }

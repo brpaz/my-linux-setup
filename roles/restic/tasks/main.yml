@@ -1,5 +1,5 @@
 - name: Restic
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: restic
     state: present
   become: true

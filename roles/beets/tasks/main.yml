@@ -1,5 +1,5 @@
 - name: Install Beets
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   loop:

@@ -1,5 +1,5 @@
 - name: Rigrep
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: ripgrep
     state: present
   become: true

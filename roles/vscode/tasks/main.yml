@@ -6,6 +6,6 @@
     name: vscode
   become: true
 - name: VS Code | Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: code
   become: true

@@ -1,0 +1,60 @@
+- name: Asus Zenbook Laptop Provision
+  hosts:
+    - zenbook-laptop
+
+  vars_prompt:
+    - name: github_token
+      prompt: "What is your GitHub Token?"
+      default: "{{ lookup('env','GITHUB_TOKEN') }}"
+      private: true
+
+  pre_tasks:
+    - name: Ensure setup directory exists
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: directory
+        mode: "0755"
+      tags: [always]
+
+   # - name: Update pacman cache
+   #   ansible.builtin.pacman:
+   #     update_cache: true
+   #   become: true
+   #   tags: [always]
+
+  post_tasks:
+    - name: Remove setup directory
+      ansible.builtin.file:
+        path: "{{ setup_dir }}"
+        state: absent
+      become: true
+      tags: [always]
+
+  roles:
+    - role: pacman
+      tags: [core, pacman]
+    - role: mkinitcpio
+      tags: [core, mkinitcpio, boot]
+    - role: plymouth
+      tags: [boot, plymouth, desktop-environment]
+    - role: yay
+      tags: [core, yay, aur]
+    - role: git
+      tags: [git]
+    - role: github-cli
+      tags: [git, github]
+    - { role: dotfiles }
+    - { role: sddm, tags: [desktop-environment, sddm, display-manager] }
+    - { role: hyprland, tags: [desktop-environment, hyprland] }
+    - { role: waybar, tags: [desktop-environment, waybar] }
+    - { role: swaync, tags: [desktop-environment, swaync, notifications] }
+    - { role: brightnessctl, tags: [system] }
+    - { role: kooha, tags: [kooha, multimedia, video]}
+    - { role: satty, tags: [satty, multimedia]}
+    - { role: pwvucontrol, tags: [pwvucontrol, multimedia ]}
+    - { role: overstride, tags: [overstride, bluetooth, utilities]}
+    - { role: network-manager, tags: [network-manager, networking]}
+    - { role: dns, tags: [dns]}
+    - { role: nm-connection-editor, tags: [networking, nm-connection-editor ]}
+    - { role: rofi, tags: [rofi, utilities]}
+    - { role: monique, tags: [monique, hyprland, utilities]}

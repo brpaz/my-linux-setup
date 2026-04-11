@@ -6,6 +6,6 @@
     name: brave
   become: true
 - name: Brave Browser | Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: brave-browser
   become: true

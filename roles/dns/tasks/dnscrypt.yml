@@ -1,0 +1,59 @@
+- name: DNSCrypt Proxy | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: DNSCrypt
+    repo: dnscrypt-proxy
+    token: "{{ github_token }}"
+  register: release
+  when: dns_dnscrypt_enabled | default(true)
+
+- name: DNSCrypt Proxy | Download and Install
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/{{ release.tag }}/dnscrypt-proxy-linux_x86_64-{{ release.tag }}.tar.gz
+  when: dns_dnscrypt_enabled | default(true)
+
+- name: Install DNSCrypt Proxy
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/linux-x86_64/dnscrypt-proxy"
+    dest: "{{ bin_dir }}/dnscrypt-proxy"
+    mode: a+x
+  become: true
+  when: dns_dnscrypt_enabled | default(true)
+
+- name: DNSCrypt Proxy | Create configuration directory
+  ansible.builtin.file:
+    path: /etc/dnscrypt-proxy
+    state: directory
+    mode: "0755"
+  become: true
+  when: dns_dnscrypt_enabled | default(true)
+
+- name: DNSCrypt Proxy | Create configuration file
+  ansible.builtin.template:
+    src: templates/dnscrypt-proxy.toml.j2
+    dest: /etc/dnscrypt-proxy/dnscrypt-proxy.toml
+    mode: "0644"
+  become: true
+  when: dns_dnscrypt_enabled | default(true)
+
+- name: DNSCrypt Proxy | Check if service exists
+  ansible.builtin.stat:
+    path: /etc/systemd/system/dnscrypt-proxy.service
+  register: dnscrypt_service_exists
+
+- name: DNSCrypt Proxy | Start and enable service
+  ansible.builtin.command:
+    cmd: dnscrypt-proxy -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml -service install
+  become: true
+  when: dns_dnscrypt_enabled | default(true) and not dnscrypt_service_exists.stat.exists
+
+- name: Enable DNSCrypt Proxy service
+  ansible.builtin.systemd:
+    name: dnscrypt-proxy
+    state: started
+    enabled: true
+  become: true
+  when: dns_dnscrypt_enabled | default(true)
+  notify: Restart NetworkManager

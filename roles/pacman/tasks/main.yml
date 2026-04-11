@@ -1,0 +1,6 @@
+- name: Pacman | Install packages
+  community.general.pacman:
+    name: "{{ pacman_packages }}"
+    state: present
+  become: true
+  when: pacman_packages | length > 0

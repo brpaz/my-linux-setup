@@ -7,7 +7,7 @@
     - libdnf5-plugin-actions
   become: true
 - name: Install core packages
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - curl
       - wget

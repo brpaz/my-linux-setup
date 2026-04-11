@@ -5,7 +5,7 @@
   ignore_errors: true
 
 - name: Install NVIDIA Drivers
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - akmod-nvidia
       - vulkan

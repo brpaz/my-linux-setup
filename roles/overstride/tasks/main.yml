@@ -1,0 +1,17 @@
+- name: Get Latest releaase
+  community.general.github_release:
+    action: latest_release
+    repo: overskride
+    token: '{{ github_token }}'
+    user: kaii-lb
+  register: release
+
+- name: Download Flatpak
+  ansible.builtin.get_url:
+    url:  "https://github.com/kaii-lb/overskride/releases/download/{{ release.tag }}/overskride.flatpak"
+    dest: "{{ setup_dir }}/overstride.flatpak"
+
+- name: Manual install
+  ansible.builtin.command: flatpak install -y "{{ setup_dir }}/overstride.flatpak"
+  become: true
+

@@ -1,0 +1,11 @@
+- name: Add Copr repository
+  ansible.builtin.command:
+    cmd: dnf copr enable -y erikreider/swayosd
+    #creates: /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
+  become: true
+  when: ansible_distributtion == 'Fedora'
+
+- name: Install swayosd
+  ansible.builtin.package:
+    name: swayosd
+

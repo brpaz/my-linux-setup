@@ -1,0 +1,3 @@
+{% for item in dns_custom_resolvers %}
+server=/{{ item.domain }}/{{ item.resolver }}
+{% endfor %}

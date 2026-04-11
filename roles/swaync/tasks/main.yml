@@ -1,7 +1,6 @@
 - name: Add Copr Repository
   ansible.builtin.command:
     cmd: dnf copr enable -y erikreider/SwayNotificationCenter
-  creates: /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo
 
 - name: Install
   ansible.builtin.package:

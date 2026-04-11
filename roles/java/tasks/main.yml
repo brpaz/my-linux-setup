@@ -1,5 +1,5 @@
 - name: Java
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: java-latest-openjdk-devel
     state: present
   become: true

@@ -15,6 +15,6 @@
   become: true
 
 - name: Install Microsoft Edge stable version
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: microsoft-edge-stable
   become: true

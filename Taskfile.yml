@@ -21,17 +21,17 @@ tasks:
   lint:
     desc: Runs Ansible Lint agains manifests
     cmds:
-      - ansible-lint playbooks/setup.yml roles
+      - ansible-lint playbooks roles inventories
 
   check:
-    desc: Check syntax of playbooks
+    desc: Check syntax of a playbook against an inventory
     cmds:
-      - ansible-playbook --syntax-check playbooks/*.yml
+      - ansible-playbook --syntax-check -i ${INVENTORY:?set INVENTORY} --limit ${LIMIT:-all} playbooks/${PLAYBOOK:-setup.yml}
 
   run:
     desc: Run main playbook
     cmds:
-      - ansible-playbook --ask-become-pass
+      - ansible-playbook -i ${INVENTORY:?set INVENTORY} --limit ${LIMIT:-all} --ask-become-pass playbooks/${PLAYBOOK:-setup.yml}
 
   run-i:
     desc: Run interactive playbook
@@ -40,7 +40,11 @@ tasks:
     cmds:
       - |
         ALL_PLAYBOOKS=$(ls playbooks/*.yml)
+        ALL_INVENTORIES=$(ls inventories/*/*.ini)
+        ALL_HOSTS="tuxedo-laptop zenbook-laptop"
         PLAYBOOK=$(gum choose --header "Select playbook to run" ${ALL_PLAYBOOKS})
+        INVENTORY=$(gum choose --header "Select inventory to run" ${ALL_INVENTORIES})
+        LIMIT=$(gum choose --header "Select host to run" ${ALL_HOSTS})
         TAG=$(gum input --header "Enter tag to run")
 
-        ansible-playbook --ask-become-pass ${PLAYBOOK:-setup.yml} --tags ${TAG:-all}
+        ansible-playbook -i ${INVENTORY} --limit ${LIMIT} --ask-become-pass ${PLAYBOOK:-playbooks/setup.yml} --tags ${TAG:-all}

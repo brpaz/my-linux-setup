@@ -1,5 +1,5 @@
 - name: Node | Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: nodejs
     state: present
   become: true

@@ -1,0 +1,5 @@
+- name: Zed | Install on Arch Linux
+  community.general.pacman:
+    name: zed
+    state: present
+  become: true

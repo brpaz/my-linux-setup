@@ -1,5 +1,5 @@
 - name: Golang
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: golang
     state: present
   become: true

@@ -1,5 +1,5 @@
 - name:
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: epiphany
     state: present
   become: true

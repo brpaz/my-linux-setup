@@ -1,5 +1,5 @@
 - name: Install required virtualization packages
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - bridge-utils
       - libvirt

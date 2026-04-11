@@ -1,5 +1,5 @@
 - name: PHP | Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - php-cli
       - php-curl
@@ -12,8 +12,8 @@
   become: true
 - name: Symfony CLI | Download Installer
   ansible.builtin.get_url:
-    dest: '{{ setup_dir }}/symfony-installer'
-    mode: '0644'
+    dest: "{{ setup_dir }}/symfony-installer"
+    mode: "0644"
     url: https://get.symfony.com/cli/installer
 - name: Symfony CLI | Install
   ansible.builtin.command: bash {{ setup_dir }}/symfony-installer

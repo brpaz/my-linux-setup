@@ -1,0 +1,12 @@
+- name: Load distribution-specific vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
+- name: Install NetworkManager
+  ansible.builtin.package:
+    name: "{{ nm_package }}"
+
+- name: Enable NetworkManager
+  ansible.builtin.service:
+    name: NetworkManager
+    enabled: yes
+    state: started

@@ -1,0 +1,5 @@
+- name: Restart NetworkManager
+  ansible.builtin.systemd:
+    name: NetworkManager
+    state: restarted
+  become: true

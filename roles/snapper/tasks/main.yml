@@ -1,5 +1,5 @@
 - name: Install snapper
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: snapper
     state: present
   become: true

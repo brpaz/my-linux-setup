@@ -1,0 +1,17 @@
+# Don't read /etc/resolv.conf
+no-resolv
+
+# Use servers in order (fallback works properly)
+strict-order
+
+# Enable caching
+cache-size={{ dns_cache_size | default(5000) }}
+
+# Minimum TTL for cached entries (seconds)
+min-cache-ttl={{ dns_min_ttl | default(300) }}
+
+# Local domain resolution
+local=/local/
+domain=local
+
+listen-address=127.0.0.1

@@ -1,0 +1,64 @@
+- name: Yay | Check if installed
+  ansible.builtin.stat:
+    path: /usr/bin/yay
+  register: yay_binary
+
+- name: Yay | Install build dependencies
+  ansible.builtin.pacman:
+    name:
+      - base-devel
+      - git
+      - go
+    state: present
+  become: true
+  when: not yay_binary.stat.exists
+
+- name: Yay | Clone AUR repository
+  ansible.builtin.git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: "{{ setup_dir }}/yay"
+    update: true
+  become: true
+  become_user: "{{ user }}"
+  when: not yay_binary.stat.exists
+
+- name: Yay | Build package
+  ansible.builtin.command:
+    cmd: makepkg --cleanbuild --noconfirm
+    chdir: "{{ setup_dir }}/yay"
+  become: true
+  become_user: "{{ user }}"
+  when: not yay_binary.stat.exists
+
+- name: Yay | Find built package
+  ansible.builtin.find:
+    paths: "{{ setup_dir }}/yay"
+    patterns: "yay-*-{{ ansible_architecture }}.pkg.tar.zst"
+    recurse: false
+  register: yay_package
+  when: not yay_binary.stat.exists
+
+- name: Yay | Ensure package was built
+  ansible.builtin.assert:
+    that:
+      - yay_package.files | length > 0
+    fail_msg: Could not find the built yay package.
+  when: not yay_binary.stat.exists
+
+- name: Yay | Install package
+  ansible.builtin.command:
+    argv:
+      - pacman
+      - -U
+      - --noconfirm
+      - --needed
+      - "{{ (yay_package.files | sort(attribute='mtime', reverse=true) | map(attribute='path') | first) }}"
+  become: true
+  when: not yay_binary.stat.exists
+
+- name: Yay | Install AUR packages
+  ansible.builtin.command:
+    argv: "{{ ['yay', '-S', '--noconfirm', '--needed'] + yay_packages }}"
+  become: true
+  become_user: "{{ user }}"
+  when: yay_packages | default([]) | length > 0

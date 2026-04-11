@@ -1,4 +1,4 @@
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: zoxide
   become: true

@@ -1,5 +1,5 @@
 - name: Flameshot
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: flameshot
     state: present
   become: true

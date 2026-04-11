@@ -1,0 +1,8 @@
+
+- name: Stop systemd-resolved
+  ansible.builtin.systemd:
+    name: systemd-resolved
+    state: stopped
+    enabled: false
+  become: true
+

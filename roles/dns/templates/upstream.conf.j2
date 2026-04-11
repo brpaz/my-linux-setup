@@ -1,0 +1,4 @@
+# Default upstream DNS servers
+{% for server in dns_upstream_servers %}
+server={{ server }}
+{% endfor %}

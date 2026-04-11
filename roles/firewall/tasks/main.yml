@@ -1,5 +1,5 @@
 - name: Install firewalld
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: firewalld
     state: present
   become: true
@@ -28,7 +28,7 @@
 #  become: true
 
 - name: Install Firewalld config GUI
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: firewall-config
     state: present
   become: true

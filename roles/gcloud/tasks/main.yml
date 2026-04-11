@@ -10,6 +10,6 @@
   become: true
 
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: google-cloud-cli
   become: true

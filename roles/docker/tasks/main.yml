@@ -8,7 +8,7 @@
   become: true
 
 - name: Install Packages
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - docker-ce
       - docker-ce-cli
@@ -20,7 +20,7 @@
   ansible.builtin.user:
     append: true
     groups: docker
-    name: '{{ user }}'
+    name: "{{ user }}"
   become: true
 
 - name: Refresh groups
@@ -31,7 +31,7 @@
 - name: Copy Daemon.json
   ansible.builtin.copy:
     dest: /etc/docker/daemon.json
-    mode: '0644'
+    mode: "0644"
     src: daemon.json
   become: true
 

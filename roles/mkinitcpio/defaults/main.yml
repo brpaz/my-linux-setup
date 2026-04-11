@@ -1,0 +1,16 @@
+---
+mkinitcpio_hooks:
+  - base
+  - udev
+  - autodetect
+  - microcode
+  - modconf
+  - kms
+  - keyboard
+  - keymap
+  - consolefont
+  - block
+  - plymouth
+  - encrypt
+  - filesystems
+  - fsck

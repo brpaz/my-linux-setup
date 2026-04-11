@@ -2,4 +2,4 @@
   community.general.pipx:
     name: sqlit-tui
     state: present
-    python: "{{ host_python_interpreter }}"
+    python: "{{ ansible_python_interpreter }}"

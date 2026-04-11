@@ -1,0 +1,6 @@
+hostname: zenbook-laptop
+pacman_packages:
+  - gnome-keyring
+  - seahorse
+  - dns-utils
+system_python_interpreter: /usr/bin/python

@@ -1,0 +1,16 @@
+- name: Ensure mkinitcpio.conf exists
+  ansible.builtin.file:
+    path: /etc/mkinitcpio.conf
+    state: touch
+  become: true
+
+- name: Configure mkinitcpio hooks
+  ansible.builtin.lineinfile:
+    path: /etc/mkinitcpio.conf
+    regexp: '^HOOKS='
+    line: "HOOKS=({{ mkinitcpio_hooks | join(' ') }})"
+  become: true
+
+- name: Regenerate initramfs
+  ansible.builtin.command: mkinitcpio -P
+  become: true

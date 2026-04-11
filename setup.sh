@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+INVENTORY="${INVENTORY:-inventories/personal/hosts.ini}"
+LIMIT="${LIMIT:-tuxedo-laptop}"
+
 # Trap Ctrl+C and exit
 trap "exit" INT
 
@@ -35,15 +38,15 @@ ansible-galaxy collection install -r requirements.yml
 
 # Setup tuxedo software
 echo -e "${Yellow}Setting up tuxedo software${NC}"
-ansible-playbook playbooks/tuxedo.yml --ask-become-pass
+ansible-playbook -i "$INVENTORY" --limit "$LIMIT" playbooks/tuxedo.yml --ask-become-pass
 
 # Setup dotfiles playbook
 echo -e "${Yellow}Setting up dotfiles${NC}"
-ansible-playbook playbooks/dotfiles.yml --ask-become-pass
+ansible-playbook -i "$INVENTORY" --limit "$LIMIT" playbooks/dotfiles.yml --ask-become-pass
 
 # Run Ansible playbook for setup
 echo -e "${Yellow}Running Ansible playbook for setup${NC}"
-ansible-playbook playbooks/setup.yml --ask-become-pass
+ansible-playbook -i "$INVENTORY" --limit "$LIMIT" playbooks/setup.yml --ask-become-pass
 
 # Set Zsh as the default shell for the session
 echo -e "${Yellow}Switching to Zsh${NC}"

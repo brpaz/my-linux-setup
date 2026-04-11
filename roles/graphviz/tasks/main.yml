@@ -1,5 +1,5 @@
 - name: Graphviz
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: graphviz
     state: present
   become: true
