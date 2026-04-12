@@ -8,7 +8,7 @@
 
 - name: Download
   ansible.builtin.unarchive:
-    src: "https://github.com/muesli/duf/releases/download/{{ release.tag }}/duf_{{ release.tag[1:]_linux_x86_64.tar.gz"
+    src: "https://github.com/muesli/duf/releases/download/{{ release.tag }}/duf_{{ release.tag[1:]}}_linux_x86_64.tar.gz"
     dest: "{{ setup_dir }}"
     remote_src: true
   become: true
@@ -18,3 +18,4 @@
     src: "{{ setup_dir }}/duf"
     dest: "{{ bin_dir }}/duf"
     mode: a+x
+  become: true

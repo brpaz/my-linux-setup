@@ -4,4 +4,6 @@ pacman_packages:
   - seahorse
   - dns-utils
   - unzip
+  - file-roller
+  - nautilus
 system_python_interpreter: /usr/bin/python
