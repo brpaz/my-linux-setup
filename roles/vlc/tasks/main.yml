@@ -1,3 +1,4 @@
+---
 - name: VLC
   ansible.builtin.package:
     name: vlc

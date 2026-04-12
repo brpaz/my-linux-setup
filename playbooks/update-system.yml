@@ -1,7 +1,8 @@
+---
 - name: Update System
   hosts: all
   tasks:
-    - name: check if flatpak is installed
+    - name: Check if flatpak is installed
       ansible.builtin.command: flatpak --version
       register: flatpak_version
       failed_when: false
@@ -20,7 +21,7 @@
       ansible.builtin.apt:
         name: "*"
         state: latest
-        update_only: true
+        only_upgrade: true
         update_cache: true
       become: true
       when: ansible_facts.os_family == 'Debian'
@@ -28,8 +29,10 @@
     - name: Update aur installed packages
       ansible.builtin.command: pacman -Syu --noconfirm
       become: true
+      changed_when: true
       when: ansible_facts.os_family == 'Archlinux'
 
     - name: Update flatpak installed packages
       ansible.builtin.command: flatpak update -y
+      changed_when: true
       when: flatpak_version.rc == 0

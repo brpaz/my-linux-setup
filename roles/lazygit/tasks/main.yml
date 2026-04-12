@@ -1,15 +1,16 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: jesseduffield
     repo: lazygit
-    token: '{{ github_token }}'
-  register: release
+    token: "{{ github_token }}"
+  register: lazygit_release
 
 - name: Download binary
   ansible.builtin.unarchive:
     remote_src: true
-    src: "https://github.com/jesseduffield/lazygit/releases/download/{{ release.tag }}/lazygit_{{ release.tag[1:] }}_Linux_x86_64.tar.gz"
+    src: "https://github.com/jesseduffield/lazygit/releases/download/{{ lazygit_release.tag }}/lazygit_{{ lazygit_release.tag[1:] }}_Linux_x86_64.tar.gz"
     dest: "{{ setup_dir }}"
 
 - name: Install

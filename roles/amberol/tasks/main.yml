@@ -1,3 +1,4 @@
+---
 - name: Amberol
   community.general.flatpak:
     name: io.bassi.Amberol

@@ -1,3 +1,4 @@
+---
 - name: Node | Install
   ansible.builtin.package:
     name: nodejs
@@ -10,14 +11,14 @@
     repo: fnm
     token: "{{ github_token }}"
     user: Schniz
-  register: fnm_release
+  register: node_fnm_release
 
 - name: FNM | Install
   ansible.builtin.unarchive:
     dest: "{{ bin_dir }}"
     mode: a+x
     remote_src: true
-    src: https://github.com/Schniz/fnm/releases/download/{{ fnm_release.tag }}/fnm-linux.zip
+    src: https://github.com/Schniz/fnm/releases/download/{{ node_fnm_release.tag }}/fnm-linux.zip
   become: true
 
 - name: Install Global NPM packages

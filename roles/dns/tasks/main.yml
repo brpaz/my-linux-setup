@@ -1,6 +1,9 @@
-- include_tasks: dnsmasq.yml
-
-- include_tasks: dnscrypt.yml
+---
+- name: Include dnsmasq tasks
+  ansible.builtin.include_tasks: dnsmasq.yml
+- name: Include dnscrypt tasks
+  ansible.builtin.include_tasks: dnscrypt.yml
   when: dns_dnscrypt_enabled | default(true)
 
-- include_tasks: systemd-resolved.yml
+- name: Include systemd-resolved tasks
+  ansible.builtin.include_tasks: systemd-resolved.yml

@@ -1,3 +1,4 @@
+---
 - name: Add Repository
   ansible.builtin.yum_repository:
     baseurl: https://packages.cloud.google.com/yum/repos/cloud-sdk-el9-x86_64

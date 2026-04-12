@@ -1,3 +1,4 @@
+---
 - name: Hyprland | Install packages
   community.general.pacman:
     name:

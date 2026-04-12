@@ -1,3 +1,4 @@
+---
 # - name: Spotify | Install
 #   community.general.flatpak:
 #     name: com.spotify.Client

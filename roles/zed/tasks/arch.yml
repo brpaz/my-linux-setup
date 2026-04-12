@@ -1,3 +1,4 @@
+---
 - name: Zed | Install on Arch Linux
   community.general.pacman:
     name: zed

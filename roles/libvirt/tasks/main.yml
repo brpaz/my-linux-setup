@@ -1,3 +1,4 @@
+---
 - name: Install required virtualization packages
   ansible.builtin.package:
     name:

@@ -1,3 +1,4 @@
+---
 - name: Import the Microsoft GPG key
   ansible.builtin.rpm_key:
     state: present

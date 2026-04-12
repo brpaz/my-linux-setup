@@ -1,3 +1,4 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release

@@ -1,3 +1,4 @@
+---
 - name: Install Git tools
   ansible.builtin.package:
     name:

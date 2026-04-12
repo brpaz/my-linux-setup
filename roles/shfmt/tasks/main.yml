@@ -1,15 +1,15 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: mvdan
     repo: sh
     token: "{{ github_token }}"
-  register: release
+  register: shfmt_release
 
 - name: Download
   ansible.builtin.get_url:
-    url: "https://github.com/mvdan/sh/releases/download/{{ release.tag }}/shfmt_{{ release.tag }}_linux_amd64"
+    url: "https://github.com/mvdan/sh/releases/download/{{ shfmt_release.tag }}/shfmt_{{ shfmt_release.tag }}_linux_amd64"
     dest: "{{ bin_dir }}/shfmt"
     mode: +x
   become: true
-

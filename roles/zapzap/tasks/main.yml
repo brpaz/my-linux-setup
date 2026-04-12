@@ -1,3 +1,4 @@
+---
 - name: WhatsApp Desktop
   community.general.flatpak:
     name: com.rtosta.zapzap

@@ -1,18 +1,19 @@
+---
 - name: Settings | Gnome terminal
   community.general.dconf:
-    key: '{{ item.key }}'
+    key: "{{ item.key }}"
     state: present
-    value: '{{ item.value }}'
+    value: "{{ item.value }}"
   with_items:
     - key: /org/gnome/terminal/legacy/theme-variant
-      value: '''dark'''
+      value: "'dark'"
     - key: /org/gnome/terminal/legacy/new-terminal-mode
-      value: '''tab'''
+      value: "'tab'"
     - key: /org/gnome/terminal/legacy/menu-accelerator-enabled
-      value: 'false'
+      value: "false"
     - key: /org/gnome/terminal/legacy/theme-variant
-      value: '''dark'''
+      value: "'dark'"
     - key: /org/gnome/terminal/legacy/new-terminal-mode
-      value: '''tab'''
+      value: "'tab'"
     - key: /org/gnome/terminal/legacy/menu-accelerator-enabled
-      value: 'false'
+      value: "false"

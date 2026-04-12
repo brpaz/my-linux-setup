@@ -1,3 +1,4 @@
+---
 - name: Flatpak | Install
   ansible.builtin.package:
     name: flatpak

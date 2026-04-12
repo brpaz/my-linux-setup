@@ -1,3 +1,4 @@
+---
 - name: Hyprland | Add copr repository
   ansible.builtin.command:
     cmd: dnf copr enable -y lionheartp/Hyprland

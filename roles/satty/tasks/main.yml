@@ -1,14 +1,15 @@
+---
 - name: Install
   community.general.github_release:
     action: latest_release
     user: Satty-org
     repo: Satty
     token: "{{ github_token }}"
-  register: release
+  register: satty_release
 
 - name: Download
   ansible.builtin.unarchive:
-    src: "https://github.com/Satty-org/Satty/releases/download/{{ release.tag }}/satty-x86_64-unknown-linux-gnu.tar.gz"
+    src: "https://github.com/Satty-org/Satty/releases/download/{{ satty_release.tag }}/satty-x86_64-unknown-linux-gnu.tar.gz"
     dest: "{{ setup_dir }}"
     remote_src: true
   become: true
@@ -19,7 +20,3 @@
     dest: "{{ bin_dir }}/satty"
     mode: a+x
   become: true
-
-
-
-

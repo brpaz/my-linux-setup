@@ -1,3 +1,4 @@
+---
 - name: Flameshot
   ansible.builtin.package:
     name: flameshot

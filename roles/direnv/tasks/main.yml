@@ -1,3 +1,4 @@
+---
 - name: Direnv
   ansible.builtin.package:
     name: direnv

@@ -1,3 +1,4 @@
+---
 - name: Impression
   community.general.flatpak:
     name: io.gitlab.adhami3310.Impression

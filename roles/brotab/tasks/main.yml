@@ -1,3 +1,4 @@
+---
 - name: Install
   community.general.pipx:
     name: brotab
@@ -5,3 +6,4 @@
 
 - name: Browser setup
   ansible.builtin.command: bt install
+  changed_when: true

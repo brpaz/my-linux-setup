@@ -1,16 +1,16 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: zellij-org
     repo: zellij
     token: "{{ github_token }}"
-  register: release
+  register: zellij_release
 
 - name: Download the latest release
   ansible.builtin.unarchive:
-    src: " https://github.com/zellij-org/zellij/releases/download/{{ release.tag }}/zellij-x86_64-unknown-linux-musl.tar.gz"
+    src: " https://github.com/zellij-org/zellij/releases/download/{{ zellij_release.tag }}/zellij-x86_64-unknown-linux-musl.tar.gz"
     dest: "{{ bin_dir }}"
-    remote_src: yes
+    remote_src: true
     mode: a+x
   become: true
-

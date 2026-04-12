@@ -1,3 +1,4 @@
+---
 - name: Pandoc
   ansible.builtin.package:
     name: pandoc

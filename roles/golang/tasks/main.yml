@@ -1,5 +1,5 @@
-
-- name: Laod Distribution specific vars
+---
+- name: Load distribution-specific vars
   ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
 
 - name: Install
@@ -8,5 +8,5 @@
     state: present
   become: true
 
-- include_tasks: golangci-lint.yml
-
+- name: Include golangci-lint tasks
+  ansible.builtin.include_tasks: golangci-lint.yml

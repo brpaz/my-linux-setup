@@ -1,15 +1,17 @@
+---
 - name: Get Latest Release from GitHub
   community.general.github_release:
     action: latest_release
     user: jeffvli
     repo: feishin
     token: "{{ github_token }}"
-  register: release
+  register: feishin_release
 
 - name: Download App Image
   ansible.builtin.get_url:
-    url: "https://github.com/jeffvli/feishin/releases/download/{{ release.tag }}/Feishin-linux-x86_64.AppImage"
+    url: "https://github.com/jeffvli/feishin/releases/download/{{ feishin_release.tag }}/Feishin-linux-x86_64.AppImage"
     dest: "{{ setup_dir }}/Feishin.AppImage"
+    mode: "0644"
 
 - name: Install App Image
   ansible.builtin.copy:

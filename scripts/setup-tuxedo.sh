@@ -27,6 +27,13 @@ EOF
 echo -e "${Yellow}Installing essential packages${NC}"
 sudo dnf update && sudo dnf install -y git curl python3 python3-pip python3-devel dnf-plugins-core
 
+echo -e "${Yellow}Starting virtual environment...${NC}"
+python -m venv venv
+source venv/bin/activate
+
+echo -e "${Yellow}Installing pip packages...${NC}"
+pip install -r requirements.txt
+
 # Install Python dependencies from requirements.txt
 echo -e "${Yellow}Installing Python dependencies from requirements.txt${NC}"
 pip install -r requirements.txt

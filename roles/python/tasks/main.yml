@@ -1,3 +1,4 @@
+---
 - name: Python | Install Core PIP packages
   ansible.builtin.pip:
     name: "{{ item }}"

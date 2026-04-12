@@ -1,3 +1,4 @@
+---
 - name: Kooha
   community.general.flatpak:
     name: io.github.seadve.Kooha

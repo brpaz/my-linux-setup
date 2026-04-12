@@ -1,3 +1,4 @@
+---
 - name: Install plymouth
   ansible.builtin.package:
     name: plymouth
@@ -11,3 +12,4 @@
       fi
     done
   become: true
+  changed_when: true

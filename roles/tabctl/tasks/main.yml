@@ -1,14 +1,15 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: slastra
     repo: tabctl
     token: "{{ github_token }}"
-  register: release
+  register: tabctl_release
 
 - name: Download and Install
   ansible.builtin.unarchive:
-    src: "https://github.com/slastra/tabctl/releases/download/{{ release.tag }}/tabctl-linux-amd64-{{ release.tag }}.tar.gz"
+    src: "https://github.com/slastra/tabctl/releases/download/{{ tabctl_release.tag }}/tabctl-linux-amd64-{{ tabctl_release.tag }}.tar.gz"
     dest: "{{ setup_dir }}"
     remote_src: true
   become: true

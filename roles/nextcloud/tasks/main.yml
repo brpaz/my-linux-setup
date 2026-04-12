@@ -1,3 +1,4 @@
+---
 - name: Nextcloud
   community.general.flatpak:
     name: com.nextcloud.desktopclient.nextcloud

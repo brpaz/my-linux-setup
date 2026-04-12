@@ -1,20 +1,21 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: tldr-pages
     repo: tlrc
-  register: release
+  register: tldr_release
 
 - name: Download
   ansible.builtin.unarchive:
-    dest: '{{ setup_dir }}'
+    dest: "{{ setup_dir }}"
     remote_src: true
-    src: https://github.com/tldr-pages/tlrc/releases/download/{{ release.tag }}/tlrc-{{ release.tag }}-x86_64-unknown-linux-gnu.tar.gz
+    src: https://github.com/tldr-pages/tlrc/releases/download/{{ tldr_release.tag }}/tlrc-{{ tldr_release.tag }}-x86_64-unknown-linux-gnu.tar.gz
   become: true
 
 - name: Install
   ansible.builtin.copy:
-    dest: '{{ bin_dir }}'
+    dest: "{{ bin_dir }}"
     mode: a+x
-    src: '{{ setup_dir }}/tldr'
+    src: "{{ setup_dir }}/tldr"
   become: true

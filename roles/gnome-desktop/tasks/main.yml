@@ -1,3 +1,4 @@
+---
 - name: Install Gnome Desktop Utilities
   ansible.builtin.package:
     name:
@@ -45,8 +46,8 @@
 - name: Gnome extensions
   ansible.builtin.import_tasks: extensions.yml
 
-#- name: Terminal settings
-#  ansible.builtin.import_tasks: terminal-settings.yml
+# - name: Terminal settings
+#   ansible.builtin.import_tasks: terminal-settings.yml
 
 - name: Nautilus settings
   ansible.builtin.import_tasks: nautilus-settings.yml

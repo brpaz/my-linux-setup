@@ -1,3 +1,4 @@
+---
 - name: Java
   ansible.builtin.package:
     name: java-latest-openjdk-devel

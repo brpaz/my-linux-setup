@@ -1,5 +1,7 @@
+---
 - name: Install
   ansible.builtin.command: yay -S --noconfirm aylurs-gtk-shell-git
   environment:
     PYTHON: /usr/bin/python
     PATH: "/usr/bin:{{ lookup('env', 'PATH') }}"
+  changed_when: true

@@ -1,3 +1,4 @@
+---
 - name: Tuxedo Laptop Setup
   hosts: all
 
@@ -32,7 +33,7 @@
     - { role: flatpak, tags: [core, flatpak] }
     - { role: hostname, tags: [core] }
     - { role: btrfs, tags: [core, filesystem] }
-    - { role: users, tags: [core, users] }
+    - { role: sudo, tags: [core] }
     - { role: selinux, tags: [core, sellinux] }
     - { role: tuxedo }
     # =============================================
@@ -57,7 +58,7 @@
     - { role: proxyman, tags: [proxyman, networking] }
     - { role: cloudflared, tags: [cloudflared, networking] }
     - { role: netpeek, tags: [netpeek, networking] }
-    #- { role: opensnitch, tags: [opensnitch, networking, firewall] }
+    # - { role: opensnitch, tags: [opensnitch, networking, firewall] }
     - { role: portmaster, tags: [portmaster, networking] }
     # # =============================================
     # # Internet
@@ -106,11 +107,11 @@
     - { role: typesetter, tags: [typesetter, typst, flatpak] }
     - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
 
-    ## ===============================================
+    # # ===============================================
     # AI Tooling
     # ================================================
     - { role: alpaca, tags: [alpaca, productivity, flatpak] }
-    - { role: ollama, tags: [ollama, productivity] }
+    # - { role: ollama, tags: [ollama, productivity] }
     - { role: opencode, tags: [opencode, ai] }
     - { role: claude-code, tags: [claude-code, ai] }
     - { role: rtk, tags: [rtk, ai] }
@@ -159,7 +160,7 @@
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
-    #- { role: flameshot, tags: [flameshot, graphics_design] }
+    # - { role: flameshot, tags: [flameshot, graphics_design] }
     - { role: gradia, tags: [gradia, graphics_design, flatpak] }
     - { role: curtail, tags: [curtail, graphics_design, flatpak] }
     - { role: pigment, tags: [pigment, graphics_design, flatpak] }
@@ -197,10 +198,7 @@
     - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
-    - {
-        role: kubectl-cnpg-plugin,
-        tags: [kubectl-cnpg-plugin, kubectl-plugin, kubernetes, github],
-      }
+    - { role: kubectl-cnpg-plugin, tags: [kubectl-cnpg-plugin, kubectl-plugin, kubernetes, github] }
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
     - { role: lefthook, tags: [lefthook, dev, github] }
@@ -263,7 +261,7 @@
     - { role: tailspin, tags: [tailspin, utilities, github] }
     - { role: btop, tags: [btop, utilities] }
     - { role: doggo, tags: [doggo, utilities, github, dns] }
-    #- { role: atuin, tags: [atuin, utilities, github] }
+    # - { role: atuin, tags: [atuin, utilities, github] }
     - { role: ouch, tags: [ouch, utilities, github] }
     - { role: regex-tui, tags: [regex-tui, utilities, github] }
     - { role: serpl, tags: [serpl, utilities, github] }
@@ -329,5 +327,5 @@
     # =============================================
     - { role: gnome-desktop, tags: [gnome-desktop] }
     - { role: fonts, tags: [fonts, gnome-desktop] }
-    #- { role: nvidia, tags: [gnome-desktop, drivers] }
-    #- { role: mounts, tags: [mounts, gnome-desktop] }
+    # - { role: nvidia, tags: [gnome-desktop, drivers] }
+    # - { role: mounts, tags: [mounts, gnome-desktop] }

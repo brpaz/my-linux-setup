@@ -1,3 +1,4 @@
+---
 - name: Install rpmfusion repo
   ansible.builtin.package:
     name: "{{ item }}"

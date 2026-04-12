@@ -1,3 +1,4 @@
+---
 - name: Turbolift | Get latest release version
   community.general.github_release:
     user: Skyscanner

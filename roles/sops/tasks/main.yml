@@ -1,14 +1,14 @@
+---
 - name: Sops | Get release
   community.general.github_release:
     action: latest_release
     repo: sops
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: mozilla
-  register: release
+  register: sops_release
 - name: Sops | Install binary
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/sops'
+    dest: "{{ bin_dir }}/sops"
     mode: a+x
-    url: https://github.com/mozilla/sops/releases/download/{{ release.tag }}/sops-{{
-      release.tag }}.linux.amd64
+    url: https://github.com/mozilla/sops/releases/download/{{ sops_release.tag }}/sops-{{ sops_release.tag }}.linux.amd64
   become: true

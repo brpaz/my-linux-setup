@@ -1,14 +1,15 @@
+---
 - name: Get latest version from GitHub
   community.general.github_release:
     action: latest_release
     repo: yt-dlp
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: yt-dlp
   register: ytdlp_release
 
 - name: Download
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/yt-dlp'
+    dest: "{{ bin_dir }}/yt-dlp"
     mode: a+x
     url: https://github.com/yt-dlp/yt-dlp/releases/download/{{ ytdlp_release.tag }}/yt-dlp_linux
   become: true

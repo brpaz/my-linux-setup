@@ -1,21 +1,22 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: alexpasmantier
     repo: television
     token: "{{ github_token }}"
-  register: release
+  register: television_release
 
 - name: Download and extract
   ansible.builtin.unarchive:
     dest: "{{ setup_dir }}"
     remote_src: true
-    src: https://github.com/alexpasmantier/television/releases/download/{{ release.tag }}/tv-{{ release.tag }}-x86_64-unknown-linux-musl.tar.gz
+    src: https://github.com/alexpasmantier/television/releases/download/{{ television_release.tag }}/tv-{{ television_release.tag }}-x86_64-unknown-linux-musl.tar.gz
   become: true
 
 - name: Install
   ansible.builtin.copy:
     dest: "{{ bin_dir }}/tv"
     mode: a+x
-    src: "{{ setup_dir }}/tv-{{ release.tag }}-x86_64-unknown-linux-musl/tv"
+    src: "{{ setup_dir }}/tv-{{ television_release.tag }}-x86_64-unknown-linux-musl/tv"
   become: true

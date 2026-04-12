@@ -1,3 +1,4 @@
+---
 - name: Ruby | Install
   ansible.builtin.package:
     name:

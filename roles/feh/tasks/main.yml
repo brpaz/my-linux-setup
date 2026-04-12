@@ -1,3 +1,4 @@
+---
 - name: Feh Image viewer
   ansible.builtin.package:
     name: feh

@@ -1,3 +1,4 @@
+---
 - name: Add repository
   ansible.builtin.yum_repository:
     baseurl: https://pkg.cloudflareclient.com/rpm

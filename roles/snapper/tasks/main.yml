@@ -1,3 +1,4 @@
+---
 - name: Install snapper
   ansible.builtin.package:
     name: snapper

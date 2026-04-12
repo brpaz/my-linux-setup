@@ -1,1 +1,2 @@
+---
 proxyman_icon_path: "{{ app_icons_path }}/Proxyman.png"

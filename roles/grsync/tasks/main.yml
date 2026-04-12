@@ -1,3 +1,4 @@
+---
 - name: Grsync
   ansible.builtin.package:
     name: grsync

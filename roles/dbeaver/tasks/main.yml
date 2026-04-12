@@ -1,3 +1,4 @@
+---
 - name: DBeaver
   become: true
   community.general.flatpak:

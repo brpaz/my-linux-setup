@@ -1,3 +1,4 @@
+---
 - name: Wildcard | Regex Tester | Download
   community.general.flatpak:
     name: com.felipekinoshita.Wildcard

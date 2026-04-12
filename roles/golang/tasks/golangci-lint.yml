@@ -1,19 +1,19 @@
-
+---
 - name: GolangCI Lint - Get latest release version
   community.general.github_release:
     action: latest_release
     user: golangci
     repo: golangci-lint
     token: "{{ github_token }}"
-  register: latest_release
+  register: golang_release
 
 - name: GolangCI Lint - Download
   ansible.builtin.unarchive:
     dest: "{{ setup_dir }}"
     mode: a+x
     remote_src: true
-    extra_opts: ['--strip-components=1', '--show-stored-names']
-    src: "https://github.com/golangci/golangci-lint/releases/download/{{ latest_release.tag }}/golangci-lint-{{ latest_release.tag[1:] }}-linux-amd64.tar.gz"
+    extra_opts: ["--strip-components=1", "--show-stored-names"]
+    src: "https://github.com/golangci/golangci-lint/releases/download/{{ golang_release.tag }}/golangci-lint-{{ golang_release.tag[1:] }}-linux-amd64.tar.gz"
 
 - name: GolangCI Lint - Install
   ansible.builtin.copy:

@@ -1,3 +1,4 @@
+---
 - name: Gnome Contacts
   ansible.builtin.package:
     name: gnome-contacts

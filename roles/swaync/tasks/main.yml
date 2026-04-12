@@ -1,6 +1,8 @@
+---
 - name: Add Copr Repository
   ansible.builtin.command:
     cmd: dnf copr enable -y erikreider/SwayNotificationCenter
+  changed_when: true
 
 - name: Install
   ansible.builtin.package:

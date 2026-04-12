@@ -1,3 +1,4 @@
+---
 - name: Graphviz
   ansible.builtin.package:
     name: graphviz

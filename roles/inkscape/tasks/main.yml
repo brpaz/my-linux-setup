@@ -1,3 +1,4 @@
+---
 - name: Inkscape
   ansible.builtin.package:
     name: inkscape

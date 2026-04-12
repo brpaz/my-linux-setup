@@ -1,3 +1,4 @@
+---
 - name: PHP | Install
   ansible.builtin.package:
     name:
@@ -18,3 +19,4 @@
 - name: Symfony CLI | Install
   ansible.builtin.command: bash {{ setup_dir }}/symfony-installer
   become: true
+  changed_when: true

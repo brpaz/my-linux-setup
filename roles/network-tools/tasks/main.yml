@@ -1,3 +1,4 @@
+---
 - name: Install networking tools
   ansible.builtin.package:
     name:

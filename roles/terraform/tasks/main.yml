@@ -1,16 +1,16 @@
+---
 - name: Terraform | Get Latest version
   community.general.github_release:
     action: latest_release
     repo: terraform
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: hashicorp
-  register: release
+  register: terraform_release
 
 - name: Terraform | Download and install
   ansible.builtin.unarchive:
-    dest: '{{ bin_dir }}'
+    dest: "{{ bin_dir }}"
     mode: u+rwx
     remote_src: true
-    src: https://releases.hashicorp.com/terraform/{{ release.tag[1:] }}/terraform_{{
-      release.tag[1:] }}_linux_amd64.zip
+    src: https://releases.hashicorp.com/terraform/{{ terraform_release.tag[1:] }}/terraform_{{ terraform_release.tag[1:] }}_linux_amd64.zip
   become: true

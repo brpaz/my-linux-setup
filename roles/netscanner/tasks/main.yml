@@ -1,13 +1,15 @@
+---
 - name: Get the version of cargo
   ansible.builtin.command:
     cmd: cargo --version
-  register: cargo_version
+  register: netscanner_cargo_version
   ignore_errors: true
+  changed_when: false
 
 - name: Fail if cargo is not installed
   ansible.builtin.fail:
     msg: "cargo is not installed"
-  when: cargo_version.rc != 0
+  when: netscanner_cargo_version.rc != 0
 
 - name: Install netscanner
   ansible.builtin.command:

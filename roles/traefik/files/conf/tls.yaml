@@ -1,3 +1,4 @@
+---
 # Configure Traefik to use TLS
 # See: https://doc.traefik.io/traefik/https/tls/#certificates-definition
 tls:

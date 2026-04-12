@@ -1,3 +1,4 @@
+---
 - name: Create volume
   community.docker.docker_volume:
     name: termix_data

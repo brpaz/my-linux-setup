@@ -1,6 +1,7 @@
+---
 - name: Traefik | Ensure Configuration folder exists
   ansible.builtin.file:
-    mode: '0644'
+    mode: "0644"
     path: /etc/traefik
     state: directory
   become: true
@@ -8,21 +9,21 @@
 - name: Traefik | Configuration file
   ansible.builtin.copy:
     dest: /etc/traefik/traefik.yaml
-    mode: '0644'
+    mode: "0644"
     src: traefik.yaml
   become: true
 
 - name: Traefik | Dynamic config
   ansible.builtin.copy:
     dest: /etc/traefik
-    mode: '0644'
+    mode: "0644"
     src: conf
   become: true
 
 - name: Traefik | Install ssl certificates
   ansible.builtin.copy:
     dest: /etc/traefik
-    mode: '0644'
+    mode: "0644"
     src: certs
   become: true
 
@@ -36,11 +37,11 @@
     name: traefik
     image: "traefik:{{ traefik_version }}"
     labels:
-      traefik.enable: 'true'
+      traefik.enable: "true"
       traefik.http.routers.api.entrypoints: websecure
       traefik.http.routers.api.rule: Host(`{{ traefik_domain }}`)
       traefik.http.routers.api.service: api@internal
-      traefik.http.routers.api.tls: 'true'
+      traefik.http.routers.api.tls: "true"
     ports:
       - 127.0.0.1:80:80
       - 127.0.0.1:443:443

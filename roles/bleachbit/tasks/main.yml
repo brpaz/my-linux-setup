@@ -1,3 +1,4 @@
+---
 - name: Bleachbi
   community.general.flatpak:
     name: org.bleachbit.BleachBit

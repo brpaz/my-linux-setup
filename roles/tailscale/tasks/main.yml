@@ -1,3 +1,4 @@
+---
 - name: Add repository (Fedora)
   ansible.builtin.yum_repository:
     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo

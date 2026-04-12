@@ -1,16 +1,17 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: YS-L
     repo: csvlens
     token: "{{ github_token }}"
-  register: release
+  register: csvlens_release
 
 - name: Download
   ansible.builtin.unarchive:
     dest: "{{ setup_dir }}"
     remote_src: true
-    src: https://github.com/YS-L/csvlens/releases/download/{{ release.tag }}/csvlens-x86_64-unknown-linux-gnu.tar.xz
+    src: https://github.com/YS-L/csvlens/releases/download/{{ csvlens_release.tag }}/csvlens-x86_64-unknown-linux-gnu.tar.xz
   become: true
 
 - name: Install

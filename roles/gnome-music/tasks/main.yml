@@ -1,3 +1,4 @@
+---
 - name: Gnome Music | Install from Flathub
   become: true
   community.general.flatpak:

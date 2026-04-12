@@ -1,3 +1,4 @@
+---
 - name: Firefox | Install
   ansible.builtin.package:
     name: firefox

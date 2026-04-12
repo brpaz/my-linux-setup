@@ -1,3 +1,4 @@
+---
 - name: Mission Center
   community.general.flatpak:
     name: io.missioncenter.MissionCenter

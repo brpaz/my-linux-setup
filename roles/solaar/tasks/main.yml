@@ -1,3 +1,4 @@
+---
 - name: Install
   ansible.builtin.package:
     name: solaar

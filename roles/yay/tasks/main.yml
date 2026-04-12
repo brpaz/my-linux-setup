@@ -1,10 +1,11 @@
+---
 - name: Yay | Check if installed
   ansible.builtin.stat:
     path: /usr/bin/yay
   register: yay_binary
 
 - name: Yay | Install build dependencies
-  ansible.builtin.pacman:
+  community.general.pacman:
     name:
       - base-devel
       - git
@@ -13,11 +14,11 @@
   become: true
   when: not yay_binary.stat.exists
 
-- name: Yay | Clone AUR repository
+- name: Yay | Clone AUR repository # noqa: latest[git]
   ansible.builtin.git:
     repo: https://aur.archlinux.org/yay.git
     dest: "{{ setup_dir }}/yay"
-    update: true
+    update: false
   become: true
   become_user: "{{ user }}"
   when: not yay_binary.stat.exists
@@ -28,6 +29,7 @@
     chdir: "{{ setup_dir }}/yay"
   become: true
   become_user: "{{ user }}"
+  changed_when: true
   when: not yay_binary.stat.exists
 
 - name: Yay | Find built package
@@ -54,6 +56,7 @@
       - --needed
       - "{{ (yay_package.files | sort(attribute='mtime', reverse=true) | map(attribute='path') | first) }}"
   become: true
+  changed_when: true
   when: not yay_binary.stat.exists
 
 - name: Yay | Install AUR packages
@@ -61,4 +64,5 @@
     argv: "{{ ['yay', '-S', '--noconfirm', '--needed'] + yay_packages }}"
   become: true
   become_user: "{{ user }}"
+  changed_when: true
   when: yay_packages | default([]) | length > 0

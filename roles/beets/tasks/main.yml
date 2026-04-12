@@ -1,3 +1,4 @@
+---
 - name: Install Beets
   ansible.builtin.package:
     name: "{{ item }}"

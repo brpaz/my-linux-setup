@@ -1,16 +1,17 @@
+---
 - name: Get Latest release from GitHub
   community.general.github_release:
     action: latest_release
     user: sxyazi
     repo: yazi
     token: "{{ github_token }}"
-  register: release
+  register: yazi_release
 
 - name: Download and Install
   ansible.builtin.unarchive:
     dest: "{{ setup_dir }}"
-    remote_src: yes
-    src: https://github.com/sxyazi/yazi/releases/download/{{ release.tag }}/yazi-x86_64-unknown-linux-gnu.zip
+    remote_src: true
+    src: https://github.com/sxyazi/yazi/releases/download/{{ yazi_release.tag }}/yazi-x86_64-unknown-linux-gnu.zip
 
 - name: Copy to bin
   ansible.builtin.copy:
@@ -21,5 +22,3 @@
     - yazi
     - ya
   become: true
-
-

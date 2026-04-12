@@ -1,3 +1,4 @@
+---
 - name: Gnome Mines
   community.general.flatpak:
     name: org.gnome.Mines

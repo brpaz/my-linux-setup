@@ -1,8 +1,9 @@
+---
 - name: Lefthook | Get Latest release
   community.general.github_release:
     action: latest_release
     repo: lefthook
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: evilmartians
   register: lefthook_release
 

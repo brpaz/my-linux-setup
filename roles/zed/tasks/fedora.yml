@@ -1,3 +1,4 @@
+---
 - name: Zed | Install on Fedora
   community.general.flatpak:
     name: dev.zed.Zed

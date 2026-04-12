@@ -1,3 +1,4 @@
+---
 - name: Brave | Add Repository
   ansible.builtin.yum_repository:
     baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/

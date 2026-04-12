@@ -1,3 +1,4 @@
+---
 - name: Install dnf plugins
   ansible.builtin.dnf:
     name: "{{ item }}"

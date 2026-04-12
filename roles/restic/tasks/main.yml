@@ -1,3 +1,4 @@
+---
 - name: Restic
   ansible.builtin.package:
     name: restic
@@ -17,7 +18,7 @@
 
 - name: Reload systemd
   ansible.builtin.systemd:
-    daemon_reload: yes
+    daemon_reload: true
   become: true
-#- msg: "Run 'systemctl --user enable --now restic-b2-backup.timer' to enable and start the backup timer"
-#- msg: "Run 'systemctl --user enable --now restic-b2-prune.timer' to enable and start the prune timer"
+# - msg: "Run 'systemctl --user enable --now restic-b2-backup.timer' to enable and start the backup timer"
+# - msg: "Run 'systemctl --user enable --now restic-b2-prune.timer' to enable and start the prune timer"

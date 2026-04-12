@@ -1,3 +1,4 @@
+---
 - name: Gear Lever
   community.general.flatpak:
     name: it.mijorus.gearlever

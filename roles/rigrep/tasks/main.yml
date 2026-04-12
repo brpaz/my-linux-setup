@@ -1,3 +1,4 @@
+---
 - name: Rigrep
   ansible.builtin.package:
     name: ripgrep

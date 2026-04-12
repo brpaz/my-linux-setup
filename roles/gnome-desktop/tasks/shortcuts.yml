@@ -1,3 +1,4 @@
+---
 - name: Set default Gnome shortcuts
   community.general.dconf:
     key: "{{ item.key }}"
@@ -343,4 +344,12 @@
 
     # List of all custom keybindings
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
-      value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
+      value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"

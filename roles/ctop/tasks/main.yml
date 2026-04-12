@@ -1,16 +1,16 @@
+---
 - name: Ctop | Get latest release
   community.general.github_release:
     action: latest_release
     repo: ctop
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: bcicen
-  register: release
+  register: ctop_release
 
 - name: Ctop | Download and Install
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/ctop'
+    dest: "{{ bin_dir }}/ctop"
     force: true
     mode: a+x
-    url: https://github.com/bcicen/ctop/releases/download/{{ release.tag }}/ctop-{{
-      release.tag[1:] }}-linux-amd64
+    url: https://github.com/bcicen/ctop/releases/download/{{ ctop_release.tag }}/ctop-{{ ctop_release.tag[1:] }}-linux-amd64
   become: true

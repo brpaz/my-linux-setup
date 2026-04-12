@@ -1,3 +1,4 @@
+---
 - name: Install Repo
   ansible.builtin.yum_repository:
     baseurl: https://rpm.releases.hashicorp.com/fedora/hashicorp.repo

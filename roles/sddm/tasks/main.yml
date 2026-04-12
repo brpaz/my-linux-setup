@@ -1,3 +1,4 @@
+---
 - name: SDDM | Install packages
   community.general.pacman:
     name:
@@ -10,13 +11,13 @@
   ansible.builtin.file:
     path: /etc/pam.d
     state: directory
-    mode: '0755'
+    mode: "0755"
   become: true
 
 - name: SDDM | Configure PAM login stack
   ansible.builtin.copy:
     dest: /etc/pam.d/sddm
-    mode: '0644'
+    mode: "0644"
     content: |
       auth        include       login
       auth        optional      pam_gnome_keyring.so
@@ -32,7 +33,7 @@
 - name: SDDM | Configure PAM autologin stack
   ansible.builtin.copy:
     dest: /etc/pam.d/sddm-autologin
-    mode: '0644'
+    mode: "0644"
     content: |
       auth        required      pam_shells.so
       auth        sufficient    pam_permit.so

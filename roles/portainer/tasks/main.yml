@@ -1,3 +1,4 @@
+---
 - name: Docker | Ensure Portainer volume is present
   community.docker.docker_volume:
     name: portainer_data
@@ -25,8 +26,8 @@
       start_period: 10s
       timeout: 2s
     labels:
-      traefik.enable: 'true'
+      traefik.enable: "true"
       traefik.http.routers.portainer.entrypoints: websecure
       traefik.http.routers.portainer.rule: Host(`{{ portainer_domain }}`)
-      traefik.http.routers.portainer.tls: 'true'
-      traefik.http.services.portainer.loadbalancer.server.port: '{{ portainer_port }}'
+      traefik.http.routers.portainer.tls: "true"
+      traefik.http.services.portainer.loadbalancer.server.port: "{{ portainer_port }}"

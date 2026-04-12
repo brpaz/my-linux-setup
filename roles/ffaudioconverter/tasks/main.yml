@@ -1,3 +1,4 @@
+---
 - name: FF Audio Converter
   community.general.flatpak:
     name: com.github.Bleuzen.FFaudioConverter

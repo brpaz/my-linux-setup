@@ -1,3 +1,4 @@
+---
 - name: Load Distribution vars
   ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
 
@@ -27,3 +28,4 @@
 - name: Clean font cache
   ansible.builtin.command: fc-cache -fv
   become: true
+  changed_when: false

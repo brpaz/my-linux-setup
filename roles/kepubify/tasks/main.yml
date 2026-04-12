@@ -1,15 +1,16 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     repo: kepubify
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: pgaskin
-  register: release
+  register: kepubify_release
 
 - name: Download and Install
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/kepubify'
+    dest: "{{ bin_dir }}/kepubify"
     force: true
     mode: a+x
-    url: https://github.com/pgaskin/kepubify/releases/download/{{ release.tag }}/kepubify-linux-64bit
+    url: https://github.com/pgaskin/kepubify/releases/download/{{ kepubify_release.tag }}/kepubify-linux-64bit
   become: true

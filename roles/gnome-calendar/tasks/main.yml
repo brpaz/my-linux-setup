@@ -1,3 +1,4 @@
+---
 - name: Gnome Calendar
   ansible.builtin.package:
     name: gnome-calendar

@@ -29,11 +29,6 @@ tasks:
       - ansible-playbook --syntax-check -i ${INVENTORY:?set INVENTORY} --limit ${LIMIT:-all} playbooks/${PLAYBOOK:-setup.yml}
 
   run:
-    desc: Run main playbook
-    cmds:
-      - ansible-playbook -i ${INVENTORY:?set INVENTORY} --limit ${LIMIT:-all} --ask-become-pass playbooks/${PLAYBOOK:-setup.yml}
-
-  run-i:
     desc: Run interactive playbook
     interactive: true
     silent: true

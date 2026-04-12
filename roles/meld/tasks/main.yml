@@ -1,3 +1,4 @@
+---
 - name: Meld
   ansible.builtin.package:
     name: meld

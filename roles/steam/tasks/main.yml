@@ -1,3 +1,4 @@
+---
 - name: Steam | Install
   community.general.flatpak:
     name: com.valvesoftware.Steam

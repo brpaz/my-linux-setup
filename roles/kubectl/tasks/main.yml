@@ -1,7 +1,9 @@
+---
 - name: Get Latest release
   ansible.builtin.get_url:
     url: https://cdn.dl.k8s.io/release/stable.txt
     dest: "{{ setup_dir }}/kubectl_release"
+    mode: "0644"
   register: kubectl_release
 
 - name: Read release tag
