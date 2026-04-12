@@ -49,7 +49,7 @@
     - { role: brightnessctl, tags: [brightnessctl, system] }
     - { role: overstride, tags: [overstride, system] }
     - { role: bluetuith, tags: [bluetuith, system] }
-
+    - { role: duf, tags: [duf, system]}
     # Desktop
     - { role: sddm, tags: [sddm, desktop] }
     - { role: hyprland, tags: [hyprland, desktop] }
@@ -130,6 +130,8 @@
     - { role: trayscale, tags: [internet, trayscale ]}
     - { role: signal, tags: [internet, signal ]}
     - { role: fractal, tags: [fractal, internet]}
+    - { role: polari, tags: [internet, irc]}
+    - { role: tuba, tags: [tuba, fediverse, internet]}
     # Productivity
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: planify, tags: [planify, productivity] }
@@ -139,6 +141,7 @@
     - { role: apostrophe, tags: [apostrophe, productivity, flatpak]}
     - { role: nextcloud, tags: [nextcloud, internet, productivity]}
     - { role: iotas, tags: [iotas, nextcloud, productivity]}
+    - { role: switfy-notes, tags: [swifty-notes, productivity]}
     # Graphics
     #
     - { role: pinta, tags: [pinta, graphics] }
@@ -155,7 +158,7 @@
 
     # AI
     - { role: opencode, tags: [opencode, ai, github] }
-
+    - { role: claude-code, tags: [claude-code, ai]}
     # Docker Applications
     - { role: traefik, tags: [traefik, docker]}
     - { role: dozzle, tags: [dozzle, docker ]}

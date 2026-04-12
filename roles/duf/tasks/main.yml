@@ -1,0 +1,20 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: muesli
+    repo: duf
+    token: "{{ github_token }}"
+  register: release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/muesli/duf/releases/download/{{ release.tag }}/duf_{{ release.tag[1:]_linux_x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/duf"
+    dest: "{{ bin_dir }}/duf"
+    mode: a+x
