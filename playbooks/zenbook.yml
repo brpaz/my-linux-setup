@@ -64,7 +64,11 @@
     - { role: kooha, tags: [kooha, media, video] }
     - { role: satty, tags: [satty, media, screenshot] }
     - { role: pwvucontrol, tags: [pwvucontrol, media, audio] }
-
+    - { role: amberol, tags: [amberol, media ]}
+    - { role: nocturne, tags: [nocturne, media ]}
+    - { role: loupe, tags: [loupe, media ]}
+    - { role: obs, tags: [obs,media]}
+    - { role: gnome-podcasts, tags: [gnome-podcasts, media]}
     # Terminal
     - { role: zellij, tags: [zellij, terminal, github] }
     - { role: alacritty, tags: [alacritty, terminal] }
@@ -74,8 +78,6 @@
     - { role: exa, tags: [exa, terminal, github] }
     - { role: yazi, tags: [yazi, terminal, github] }
     - { role: tailspin, tags: [tailspin, terminal, github] }
-
-    # CLI Tools
     - { role: lazygit, tags: [lazygit, cli, github] }
     - { role: lazyjournal, tags: [lazyjournal, cli] }
     - { role: lazydocker, tags: [lazydocker, cli, github] }
@@ -90,15 +92,17 @@
     - { role: zoxide, tags: [zoxide, cli] }
     - { role: direnv, tags: [direnv, cli] }
     - { role: systemctl-tui, tags: [systemctl-tui, cli] }
-
+    - { role: yazi, tags: [yazi, cli]}
+    - { role: jwt-tui, tags: [jwt-tui, dev]}
+    - { role: dev-toolbox, tags: [dev-toolbox, dev]}
     # DevOps
     - { role: docker, tags: [docker, devops] }
-    - { role: kind, tags: [kind, devops, github] }
-    - { role: k9s, tags: [k9s, devops, github] }
-    - { role: stern, tags: [stern, devops, github] }
-    - { role: flux, tags: [flux, devops, github ]}
+    - { role: kind, tags: [kind, devops, kubernetes, github] }
+    - { role: k9s, tags: [k9s, devops, kubernetes, github] }
+    - { role: stern, tags: [stern, devops, kubernetes, github] }
+    - { role: flux, tags: [flux, devops, kubernetes, github ]}
     - { role: awscli, tags: [awscli, devops, cloud ]}
-
+    - { role: helm, tags: [helm, kubernetes, devops]}
     # Development
     - { role: nix, tags: [nix, dev] }
     - { role: devenv, tags: [devenv, dev] }
@@ -110,7 +114,9 @@
     - { role: copier, tags: [copier, dev] }
     - { role: usebruno, tags: [usebruno, dev] }
     - { role: mkcert, tags: [mkcert, github, dev ]}
-
+    - { role: taskfile, tags: [task,github, dev]}
+    - { role: dbeaver, tags: [dbeaver, dev]}
+    - { role: redis, tags: [redis, dev]}
     # Network
     - { role: protonvpn, tags: [protonvpn, network] }
     - { role: tailscale, tags: [tailscale, network] }
@@ -121,7 +127,9 @@
     - { role: newsflash, tags: [newsflash, internet, rss] }
     - { role: digger, tags: [internet, digger, flatpak ]}
     - { role: warp, tags: [internet, warp ]}
-
+    - { role: trayscale, tags: [internet, trayscale ]}
+    - { role: signal, tags: [internet, signal ]}
+    - { role: fractal, tags: [fractal, internet]}
     # Productivity
     - { role: obsidian, tags: [obsidian, productivity] }
     - { role: planify, tags: [planify, productivity] }
@@ -130,7 +138,9 @@
     - { role: heynote, tags: [heynote, productivity ]}
     - { role: apostrophe, tags: [apostrophe, productivity, flatpak]}
     - { role: nextcloud, tags: [nextcloud, internet, productivity]}
+    - { role: iotas, tags: [iotas, nextcloud, productivity]}
     # Graphics
+    #
     - { role: pinta, tags: [pinta, graphics] }
     - { role: gradia, tags: [gradia, utilities ]}
     - { role: loupe, tags: [loupe, graphics ]}
@@ -139,6 +149,7 @@
     - { role: obfuscate, tags: [obfuscate, utilities, screenshot] }
     - { role: keeppassxc, tags: [keepassxc, utilities, security ]}
     - { role: bitwarden, tags: [bitwarden, utilities, security ]}
+    - { role: impression, tags: [impression, flatpak, utilities] }
     # Fonts
     - { role: fonts, tags: [fonts] }
 

@@ -1,9 +1,10 @@
-- name: Add repository
+- name: Add repository (Fedora)
   ansible.builtin.yum_repository:
     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     description: Tailscale Repository
     name: tailscale
   become: true
+  when: ansible_distribution == 'Fedora'
 
 - name: Install
   ansible.builtin.package:
