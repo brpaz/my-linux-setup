@@ -3,4 +3,5 @@ pacman_packages:
   - gnome-keyring
   - seahorse
   - dns-utils
+  - unzip
 system_python_interpreter: /usr/bin/python

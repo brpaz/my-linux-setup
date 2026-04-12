@@ -1,20 +1,22 @@
-- name: Check if Nvidia card is available
-  ansible.builtin.command: lspci | grep -i nvidia
-  register: nvidia_card
-  failed_when: nvidia_card.rc != 0
-  ignore_errors: true
-
 - name: Install NVIDIA Drivers
   ansible.builtin.package:
     name:
-      - akmod-nvidia
-      - vulkan
-    state: present
+      - nvidia-open
+      - nvidia-prime
+      - nvidia-settings
   become: true
-  when: nvidia_card.rc == 0
 
 - name: Blacklist the nouveau driver module
   community.general.kernel_blacklist:
     name: nouveau
     state: present
-  when: nvidia_card.rc == 0
+  become: true
+
+- name: Update boot entries with nvidia kernel parameters
+  ansible.builtin.shell: |
+    for entry in /boot/loader/entries/*.conf; do
+      if ! grep -q "nvidia_drm.mode=1" "$entry"; then
+        sed -i 's/options /options nvidia_drm.mode=1 /' "$entry"
+      fi
+    done
+  become: true

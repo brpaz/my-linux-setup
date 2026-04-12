@@ -1,0 +1,3 @@
+- name: Install
+  ansible.builtin.command:
+    cmd: nix profile install nixpkgs#devenv

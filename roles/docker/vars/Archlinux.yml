@@ -1,0 +1,4 @@
+---
+docker_packages:
+  - docker
+  - docker-compose

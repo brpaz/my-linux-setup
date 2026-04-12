@@ -1,5 +1,12 @@
-- name: Golang
+
+- name: Laod Distribution specific vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
+- name: Install
   ansible.builtin.package:
-    name: golang
+    name: "{{ golang_package }}"
     state: present
   become: true
+
+- include_tasks: golangci-lint.yml
+

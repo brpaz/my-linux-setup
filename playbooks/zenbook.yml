@@ -31,30 +31,121 @@
       tags: [always]
 
   roles:
-    - role: pacman
-      tags: [core, pacman]
-    - role: mkinitcpio
-      tags: [core, mkinitcpio, boot]
-    - role: plymouth
-      tags: [boot, plymouth, desktop-environment]
-    - role: yay
-      tags: [core, yay, aur]
-    - role: git
-      tags: [git]
-    - role: github-cli
-      tags: [git, github]
-    - { role: dotfiles }
-    - { role: sddm, tags: [desktop-environment, sddm, display-manager] }
-    - { role: hyprland, tags: [desktop-environment, hyprland] }
-    - { role: waybar, tags: [desktop-environment, waybar] }
-    - { role: swaync, tags: [desktop-environment, swaync, notifications] }
-    - { role: brightnessctl, tags: [system] }
-    - { role: kooha, tags: [kooha, multimedia, video]}
-    - { role: satty, tags: [satty, multimedia]}
-    - { role: pwvucontrol, tags: [pwvucontrol, multimedia ]}
-    - { role: overstride, tags: [overstride, bluetooth, utilities]}
-    - { role: network-manager, tags: [network-manager, networking]}
-    - { role: dns, tags: [dns]}
-    - { role: nm-connection-editor, tags: [networking, nm-connection-editor ]}
-    - { role: rofi, tags: [rofi, utilities]}
-    - { role: monique, tags: [monique, hyprland, utilities]}
+    # Core system
+    - { role: pacman, tags: [pacman, core] }
+    - { role: git, tags: [git, core] }
+    - { role: yay, tags: [yay, core, aur] }
+    - { role: sudo, tags: [sudo, core] }
+
+    # Boot
+    - { role: mkinitcpio, tags: [mkinitcpio, boot] }
+    - { role: plymouth, tags: [plymouth, boot] }
+
+    # System
+    - { role: network-manager, tags: [network-manager, system] }
+    - { role: dns, tags: [dns, system] }
+    - { role: nm-connection-editor, tags: [nm-connection-editor, system] }
+    - { role: nvidia, tags: [nvidia, system, graphics] }
+    - { role: brightnessctl, tags: [brightnessctl, system] }
+    - { role: overstride, tags: [overstride, system] }
+    - { role: bluetuith, tags: [bluetuith, system] }
+
+    # Desktop
+    - { role: sddm, tags: [sddm, desktop] }
+    - { role: hyprland, tags: [hyprland, desktop] }
+    - { role: waybar, tags: [waybar, desktop] }
+    - { role: ags, tags: [ags, desktop]}
+    - { role: swaync, tags: [swaync, desktop] }
+    - { role: rofi, tags: [rofi, desktop] }
+    - { role: vicinae, tags: [vicinae, desktop] }
+    - { role: monique, tags: [monique, desktop] }
+
+    # Media
+    - { role: kooha, tags: [kooha, media, video] }
+    - { role: satty, tags: [satty, media, screenshot] }
+    - { role: pwvucontrol, tags: [pwvucontrol, media, audio] }
+
+    # Terminal
+    - { role: zellij, tags: [zellij, terminal, github] }
+    - { role: alacritty, tags: [alacritty, terminal] }
+    - { role: television, tags: [television, terminal, github] }
+    - { role: glow, tags: [glow, terminal] }
+    - { role: fastfetch, tags: [fastfetch, terminal] }
+    - { role: exa, tags: [exa, terminal, github] }
+    - { role: yazi, tags: [yazi, terminal, github] }
+    - { role: tailspin, tags: [tailspin, terminal, github] }
+
+    # CLI Tools
+    - { role: lazygit, tags: [lazygit, cli, github] }
+    - { role: lazyjournal, tags: [lazyjournal, cli] }
+    - { role: lazydocker, tags: [lazydocker, cli, github] }
+    - { role: fd, tags: [fd, cli] }
+    - { role: rigrep, tags: [rigrep, cli] }
+    - { role: fzf, tags: [fzf, cli] }
+    - { role: jq, tags: [jq, cli] }
+    - { role: bat, tags: [bat, cli] }
+    - { role: vim, tags: [vim, cli] }
+    - { role: btop, tags: [btop, cli] }
+    - { role: meld, tags: [meld, cli] }
+    - { role: zoxide, tags: [zoxide, cli] }
+    - { role: direnv, tags: [direnv, cli] }
+    - { role: systemctl-tui, tags: [systemctl-tui, cli] }
+
+    # DevOps
+    - { role: docker, tags: [docker, devops] }
+    - { role: kind, tags: [kind, devops, github] }
+    - { role: k9s, tags: [k9s, devops, github] }
+    - { role: stern, tags: [stern, devops, github] }
+    - { role: flux, tags: [flux, devops, github ]}
+    - { role: awscli, tags: [awscli, devops, cloud ]}
+
+    # Development
+    - { role: nix, tags: [nix, dev] }
+    - { role: devenv, tags: [devenv, dev] }
+    - { role: golang, tags: [golang, dev] }
+    - { role: rust, tags: [rust, dev] }
+    - { role: node, tags: [node, dev] }
+    - { role: python, tags: [python, dev] }
+    - { role: terraform, tags: [terraform, dev, github] }
+    - { role: copier, tags: [copier, dev] }
+    - { role: usebruno, tags: [usebruno, dev] }
+    - { role: mkcert, tags: [mkcert, github, dev ]}
+
+    # Network
+    - { role: protonvpn, tags: [protonvpn, network] }
+    - { role: tailscale, tags: [tailscale, network] }
+
+    # Internet
+    - { role: firefox, tags: [firefox, internet] }
+    - { role: chromium, tags: [chromium, internet]}
+    - { role: newsflash, tags: [newsflash, internet, rss] }
+    - { role: digger, tags: [internet, digger, flatpak ]}
+    - { role: warp, tags: [internet, warp ]}
+
+    # Productivity
+    - { role: obsidian, tags: [obsidian, productivity] }
+    - { role: planify, tags: [planify, productivity] }
+    - { role: ticktick, tags: [ticktick, productivity] }
+    - { role: authenticator, tags: [authenticator, productivity] }
+    - { role: heynote, tags: [heynote, productivity ]}
+    - { role: apostrophe, tags: [apostrophe, productivity, flatpak]}
+    - { role: nextcloud, tags: [nextcloud, internet, productivity]}
+    # Graphics
+    - { role: pinta, tags: [pinta, graphics] }
+    - { role: gradia, tags: [gradia, utilities ]}
+    - { role: loupe, tags: [loupe, graphics ]}
+
+    # Utilities
+    - { role: obfuscate, tags: [obfuscate, utilities, screenshot] }
+    - { role: keeppassxc, tags: [keepassxc, utilities, security ]}
+    - { role: bitwarden, tags: [bitwarden, utilities, security ]}
+    # Fonts
+    - { role: fonts, tags: [fonts] }
+
+    # AI
+    - { role: opencode, tags: [opencode, ai, github] }
+
+    # Docker Applications
+    - { role: traefik, tags: [traefik, docker]}
+    - { role: dozzle, tags: [dozzle, docker ]}
+    - { role: dnsdock, tags: [dnsdock, docker]}

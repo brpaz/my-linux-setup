@@ -1,5 +1,8 @@
-- name: Fd install
+- name: Load distribution-specific vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
+- name: Install
   ansible.builtin.package:
-    name: fd-find
+    name: "{{ fd_package_name }}"
     state: present
   become: true

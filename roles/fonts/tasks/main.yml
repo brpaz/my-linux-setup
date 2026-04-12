@@ -1,3 +1,6 @@
+- name: Load Distribution vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
 - name: Install Font Downloader
   community.general.flatpak:
     name: org.gustavoperedo.FontDownloader
@@ -17,9 +20,10 @@
 
 - name: Install fonts packages
   ansible.builtin.package:
-    name:
-      - jetbrains-mono-fonts
-      - fira-code-fonts
-      - noto-fonts-emoji
+    name: "{{ fonts_packages }}"
     state: present
+  become: true
+
+- name: Clean font cache
+  ansible.builtin.command: fc-cache -fv
   become: true

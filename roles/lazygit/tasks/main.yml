@@ -12,8 +12,7 @@
     src: "https://github.com/jesseduffield/lazygit/releases/download/{{ release.tag }}/lazygit_{{ release.tag[1:] }}_Linux_x86_64.tar.gz"
     dest: "{{ setup_dir }}"
 
-
-- name: Copy binary to bin
+- name: Install
   ansible.builtin.copy:
     src: "{{ setup_dir }}/lazygit"
     dest: "{{ bin_dir }}/lazygit"

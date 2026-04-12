@@ -1,0 +1,5 @@
+- name: Install
+  community.general.pacman:
+    name: glow
+    state: present
+  become: true

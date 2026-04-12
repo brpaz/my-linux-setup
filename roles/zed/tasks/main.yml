@@ -1,5 +1,5 @@
 - include_tasks: fedora.yml
   when: ansible_distribution == 'Fedora'
 
-- include_tasks: archlinux.yml
-  when: ansible_distribution == 'Arch Linux'
+- include_tasks: arch.yml
+  when: ansible_distribution == 'Archlinux'
