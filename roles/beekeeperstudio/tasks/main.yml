@@ -5,11 +5,11 @@
     user: beekeeper-studio
     repo: beekeeper-studio
     token: "{{ github_token }}"
-  register: release
+  register: beekeeperstudio_release
 
 - name: Install
   ansible.builtin.dnf:
     disable_gpg_check: true
-    name: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/{{ release.tag }}/beekeeper-studio-{{ release.tag[1:] }}.x86_64.rpm
+    name: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/{{ beekeeperstudio_release.tag }}/beekeeper-studio-{{ beekeeperstudio_release.tag[1:] }}.x86_64.rpm
     state: present
   become: true

@@ -4,12 +4,12 @@
     user: jr-k
     repo: d4s
     token: "{{ github_token }}"
-  register: release
+  register: d4s_release
 
 - name: Download
   ansible.builtin.unarchive:
     dest: "{{ setup_dir }}"
-    src: https://github.com/jr-k/d4s/releases/download/{{ release.tag }}/d4s_{{ release.tag[1:] }}_linux_amd64.tar.gz
+    src: https://github.com/jr-k/d4s/releases/download/{{ d4s_release.tag }}/d4s_{{ d4s_release.tag[1:] }}_linux_amd64.tar.gz
     remote_src: true
     mode: "0644"
 
