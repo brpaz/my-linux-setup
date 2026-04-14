@@ -1,5 +1,5 @@
 ---
 - name: Install
   community.general.flatpak:
-    name: org.jdownloader.JDownloader
+    name: io.m51.elly
     state: present

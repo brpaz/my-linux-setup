@@ -28,18 +28,16 @@ tasks:
     cmds:
       - ansible-playbook --syntax-check -i ${INVENTORY:?set INVENTORY} --limit ${LIMIT:-all} playbooks/${PLAYBOOK:-setup.yml}
 
-  run:
-    desc: Run interactive playbook
-    interactive: true
-    silent: true
+  playbook-tuxedo:
+    desc: Run tuxedo playbook
     cmds:
-      - |
-        ALL_PLAYBOOKS=$(ls playbooks/*.yml)
-        ALL_INVENTORIES=$(ls inventories/*/*.ini)
-        ALL_HOSTS="tuxedo-laptop zenbook-laptop"
-        PLAYBOOK=$(gum choose --header "Select playbook to run" ${ALL_PLAYBOOKS})
-        INVENTORY=$(gum choose --header "Select inventory to run" ${ALL_INVENTORIES})
-        LIMIT=$(gum choose --header "Select host to run" ${ALL_HOSTS})
-        TAG=$(gum input --header "Enter tag to run")
+      - ansible-playbook -i {{ .INVENTORY }} --ask-become-pass ${PLAYBOOK:-playbooks/tuxedo.yml} --tags ${TAG:-all}
+    vars:
+      INVENTORY: "inventories/personal/hosts.ini"
 
-        ansible-playbook -i ${INVENTORY} --limit ${LIMIT} --ask-become-pass ${PLAYBOOK:-playbooks/setup.yml} --tags ${TAG:-all}
+  playbook-zenbook:
+    desc: Run zenbook playbook
+    cmds:
+      - ansible-playbook -i {{ .INVENTORY }} --ask-become-pass ${PLAYBOOK:-playbooks/zenbook.yml} --tags ${TAG:-all}
+    vars:
+      INVENTORY: "inventories/personal/hosts.ini"

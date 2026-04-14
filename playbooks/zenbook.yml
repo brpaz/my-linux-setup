@@ -17,11 +17,11 @@
         mode: "0755"
       tags: [always]
 
-   # - name: Update pacman cache
-   #   ansible.builtin.pacman:
-   #     update_cache: true
-   #   become: true
-   #   tags: [always]
+    - name: Update pacman cache
+      ansible.builtin.pacman:
+        update_cache: true
+      become: true
+      tags: [always]
 
   post_tasks:
     - name: Remove setup directory
@@ -66,7 +66,7 @@
     - { role: satty, tags: [satty, media, screenshot] }
     - { role: pwvucontrol, tags: [pwvucontrol, media, audio] }
     - { role: amberol, tags: [amberol, media] }
-    - { role: nocturne, tags: [nocturne, media] }
+    - { role: gelly, tags: [gelly, media] }
     - { role: loupe, tags: [loupe, media] }
     - { role: obs, tags: [obs, media] }
     - { role: gnome-podcasts, tags: [gnome-podcasts, media] }

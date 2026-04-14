@@ -1,6 +1,7 @@
 ---
 - name: Tuxedo Laptop Setup
-  hosts: all
+  hosts:
+    - tuxedo-laptop
 
   vars_prompt:
     - name: github_token
@@ -35,7 +36,7 @@
     - { role: btrfs, tags: [core, filesystem] }
     - { role: sudo, tags: [core] }
     - { role: selinux, tags: [core, sellinux] }
-    - { role: tuxedo }
+    - { role: tuxedo, tags: [core, tuxedo] }
     # =============================================
     # Shell
     # =============================================
@@ -45,8 +46,8 @@
     # # =============================================
     # # Networking
     # # =============================================
-    - { role: network-tools, tags: [networking] }
     - { role: dns, tags: [dns, networking] }
+    - { role: network-tools, tags: [networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }
     - { role: protonvpn, tags: [protonvpn, networking] }
@@ -59,7 +60,7 @@
     - { role: cloudflared, tags: [cloudflared, networking] }
     - { role: netpeek, tags: [netpeek, networking] }
     # - { role: opensnitch, tags: [opensnitch, networking, firewall] }
-    - { role: portmaster, tags: [portmaster, networking] }
+    # - { role: portmaster, tags: [portmaster, networking] }
     # # =============================================
     # # Internet
     # # =============================================
@@ -75,7 +76,6 @@
     - { role: telegram, tags: [telegram, communications, internet] }
     - { role: karere, tags: [karere, communications, internet] }
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
-    - { role: connections, tags: [connections, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
@@ -106,6 +106,7 @@
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
     - { role: typesetter, tags: [typesetter, typst, flatpak] }
     - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
+    - { role: switfy-notes, tags: [swifty-notes, flatpak, productivity] }
 
     # # ===============================================
     # AI Tooling
@@ -149,7 +150,7 @@
     - { role: beets, tags: [beets, multimedia] }
     - { role: nocturne, tags: [nocturne, multimedia] }
     - { role: scramble, tags: [scramble, flatpak, multimedia] }
-    - { role: reel, tags: [reel, multimedia, github] }
+    - { role: delfin, tags: [delfin, jellyfin, multimedia] }
     # # # =============================================
     # # # Graphics Design
     # # # =============================================
@@ -160,10 +161,11 @@
     - { role: avvie, tags: [avvie, graphics_design] }
     - { role: eyedropper, tags: [eyedropper, graphics_design] }
     - { role: inkscape, tags: [inkscape, graphics_design] }
-    # - { role: flameshot, tags: [flameshot, graphics_design] }
     - { role: gradia, tags: [gradia, graphics_design, flatpak] }
     - { role: curtail, tags: [curtail, graphics_design, flatpak] }
     - { role: pigment, tags: [pigment, graphics_design, flatpak] }
+    - { role: satty, tags: [satty, graphics_design] }
+    - { role: grim, tags: [grim, graphics_design] }
 
     # =============================================
     # Development
@@ -178,8 +180,7 @@
     - { role: golang, tags: [golang, dev, programming-language] }
     - { role: rust, tags: [rust, dev, programming-language] }
     - { role: vim, tags: [vim, dev] }
-    - { role: vscode, tags: [vscode, dev] }
-    - { role: dbeaver, tags: [dbeaver, dev] }
+    # - { role: vscode, tags: [vscode, dev] }
     - { role: awscli, tags: [awscli, cli, dev] }
     - { role: ctop, tags: [ctop, dev, docker] }
     - { role: dbcli, tags: [dbcli, dev, cli] }
@@ -198,9 +199,13 @@
     - { role: ktop, tags: [ktop, dev, kubernetes, github] }
     - { role: kubeconform, tags: [kubeconform, dev, cli, kubernetes, github] }
     - { role: kubectl, tags: [kubectl, dev, cli, kubernetes, github] }
-    - { role: kubectl-cnpg-plugin, tags: [kubectl-cnpg-plugin, kubectl-plugin, kubernetes, github] }
+    - {
+        role: kubectl-cnpg-plugin,
+        tags: [kubectl-cnpg-plugin, kubernetes, github],
+      }
     - { role: kubectx, tags: [kubectx, dev, cli, kubernetes, github] }
     - { role: lazydocker, tags: [lazydocker, dev, cli, docker, github] }
+    - { role: d4s, tags: [d4s, docker, github, cli] }
     - { role: lefthook, tags: [lefthook, dev, github] }
     - { role: mkcert, tags: [mkcert, dev, github] }
     - { role: nix, tags: [nix, dev] }
@@ -222,7 +227,7 @@
     - { role: jwt-tui, tags: [jwt-tui, utilities, github] }
     - { role: zrok, tags: [zrok, dev, github] }
     - { role: pvtui, tags: [pvtui, dev, github] }
-
+    - { role: beekeeperstudio, tags: [beekeeperstudio, dev] }
     # =============================================
     # CLI Tools
     # =============================================
@@ -242,7 +247,6 @@
     - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
-    - { role: the-way, tags: [the-way, cli, dev, github] }
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
     - { role: lazygit, tags: [lazygit, dev, github] }
@@ -267,6 +271,7 @@
     - { role: serpl, tags: [serpl, utilities, github] }
     - { role: sqlit, tags: [sqlit, utilities, github] }
     - { role: csvlens, tags: [csvlens, utilities, github] }
+    - { role: duf, tags: [duf, utilities, github] }
     # =============================================
     # Utilities
     # =============================================
@@ -314,6 +319,7 @@
     - { role: ydotool, tags: [ydotool, utilities] }
     - { role: gifski, tags: [gifski, utilities] }
     - { role: pj, tags: [pj, utilities] }
+    - { role: overstride, tags: [overstride, bluetooth, utilities, flatpak] }
 
     # =============================================
     # Games

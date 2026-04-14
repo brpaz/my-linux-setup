@@ -119,7 +119,7 @@
         - ""
     - key: /org/gnome/desktop/wm/keybindings/move-to-center
       value:
-        - <Super><Alt>C
+        - <Super>C
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-down
       value:
         - ""
@@ -153,46 +153,46 @@
         - ""
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-1
       value:
-        - <Control><Super>1
+        - <Shift><Super>1
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-2
       value:
-        - <Control><Super>2
+        - <Shift><Super>2
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-3
       value:
-        - <Control><Super>3
+        - <Shift><Super>3
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-4
       value:
-        - <Control><Super>4
+        - <Shift><Super>4
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-5
       value:
-        - <Control><Super>5
+        - <Shift><Super>5
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-6
       value:
-        - <Control><Super>6
+        - <Shift><Super>6
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-7
       value:
-        - <Control><Super>7
+        - <Shift><Super>7
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-8
       value:
-        - <Control><Super>8
+        - <Shift><Super>8
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-9
       value:
-        - <Control><Super>9
+        - <Shift><Super>9
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-10
       value:
-        - <Control><Super>0
+        - <Shift><Super>0
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-right
       value:
-        - <Control><Super>Left
+        - <Shift><Super>Left
     - key: /org/gnome/desktop/wm/keybindings/move-to-workspace-left
       value:
-        - <Control><Super>Right
+        - <Alt><Super>Right
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-right
       value:
-        - <Alt><Super>Left
+        - <Alt><Super>Right
     - key: /org/gnome/desktop/wm/keybindings/move-to-monitor-left
       value:
-        - <Alt><Super>Right
+        - <Alt><Super>Left
     - key: /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
       value:
         - <Super>Left
@@ -236,15 +236,15 @@
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/name"
       value: "'Text Snippets'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/command"
-      value: "'vicinae vicinae://extensions/brpaz/snippets/list'"
+      value: "'vicinae vicinae://launch/@brpaz/snippets/list'"
 
     # custom4 - Browser Tabs Switcher
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/binding"
-      value: "'<Super>KP_Divide'"
+      value: "'<Super>dead_perispomeni'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/name"
       value: "'Browser Tabs switcher'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/command"
-      value: "'vicinae vicinae://extensions/brpaz/brotab/tabs-list'"
+      value: "'vicinae vicinae://launch/@brpaz/tabctl/list'"
 
     # custom5 - Code Snippets
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/binding"
@@ -252,15 +252,7 @@
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/name"
       value: "'Toggle Snippets Search '"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/command"
-      value: "'vicinae vicinae://extensions/brpaz/code-snippets/snippets-search'"
-
-    # custom6 - Obsidian
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/binding"
-      value: "'<Super>o'"
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/name"
-      value: "'Open Obsidian'"
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/command"
-      value: "'flatpak run md.obsidian.Obsidian'"
+      value: "'vicinae vicinae://launch/@brpaz/code-snippets/snippets-search'"
 
     # custom7 - Window Picker
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/binding"
@@ -268,7 +260,7 @@
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/name"
       value: "'Window Picker'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/command"
-      value: "'vicinae vicinae://extensions/vicinae/wm/switch-windows'"
+      value: "'vicinae vicinae://launch/wm/switch-windows'"
 
     # custom8 - Heynote
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/binding"
@@ -277,6 +269,14 @@
       value: "'Toggle Heynote'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/command"
       value: "'/opt/Heynote.AppImage'"
+
+    # custom9 - Git Repositories
+    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/binding"
+      value: "'<Shift><Super>g'"
+    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/name"
+      value: "'Git Repositories'"
+    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/command"
+      value: "'vicinae://launch/@thomaslombart/store.raycast.github/my-latest-repositories'"
 
     # custom10 - Vicinae
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/binding"
@@ -288,7 +288,7 @@
 
     # custom11 - Clipboard History
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/binding"
-      value: "'<Super>c'"
+      value: "'<Super>v'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/name"
       value: "'Toggle Clipboard History'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/command"
@@ -300,7 +300,7 @@
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/name"
       value: "'Toggle Window Switcher'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/command"
-      value: "'vicinae vicinae://extensions/vicinae/wm/switch-windows'"
+      value: "'vicinae vicinae://launch/wm/switch-windows'"
 
     # custom13 - Git Projects
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/binding"
@@ -326,30 +326,22 @@
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/command"
       value: "'vicinae vicinae://extensions/brpaz/keyboard-shortcuts/all-shortcuts'"
 
-    # custom16 - Alacritty Terminal
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/binding"
-      value: "'<Super>Return'"
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/name"
-      value: "'Alarctriy Terminal'"
-    - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/command"
-      value: "'alacritty'"
-
     # custom17 - Terminal Commands Launcher
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/binding"
       value: "'<Alt><Super>dead_acute'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/name"
       value: "'Terminal Commands Launcher'"
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/command"
-      value: "'vicinae vicinae://extensions/brpaz/shell-commands/list-command'"
+      value: "'vicinae vicinae://launch/@brpaz/shell-commands/list-command'"
 
     # List of all custom keybindings
     - key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
-      value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
+      value:
+        "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
         '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
         '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/',
         '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/',
-        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/',
-        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/',
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/',
         '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/',
-        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/',
-        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom17/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
