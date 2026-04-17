@@ -3,6 +3,7 @@
 dns_upstream_servers:
   - "192.168.1.10"
   - "127.0.0.1#55353"
+  - "1.1.1.1" # fallback dns to cloudflare if any of previous resolvers are down
 
 # DNS cache configuration
 dns_cache_size: 5000
