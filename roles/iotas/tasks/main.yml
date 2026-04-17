@@ -1,3 +1,4 @@
+---
 - name: Iotas
   community.general.flatpak:
     name: org.gnome.World.Iotas

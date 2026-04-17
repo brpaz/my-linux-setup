@@ -1,3 +1,4 @@
+---
 - name: Install
   community.general.flatpak:
     name: com.konstantintutsch.Lock

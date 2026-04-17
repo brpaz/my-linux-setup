@@ -1,7 +1,9 @@
+---
 - name: Download Ollama tarball
   ansible.builtin.get_url:
     url: https://ollama.com/download/ollama-linux-amd64.tgz
     dest: "{{ setup_dir }}/ollama-linux-amd64.tgz"
+    mode: "0644"
 
 - name: Extract Ollama tarball to /usr
   ansible.builtin.unarchive:

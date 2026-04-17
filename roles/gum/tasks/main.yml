@@ -1,15 +1,15 @@
+---
 - name: Gum | Get Latest release
   community.general.github_release:
     action: latest_release
     repo: gum
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: charmbracelet
-  register: release
+  register: gum_release
 
 - name: Gum | Install
   ansible.builtin.dnf:
     disable_gpg_check: true
-    name: https://github.com/charmbracelet/gum/releases/download/{{ release.tag }}/gum-{{
-      release.tag[1:] }}-1.x86_64.rpm
+    name: https://github.com/charmbracelet/gum/releases/download/{{ gum_release.tag }}/gum-{{ gum_release.tag[1:] }}-1.x86_64.rpm
     state: present
   become: true

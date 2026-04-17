@@ -1,0 +1,18 @@
+---
+- name: Hyprland | Add copr repository
+  ansible.builtin.command:
+    cmd: dnf copr enable -y lionheartp/Hyprland
+    creates: /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
+  become: true
+
+- name: Hyprland | Install packages
+  ansible.builtin.package:
+    name:
+      - hyprland
+      - hyprlock
+      - hypridle
+      - hyprpaper
+      - xdg-desktop-portal-hyprland
+      - xdg-desktop-portal-gtk
+    state: present
+  become: true

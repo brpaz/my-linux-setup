@@ -1,10 +1,11 @@
+---
 - name: Get latest release from GitHub
   community.general.github_release:
     action: latest_release
     user: fiatjaf
     repo: nak
     token: "{{ github_token }}"
-  register: release
+  register: nak_release
 
 - name: Download and Install
   ansible.builtin.get_url:

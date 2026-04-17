@@ -1,4 +1,15 @@
+---
+- name: Download installer
+  ansible.builtin.get_url:
+    url: https://claude.ai/install.sh
+    dest: /tmp/claude-install.sh
+    mode: "0755"
+
 - name: Install
   ansible.builtin.command:
-    cmd: curl -fsSL https://claude.ai/install.sh | bash
+    argv:
+      - bash
+      - /tmp/claude-install.sh
+  args:
     creates: /usr/local/bin/claude
+  changed_when: true

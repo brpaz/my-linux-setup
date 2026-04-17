@@ -1,15 +1,17 @@
+---
 - name: Get Latest Release from GitHub
   community.general.github_release:
     action: latest_release
     user: ProxymanApp
     repo: proxyman-windows-linux
     token: "{{ github_token }}"
-  register: release
+  register: proxyman_release
 
 - name: Download App Image
-  get_url:
-    url: "https://github.com/ProxymanApp/proxyman-windows-linux/releases/download/{{ release.tag }}/Proxyman-{{ release.tag | regex_replace('^v', '') }}.AppImage"
+  ansible.builtin.get_url:
+    url: "https://github.com/ProxymanApp/proxyman-windows-linux/releases/download/{{ proxyman_release.tag }}/Proxyman-{{ proxyman_release.tag | regex_replace('^v', '') }}.AppImage"
     dest: "{{ setup_dir }}/Proxyman.AppImage"
+    mode: "0644"
 
 - name: Install App Image
   ansible.builtin.copy:

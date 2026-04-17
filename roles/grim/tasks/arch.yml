@@ -1,0 +1,7 @@
+---
+- name: Install grim
+  community.general.pacman:
+    name:
+      - grim
+      - slurp
+    state: present

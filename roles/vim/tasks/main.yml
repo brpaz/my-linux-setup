@@ -1,6 +1,7 @@
+---
 - name: Vim Install
-  ansible.builtin.dnf:
-    name: '{{ item }}'
+  ansible.builtin.package:
+    name: "{{ item }}"
     state: present
   become: true
   loop:

@@ -1,0 +1,5 @@
+---
+- name: Install
+  community.general.flatpak:
+    name: io.m51.elly
+    state: present

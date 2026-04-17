@@ -1,3 +1,4 @@
+---
 - name: Import the Microsoft GPG key
   ansible.builtin.rpm_key:
     state: present
@@ -15,6 +16,6 @@
   become: true
 
 - name: Install Microsoft Edge stable version
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: microsoft-edge-stable
   become: true

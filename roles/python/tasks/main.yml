@@ -1,10 +1,9 @@
+---
 - name: Python | Install Core PIP packages
   ansible.builtin.pip:
     name: "{{ item }}"
-  loop:
-    - requests
-    - setuptools
-    - pipx
+    executable: "{{ python_pip_executable }}"
+  loop: "{{ python_pip_packages }}"
 
 - name: Install Uv for managing of Python envrionments
   community.general.pipx:

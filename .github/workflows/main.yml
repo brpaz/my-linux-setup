@@ -6,9 +6,9 @@ on:
       - master
       - main
   pull_request:
-      branches:
-        - master
-        - main
+    branches:
+      - master
+      - main
   workflow_dispatch:
 
 concurrency:
@@ -21,25 +21,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v6
+      - name: Checkout code
+        uses: actions/checkout@v6
 
-    - name: Set up Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: 3.x  # Use the desired Python version
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
 
-    - name: Install Dependencies
-      run: pip install -r requirements.txt
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
 
-    - name: Install Ansible Galaxy roles
-      run: |
-        ansible-galaxy install -p .ansible_galaxy/roles -r requirements.yml
-        ansible-galaxy collection install -p .ansible_galaxy/collections -r requirements.yml
+      - name: Install Ansible Galaxy roles
+        run: |
+          ansible-galaxy install -p .ansible_galaxy/roles -r requirements.yml
+          ansible-galaxy collection install -p .ansible_galaxy/collections -r requirements.yml
 
-    - name: Run Ansible Lint
-      run: ansible-lint playbooks/setup.yml roles
+      - name: Run Ansible Lint
+        run: ansible-lint playbooks roles inventories
 
-    - name: Check Syntax
-      run: ansible-playbook --syntax-check playbooks/*.yml
-
+      - name: Check Syntax
+        run: ansible-playbook --syntax-check playbooks/*.yml

@@ -1,5 +1,6 @@
+---
 - name: Install networking tools
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - net-tools
       - traceroute

@@ -1,5 +1,6 @@
+---
 - name: JQ
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: jq
     state: present
   become: true

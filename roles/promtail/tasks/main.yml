@@ -1,3 +1,4 @@
+---
 - name: Ensure Promtail config exists
   ansible.builtin.file:
     path: /etc/promtail

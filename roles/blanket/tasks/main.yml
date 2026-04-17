@@ -1,3 +1,4 @@
+---
 - name: Blanket
   community.general.flatpak:
     name: com.rafaelmardojai.Blanket

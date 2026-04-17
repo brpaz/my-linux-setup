@@ -1,3 +1,4 @@
+---
 - name: EarTag
   community.general.flatpak:
     name: app.drey.EarTag

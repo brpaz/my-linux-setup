@@ -1,16 +1,16 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     repo: knock
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: BentonEdmondson
-  register: release
+  register: knock_release
 
 - name: Download and Install
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/knock'
+    dest: "{{ bin_dir }}/knock"
     force: true
     mode: a+x
-    url: https://github.com/BentonEdmondson/knock/releases/download/{{ release.tag }}/knock-{{
-      release.tag }}-x86_64-linux
+    url: https://github.com/BentonEdmondson/knock/releases/download/{{ knock_release.tag }}/knock-{{ knock_release.tag }}-x86_64-linux
   become: true

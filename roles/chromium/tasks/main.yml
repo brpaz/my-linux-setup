@@ -1,5 +1,10 @@
+---
+- name: Laod Distribution specific vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+  failed_when: false
+
 - name: Install
-  ansible.builtin.dnf:
-    name: chromium
+  ansible.builtin.package:
+    name: "{{ chromium_package }}"
     state: present
   become: true

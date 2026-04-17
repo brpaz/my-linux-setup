@@ -1,5 +1,6 @@
+---
 - name: Feh Image viewer
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: feh
     state: present
   become: true

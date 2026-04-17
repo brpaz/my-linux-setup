@@ -1,14 +1,14 @@
+---
 - name: Watchexec | Get latest release
   community.general.github_release:
     action: latest_release
     repo: watchexec
-    token: '{{ github_token }}'
+    token: "{{ github_token }}"
     user: watchexec
-  register: release
+  register: watchexec_release
 - name: Watchexec | Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     disable_gpg_check: true
-    name: https://github.com/watchexec/watchexec/releases/download/{{ release.tag
-      }}/watchexec-{{ release.tag[1:] }}-x86_64-unknown-linux-gnu.rpm
+    name: https://github.com/watchexec/watchexec/releases/download/{{ watchexec_release.tag }}/watchexec-{{ watchexec_release.tag[1:] }}-x86_64-unknown-linux-gnu.rpm
     state: present
   become: true

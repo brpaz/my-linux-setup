@@ -1,2 +1,5 @@
+---
 - name: Install Copier
-  ansible.builtin.command: pipx install copier
+  community.general.pipx:
+    name: copier
+    state: present

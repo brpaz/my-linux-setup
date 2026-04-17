@@ -1,3 +1,7 @@
+---
+- name: Load distribution-specific vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
 - name: Install Repo
   ansible.builtin.yum_repository:
     baseurl: https://download.docker.com/linux/fedora/{{ ansible_distribution_version }}/$basearch/stable
@@ -6,32 +10,30 @@
     name: docker
     enabled: true
   become: true
+  when: ansible_distribution == "Fedora"
 
 - name: Install Packages
-  ansible.builtin.dnf:
-    name:
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-compose-plugin
+  ansible.builtin.package:
+    name: "{{ docker_packages }}"
   become: true
 
 - name: Add current user to Docker group
   ansible.builtin.user:
     append: true
     groups: docker
-    name: '{{ user }}'
+    name: "{{ user }}"
   become: true
 
 - name: Refresh groups
   ansible.builtin.command: newgrp docker
   become: true
   become_user: "{{ user }}"
+  changed_when: false
 
 - name: Copy Daemon.json
   ansible.builtin.copy:
     dest: /etc/docker/daemon.json
-    mode: '0644'
+    mode: "0644"
     src: daemon.json
   become: true
 

@@ -1,3 +1,4 @@
+---
 - name: Ensure Monitoring netweork exists
   community.docker.docker_network:
     name: monitoring
@@ -13,9 +14,7 @@
       traefik.enable: "false"
     networks:
       - name: monitoring
-    command: --logtostderr
-      --docker_only
-      --store_container_labels=false
+    command: --logtostderr --docker_only --store_container_labels=false
     volumes:
       - /var/lib/docker/:/var/lib/docker:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro

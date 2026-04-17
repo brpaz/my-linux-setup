@@ -1,0 +1,12 @@
+---
+- name: Hyprland | Install packages
+  community.general.pacman:
+    name:
+      - hyprland
+      - hyprlock
+      - hypridle
+      - hyprpaper
+      - xdg-desktop-portal-hyprland
+      - xdg-desktop-portal-gtk
+    state: present
+  become: true

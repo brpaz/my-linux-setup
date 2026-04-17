@@ -1,14 +1,15 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: bensadeh
     repo: tailspin
     token: "{{ github_token }}"
-  register: release
+  register: tailspin_release
 
 - name: Download and Install
   ansible.builtin.unarchive:
-    src: https://github.com/bensadeh/tailspin/releases/download/{{ release.tag }}/tailspin-x86_64-unknown-linux-musl.tar.gz
+    src: https://github.com/bensadeh/tailspin/releases/download/{{ tailspin_release.tag }}/tailspin-x86_64-unknown-linux-musl.tar.gz
     dest: "{{ bin_dir }}"
     mode: a+x
     remote_src: true

@@ -1,5 +1,6 @@
-- name:
-  ansible.builtin.dnf:
+---
+- name: Install Epiphany
+  ansible.builtin.package:
     name: epiphany
     state: present
   become: true

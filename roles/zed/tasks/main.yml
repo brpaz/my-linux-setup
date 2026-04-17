@@ -1,4 +1,8 @@
-- name: Install
-  community.general.flatpak:
-    name: dev.zed.Zed
-    state: present
+---
+- name: Include Fedora tasks
+  ansible.builtin.include_tasks: fedora.yml
+  when: ansible_distribution == 'Fedora'
+
+- name: Include Arch tasks
+  ansible.builtin.include_tasks: arch.yml
+  when: ansible_distribution == 'Archlinux'

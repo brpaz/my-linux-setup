@@ -1,6 +1,6 @@
 # My Laptop Provision scripts
 
-> Set of [Ansible](https://www.ansible.com/) playbooks to provision a Fedora machine with all my applications and settings.
+> Set of [Ansible](https://www.ansible.com/) playbooks to provision my Linux machines with all my applications and settings.
 
 ## Motivation
 
@@ -12,7 +12,8 @@ What if most of this setup, can be automated? That´s where [Ansible](https://an
 
 ## Pre-requisites
 
-* A machine running Fedora OS. This playbook was tested with Fedora 39, but it should work on other versions.
+* The `inventories/personal/hosts.ini` inventory.
+* Fedora for `tuxedo-laptop` or Arch Linux for `zenbook-laptop`.
 * GitHub personal access token. You can get one [here](https://github.com/settings/tokens).
 
 ## What is included
@@ -21,9 +22,24 @@ What if most of this setup, can be automated? That´s where [Ansible](https://an
 - Install Dotfiles from my private dotfiles repository, using [Yet Another Dotfiles Manager - yadm](https://yadm.io/)
 - Install all my applications. Check [APPLICATIONS.md](docs/APPLICATIONS.md) for a detailed list.
 
+## Inventories
+
+The repo now uses a single inventory for personal machines:
+
+- `inventories/personal/hosts.ini`
+
+The inventory defines shared variables plus a `laptops` group and separate host vars for each machine:
+
+- `group_vars/all.yml` for shared variables used by all personal machines
+- `group_vars/laptops.yml` for shared laptop variables
+- `host_vars/tuxedo-laptop.yml`
+- `host_vars/zenbook-laptop.yml`
+
+This keeps shared variables in inventory group vars, machine-specific values in host vars, and makes it easier to add more personal machines later.
+
 ## Provision a new machine
 
-To provision a new machine, open a terminal window and run the following commands:
+To provision the `tuxedo-laptop`, open a terminal window and run the following commands:
 
 ```sh
 export GITHUB_TOKEN=<my_github_token>
@@ -33,6 +49,29 @@ cd my-linux-setup
 sudo chmod +x setup.sh
 ./setup.sh
 ```
+
+To provision the `zenbook-laptop`:
+
+```sh
+export GITHUB_TOKEN=<my_github_token>
+sudo pacman -Syu --noconfirm git
+git clone https://github.com/brpaz/my-linux-setup
+cd my-linux-setup
+sudo chmod +x scripts/setup-zenbook.sh
+./scripts/setup-zenbook.sh
+```
+
+You can also run playbooks directly with an explicit inventory:
+
+```sh
+ansible-playbook -i inventories/personal/hosts.ini --limit tuxedo-laptop playbooks/tuxedo.yml --ask-become-pass
+ansible-playbook -i inventories/personal/hosts.ini --limit tuxedo-laptop playbooks/dotfiles.yml --ask-become-pass
+ansible-playbook -i inventories/personal/hosts.ini --limit tuxedo-laptop playbooks/setup.yml --ask-become-pass
+
+ansible-playbook -i inventories/personal/hosts.ini --limit zenbook-laptop playbooks/zenbook.yml --ask-become-pass
+```
+
+To add a remote machine later, add it to `inventories/personal/hosts.ini`, place common variables in the right group vars file, and put machine-specific values in `host_vars/<host>.yml`.
 
 **Note** When installing dotfiles you will be prompted for the "pgp" key to decrypt the secure files. Make sure to have it at hand.
 
@@ -124,4 +163,3 @@ TAG=github task run-tag
 Copyright © 2019 [Bruno Paz](https://github.com/brpaz).
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
-

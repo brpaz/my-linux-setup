@@ -1,4 +1,5 @@
-- name: Gnome Podcasts
+---
+- name: Install
   community.general.flatpak:
     name: com.obsproject.Studio
     state: present

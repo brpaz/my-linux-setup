@@ -1,16 +1,17 @@
+---
 - name: Get Latest release
   community.general.github_release:
     action: latest_release
     user: lusingander
     repo: stu
     token: "{{ github_token }}"
-  register: latest_release
+  register: stu_release
 
 - name: Download
   ansible.builtin.unarchive:
-    src: https://github.com/lusingander/stu/releases/download/{{ latest_release.tag }}/stu-{{ latest_release.tag[1:] }}-x86_64-unknown-linux-gnu.tar.gz
+    src: https://github.com/lusingander/stu/releases/download/{{ stu_release.tag }}/stu-{{ stu_release.tag[1:] }}-x86_64-unknown-linux-gnu.tar.gz
     dest: "{{ setup_dir }}"
-    remote_src: yes
+    remote_src: true
 
 - name: Install
   ansible.builtin.copy:

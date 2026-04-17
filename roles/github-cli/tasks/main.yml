@@ -1,0 +1,18 @@
+---
+- name: Include Fedora tasks
+  ansible.builtin.include_tasks: fedora.yml
+  when: ansible_distribution == 'Fedora'
+
+- name: Include Arch tasks
+  ansible.builtin.include_tasks: arch.yml
+  when: ansible_distribution == 'Archlinux'
+
+- name: Install plugins
+  ansible.builtin.command:
+    cmd: gh extension install {{ item }}
+  register: github_cli_extension_install
+  failed_when:
+    - github_cli_extension_install.rc != 0
+    - "'already installed' not in ((github_cli_extension_install.stdout | default('')) ~ ' ' ~ (github_cli_extension_install.stderr | default('')) | lower)"
+  changed_when: github_cli_extension_install.rc == 0
+  loop: github_cli_extenstions

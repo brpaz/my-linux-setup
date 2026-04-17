@@ -1,0 +1,49 @@
+---
+- name: Install dnsmasq
+  ansible.builtin.package:
+    name: dnsmasq
+    state: present
+  become: true
+
+- name: Ensure Dnsmasq service is disabled to avoid conflicts
+  ansible.builtin.systemd:
+    name: dnsmasq
+    state: stopped
+    enabled: false
+  become: true
+
+- name: Configure Network manager to use Dnsmasq
+  ansible.builtin.copy:
+    dest: /etc/NetworkManager/conf.d/00-use-dnsmasq.conf
+    mode: "0644"
+    owner: root
+    group: root
+    content: |
+      [main]
+      dns=dnsmasq
+  become: true
+  notify: Restart NetworkManager
+
+- name: Configure Dnsmasq base config
+  ansible.builtin.template:
+    src: templates/base.conf.j2
+    dest: /etc/NetworkManager/dnsmasq.d/00-base.conf
+    mode: "0644"
+  become: true
+  notify: Restart NetworkManager
+
+- name: Configure Dnsmasq upstream servers
+  ansible.builtin.template:
+    src: templates/upstream.conf.j2
+    dest: /etc/NetworkManager/dnsmasq.d/01-upstream.conf
+    mode: "0644"
+  become: true
+  notify: Restart NetworkManager
+
+- name: Configure Dnsmasq custom domain servers
+  ansible.builtin.template:
+    src: templates/custom.conf.j2
+    dest: /etc/NetworkManager/dnsmasq.d/02-custom.conf
+    mode: "0644"
+  become: true
+  notify: Restart NetworkManager

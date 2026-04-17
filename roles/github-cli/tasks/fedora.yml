@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    repo: cli
+    token: "{{ github_token }}"
+    user: cli
+  register: release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/cli/cli/releases/download/{{ release.tag }}/gh_{{ release.tag[1:] }}_linux_amd64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

@@ -1,2 +1,14 @@
+---
+- name: Vicinae | Download installer
+  ansible.builtin.get_url:
+    url: https://vicinae.dev/install.sh
+    dest: "{{ setup_dir }}/vicinae-install.sh"
+    mode: "0755"
+
 - name: Vicinae | Install
-  ansible.builtin.shell: curl -sSL https://vicinae.dev/install.sh | sudo bash
+  ansible.builtin.command:
+    argv:
+      - bash
+      - "{{ setup_dir }}/vicinae-install.sh"
+  become: true
+  changed_when: true

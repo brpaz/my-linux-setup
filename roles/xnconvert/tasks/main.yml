@@ -1,3 +1,4 @@
+---
 - name: XnConverter
   community.general.flatpak:
     name: com.xnview.XnConvert

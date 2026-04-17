@@ -1,15 +1,17 @@
+---
 - name: Get Latest Release from GitHub
   community.general.github_release:
     action: latest_release
     user: heyman
     repo: heynote
     token: "{{ github_token }}"
-  register: release
+  register: heynote_release
 
 - name: Download App Image
-  get_url:
-    url: "https://github.com/heyman/heynote/releases/download/{{ release.tag }}/Heynote_{{ release.tag | regex_replace('^v', '') }}_x86_64.AppImage"
+  ansible.builtin.get_url:
+    url: "https://github.com/heyman/heynote/releases/download/{{ heynote_release.tag }}/Heynote_{{ heynote_release.tag | regex_replace('^v', '') }}_x86_64.AppImage"
     dest: "{{ setup_dir }}/Heynote.AppImage"
+    mode: "0644"
 
 - name: Install App Image
   ansible.builtin.copy:

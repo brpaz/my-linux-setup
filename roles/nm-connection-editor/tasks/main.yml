@@ -1,0 +1,6 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name: nm-connection-editor
+    state: present
+  become: true

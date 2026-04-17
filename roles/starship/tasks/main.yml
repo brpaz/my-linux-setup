@@ -1,3 +1,5 @@
+---
 - name: Install
   ansible.builtin.shell: sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
   become: true
+  changed_when: true

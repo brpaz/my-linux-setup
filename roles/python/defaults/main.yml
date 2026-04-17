@@ -1,1 +1,7 @@
+---
+python_interpreter: /usr/bin/python
 python_pip_executable: /usr/bin/pip
+python_pip_packages:
+  - requests
+  - setuptools
+  - pipx

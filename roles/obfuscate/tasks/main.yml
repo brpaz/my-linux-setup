@@ -1,3 +1,4 @@
+---
 - name: Obfuscate
   community.general.flatpak:
     name: com.belmoussaoui.Obfuscate

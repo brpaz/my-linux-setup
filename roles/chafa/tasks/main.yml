@@ -1,4 +1,5 @@
+---
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - chafa

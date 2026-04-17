@@ -1,5 +1,6 @@
+---
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: asciinema
     state: present
   become: true
@@ -9,13 +10,13 @@
     action: latest_release
     user: asciinema
     repo: agg
-    token: '{{ github_token }}'
-  register: release
+    token: "{{ github_token }}"
+  register: asciinema_release
 
 - name: Agg | Download and Install
   ansible.builtin.get_url:
-    dest: '{{ bin_dir }}/agg'
+    dest: "{{ bin_dir }}/agg"
     force: true
     mode: a+x
-    url: https://github.com/asciinema/agg/releases/download/{{ release.tag }}/agg-x86_64-unknown-linux-gnu
+    url: https://github.com/asciinema/agg/releases/download/{{ asciinema_release.tag }}/agg-x86_64-unknown-linux-gnu
   become: true

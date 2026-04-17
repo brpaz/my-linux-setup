@@ -1,0 +1,5 @@
+---
+- name: Avvie
+  community.general.flatpak:
+    name: app.drey.Warp
+    state: present

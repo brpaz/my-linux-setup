@@ -1,5 +1,6 @@
+---
 - name: Pandoc
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: pandoc
     state: present
   become: true

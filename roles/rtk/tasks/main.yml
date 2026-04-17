@@ -1,14 +1,15 @@
+---
 - name: Get Latest Release
   community.general.github_release:
     action: latest_release
     user: rtk-ai
     repo: rtk
     token: "{{ github_token }}"
-  register: release
+  register: rtk_release
 
 - name: RTK | Download
   ansible.builtin.unarchive:
-    src: "https://github.com/rtk-ai/rtk/releases/download/{{ release.tag }}/rtk-x86_64-unknown-linux-musl.tar.gz"
+    src: "https://github.com/rtk-ai/rtk/releases/download/{{ rtk_release.tag }}/rtk-x86_64-unknown-linux-musl.tar.gz"
     dest: "{{ setup_dir }}"
     remote_src: true
   become: true

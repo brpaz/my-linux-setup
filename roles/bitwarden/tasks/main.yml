@@ -1,3 +1,4 @@
+---
 - name: Bitwarden CLI | Download
   ansible.builtin.unarchive:
     dest: "{{ bin_dir }}"
@@ -7,6 +8,6 @@
   become: true
 
 - name: Bitwarden Desktop | Download
-  ansible.builtin.flatpak:
+  community.general.flatpak:
     name: com.bitwarden.desktop
     state: present

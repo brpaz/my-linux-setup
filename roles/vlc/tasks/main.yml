@@ -1,5 +1,6 @@
+---
 - name: VLC
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: vlc
     state: present
   become: true

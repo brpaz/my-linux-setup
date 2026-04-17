@@ -1,10 +1,12 @@
+---
 - name: Add copr repository for Ghostty
   ansible.builtin.command:
     cmd: dnf copr enable -y pgdev/ghostty
   become: true
+  changed_when: true
 
 - name: Install Ghostty
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: ghostty
     state: present
   become: true

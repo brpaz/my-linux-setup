@@ -1,3 +1,4 @@
+---
 - name: Redis Insight
   become: true
   community.general.flatpak:
@@ -10,13 +11,13 @@
     user: davidbudnick
     repo: redis-tui
     token: "{{ github_token }}"
-  register: release
+  register: redis_release
 
 - name: Redis TUI | Download Binary
   ansible.builtin.unarchive:
-    src: https://github.com/davidbudnick/redis-tui/releases/download/{{ release.tag }}/redis-tui_{{ release.tag[1:] }}_Linux_x86_64.tar.gz
+    src: https://github.com/davidbudnick/redis-tui/releases/download/{{ redis_release.tag }}/redis-tui_{{ redis_release.tag[1:] }}_Linux_x86_64.tar.gz
     dest: "{{ setup_dir }}"
-    remote_src: yes
+    remote_src: true
   become: true
 
 - name: Redis TUI | Install Binary

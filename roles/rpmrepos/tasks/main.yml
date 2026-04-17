@@ -1,5 +1,6 @@
+---
 - name: Install rpmfusion repo
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
     disable_gpg_check: true

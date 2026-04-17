@@ -1,0 +1,15 @@
+---
+- name: Install plymouth
+  ansible.builtin.package:
+    name: plymouth
+  become: true
+
+- name: Update boot entries with splash
+  ansible.builtin.shell: |
+    for entry in /boot/loader/entries/*.conf; do
+      if ! grep -q "quiet splash" "$entry"; then
+        sed -i 's/options /options quiet splash /' "$entry"
+      fi
+    done
+  become: true
+  changed_when: true

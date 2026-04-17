@@ -1,5 +1,6 @@
+---
 - name: Install
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: shellcheck
     state: present
   become: true

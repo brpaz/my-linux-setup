@@ -1,3 +1,4 @@
+---
 - name: Check nas_ip is defined
   ansible.builtin.fail:
     msg: "nas_ip is not defined"
@@ -7,7 +8,7 @@
   ansible.builtin.file:
     path: "{{ item }}"
     state: directory
-    mode: '0755'
+    mode: "0755"
     owner: "{{ user }}"
     group: "{{ user }}"
   loop:

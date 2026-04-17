@@ -1,2 +1,3 @@
+---
 dotfiles_clone_url: https://brpaz:{{ github_token }}@github.com/brpaz/dotfiles.git
 dotfiles_ssh_url: git@github.com:brpaz/dotfiles.git

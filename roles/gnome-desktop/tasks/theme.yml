@@ -1,5 +1,6 @@
+---
 - name: Install Gnome themes
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name:
       - papirus-icon-theme
     state: present

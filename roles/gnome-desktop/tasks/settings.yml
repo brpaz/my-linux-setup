@@ -1,3 +1,4 @@
+---
 - name: Settings | Show Desktop icons
   community.general.dconf:
     key: /org/gnome/desktop/background/show-desktop-icons
@@ -43,8 +44,7 @@
 - name: Set Favorite apps
   community.general.dconf:
     key: /org/gnome/shell/favorite-apps
-    value: "['firefox.desktop', 'org.gnome.Nautilus.desktop',
-      'zed.desktop', 'md.obsidian.Obsidian.desktop']"
+    value: "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'zed.desktop', 'md.obsidian.Obsidian.desktop']"
 
 - name: Ptyxis settings
   community.general.dconf:

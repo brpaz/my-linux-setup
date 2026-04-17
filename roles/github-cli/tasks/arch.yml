@@ -1,0 +1,6 @@
+---
+- name: Install
+  community.general.pacman:
+    name: github-cli
+    state: present
+  become: true

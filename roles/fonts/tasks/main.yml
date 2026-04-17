@@ -1,3 +1,7 @@
+---
+- name: Load Distribution vars
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+
 - name: Install Font Downloader
   community.general.flatpak:
     name: org.gustavoperedo.FontDownloader
@@ -5,20 +9,23 @@
 
 - name: Ensure Local Fonts folder exists
   ansible.builtin.file:
-    mode: '0755'
-    path: '{{ ansible_env.HOME }}/.local/share/fonts'
+    mode: "0755"
+    path: "{{ ansible_env.HOME }}/.local/share/fonts"
     state: directory
 
 - name: Copy Fonts
   ansible.builtin.copy:
-    dest: '{{ ansible_env.HOME }}/.local/share'
-    mode: '0755'
+    dest: "{{ ansible_env.HOME }}/.local/share"
+    mode: "0755"
     src: fonts
 
 - name: Install fonts packages
-  ansible.builtin.dnf:
-    name:
-      - jetbrains-mono-fonts
-      - fira-code-fonts
+  ansible.builtin.package:
+    name: "{{ fonts_packages }}"
     state: present
   become: true
+
+- name: Clean font cache
+  ansible.builtin.command: fc-cache -fv
+  become: true
+  changed_when: false

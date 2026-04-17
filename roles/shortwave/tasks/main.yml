@@ -1,3 +1,4 @@
+---
 - name: Shortwave | Install
   community.general.flatpak:
     name: de.haeckerfelix.Shortwave

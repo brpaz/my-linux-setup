@@ -5,3 +5,4 @@ warn_list:
   - '306'
 skip_list:
   - yaml[line-length]
+  - role-name

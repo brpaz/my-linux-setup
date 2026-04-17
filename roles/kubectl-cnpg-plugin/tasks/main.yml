@@ -1,3 +1,4 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
@@ -12,4 +13,3 @@
     name: "https://github.com/cloudnative-pg/cloudnative-pg/releases/download/{{ release.tag }}/kubectl-cnpg_{{ release.tag[1:] }}_linux_x86_64.rpm"
     state: present
   become: true
-

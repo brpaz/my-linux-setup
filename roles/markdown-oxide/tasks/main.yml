@@ -1,0 +1,23 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: Feel-ix-343
+    repo: markdown-oxide
+    token: "{{ github_token }}"
+  register: markdown_oxide_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/Feel-ix-343/markdown-oxide/releases/download/{{ markdown_oxide_release.tag }}/markdown-oxide-{{ markdown_oxide_release.tag }}-x86_64-unknown-linux-gnu.tar.gz
+    mode: "0755"
+    extra_opts:
+      - --strip-components=1
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/markdown-oxide"
+    dest: "{{ bin_dir }}/markdown-oxide"
+    mode: a+x
+  become: true

@@ -1,3 +1,4 @@
+---
 - name: Add repository
   ansible.builtin.yum_repository:
     baseurl: https://pkg.cloudflareclient.com/rpm
@@ -7,7 +8,7 @@
   become: true
 
 - name: Install Warp CLI
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: cloudflare-warp
     state: present
   become: true

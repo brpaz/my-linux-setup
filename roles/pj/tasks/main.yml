@@ -1,17 +1,18 @@
+---
 - name: Get latest release
   community.general.github_release:
     action: latest_release
     user: josephschmitt
     repo: pj
     token: "{{ github_token }}"
-  register: release
+  register: pj_release
 
 - name: Download
   ansible.builtin.unarchive:
-    dest: "{{setup_dir}}"
+    dest: "{{ setup_dir }}"
     mode: a+x
-    src: https://github.com/josephschmitt/pj/releases/download/{{ release.tag }}/pj_{{ release.tag[1:] }}_linux_amd64.pkg.tar.zst
-    remote_src: yes
+    src: https://github.com/josephschmitt/pj/releases/download/{{ pj_release.tag }}/pj_{{ pj_release.tag[1:] }}_linux_amd64.pkg.tar.zst
+    remote_src: true
   become: true
 
 - name: Install

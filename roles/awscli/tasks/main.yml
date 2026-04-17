@@ -1,7 +1,8 @@
+---
 - name: AWS CLI | Download Installer
   ansible.builtin.unarchive:
     dest: /tmp
-    mode: '0755'
+    mode: "0755"
     remote_src: true
     src: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
 
@@ -10,3 +11,4 @@
   args:
     chdir: /tmp
   become: true
+  changed_when: true

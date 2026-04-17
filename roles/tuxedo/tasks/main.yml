@@ -1,13 +1,14 @@
+---
 - name: Add Repository
   ansible.builtin.yum_repository:
-    baseurl: https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version}}/x86_64/base
+    baseurl: https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version }}/x86_64/base
     gpgkey: https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version }}/0x54840598.pub.asc
     description: Tuxedo Computers Repository
     name: tuxedo
     enabled: true
 
 - name: Install Tuxedo software
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   loop:
@@ -16,7 +17,7 @@
   become: true
 
 - name: Install LAN chipset Drivers
-  ansible.builtin.dnf:
+  ansible.builtin.package:
     name: https://gitlab.com/-/project/56425584/uploads/d1d6fe84826272e061c5fb3bd2e2a261/tuxedo-yt6801-1.0.28-1.noarch.rpm
     state: present
   become: true

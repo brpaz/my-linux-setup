@@ -1,8 +1,13 @@
+---
 - name: Download Rustup installation script
   ansible.builtin.get_url:
     url: https://sh.rustup.rs
-    dest: "{{setup_dir }}/rustup-init.sh"
-    mode: '0755'
+    dest: "{{ setup_dir }}/rustup-init.sh"
+    mode: "0755"
 
 - name: Install Rustup
-  ansible.builtin.shell: "{{ setup_dir }}/rustup-init.sh -y"
+  ansible.builtin.command:
+    argv:
+      - "{{ setup_dir }}/rustup-init.sh"
+      - -y
+    creates: "{{ ansible_env.HOME }}/.cargo/bin/rustup"

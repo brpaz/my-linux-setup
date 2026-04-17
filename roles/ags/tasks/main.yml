@@ -1,0 +1,4 @@
+---
+- name: Include Arch tasks
+  ansible.builtin.include_tasks: arch.yml
+  when: ansible_distribution == 'Archlinux'

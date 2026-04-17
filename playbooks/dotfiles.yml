@@ -1,3 +1,4 @@
+---
 - name: Dotfiles
   hosts: all
   vars_prompt:

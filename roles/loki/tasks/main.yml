@@ -1,3 +1,4 @@
+---
 - name: Ensure Configuration folder exists
   ansible.builtin.file:
     mode: "0755"
