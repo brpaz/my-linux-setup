@@ -1,0 +1,21 @@
+- name: Get Latest Release from GitHub
+  community.general.github_release:
+    action: latest_release
+    user: lazynop
+    repo: lazyenv
+    token: "{{ github_token }}"
+  register: lazyenv_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/lazynop/lazyenv/releases/download/{{ lazyenv_release.tag }}/lazyenv_{{ lazyenv_release.tag[1:] }}_linux_amd64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/lazyenv"
+    dest: "{{ bin_dir }}/lazyenv"
+    mode: a+x
+  become: true

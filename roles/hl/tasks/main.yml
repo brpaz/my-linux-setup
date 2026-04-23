@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: pamburus
+    repo: hl
+    token: "{{ github_token }}"
+  register: hl_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/pamburus/hl/releases/download/{{ hl_release.tag }}/hl-linux-x86_64-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/hl"
+    dest: "{{ bin_dir }}/hl"
+    mode: a+x
+  become: true
