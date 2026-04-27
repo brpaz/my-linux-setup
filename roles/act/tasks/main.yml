@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: nektos
+    repo: act
+    token: "{{ github_token }}"
+  register: act_release
+
+- name: Act | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/nektos/act/releases/download/{{ act_release.tag }}/act_Linux_x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/act"
+    dest: "{{ bin_dir }}/act"
+    mode: a+x
+  become: true

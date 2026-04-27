@@ -1,0 +1,8 @@
+- name: Install
+  ansible.builtin.unarchive:
+    src: "{{ ngrok_download_url }}"
+    dest: /usr/local/bin/
+    remote_src: true
+    creates: /usr/local/bin/ngrok
+    mode: a+x
+  become: true

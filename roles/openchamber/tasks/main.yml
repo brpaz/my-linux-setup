@@ -1,0 +1,6 @@
+---
+- name: Install
+  community.general.npm:
+    name: "@openchamber/web"
+    state: present
+    global: true
