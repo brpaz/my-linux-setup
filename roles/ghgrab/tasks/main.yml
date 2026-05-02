@@ -1,0 +1,14 @@
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: abhixdd
+    repo: ghgrab
+    token: "{{ github_token }}"
+  register: ghgrab_release
+
+- name: Install
+  ansible.builtin.get_url:
+    url: "https://github.com/abhixdd/ghgrab/releases/download/{{ ghgrab_release.tag }}/ghgrab-linux"
+    dest: /usr/local/bin/ghgrab
+    mode: a+x
+  become: true

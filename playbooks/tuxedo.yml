@@ -170,6 +170,7 @@
     - { role: pigment, tags: [pigment, graphics_design, flatpak] }
     - { role: satty, tags: [satty, graphics_design] }
     - { role: grim, tags: [grim, graphics_design] }
+    - { role: defuse, tags: [defuse, graphics_design] }
 
     # =============================================
     # Development
@@ -193,6 +194,7 @@
     - { role: dive, tags: [dive, dev, cli] }
     - { role: doctl, tags: [doctl, dev] }
     - { role: flux, tags: [flux, dev] }
+    - { role: flux9s, tags: [flux9s, dev] }
     - { role: gcloud, tags: [gcloud, dev] }
     - { role: goreleaser, tags: [goreleaser, dev, github] }
     - { role: hcloud, tags: [hcloud, github, dev] }
@@ -327,6 +329,7 @@
     - { role: overstride, tags: [overstride, bluetooth, utilities, flatpak] }
     - { role: markdown-oxide, tags: [markdown-oxide, utitilies] }
     - { role: convertidor, tags: [convertidor, utilities, flatpak] }
+    - { role: ghgrab, tags: [ghgrab, utilities, github] }
 
     # =============================================
     # Games

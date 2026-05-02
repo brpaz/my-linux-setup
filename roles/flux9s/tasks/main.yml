@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: dgunzy
+    repo: flux9s
+    token: "{{ github_token }}"
+  register: flux9s_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/dgunzy/flux9s/releases/download/{{ flux9s_release.tag }}/flux9s-linux-x86_64-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/flux9s"
+    dest: "{{ bin_dir }}/flux9s"
+    mode: a+x
+  become: true
