@@ -1,7 +1,7 @@
 ---
 - name: Get Latest release
   ansible.builtin.get_url:
-    url: https://cdn.dl.k8s.io/release/stable.txt
+    url: https://storage.googleapis.com/kubernetes-release/release/stable.txt
     dest: "{{ setup_dir }}/kubectl_release"
     mode: "0644"
   register: kubectl_release
@@ -16,5 +16,5 @@
     dest: "{{ bin_dir }}/kubectl"
     force: true
     mode: a+x
-    url: https://dl.k8s.io/release/{{ kubectl_release_tag['content'] | b64decode }}/bin/linux/amd64/kubectl
+    url: https://storage.googleapis.com/kubernetes-release/release/{{ kubectl_release_tag['content'] | b64decode }}/bin/linux/amd64/kubectl
   become: true

@@ -1,0 +1,6 @@
+---
+# Noctalia shell is currently only available via Terra repo on Fedora
+# Archlinux support would need a different package source
+- name: Warn about Archlinux
+  ansible.builtin.debug:
+    msg: "Noctalia shell is not available on Archlinux via this role"

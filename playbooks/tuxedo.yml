@@ -235,6 +235,7 @@
     - { role: sonar, tags: [sonar, dev, flaptpak] }
     - { role: ngrok, tags: [ngrok, dev] }
     - { role: act, tags: [act, dev, github] }
+    - { role: gitte, tags: [gitte, git, dev, flatpak] }
     # =============================================
     # CLI Tools
     # =============================================
@@ -345,3 +346,9 @@
     - { role: fonts, tags: [fonts, gnome-desktop] }
     # - { role: nvidia, tags: [gnome-desktop, drivers] }
     # - { role: mounts, tags: [mounts, gnome-desktop] }
+
+    # =============================================
+    # Hyprland desktop
+    # =============================================
+    - { role: hyprland, tags: [hyprland, desktop] }
+    - { role: noctalia, tags: [noctalia, shell] }

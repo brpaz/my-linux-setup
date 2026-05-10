@@ -15,7 +15,7 @@
 
 - name: Install
   ansible.builtin.copy:
-    src: "{{ setup_dir }}/zrok"
-    dest: "{{ bin_dir }}"
+    src: "{{ setup_dir }}/zrok2"
+    dest: "{{ bin_dir }}/zrok"
     mode: "a+x"
   become: true

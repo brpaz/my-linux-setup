@@ -7,7 +7,7 @@
   ansible.builtin.include_tasks: arch.yml
   when: ansible_distribution == 'Archlinux'
 
-- name: Install plugins
+- name: Install Extensions
   ansible.builtin.command:
     cmd: gh extension install {{ item }}
   register: github_cli_extension_install
@@ -15,4 +15,4 @@
     - github_cli_extension_install.rc != 0
     - "'already installed' not in ((github_cli_extension_install.stdout | default('')) ~ ' ' ~ (github_cli_extension_install.stderr | default('')) | lower)"
   changed_when: github_cli_extension_install.rc == 0
-  loop: github_cli_extenstions
+  loop: github_cli_extensions

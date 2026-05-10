@@ -1,0 +1,16 @@
+---
+- name: Add Terra repository
+  ansible.builtin.dnf:
+    name: terra-release
+    state: present
+    disable_gpg_check: true
+    repofrompath:
+      - terra,https://repos.fyralabs.com/terra{{ ansible_distribution_version }}
+  become: true
+
+- name: Install noctalia-shell
+  ansible.builtin.dnf:
+    name: noctalia-shell
+    state: present
+    disable_gpg_check: true
+  become: true

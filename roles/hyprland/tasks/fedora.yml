@@ -12,6 +12,7 @@
       - hyprlock
       - hypridle
       - hyprpaper
+      - hyprpolkitagent
       - xdg-desktop-portal-hyprland
       - xdg-desktop-portal-gtk
     state: present
