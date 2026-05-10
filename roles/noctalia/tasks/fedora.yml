@@ -5,7 +5,7 @@
     state: present
     disable_gpg_check: true
     repofrompath:
-      - terra,https://repos.fyralabs.com/terra{{ ansible_distribution_version }}
+      - terra,https://repos.fyralabs.com/terra{{ ansible_facts['distribution_version'] }}
   become: true
 
 - name: Install noctalia-shell

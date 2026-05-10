@@ -1,11 +1,11 @@
 ---
 - name: Include Fedora tasks
   ansible.builtin.include_tasks: fedora.yml
-  when: ansible_distribution == 'Fedora'
+  when: ansible_facts["distribution"] == 'Fedora'
 
 - name: Include Arch tasks
   ansible.builtin.include_tasks: arch.yml
-  when: ansible_distribution == 'Archlinux'
+  when: ansible_facts["distribution"] == 'Archlinux'
 
 - name: Install Extensions
   ansible.builtin.command:
@@ -15,4 +15,4 @@
     - github_cli_extension_install.rc != 0
     - "'already installed' not in ((github_cli_extension_install.stdout | default('')) ~ ' ' ~ (github_cli_extension_install.stderr | default('')) | lower)"
   changed_when: github_cli_extension_install.rc == 0
-  loop: github_cli_extensions
+  loop: "{{ github_cli_extensions | default([], true) }}"

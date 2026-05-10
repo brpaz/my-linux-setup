@@ -1,6 +1,6 @@
 ---
 - name: Load Distribution vars
-  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_facts['distribution'] }}.yml"
 
 - name: Install Font Downloader
   community.general.flatpak:

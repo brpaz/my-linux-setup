@@ -1,16 +1,16 @@
 ---
 - name: Load distribution-specific vars
-  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_facts['distribution'] }}.yml"
 
 - name: Install Repo
   ansible.builtin.yum_repository:
-    baseurl: https://download.docker.com/linux/fedora/{{ ansible_distribution_version }}/$basearch/stable
+    baseurl: https://download.docker.com/linux/fedora/{{ ansible_facts['distribution_version'] }}/$basearch/stable
     description: Docker
     gpgkey: https://download.docker.com/linux/fedora/gpg
     name: docker
     enabled: true
   become: true
-  when: ansible_distribution == "Fedora"
+  when: ansible_facts["distribution"] == "Fedora"
 
 - name: Install Packages
   ansible.builtin.package:

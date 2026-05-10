@@ -1,6 +1,6 @@
 ---
 - name: Laod Distribution specific vars
-  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_facts['distribution'] }}.yml"
   failed_when: false
 
 - name: Install

@@ -5,7 +5,7 @@
     description: Tailscale Repository
     name: tailscale
   become: true
-  when: ansible_distribution == 'Fedora'
+  when: ansible_facts["distribution"] == 'Fedora'
 
 - name: Install
   ansible.builtin.package:
