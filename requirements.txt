@@ -1,4 +1,4 @@
-ansible~=13.5
+ansible~=14.1
 ansible-lint~=26.4
 github3.py~=4.0
 docker~=7.1
