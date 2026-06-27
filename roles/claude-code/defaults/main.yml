@@ -17,3 +17,6 @@ claude_code_plugins:
   - name: frontend-design
     marketplace: claude-plugins-official
     id: frontend-design@claude-plugins-official
+  - name: pyright-lsp
+    marketplace: claude-plugins-official
+    id: pyright-lsp@claude-plugins-official

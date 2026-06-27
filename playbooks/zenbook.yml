@@ -160,6 +160,7 @@
     # AI
     - { role: opencode, tags: [opencode, ai, github] }
     - { role: claude-code, tags: [claude-code, ai] }
+    - { role: codegraph, tags: [codegraph, ai] }
     # Docker Applications
     - { role: traefik, tags: [traefik, docker] }
     - { role: dozzle, tags: [dozzle, docker] }

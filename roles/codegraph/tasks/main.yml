@@ -1,0 +1,30 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: colbymchenry
+    repo: codegraph
+    token: "{{ github_token }}"
+  register: codegraph_release
+
+- name: Create install dir
+  ansible.builtin.file:
+    path: "{{ ansible_facts['env']['HOME'] }}/.local/share/codegraph"
+    state: directory
+    mode: "0755"
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/colbymchenry/codegraph/releases/download/{{ codegraph_release.tag }}/codegraph-linux-x64.tar.gz"
+    dest: "{{ ansible_facts['env']['HOME'] }}/.local/share/codegraph"
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+
+- name: Symlink binary
+  ansible.builtin.file:
+    src: "{{ ansible_facts['env']['HOME'] }}/.local/share/codegraph/bin/codegraph"
+    dest: "{{ bin_dir }}/codegraph"
+    state: link
+    force: true
+  become: true

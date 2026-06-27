@@ -117,6 +117,7 @@
     - { role: opencode, tags: [opencode, ai] }
     - { role: claude-code, tags: [claude-code, ai] }
     - { role: rtk, tags: [rtk, ai] }
+    - { role: codegraph, tags: [codegraph, ai] }
     - { role: onwatch, tags: [onwatch, ai] }
     - { role: openchamber, tags: [openchamber, ai, github] }
 
