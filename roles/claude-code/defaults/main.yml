@@ -1,0 +1,19 @@
+---
+claude_code_install_plugins: true
+
+claude_code_plugins:
+  - name: caveman
+    marketplace: JuliusBrussee/caveman
+    id: caveman@caveman
+  - name: gopls-lsp
+    marketplace: claude-plugins-official
+    id: gopls-lsp@claude-plugins-official
+  - name: typescript-lsp
+    marketplace: claude-plugins-official
+    id: typescript-lsp@claude-plugins-official
+  - name: rust-analyzer-lsp
+    marketplace: claude-plugins-official
+    id: rust-analyzer-lsp@claude-plugins-official
+  - name: frontend-design
+    marketplace: claude-plugins-official
+    id: frontend-design@claude-plugins-official

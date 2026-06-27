@@ -1,0 +1,68 @@
+---
+- name: Detect AMD GPU
+  ansible.builtin.shell: lspci | grep -iE 'AMD|Radeon|amdgpu'
+  register: amd_gpu_check
+  changed_when: false
+  failed_when: false
+
+- name: Skip ROCm setup (no AMD GPU detected)
+  ansible.builtin.debug:
+    msg: "No AMD GPU detected, skipping ROCm setup"
+  when: amd_gpu_check.rc != 0
+
+- name: Add ROCm repository
+  ansible.builtin.yum_repository:
+    name: ROCm
+    description: rocm
+    baseurl: https://repo.radeon.com/rocm/el9/latest/main/
+    gpgkey: https://repo.radeon.com/rocm/rocm.gpg.key
+    gpgcheck: true
+    enabled: true
+    priority: 50
+  become: true
+  when: amd_gpu_check.rc == 0
+
+- name: Add AMDGraphics repository
+  ansible.builtin.yum_repository:
+    name: AMDGraphics
+    description: rocmgraphics
+    baseurl: https://repo.radeon.com/graphics/latest/el/9.6/main/x86_64/
+    gpgkey: https://repo.radeon.com/rocm/rocm.gpg.key
+    gpgcheck: true
+    enabled: true
+    priority: 50
+  become: true
+  when: amd_gpu_check.rc == 0
+
+- name: Install ROCm packages
+  ansible.builtin.dnf:
+    name:
+      - rocm-opencl
+      - rocm-hip-sdk
+      - rocminfo
+      - rocm-smi-lib
+      - hipblaslt
+    state: present
+  become: true
+  when: amd_gpu_check.rc == 0
+
+- name: Add user to render and video groups
+  ansible.builtin.user:
+    name: "{{ user }}"
+    groups:
+      - render
+      - video
+    append: true
+  become: true
+  when: amd_gpu_check.rc == 0
+
+- name: Set ROCm environment variables
+  ansible.builtin.blockinfile:
+    path: /etc/environment
+    marker: "# {mark} ROCM"
+    block: |
+      ROC_ENABLE_PRE_VEGA=1
+      HSA_OVERRIDE_GFX_VERSION=
+    create: true
+  become: true
+  when: amd_gpu_check.rc == 0

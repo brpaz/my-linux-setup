@@ -1,0 +1,10 @@
+---
+- name: Install Podman
+  ansible.builtin.dnf:
+    name:
+      - podman
+      - podman-compose
+      - buildah
+      - skopeo
+    state: present
+  become: true

@@ -43,7 +43,7 @@
     - { role: zsh, tags: [core, zsh, shell] }
     - { role: starship, tags: [core, zsh, shell] }
 
-    # # =============================================
+    # # ========  community.general.npm=====================================
     # # Networking
     # # =============================================
     - { role: dns, tags: [dns, networking] }
@@ -178,6 +178,7 @@
     - { role: git, tags: [git, dev] }
     - { role: github-cli, tags: [github-cli, github, dev] }
     - { role: docker, tags: [docker, dev] }
+    - { role: podman, tags: [podman, dev] }
     - { role: java, tags: [java, dev, programming-language] }
     - { role: node, tags: [node, dev, programming-language] }
     - { role: python, tags: [python, dev, programming-language] }
@@ -236,6 +237,8 @@
     - { role: ngrok, tags: [ngrok, dev] }
     - { role: act, tags: [act, dev, github] }
     - { role: gitte, tags: [gitte, git, dev, flatpak] }
+    - { role: hunk, tags: [hunk, dev, github] }
+    - { role: ec, tags: [ec, dev, github] }
     # =============================================
     # CLI Tools
     # =============================================
@@ -331,7 +334,7 @@
     - { role: markdown-oxide, tags: [markdown-oxide, utitilies] }
     - { role: convertidor, tags: [convertidor, utilities, flatpak] }
     - { role: ghgrab, tags: [ghgrab, utilities, github] }
-
+    - { role: stencil, tags: [stencil, utilities, flatpak] }
     # =============================================
     # Games
     # =============================================
@@ -352,3 +355,9 @@
     # =============================================
     - { role: hyprland, tags: [hyprland, desktop] }
     - { role: noctalia, tags: [noctalia, shell] }
+
+    # =============================================
+    # Graphics
+    # =============================================
+    - { role: vulkan, tags: [vulkan, graphics] }
+    - { role: rocm, tags: [rocm, graphics, amd] }

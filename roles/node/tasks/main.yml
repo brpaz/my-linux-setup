@@ -25,7 +25,9 @@
   community.general.npm:
     global: true
     name: "{{ item }}"
+    state: latest
   with_items:
+    - corepack
     - pnpm
     - commitizen
     - conduct

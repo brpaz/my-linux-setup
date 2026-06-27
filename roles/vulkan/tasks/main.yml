@@ -1,0 +1,23 @@
+- name: Install Vulkan packages
+  ansible.builtin.dnf:
+    name:
+      # Core runtime
+      - vulkan-loader
+      - vulkan-loader-devel
+      # Diagnostic tools (vulkaninfo, vkcube)
+      - vulkan-tools
+      # Mesa ICD drivers (Intel + AMD + software)
+      - mesa-vulkan-drivers
+    state: present
+
+- name: Set VULKAN_SDK env var
+  ansible.builtin.lineinfile:
+    path: /etc/environment
+    line: "VULKAN_SDK=/usr"
+    create: true
+
+- name: Verify vulkaninfo works
+  ansible.builtin.command: vulkaninfo --summary
+  register: vulkan_check
+  changed_when: false
+  failed_when: vulkan_check.rc != 0

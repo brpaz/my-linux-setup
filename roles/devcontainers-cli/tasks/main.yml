@@ -3,3 +3,4 @@
   community.general.npm:
     name: "@devcontainers/cli"
     global: true
+    state: latest

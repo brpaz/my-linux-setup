@@ -1,6 +1,5 @@
----
 - name: Install
   community.general.npm:
-    name: "@openchamber/web"
+    name: hunkdiff
     state: latest
     global: true

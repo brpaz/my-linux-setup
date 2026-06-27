@@ -13,3 +13,19 @@
   args:
     creates: /usr/local/bin/claude
   changed_when: true
+
+- name: Install plugins
+  when: claude_code_install_plugins
+  block:
+    - name: Add marketplaces
+      ansible.builtin.shell: claude plugin marketplace add {{ item }}
+      loop: "{{ claude_code_plugins | map(attribute='marketplace') | unique | list }}"
+      args:
+        creates: "{{ ansible_env.HOME }}/.claude/plugins/marketplaces/{{ item }}"
+
+    - name: Install plugins
+      ansible.builtin.shell: claude plugin install {{ item.id }}
+      loop: "{{ claude_code_plugins }}"
+      loop_control:
+        label: "{{ item.name }}"
+      changed_when: true

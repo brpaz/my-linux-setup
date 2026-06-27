@@ -1,6 +1,5 @@
----
 - name: Install
   community.general.npm:
-    name: "@openchamber/web"
+    name: "@chojs23/ec"
     state: latest
     global: true
