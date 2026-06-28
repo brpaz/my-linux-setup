@@ -120,7 +120,7 @@
     - { role: codegraph, tags: [codegraph, ai] }
     - { role: onwatch, tags: [onwatch, ai] }
     - { role: openchamber, tags: [openchamber, ai, github] }
-
+    - { role: voxtype, tags: [voxtype, ai] }
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
