@@ -2,7 +2,7 @@
 - name: Start Container
   community.docker.docker_container:
     name: node-exporter
-    image: prom/node-exporter:v1.11.1
+    image: prom/node-exporter:v1.12.1
     command:
       - --path.procfs=/host/proc
       - --path.rootfs=/rootfs
