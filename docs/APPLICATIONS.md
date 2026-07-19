@@ -48,7 +48,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Heynote](https://github.com/heyman/heynote/) -  A dedicated scratchpad for developers
 * [TickTick](https://flathub.org/apps/details/com.ticktick.TickTick) - TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices.
 * [Iotas](https://flathub.org/apps/org.gnome.World.Iotas) - Iotas aims to provide distraction-free note taking via its mobile-first design.
-* [Planify](https://flathub.org/en/apps/io.github.alainm23.planify) - A simple and elegant task manager for GNOME.
+* [Reinschrift](https://flathub.org/en/apps/me.dumke.Reinschrift) - A GNOME to-do app that manages tasks as plain Markdown files, with Nextcloud/WebDAV sync.
 * [Gnome Calendar](https://wiki.gnome.org/Apps/Calendar) - Calendar application for GNOM
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/app.drey.Dialect) - A translation app for GNOME.
@@ -63,12 +63,16 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Typesetter](https://flathub.org/en/apps/net.trowell.typesetter) - Typesetter is a lightweight desktop application for creating beautiful documents with Typst.
 * [Apostrophe](https://flathub.org/en/apps/org.gnome.gitlab.somas.Apostrophe) - Focus on your writing with a clean, distraction-free markdown editor.
 * [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
+* [Tomatillo](https://flathub.org/en/apps/io.github.diegopvlk.Tomatillo) - A simple pomodoro timer app.
+* [Master PDF Editor](https://flathub.org/apps/com.codeindustry.masterpdfeditor) - Edit PDF content, fill and create forms, merge/split documents.
+* [Swifty Notes](https://flathub.org/apps/me.spaceinbox.swiftynotes) - A simple, elegant note-taking app.
 
 ---
 
 ### Internet
 
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
+* [Thunderbird](https://www.thunderbird.net/) - Free email application, easy to set up and customize.
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge) - Microsoft Edge is a web browser developed by Microsoft.
@@ -88,6 +92,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Notify](https://flathub.org/apps/com.ranfdev.Notify) - Receive notifications from ntfy.sh.
 * [Polari](https://flathub.org/apps/org.gnome.Polari) - Polari is a simple IRC client for GNOME. It allows you to connect to IRC channels and chat with other users.
 * [Archives](https://flathub.org/apps/dev.geopjr.Archives) - A simple tool for managing and extracting web archives.
+* [GNOME Web](https://apps.gnome.org/Epiphany/) - Epiphany, a simple, clean, beautiful GNOME web browser.
+* [Proton Mail](https://flathub.org/apps/me.proton.Mail) - Official desktop client for Proton Mail.
+* [Tuba](https://flathub.org/apps/dev.geopjr.Tuba) - Browse the Fediverse (Mastodon and compatible services).
+* [Wike](https://flathub.org/apps/com.github.hugolabe.Wike) - A Wikipedia reader with a clean and simple interface.
+* [RustConn](https://flathub.org/apps/io.github.totoshko88.RustConn) - A WireGuard/VPN connection manager.
 
 #### Web Apps
 
@@ -101,12 +110,17 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Networking
 
-- [Trayscale](https://flathub.org/apps/dev.deedles.Trayscale) -  Trayscale is an unofficial GUI interface for the Tailscale daemon particularly for use on Linux.
+- [Bouncer](https://flathub.org/apps/io.github.justinrdonnelly.bouncer) - An unofficial tray GUI for the Tailscale daemon on Linux.
 - [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
 - [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
 * [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 * [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
 * [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
+* [Wireshark](https://www.wireshark.org/) - The world's foremost and widely-used network protocol analyzer.
+* [Cloudflared](https://github.com/cloudflare/cloudflared) - Command-line client for Cloudflare Tunnel.
+* [IPLookup](https://flathub.org/apps/io.github.bytezz.IPLookup) - Look up detailed information about an IP address.
+* [Proxyman](https://proxyman.com/) - A modern web debugging proxy for inspecting HTTP/HTTPS traffic.
+* [Network Tools](https://en.wikipedia.org/wiki/Net-tools) - Bundle of core CLI network utilities: net-tools, traceroute, whois, nmap, iftop, tcpdump.
 
 ---
 
@@ -121,6 +135,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Curtail](https://flathub.org/apps/com.github.huluti.Curtail) - Optimize your images with Curtail, a useful image compressor that supports PNG, JPEG, WebP and SVG file types.
 * [OhMySVG](https://flathub.org/apps/details/com.github.rafaelmardojai.OhMySVG) - A simple SVG editor.
 * [Pigment](https://flathub.org/apps/com.jeffser.Pigment) - Pigment allows you to extract a palette of colors from your images offline. You can select the speed and accuracy by modifying the number and quality of colors.
+* [Avvie](https://flathub.org/apps/com.github.taiko2k.avvie) - Crop a circular avatar picture out of a source image.
+* [BoxySVG](https://flathub.org/apps/com.boxy_svg.BoxySVG) - A capable vector graphics editor for the web, desktop, and beyond.
+* [Defuse](https://flathub.org/apps/io.github.shonebinu.Defuse) - Inspect and strip metadata (EXIF, etc.) from files.
+* [Grim](https://sr.ht/~emersion/grim/) - A screenshot utility for Wayland compositors, paired with slurp for area selection.
+* [Satty](https://github.com/gabm/Satty) - A screenshot annotation tool for Wayland, for markup after capturing with Grim.
 
 ---
 ### Sound & Video
@@ -138,14 +157,20 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Kooha](https://flathub.org/apps/details/io.github.seadve.Kooha) - Elegantly record your screen.
 * [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) - Mousai is a simple application that can identify song similar to Shazam.
 * [Kodi](https://flathub.org/apps/details/tv.kodi.Kodi) - Kodi allows users to play and view videos, music, podcasts, and other digital media files from local storage, network storage and the internet.
-* [Reel](https://github.com/arsfeld/reel) - A modern GTK frontend for Plex and other media servers
 * [Blanket](https://flathub.org/apps/details/com.rafaelmardojai.Blanket) - Improve focus and increase your productivity by listening to different sounds.
 * [Parabolic](https://github.com/NickvisionApps/TubeConverter) - A basic yt-dlp frontend
 * [Amberol](https://flathub.org/apps/io.bassi.Amberol) - Amberol is a music player with no delusions of grandeur. If you just want to play music available on your local system then Amberol is the music player you are looking for.
 * [HandBrake](https://handbrake.fr/) - Open Source Video Transcoder
 * [Pipeline](https://flathub.org/apps/de.schmidhuberj.tubefeeder) - Pipeline lets you watch and download videos from YouTube and PeerTube, all without needing to navigate through different websites.
-* [Nocturne](https://github.com/Jeffser/Nocturne) - Nocturne is a Navidrome / Subsonic client that brings all your music together in one place, Nocturne not only connects to existing instances but it's capable of installing and managing it's own Navidrome instance
 * [Scramble](https://flathub.org/en/apps/io.github.tobagin.scramble) - Scramble is a simple, privacy-focused utility for viewing and removing metadata from images.
+* [Mimick](https://flathub.org/en/apps/dev.nicx.mimick) - Mimick is a native Linux desktop client for self-hosted Immich servers. It monitors your folders in the background and automatically syncs photos and videos to your server.
+* [Blender](https://flathub.org/apps/org.blender.Blender) - Free and open source 3D creation suite.
+* [Gelly](https://github.com/Fingel/gelly) - A native music client for Jellyfin and Navidrome/Subsonic.
+* [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - A native GTK4 client for Jellyfin media servers.
+* [BlueRecorder](https://flathub.org/apps/sa.sy.bluerecorder) - A simple audio/screen recorder for GNOME.
+* [Sound Recorder](https://flathub.org/apps/org.gnome.SoundRecorder) - A simple and modern sound recorder for GNOME.
+* [Spotube](https://flathub.org/apps/com.github.KRTirtho.Spotube) - An open-source, cross-platform Spotify client that doesn't require Premium.
+* [Komikku](https://flathub.org/apps/info.febvre.Komikku) - Read manga and comics from various online sources.
 
 ---
 
@@ -168,6 +193,11 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Seabird](https://flathub.org/apps/dev.skynomads.Seabird) - Seabird is a Kubernetes IDE designed for the GNOME desktop. Explore and manage your clusters with a simple and intuitive interface.
 * [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
 * [PvTUI](https://github.com/devnullvoid/pvtui) - A terminal-based tool for managing Proxmox VE clusters.
+* [Beekeeper Studio](https://www.beekeeperstudio.io/) - A modern, easy to use SQL client for MySQL, Postgres, and more.
+* [Gitte](https://flathub.org/apps/de.wwwtech.gitte) - A simple Git client for GNOME.
+* [Sonar](https://flathub.org/apps/io.github.tobagin.sonar) - A native webhook debugging tool with instant public URLs via ngrok integration.
+* [Zeal](https://flathub.org/apps/org.zealdocs.Zeal) - Offline documentation browser, similar to Dash.
+* [Pods](https://flathub.org/apps/com.github.marhkb.Pods) - A native GTK4/libadwaita client to manage Podman containers, pods, and images.
 
 ---
 
@@ -205,6 +235,18 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [GNOME Network Displays](https://flathub.org/apps/org.gnome.NetworkDisplays) - GNOME Network Displays allows you to cast your desktop to a remote display. Supports the Miracast and Chromecast protocols.
 - [DistroShelf](https://flathub.org/en/apps/com.ranfdev.DistroShelf) - Graphical interface for managing Distrobox containers
 - [Gnome Extensions Manager](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager) - Manage GNOME Shell extensions.
+- [BleachBit](https://flathub.org/apps/org.bleachbit.BleachBit) - Delete unnecessary files to free disk space and maintain privacy.
+- [Convertidor](https://flathub.org/apps/tech.digiroad.Convertidor) - A simple unit converter for GNOME.
+- [Currency Converter](https://flathub.org/apps/io.github.idevecore.CurrencyConverter) - A simple currency converter app.
+- [Kiwix](https://flathub.org/apps/org.kiwix.desktop) - Offline reader for Wikipedia and other web content, packaged as ZIM files.
+- [Overstride](https://flathub.org/apps/io.github.kaii_lb.overskride) - A modern Bluetooth manager for GNOME (Overskride).
+- [GNOME Weather](https://flathub.org/apps/org.gnome.Weather) - Access current weather conditions and forecasts.
+- [Stencil](https://flathub.org/apps/me.fouquet.Stencil) - Batch file renamer: build a rename queue from stackable operations with live preview.
+- [Tactics](https://flathub.org/apps/io.gitlab.leesonwai.Tactics) - Build and share football/soccer lineups and formations.
+- [Libvirt / virt-manager](https://virt-manager.org/) - Toolchain (libvirt, QEMU/KVM, virt-manager) for managing local virtual machines.
+- [Restic](https://restic.net/) - Fast, secure, efficient backup program, wired up here with systemd timers.
+- [Snapper](http://snapper.io/) - Command-line and dnf-integrated tool for Btrfs/LVM snapshot management.
+- [ydotool](https://github.com/ReimuNotMoe/ydotool) - Generic command-line automation tool for Linux input devices (type, click, etc.), Wayland-friendly.
 
 ---
 
@@ -216,6 +258,10 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [rtk](https://github.com/rtk-ai/rtk) - CLI proxy that reduces LLM token consumption by 60-90% on common dev commands
 - [onwatch](https://onwatch.onllm.dev/) - Track usage and reset windows across Anthropic, Codex, Synthetic, Z.ai, Copilot, MiniMax, Gemini CLI, and Antigravit
 - [ollama](https://ollama.com/) - Start building with open models
+- [CodeGraph](https://github.com/colbymchenry/codegraph) - Builds a semantic knowledge graph of a codebase for faster, smarter code exploration by AI agents.
+- [OpenChamber](https://github.com/openchamber/openchamber) - Desktop and web interface for the OpenCode AI agent.
+- [Voxtype](https://github.com/peteonrails/voxtype) - Local, CPU-based voice-to-text with push-to-talk hotkeys, no cloud dependency.
+- [sgpt](https://github.com/tbckr/sgpt) - CLI tool to query LLMs, generate shell commands and code, directly from the terminal.
 
 ---
 
@@ -267,6 +313,9 @@ I use ZSH shell with the following extras:
 * [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.
 * [tv](https://github.com/alexpasmantier/television) - A portable and hackable fuzzy finder for the terminal.
 * [serpl](https://github.com/yassinebridi/serpl) - A simple terminal UI for search and replace, ala VS Code.
+* [shellcheck](https://www.shellcheck.net/) - A static analysis tool for shell scripts.
+* [shfmt](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter.
+* [yamllint](https://github.com/adrienverge/yamllint) - A linter for YAML files.
 
 ### Multimedia
 
@@ -275,6 +324,7 @@ I use ZSH shell with the following extras:
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
 * [asciinema](https://asciinema.org/) - Record and share your terminal sessions, the right way
 * [gifski](https://gif.ski/) - Command-line tool for converting videos to GIFs
+* [beets](https://beets.io/) - The music geek's music library organizer.
 
 ### Http Tools
 
@@ -296,6 +346,8 @@ I use ZSH shell with the following extras:
 * [goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
 * [conduct](https://www.npmjs.com/package/conduct) - Generate a code of conduct file for your project.
 * [Forgejo cli](https://codeberg.org/forgejo-contrib/forgejo-cli)
+* [hunk](https://github.com/aweary/hunkdiff) - A visual, interactive git diff tool for the terminal.
+* [Radicle](https://radicle.xyz/) - Open source, peer-to-peer code collaboration and code forge, built on Git.
 
 ### Scaffolding tools
 
@@ -317,13 +369,15 @@ I use ZSH shell with the following extras:
 * [AWS CLI](https://aws.amazon.com/cli) - AWS Command Line Interface.
 * [cloudflare-cli](https://github.com/danielpigott/cloudflare-cli) - CLI for interacting with Cloudflare
 * [hetznercloud/cli](https://github.com/hetznercloud/cli) - A command-line interface for Hetzner Cloud
+* [rclone](https://rclone.org/) - Command-line program to manage files on cloud storage.
 
 ### Docker Tools
 
 * [compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker
 * [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 * [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics
-* [dive](https://github.com/wagoodman/dive) - A tool for exploring each layer in a docker image
+* [LayerX](https://github.com/deveshctl/layerx) - TUI to inspect Docker/Podman/OCI images layer-by-layer and spot wasted bytes.
+* [D4S](https://github.com/jr-k/d4s) - A fast, keyboard-driven TUI to manage Docker containers, Compose stacks, and Swarm services, K9s-style.
 
 ### Kubernetes
 
@@ -336,6 +390,8 @@ I use ZSH shell with the following extras:
 * [flux](https://github.com/fluxcd/flux) - Flux Command line tool.
 * [helm](https://helm.sh/) - The package manager for Kubernetes.
 * [stern](https://github.com/stern/stern) -  Multi pod and container log tailing for Kubernetes
+* [flux9s](https://github.com/dgunzy/flux9s) - A K9s-style terminal UI for FluxCD resources.
+* [kubectl-cnpg](https://cloudnative-pg.io/) - kubectl plugin for managing CloudNativePG Postgres clusters.
 
 ## Infrastucture As Code
 
@@ -364,6 +420,15 @@ I use ZSH shell with the following extras:
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
 - [csvlens](https://github.com/YS-L/csvlens) - A command-line tool for viewing and filtering CSV files.
+- [dust](https://github.com/bootandy/dust) - A more intuitive version of du, with a TUI tree view of disk usage.
+- [posting](https://posting.sh/) - A modern, keyboard-driven API client that lives in your terminal.
+- [openapi-tui](https://github.com/zaghaghi/openapi-tui) - A TUI to explore and call OpenAPI/Swagger-defined endpoints from the terminal.
+- [brightnessctl](https://github.com/Hummer12007/brightnessctl) - Lightweight brightness control tool.
+- [bluetuith](https://github.com/bluetuith-org/bluetuith) - A TUI Bluetooth connection manager.
+- [hostctl](https://github.com/guumaster/hostctl) - Manage /etc/hosts profiles with ease.
+- [netscanner](https://github.com/w-yv/netscanner) - A TUI network scanner: discover devices, ports, and services.
+- [ouch](https://github.com/ouch-org/ouch) - Painless compression and decompression for the command line.
+- [systemctl-tui](https://github.com/rgwood/systemctl-tui) - A TUI for interacting with systemd services.
 
 ### Other
 
@@ -376,12 +441,14 @@ I use ZSH shell with the following extras:
 * [markdownlint](https://github.com/markdownlint/markdownlint) - Markdown lint tool
 * [nak](https://github.com/fiatjaf/nak) - a command line tool for doing all things nostr.
 * [regex-tui](https://github.com/vitor-mariano/regex-tui) - A simple TUI to visualize regular expressions right in your terminal.
+* [Graphviz](https://graphviz.org/) - Open source graph visualization software.
 
 ### Development tools
 
 - [devenv](https://devenv.sh/) - A tool for creating and managing development environments.
 - [holesail](https://holesail.io/) - Peer to Peer tunnels for Instant Access.
 - [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+- [mise](https://mise.jdx.dev/) - Polyglot runtime and tool version manager (asdf alternative), also handles env vars and task running.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
 * [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
@@ -392,6 +459,17 @@ I use ZSH shell with the following extras:
 - [redis-tui](https://github.com/redis-tui/redis-tui) - TUI for interacting with Redis
 - [ktea](https://github.com/jonas-grgt/ktea) - TUI for interacting with Kafka
 - [nats-tui](https://pypi.org/project/nats-tui/) - TUI for NATS Messaging service
+- [algokit](https://github.com/algorandfoundation/algokit-cli) - The Algorand development kit CLI.
+- [devcontainers-cli](https://github.com/devcontainers/cli) - Reference implementation for the Dev Container spec.
+- [eget](https://github.com/zyedidia/eget) - Easily install pre-built binaries from GitHub releases.
+- [ghgrab](https://github.com/abhixdd/ghgrab) - Download release binaries from GitHub repos.
+- [lazyenv](https://github.com/lazynop/lazyenv) - A TUI for managing environment variables.
+- [lazyssh](https://github.com/Adembc/lazyssh) - A TUI SSH connection manager.
+- [ngrok](https://ngrok.com/) - Expose local servers to the internet with secure tunnels.
+- [omnyssh](https://github.com/timhartmann7/omnyssh) - A keyboard-driven TUI for managing SSH connections, servers, monitoring and file transfer.
+- [sqlit](https://github.com/joeychilson/sqlit) - A TUI for running SQL queries.
+- [turbolift](https://github.com/Skyscanner/turbolift) - Tool for making large-scale code changes across many repositories.
+- [pgcli / mycli](https://www.pgcli.com/) - Postgres and MySQL command-line clients with auto-completion and syntax highlighting.
 
 ## Development Runtimes
 

@@ -1,0 +1,21 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: bootandy
+    repo: dust
+    token: "{{ github_token }}"
+  register: dust_release
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/bootandy/dust/releases/download/{{ dust_release.tag }}/dust-{{ dust_release.tag }}-x86_64-unknown-linux-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/dust-{{ dust_release.tag }}-x86_64-unknown-linux-gnu/dust"
+    dest: "{{ bin_dir }}/dust"
+    mode: a+x
+  become: true

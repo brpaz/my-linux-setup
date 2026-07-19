@@ -1,0 +1,5 @@
+---
+- name: Avvie
+  community.general.flatpak:
+    name: org.torproject.torbrowser-launcher
+    state: present

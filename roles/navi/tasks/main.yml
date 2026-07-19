@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: denisidoro
+    repo: navi
+    token: "{{ github_token }}"
+  register: navi_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/denisidoro/navi/releases/download/{{ navi_release.tag }}/navi-{{ navi_release.tag }}-x86_64-unknown-linux-musl.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/navi"
+    dest: "{{ bin_dir }}/navi"
+    mode: a+x
+  become: true

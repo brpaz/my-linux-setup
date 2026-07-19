@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: timhartmann7
+    repo: omnyssh
+    token: "{{ github_token }}"
+  register: eget_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/timhartmann7/omnyssh/releases/download/v1.0.4/omny-x86_64-unknown-linux-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/omny"
+    dest: "{{ bin_dir }}/omny"
+    mode: a+x
+  become: true

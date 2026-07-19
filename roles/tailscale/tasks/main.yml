@@ -12,3 +12,8 @@
     name: tailscale
     state: present
   become: true
+
+- name: Install Trayscale
+  community.general.flatpak:
+    name: dev.deedles.Trayscale
+    state: present

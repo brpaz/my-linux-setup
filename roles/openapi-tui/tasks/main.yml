@@ -1,0 +1,21 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: zaghaghi
+    repo: openapi-tui
+    token: "{{ github_token }}"
+  register: openapi_tui_release
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/zaghaghi/openapi-tui/releases/download/{{ openapi_tui_release.tag }}/openapi-tui-{{ openapi_tui_release.tag }}-linux-x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/openapi-tui"
+    dest: "{{ bin_dir }}/openapi-tui"
+    mode: a+x
+  become: true

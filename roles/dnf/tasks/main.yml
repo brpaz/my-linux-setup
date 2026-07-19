@@ -23,5 +23,6 @@
       - ncdu
       - tree
       - figlet
+      - nautilus-open-any-terminal
     state: present
   become: true

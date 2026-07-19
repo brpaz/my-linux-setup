@@ -11,8 +11,6 @@
     url: "https://github.com/evilsocket/opensnitch/releases/download/{{ opensnitch_release.tag }}/opensnitch-{{ opensnitch_release.tag[0] }}-1.x86_64.rpm"
     dest: "{{ setup_dir }}/opensnitch.rpm"
     mode: "0644"
-    headers:
-      Authorization: "token {{ github_token }}"
   register: opensnitch_download_result
 
 - name: Install

@@ -1,0 +1,22 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: Adembc
+    repo: lazyssh
+    token: "{{ github_token }}"
+  register: lazyssh_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/Adembc/lazyssh/releases/download/{{ lazyssh_release.tag }}/lazyssh_Linux_x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/lazyssh"
+    dest: "{{ bin_dir }}/lazyssh"
+    mode: a+x
+  become: true

@@ -1,5 +1,5 @@
 ---
-- name: Pitivi
+- name: Reinschrift
   community.general.flatpak:
-    name: io.github.alainm23.planify
+    name: me.dumke.Reinschrift
     state: present

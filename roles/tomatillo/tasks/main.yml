@@ -1,0 +1,5 @@
+---
+- name: Tomatillo
+  community.general.flatpak:
+    name: io.github.diegopvlk.Tomatillo
+    state: present

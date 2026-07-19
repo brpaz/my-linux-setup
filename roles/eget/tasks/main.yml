@@ -1,0 +1,24 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: zyedidia
+    repo: eget
+    token: "{{ github_token }}"
+  register: eget_release
+
+- name: Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/zyedidia/eget/releases/download/{{ eget_release.tag }}/eget-{{ eget_release.tag[1:] }}-linux_amd64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/eget"
+    dest: "{{ bin_dir }}/eget"
+    mode: a+x
+  become: true

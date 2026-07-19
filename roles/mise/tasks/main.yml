@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: jdx
+    repo: mise
+    token: "{{ github_token }}"
+  register: mise_release
+
+- name: Install
+  ansible.builtin.get_url:
+    url: "https://github.com/jdx/mise/releases/download/{{ mise_release.tag }}/mise-{{ mise_release.tag }}-linux-x64"
+    dest: "{{ bin_dir }}/mise"
+    mode: a+x
+  become: true

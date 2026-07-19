@@ -1,0 +1,6 @@
+---
+- name: Thunderbird | Install
+  ansible.builtin.package:
+    name: thunderbird
+    state: present
+  become: true

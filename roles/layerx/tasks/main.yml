@@ -1,0 +1,21 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: deveshctl
+    repo: layerx
+    token: "{{ github_token }}"
+  register: layerx_release
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/deveshctl/layerx/releases/download/{{ layerx_release.tag }}/layerx_linux_amd64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/layerx"
+    dest: "{{ bin_dir }}/layerx"
+    mode: a+x
+  become: true

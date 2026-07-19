@@ -1,5 +1,5 @@
 ---
-- name: Ntfyr
+- name: Pods
   community.general.flatpak:
-    name: io.github.tobagin.Ntfyr
+    name: com.github.marhkb.Pods
     state: present

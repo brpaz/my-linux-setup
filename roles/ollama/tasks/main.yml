@@ -1,0 +1,77 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: ollama
+    repo: ollama
+    token: "{{ github_token }}"
+  register: ollama_release
+
+- name: Create install dir
+  ansible.builtin.file:
+    path: /usr/lib/ollama
+    state: directory
+    mode: "0755"
+  become: true
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/ollama/ollama/releases/download/{{ ollama_release.tag }}/ollama-linux-amd64.tar.zst"
+    dest: /usr/lib/ollama
+    remote_src: true
+  become: true
+
+- name: Symlink binary
+  ansible.builtin.file:
+    src: /usr/lib/ollama/bin/ollama
+    dest: "{{ bin_dir }}/ollama"
+    state: link
+    force: true
+  become: true
+
+- name: Create ollama group
+  ansible.builtin.group:
+    name: ollama
+    system: true
+  become: true
+
+- name: Create ollama user
+  ansible.builtin.user:
+    name: ollama
+    system: true
+    shell: /usr/sbin/nologin
+    home: /usr/share/ollama
+    create_home: true
+    group: ollama
+    groups: render,video
+    append: true
+  become: true
+
+- name: Create systemd service
+  ansible.builtin.copy:
+    dest: /etc/systemd/system/ollama.service
+    mode: "0644"
+    content: |
+      [Unit]
+      Description=Ollama Service
+      After=network-online.target
+
+      [Service]
+      ExecStart={{ bin_dir }}/ollama serve
+      User=ollama
+      Group=ollama
+      Restart=always
+      RestartSec=3
+      Environment="PATH={{ ansible_env.PATH }}"
+
+      [Install]
+      WantedBy=default.target
+  become: true
+
+- name: Start service
+  ansible.builtin.systemd:
+    name: ollama
+    state: started
+    enabled: true
+    daemon_reload: true
+  become: true
