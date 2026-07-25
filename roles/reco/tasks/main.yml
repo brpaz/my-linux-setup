@@ -1,4 +1,0 @@
-- name: Install
-  community.general.flatpak:
-    name: com.github.ryonakano.reco
-    state: present

@@ -1,0 +1,20 @@
+---
+- name: Fj | Get latest release
+  forgejo_release:
+    action: latest_release
+    owner: forgejo-contrib
+    repo: forgejo-cli
+  register: fj_release
+
+- name: Fj | Download Tarball
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: "https://codeberg.org/forgejo-contrib/forgejo-cli/releases/download/{{ fj_release.tag }}/forgejo-cli-x86_64-linux.tar.gz"
+
+- name: Fj | Install binary
+  ansible.builtin.copy:
+    dest: "{{ bin_dir }}/fj"
+    mode: a+x
+    src: "{{ setup_dir }}/fj"
+  become: true
