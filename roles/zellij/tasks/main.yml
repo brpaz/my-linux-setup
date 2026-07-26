@@ -14,3 +14,19 @@
     remote_src: true
     mode: a+x
   become: true
+
+# zellij-cleanup itself is deployed via dotfiles to ~/bin/zellij-cleanup
+- name: Create zellij-cleanup systemd unit files
+  ansible.builtin.template:
+    dest: "{{ ansible_env.HOME }}/.config/systemd/user/{{ item }}"
+    mode: "0644"
+    src: "{{ item }}.j2"
+  loop:
+    - zellij-cleanup.service
+    - zellij-cleanup.timer
+
+- name: Reload systemd
+  ansible.builtin.systemd:
+    daemon_reload: true
+  become: true
+# - msg: "Run 'systemctl --user enable --now zellij-cleanup.timer' to enable and start the cleanup timer"

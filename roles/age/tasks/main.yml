@@ -1,0 +1,26 @@
+---
+- name: Age | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: FiloSottile
+    repo: age
+    token: "{{ github_token }}"
+  register: age_release
+
+- name: Age | Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/FiloSottile/age/releases/download/{{ age_release.tag }}/age-{{ age_release.tag }}-linux-amd64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Age | Install binaries
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/age/{{ item }}"
+    dest: "{{ bin_dir }}/{{ item }}"
+    mode: a+x
+    remote_src: true
+  loop:
+    - age
+    - age-keygen
+  become: true

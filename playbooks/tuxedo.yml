@@ -259,6 +259,7 @@
     - { role: rigrep, tags: [rigrep, github, cli] }
     - { role: sd, tags: [sd, cli, github] }
     - { role: jq, tags: [jq, cli, dev, github] }
+    - { role: just, tags: [just, cli, dev, github] }
     - { role: yq, tags: [yq, github, cli] }
     - { role: yamllint, tags: [yamllint, cli] }
     - { role: glow, tags: [glow, github, cli] }
@@ -268,6 +269,7 @@
     - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
+    - { role: age, tags: [age, dev, github, cli] }
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
     - { role: lazygit, tags: [lazygit, dev, github] }

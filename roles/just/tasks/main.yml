@@ -1,0 +1,23 @@
+---
+- name: Just | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: casey
+    repo: just
+    token: "{{ github_token }}"
+  register: just_release
+
+- name: Just | Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/casey/just/releases/download/{{ just_release.tag }}/just-{{ just_release.tag }}-x86_64-unknown-linux-musl.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Just | Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/just"
+    dest: "{{ bin_dir }}/just"
+    mode: a+x
+    remote_src: true
+  become: true

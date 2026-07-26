@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete zellij exited sessions older than 30 days
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/zellij-cleanup 30 --force
