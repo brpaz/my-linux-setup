@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: herdrdev
+    repo: herdr
+    token: "{{ github_token }}"
+  register: herdr_release
+
+- name: Download
+  ansible.builtin.get_url:
+    url: "https://github.com/herdrdev/herdr/releases/download/{{ herdr_release.tag }}/herdr-linux-x86_64"
+    dest: "{{ bin_dir }}/herdr"
+    mode: a+x
+  become: true

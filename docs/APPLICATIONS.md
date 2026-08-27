@@ -461,6 +461,7 @@ I use ZSH shell with the following extras:
 - [nats-tui](https://pypi.org/project/nats-tui/) - TUI for NATS Messaging service
 - [algokit](https://github.com/algorandfoundation/algokit-cli) - The Algorand development kit CLI.
 - [devcontainers-cli](https://github.com/devcontainers/cli) - Reference implementation for the Dev Container spec.
+- [herdr](https://herdr.dev) - The runtime your coding agents live on.
 - [eget](https://github.com/zyedidia/eget) - Easily install pre-built binaries from GitHub releases.
 - [ghgrab](https://github.com/abhixdd/ghgrab) - Download release binaries from GitHub repos.
 - [lazyenv](https://github.com/lazynop/lazyenv) - A TUI for managing environment variables.
@@ -470,6 +471,7 @@ I use ZSH shell with the following extras:
 - [sqlit](https://github.com/joeychilson/sqlit) - A TUI for running SQL queries.
 - [turbolift](https://github.com/Skyscanner/turbolift) - Tool for making large-scale code changes across many repositories.
 - [pgcli / mycli](https://www.pgcli.com/) - Postgres and MySQL command-line clients with auto-completion and syntax highlighting.
+- [tuicr](https://tuicr.dev/) - A code review TUI with vim keybindings.
 
 ## Development Runtimes
 

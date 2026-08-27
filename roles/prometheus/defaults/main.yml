@@ -1,3 +1,0 @@
----
-prometheus_version: "v3.1.0"
-prometheus_domain: "prometheus.localhost"

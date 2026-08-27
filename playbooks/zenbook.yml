@@ -80,6 +80,8 @@
     - { role: yazi, tags: [yazi, terminal, github] }
     - { role: tailspin, tags: [tailspin, terminal, github] }
     - { role: lazygit, tags: [lazygit, cli, github] }
+    - { role: tuicr, tags: [tuicr, cli, github] }
+    - { role: herdr, tags: [herdr, cli, github] }
     - { role: lazyjournal, tags: [lazyjournal, cli] }
     - { role: lazydocker, tags: [lazydocker, cli, github] }
     - { role: fd, tags: [fd, cli] }

@@ -273,6 +273,8 @@
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
     - { role: lazygit, tags: [lazygit, dev, github] }
+    - { role: tuicr, tags: [tuicr, dev, github] }
+    - { role: herdr, tags: [herdr, dev, github] }
     - { role: lazysql, tags: [lazysql, cli, github] }
     - { role: asciinema, tags: [asciinema, cli, github] }
     - { role: copier, tags: [copier, utilities] }
