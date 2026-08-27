@@ -124,6 +124,7 @@
     - { role: onwatch, tags: [onwatch, ai] }
     - { role: openchamber, tags: [openchamber, ai, github] }
     - { role: voxtype, tags: [voxtype, ai] }
+    - { role: pi, tags: [pi, ai, github] }
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
@@ -142,6 +143,7 @@
     - { role: pitivi, tags: [pitivi, audio_video, flatpak] }
     - { role: sound-recorder, tags: [sound-recorder, audio_video] }
     - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
+    - { role: open-tv, tags: [open-tv, audio_video, flatpak] }
     - { role: shortwave, tags: [shortwave, audio_video] }
     - { role: tubeconverter, tags: [tubeconverter, audio_video] }
     - { role: xnconvert, tags: [xnconvert, audio_vide] }

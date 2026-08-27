@@ -171,6 +171,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Sound Recorder](https://flathub.org/apps/org.gnome.SoundRecorder) - A simple and modern sound recorder for GNOME.
 * [Spotube](https://flathub.org/apps/com.github.KRTirtho.Spotube) - An open-source, cross-platform Spotify client that doesn't require Premium.
 * [Komikku](https://flathub.org/apps/info.febvre.Komikku) - Read manga and comics from various online sources.
+* [Open TV](https://flathub.org/en/apps/dev.fredol.open-tv) - IPTV player supporting M3U playlists and Xtream codes.
 
 ---
 
@@ -262,6 +263,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [OpenChamber](https://github.com/openchamber/openchamber) - Desktop and web interface for the OpenCode AI agent.
 - [Voxtype](https://github.com/peteonrails/voxtype) - Local, CPU-based voice-to-text with push-to-talk hotkeys, no cloud dependency.
 - [sgpt](https://github.com/tbckr/sgpt) - CLI tool to query LLMs, generate shell commands and code, directly from the terminal.
+- [pi](https://github.com/earendil-works/pi) - A coding agent CLI.
 
 ---
 

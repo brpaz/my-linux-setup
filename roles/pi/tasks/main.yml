@@ -1,0 +1,31 @@
+---
+- name: Pi | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: earendil-works
+    repo: pi
+    token: "{{ github_token }}"
+  register: pi_release
+
+- name: Pi | Ensure install directory exists
+  ansible.builtin.file:
+    path: /opt/pi
+    state: directory
+    mode: "0755"
+  become: true
+
+- name: Pi | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/earendil-works/pi/releases/download/{{ pi_release.tag }}/pi-linux-x64.tar.gz"
+    dest: /opt/pi
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+  become: true
+
+- name: Pi | Install
+  ansible.builtin.file:
+    src: /opt/pi/pi
+    dest: "{{ bin_dir }}/pi"
+    state: link
+  become: true

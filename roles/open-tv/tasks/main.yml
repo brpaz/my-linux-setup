@@ -1,0 +1,5 @@
+---
+- name: Open TV
+  community.general.flatpak:
+    name: dev.fredol.open-tv
+    state: present
