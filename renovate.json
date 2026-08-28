@@ -1,14 +1,31 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:recommended"
-    ],
-    "prHourlyLimit": 5,
-    "prConcurrentLimit": 20,
-    "labels": [
-        "dependencies"
-    ],
-    "reviewers": [
-        "brpaz"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "prHourlyLimit": 5,
+  "prConcurrentLimit": 20,
+  "labels": [
+    "dependencies"
+  ],
+  "reviewers": [
+    "brpaz"
+  ],
+  "minimumReleaseAge": "3 days",
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "github-actions"
+    }
+  ]
 }
