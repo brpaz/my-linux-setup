@@ -1,0 +1,21 @@
+---
+- name: Testx | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: whoisdinanath
+    repo: testx
+    token: "{{ github_token }}"
+  register: testx_release
+
+- name: Testx | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/whoisdinanath/testx/releases/download/{{ testx_release.tag }}/testx-{{ testx_release.tag }}-linux-x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+
+- name: Testx | Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/testx"
+    dest: "{{ bin_dir }}/testx"
+    mode: a+x
+  become: true

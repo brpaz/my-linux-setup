@@ -474,6 +474,7 @@ I use ZSH shell with the following extras:
 - [turbolift](https://github.com/Skyscanner/turbolift) - Tool for making large-scale code changes across many repositories.
 - [pgcli / mycli](https://www.pgcli.com/) - Postgres and MySQL command-line clients with auto-completion and syntax highlighting.
 - [tuicr](https://tuicr.dev/) - A code review TUI with vim keybindings.
+- [testx](https://github.com/whoisdinanath/testx) - Universal test runner with auto-detection for 11 languages.
 
 ## Development Runtimes
 

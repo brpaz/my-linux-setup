@@ -31,7 +31,7 @@
 
 - name: Add current user to the Ollama group
   ansible.builtin.user:
-    name: "{{ ansible_env.USER }}"
+    name: "{{ ansible_facts.env.USER }}"
     groups: ollama
     append: true
   become: true

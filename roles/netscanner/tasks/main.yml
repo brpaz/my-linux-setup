@@ -15,4 +15,4 @@
   ansible.builtin.command:
     cmd: cargo install netscanner
   args:
-    creates: /{{ ansible_env.HOME }}/.cargo/bin/netscanner
+    creates: /{{ ansible_facts.env.HOME }}/.cargo/bin/netscanner

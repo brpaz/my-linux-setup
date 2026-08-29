@@ -26,14 +26,14 @@
 
 - name: Ensure nixpkgs config directory exists
   ansible.builtin.file:
-    path: "{{ ansible_env.HOME }}/.config/nixpkgs"
+    path: "{{ ansible_facts.env.HOME }}/.config/nixpkgs"
     state: directory
     mode: "0755"
 
 - name: Configure NUR
   ansible.builtin.template:
     src: nixpkgs.config.nix.j2
-    dest: "{{ ansible_env.HOME }}/.config/nixpkgs/config.nix"
+    dest: "{{ ansible_facts.env.HOME }}/.config/nixpkgs/config.nix"
     mode: "0644"
 
 - name: Alejandra | Get latest release

@@ -9,6 +9,6 @@
 
 - name: Set as default shell
   ansible.builtin.user:
-    name: "{{ ansible_env.USER }}"
+    name: "{{ ansible_facts.env.USER }}"
     shell: /usr/bin/zsh
   become: true

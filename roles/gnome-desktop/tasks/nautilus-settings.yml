@@ -14,10 +14,10 @@
 - name: Nautilus | Ensure Templates folder exists
   ansible.builtin.file:
     mode: "0755"
-    path: "{{ ansible_env.HOME }}/Templates"
+    path: "{{ ansible_facts.env.HOME }}/Templates"
     state: directory
 - name: Nautilus | Install new file templates
   ansible.builtin.copy:
-    dest: "{{ ansible_env.HOME }}/Templates"
+    dest: "{{ ansible_facts.env.HOME }}/Templates"
     mode: "0755"
     src: nautilus/templates

@@ -10,4 +10,4 @@
     argv:
       - "{{ setup_dir }}/rustup-init.sh"
       - -y
-    creates: "{{ ansible_env.HOME }}/.cargo/bin/rustup"
+    creates: "{{ ansible_facts.env.HOME }}/.cargo/bin/rustup"

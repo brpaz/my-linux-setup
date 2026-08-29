@@ -2,4 +2,4 @@
 - name: Install
   ansible.builtin.command:
     cmd: nix profile install nixpkgs#devenv
-    creates: "{{ ansible_env.HOME }}/.nix-profile/bin/devenv"
+    creates: "{{ ansible_facts.env.HOME }}/.nix-profile/bin/devenv"

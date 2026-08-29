@@ -10,12 +10,12 @@
 - name: Ensure Local Fonts folder exists
   ansible.builtin.file:
     mode: "0755"
-    path: "{{ ansible_env.HOME }}/.local/share/fonts"
+    path: "{{ ansible_facts.env.HOME }}/.local/share/fonts"
     state: directory
 
 - name: Copy Fonts
   ansible.builtin.copy:
-    dest: "{{ ansible_env.HOME }}/.local/share"
+    dest: "{{ ansible_facts.env.HOME }}/.local/share"
     mode: "0755"
     src: fonts
 

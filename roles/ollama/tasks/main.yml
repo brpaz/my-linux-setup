@@ -62,7 +62,7 @@
       Group=ollama
       Restart=always
       RestartSec=3
-      Environment="PATH={{ ansible_env.PATH }}"
+      Environment="PATH={{ ansible_facts.env.PATH }}"
 
       [Install]
       WantedBy=default.target

@@ -251,6 +251,7 @@
     - { role: lazyssh, tags: [lazyssh, dev, github] }
     - { role: navi, tags: [navi, dev, github] }
     - { role: fj, tags: [fj, dev, codeberg] }
+    - { role: testx, tags: [testx, dev, cli, github] }
     # =============================================
     # CLI Tools
     # =============================================
