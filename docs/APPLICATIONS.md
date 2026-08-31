@@ -416,13 +416,13 @@ I use ZSH shell with the following extras:
 * [fkill-cli](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes. Cross-platform.
 * [trash-cli](https://github.com/sindresorhus/trash-cli) - Move files and folders to the trash.
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
-* [ncdu](https://linux.die.net/man/1/ncdu) - Disk usage visualization from terminal.
 * [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
 * [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
 - [csvlens](https://github.com/YS-L/csvlens) - A command-line tool for viewing and filtering CSV files.
 - [dust](https://github.com/bootandy/dust) - A more intuitive version of du, with a TUI tree view of disk usage.
+- [gdu](https://github.com/dundee/gdu) - Fast disk usage analyzer with a TUI, written in Go.
 - [posting](https://posting.sh/) - A modern, keyboard-driven API client that lives in your terminal.
 - [openapi-tui](https://github.com/zaghaghi/openapi-tui) - A TUI to explore and call OpenAPI/Swagger-defined endpoints from the terminal.
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) - Lightweight brightness control tool.

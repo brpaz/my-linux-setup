@@ -12,6 +12,7 @@
     src: "https://github.com/dundee/gdu/releases/download/{{ gdu_release.tag }}/gdu_linux_amd64.tgz"
     dest: "{{ setup_dir }}"
     remote_src: true
+  become: true
 
 - name: Install
   ansible.builtin.copy:
