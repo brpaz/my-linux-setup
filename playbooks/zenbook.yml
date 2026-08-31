@@ -51,6 +51,7 @@
     - { role: overstride, tags: [overstride, system] }
     - { role: bluetuith, tags: [bluetuith, system] }
     - { role: duf, tags: [duf, system] }
+    - { role: gdu, tags: [gdu, system] }
     # Desktop
     - { role: sddm, tags: [sddm, desktop] }
     - { role: hyprland, tags: [hyprland, desktop] }
@@ -153,6 +154,7 @@
 
     # Utilities
     - { role: obfuscate, tags: [obfuscate, utilities, screenshot] }
+    - { role: systemd, tags: [systemd, utilities, screenshot] }
     - { role: keeppassxc, tags: [keepassxc, utilities, security] }
     - { role: bitwarden, tags: [bitwarden, utilities, security] }
     - { role: impression, tags: [impression, flatpak, utilities] }
@@ -163,6 +165,7 @@
     - { role: opencode, tags: [opencode, ai, github] }
     - { role: claude-code, tags: [claude-code, ai] }
     - { role: codegraph, tags: [codegraph, ai] }
+    - { role: agent-browser, tags: [agent-browser, ai] }
     # Docker Applications
     - { role: traefik, tags: [traefik, docker] }
     - { role: dozzle, tags: [dozzle, docker] }

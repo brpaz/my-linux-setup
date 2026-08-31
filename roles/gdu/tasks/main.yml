@@ -1,0 +1,21 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: dundee
+    repo: gdu
+    token: "{{ github_token }}"
+  register: gdu_release
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/dundee/gdu/releases/download/{{ gdu_release.tag }}/gdu_linux_amd64.tgz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/gdu_linux_amd64"
+    dest: "{{ bin_dir }}/gdu"
+    mode: a+x
+  become: true

@@ -1,0 +1,15 @@
+---
+- name: Install
+  community.general.npm:
+    name: agent-browser
+    state: latest
+    global: true
+
+- name: Install browser dependencies
+  ansible.builtin.command:
+    argv:
+      - agent-browser
+      - install
+      - --with-deps
+  become: true
+  changed_when: true

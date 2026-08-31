@@ -20,7 +20,6 @@
       - httpie
       - htop
       - iotop
-      - ncdu
       - tree
       - figlet
       - nautilus-open-any-terminal

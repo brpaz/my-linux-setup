@@ -1,0 +1,27 @@
+---
+- name: Ensure user systemd directory exists
+  ansible.builtin.file:
+    path: "{{ ansible_facts.env.HOME }}/.config/systemd/user"
+    state: directory
+    mode: "0755"
+
+- name: Create screenshots cleanup unit files
+  ansible.builtin.template:
+    dest: "{{ ansible_facts.env.HOME }}/.config/systemd/user/{{ item }}"
+    src: "{{ item }}.j2"
+    mode: "0644"
+  loop:
+    - screenshots-cleanup.service
+    - screenshots-cleanup.timer
+
+- name: Reload systemd user daemon
+  ansible.builtin.systemd:
+    daemon_reload: true
+    scope: user
+
+- name: Enable and start screenshots cleanup timer
+  ansible.builtin.systemd:
+    name: screenshots-cleanup.timer
+    scope: user
+    enabled: true
+    state: started

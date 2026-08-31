@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete screenshots older than {{ screenshots_cleanup_max_age_days }} days
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/find {{ screenshots_cleanup_dir }} -type f -mtime +{{ screenshots_cleanup_max_age_days }} -delete

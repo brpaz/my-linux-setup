@@ -125,6 +125,7 @@
     - { role: openchamber, tags: [openchamber, ai, github] }
     - { role: voxtype, tags: [voxtype, ai] }
     - { role: pi, tags: [pi, ai, github] }
+    - { role: agent-browser, tags: [agent-browser, ai] }
     # # =============================================
     # # Multimedia (Audio & Video)
     # # =============================================
@@ -300,6 +301,7 @@
     - { role: csvlens, tags: [csvlens, utilities, github] }
     - { role: duf, tags: [duf, utilities, github] }
     - { role: dust, tags: [dust, utilities, github] }
+    - { role: gdu, tags: [gdu, utilities, github] }
     - { role: posting, tags: [posting, dev, cli] }
     - { role: openapi-tui, tags: [openapi-tui, dev, cli, github] }
     - { role: hl, tags: [hl, utilities, github] }
@@ -321,6 +323,7 @@
     - { role: meld, tags: [meld, dev] }
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
     - { role: restic, tags: [restic, utilities] }
+    - { role: systemd, tags: [systemd, utilities, screenshot] }
     - { role: solaar, tags: [solaar, utilities] }
     - { role: weather, tags: [weather, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
