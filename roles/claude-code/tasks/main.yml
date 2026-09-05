@@ -18,13 +18,13 @@
   when: claude_code_install_plugins
   block:
     - name: Add marketplaces
-      ansible.builtin.shell: claude plugin marketplace add {{ item }}
+      ansible.builtin.command: claude plugin marketplace add {{ item }}
       loop: "{{ claude_code_plugins | map(attribute='marketplace') | unique | list }}"
       args:
         creates: "{{ ansible_facts.env.HOME }}/.claude/plugins/marketplaces/{{ item }}"
 
     - name: Install plugins
-      ansible.builtin.shell: claude plugin install {{ item.id }}
+      ansible.builtin.command: claude plugin install {{ item.id }}
       loop: "{{ claude_code_plugins }}"
       loop_control:
         label: "{{ item.name }}"

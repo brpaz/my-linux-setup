@@ -1,6 +1,8 @@
 ---
 - name: Detect AMD GPU
-  ansible.builtin.shell: lspci | grep -iE 'AMD|Radeon|amdgpu'
+  ansible.builtin.shell:
+    cmd: set -o pipefail && lspci | grep -iE 'AMD|Radeon|amdgpu'
+    executable: /bin/bash
   register: amd_gpu_check
   changed_when: false
   failed_when: false
@@ -64,5 +66,6 @@
       ROC_ENABLE_PRE_VEGA=1
       HSA_OVERRIDE_GFX_VERSION=
     create: true
+    mode: "0644"
   become: true
   when: amd_gpu_check.rc == 0

@@ -1,8 +1,5 @@
 warn_list:
-  - '204'
-  - '301'
-  - '303'
-  - '306'
+  - var-naming[no-role-prefix]
 skip_list:
   - yaml[line-length]
   - role-name

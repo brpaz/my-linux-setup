@@ -131,14 +131,12 @@
     - { role: newsflash, tags: [newsflash, internet, rss] }
     - { role: digger, tags: [internet, digger, flatpak] }
     - { role: warp, tags: [internet, warp] }
-    - { role: trayscale, tags: [internet, trayscale] }
     - { role: signal, tags: [internet, signal] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: polari, tags: [internet, irc] }
     - { role: tuba, tags: [tuba, fediverse, internet] }
     # Productivity
     - { role: obsidian, tags: [obsidian, productivity] }
-    - { role: planify, tags: [planify, productivity] }
     - { role: ticktick, tags: [ticktick, productivity] }
     - { role: authenticator, tags: [authenticator, productivity] }
     - { role: heynote, tags: [heynote, productivity] }

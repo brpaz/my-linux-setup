@@ -15,6 +15,7 @@
     path: /etc/environment
     line: "VULKAN_SDK=/usr"
     create: true
+    mode: "0644"
 
 - name: Verify vulkaninfo works
   ansible.builtin.command: vulkaninfo --summary
