@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":automergeMinor"
   ],
   "prHourlyLimit": 5,
   "prConcurrentLimit": 20,
@@ -13,14 +14,6 @@
   ],
   "minimumReleaseAge": "3 days",
   "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
-    },
     {
       "matchManagers": [
         "github-actions"
