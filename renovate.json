@@ -1,11 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    ":automergeMinor"
+    "config:best-practices",
+    ":automergeMinor",
+    ":prConcurrentLimit10"
   ],
-  "prHourlyLimit": 5,
-  "prConcurrentLimit": 20,
   "labels": [
     "dependencies"
   ],
@@ -13,12 +12,16 @@
     "brpaz"
   ],
   "minimumReleaseAge": "3 days",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  },
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
-      "matchManagers": [
-        "github-actions"
-      ],
-      "groupName": "github-actions"
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "github actions"
     }
   ]
 }
