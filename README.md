@@ -39,27 +39,16 @@ This keeps shared variables in inventory group vars, machine-specific values in 
 
 ## Provision a new machine
 
-To provision the `tuxedo-laptop`, open a terminal window and run the following commands:
+On a brand new Fedora or Arch machine, bootstrap everything with a single command:
 
 ```sh
 export GITHUB_TOKEN=<my_github_token>
-sudo dnf update && dnf install -y git
-git clone https://github.com/brpaz/my-linux-setup
-cd my-linux-setup
-sudo chmod +x setup.sh
-./setup.sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/brpaz/my-linux-setup/master/install.sh)"
 ```
 
-To provision the `zenbook-laptop`:
+This detects the distro, installs base packages, clones this repo to `~/my-linux-setup` (override with `INSTALL_DIR`), sets up a Python venv with Ansible, and runs the playbooks for the detected machine (`tuxedo-laptop` on Fedora, `zenbook-laptop` on Arch).
 
-```sh
-export GITHUB_TOKEN=<my_github_token>
-sudo pacman -Syu --noconfirm git
-git clone https://github.com/brpaz/my-linux-setup
-cd my-linux-setup
-sudo chmod +x scripts/setup-zenbook.sh
-./scripts/setup-zenbook.sh
-```
+Re-running `./install.sh` later from inside the clone skips the clone step and just re-provisions.
 
 You can also run playbooks directly with an explicit inventory:
 
