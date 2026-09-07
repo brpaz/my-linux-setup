@@ -12,11 +12,11 @@
     dest: "{{ setup_dir }}"
     mode: a+x
     remote_src: true
-    src: "https://github.com/mr-karan/doggo/releases/download/{{ doggo_release.tag }}/doggo_{{ doggo_release.tag[1:] }}_Linux_x86_64.tar.gz"
+    src: "https://github.com/mr-karan/doggo/releases/download/{{ doggo_release.tag }}/doggo-linux-x86_64.tar.gz"
 
 - name: Move Doggo binary to bin directory
   ansible.builtin.copy:
-    src: "{{ setup_dir }}/doggo_{{ doggo_release.tag[1:] }}_Linux_x86_64/doggo"
+    src: "{{ setup_dir }}/doggo"
     dest: "{{ bin_dir }}/doggo"
     mode: a+x
   become: true
