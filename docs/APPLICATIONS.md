@@ -110,7 +110,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 ### Networking
 
-- [Bouncer](https://flathub.org/apps/io.github.justinrdonnelly.bouncer) - An unofficial tray GUI for the Tailscale daemon on Linux.
+- [Bouncer](https://flathub.org/apps/io.github.justinrdonnelly.bouncer) - Prompts you to pick a firewalld zone (home/public/work) whenever you connect to a new Wi-Fi network, via NetworkManager.
 - [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
 - [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
 * [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
@@ -213,10 +213,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Cryptomator](https://flathub.org/apps/details/org.cryptomator.Cryptomator) - Free client-side encryption for your cloud files.
 * [Pika Backup](https://flathub.org/apps/details/org.gnome.World.PikaBackup) - Doing backups the easy way. Plugin your USB drive and let the Pika do the rest for you.
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
+* [MtSync](https://codeberg.org/gavindi/MtSync) - A GTK4/libadwaita frontend to rclone to (auto)mount and sync your data.
+* [Ente Photos](https://flathub.org/en/apps/io.ente.photos) - Open-source, end-to-end encrypted photo storage app, letting you securely back up and organize your photos across devices.
 * [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.
 - [Solaar](https://pwr-solaar.github.io/Solaar/) - Linux Device Manager for Logitech Unifying Receivers and Devices.
+- [OpenLogi](https://github.com/AprilNEA/OpenLogi) - Native, local-first alternative to Logitech Options+, written in Rust — remap buttons, DPI, and SmartShift over HID++.
 - [Frog](https://flathub.org/apps/details/com.github.tenderowl.frog) - Extract text from anywhere, even QR code.
 - [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) - Manage Flatpak permissions
 - [Flatsweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) - Flatpak leftover cleaner
@@ -224,10 +227,12 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Authenticator](https://flathub.org/apps/com.belmoussaoui.Authenticator) - Simple application for generating Two-Factor Authentication Codes.
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
 - [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
+- [YubiKey Manager](https://github.com/Yubico/yubikey-manager) - Command-line tool (`ykman`) for configuring a YubiKey (FIDO2, OTP, PIV, OpenPGP, etc.).
 - [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-
 - [kepubify](https://github.com/pgaskin/kepubify) - Fast, standalone EPUB to Kobo EPUB conversion tool.
+- [Kepublicity](https://flathub.org/en/apps/me.nathandyer.Kepublicity) - GUI to convert EPUB files into Kobo-formatted KEPUB files, with batch conversion and drag-and-drop.
 - [Clapgrep](https://flathub.org/apps/de.leopoldluley.Clapgrep) - One app to search through all your files, powered by ripgrep
 - [Lock](https://flathub.org/en/apps/com.konstantintutsch.Lock) - Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful LibAdwaita GUI
 - [sysD Manager](https://flathub.org/en/apps/io.github.plrigaux.sysd-manager) - A GUI to manage systemd units
@@ -240,11 +245,13 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Convertidor](https://flathub.org/apps/tech.digiroad.Convertidor) - A simple unit converter for GNOME.
 - [Currency Converter](https://flathub.org/apps/io.github.idevecore.CurrencyConverter) - A simple currency converter app.
 - [Kiwix](https://flathub.org/apps/org.kiwix.desktop) - Offline reader for Wikipedia and other web content, packaged as ZIM files.
+- [LocalSend](https://flathub.org/apps/org.localsend.localsend_app) - Free, open-source app to securely share files and messages with nearby devices, no internet required.
 - [Overstride](https://flathub.org/apps/io.github.kaii_lb.overskride) - A modern Bluetooth manager for GNOME (Overskride).
 - [GNOME Weather](https://flathub.org/apps/org.gnome.Weather) - Access current weather conditions and forecasts.
 - [Stencil](https://flathub.org/apps/me.fouquet.Stencil) - Batch file renamer: build a rename queue from stackable operations with live preview.
 - [Tactics](https://flathub.org/apps/io.gitlab.leesonwai.Tactics) - Build and share football/soccer lineups and formations.
 - [Libvirt / virt-manager](https://virt-manager.org/) - Toolchain (libvirt, QEMU/KVM, virt-manager) for managing local virtual machines.
+- [Waydroid](https://waydro.id/) - Container-based approach to boot a full Android system on GNU/Linux.
 - [Restic](https://restic.net/) - Fast, secure, efficient backup program, wired up here with systemd timers.
 - [Snapper](http://snapper.io/) - Command-line and dnf-integrated tool for Btrfs/LVM snapshot management.
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) - Generic command-line automation tool for Linux input devices (type, click, etc.), Wayland-friendly.
@@ -344,6 +351,7 @@ I use ZSH shell with the following extras:
 * [GitLab CLI](https://gitlab.com/gitlab-org/cli) - GLab is an open source GitLab CLI tool bringing GitLab to your terminal next to where you are already working with git and your code without switching between windows and browser tabs. Work with issues, merge requests, watch running pipelines directly from your CLI among other features.
 * [git-extras](https://github.com/tj/git-extras) - GIT utilities, repo summary, repl, changelog population, author commit percentages and more
 * [lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
+* [worktrunk](https://github.com/max-sixty/worktrunk) - CLI for Git worktree management, designed for parallel AI agent workflows.
 * [czg](https://cz-git.qbb.sh/cli/) - The commitizen command line utility.
 * [goreleaser](https://github.com/goreleaser/goreleaser) - Deliver Go binaries as fast and easily as possible.
 * [conduct](https://www.npmjs.com/package/conduct) - Generate a code of conduct file for your project.
@@ -452,6 +460,7 @@ I use ZSH shell with the following extras:
 - [mkcert](https://github.com/FiloSottile/mkcert) - A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 - [mise](https://mise.jdx.dev/) - Polyglot runtime and tool version manager (asdf alternative), also handles env vars and task running.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
+* [amoxide](https://amoxide.rs/) - Context-aware shell alias manager (like direnv, but for aliases), with a companion `am-tui` for managing shortcuts visually.
 * [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [go-task](https://taskfile.dev/) - A task runner / simpler Make alternative written in Go.

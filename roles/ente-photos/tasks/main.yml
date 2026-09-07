@@ -1,0 +1,5 @@
+---
+- name: Ente Photos
+  community.general.flatpak:
+    name: io.ente.photos
+    state: present

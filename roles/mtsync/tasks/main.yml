@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: gavindi
+    repo: MtSync
+    token: "{{ github_token }}"
+  register: mtsync_release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: "https://github.com/gavindi/MtSync/releases/download/{{ mtsync_release.tag }}/mtsync_{{ mtsync_release.tag }}_fedora41_x86_64.rpm"
+    state: present
+    disable_gpg_check: true
+  become: true

@@ -1,0 +1,5 @@
+---
+- name: LocalSend
+  community.general.flatpak:
+    name: org.localsend.localsend_app
+    state: present

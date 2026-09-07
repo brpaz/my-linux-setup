@@ -1,0 +1,31 @@
+---
+- name: Worktrunk | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: max-sixty
+    repo: worktrunk
+    token: "{{ github_token }}"
+  register: worktrunk_release
+
+- name: Worktrunk | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/max-sixty/worktrunk/releases/download/{{ worktrunk_release.tag }}/worktrunk-x86_64-unknown-linux-musl.tar.xz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+  become: true
+
+- name: Worktrunk | Install wt
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/wt"
+    dest: "{{ bin_dir }}/wt"
+    mode: a+x
+  become: true
+
+- name: Worktrunk | Install git-wt
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/git-wt"
+    dest: "{{ bin_dir }}/git-wt"
+    mode: a+x
+  become: true

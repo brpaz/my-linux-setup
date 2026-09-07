@@ -1,0 +1,15 @@
+---
+- name: OpenLogi | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: AprilNEA
+    repo: OpenLogi
+    token: "{{ github_token }}"
+  register: openlogi_release
+
+- name: OpenLogi | Install
+  ansible.builtin.dnf:
+    name: https://github.com/AprilNEA/OpenLogi/releases/download/{{ openlogi_release.tag }}/openlogi-{{ openlogi_release.tag }}-linux-amd64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

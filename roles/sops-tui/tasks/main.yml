@@ -1,0 +1,22 @@
+---
+- name: Sops TUI | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: brpaz
+    repo: sops-tui
+    token: "{{ github_token }}"
+  register: sops_tui_release
+
+- name: Sops TUI | Download
+  ansible.builtin.unarchive:
+    src: "https://github.com/brpaz/sops-tui/releases/download/{{ sops_tui_release.tag }}/sops-tui_Linux_x86_64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Sops TUI | Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/sops-tui"
+    dest: "{{ bin_dir }}/sops-tui"
+    mode: a+x
+  become: true

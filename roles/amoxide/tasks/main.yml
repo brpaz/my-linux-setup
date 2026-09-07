@@ -1,0 +1,40 @@
+---
+- name: Amoxide | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: sassman
+    repo: amoxide-rs
+    token: "{{ github_token }}"
+  register: amoxide_release
+
+- name: Amoxide | Download CLI
+  ansible.builtin.unarchive:
+    src: "https://github.com/sassman/amoxide-rs/releases/download/{{ amoxide_release.tag }}/amoxide-x86_64-unknown-linux-gnu.tar.xz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+  become: true
+
+- name: Amoxide | Install CLI
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/am"
+    dest: "{{ bin_dir }}/am"
+    mode: a+x
+  become: true
+
+- name: Amoxide | Download TUI
+  ansible.builtin.unarchive:
+    src: "https://github.com/sassman/amoxide-rs/releases/download/{{ amoxide_release.tag }}/amoxide-tui-x86_64-unknown-linux-gnu.tar.xz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    extra_opts:
+      - "--strip-components=1"
+  become: true
+
+- name: Amoxide | Install TUI
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/am-tui"
+    dest: "{{ bin_dir }}/am-tui"
+    mode: a+x
+  become: true

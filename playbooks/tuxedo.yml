@@ -200,6 +200,7 @@
     - { role: dbcli, tags: [dbcli, dev, cli] }
     - { role: dev-toolbox, tags: [dev-toolbox, dev] }
     - { role: direnv, tags: [direnv, dev] }
+    - { role: amoxide, tags: [amoxide, dev, cli, github] }
     - { role: layerx, tags: [layerx, dev, cli, docker, github] }
     - { role: doctl, tags: [doctl, dev] }
     - { role: flux, tags: [flux, dev] }
@@ -272,10 +273,12 @@
     - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
+    - { role: sops-tui, tags: [sops-tui, dev, github, cli] }
     - { role: age, tags: [age, dev, github, cli] }
     - { role: tldr, tags: [tldr, cli, github] }
     - { role: shellcheck, tags: [shellcheck, cli] }
     - { role: lazygit, tags: [lazygit, dev, github] }
+    - { role: worktrunk, tags: [worktrunk, dev, cli, github, git] }
     - { role: tuicr, tags: [tuicr, dev, github] }
     - { role: herdr, tags: [herdr, dev, github] }
     - { role: lazysql, tags: [lazysql, cli, github] }
@@ -321,24 +324,31 @@
     - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
     - { role: meld, tags: [meld, dev] }
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
+    - { role: waydroid, tags: [waydroid, virtualization, utilities] }
     - { role: restic, tags: [restic, utilities] }
     - { role: systemd, tags: [systemd, utilities, screenshot] }
     - { role: solaar, tags: [solaar, utilities] }
+    - { role: openlogi, tags: [openlogi, utilities, github] }
     - { role: weather, tags: [weather, utilities] }
     - { role: mission-center, tags: [mission-center, utilities] }
     - { role: mainmenu, tags: [mainmenu, utilities] }
     - { role: authenticator, tags: [authenticator, utilities] }
     - { role: pika-backup, tags: [pika-backup, utilities] }
     - { role: rclone, tags: [rclone, utilities] }
+    - { role: mtsync, tags: [mtsync, utilities, github] }
+    - { role: ente-photos, tags: [ente-photos, utilities, flatpak] }
     - { role: decoder, tags: [decoder, utilities, flatpak] }
     - { role: keyrack, tags: [keyrack, utilities, flatpak] }
+    - { role: yubikey-manager, tags: [yubikey-manager, utilities, security] }
     - { role: calligraphy, tags: [calligraphy, utilities, flatpak] }
     - { role: papers, tags: [calligraphy, utilities, flatpak] }
     - { role: frog, tags: [frog, utilities, flatpak] }
     - { role: asciidraw, tags: [asciidraw, utilities, flatpak] }
     - { role: kepubify, tags: [kepubify, utilities, github] }
+    - { role: kepublicity, tags: [kepublicity, utilities, flatpak] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: kiwix, tags: [kiwix, utilities, flatpak] }
+    - { role: localsend, tags: [localsend, utilities, flatpak] }
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: vicinae, tags: [vicinae, utilities] }
     - { role: distrobox, tags: [distrobox, utilities] }

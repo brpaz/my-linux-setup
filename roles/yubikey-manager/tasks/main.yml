@@ -1,0 +1,6 @@
+---
+- name: YubiKey Manager
+  ansible.builtin.package:
+    name: yubikey-manager
+    state: present
+  become: true

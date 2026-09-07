@@ -1,0 +1,5 @@
+---
+- name: Kepublicity
+  community.general.flatpak:
+    name: me.nathandyer.Kepublicity
+    state: present
