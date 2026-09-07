@@ -1,0 +1,8 @@
+[Unit]
+Description=Trigger dns-home-probe on Tailscale state change
+
+[Path]
+PathModified=/var/lib/tailscale/tailscaled.state
+
+[Install]
+WantedBy=multi-user.target

@@ -1,4 +1,5 @@
-# Default upstream DNS servers
-{% for server in dns_upstream_servers %}
+# Fallback upstream DNS servers. Home server (index 0) is managed
+# dynamically in 00-upstream-home.conf based on reachability.
+{% for server in dns_upstream_servers[1:] %}
 server={{ server }}
 {% endfor %}

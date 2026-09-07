@@ -4,3 +4,11 @@
     name: NetworkManager
     state: restarted
   become: true
+
+- name: Reload systemd and enable dns-home-probe.path
+  ansible.builtin.systemd:
+    name: dns-home-probe.path
+    daemon_reload: true
+    state: started
+    enabled: true
+  become: true

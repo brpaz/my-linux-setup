@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Keeps the home DNS server in dnsmasq's upstream list only while it is
+# actually reachable (LAN at home, or via Tailscale away with accept-routes).
+# Without this, dnsmasq's strict-order forwarding would try the home server
+# first on every query and eat a full timeout before falling back, even when
+# it's plainly unreachable.
+#
+# Triggered from two places, since neither alone covers both cases:
+# - NetworkManager dispatcher (90-dns-home-probe): physical network changes
+#   (wifi/eth up/down). Tailscale's interface is unmanaged by NM, so it
+#   never fires NM dispatcher events on `tailscale up`/`down`.
+# - dns-home-probe.path (systemd): watches tailscaled's state file, which
+#   changes on `tailscale up`/`down`, covering the case NM dispatcher misses.
+set -euo pipefail
+
+host="{{ dns_home_server_host }}"
+port="{{ dns_home_server_port }}"
+timeout_s="{{ dns_home_probe_timeout }}"
+conf="/etc/NetworkManager/dnsmasq.d/00-upstream-home.conf"
+notify_user="{{ user }}"
+
+if timeout "$timeout_s" bash -c "echo > /dev/tcp/${host}/${port}" 2>/dev/null; then
+  new_content="server={{ dns_upstream_servers[0] }}"
+  notify_message="Home DNS server reachable, using it as primary resolver"
+else
+  new_content="# home server unreachable, excluded from upstream list"
+  notify_message="Home DNS server unreachable, falling back to public resolvers"
+fi
+
+if [[ "$(cat "$conf" 2>/dev/null)" != "$new_content" ]]; then
+  echo "$new_content" > "$conf"
+  logger -t dns-home-probe "home server reachability changed, reloading NetworkManager"
+  systemctl restart NetworkManager
+
+  notify_uid="$(id -u "$notify_user")"
+  sudo -u "$notify_user" DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/${notify_uid}/bus" \
+    notify-send -a "DNS" "DNS upstream changed" "$notify_message" || true
+fi

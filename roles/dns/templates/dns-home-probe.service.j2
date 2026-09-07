@@ -1,0 +1,6 @@
+[Unit]
+Description=Probe home DNS server reachability
+
+[Service]
+Type=oneshot
+ExecStart={{ bin_dir }}/dns-home-probe.sh

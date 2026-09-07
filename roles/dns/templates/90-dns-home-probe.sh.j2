@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# NetworkManager dispatcher hook for dns-home-probe.sh - see that script for
+# what it does. Only handles physical network changes (wifi/eth); Tailscale
+# up/down is caught separately by dns-home-probe.path since tailscale0 is
+# unmanaged by NetworkManager and never fires dispatcher events.
+set -euo pipefail
+
+action="${2:-}"
+case "$action" in
+  up|down|vpn-up|vpn-down) ;;
+  *) exit 0 ;;
+esac
+
+exec "{{ bin_dir }}/dns-home-probe.sh"

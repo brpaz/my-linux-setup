@@ -40,6 +40,44 @@
   become: true
   notify: Restart NetworkManager
 
+- name: Configure Dnsmasq home server (initial state, kept in sync by dns-home-probe)
+  ansible.builtin.template:
+    src: templates/upstream-home.conf.j2
+    dest: /etc/NetworkManager/dnsmasq.d/00-upstream-home.conf
+    mode: "0644"
+    force: false
+  become: true
+  notify: Restart NetworkManager
+
+- name: Install home DNS server reachability probe
+  ansible.builtin.template:
+    src: templates/dns-home-probe.sh.j2
+    dest: "{{ bin_dir }}/dns-home-probe.sh"
+    mode: "0755"
+    owner: root
+    group: root
+  become: true
+
+- name: Install NetworkManager dispatcher hook for home DNS server probe
+  ansible.builtin.template:
+    src: templates/90-dns-home-probe.sh.j2
+    dest: /etc/NetworkManager/dispatcher.d/90-dns-home-probe
+    mode: "0755"
+    owner: root
+    group: root
+  become: true
+
+- name: Install systemd unit to trigger home DNS server probe on Tailscale state change
+  ansible.builtin.template:
+    src: "templates/{{ item }}.j2"
+    dest: "/etc/systemd/system/{{ item }}"
+    mode: "0644"
+  become: true
+  loop:
+    - dns-home-probe.service
+    - dns-home-probe.path
+  notify: Reload systemd and enable dns-home-probe.path
+
 - name: Configure Dnsmasq custom domain servers
   ansible.builtin.template:
     src: templates/custom.conf.j2
