@@ -1,4 +1,5 @@
 ---
 github_cli_extensions:
   - dlvhdr/gh-dash
+  - dlvhdr/gh-enhance
   - sideshowbarker/gh-notify
