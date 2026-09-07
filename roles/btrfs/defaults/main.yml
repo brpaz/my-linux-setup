@@ -1,0 +1,3 @@
+---
+btrfs_snapper_config: root
+btrfs_snapper_prepost_cleanup_max_age_days: 7

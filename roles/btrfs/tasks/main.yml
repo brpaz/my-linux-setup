@@ -8,3 +8,34 @@
     - snapper
     - dnf-plugin-snapper
   become: true
+
+- name: Deploy snapper pre/post cleanup script
+  ansible.builtin.template:
+    src: snapper-prepost-cleanup.sh.j2
+    dest: /usr/local/bin/snapper-prepost-cleanup.sh
+    owner: root
+    group: root
+    mode: "0755"
+  become: true
+
+- name: Create snapper pre/post cleanup unit files
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "/etc/systemd/system/{{ item }}"
+    mode: "0644"
+  loop:
+    - snapper-prepost-cleanup.service
+    - snapper-prepost-cleanup.timer
+  become: true
+
+- name: Reload systemd daemon
+  ansible.builtin.systemd:
+    daemon_reload: true
+  become: true
+
+- name: Enable and start snapper pre/post cleanup timer
+  ansible.builtin.systemd:
+    name: snapper-prepost-cleanup.timer
+    enabled: true
+    state: started
+  become: true

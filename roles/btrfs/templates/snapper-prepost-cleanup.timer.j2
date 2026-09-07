@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily cleanup of old snapper pre/post snapshots
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

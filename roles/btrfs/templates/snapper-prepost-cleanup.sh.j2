@@ -1,0 +1,19 @@
+#!/bin/bash
+set -euo pipefail
+
+config="{{ btrfs_snapper_config }}"
+max_age_days="{{ btrfs_snapper_prepost_cleanup_max_age_days }}"
+cutoff=$(($(date +%s) - max_age_days * 86400))
+
+for type in pre post; do
+  snapper --config "$config" list --type "$type" --columns number,date --machine-readable csv \
+    | tail -n +2 \
+    | while IFS=, read -r number date; do
+        number=${number//\"/}
+        date=${date//\"/}
+        snapshot_epoch=$(date -d "$date" +%s 2>/dev/null) || continue
+        if [ "$snapshot_epoch" -lt "$cutoff" ]; then
+          snapper --config "$config" delete "$number"
+        fi
+      done
+done
