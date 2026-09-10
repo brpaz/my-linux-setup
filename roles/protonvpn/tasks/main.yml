@@ -1,5 +1,25 @@
 ---
-- name: ProtonVPN
-  community.general.flatpak:
-    name: com.protonvpn.www
+- name: ProtonVPN | Import repository GPG key
+  ansible.builtin.rpm_key:
     state: present
+    key: "https://repo.protonvpn.com/fedora-{{ ansible_distribution_major_version }}-stable/public_key.asc"
+  become: true
+
+- name: ProtonVPN | Install repository
+  ansible.builtin.dnf:
+    name: "https://repo.protonvpn.com/fedora-{{ ansible_distribution_major_version }}-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.4-1.noarch.rpm"
+    state: present
+  become: true
+
+- name: ProtonVPN | Refresh dnf cache
+  ansible.builtin.command: dnf check-update --refresh
+  register: protonvpn_dnf_check_update
+  changed_when: false
+  failed_when: protonvpn_dnf_check_update.rc not in [0, 100]
+  become: true
+
+- name: ProtonVPN | Install
+  ansible.builtin.dnf:
+    name: proton-vpn-gnome-desktop
+    state: present
+  become: true
