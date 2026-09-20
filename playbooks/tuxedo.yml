@@ -156,7 +156,7 @@
     - { role: beets, tags: [beets, multimedia] }
     - { role: gelly, tags: [gelly, multimedia] }
     - { role: scramble, tags: [scramble, flatpak, multimedia] }
-    - { role: delfin, tags: [delfin, jellyfin, multimedia] }
+    - { role: tsukimi, tags: [tsukimi, jellyfin, multimedia] }
     - { role: mimick, tags: [mimick, flatpak, multimedia]}
     - { role: bluerecorder, tags: [bluerecorder, flatpak, multimedia] }
 

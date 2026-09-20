@@ -166,7 +166,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Mimick](https://flathub.org/en/apps/dev.nicx.mimick) - Mimick is a native Linux desktop client for self-hosted Immich servers. It monitors your folders in the background and automatically syncs photos and videos to your server.
 * [Blender](https://flathub.org/apps/org.blender.Blender) - Free and open source 3D creation suite.
 * [Gelly](https://github.com/Fingel/gelly) - A native music client for Jellyfin and Navidrome/Subsonic.
-* [Delfin](https://flathub.org/apps/cafe.avery.Delfin) - A native GTK4 client for Jellyfin media servers.
+* [Tsukimi](https://flathub.org/apps/moe.tsuna.tsukimi) - A simple third-party Jellyfin client.
 * [BlueRecorder](https://flathub.org/apps/sa.sy.bluerecorder) - A simple audio/screen recorder for GNOME.
 * [Sound Recorder](https://flathub.org/apps/org.gnome.SoundRecorder) - A simple and modern sound recorder for GNOME.
 * [Spotube](https://flathub.org/apps/com.github.KRTirtho.Spotube) - An open-source, cross-platform Spotify client that doesn't require Premium.

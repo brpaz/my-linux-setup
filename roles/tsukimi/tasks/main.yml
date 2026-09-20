@@ -1,5 +1,5 @@
 ---
 - name: Install
   community.general.flatpak:
-    name: cafe.avery.Delfin
+    name: moe.tsuna.tsukimi
     state: present
