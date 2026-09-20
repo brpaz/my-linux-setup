@@ -198,6 +198,7 @@
     - { role: awscli, tags: [awscli, cli, dev] }
     - { role: ctop, tags: [ctop, dev, docker] }
     - { role: dbcli, tags: [dbcli, dev, cli] }
+    - { role: sqlite, tags: [sqlite, dev, cli] }
     - { role: dev-toolbox, tags: [dev-toolbox, dev] }
     - { role: direnv, tags: [direnv, dev] }
     - { role: amoxide, tags: [amoxide, dev, cli, github] }
@@ -340,6 +341,7 @@
     - { role: decoder, tags: [decoder, utilities, flatpak] }
     - { role: keyrack, tags: [keyrack, utilities, flatpak] }
     - { role: yubikey-manager, tags: [yubikey-manager, utilities, security] }
+    - { role: yubico-authenticator, tags: [yubico-authenticator, utilities, security, flatpak] }
     - { role: calligraphy, tags: [calligraphy, utilities, flatpak] }
     - { role: papers, tags: [calligraphy, utilities, flatpak] }
     - { role: frog, tags: [frog, utilities, flatpak] }
@@ -348,6 +350,7 @@
     - { role: kepublicity, tags: [kepublicity, utilities, flatpak] }
     - { role: clapgrep, tags: [clapgrep, utilities, flatpak] }
     - { role: kiwix, tags: [kiwix, utilities, flatpak] }
+    - { role: deepdive, tags: [deepdive, productivity, flatpak] }
     - { role: localsend, tags: [localsend, utilities, flatpak] }
     - { role: lock, tags: [lock, flatpak, utilities] }
     - { role: vicinae, tags: [vicinae, utilities] }
@@ -356,6 +359,7 @@
     - { role: sysd-manager, tags: [sysd-manager, utilities] }
     - { role: brightnessctl, tags: [brightnessctl, utilities] }
     - { role: bitwarden, tags: [bitwarden, security, cli, github] }
+    - { role: rbw, tags: [rbw, security, cli, github] }
     - { role: algokit, tags: [algokit, utilities] }
     - { role: snapper, tags: [snapper, utilities] }
     - { role: tactics, tags: [tactics, utilities, flatpak] }

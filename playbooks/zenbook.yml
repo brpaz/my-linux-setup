@@ -120,6 +120,7 @@
     - { role: mkcert, tags: [mkcert, github, dev] }
     - { role: taskfile, tags: [task, github, dev] }
     - { role: dbeaver, tags: [dbeaver, dev] }
+    - { role: sqlite, tags: [sqlite, dev, cli] }
     - { role: redis, tags: [redis, dev] }
     # Network
     - { role: protonvpn, tags: [protonvpn, network] }
@@ -155,6 +156,7 @@
     - { role: systemd, tags: [systemd, utilities, screenshot] }
     - { role: keeppassxc, tags: [keepassxc, utilities, security] }
     - { role: bitwarden, tags: [bitwarden, utilities, security] }
+    - { role: rbw, tags: [rbw, utilities, security, github] }
     - { role: impression, tags: [impression, flatpak, utilities] }
     # Fonts
     - { role: fonts, tags: [fonts] }

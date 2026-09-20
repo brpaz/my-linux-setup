@@ -228,6 +228,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Decoder](https://flathub.org/apps/com.belmoussaoui.Decoder) - Scan and Generate QR Codes
 - [KeyRack](https://flathub.org/apps/app.drey.KeyRack) - Key Rack allows you to view, create and edit secrets, such as passwords or tokens, stored by apps.
 - [YubiKey Manager](https://github.com/Yubico/yubikey-manager) - Command-line tool (`ykman`) for configuring a YubiKey (FIDO2, OTP, PIV, OpenPGP, etc.).
+- [Yubico Authenticator](https://flathub.org/apps/com.yubico.yubioath) - Manage OATH (TOTP/HOTP) credentials and YubiKey settings from the desktop.
 - [Embellish](https://flathub.org/apps/io.github.getnf.embellish) - User-friendly application designed for managing Nerd Fonts on your system.
 - [Calligraphy](https://flathub.org/apps/dev.geopjr.Calligraphy) - Calligraphy turns short texts into large, impressive banners made up of ASCII Characters, ready to be copied or exported to images.
 - [ASCII Draw](https://flathub.org/apps/io.github.nokse22.asciidraw) - Draw diagrams, tables, tree view, art and more using only characters-

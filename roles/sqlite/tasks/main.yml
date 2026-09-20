@@ -1,0 +1,6 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name: sqlite
+    state: present
+  become: true
