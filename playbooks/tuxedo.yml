@@ -69,7 +69,7 @@
     - { role: brave-browser, tags: [brave-browser, internet] }
     - { role: edge, tags: [edge, internet] }
     - { role: gnome-web, tags: [gnome-web, internet] }
-    - { role: thunderbird, tags: [thunderbird, internet] }
+    - { role: convey, tags: [convey, internet] }
     - { role: discord, tags: [discord, communications, internet] }
     - { role: zoom, tags: [zoom, communications, internet] }
     - { role: signal, tags: [signal, communications, internet] }

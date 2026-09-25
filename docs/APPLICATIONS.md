@@ -72,7 +72,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Internet
 
 * [Firefox](https://www.mozilla.org/pt-PT/firefox/) - My primary browser.
-* [Thunderbird](https://www.thunderbird.net/) - Free email application, easy to set up and customize.
+* [Convey](https://flathub.org/en/apps/net.donnybeelo.Convey) - Email client.
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
 * [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge) - Microsoft Edge is a web browser developed by Microsoft.

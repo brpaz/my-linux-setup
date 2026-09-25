@@ -1,0 +1,5 @@
+---
+- name: Convey
+  community.general.flatpak:
+    name: net.donnybeelo.Convey
+    state: present
