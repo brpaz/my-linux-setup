@@ -11,8 +11,6 @@ tls:
       keyFile: /etc/certs/grafana.localhost-key.pem
     - certFile: /etc/certs/grafana.localhost.pem
       keyFile: /etc/certs/grafana.localhost-key.pem
-    - certFile: /etc/certs/portainer.localhost.pem
-      keyFile: /etc/certs/portainer.localhost-key.pem
     - certFile: /etc/certs/prometheus.localhost.pem
       keyFile: /etc/certs/prometheus.localhost-key.pem
     - certFile: /etc/certs/dozzle.localhost.pem

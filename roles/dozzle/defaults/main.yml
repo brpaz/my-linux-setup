@@ -1,5 +1,5 @@
 ---
 dozzle_image: amir20/dozzle
-dozzle_version: "v10.3.1"
+dozzle_version: "v11.1.1"
 dozzle_domain: dozzle.localhost
 dozzle_port: "8080"

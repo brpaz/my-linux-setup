@@ -1,4 +1,9 @@
 ---
+- name: Docker | Ensure Dozzle volume is present
+  community.docker.docker_volume:
+    name: dozzle_data
+    state: present
+
 - name: Start container
   community.docker.docker_container:
     name: dozzle
@@ -8,6 +13,7 @@
     restart_policy: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - dozzle_data:/data
     ports:
       - "8080"
     env:

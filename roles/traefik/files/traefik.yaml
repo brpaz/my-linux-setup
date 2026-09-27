@@ -70,7 +70,7 @@ log:
 # Optional
 #
 accessLog:
-  format: common
+  format: json
 # Sets the file path for the access log. If not specified, stdout will be used.
 # Intermediate directories are created if necessary.
 #

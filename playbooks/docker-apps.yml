@@ -3,7 +3,6 @@
   hosts: all
   roles:
     - { role: traefik, tags: [traefik, docker-apps] }
-    - { role: portainer, tags: [portainer, docker-apps] }
     - { role: dnsdock, tags: [dnsdock, docker-apps] }
     - { role: dozzle, tags: [dozzle, docker-apps] }
     - { role: termix, tags: [termix, docker-apps] }

@@ -8,7 +8,6 @@ SITES=(
     "traefik.localhost"
     "grafana.localhost"
     "prometheus.localhost"
-    "portainer.localhost"
     "dozzle.localhost"
     "termix.localhost"
 )
