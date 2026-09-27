@@ -47,6 +47,7 @@
     # # Networking
     # # =============================================
     - { role: dns, tags: [dns, networking] }
+    - { role: docker-dns, tags: [docker-dns, networking] }
     - { role: network-tools, tags: [networking] }
     - { role: firewall, tags: [networking, firewall] }
     - { role: iplookup, tags: [iplookup, networking] }

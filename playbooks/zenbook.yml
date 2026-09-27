@@ -45,6 +45,7 @@
     # System
     - { role: network-manager, tags: [network-manager, system] }
     - { role: dns, tags: [dns, system] }
+    - { role: docker-dns, tags: [docker-dns, system] }
     - { role: nm-connection-editor, tags: [nm-connection-editor, system] }
     - { role: nvidia, tags: [nvidia, system, graphics] }
     - { role: brightnessctl, tags: [brightnessctl, system] }
@@ -169,4 +170,3 @@
     # Docker Applications
     - { role: traefik, tags: [traefik, docker] }
     - { role: dozzle, tags: [dozzle, docker] }
-    - { role: dnsdock, tags: [dnsdock, docker] }

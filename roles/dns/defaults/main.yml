@@ -26,4 +26,4 @@ dns_dnscrypt_port: "55353"
 # Domain resolvers: list of {domain, resolver, name} dicts
 dns_custom_resolvers:
   - { name: "homelab", domain: "home.brunopaz.dev", resolver: "192.168.1.10" }
-  - { name: "docker", domain: "docker.local", resolver: "172.17.0.1" }
+  - { name: "docker", domain: "docker", resolver: "127.0.0.153" }

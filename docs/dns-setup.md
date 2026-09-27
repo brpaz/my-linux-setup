@@ -8,7 +8,7 @@ The system uses NetworkManager's built-in dnsmasq as a local DNS proxy, with the
 
 ```
 Client Query → NetworkManager dnsmasq (127.0.0.1:53)
-                    ├── .docker.local → 172.17.0.1 (dnsdock)
+                    ├── .docker → 127.0.0.153 (docker-dns)
                     ├── .home.brunopaz.dev → 192.168.1.10 (AdGuard Home)
                     └── default → 192.168.1.10 → dnscrypt → quad9 DoH (or fallback)
 ```
@@ -27,8 +27,9 @@ Client Query → NetworkManager dnsmasq (127.0.0.1:53)
 - Only used as fallback when primary upstream is down
 - Can be disabled via `dns_dnscrypt_enabled: false`
 
-### dnsdock (Docker)
+### docker-dns (host service)
 - Resolves `.docker` domain to Docker container IPs
+- Runs as a systemd service on the host (not a container), listening on `127.0.0.153:53`
 - Must be running for Docker service discovery to work
 
 ### AdGuard Home (Home Lab)
@@ -68,7 +69,7 @@ server=127.0.0.53:53          # Fallback (dnscrypt → quad9)
 Domain-specific routing:
 ```
 server=/home.brunopaz.dev/192.168.1.10
-server=/docker/172.17.0.1
+server=/docker/127.0.0.153
 ```
 
 ## Ansible Role
@@ -90,7 +91,7 @@ The `roles/dns` role manages this setup with the following variables:
 ```yaml
 dns_custom_resolvers:
   - { name: "homelab", domain: "home.brunopaz.dev", resolver: "192.168.1.10" }
-  - { name: "docker", domain: "docker.local", resolver: "172.17.0.1" }
+  - { name: "docker", domain: "docker", resolver: "127.0.0.153" }
 ```
 
 ### Common Configurations
@@ -126,7 +127,7 @@ Override in host/group vars:
 ```yaml
 dns_custom_resolvers:
   - { name: "homelab", domain: "home.brunopaz.dev", resolver: "192.168.1.10" }
-  - { name: "docker", domain: "docker.local", resolver: "172.17.0.1" }
+  - { name: "docker", domain: "docker", resolver: "127.0.0.153" }
   - { name: "mylan", domain: "mylan.home", resolver: "192.168.1.5" }
 ```
 
@@ -134,7 +135,7 @@ dns_custom_resolvers:
 
 ### At Home (connected to home network)
 - `.home.brunopaz.dev` → 192.168.1.10 (AdGuard)
-- `.docker` → 172.17.0.1 (dnsdock)
+- `.docker` → 127.0.0.153 (docker-dns)
 - Everything else → 192.168.1.10 (AdGuard) → quad9 DoH
 
 ### Away from Home (no home network access)
@@ -143,9 +144,9 @@ dns_custom_resolvers:
 - Default queries → dnscrypt-proxy → quad9 DoH
 
 ### Docker Resolution
-- Requires dnsdock container running
+- Requires the `docker-dns` systemd service running
 - `.docker` domains resolve to container IPs
-- dnsdock must be on same Docker network as containers
+- docker-dns queries the Docker API directly (`/var/run/docker.sock`), no shared Docker network needed
 
 ## Troubleshooting
 
@@ -171,7 +172,7 @@ systemctl restart NetworkManager
 
 ### Verify domain routing
 ```bash
-nslookup docker.local 127.0.0.1
+nslookup foo.docker 127.0.0.1
 nslookup home.brunopaz.dev 127.0.0.1
 ```
 
