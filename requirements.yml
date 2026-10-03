@@ -1,7 +1,7 @@
 # Ansible Galaxy Roles
 collections:
   - name: community.general
-    version: 12.6.5
+    version: 13.4.0
 
   - name: community.docker
     version: 5.3.0
