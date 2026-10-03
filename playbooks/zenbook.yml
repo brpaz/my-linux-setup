@@ -170,3 +170,4 @@
     # Docker Applications
     - { role: traefik, tags: [traefik, docker] }
     - { role: dozzle, tags: [dozzle, docker] }
+    - { role: open-webui, tags: [open-webui, docker] }

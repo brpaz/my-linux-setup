@@ -1,0 +1,25 @@
+---
+- name: Docker | Ensure Open WebUI volume is present
+  community.docker.docker_volume:
+    name: open_webui_data
+    state: present
+
+- name: Start container
+  community.docker.docker_container:
+    name: open-webui
+    image: "{{ open_webui_image }}:{{ open_webui_version }}"
+    networks:
+      - name: traefik-public
+    restart_policy: unless-stopped
+    volumes:
+      - open_webui_data:/app/backend/data
+    etc_hosts:
+      host.docker.internal: host-gateway
+    env:
+      OLLAMA_BASE_URL: "{{ open_webui_ollama_url }}"
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.open-webui.entrypoints: websecure
+      traefik.http.routers.open-webui.rule: Host(`{{ open_webui_domain }}`)
+      traefik.http.routers.open-webui.tls: "true"
+      traefik.http.services.open-webui.loadbalancer.server.port: "{{ open_webui_port }}"

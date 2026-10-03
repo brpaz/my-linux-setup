@@ -1,0 +1,6 @@
+---
+open_webui_image: ghcr.io/open-webui/open-webui
+open_webui_version: "v0.11.4"
+open_webui_domain: open-webui.localhost
+open_webui_port: "8080"
+open_webui_ollama_url: http://host.docker.internal:11434

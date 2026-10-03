@@ -104,6 +104,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Instagram](https://www.instagram.com/) - Instagram is a photo and video sharing app that allows you to share your life with friends and family.
 - [Mermaid Editor](https://mermaid-js.github.io/mermaid-live-editor/) - Mermaid Editor is a web-based tool for creating diagrams and flowcharts using a simple text-based syntax.
 - [Dozzle](https://dozzle.dev/) - Dozzle is a real-time log viewer for Docker containers.
+- [Open WebUI](https://openwebui.com/) - Self-hosted web UI for chatting with Ollama and OpenAI-compatible LLMs.
 
 ---
 

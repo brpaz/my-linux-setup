@@ -5,3 +5,4 @@
     - { role: traefik, tags: [traefik, docker-apps] }
     - { role: dozzle, tags: [dozzle, docker-apps] }
     - { role: termix, tags: [termix, docker-apps] }
+    - { role: open-webui, tags: [open-webui, docker-apps] }

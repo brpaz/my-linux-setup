@@ -10,6 +10,7 @@ SITES=(
     "prometheus.localhost"
     "dozzle.localhost"
     "termix.localhost"
+    "open-webui.localhost"
 )
 
 # ENsure we are in the root directory
