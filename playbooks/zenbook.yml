@@ -133,6 +133,7 @@
     - { role: chromium, tags: [chromium, internet] }
     - { role: newsflash, tags: [newsflash, internet, rss] }
     - { role: digger, tags: [internet, digger, flatpak] }
+    - { role: turnon, tags: [turnon, networking, flatpak] }
     - { role: warp, tags: [internet, warp] }
     - { role: signal, tags: [internet, signal] }
     - { role: fractal, tags: [fractal, internet] }

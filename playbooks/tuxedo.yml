@@ -90,6 +90,7 @@
     - { role: polari, tags: [polari, internet, flatpak] }
     - { role: archives, tags: [archives, internet, flatpak] }
     - { role: digger, tags: [digger, dns, internet, flatpak] }
+    - { role: turnon, tags: [turnon, networking, flatpak] }
     - { role: rustconn, tags: [rustconn, internet] }
     - { role: warp, tags: [warp, internet] }
     - { role: tor, tags: [tor, internet] }

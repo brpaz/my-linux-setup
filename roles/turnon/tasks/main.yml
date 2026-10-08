@@ -1,0 +1,5 @@
+---
+- name: Install
+  community.general.flatpak:
+    name: de.swsnr.turnon
+    state: present

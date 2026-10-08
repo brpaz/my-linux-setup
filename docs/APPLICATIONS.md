@@ -112,6 +112,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 - [Bouncer](https://flathub.org/apps/io.github.justinrdonnelly.bouncer) - Prompts you to pick a firewalld zone (home/public/work) whenever you connect to a new Wi-Fi network, via NetworkManager.
 - [Digger](https://flathub.org/en/apps/io.github.tobagin.digger) - Digger is a modern DNS lookup tool built with GTK4 and libadwaita that provides an intuitive interface for performing DNS queries and exploring DNS records.
+- [Turn On](https://flathub.org/en/apps/de.swsnr.turnon) - Turn on devices in your network with Wake-on-LAN.
 - [OpenSnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux port of the Little Snitch application firewall.
 * [Warp](https://flathub.org/apps/app.drey.Warp) - Warp allows you to securely send files to each other via the internet or local network by exchanging a word-based code.
 * [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
