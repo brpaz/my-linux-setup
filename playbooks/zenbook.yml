@@ -77,6 +77,7 @@
     - { role: alacritty, tags: [alacritty, terminal] }
     - { role: television, tags: [television, terminal, github] }
     - { role: glow, tags: [glow, terminal] }
+    - { role: defuddle, tags: [defuddle, cli] }
     - { role: fastfetch, tags: [fastfetch, terminal] }
     - { role: exa, tags: [exa, terminal, github] }
     - { role: yazi, tags: [yazi, terminal, github] }

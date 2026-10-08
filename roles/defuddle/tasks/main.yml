@@ -1,0 +1,6 @@
+---
+- name: Install
+  community.general.npm:
+    name: defuddle
+    global: true
+    state: latest

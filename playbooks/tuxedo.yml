@@ -274,6 +274,7 @@
     - { role: hostctl, tags: [hostctl, github, dev] }
     - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
+    - { role: defuddle, tags: [defuddle, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
     - { role: sops-tui, tags: [sops-tui, dev, github, cli] }
     - { role: age, tags: [age, dev, github, cli] }

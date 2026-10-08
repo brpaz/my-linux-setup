@@ -318,6 +318,7 @@ I use ZSH shell with the following extras:
 * [jq](https://github.com/stedolan/jq) - Command-line JSON processor.
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
+* [defuddle](https://github.com/kepano/defuddle) - Extract the main content of any web page as clean Markdown.
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 * [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.
