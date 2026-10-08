@@ -65,6 +65,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 * [Tomatillo](https://flathub.org/en/apps/io.github.diegopvlk.Tomatillo) - A simple pomodoro timer app.
 * [Master PDF Editor](https://flathub.org/apps/com.codeindustry.masterpdfeditor) - Edit PDF content, fill and create forms, merge/split documents.
+* [PdfCraft](https://getartcraft.com/apps/pdfcraft) - Open-source PDF workbench written in Rust: read, organize, merge, split and encrypt PDFs.
 * [Swifty Notes](https://flathub.org/apps/me.spaceinbox.swiftynotes) - A simple, elegant note-taking app.
 
 ---
@@ -128,6 +129,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 ### Graphics & Design
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
+* [PhotoCraft](https://photocraft.one/) - Open-source layered image editor written in Rust, with masks, adjustment layers and PSD support.
 * [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
 * [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor

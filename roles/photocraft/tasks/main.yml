@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: storytold
+    repo: photocraft
+    token: "{{ github_token }}"
+  register: photocraft_release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/storytold/photocraft/releases/download/{{ photocraft_release.tag }}/photocraft-{{ photocraft_release.tag[1:] }}-linux-x86_64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

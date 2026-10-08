@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: storytold
+    repo: pdfcraft
+    token: "{{ github_token }}"
+  register: pdfcraft_release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/storytold/pdfcraft/releases/download/{{ pdfcraft_release.tag }}/pdfcraft-{{ pdfcraft_release.tag[1:] }}-linux-x86_64.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

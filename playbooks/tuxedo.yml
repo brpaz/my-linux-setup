@@ -113,6 +113,7 @@
     - { role: switfy-notes, tags: [swifty-notes, flatpak, productivity] }
     - { role: tomatillo, tags: [tomatillo, flatpak, productivity] }
     - { role: masterpdfeditor, tags: [masterpdfeditor, flatpak, productivity] }
+    - { role: pdfcraft, tags: [pdfcraft, productivity, github] }
 
     # # ===============================================
     # AI Tooling
@@ -170,6 +171,7 @@
     # # # Graphics Design
     # # # =============================================
     - { role: pinta, tags: [pinta, graphics_design] }
+    - { role: photocraft, tags: [photocraft, graphics_design, github] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
     - { role: ohmysvg, tags: [ohmysvg, graphics_design] }
