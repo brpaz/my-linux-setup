@@ -336,6 +336,8 @@ I use ZSH shell with the following extras:
 * [sharp-cli](https://www.npmjs.com/package/sharp-cli) - CLI for sharp, a high performance Node.js image processing module.
 * [svg/svgo](https://github.com/svg/svgo) - Node.js tool for optimizing SVG files
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
+* [gallery-dl](https://github.com/mikf/gallery-dl) - Command-line program to download image galleries and collections from several image hosting sites
+* [ImageMagick](https://imagemagick.org/) - Command-line suite for creating, converting and editing images
 * [asciinema](https://asciinema.org/) - Record and share your terminal sessions, the right way
 * [gifski](https://gif.ski/) - Command-line tool for converting videos to GIFs
 * [beets](https://beets.io/) - The music geek's music library organizer.

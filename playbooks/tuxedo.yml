@@ -156,6 +156,8 @@
     - { role: pipeline, tags: [pipeline, audio_video] }
     - { role: blender, tags: [blender, multimedia] }
     - { role: yt-dlp, tags: [yt-dlp, multimedia, github, cli] }
+    - { role: gallery-dl, tags: [gallery-dl, multimedia, cli] }
+    - { role: imagemagick, tags: [imagemagick, multimedia, cli] }
     - { role: beets, tags: [beets, multimedia] }
     - { role: gelly, tags: [gelly, multimedia] }
     - { role: scramble, tags: [scramble, flatpak, multimedia] }

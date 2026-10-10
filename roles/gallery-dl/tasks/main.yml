@@ -1,0 +1,5 @@
+---
+- name: Install
+  community.general.pipx:
+    name: gallery-dl
+    state: present
