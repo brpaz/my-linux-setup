@@ -130,6 +130,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
 * [PhotoCraft](https://photocraft.one/) - Open-source layered image editor written in Rust, with masks, adjustment layers and PSD support.
+* [ComfyUI Desktop](https://github.com/Comfy-Org/Comfy-Desktop) - Node-based generative AI workflow app for images, video and audio, packaged as an AppImage.
 * [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
 * [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
 * [Eyedropper](https://flathub.org/apps/details/com.github.finefindus.eyedropper) - An easy-to-use color picker and editor

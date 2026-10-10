@@ -1,0 +1,39 @@
+---
+- name: Download App Image
+  ansible.builtin.get_url:
+    url: https://dl.todesktop.com/241130tqe9q3y/linux/appImage/x64
+    dest: "{{ setup_dir }}/ComfyUI.AppImage"
+    mode: "0644"
+
+- name: Install App Image
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/ComfyUI.AppImage"
+    dest: /opt/ComfyUI.AppImage
+    mode: "0755"
+  become: true
+
+- name: Ensure Icons folder exists
+  ansible.builtin.file:
+    path: "{{ comfyui_desktop_icon_path | dirname }}"
+    state: directory
+    mode: "0755"
+
+- name: Copy Icon from files
+  ansible.builtin.copy:
+    src: icon.png
+    dest: "{{ comfyui_desktop_icon_path }}"
+    mode: "0644"
+
+- name: Create Desktop Entry
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=ComfyUI
+      Comment=Node-based generative AI image and video workflows
+      Exec=/opt/ComfyUI.AppImage
+      Icon={{ comfyui_desktop_icon_path }}
+      Type=Application
+      Categories=Graphics;
+      Terminal=false
+    dest: "{{ applications_dir }}/ComfyUI.desktop"
+    mode: "0644"
