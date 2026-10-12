@@ -13,3 +13,4 @@
     state: present
     disable_gpg_check: true
   become: true
+  notify: Reload udev rules

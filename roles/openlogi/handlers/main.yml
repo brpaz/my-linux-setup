@@ -1,0 +1,7 @@
+---
+# The package ships udev rules granting HID++ device access; already-connected
+# receivers only pick them up after a reload + trigger.
+- name: Reload udev rules
+  ansible.builtin.shell: udevadm control --reload && udevadm trigger
+  changed_when: true
+  become: true
