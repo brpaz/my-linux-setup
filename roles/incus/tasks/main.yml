@@ -1,0 +1,55 @@
+---
+- name: Incus | Install
+  ansible.builtin.package:
+    name: incus
+    state: present
+  become: true
+
+# Unprivileged containers map their IDs into a subordinate range owned by root.
+- name: Incus | Allocate subordinate ID range for root
+  ansible.builtin.lineinfile:
+    path: "{{ item }}"
+    line: "root:1000000:1000000000"
+    regexp: "^root:"
+    create: true
+    mode: "0644"
+  loop:
+    - /etc/subuid
+    - /etc/subgid
+  become: true
+
+- name: Incus | Add current user to incus-admin group
+  ansible.builtin.user:
+    name: "{{ user }}"
+    groups: incus-admin
+    append: true
+  become: true
+
+- name: Incus | Enable service
+  ansible.builtin.systemd:
+    name: incus.socket
+    enabled: true
+    state: started
+  become: true
+
+- name: Incus | List storage pools
+  ansible.builtin.command: incus storage list --format csv
+  register: incus_storage_pools
+  changed_when: false
+  become: true
+
+- name: Incus | Initialize with default storage pool and incusbr0 bridge
+  ansible.builtin.command: incus admin init --minimal
+  when: incus_storage_pools.stdout | length == 0
+  changed_when: true
+  become: true
+
+# firewalld otherwise drops DHCP/DNS from instances on the bridge.
+- name: Incus | Trust incusbr0 in firewalld
+  ansible.posix.firewalld:
+    zone: trusted
+    interface: incusbr0
+    permanent: true
+    immediate: true
+    state: enabled
+  become: true

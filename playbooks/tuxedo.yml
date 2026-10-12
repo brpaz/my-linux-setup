@@ -332,6 +332,7 @@
     - { role: obfuscate, tags: [obfuscate, utilities, flatpak] }
     - { role: meld, tags: [meld, dev] }
     - { role: libvirt, tags: [libvirt, virtualization, utilities] }
+    - { role: incus, tags: [incus, virtualization, utilities] }
     - { role: waydroid, tags: [waydroid, virtualization, utilities] }
     - { role: restic, tags: [restic, utilities] }
     - { role: systemd, tags: [systemd, utilities, screenshot] }

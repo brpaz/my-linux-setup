@@ -256,6 +256,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 - [Stencil](https://flathub.org/apps/me.fouquet.Stencil) - Batch file renamer: build a rename queue from stackable operations with live preview.
 - [Tactics](https://flathub.org/apps/io.gitlab.leesonwai.Tactics) - Build and share football/soccer lineups and formations.
 - [Libvirt / virt-manager](https://virt-manager.org/) - Toolchain (libvirt, QEMU/KVM, virt-manager) for managing local virtual machines.
+- [Incus](https://linuxcontainers.org/incus/) - System container and virtual machine manager, the community fork of LXD.
 - [Waydroid](https://waydro.id/) - Container-based approach to boot a full Android system on GNU/Linux.
 - [Restic](https://restic.net/) - Fast, secure, efficient backup program, wired up here with systemd timers.
 - [Snapper](http://snapper.io/) - Command-line and dnf-integrated tool for Btrfs/LVM snapshot management.
