@@ -1,0 +1,6 @@
+---
+# Chromium-based browser that agent-browser attaches to over CDP
+agent_browser_browser: chromium-browser
+agent_browser_cdp_port: 9222
+# Dedicated profile: Chromium refuses remote debugging on the default profile directory
+agent_browser_profile_dir: "{{ ansible_facts.env.HOME }}/.config/agent-browser-profile"

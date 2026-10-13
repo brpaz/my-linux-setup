@@ -13,3 +13,17 @@
       - --with-deps
   become: true
   changed_when: true
+
+- name: Create Desktop Entry for agent profile browser
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=Agent Browser
+      Comment=Browser profile controlled by agent-browser over CDP
+      Exec={{ agent_browser_browser }} --user-data-dir={{ agent_browser_profile_dir }} --remote-debugging-port={{ agent_browser_cdp_port }} %U
+      Icon={{ agent_browser_browser }}
+      Type=Application
+      Categories=Network;WebBrowser;
+      Terminal=false
+    dest: "{{ applications_dir }}/agent-browser.desktop"
+    mode: "0644"
