@@ -53,6 +53,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Gnome Contacts](https://wiki.gnome.org/Apps/Contacts) - Easy access to my Contacts List, syncted with Google Contacts.
 * [Dialect](https://flathub.org/apps/details/app.drey.Dialect) - A translation app for GNOME.
 * [Drawio](https://github.com/jgraph/drawio-desktop) - Create flowcharts, process diagrams, org charts, UML, ER diagrams, network diagrams and much more.
+* [Reefgraph](https://github.com/brpaz/reefgraph) - Visual WYSIWYG editor for Mermaid diagrams, built with GTK4 and LibAdwaita.
 * [Libreoffice](https://libreoffice.org) - Office suite.
 * [Papers](https://flathub.org/apps/org.gnome.Papers) - A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.
 * [Remembrance](https://flathub.org/apps/details/io.github.dgsasha.Remembrance) - Set reminders for anything you need help remembering.
@@ -64,7 +65,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Apostrophe](https://flathub.org/en/apps/org.gnome.gitlab.somas.Apostrophe) - Focus on your writing with a clean, distraction-free markdown editor.
 * [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 * [Tomatillo](https://flathub.org/en/apps/io.github.diegopvlk.Tomatillo) - A simple pomodoro timer app.
-* [Master PDF Editor](https://flathub.org/apps/com.codeindustry.masterpdfeditor) - Edit PDF content, fill and create forms, merge/split documents.
 * [PdfCraft](https://getartcraft.com/apps/pdfcraft) - Open-source PDF workbench written in Rust: read, organize, merge, split and encrypt PDFs.
 * [Swifty Notes](https://flathub.org/apps/me.spaceinbox.swiftynotes) - A simple, elegant note-taking app.
 
@@ -130,6 +130,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [GIMP](https://www.gimp.org/) - GNU Image Manipulation Program.
 * [PhotoCraft](https://photocraft.one/) - Open-source layered image editor written in Rust, with masks, adjustment layers and PSD support.
+* [FigCraft](https://github.com/storytold/figcraft) - Open-source interface design and prototyping tool written in Rust.
 * [ComfyUI Desktop](https://github.com/Comfy-Org/Comfy-Desktop) - Node-based generative AI workflow app for images, video and audio, packaged as an AppImage.
 * [Pinta](moz-extension://0c870bdd-05bf-4804-aadb-745cdcf07219/) - Pinta is a image editing, drawing and painting application with a simple yet powerful interface.
 * [Gradia](https://flathub.org/apps/be.alexandervanhee.gradia) - Gradia is a simple and intuitive image editor for GNOME, designed to help you quickly edit and enhance your photos.
@@ -284,6 +285,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 
 * [Steam](https://store.steampowered.com)
 * [RetroArch](https://www.retroarch.com/) - A frontend for emulators, game engines and media players.
+* [Hattrick Organizer](https://github.com/ho-dev/HattrickOrganizer) - Team management assistant for the Hattrick online football manager, installed to `/opt` with its bundled JRE.
 * [Mines](https://wiki.gnome.org/Apps/Mines)
 
 ---
@@ -435,6 +437,7 @@ I use ZSH shell with the following extras:
 * [yadm](https://github.com/TheLocehiliosan/yadm) - yadm is a tool for managing dotfiles.
 * [lazyjournal](https://github.com/Lifailon/lazyjournal) - TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering with fuzzy find, regex support
 * [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Golang
+* [tylomon](https://github.com/brpaz/tylomon) - Monitor HTTP traffic between Docker containers in real time, directly from the terminal.
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
 - [csvlens](https://github.com/YS-L/csvlens) - A command-line tool for viewing and filtering CSV files.

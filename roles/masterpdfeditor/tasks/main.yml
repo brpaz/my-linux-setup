@@ -1,5 +1,0 @@
----
-- name: Master PDF Editor
-  community.general.flatpak:
-    name: net.code_industry.MasterPDFEditor
-    state: present

@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: brpaz
+    repo: reefgraph
+    token: "{{ github_token }}"
+  register: reefgraph_release
+
+- name: Install
+  ansible.builtin.dnf:
+    name: https://github.com/brpaz/reefgraph/releases/download/{{ reefgraph_release.tag }}/reefgraph.rpm
+    state: present
+    disable_gpg_check: true
+  become: true

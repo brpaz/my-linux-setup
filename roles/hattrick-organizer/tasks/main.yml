@@ -1,0 +1,61 @@
+---
+- name: Hattrick Organizer | Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: ho-dev
+    repo: HattrickOrganizer
+    token: "{{ github_token }}"
+  register: hattrick_organizer_release
+
+- name: Hattrick Organizer | Get release assets
+  ansible.builtin.uri:
+    url: "https://api.github.com/repos/ho-dev/HattrickOrganizer/releases/tags/{{ hattrick_organizer_release.tag }}"
+    headers:
+      Authorization: "Bearer {{ github_token }}"
+    return_content: true
+  register: hattrick_organizer_release_info
+
+- name: Hattrick Organizer | Resolve bundled-JRE tarball URL
+  ansible.builtin.set_fact:
+    hattrick_organizer_url: >-
+      {{ hattrick_organizer_release_info.json.assets
+         | selectattr('name', 'match', '^HO-.*-portable-unix-JRE\.tar\.gz$')
+         | map(attribute='browser_download_url')
+         | first }}
+
+- name: Hattrick Organizer | Ensure install directory exists
+  ansible.builtin.file:
+    path: "{{ hattrick_organizer_install_dir }}"
+    state: directory
+    mode: "0755"
+  become: true
+
+- name: Hattrick Organizer | Download and extract
+  ansible.builtin.unarchive:
+    src: "{{ hattrick_organizer_url }}"
+    dest: "{{ hattrick_organizer_install_dir }}"
+    remote_src: true
+  become: true
+
+- name: Hattrick Organizer | Configure JVM font rendering
+  ansible.builtin.lineinfile:
+    path: "{{ hattrick_organizer_install_dir }}/HO.vmoptions"
+    line: "{{ item }}"
+  loop:
+    - -Dawt.useSystemAAFontSettings=on
+    - -Dswing.aatext=true
+  become: true
+
+- name: Hattrick Organizer | Create Desktop Entry
+  ansible.builtin.copy:
+    content: |
+      [Desktop Entry]
+      Name=Hattrick Organizer
+      Comment=Assistant for the Hattrick online football manager
+      Exec=env _JAVA_AWT_WM_NONREPARENTING=1 {{ hattrick_organizer_install_dir }}/HO
+      Icon={{ hattrick_organizer_install_dir }}/Logo.png
+      Type=Application
+      Categories=Game;
+      Terminal=false
+    dest: "{{ applications_dir }}/HattrickOrganizer.desktop"
+    mode: "0644"

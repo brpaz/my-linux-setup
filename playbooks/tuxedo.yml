@@ -98,6 +98,7 @@
     # # Productivity
     # # =============================================
     - { role: drawio, tags: [drawio, productivity] }
+    - { role: reefgraph, tags: [reefgraph, productivity, github] }
     - { role: readest, tags: [readest, utilities] }
     - { role: gnome-calendar, tags: [gnome-calendar, productivity] }
     - { role: gnome-contacts, tags: [gnome-contacts, productivity] }
@@ -112,7 +113,6 @@
     - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
     - { role: switfy-notes, tags: [swifty-notes, flatpak, productivity] }
     - { role: tomatillo, tags: [tomatillo, flatpak, productivity] }
-    - { role: masterpdfeditor, tags: [masterpdfeditor, flatpak, productivity] }
     - { role: pdfcraft, tags: [pdfcraft, productivity, github] }
 
     # # ===============================================
@@ -174,6 +174,7 @@
     # # # =============================================
     - { role: pinta, tags: [pinta, graphics_design] }
     - { role: photocraft, tags: [photocraft, graphics_design, github] }
+    - { role: figcraft, tags: [figcraft, graphics_design, github] }
     - { role: gimp, tags: [gimp, graphics_design] }
     - { role: boxysvg, tags: [boxysvg, graphics_design] }
     - { role: ohmysvg, tags: [ohmysvg, graphics_design] }
@@ -304,6 +305,7 @@
     - { role: tailspin, tags: [tailspin, utilities, github] }
     - { role: btop, tags: [btop, utilities] }
     - { role: doggo, tags: [doggo, utilities, github, dns] }
+    - { role: tylomon, tags: [tylomon, utilities, github, docker] }
     - { role: ouch, tags: [ouch, utilities, github] }
     - { role: regex-tui, tags: [regex-tui, utilities, github] }
     - { role: serpl, tags: [serpl, utilities, github] }
@@ -388,6 +390,7 @@
     - { role: steam, tags: [steam, games] }
     - { role: mines, tags: [mines, games] }
     - { role: retroarch, tags: [retroarch, games, flatpak] }
+    - { role: hattrick-organizer, tags: [hattrick-organizer, games, github] }
 
     # =============================================
     # Gnome Desktop
