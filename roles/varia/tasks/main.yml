@@ -1,0 +1,5 @@
+---
+- name: Varia
+  community.general.flatpak:
+    name: io.github.giantpinkrobots.varia
+    state: present

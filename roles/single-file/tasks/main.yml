@@ -1,0 +1,16 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: gildas-lormeau
+    repo: single-file-cli
+    token: "{{ github_token }}"
+  register: single_file_release
+
+- name: Download and Install
+  ansible.builtin.get_url:
+    dest: "{{ bin_dir }}/single-file"
+    force: true
+    mode: a+x
+    url: https://github.com/gildas-lormeau/single-file-cli/releases/download/{{ single_file_release.tag }}/single-file-x86_64-linux
+  become: true

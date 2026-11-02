@@ -1,0 +1,15 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: vitorpamplona
+    repo: amethyst
+    token: "{{ github_token }}"
+  register: amethyst_release
+
+- name: Install
+  ansible.builtin.dnf:
+    disable_gpg_check: true
+    name: https://github.com/vitorpamplona/amethyst/releases/download/{{ amethyst_release.tag }}/amethyst-desktop-{{ amethyst_release.tag | regex_replace('^v', '') }}-linux-x64.rpm
+    state: present
+  become: true

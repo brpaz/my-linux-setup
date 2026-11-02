@@ -86,7 +86,9 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [WhatIP](https://flathub.org/apps/details/org.gabmus.whatip) - Get Info on your IP
 * [Proton VPN](https://flathub.org/apps/com.protonvpn.www) - Secure and private VPN
 * [qBittorrent](https://www.qbittorrent.org/) - Torrent Client
+* [Varia](https://flathub.org/apps/io.github.giantpinkrobots.varia) - Download manager for files, torrents and videos
 * [Fractal](https://flathub.org/apps/org.gnome.Fractal) - Create, share, communicate, chat and call securely, and bridge to other apps
+* [Amethyst](https://github.com/vitorpamplona/amethyst) - Nostr client for desktop
 * [Telegram Desktop](https://flathub.org/apps/org.telegram.desktop) - Official Desktop app for Telegram Messenger
 * [Signal Desktop](https://flathub.org/apps/org.signal.Signal) - Private messenger
 * [Zoom](https://flathub.org/apps/us.zoom.Zoom) - Video Conferencing, Web Conferencing, Webinars, Screen Sharing
@@ -326,6 +328,7 @@ I use ZSH shell with the following extras:
 * [yq](https://github.com/mikefarah/yq) -  yq is a portable command-line YAML processor.
 * [pandoc](https://github.com/jgm/pandoc) - Universal markup converter
 * [defuddle](https://github.com/kepano/defuddle) - Extract the main content of any web page as clean Markdown.
+* [single-file](https://github.com/gildas-lormeau/single-file-cli) - Save a complete web page into a single HTML file.
 * [glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI
 * [yazi](https://github.com/sxyazi/yazi) - Blazing fast terminal file manager written in Rust, based on async I/O.
 * [tailspin](https://github.com/bensadeh/tailspin) - A terminal tool for managing and visualizing logs.

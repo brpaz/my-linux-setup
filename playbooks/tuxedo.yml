@@ -78,10 +78,12 @@
     - { role: telegram, tags: [telegram, communications, internet] }
     - { role: karere, tags: [karere, communications, internet] }
     - { role: qbittorrent, tags: [qbittorrent, flatpak, internet] }
+    - { role: varia, tags: [varia, flatpak, internet] }
     - { role: newsflash, tags: [newsflash, internet] }
     - { role: ntfy, tags: [ntfy, internet] }
     - { role: fractal, tags: [fractal, internet] }
     - { role: nak, tags: [nak, nostr, internet] }
+    - { role: amethyst, tags: [amethyst, nostr, internet] }
     - { role: nextcloud, tags: [nextcloud, internet] }
     - { role: wike, tags: [wike, internet, flatpak] }
     - { role: protonmail, tags: [protonmail, internet, flatpak] }
@@ -281,6 +283,7 @@
     - { role: fastfetch, tags: [fastfetch, cli] }
     - { role: pandoc, tags: [pandoc, cli] }
     - { role: defuddle, tags: [defuddle, cli] }
+    - { role: single-file, tags: [single-file, github, cli] }
     - { role: sops, tags: [sops, dev, github, cli] }
     - { role: sops-tui, tags: [sops-tui, dev, github, cli] }
     - { role: age, tags: [age, dev, github, cli] }
