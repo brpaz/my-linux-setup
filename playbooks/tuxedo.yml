@@ -206,7 +206,6 @@
     - { role: vim, tags: [vim, dev] }
     - { role: awscli, tags: [awscli, cli, dev] }
     - { role: ctop, tags: [ctop, dev, docker] }
-    - { role: dbcli, tags: [dbcli, dev, cli] }
     - { role: sqlite, tags: [sqlite, dev, cli] }
     - { role: dev-toolbox, tags: [dev-toolbox, dev] }
     - { role: direnv, tags: [direnv, dev] }
@@ -293,7 +292,6 @@
     - { role: worktrunk, tags: [worktrunk, dev, cli, github, git] }
     - { role: tuicr, tags: [tuicr, dev, github] }
     - { role: herdr, tags: [herdr, dev, github] }
-    - { role: lazysql, tags: [lazysql, cli, github] }
     - { role: asciinema, tags: [asciinema, cli, github] }
     - { role: copier, tags: [copier, utilities] }
     - { role: tabctl, tags: [tabctl, utilities] }

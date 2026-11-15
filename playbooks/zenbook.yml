@@ -122,7 +122,6 @@
     - { role: usebruno, tags: [usebruno, dev] }
     - { role: mkcert, tags: [mkcert, github, dev] }
     - { role: taskfile, tags: [task, github, dev] }
-    - { role: dbeaver, tags: [dbeaver, dev] }
     - { role: sqlite, tags: [sqlite, dev, cli] }
     - { role: redis, tags: [redis, dev] }
     # Network

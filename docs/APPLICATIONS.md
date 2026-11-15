@@ -194,7 +194,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
 * [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
-* [DBeaver](https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity) - Universal Database Manager
 * [Redis Insight](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
 * [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
@@ -476,7 +475,6 @@ I use ZSH shell with the following extras:
 - [mise](https://mise.jdx.dev/) - Polyglot runtime and tool version manager (asdf alternative), also handles env vars and task running.
 * [direnv](https://direnv.net/) - direnv is an extension for your shell.
 * [amoxide](https://amoxide.rs/) - Context-aware shell alias manager (like direnv, but for aliases), with a companion `am-tui` for managing shortcuts visually.
-* [lazysql](https://github.com/jorgerojas26/lazysql) - A cross-platform TUI database management tool written in Go.
 * [lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects.
 * [go-task](https://taskfile.dev/) - A task runner / simpler Make alternative written in Go.
 * [zrok](https://github.com/openziti/zrok) - zrok lets you securely share web services, files, and network resources with anyone.
