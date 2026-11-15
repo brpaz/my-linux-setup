@@ -56,6 +56,7 @@
     - { role: speedtest, tags: [networking, speedtest] }
     - { role: tailscale, tags: [tailscale, networking] }
     - { role: wireshark, tags: [wireshark, networking] }
+    - { role: termshark, tags: [termshark, networking, github] }
     - { role: whatip, tags: [whatip, networking] }
     - { role: proxyman, tags: [proxyman, networking] }
     - { role: cloudflared, tags: [cloudflared, networking] }
@@ -109,6 +110,7 @@
     - { role: xournalpp, tags: [xournalpp, productivity] }
     - { role: heynote, tags: [heynote, productivity] }
     - { role: obsidian, tags: [obsidian, productivity] }
+    - { role: basalt, tags: [basalt, productivity, github, tui] }
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
     - { role: typesetter, tags: [typesetter, typst, flatpak] }
     - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
@@ -299,6 +301,7 @@
     - { role: yazi, tags: [yazi, tui, utilities] }
     - { role: shfmt, tags: [shfmt, utilities, github] }
     - { role: lazyjournal, tags: [lazyjournal, utilities, github] }
+    - { role: gnome-logs, tags: [gnome-logs, utilities] }
     - { role: television, tags: [television, utilities, github] }
     - { role: tailspin, tags: [tailspin, utilities, github] }
     - { role: btop, tags: [btop, utilities] }
@@ -312,6 +315,7 @@
     - { role: strata, tags: [strata, utilities, github] }
     - { role: duf, tags: [duf, utilities, github] }
     - { role: gdu, tags: [gdu, utilities, github] }
+    - { role: baobab, tags: [baobab, utilities] }
     - { role: posting, tags: [posting, dev, cli] }
     - { role: openapi-tui, tags: [openapi-tui, dev, cli, github] }
     - { role: hl, tags: [hl, utilities, github] }

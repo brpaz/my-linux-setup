@@ -1,0 +1,27 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: gcla
+    repo: termshark
+    token: "{{ github_token }}"
+  register: termshark_release
+
+- name: Set release facts
+  ansible.builtin.set_fact:
+    termshark_version: "{{ termshark_release.tag | regex_replace('^v', '') }}"
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/gcla/termshark/releases/download/{{ termshark_release.tag }}/termshark_{{ termshark_version }}_linux_x64.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/termshark_{{ termshark_version }}_linux_x64/termshark"
+    dest: "{{ bin_dir }}/termshark"
+    mode: a+x
+    remote_src: true
+  become: true

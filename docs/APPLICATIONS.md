@@ -119,6 +119,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Netpeek](https://flathub.org/apps/io.github.zingytomato.netpeek) simple network scanner that helps you discover active devices on your local network.
 * [Speedtest](https://flathub.org/apps/xyz.ketok.Speedtest) - Measure your internet connection speed
 * [Wireshark](https://www.wireshark.org/) - The world's foremost and widely-used network protocol analyzer.
+* [termshark](https://github.com/gcla/termshark) - A terminal UI for tshark, inspired by Wireshark.
 * [Cloudflared](https://github.com/cloudflare/cloudflared) - Command-line client for Cloudflare Tunnel.
 * [IPLookup](https://flathub.org/apps/io.github.bytezz.IPLookup) - Look up detailed information about an IP address.
 * [Proxyman](https://proxyman.com/) - A modern web debugging proxy for inspecting HTTP/HTTPS traffic.
@@ -191,6 +192,8 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Neovim](https://neovim.io/) - hyperextensible Vim-based text editor
 * [bruno](https://www.usebruno.com/) - Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool targeted at developers
+* [Disk Usage Analyzer](https://apps.gnome.org/Baobab/) - Graphical disk usage analyzer, GUI counterpart of gdu.
+* [GNOME Logs](https://apps.gnome.org/Logs/) - Systemd journal viewer, GUI counterpart of lazyjournal.
 * [Redis Insight](https://flathub.org/apps/details/app.resp.RESP) - GUI for Redis
 * [Dev Toolbox](https://github.com/aleiepure/devtoolbox) - Development tools at your fingertips
 * [Wildcard](https://github.com/fkinoshita/Wildcard) - Test your regular expressions
@@ -202,7 +205,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Gitte](https://flathub.org/apps/de.wwwtech.gitte) - A simple Git client for GNOME.
 * [Sonar](https://flathub.org/apps/io.github.tobagin.sonar) - A native webhook debugging tool with instant public URLs via ngrok integration.
 * [Zeal](https://flathub.org/apps/org.zealdocs.Zeal) - Offline documentation browser, similar to Dash.
-* [Pods](https://flathub.org/apps/com.github.marhkb.Pods) - A native GTK4/libadwaita client to manage Podman containers, pods, and images.
+* [Pods](https://flathub.org/apps/com.github.marhkb.Pods) - A native GTK4/libadwaita client to manage Podman and Docker containers, pods, and images.
 
 ---
 

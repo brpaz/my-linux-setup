@@ -1,0 +1,27 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: erikjuhani
+    repo: basalt
+    token: "{{ github_token }}"
+  register: basalt_release
+
+- name: Set release facts
+  ansible.builtin.set_fact:
+    basalt_version: "{{ basalt_release.tag | regex_replace('^basalt/v', '') }}"
+
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "https://github.com/erikjuhani/basalt/releases/download/{{ basalt_release.tag }}/basalt-{{ basalt_version }}-x86_64-unknown-linux-gnu.tar.gz"
+    dest: "{{ setup_dir }}"
+    remote_src: true
+  become: true
+
+- name: Install
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/basalt-{{ basalt_version }}-x86_64-unknown-linux-gnu/basalt"
+    dest: "{{ bin_dir }}/basalt"
+    mode: a+x
+    remote_src: true
+  become: true

@@ -1,0 +1,6 @@
+---
+- name: Disk Usage Analyzer
+  ansible.builtin.package:
+    name: baobab
+    state: present
+  become: true

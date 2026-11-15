@@ -1,0 +1,6 @@
+---
+- name: GNOME Logs
+  ansible.builtin.package:
+    name: gnome-logs
+    state: present
+  become: true
