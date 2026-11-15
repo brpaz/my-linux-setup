@@ -66,7 +66,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Readest](https://flathub.org/apps/org.readest.Readest) - Readest is a simple, privacy-focused utility for reading and managing ebooks.
 * [Tomatillo](https://flathub.org/en/apps/io.github.diegopvlk.Tomatillo) - A simple pomodoro timer app.
 * [PdfCraft](https://getartcraft.com/apps/pdfcraft) - Open-source PDF workbench written in Rust: read, organize, merge, split and encrypt PDFs.
-* [Swifty Notes](https://flathub.org/apps/me.spaceinbox.swiftynotes) - A simple, elegant note-taking app.
 
 ---
 
@@ -76,7 +75,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Convey](https://flathub.org/en/apps/net.donnybeelo.Convey) - Email client.
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - My secondary browser.
 * [Brave Browser](https://brave.com/) - Browse privately. Search privately. And ditch Big Tech.
-* [Microsoft Edge](https://flathub.org/apps/details/com.microsoft.Edge) - Microsoft Edge is a web browser developed by Microsoft.
 * [Connections](https://flathub.org/apps/details/org.gnome.Connections) - View and use other desktops
 * [Slack](https://slack.com) - Official Slack application.
 * [WebCord](https://flathub.org/en/apps/io.github.spacingbat3.webcord) - Web-based Discord client
@@ -154,7 +152,6 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Pitivi](https://flathub.org/apps/details/org.pitivi.Pitivi) - Create and edit your own movies.
 * [VLC](http://www.videolan.org/vlc/) - VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 * [Audacity](https://sourceforge.net/projects/audacity/) - Audio editor.
-* [GNOME Music](https://flathub.org/apps/details/org.gnome.Music) - An easy way to play your music. Automatically discover music on your computer, the local network and internet services.
 * [FFaudioConverter](https://flathub.org/apps/details/com.github.Bleuzen.FFaudioConverter) - Convert music files between multiple formats
 * [Gnome Podcasts](https://flathub.org/apps/details/org.gnome.Podcasts) - Listen to your favorite podcasts.
 * [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer) - Video Trimmer cuts out a fragment of a video given.
@@ -445,7 +442,6 @@ I use ZSH shell with the following extras:
 - [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli) - Command line tool to manage your Gnome Shell extensions
 - [TabCTL](https://github.com/slastra/tabctl) - Control your browser tabs from the terminal.
 - [csvlens](https://github.com/YS-L/csvlens) - A command-line tool for viewing and filtering CSV files.
-- [dust](https://github.com/bootandy/dust) - A more intuitive version of du, with a TUI tree view of disk usage.
 - [gdu](https://github.com/dundee/gdu) - Fast disk usage analyzer with a TUI, written in Go.
 - [posting](https://posting.sh/) - A modern, keyboard-driven API client that lives in your terminal.
 - [openapi-tui](https://github.com/zaghaghi/openapi-tui) - A TUI to explore and call OpenAPI/Swagger-defined endpoints from the terminal.

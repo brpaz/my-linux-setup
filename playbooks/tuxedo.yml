@@ -68,7 +68,6 @@
     - { role: chromium, tags: [chromium, internet] }
     - { role: firefox, tags: [firefox, internet] }
     - { role: brave-browser, tags: [brave-browser, internet] }
-    - { role: edge, tags: [edge, internet] }
     - { role: gnome-web, tags: [gnome-web, internet] }
     - { role: convey, tags: [convey, internet] }
     - { role: discord, tags: [discord, communications, internet] }
@@ -113,7 +112,6 @@
     - { role: eloquent, tags: [eloquent, productivity, flatpak] }
     - { role: typesetter, tags: [typesetter, typst, flatpak] }
     - { role: apostrophe, tags: [apostrophe, markdown, flatpak] }
-    - { role: switfy-notes, tags: [swifty-notes, flatpak, productivity] }
     - { role: tomatillo, tags: [tomatillo, flatpak, productivity] }
     - { role: pdfcraft, tags: [pdfcraft, productivity, github] }
 
@@ -139,7 +137,6 @@
     - { role: blanket, tags: [blanket, audio_video] }
     - { role: eartag, tags: [eartag, audio_video] }
     - { role: ffaudioconverter, tags: [ffaudioconverter, audio_video] }
-    - { role: gnome-music, tags: [gnome-music, audio_video] }
     - { role: gnome-podcasts, tags: [gnome-podcasts, audio_video] }
     - { role: kodi, tags: [kodi, audio_video] }
     - { role: obs, tags: [obs, audio_video, flatpak] }
@@ -151,7 +148,6 @@
     - { role: parabolic, tags: [parabolic, audio_video, flatpak] }
     - { role: open-tv, tags: [open-tv, audio_video, flatpak] }
     - { role: shortwave, tags: [shortwave, audio_video] }
-    - { role: tubeconverter, tags: [tubeconverter, audio_video] }
     - { role: xnconvert, tags: [xnconvert, audio_vide] }
     - { role: video-trimmer, tags: [video-trimmer, audio_video] }
     - { role: handbrake, tags: [handbrake, audio_video] }
@@ -315,7 +311,6 @@
     - { role: csvlens, tags: [csvlens, utilities, github] }
     - { role: strata, tags: [strata, utilities, github] }
     - { role: duf, tags: [duf, utilities, github] }
-    - { role: dust, tags: [dust, utilities, github] }
     - { role: gdu, tags: [gdu, utilities, github] }
     - { role: posting, tags: [posting, dev, cli] }
     - { role: openapi-tui, tags: [openapi-tui, dev, cli, github] }

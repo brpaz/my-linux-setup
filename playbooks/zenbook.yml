@@ -148,7 +148,6 @@
     - { role: pdfcraft, tags: [pdfcraft, productivity, github] }
     - { role: nextcloud, tags: [nextcloud, internet, productivity] }
     - { role: iotas, tags: [iotas, nextcloud, productivity] }
-    - { role: switfy-notes, tags: [swifty-notes, productivity] }
     # Graphics
     #
     - { role: pinta, tags: [pinta, graphics] }

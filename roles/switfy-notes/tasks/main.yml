@@ -1,5 +1,0 @@
----
-- name: Install
-  community.general.flatpak:
-    name: me.spaceinbox.swiftynotes
-    state: present
