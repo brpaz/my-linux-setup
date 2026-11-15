@@ -251,6 +251,7 @@
     - { role: zrok, tags: [zrok, dev, github] }
     - { role: pvtui, tags: [pvtui, dev, github] }
     - { role: beekeeperstudio, tags: [beekeeperstudio, dev] }
+    - { role: dbdelve, tags: [dbdelve, dev, github] }
     - { role: lazyenv, tags: [lazyenv, dev] }
     - { role: sonar, tags: [sonar, dev, flaptpak] }
     - { role: ngrok, tags: [ngrok, dev] }
@@ -312,6 +313,7 @@
     - { role: serpl, tags: [serpl, utilities, github] }
     - { role: sqlit, tags: [sqlit, utilities, github] }
     - { role: csvlens, tags: [csvlens, utilities, github] }
+    - { role: strata, tags: [strata, utilities, github] }
     - { role: duf, tags: [duf, utilities, github] }
     - { role: dust, tags: [dust, utilities, github] }
     - { role: gdu, tags: [gdu, utilities, github] }

@@ -1,0 +1,50 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: lgse
+    repo: strata
+    token: "{{ github_token }}"
+  register: strata_release
+
+- name: Set release facts
+  ansible.builtin.set_fact:
+    strata_version: "{{ strata_release.tag | regex_replace('^v', '') }}"
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/lgse/strata/releases/download/{{ strata_release.tag }}/strata-{{ strata_version }}-x86_64-unknown-linux-gnu.tar.gz
+  become: true
+
+- name: Install binary
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/strata-{{ strata_version }}-x86_64-unknown-linux-gnu/strata"
+    dest: "{{ bin_dir }}/strata"
+    mode: a+x
+    remote_src: true
+  become: true
+
+- name: Install desktop entry
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/strata-{{ strata_version }}-x86_64-unknown-linux-gnu/io.github.lgse.Strata.desktop"
+    dest: /usr/local/share/applications/io.github.lgse.Strata.desktop
+    mode: a+r
+    remote_src: true
+  become: true
+
+- name: Create icon directory
+  ansible.builtin.file:
+    path: /usr/local/share/icons/hicolor/scalable/apps
+    state: directory
+    mode: "0755"
+  become: true
+
+- name: Install icon
+  ansible.builtin.copy:
+    src: "{{ setup_dir }}/strata-{{ strata_version }}-x86_64-unknown-linux-gnu/io.github.lgse.Strata.svg"
+    dest: /usr/local/share/icons/hicolor/scalable/apps/io.github.lgse.Strata.svg
+    mode: a+r
+    remote_src: true
+  become: true

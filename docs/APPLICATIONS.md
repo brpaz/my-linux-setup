@@ -201,6 +201,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [FileZilla](https://flathub.org/apps/org.filezillaproject.Filezilla) - FileZilla is a graphical FTP, FTPS and SFTP client. It is platform independent and supports all major desktop operating systems.
 * [PvTUI](https://github.com/devnullvoid/pvtui) - A terminal-based tool for managing Proxmox VE clusters.
 * [Beekeeper Studio](https://www.beekeeperstudio.io/) - A modern, easy to use SQL client for MySQL, Postgres, and more.
+* [DBDelve](https://dbdelve.github.io/) - Native, GPU accelerated database client for PostgreSQL, MySQL, SQLite, MongoDB, ClickHouse and more.
 * [Gitte](https://flathub.org/apps/de.wwwtech.gitte) - A simple Git client for GNOME.
 * [Sonar](https://flathub.org/apps/io.github.tobagin.sonar) - A native webhook debugging tool with instant public URLs via ngrok integration.
 * [Zeal](https://flathub.org/apps/org.zealdocs.Zeal) - Offline documentation browser, similar to Dash.
@@ -221,6 +222,7 @@ In this section will be listed all the Graphical Applications. A separate sectio
 * [Grsync](https://sourceforge.net/projects/grsync/) - Grsync is used to synchronize folders, files and make backups. It is a rsync GUI (Graphical User Interface).
 * [MtSync](https://codeberg.org/gavindi/MtSync) - A GTK4/libadwaita frontend to rclone to (auto)mount and sync your data.
 * [Ente Photos](https://flathub.org/en/apps/io.ente.photos) - Open-source, end-to-end encrypted photo storage app, letting you securely back up and organize your photos across devices.
+* [Strata](https://github.com/lgse/strata) - The best file manager on Linux.
 * [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop) - A secure and free password manager for all of your devices.
 * [Obfuscate](https://flathub.org/apps/details/com.belmoussaoui.Obfuscate) - Obfuscate lets you redact your private information from any image.
 * [Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression) - Flash disk images onto your drives with ease. Select an image, insert your drive, and you're good to go! Impression is a useful tool for both avid distro-hoppers and casual computer users.

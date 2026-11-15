@@ -1,0 +1,23 @@
+---
+- name: Get latest release
+  community.general.github_release:
+    action: latest_release
+    user: ShayanAbbas1
+    repo: dbdelve
+    token: "{{ github_token }}"
+  register: dbdelve_release
+
+- name: Set release facts
+  ansible.builtin.set_fact:
+    dbdelve_version: "{{ dbdelve_release.tag | regex_replace('^v', '') }}"
+
+- name: Download
+  ansible.builtin.unarchive:
+    dest: "{{ setup_dir }}"
+    remote_src: true
+    src: https://github.com/ShayanAbbas1/dbdelve/releases/download/{{ dbdelve_release.tag }}/dbdelve-{{ dbdelve_version }}-linux-x86_64.tar.gz
+  become: true
+
+- name: Install for current user
+  ansible.builtin.command: "{{ setup_dir }}/dbdelve-{{ dbdelve_version }}-linux-x86_64/install.sh"
+  changed_when: true
